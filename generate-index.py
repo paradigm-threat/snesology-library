@@ -44,13 +44,12 @@ def generate_index(library_dir):
         zones = config.get('zones', [])
 
         presets.append({
+            'type': 'preset',
             'name': name,
-            'path': entry.name,
+            'path': f'{entry.name}/preset.json',
             'category': category,
             'tags': tags,
-            'zones': len(zones),
-            'source': metadata.get('source', 'SNES'),
-            'platform': metadata.get('platform', 'Super Nintendo'),
+            'zoneCount': len(zones),
         })
 
     index = {
@@ -58,8 +57,7 @@ def generate_index(library_dir):
         'version': 1,
         'name': 'SNES Sample Library',
         'description': 'Instrument samples extracted from Super Nintendo game soundtracks',
-        'totalPresets': len(presets),
-        'presets': presets,
+        'entries': presets,
     }
 
     index_path = library_dir / 'index.json'
