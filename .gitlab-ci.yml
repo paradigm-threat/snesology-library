@@ -1,10 +1,20 @@
-# The Docker image that will be used to build your app
-image: node:lts
-create-pages:
-  pages:
-    # The folder that contains the files to be exposed at the Page URL
-    publish: public
+image: alpine:latest
+
+pages:
+  stage: deploy
+  script:
+    - mkdir -p public
+    - |
+      for dir in */; do
+        case "$dir" in
+          public/|.git/) continue ;;
+        esac
+        cp -r "$dir" public/
+      done
+    - cp -f index.json public/ 2>/dev/null || true
+    - cp -f README.md public/ 2>/dev/null || true
+  artifacts:
+    paths:
+      - public
   rules:
-    # This ensures that only pushes to the default branch will trigger
-    # a pages deploy
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
