@@ -96,32 +96,35 @@ snesology-library/
       index.json
       samples.zip
       ...
-  samplemance.rs/          # community-labeled samples (194 games, gitignored)
+  samplemance.rs/          # community-labeled samples (194 games)
     Doom/
+      index.json           # game-level index listing all instruments
       samples.zip          # all WAV samples in one archive
+      Flute.json           # single-zone, rootNote=60, archive ref
+      Guitar_dist.json
+      Drum_Kit.json        # multi-zone, oneShot: true, C2-up mapping
     Chrono_Trigger/
+      index.json
       samples.zip
-    ...
+      ...
 ```
 
 ## Remaining Work
 
-### Phase 5 — Generate presets for samplemance.rs
+### Phase 5 — Generate presets for samplemance.rs ✅
 
-The community library (`samplemance.rs/`) has 194 games with 10,141 WAV samples archived into per-game ZIPs, but **no preset JSON files or per-game indexes yet**. Each game directory only contains `samples.zip`.
+Generated preset JSONs for all 194 community games from WAV samples in `samples.zip`:
 
-Tasks:
-1. **Write preset generator** — analyze each WAV in `samples.zip`:
-   - Read WAV sample rate (encodes pitch tuning relative to 32kHz)
-   - Classify as melodic vs percussion by filename prefix (`perc_`, `sfx_`)
-   - Use the community filename (minus `.wav`) as the preset name
-   - Generate one preset JSON per melodic instrument (rootNote=60, full keyRange)
-   - Combine all `perc_*` samples into one Drum Kit preset (C2-up, oneShot)
-   - Set `sampleRate` from the WAV header for correct pitch
-2. **Generate per-game index.json** — list all instrument presets
-3. **Update `samplemance.rs/index.json`** — change entry type from `"folder"` to `"index"` with preset counts
-4. **Test in snesology-site** — verify browsing and playback
-5. **Commit and push**
+- **5,532 melodic presets** generated across 192 games ✓
+- **194 drum kits** combining `perc_`/`sfx_` + keyword-detected percussion ✓
+- **4,530 percussion samples** mapped sequentially from C2 (MIDI 36) ✓
+- WAV sample rate preserved as `sampleRate` for correct pitch tuning ✓
+- Loop points extracted from WAV `smpl` chunks ✓
+- Archive references to per-game `samples.zip` ✓
+- Per-game `index.json` files generated ✓
+- `samplemance.rs/index.json` entries updated from `"folder"` to `"index"` with preset counts ✓
+- Un-gitignored `samplemance.rs/` for GitLab Pages deployment ✓
+- `generate-samplemance-presets.py` script added ✓
 
 ### Phase 6 — Deploy and validate
 
@@ -153,6 +156,7 @@ Located at `/home/ari/dev/samples/spcsets/` (~1,500+ `.rsn` archives from [SNESo
 
 - `convert-spc.py` — extraction pipeline (RSN → SPC → BRR → PCM → flat presets + ZIP archive)
 - `generate-index.py` — index generator (reads `generated/`, writes hierarchical indexes)
+- `generate-samplemance-presets.py` — generates preset JSONs from community WAV samples in `samplemance.rs/`
 - `archive-samples.py` — repackages loose sample files into per-game ZIP archives
 - `flatten-presets.py` — flattens instrument subdirectories into game-level JSON files
 - `scrape-samplemance.py` — community sample name scraper (writes to `samplemance.rs/`)
