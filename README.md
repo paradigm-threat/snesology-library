@@ -30,3 +30,10 @@ const instrument = loadPreset("SNES/GameTitle");
 ## License
 
 Game audio samples are provided for educational and preservation purposes. All original content is copyright of their respective owners.
+
+---
+
+> *"Perfection is achieved, not when there is nothing more to add,*
+> *but when there is nothing left to take away."*
+>
+> — Antoine de Saint-Exupéry
