@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Musicbox",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Bahamut Lagoon"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "musicbox.wav",
+            "codec": "wav",
+            "sha256": "7835b38e14c9f408971f9ebf81fd732b3a682d56b8fccbe566651aad262f62b9"
+          },
+          "loop": {
+            "start": 1008,
+            "end": 1775
+          }
+        }
+      ]
+    }
+  }
+}

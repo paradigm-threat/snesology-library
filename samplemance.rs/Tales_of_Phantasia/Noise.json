@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Tales of Phantasia"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "noise.wav",
+            "codec": "wav",
+            "sha256": "0d9417d56ca784b688624228c2ea9c2f11a4256465f91fa0ff69c4338032f4b7"
+          },
+          "loop": {
+            "start": 16,
+            "end": 2447
+          }
+        }
+      ]
+    }
+  }
+}

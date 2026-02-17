@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Harp",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Super Mario RPG - Legend of the Seven Stars"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 41200,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "harp.wav",
+            "codec": "wav",
+            "sha256": "d8e2959febf42213e51e07485ede850ced8758c20c8e574eb421b1430e8a2d4c"
+          },
+          "loop": {
+            "start": 3200,
+            "end": 4143
+          }
+        }
+      ]
+    }
+  }
+}

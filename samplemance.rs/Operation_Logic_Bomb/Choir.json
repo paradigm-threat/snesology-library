@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Choir",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Operation Logic Bomb"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "choir.brr.wav",
+            "codec": "wav",
+            "sha256": "2fa56dd936bd31ecb25e3309792509686102a0e008dd751cd33765ca3e3017fb"
+          },
+          "loop": {
+            "start": 16,
+            "end": 5263
+          }
+        }
+      ]
+    }
+  }
+}

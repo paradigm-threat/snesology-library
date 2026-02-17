@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Clavi",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Uniracers"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "clavi.wav",
+            "codec": "wav",
+            "sha256": "f0c8d300049ec210c3f4ae4f43f4479fa7540656872685004ecc60400f762705"
+          },
+          "loop": {
+            "start": 32,
+            "end": 127
+          }
+        }
+      ]
+    }
+  }
+}

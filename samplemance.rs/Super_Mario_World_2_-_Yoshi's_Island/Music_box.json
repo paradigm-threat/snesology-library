@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Music box",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Super Mario World 2 - Yoshi's Island"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 31827,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "music_box.wav",
+            "codec": "wav",
+            "sha256": "84f6c7f685e460f9fbd3ad9902b6e4f4e27f3c7c640dffa82940628d74858b48"
+          },
+          "loop": {
+            "start": 1872,
+            "end": 2479
+          }
+        }
+      ]
+    }
+  }
+}

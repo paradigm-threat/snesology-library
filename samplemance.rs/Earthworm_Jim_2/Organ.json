@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Organ",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Earthworm Jim 2"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "organ.wav",
+            "codec": "wav",
+            "sha256": "3fe88706908192f0efd8cc22620a9cc67e72c32a6d9ee8e46f56cd3b69ab6d39"
+          },
+          "loop": {
+            "start": 432,
+            "end": 479
+          }
+        }
+      ]
+    }
+  }
+}

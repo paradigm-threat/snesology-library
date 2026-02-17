@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Gamelan",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Donkey Kong Country 3"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 41424,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "gamelan.wav",
+            "codec": "wav",
+            "sha256": "ceb3fd947d0de06c82701608f139b169b81930b4352931872229d76124ba463d"
+          },
+          "loop": {
+            "start": 2720,
+            "end": 3263
+          }
+        }
+      ]
+    }
+  }
+}

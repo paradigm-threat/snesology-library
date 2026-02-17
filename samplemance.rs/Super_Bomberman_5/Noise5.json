@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise5",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Super Bomberman 5"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "noise5.wav",
+            "codec": "wav",
+            "sha256": "2b0fea6bd3ab59aa62b4a3c1c64fc0c9c252a8abd0375ec85c9ac86380321505"
+          },
+          "loop": {
+            "start": 0,
+            "end": 143
+          }
+        }
+      ]
+    }
+  }
+}

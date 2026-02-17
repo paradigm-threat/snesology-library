@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Kirby's Dream Course"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "noise.wav",
+            "codec": "wav",
+            "sha256": "aa5804658b4b47ec61ffc9a26b667711d63f3a8d6577bf8595a6c263a750b64b"
+          },
+          "loop": {
+            "start": 48,
+            "end": 351
+          }
+        }
+      ]
+    }
+  }
+}

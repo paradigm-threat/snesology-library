@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Gamelan",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Donkey Kong Country 2"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 26048,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "gamelan.wav",
+            "codec": "wav",
+            "sha256": "3c7a9f971ce30ab281afac86fc1406b905fc4ccb0c8df5175e79f0151c21f790"
+          },
+          "loop": {
+            "start": 800,
+            "end": 1279
+          }
+        }
+      ]
+    }
+  }
+}

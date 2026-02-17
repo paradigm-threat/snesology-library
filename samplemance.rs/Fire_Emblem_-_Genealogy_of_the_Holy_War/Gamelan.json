@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Gamelan",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Fire Emblem - Genealogy of the Holy War"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 31770,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "gamelan.wav",
+            "codec": "wav",
+            "sha256": "c13824e5004ed36d7fac5f950005870af28f59337f9f325add8becc11ef4f5b9"
+          },
+          "loop": {
+            "start": 4560,
+            "end": 8095
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Organ",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "ActRasier"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "organ.wav",
+            "codec": "wav",
+            "sha256": "a55d9c7419f9db121b5220b067d8e176e8d6028057db950a1f0832077f6e4cfe"
+          },
+          "loop": {
+            "start": 96,
+            "end": 143
+          }
+        }
+      ]
+    }
+  }
+}

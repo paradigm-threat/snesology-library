@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Sfx1",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Super Mario RPG - Legend of the Seven Stars"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "sfx1.wav",
+            "codec": "wav",
+            "sha256": "4acec29a1ea8e8fef4e3cf6477d9490ba261576946d540e29226e554ce869cea"
+          },
+          "loop": {
+            "start": 720,
+            "end": 1743
+          }
+        }
+      ]
+    }
+  }
+}

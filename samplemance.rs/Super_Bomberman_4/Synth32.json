@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth32",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Super Bomberman 4"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 33477,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "synth32.wav",
+            "codec": "wav",
+            "sha256": "bb54162d123424bd5cb2161fd054ad6a26ec89558ca1f2221a818fcacfa2dfe6"
+          },
+          "loop": {
+            "start": 0,
+            "end": 31
+          }
+        }
+      ]
+    }
+  }
+}

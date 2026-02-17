@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Harp",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Terranigma"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "harp.wav",
+            "codec": "wav",
+            "sha256": "7a16bcbf732851eb5ccf88ac60c639fe4c5b38d3efd8b7ad971e0fb6f3601271"
+          },
+          "loop": {
+            "start": 2096,
+            "end": 2143
+          }
+        }
+      ]
+    }
+  }
+}

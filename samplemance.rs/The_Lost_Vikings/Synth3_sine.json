@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth3 sine",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "The Lost Vikings"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 41875,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "synth3_sine.wav",
+            "codec": "wav",
+            "sha256": "ac65d952d857b55242b9ae7f0815b19a94d222946e890270f7fdb3fd73553cb7"
+          },
+          "loop": {
+            "start": 48,
+            "end": 127
+          }
+        }
+      ]
+    }
+  }
+}

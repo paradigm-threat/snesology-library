@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth pulse",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Tetris & Dr. Mario"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "synth_pulse.wav",
+            "codec": "wav",
+            "sha256": "1aa605211026f5846c7764405f212c0d69623d707f35692469f5518d8927e10c"
+          },
+          "loop": {
+            "start": 48,
+            "end": 95
+          }
+        }
+      ]
+    }
+  }
+}

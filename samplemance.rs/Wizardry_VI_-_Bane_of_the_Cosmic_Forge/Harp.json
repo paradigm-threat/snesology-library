@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Harp",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Wizardry VI - Bane of the Cosmic Forge"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 38055,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "harp.wav",
+            "codec": "wav",
+            "sha256": "d18d24edf0994f276a3fbcf4e62c4dc47b84a2e9ba2e0220bceba2d64e935cdb"
+          },
+          "loop": {
+            "start": 2736,
+            "end": 3135
+          }
+        }
+      ]
+    }
+  }
+}

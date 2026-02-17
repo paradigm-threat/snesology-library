@@ -2,13 +2,13 @@
 
 ## Goal
 
-Split the monolithic one-preset-per-game library into individual instrument presets — one per unique SNES sample — plus one drum kit per game. Fix broken pitch/keyRange values, preserve ADSR envelope metadata, and use community-sourced sample names where available.
+Split the monolithic one-preset-per-game library into individual instrument presets — one per unique SNES sample — plus one drum kit per game. Fix broken pitch/keyRange values, preserve ADSR envelope metadata, and use community-sourced sample names where available. Archive samples into per-game ZIPs to stay within GitHub Pages' 200K file limit.
 
 ## Background: SNES Audio Architecture
 
 The SNES S-DSP is an 8-voice sampler with fixed characteristics that directly affect how we process and present these samples:
 
-- **32 kHz ceiling** — the DSP's maximum sample rate. All samples are already at or below this. Our extracted MP3s are 32 kHz mono.
+- **32 kHz ceiling** — the DSP's maximum sample rate. All samples are already at or below this.
 - **BRR compression** — Bit Rate Reduction encodes 32 bytes of PCM into 9 bytes (~3.5:1). The lossy encoding adds noise, which the hardware compensates for with a **global Gaussian interpolation filter** that rolls off high frequencies. This filter is a major part of the SNES's signature sound.
 - **Loop constraints** — loop start and end must be multiples of 16 samples (one BRR block). There is no sample data after the loop end point — the loop end IS the sample end.
 - **Source directory (`srcn`)** — each of the 8 DSP voices references a sample via a source number (0–255) into a directory table in RAM. Each `srcn` slot is effectively one instrument. This is the most reliable way to identify distinct instruments within a game.
@@ -22,157 +22,113 @@ The SNES S-DSP is an 8-voice sampler with fixed characteristics that directly af
 - [SNES Chiptune Guide — Preparing and Optimizing Samples](https://samplemance.rs/snesguide/samples/optimizing/)
 - [Repository of SNES Sample Rips](https://samplemance.rs/snesguide/samples/repo/) — community-maintained collection with named samples per game
 
-## Current State (Problems)
+## Completed Work
 
-### One preset per game
-Each of the ~1,514 games produces a single `preset.json` containing ALL unique BRR samples as zones in one monolithic sampler. Users can't select individual instruments — they get the entire game's sample set as one unusable blob.
+### Phase 0 — Community sample names ✅
 
-### Broken rootNote/keyRange
-`hz_to_midi()` converts the DSP pitch register to a MIDI note, but the pitch register encodes *playback rate*, not *musical pitch*. This produces `rootNote` values like 138, 145, 163 — well above MIDI's 0–127 range. The `keyRange` is then computed as `rootNote ± 6`, resulting in `low > high` (e.g., `{low: 132, high: 127}`), making zones unmatchable by the sampler engine.
+Scraped the [Repository of SNES Sample Rips](https://samplemance.rs/snesguide/samples/repo/) to obtain human-assigned instrument names.
 
-### Discarded metadata
-The extraction pipeline collects valuable per-sample metadata but throws it away:
-- **`srcn`** (source directory index) — the instrument ID; used for sorting but not written
-- **ADSR/GAIN registers** — collected per-voice but never stored in `preset.json`
-- **Sample character** (`estimate_sample_character()` result) — only used for top-level tags
-- **Per-SPC provenance** — which song files used each sample; lost during dedup
-
-### `oneShot` is preset-level, not per-zone
-If even one melodic sample exists, the entire preset (including percussion) is marked `oneShot: false`.
-
-## Pre-Refactor: Community Sample Names (Phase 0 — complete)
-
-We scraped the [Repository of SNES Sample Rips](https://samplemance.rs/snesguide/samples/repo/) to obtain human-assigned instrument names. The scraper (`scrape-samplemance.py`) found **194 games** with Google Drive links containing labeled `.wav` files (e.g., "flute", "horn", "bass_slap", "perc_kick").
-
-### Status
 - **194 games** downloaded and cataloged ✓
 - **10,141 labeled WAV files** across 194 game folders ✓
-- Community names matched and applied to generated presets ✓
+- 148 games matched between samplemance and generated presets ✓
+- 4,010 instruments renamed with community names ✓
+- Matching by BRR PCM length (exact + ±32 sample tolerance) ✓
 
-### Coverage
-- 148 games matched between samplemance and generated presets
-- 4,010 instruments renamed with community names
-- Matching by BRR PCM length (exact + ±32 sample tolerance)
+### Phase 1 — Per-instrument presets (generated/) ✅
 
-### Storage
-- `samplemance.rs/` — downloaded sample packs, one folder per game (gitignored)
-- `docs/drive-links.json` — scraped game→drive link mapping (194 entries, committed)
-- `docs/name-mapping.json` — cataloged `(game_dir) → {game_name, samples[{label, index}]}` (committed)
-- `match-community-names.py` — matches community WAVs to generated presets by PCM length
+Refactored `convert-spc.py` to produce one preset per `srcn`, plus Drum_Kit:
 
-## Target State
+- **1,514 games** processed from RSN archives ✓
+- **99,789 instrument presets** generated ✓
+- Fixed pitch: `rootNote=60`, `keyRange: {low:0, high:127}` ✓
+- Drum kits: sequential mapping from C2 (MIDI 36), `oneShot: true` ✓
+- ADSR/GAIN metadata preserved in `metadata.snes` ✓
+- Community names applied where available ✓
 
-### Per-instrument presets
-Each unique `srcn` becomes its own preset with one sample zone. Users can browse games and select individual instruments.
+### Phase 2 — Hierarchical indexes ✅
 
-### Repository structure
+- Root `index.json` → 2 sub-indexes (Auto-Ripped + Community) ✓
+- `generated/index.json` → 1,514 game entries ✓
+- `samplemance.rs/index.json` → 194 game entries ✓
+- Per-game `index.json` files with instrument lists ✓
+
+### Phase 3 — Shared components (songwalker-js) ✅
+
+- `PresetBrowser` moved to songwalker-js as shared component ✓
+- `setupFullscreen()` utility added to songwalker-js ✓
+- Both sites (songwalker-site, snesology-site) updated to import from package ✓
+
+### Phase 4 — Archive samples into ZIPs ✅
+
+Reduced file count from ~231K to ~103K to fit GitHub Pages' 200K limit:
+
+- All sample audio files archived into per-game `samples.zip` (ZIP_STORED) ✓
+- Instrument subdirectories flattened: `Game/Instrument.json` instead of `Game/Instrument/preset.json` ✓
+- Preset audio references updated to `type: "archive"` with `archive: "samples.zip"` ✓
+- `songwalker-js` updated with `fflate` dependency for browser ZIP extraction ✓
+- New `AudioReference` variant: `{ type: 'archive'; archive: string; entry: string; codec?: AudioCodec }` ✓
+- `PresetLoader.fetchArchive()` caches fetched+unzipped archives per URL ✓
+- `convert-spc.py` updated to produce flat+archive format directly ✓
+
+## Current Repository Structure
+
 ```
 snesology-library/
-  index.json               # root index, type: "index" per game
-  convert-spc.py           # extraction pipeline (RSN → per-instrument presets)
+  index.json               # root index → 2 sub-indexes
+  convert-spc.py           # extraction pipeline (RSN → flat presets + ZIP archive)
   generate-index.py        # index generator
+  archive-samples.py       # repackages loose samples into per-game ZIPs
+  flatten-presets.py        # flattens instrument subdirs into game-level JSON files
   scrape-samplemance.py    # community sample name scraper
   README.md
   docs/
     refactoring-plan.md    # this file
     drive-links.json       # scraped samplemance game→Drive link mapping
     name-mapping.json      # community sample name catalog
-  generated/               # output of convert-spc.py (auto-generated presets)
+  generated/               # output of convert-spc.py (1,514 games, ~103K files)
     Chrono_Trigger/
-      index.json           # type: "index", lists instrument presets
-      Strings_00/
-        preset.json        # single-zone, rootNote=60, keyRange 0-127
-        sample.mp3
-      Trumpet_01/
-        preset.json
-        sample.mp3
-      Drum_Kit/
-        preset.json        # multi-zone, oneShot: true, sequential key mapping
-        sample_000.mp3
-        sample_001.mp3
+      index.json           # game-level index listing all instruments
+      samples.zip          # all sample MP3s in one archive
+      Strings_00.json      # single-zone, rootNote=60, archives ref
+      Trumpet_01.json
+      Drum_Kit.json        # multi-zone, oneShot: true, C2-up mapping
     Final_Fantasy_VI/
       index.json
+      samples.zip
       ...
-  samplemance.rs/          # community-labeled sample packs (gitignored)
-    ActRasier/
-      bass_slap.wav
-      flute.wav
-      horn.wav
-      ...
+  samplemance.rs/          # community-labeled samples (194 games, gitignored)
+    Doom/
+      samples.zip          # all WAV samples in one archive
     Chrono_Trigger/
-      ...
+      samples.zip
+    ...
 ```
 
-### Fixed pitch values
-All melodic instruments: `rootNote = 60` (C4), `keyRange: { low: 0, high: 127 }`. This is correct for single-sample SNES instruments — the sampler engine pitch-shifts from C4 across the keyboard, matching how SNES games actually use these samples.
+## Remaining Work
 
-### Preserved ADSR metadata
-Each preset includes `metadata.snes: { adsr1, adsr2, gain, srcn, pitchRegister }`.
+### Phase 5 — Generate presets for samplemance.rs
 
-### Drum kit per game
-Percussion-classified samples are collected into one `Drum_Kit/preset.json` with sequential key mapping from C2 (MIDI 36) and `oneShot: true`.
+The community library (`samplemance.rs/`) has 194 games with 10,141 WAV samples archived into per-game ZIPs, but **no preset JSON files or per-game indexes yet**. Each game directory only contains `samples.zip`.
 
-### Instrument naming (priority order)
-1. **Community name** from name-mapping.json (e.g., "Strings", "Trumpet")
-2. **Heuristic name** from classification + ADSR analysis + srcn (e.g., "Pad_00", "Pluck_01")
+Tasks:
+1. **Write preset generator** — analyze each WAV in `samples.zip`:
+   - Read WAV sample rate (encodes pitch tuning relative to 32kHz)
+   - Classify as melodic vs percussion by filename prefix (`perc_`, `sfx_`)
+   - Use the community filename (minus `.wav`) as the preset name
+   - Generate one preset JSON per melodic instrument (rootNote=60, full keyRange)
+   - Combine all `perc_*` samples into one Drum Kit preset (C2-up, oneShot)
+   - Set `sampleRate` from the WAV header for correct pitch
+2. **Generate per-game index.json** — list all instrument presets
+3. **Update `samplemance.rs/index.json`** — change entry type from `"folder"` to `"index"` with preset counts
+4. **Test in snesology-site** — verify browsing and playback
+5. **Commit and push**
 
-## Implementation Steps
+### Phase 6 — Deploy and validate
 
-### Phase 0 — Community sample names (complete)
-
-1. ~~Scrape https://samplemance.rs/snesguide/samples/repo/ for game entries + Drive links~~ ✓ (194 games)
-2. ~~Download sample packs from each Drive link~~ ✓ (194/194)
-3. ~~Catalog sample filenames into `docs/name-mapping.json`~~ ✓ (10,141 samples)
-4. ~~Match community samples to generated presets by PCM length~~ ✓ (4,010 renamed across 148 games)
-
-### Phase 1 — Fix and enrich `convert-spc.py`
-
-5. **Fix pitch handling** — default all melodic instruments to `rootNote = 60`, `keyRange: { low: 0, high: 127 }`.
-
-6. **Preserve `srcn` per zone** — store as `"srcn": N` in zone metadata.
-
-7. **Preserve ADSR/GAIN per zone** — store voice registers in `metadata.snes`.
-
-8. **Store sample character per zone** — add `"character"` field.
-
-9. **Improve classification heuristics** — use ADSR + GAIN + loop presence + existing heuristics.
-
-### Phase 2 — Restructure output to per-instrument presets
-
-10. **Replace `build_preset()` with `build_game_presets()`** — one preset per `srcn`, plus drum kit.
-
-11. **Instrument naming** — use community name if available, else heuristic:
-    - `melodic` + long loop → "Pad_NN"
-    - `melodic` + short loop → "Lead_NN"
-    - `tone` → "Tone_NN"
-    - `noise` → "Noise_NN"
-    - `one-shot` → "Hit_NN"
-    - `percussion` → Drum_Kit
-    - NN = srcn zero-padded
-
-12. **Drum kit** — sequential mapping from C2 (MIDI 36), `oneShot: true`.
-
-13. **Melodic preset format** — `rootNote: 60`, `keyRange: { low: 0, high: 127 }`, `oneShot: false`, ADSR in metadata.
-
-### Phase 3 — Update `generate-index.py`
-
-14. **Two-level index** — root entries per game → per-game entries per instrument.
-
-15. **Enriched entries** — character tags, instrumentCount, hasDrumKit.
-
-### Phase 4 — Update snesology-site
-
-16. **Hierarchical browsing** — game → instruments navigation.
-
-17. **Updated preset references** — `"SNES Sample Library/GameName/InstrumentName"`.
-
-### Phase 5 — Run and validate
-
-18. **Test batch**: `python3 convert-spc.py /home/ari/dev/samples/spcsets . --limit 5 -v` (outputs to `generated/`)
-
-19. **Full run**: `python3 convert-spc.py /home/ari/dev/samples/spcsets . --verbose`
-
-20. **Test in snesology-site** and deploy.
+1. Publish songwalker-js to NPM (version bump to 0.1.4+)
+2. Update snesology-site and songwalker-site dependencies
+3. Deploy sites and verify preset browsing + playback
+4. Verify GitHub Pages file count is under 200K
 
 ## Key Decisions
 
@@ -184,6 +140,10 @@ Percussion-classified samples are collected into one `Drum_Kit/preset.json` with
 | Drum mapping | Sequential from C2 | GM-style auto-assignment | No reliable BRR→drum-type classification |
 | Index structure | Hierarchical (game → instruments) | Flat with compound names | Matches songwalker-library format |
 | One srcn = one preset | Yes | Group by similar ADSR | Matches SNES hardware model |
+| Sample storage | Per-game ZIP archives | Individual files | GitHub Pages 200K file limit |
+| Archive format | ZIP_STORED (no compression) | ZIP_DEFLATED | Audio is already compressed (MP3) or incompressible (WAV PCM) |
+| Preset layout | Flat (Game/Instrument.json) | Nested (Game/Instrument/preset.json) | Fewer directories, simpler structure |
+| Libraries | Keep generated/ and samplemance.rs/ separate | Merge into one | Different data sources, different quality levels |
 
 ## RSN Source Files
 
@@ -191,10 +151,12 @@ Located at `/home/ari/dev/samples/spcsets/` (~1,500+ `.rsn` archives from [SNESo
 
 ## Related Files
 
-- `convert-spc.py` — extraction pipeline (RSN → SPC → BRR → PCM → MP3 + preset.json)
-- `generate-index.py` — index generator (reads `generated/`, writes `index.json`)
+- `convert-spc.py` — extraction pipeline (RSN → SPC → BRR → PCM → flat presets + ZIP archive)
+- `generate-index.py` — index generator (reads `generated/`, writes hierarchical indexes)
+- `archive-samples.py` — repackages loose sample files into per-game ZIP archives
+- `flatten-presets.py` — flattens instrument subdirectories into game-level JSON files
 - `scrape-samplemance.py` — community sample name scraper (writes to `samplemance.rs/`)
-- `../songwalker-js/src/preset-loader.ts` — how the site fetches and resolves presets
-- `../songwalker-js/src/preset-types.ts` — TypeScript type definitions
+- `../songwalker-js/src/preset-loader.ts` — fetches presets + ZIP archives with LRU caching
+- `../songwalker-js/src/preset-types.ts` — TypeScript type definitions (incl. `archive` AudioReference)
 - `../songwalker-core/src/preset.rs` — Rust preset descriptor types
 - `../snesology-site/src/main.ts` — site preset browser and playback

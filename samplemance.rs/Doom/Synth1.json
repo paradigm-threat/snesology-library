@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth1",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Doom"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 23040,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "synth1.wav",
+            "codec": "wav",
+            "sha256": "869fa32b01a6cf1e5671c1b6ba1e5585cceac28f4c2d49c57adaf3f9b8a3e635"
+          },
+          "loop": {
+            "start": 224,
+            "end": 399
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Disney's Aladdin"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "noise.wav",
+            "codec": "wav",
+            "sha256": "e7a91ef4f9ba196ce8b4a88078c1fac261fe708cda82a34c53e6b4c1dd8f52bc"
+          },
+          "loop": {
+            "start": 48,
+            "end": 847
+          }
+        }
+      ]
+    }
+  }
+}

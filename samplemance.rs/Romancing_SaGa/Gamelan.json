@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Gamelan",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Romancing SaGa"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 33477,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "gamelan.wav",
+            "codec": "wav",
+            "sha256": "039b226524184ef58444625a4c7d19aa4b03ced2802c91403a2c9aad0b0e4c26"
+          },
+          "loop": {
+            "start": 2192,
+            "end": 2255
+          }
+        }
+      ]
+    }
+  }
+}

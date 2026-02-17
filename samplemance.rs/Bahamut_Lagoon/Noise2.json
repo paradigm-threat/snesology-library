@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise2",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Bahamut Lagoon"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "noise2.wav",
+            "codec": "wav",
+            "sha256": "e7dc45de14e9b35613f04805f8ebdcd4d73c27dc7c99c924630e5eda363a3eb5"
+          },
+          "loop": {
+            "start": 48,
+            "end": 255
+          }
+        }
+      ]
+    }
+  }
+}

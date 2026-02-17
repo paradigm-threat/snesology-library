@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Saw",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Rudra no Hihou (Rudra's Treasure)"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 33690,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "saw.brr.wav",
+            "codec": "wav",
+            "sha256": "673b1f24fe51f4c4376121faa7b2ddde265dc6569677f64caf7707a7752f3f3c"
+          },
+          "loop": {
+            "start": 32,
+            "end": 95
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth square",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "F-Zero"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 33477,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "synth_square.wav",
+            "codec": "wav",
+            "sha256": "d2950c095f6bfb8ec616e4d730544bf9bd241fd363129bb70ad70d109b294678"
+          },
+          "loop": {
+            "start": 96,
+            "end": 127
+          }
+        }
+      ]
+    }
+  }
+}

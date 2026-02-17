@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Fire Emblem - Thracia 776"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "noise.wav",
+            "codec": "wav",
+            "sha256": "e3c55a63aa9213f6a36e2bcfcd1d7b80de2e61531c6a8da04d7ca601f2f40181"
+          },
+          "loop": {
+            "start": 16,
+            "end": 1647
+          }
+        }
+      ]
+    }
+  }
+}

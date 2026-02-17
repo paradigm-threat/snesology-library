@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Organ",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Mario Paint"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 41875,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "organ.wav",
+            "codec": "wav",
+            "sha256": "bae152239dc49d0d0677788ee8ae0e94d667cc49bfcb6a108a9c5b43710b6ee2"
+          },
+          "loop": {
+            "start": 160,
+            "end": 319
+          }
+        }
+      ]
+    }
+  }
+}

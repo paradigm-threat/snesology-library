@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Piano",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Operation Logic Bomb"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "piano.brr.wav",
+            "codec": "wav",
+            "sha256": "c1b03e5ce8df8841367e09ff5817f5c4aec42c96cfb2d107b6f32cec0585cd2c"
+          },
+          "loop": {
+            "start": 4080,
+            "end": 6895
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Sax",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Super Puyo Puyo 2"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "sax.wav",
+            "codec": "wav",
+            "sha256": "64413df7b6caa6020e21b1b25d62790c4a17e655be2262e417b33a7e84a7aacc"
+          },
+          "loop": {
+            "start": 0,
+            "end": 80
+          }
+        }
+      ]
+    }
+  }
+}

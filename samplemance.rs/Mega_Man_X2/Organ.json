@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Organ",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Mega Man X2"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "organ.wav",
+            "codec": "wav",
+            "sha256": "833585f1dca8400c17d825ecf0fbcc99f53d9ad28fbf973e051c31d8a12c4c1a"
+          },
+          "loop": {
+            "start": 48,
+            "end": 335
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Brass",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Rudra no Hihou (Rudra's Treasure)"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 31440,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "brass.brr.wav",
+            "codec": "wav",
+            "sha256": "fd4c910e667f5cc960f553e7927a25a6f5d13018e950cc795b2d0c1f9850949e"
+          },
+          "loop": {
+            "start": 6144,
+            "end": 12639
+          }
+        }
+      ]
+    }
+  }
+}

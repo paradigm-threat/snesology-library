@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth9",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Gradius III"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 41875,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "synth9.wav",
+            "codec": "wav",
+            "sha256": "e967f59fcc2287f54d1d047f3b7292356008f8ed8653420e3feb3189577efff9"
+          },
+          "loop": {
+            "start": 48,
+            "end": 127
+          }
+        }
+      ]
+    }
+  }
+}

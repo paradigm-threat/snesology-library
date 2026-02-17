@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise2",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Kirby's Dream Land 3"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "noise2.wav",
+            "codec": "wav",
+            "sha256": "5d6c1476ccc31bacd9507f1a587c72224b1f12f49ea3f5e9b9ddecf40d797382"
+          },
+          "loop": {
+            "start": 1024,
+            "end": 1999
+          }
+        }
+      ]
+    }
+  }
+}

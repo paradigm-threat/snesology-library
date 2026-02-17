@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Mallet",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Mario Paint"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25080,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "mallet.wav",
+            "codec": "wav",
+            "sha256": "6aad137e567fbc227f7215c234c6219505ddea1234cd583abe626fdc68071ab9"
+          },
+          "loop": {
+            "start": 2048,
+            "end": 2095
+          }
+        }
+      ]
+    }
+  }
+}

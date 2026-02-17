@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise2",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Mega Man X"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "noise2.brr.wav",
+            "codec": "wav",
+            "sha256": "994f844722ba58fcd3725d99eb0dbbd8bd8cfdbc8db3c4430b629e70365fe36c"
+          },
+          "loop": {
+            "start": 96,
+            "end": 127
+          }
+        }
+      ]
+    }
+  }
+}

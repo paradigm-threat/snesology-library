@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Musicbox",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Earthbound"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 40100,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "musicbox.wav",
+            "codec": "wav",
+            "sha256": "73e2ef48a41acf1fa2510dbd67201d7757bfb55a58451dd750d4084f056a1d09"
+          },
+          "loop": {
+            "start": 1136,
+            "end": 2735
+          }
+        }
+      ]
+    }
+  }
+}

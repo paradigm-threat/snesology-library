@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise soft",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Final Fantasy Mystic Quest"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "noise_soft.wav",
+            "codec": "wav",
+            "sha256": "a02c25fe265e6286c569e893479c7cdb9dad6d431cc73e4fcba0a6c269a341a8"
+          },
+          "loop": {
+            "start": 1456,
+            "end": 4111
+          }
+        }
+      ]
+    }
+  }
+}

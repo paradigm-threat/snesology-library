@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Horn synth",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Lufia & The Fortress of Doom"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "horn_synth.wav",
+            "codec": "wav",
+            "sha256": "a063e41a2858ac7a12fafd141cbc86a58d916470fd3286995fd411a823c6e79e"
+          },
+          "loop": {
+            "start": 1328,
+            "end": 1375
+          }
+        }
+      ]
+    }
+  }
+}

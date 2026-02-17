@@ -1,0 +1,40 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Lufia & The Fortress of Doom"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "noise.wav",
+            "codec": "wav",
+            "sha256": "71d3787c56d5e054a779705bd33bea36ca982139a0d4af2a4388830ae9eafb5a"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Vocoder",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Axelay"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25307,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "vocoder.wav",
+            "codec": "wav",
+            "sha256": "cd2202e445f35993123fb0f44eb61f2508b86b2330ff9f0430a6f7f83b00ece1"
+          }
+        }
+      ]
+    }
+  }
+}

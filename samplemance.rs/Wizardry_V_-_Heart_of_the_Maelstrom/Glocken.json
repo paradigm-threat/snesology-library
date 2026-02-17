@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Glocken",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Wizardry V - Heart of the Maelstrom"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 37645,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "glocken.wav",
+            "codec": "wav",
+            "sha256": "98b231114bbe89ceafc70f62c7e0fe0c6745fd171322db5833440803eb4953a8"
+          },
+          "loop": {
+            "start": 688,
+            "end": 975
+          }
+        }
+      ]
+    }
+  }
+}

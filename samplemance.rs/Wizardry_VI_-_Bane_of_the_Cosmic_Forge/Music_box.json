@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Music box",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Wizardry VI - Bane of the Cosmic Forge"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 37239,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "music_box.wav",
+            "codec": "wav",
+            "sha256": "76dee1d88623b9edbef10c758a35ed88d7972c50da9becdc5581a68662e7ab4d"
+          },
+          "loop": {
+            "start": 1216,
+            "end": 1855
+          }
+        }
+      ]
+    }
+  }
+}

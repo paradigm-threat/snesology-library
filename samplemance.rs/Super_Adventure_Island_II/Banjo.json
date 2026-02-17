@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Banjo",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Super Adventure Island II"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "banjo.wav",
+            "codec": "wav",
+            "sha256": "808ad4c3757a21fcdf695bf9df18bf0082fa8fa0ae6e10996c012b132a3e6bf4"
+          },
+          "loop": {
+            "start": 336,
+            "end": 383
+          }
+        }
+      ]
+    }
+  }
+}

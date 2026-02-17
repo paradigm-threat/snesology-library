@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth sine",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Ys IV - Mask of the Sun"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 33477,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "synth_sine.wav",
+            "codec": "wav",
+            "sha256": "ead720ec99e1b255da791b4f3435d69d38736f455176562eaecaa0f24c72ff0c"
+          },
+          "loop": {
+            "start": 112,
+            "end": 175
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Zither",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Fire Emblem - Genealogy of the Holy War"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 31371,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "zither.wav",
+            "codec": "wav",
+            "sha256": "cf2e9cf2241d19540e5258ab359e02d0006800e4975194221228dacdd7b32708"
+          },
+          "loop": {
+            "start": 4480,
+            "end": 5199
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth buzzer",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Qbert 3"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 41875,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "synth_buzzer.wav",
+            "codec": "wav",
+            "sha256": "8b6cadbe113dde6cc64b40fe70dd81ac52fd7df5caca3e7558bf3d1502169ca1"
+          },
+          "loop": {
+            "start": 368,
+            "end": 687
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Koto",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Sid Meier's Civilization"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "koto.wav",
+            "codec": "wav",
+            "sha256": "09d8de442d33a83ae525a1c0c536fafdb9e275d3e76da0d20082e2b1720589b2"
+          },
+          "loop": {
+            "start": 2304,
+            "end": 2399
+          }
+        }
+      ]
+    }
+  }
+}

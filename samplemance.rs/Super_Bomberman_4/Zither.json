@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Zither",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Super Bomberman 4"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "zither.wav",
+            "codec": "wav",
+            "sha256": "5d0d4ba35b3db9157d17182c1cce3bd01fc9c573c6aa08f02f984a285834dd51"
+          },
+          "loop": {
+            "start": 3552,
+            "end": 3599
+          }
+        }
+      ]
+    }
+  }
+}

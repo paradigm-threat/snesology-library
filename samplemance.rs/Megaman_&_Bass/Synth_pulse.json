@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth pulse",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Megaman & Bass"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 33477,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "synth_pulse.wav",
+            "codec": "wav",
+            "sha256": "f6161579c1befad8363241e614ddfb4bf672d4b36a0aef54b7a92d3de81cedc5"
+          },
+          "loop": {
+            "start": 48,
+            "end": 111
+          }
+        }
+      ]
+    }
+  }
+}

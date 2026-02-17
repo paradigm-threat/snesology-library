@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth1 sine",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Claymates"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 41875,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "synth1_sine.wav",
+            "codec": "wav",
+            "sha256": "dc3b0522b8dd79637daa0a108b28b7c425ac90459937ae96589ed1c9d625d7f4"
+          },
+          "loop": {
+            "start": 48,
+            "end": 127
+          }
+        }
+      ]
+    }
+  }
+}

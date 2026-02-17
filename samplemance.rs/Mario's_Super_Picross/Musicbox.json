@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Musicbox",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Mario's Super Picross"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 44126,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "musicbox.wav",
+            "codec": "wav",
+            "sha256": "ff228d38893d60cd4ba5b381c2cdc08393b6d2fa44dc26580cb4f999a94738e4"
+          },
+          "loop": {
+            "start": 1536,
+            "end": 2463
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Music box",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Stunt Race FX"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 33477,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "music_box.wav",
+            "codec": "wav",
+            "sha256": "95da383f20a5560b9b7eb6f1cd0a385ffee1356542a3d510a9c96b52b2175407"
+          },
+          "loop": {
+            "start": 416,
+            "end": 431
+          }
+        }
+      ]
+    }
+  }
+}

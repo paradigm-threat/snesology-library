@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Harp",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Plok"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 24454,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "harp.wav",
+            "codec": "wav",
+            "sha256": "52721bcd60302db4f949fbde820915fa3092ec9fe941a72d43681f68cdcb03b2"
+          },
+          "loop": {
+            "start": 704,
+            "end": 1007
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Wave9",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Super Puyo Puyo 2"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "wave9.wav",
+            "codec": "wav",
+            "sha256": "d3823d6f0252eb54d02fc9d584ef6d50ef79ba94d18773778194547b07b2390a"
+          },
+          "loop": {
+            "start": 16,
+            "end": 48
+          }
+        }
+      ]
+    }
+  }
+}

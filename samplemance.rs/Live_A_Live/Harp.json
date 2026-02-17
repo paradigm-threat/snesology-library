@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Harp",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Live A Live"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "harp.wav",
+            "codec": "wav",
+            "sha256": "28b7d57daa4eb74de111086b3b812aa4dd5cd25aa1502b5a1593d7abff7f2cc4"
+          },
+          "loop": {
+            "start": 2256,
+            "end": 2911
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Timpani",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Doom"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 23040,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "timpani.wav",
+            "codec": "wav",
+            "sha256": "3ef67d7553b302910ec3a958210a1a4d333387e7174fe8bf69a44452592ae814"
+          },
+          "loop": {
+            "start": 2000,
+            "end": 2879
+          }
+        }
+      ]
+    }
+  }
+}

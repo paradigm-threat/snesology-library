@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth squelcher",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Qbert 3"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 31088,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "synth_squelcher.wav",
+            "codec": "wav",
+            "sha256": "cdb6468c26d4ed928c26f098f8771812f789e23efffa5d4981ad17592347ad0a"
+          },
+          "loop": {
+            "start": 448,
+            "end": 863
+          }
+        }
+      ]
+    }
+  }
+}

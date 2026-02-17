@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth1",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Zombies Ate My Neighbors"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "synth1.wav",
+            "codec": "wav",
+            "sha256": "8299c246bab4ed2f58f1e12a2a75ec3e2cc8a460a67505bb0f499849762fa336"
+          },
+          "loop": {
+            "start": 0,
+            "end": 95
+          }
+        }
+      ]
+    }
+  }
+}

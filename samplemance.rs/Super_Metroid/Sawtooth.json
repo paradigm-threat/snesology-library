@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Sawtooth",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Super Metroid"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Sawtooth.brr.wav",
+            "codec": "wav",
+            "sha256": "b83fdaef7a52dd38f61b3b628faa485cebbbd8ce29225c1ded01e9786998211c"
+          },
+          "loop": {
+            "start": 48,
+            "end": 159
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Shamisen",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Star Ocean"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "shamisen.wav",
+            "codec": "wav",
+            "sha256": "22c66c40bfd4b7cec4281ba22540aff49a450ca2705b57375a9695bf49aecb3a"
+          },
+          "loop": {
+            "start": 1232,
+            "end": 1327
+          }
+        }
+      ]
+    }
+  }
+}

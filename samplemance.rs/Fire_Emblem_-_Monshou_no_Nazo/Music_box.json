@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Music box",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Fire Emblem - Monshou no Nazo"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 33477,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "music_box.wav",
+            "codec": "wav",
+            "sha256": "4f3ed11f86320ad58fde448421f85c8358dfd59dd842928ae3807b2c5b590a2c"
+          },
+          "loop": {
+            "start": 2112,
+            "end": 2127
+          }
+        }
+      ]
+    }
+  }
+}

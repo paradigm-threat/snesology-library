@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth sine",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Ranma \u00c2\u00bd - Hard Battle"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "synth_sine.wav",
+            "codec": "wav",
+            "sha256": "3d61aa10314e12311a0344ab198019466c694076bfa2a134bb19c95f7a6de568"
+          },
+          "loop": {
+            "start": 16,
+            "end": 63
+          }
+        }
+      ]
+    }
+  }
+}

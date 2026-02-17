@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Alarm",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Super Metroid"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Alarm.brr.wav",
+            "codec": "wav",
+            "sha256": "2a0d1b188806c5fbc11cc8d22ce27069e6419fdf37e608d23e17e4a0103c3464"
+          },
+          "loop": {
+            "start": 64,
+            "end": 1231
+          }
+        }
+      ]
+    }
+  }
+}

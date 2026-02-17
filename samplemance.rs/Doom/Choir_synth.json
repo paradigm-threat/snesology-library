@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Choir synth",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Doom"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 23040,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "choir_synth.wav",
+            "codec": "wav",
+            "sha256": "8cb2118a6c263eba1d29b9ee24f369798e45dcd91b5a5bf909509946d83e32cb"
+          },
+          "loop": {
+            "start": 128,
+            "end": 5247
+          }
+        }
+      ]
+    }
+  }
+}

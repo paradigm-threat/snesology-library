@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Harpsichord",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Mega Man 7"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Harpsichord.wav",
+            "codec": "wav",
+            "sha256": "bb0d0addb31a2269f7b4ca8c232f8928501685e70de2b272b8672510f2dc0920"
+          },
+          "loop": {
+            "start": 448,
+            "end": 543
+          }
+        }
+      ]
+    }
+  }
+}

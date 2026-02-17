@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Clavi",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "E.V.O. - Search for Eden"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "clavi.wav",
+            "codec": "wav",
+            "sha256": "9f5544e15497e9ce6f8126e7a9364591fb2897190769c2535caf169136dfd17d"
+          },
+          "loop": {
+            "start": 144,
+            "end": 239
+          }
+        }
+      ]
+    }
+  }
+}

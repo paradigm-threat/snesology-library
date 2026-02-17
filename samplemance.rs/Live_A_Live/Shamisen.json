@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Shamisen",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Live A Live"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "shamisen.wav",
+            "codec": "wav",
+            "sha256": "c0ac4dd50b0186f068e395b9b3787099186717621eff460afe77fa6ee51bb24a"
+          },
+          "loop": {
+            "start": 5920,
+            "end": 6399
+          }
+        }
+      ]
+    }
+  }
+}

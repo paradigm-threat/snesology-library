@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Mallet",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Lufia II - Rise of the Sinistrals"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "mallet.wav",
+            "codec": "wav",
+            "sha256": "d7c3c5d649c3a200639e0c9895fbf75553aa647bda6a71b51190096425834d14"
+          },
+          "loop": {
+            "start": 528,
+            "end": 575
+          }
+        }
+      ]
+    }
+  }
+}

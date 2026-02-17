@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth detuned",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Mega Man X"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "synth_detuned.wav",
+            "codec": "wav",
+            "sha256": "ff09d9a98c05e97678c3d8c28928caf16b0b7a3c011d7d6590c1cb0ba68dad2b"
+          },
+          "loop": {
+            "start": 1120,
+            "end": 5791
+          }
+        }
+      ]
+    }
+  }
+}

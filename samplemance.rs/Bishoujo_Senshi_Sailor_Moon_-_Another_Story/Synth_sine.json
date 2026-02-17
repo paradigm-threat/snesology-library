@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth sine",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Bishoujo Senshi Sailor Moon - Another Story"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 33477,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "synth_sine.wav",
+            "codec": "wav",
+            "sha256": "1e971e4d2ba3190342b0f906cb5b529a2a9fbeabf40a89ad6b805a8e02131280"
+          },
+          "loop": {
+            "start": 64,
+            "end": 127
+          }
+        }
+      ]
+    }
+  }
+}

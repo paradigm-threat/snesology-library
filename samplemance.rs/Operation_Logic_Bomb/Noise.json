@@ -1,0 +1,40 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Operation Logic Bomb"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "noise.brr.wav",
+            "codec": "wav",
+            "sha256": "7f19bdbcc8089e0b86acb11504ee795b68d80b947ac2fe7414e8121eaf107333"
+          }
+        }
+      ]
+    }
+  }
+}

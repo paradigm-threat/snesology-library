@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Super Bomberman 5"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 22833,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "synth_pad.wav",
+            "codec": "wav",
+            "sha256": "47186a011fea38efc3e61a94915be263fb42fbe0d1e48189ec944992c212ca36"
+          },
+          "loop": {
+            "start": 32,
+            "end": 1471
+          }
+        }
+      ]
+    }
+  }
+}

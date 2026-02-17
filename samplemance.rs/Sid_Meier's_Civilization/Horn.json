@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Horn",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Sid Meier's Civilization"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "horn.wav",
+            "codec": "wav",
+            "sha256": "722a9a1618b0035d1696ebc08c2eebe88a72b35ecebeb96a7190c7b30289130e"
+          },
+          "loop": {
+            "start": 1088,
+            "end": 1855
+          }
+        }
+      ]
+    }
+  }
+}

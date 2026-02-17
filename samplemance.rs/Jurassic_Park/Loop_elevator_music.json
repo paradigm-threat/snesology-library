@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Loop elevator music",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Jurassic Park"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "loop_elevator_music.wav",
+            "codec": "wav",
+            "sha256": "60d2f390237f9fcf53fe1896844829a187ab719ee8df0eb48a5adb31a78ac051"
+          },
+          "loop": {
+            "start": 16,
+            "end": 56831
+          }
+        }
+      ]
+    }
+  }
+}

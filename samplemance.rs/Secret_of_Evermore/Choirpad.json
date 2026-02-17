@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Choirpad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Secret of Evermore"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 35086,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "choirpad.wav",
+            "codec": "wav",
+            "sha256": "4d78d4b657810befad573da6a789f1242cda1a41412b8324082f6b252854ad3c"
+          },
+          "loop": {
+            "start": 0,
+            "end": 7263
+          }
+        }
+      ]
+    }
+  }
+}

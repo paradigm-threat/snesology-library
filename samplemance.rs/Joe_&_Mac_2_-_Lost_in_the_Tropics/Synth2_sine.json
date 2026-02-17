@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth2 sine",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Joe & Mac 2 - Lost in the Tropics"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 25125,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "synth2_sine.wav",
+            "codec": "wav",
+            "sha256": "fe67478411caf0eb94270e03553da1d58e070040f1f3b31b53e6f31f903d9e82"
+          },
+          "loop": {
+            "start": 32,
+            "end": 79
+          }
+        }
+      ]
+    }
+  }
+}

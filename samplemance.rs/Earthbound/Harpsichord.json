@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Harpsichord",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Earthbound"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 29291,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "harpsichord.wav",
+            "codec": "wav",
+            "sha256": "73deddaa582c7261d0c86cfc48f28feb6df27e889ed1594fc62ad476b4f9b81c"
+          },
+          "loop": {
+            "start": 912,
+            "end": 1023
+          }
+        }
+      ]
+    }
+  }
+}

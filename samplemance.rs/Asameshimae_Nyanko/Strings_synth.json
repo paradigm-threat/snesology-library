@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Strings synth",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Asameshimae Nyanko"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "strings_synth.wav",
+            "codec": "wav",
+            "sha256": "6509265ee117a523eb7ea6b409d304a64ca534dceb6b3c957617bccdced85a73"
+          },
+          "loop": {
+            "start": 80,
+            "end": 5551
+          }
+        }
+      ]
+    }
+  }
+}

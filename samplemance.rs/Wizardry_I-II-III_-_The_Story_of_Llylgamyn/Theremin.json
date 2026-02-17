@@ -1,0 +1,45 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Theremin",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "community",
+    "looped"
+  ],
+  "metadata": {
+    "source": "samplemance.rs",
+    "game": "Wizardry I-II-III - The Story of Llylgamyn"
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 45092,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "theremin.wav",
+            "codec": "wav",
+            "sha256": "556d99103d05d9eb89aef847b9f6c63dfc026a4fe9a2aaecf73740a0d092d3e0"
+          },
+          "loop": {
+            "start": 32,
+            "end": 1231
+          }
+        }
+      ]
+    }
+  }
+}
