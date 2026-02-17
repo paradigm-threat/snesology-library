@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pizz MID",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Front Mission",
+    "snes": {
+      "srcn": 36,
+      "character": "melodic",
+      "pcmLength": 4672,
+      "brrLength": 2628,
+      "hasLoop": true,
+      "loopStartPcm": 4608,
+      "adsr1": 255,
+      "adsr2": 241,
+      "gain": 160,
+      "pitchRegister": 7232
+    },
+    "communityName": "pizz_mid",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pizz_MID_36/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 4608,
+            "end": 4672
+          }
+        }
+      ]
+    }
+  }
+}

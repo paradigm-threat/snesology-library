@@ -1,0 +1,48 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Conga Mute",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wonder Project J",
+    "snes": {
+      "srcn": 130,
+      "character": "one-shot",
+      "pcmLength": 2048,
+      "brrLength": 1152,
+      "hasLoop": false
+    },
+    "communityName": "perc_conga_mute",
+    "matchConfidence": 0.9
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Perc_Conga_Mute_130/sample.mp3",
+            "codec": "mp3"
+          }
+        }
+      ]
+    }
+  }
+}

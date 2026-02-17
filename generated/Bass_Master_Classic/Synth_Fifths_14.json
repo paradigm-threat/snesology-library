@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth Fifths",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bass Master Classic",
+    "snes": {
+      "srcn": 14,
+      "character": "tone",
+      "pcmLength": 400,
+      "brrLength": 225,
+      "hasLoop": true,
+      "loopStartPcm": 224,
+      "adsr1": 203,
+      "adsr2": 238,
+      "gain": 159,
+      "pitchRegister": 8807
+    },
+    "communityName": "synth_fifths",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Synth_Fifths_14/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 224,
+            "end": 400
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Nobunaga no Yabou Zenkokuban",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 9824,
+      "brrLength": 5526,
+      "hasLoop": true,
+      "loopStartPcm": 9600,
+      "adsr1": 0,
+      "adsr2": 227,
+      "gain": 158,
+      "pitchRegister": 1267
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_02/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 9600,
+            "end": 9824
+          }
+        }
+      ]
+    }
+  }
+}

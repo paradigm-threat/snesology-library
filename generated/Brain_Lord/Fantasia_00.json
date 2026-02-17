@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Fantasia",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Brain Lord",
+    "snes": {
+      "srcn": 0,
+      "character": "noise",
+      "pcmLength": 5632,
+      "brrLength": 3168,
+      "hasLoop": true,
+      "loopStartPcm": 3072,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 186,
+      "pitchRegister": 809
+    },
+    "communityName": "fantasia",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Fantasia_00/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3072,
+            "end": 5632
+          }
+        }
+      ]
+    }
+  }
+}

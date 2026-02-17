@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Choir Aah",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Live A Live",
+    "snes": {
+      "srcn": 34,
+      "character": "melodic",
+      "pcmLength": 7376,
+      "brrLength": 4149,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 251,
+      "adsr2": 128,
+      "gain": 160,
+      "pitchRegister": 4692
+    },
+    "communityName": "choir_aah",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Choir_Aah_34/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 48,
+            "end": 7376
+          }
+        }
+      ]
+    }
+  }
+}

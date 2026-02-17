@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Pachinko",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 16992,
+      "brrLength": 9558,
+      "hasLoop": true,
+      "loopStartPcm": 14944,
+      "adsr1": 255,
+      "adsr2": 208,
+      "gain": 208,
+      "pitchRegister": 2048
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_08/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 14944,
+            "end": 16992
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Bass Elec",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Romancing SaGa 2",
+    "snes": {
+      "srcn": 35,
+      "character": "tone",
+      "pcmLength": 2768,
+      "brrLength": 1557,
+      "hasLoop": true,
+      "loopStartPcm": 2192,
+      "adsr1": 255,
+      "adsr2": 238,
+      "gain": 160,
+      "pitchRegister": 2946
+    },
+    "communityName": "bass_elec",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Bass_Elec_35/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 2192,
+            "end": 2768
+          }
+        }
+      ]
+    }
+  }
+}

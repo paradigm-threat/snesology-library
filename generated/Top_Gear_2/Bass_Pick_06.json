@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Bass Pick",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Top Gear 2",
+    "snes": {
+      "srcn": 6,
+      "character": "tone",
+      "pcmLength": 3952,
+      "brrLength": 2223,
+      "hasLoop": true,
+      "loopStartPcm": 3376
+    },
+    "communityName": "bass_pick",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Bass_Pick_06/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3376,
+            "end": 3952
+          }
+        }
+      ]
+    }
+  }
+}

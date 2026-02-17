@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Utopia",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 14800,
+      "brrLength": 8325,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 203,
+      "adsr2": 106,
+      "gain": 184,
+      "pitchRegister": 2250
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_13/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 16,
+            "end": 14800
+          }
+        }
+      ]
+    }
+  }
+}

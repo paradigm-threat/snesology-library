@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Doraemon 3",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 4608,
+      "brrLength": 2592,
+      "hasLoop": true,
+      "loopStartPcm": 4144
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_10/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 4144,
+            "end": 4608
+          }
+        }
+      ]
+    }
+  }
+}

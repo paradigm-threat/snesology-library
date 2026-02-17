@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "English Horn",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bahamut Lagoon",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 7248,
+      "brrLength": 4077,
+      "hasLoop": true,
+      "loopStartPcm": 6576
+    },
+    "communityName": "english_horn",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "English_Horn_09/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 6576,
+            "end": 7248
+          }
+        }
+      ]
+    }
+  }
+}

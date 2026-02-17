@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Turrican 2",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 3072,
+      "brrLength": 1728,
+      "hasLoop": true,
+      "adsr1": 0,
+      "adsr2": 66,
+      "gain": 255,
+      "pitchRegister": 2304
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Tone_05/sample.mp3",
+            "codec": "mp3"
+          }
+        }
+      ]
+    }
+  }
+}

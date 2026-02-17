@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Goodluck",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Star Fox",
+    "snes": {
+      "srcn": 40,
+      "character": "one-shot",
+      "pcmLength": 6800,
+      "brrLength": 3825,
+      "hasLoop": false,
+      "adsr1": 254,
+      "adsr2": 224,
+      "gain": 127,
+      "pitchRegister": 1275
+    },
+    "communityName": "sfx_GoodLuck",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "SFX_Goodluck_40/sample.mp3",
+            "codec": "mp3"
+          }
+        }
+      ]
+    }
+  }
+}

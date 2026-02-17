@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Downtown Nekketsu Baseball Monog",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 9200,
+      "brrLength": 5175,
+      "hasLoop": true,
+      "loopStartPcm": 7184,
+      "adsr1": 255,
+      "adsr2": 228,
+      "gain": 184,
+      "pitchRegister": 4586
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_13/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 7184,
+            "end": 9200
+          }
+        }
+      ]
+    }
+  }
+}

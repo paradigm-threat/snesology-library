@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Brass",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Secret of Mana",
+    "snes": {
+      "srcn": 33,
+      "character": "melodic",
+      "pcmLength": 4928,
+      "brrLength": 2772,
+      "hasLoop": true,
+      "loopStartPcm": 4848,
+      "adsr1": 239,
+      "adsr2": 208,
+      "gain": 160,
+      "pitchRegister": 4560
+    },
+    "communityName": "brass",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Brass_33/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 4848,
+            "end": 4928
+          }
+        }
+      ]
+    }
+  }
+}

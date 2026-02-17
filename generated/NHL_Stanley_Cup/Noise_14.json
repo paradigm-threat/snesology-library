@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "NHL Stanley Cup",
+    "snes": {
+      "srcn": 14,
+      "character": "noise",
+      "pcmLength": 6224,
+      "brrLength": 3501,
+      "hasLoop": true,
+      "loopStartPcm": 2592
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Noise_14/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 2592,
+            "end": 6224
+          }
+        }
+      ]
+    }
+  }
+}

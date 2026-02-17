@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Piana",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Megaman and Bass",
+    "snes": {
+      "srcn": 50,
+      "character": "melodic",
+      "pcmLength": 10160,
+      "brrLength": 5715,
+      "hasLoop": true,
+      "loopStartPcm": 8144,
+      "adsr1": 255,
+      "adsr2": 201,
+      "gain": 184,
+      "pitchRegister": 240
+    },
+    "communityName": "piana",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Piana_50/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 8144,
+            "end": 10160
+          }
+        }
+      ]
+    }
+  }
+}

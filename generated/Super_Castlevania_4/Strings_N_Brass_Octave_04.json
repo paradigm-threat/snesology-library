@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Strings N Brass Octave",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Castlevania 4",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 8704,
+      "brrLength": 4896,
+      "hasLoop": true,
+      "loopStartPcm": 3088,
+      "adsr1": 148,
+      "adsr2": 232,
+      "gain": 0,
+      "pitchRegister": 640
+    },
+    "communityName": "strings_n_brass_octave",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Strings_N_Brass_Octave_04/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3088,
+            "end": 8704
+          }
+        }
+      ]
+    }
+  }
+}

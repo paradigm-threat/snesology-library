@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Strings3 LO",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Treasure Hunter G",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 8848,
+      "brrLength": 4977,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 212,
+      "adsr2": 168,
+      "gain": 191,
+      "pitchRegister": 2585
+    },
+    "communityName": "strings3_lo",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Strings3_LO_06/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 16,
+            "end": 8848
+          }
+        }
+      ]
+    }
+  }
+}

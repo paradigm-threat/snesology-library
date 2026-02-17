@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Choir",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Run Saber",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 4816,
+      "brrLength": 2709,
+      "hasLoop": true,
+      "loopStartPcm": 2992,
+      "adsr1": 250,
+      "adsr2": 228,
+      "gain": 184,
+      "pitchRegister": 855
+    },
+    "communityName": "choir",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Choir_07/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 2992,
+            "end": 4816
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Top Management 2",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 1984,
+      "brrLength": 1116,
+      "hasLoop": true,
+      "loopStartPcm": 1904,
+      "adsr1": 0,
+      "adsr2": 229,
+      "gain": 158,
+      "pitchRegister": 5803
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Tone_08/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 1904,
+            "end": 1984
+          }
+        }
+      ]
+    }
+  }
+}

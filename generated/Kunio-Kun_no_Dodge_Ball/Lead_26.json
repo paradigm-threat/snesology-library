@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kunio-Kun no Dodge Ball",
+    "snes": {
+      "srcn": 26,
+      "character": "melodic",
+      "pcmLength": 18432,
+      "brrLength": 10368,
+      "hasLoop": true,
+      "loopStartPcm": 16592,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 2242
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_26/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 16592,
+            "end": 18432
+          }
+        }
+      ]
+    }
+  }
+}

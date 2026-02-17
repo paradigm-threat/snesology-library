@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dirt Trax FX",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 4048,
+      "brrLength": 2277,
+      "hasLoop": true,
+      "loopStartPcm": 3168,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 159,
+      "pitchRegister": 994
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_07/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3168,
+            "end": 4048
+          }
+        }
+      ]
+    }
+  }
+}

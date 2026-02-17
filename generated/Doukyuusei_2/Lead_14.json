@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Doukyuusei 2",
+    "snes": {
+      "srcn": 14,
+      "character": "melodic",
+      "pcmLength": 9104,
+      "brrLength": 5121,
+      "hasLoop": true,
+      "loopStartPcm": 9056
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_14/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 9056,
+            "end": 9104
+          }
+        }
+      ]
+    }
+  }
+}

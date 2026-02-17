@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Kick3",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Top Gear 2",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 3520,
+      "brrLength": 1980,
+      "hasLoop": true,
+      "loopStartPcm": 1760
+    },
+    "communityName": "perc_kick3",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Perc_Kick3_01/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 1760,
+            "end": 3520
+          }
+        }
+      ]
+    }
+  }
+}

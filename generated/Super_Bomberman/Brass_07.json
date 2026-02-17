@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Brass",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Bomberman",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 6608,
+      "brrLength": 3717,
+      "hasLoop": true,
+      "loopStartPcm": 64,
+      "adsr1": 207,
+      "adsr2": 173,
+      "gain": 180,
+      "pitchRegister": 1723
+    },
+    "communityName": "brass",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Brass_07/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 64,
+            "end": 6608
+          }
+        }
+      ]
+    }
+  }
+}

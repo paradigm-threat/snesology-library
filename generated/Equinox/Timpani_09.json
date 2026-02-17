@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Timpani",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Equinox",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 3744,
+      "brrLength": 2106,
+      "hasLoop": true,
+      "loopStartPcm": 1984,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 63,
+      "pitchRegister": 1072
+    },
+    "communityName": "timpani",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Timpani_09/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 1984,
+            "end": 3744
+          }
+        }
+      ]
+    }
+  }
+}

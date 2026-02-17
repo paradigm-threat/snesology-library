@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Shinri Game 3",
+    "snes": {
+      "srcn": 7,
+      "character": "tone",
+      "pcmLength": 3888,
+      "brrLength": 2187,
+      "hasLoop": true,
+      "loopStartPcm": 2672,
+      "adsr1": 255,
+      "adsr2": 240,
+      "gain": 176,
+      "pitchRegister": 3843
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Tone_07/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 2672,
+            "end": 3888
+          }
+        }
+      ]
+    }
+  }
+}

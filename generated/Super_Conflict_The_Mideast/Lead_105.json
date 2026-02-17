@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Conflict: The Mideast",
+    "snes": {
+      "srcn": 105,
+      "character": "melodic",
+      "pcmLength": 7568,
+      "brrLength": 4257,
+      "hasLoop": true,
+      "loopStartPcm": 41104
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_105/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 41104,
+            "end": 7568
+          }
+        }
+      ]
+    }
+  }
+}

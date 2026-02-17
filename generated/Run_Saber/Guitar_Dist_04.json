@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Guitar Dist",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Run Saber",
+    "snes": {
+      "srcn": 4,
+      "character": "tone",
+      "pcmLength": 1584,
+      "brrLength": 891,
+      "hasLoop": true,
+      "loopStartPcm": 864,
+      "adsr1": 255,
+      "adsr2": 226,
+      "gain": 184,
+      "pitchRegister": 3391
+    },
+    "communityName": "guitar_dist",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Guitar_Dist_04/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 864,
+            "end": 1584
+          }
+        }
+      ]
+    }
+  }
+}

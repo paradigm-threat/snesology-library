@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Marimba",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Batman Forever",
+    "snes": {
+      "srcn": 24,
+      "character": "melodic",
+      "pcmLength": 5984,
+      "brrLength": 3366,
+      "hasLoop": true,
+      "loopStartPcm": 4896,
+      "adsr1": 190,
+      "adsr2": 15,
+      "gain": 20,
+      "pitchRegister": 1217
+    },
+    "communityName": "marimba",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Marimba_24/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 4896,
+            "end": 5984
+          }
+        }
+      ]
+    }
+  }
+}

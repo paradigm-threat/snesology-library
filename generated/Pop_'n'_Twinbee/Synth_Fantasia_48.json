@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth Fantasia",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pop 'n' Twinbee",
+    "snes": {
+      "srcn": 48,
+      "character": "melodic",
+      "pcmLength": 9008,
+      "brrLength": 5067,
+      "hasLoop": true,
+      "loopStartPcm": 4960,
+      "adsr1": 143,
+      "adsr2": 212,
+      "gain": 184,
+      "pitchRegister": 3604
+    },
+    "communityName": "synth_fantasia",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Synth_Fantasia_48/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 4960,
+            "end": 9008
+          }
+        }
+      ]
+    }
+  }
+}

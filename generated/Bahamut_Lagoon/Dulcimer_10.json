@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Dulcimer",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bahamut Lagoon",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 13040,
+      "brrLength": 7335,
+      "hasLoop": true,
+      "loopStartPcm": 11456
+    },
+    "communityName": "dulcimer",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Dulcimer_10/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 11456,
+            "end": 13040
+          }
+        }
+      ]
+    }
+  }
+}

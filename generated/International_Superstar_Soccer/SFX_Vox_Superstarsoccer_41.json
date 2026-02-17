@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Vox Superstarsoccer",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "International Superstar Soccer",
+    "snes": {
+      "srcn": 41,
+      "character": "noise",
+      "pcmLength": 14352,
+      "brrLength": 8073,
+      "hasLoop": true,
+      "loopStartPcm": 12672
+    },
+    "communityName": "sfx_vox_SuperstarSoccer",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "SFX_Vox_Superstarsoccer_41/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 12672,
+            "end": 14352
+          }
+        }
+      ]
+    }
+  }
+}

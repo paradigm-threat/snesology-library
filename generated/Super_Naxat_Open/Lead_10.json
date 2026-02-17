@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Naxat Open",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 4080,
+      "brrLength": 2295,
+      "hasLoop": true,
+      "loopStartPcm": 4016,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 185,
+      "pitchRegister": 2149
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_10/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 4016,
+            "end": 4080
+          }
+        }
+      ]
+    }
+  }
+}

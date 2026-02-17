@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Air Management 2: Koukuu Ou wo M",
+    "snes": {
+      "srcn": 32,
+      "character": "melodic",
+      "pcmLength": 11760,
+      "brrLength": 6615,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 248,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1547
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_32/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 16,
+            "end": 11760
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Guitar Maj",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earthbound",
+    "snes": {
+      "srcn": 41,
+      "character": "noise",
+      "pcmLength": 9088,
+      "brrLength": 5112,
+      "hasLoop": true,
+      "loopStartPcm": 1968
+    },
+    "communityName": "guitar_maj",
+    "matchConfidence": 0.9
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Guitar_Maj_41/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 1968,
+            "end": 9088
+          }
+        }
+      ]
+    }
+  }
+}

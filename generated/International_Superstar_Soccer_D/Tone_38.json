@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "International Superstar Soccer D",
+    "snes": {
+      "srcn": 38,
+      "character": "tone",
+      "pcmLength": 2288,
+      "brrLength": 1287,
+      "hasLoop": true,
+      "loopStartPcm": 1552,
+      "adsr1": 143,
+      "adsr2": 244,
+      "gain": 165,
+      "pitchRegister": 919
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Tone_38/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 1552,
+            "end": 2288
+          }
+        }
+      ]
+    }
+  }
+}

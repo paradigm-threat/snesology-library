@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Clarinet",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Doom",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 208,
+      "brrLength": 117,
+      "hasLoop": true,
+      "loopStartPcm": 80,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 14,
+      "pitchRegister": 5342
+    },
+    "communityName": "clarinet",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Clarinet_01/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 80,
+            "end": 208
+          }
+        }
+      ]
+    }
+  }
+}

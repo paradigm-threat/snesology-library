@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Rise of the Robots",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 26096,
+      "brrLength": 14679,
+      "hasLoop": true,
+      "loopStartPcm": 14560,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 1011
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_02/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 14560,
+            "end": 26096
+          }
+        }
+      ]
+    }
+  }
+}

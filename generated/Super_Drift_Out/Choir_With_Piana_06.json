@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Choir With Piana",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Drift Out",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 4704,
+      "brrLength": 2646,
+      "hasLoop": true,
+      "loopStartPcm": 2448,
+      "adsr1": 255,
+      "adsr2": 239,
+      "gain": 184,
+      "pitchRegister": 3007
+    },
+    "communityName": "choir_with_piana",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Choir_With_Piana_06/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 2448,
+            "end": 4704
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Sangokushi",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 3584,
+      "brrLength": 2016,
+      "hasLoop": true,
+      "loopStartPcm": 3376,
+      "adsr1": 0,
+      "adsr2": 195,
+      "gain": 158,
+      "pitchRegister": 4986
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Tone_01/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3376,
+            "end": 3584
+          }
+        }
+      ]
+    }
+  }
+}

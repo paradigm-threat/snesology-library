@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Strings HI",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cybernator",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 8224,
+      "brrLength": 4626,
+      "hasLoop": true,
+      "loopStartPcm": 3920,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 189,
+      "pitchRegister": 272
+    },
+    "communityName": "strings_hi",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Strings_HI_04/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3920,
+            "end": 8224
+          }
+        }
+      ]
+    }
+  }
+}

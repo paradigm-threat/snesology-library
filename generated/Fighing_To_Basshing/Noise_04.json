@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fighing To Basshing",
+    "snes": {
+      "srcn": 4,
+      "character": "noise",
+      "pcmLength": 5680,
+      "brrLength": 3195,
+      "hasLoop": true,
+      "loopStartPcm": 4064,
+      "adsr1": 255,
+      "adsr2": 238,
+      "gain": 184,
+      "pitchRegister": 1738
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Noise_04/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 4064,
+            "end": 5680
+          }
+        }
+      ]
+    }
+  }
+}

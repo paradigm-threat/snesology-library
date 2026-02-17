@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sound Novel Tsukuru",
+    "snes": {
+      "srcn": 44,
+      "character": "noise",
+      "pcmLength": 8176,
+      "brrLength": 4599,
+      "hasLoop": true,
+      "loopStartPcm": 64,
+      "adsr1": 245,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 985
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Noise_44/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 64,
+            "end": 8176
+          }
+        }
+      ]
+    }
+  }
+}

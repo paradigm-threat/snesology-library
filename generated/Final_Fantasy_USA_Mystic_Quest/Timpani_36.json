@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Timpani",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Final Fantasy USA: Mystic Quest",
+    "snes": {
+      "srcn": 36,
+      "character": "melodic",
+      "pcmLength": 4848,
+      "brrLength": 2727,
+      "hasLoop": true,
+      "loopStartPcm": 3984,
+      "adsr1": 255,
+      "adsr2": 178,
+      "gain": 160,
+      "pitchRegister": 1366
+    },
+    "communityName": "timpani",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Timpani_36/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3984,
+            "end": 4848
+          }
+        }
+      ]
+    }
+  }
+}

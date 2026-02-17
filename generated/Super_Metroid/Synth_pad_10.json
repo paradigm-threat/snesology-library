@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Metroid",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 6096,
+      "brrLength": 3429,
+      "hasLoop": true,
+      "loopStartPcm": 1536
+    },
+    "communityName": "Synth Pad",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Synth_pad_10/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 1536,
+            "end": 6096
+          }
+        }
+      ]
+    }
+  }
+}

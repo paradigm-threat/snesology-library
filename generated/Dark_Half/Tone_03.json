@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dark Half",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 3648,
+      "brrLength": 2052,
+      "hasLoop": true,
+      "loopStartPcm": 1552,
+      "adsr1": 0,
+      "adsr2": 200,
+      "gain": 158,
+      "pitchRegister": 937
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Tone_03/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 1552,
+            "end": 3648
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Goal!",
+    "snes": {
+      "srcn": 243,
+      "character": "melodic",
+      "pcmLength": 15344,
+      "brrLength": 8631,
+      "hasLoop": true,
+      "loopStartPcm": 14672
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_243/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 14672,
+            "end": 15344
+          }
+        }
+      ]
+    }
+  }
+}

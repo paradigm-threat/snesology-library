@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Maten Densetsu",
+    "snes": {
+      "srcn": 23,
+      "character": "noise",
+      "pcmLength": 4448,
+      "brrLength": 2502,
+      "hasLoop": true,
+      "loopStartPcm": 3392
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Noise_23/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3392,
+            "end": 4448
+          }
+        }
+      ]
+    }
+  }
+}

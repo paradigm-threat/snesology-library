@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Oboe",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Breath of Fire",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 1744,
+      "brrLength": 981,
+      "hasLoop": true,
+      "loopStartPcm": 1600,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 178,
+      "pitchRegister": 6080
+    },
+    "communityName": "oboe",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Oboe_08/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 1600,
+            "end": 1744
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Estopolis Denki",
+    "snes": {
+      "srcn": 54,
+      "character": "noise",
+      "pcmLength": 4064,
+      "brrLength": 2286,
+      "hasLoop": true,
+      "loopStartPcm": 3424,
+      "adsr1": 255,
+      "adsr2": 243,
+      "gain": 0,
+      "pitchRegister": 2560
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Noise_54/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3424,
+            "end": 4064
+          }
+        }
+      ]
+    }
+  }
+}

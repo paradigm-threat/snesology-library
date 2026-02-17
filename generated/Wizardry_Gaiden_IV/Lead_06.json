@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wizardry Gaiden IV",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 4064,
+      "brrLength": 2286,
+      "hasLoop": true,
+      "loopStartPcm": 2976,
+      "adsr1": 0,
+      "adsr2": 242,
+      "gain": 159,
+      "pitchRegister": 1825
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_06/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 2976,
+            "end": 4064
+          }
+        }
+      ]
+    }
+  }
+}

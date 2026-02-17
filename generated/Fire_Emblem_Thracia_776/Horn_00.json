@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Horn",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fire Emblem Thracia 776",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 13952,
+      "brrLength": 7848,
+      "hasLoop": true,
+      "loopStartPcm": 13856,
+      "adsr1": 168,
+      "adsr2": 192,
+      "gain": 184,
+      "pitchRegister": 0
+    },
+    "communityName": "horn",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Horn_00/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 13856,
+            "end": 13952
+          }
+        }
+      ]
+    }
+  }
+}

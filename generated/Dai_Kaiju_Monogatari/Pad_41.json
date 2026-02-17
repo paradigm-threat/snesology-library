@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dai Kaiju Monogatari",
+    "snes": {
+      "srcn": 41,
+      "character": "melodic",
+      "pcmLength": 11296,
+      "brrLength": 6354,
+      "hasLoop": true,
+      "loopStartPcm": 8144,
+      "adsr1": 0,
+      "adsr2": 131,
+      "gain": 158,
+      "pitchRegister": 2738
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_41/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 8144,
+            "end": 11296
+          }
+        }
+      ]
+    }
+  }
+}

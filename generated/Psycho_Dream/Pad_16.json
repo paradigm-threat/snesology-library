@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Psycho Dream",
+    "snes": {
+      "srcn": 16,
+      "character": "melodic",
+      "pcmLength": 13344,
+      "brrLength": 7506,
+      "hasLoop": true,
+      "loopStartPcm": 10368,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2143
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_16/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 10368,
+            "end": 13344
+          }
+        }
+      ]
+    }
+  }
+}

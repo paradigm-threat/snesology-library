@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synthlead Fantasia",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kirby Super Star",
+    "snes": {
+      "srcn": 49,
+      "character": "melodic",
+      "pcmLength": 6368,
+      "brrLength": 3582,
+      "hasLoop": true,
+      "loopStartPcm": 4544,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2299
+    },
+    "communityName": "synthlead_fantasia",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Synthlead_Fantasia_49/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 4544,
+            "end": 6368
+          }
+        }
+      ]
+    }
+  }
+}

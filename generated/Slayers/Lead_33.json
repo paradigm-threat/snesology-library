@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Slayers",
+    "snes": {
+      "srcn": 33,
+      "character": "melodic",
+      "pcmLength": 6448,
+      "brrLength": 3627,
+      "hasLoop": true,
+      "loopStartPcm": 5968,
+      "adsr1": 255,
+      "adsr2": 245,
+      "gain": 0,
+      "pitchRegister": 1024
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_33/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 5968,
+            "end": 6448
+          }
+        }
+      ]
+    }
+  }
+}

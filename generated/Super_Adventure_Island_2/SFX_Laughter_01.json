@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Laughter",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Adventure Island 2",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 8976,
+      "brrLength": 5049,
+      "hasLoop": true,
+      "loopStartPcm": 6128,
+      "adsr1": 143,
+      "adsr2": 235,
+      "gain": 0,
+      "pitchRegister": 0
+    },
+    "communityName": "sfx_laughter",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "SFX_Laughter_01/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 6128,
+            "end": 8976
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Strings",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Puyo Puyo 2",
+    "snes": {
+      "srcn": 49,
+      "character": "melodic",
+      "pcmLength": 18944,
+      "brrLength": 10656,
+      "hasLoop": true,
+      "loopStartPcm": 8768,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 224,
+      "pitchRegister": 1884
+    },
+    "communityName": "strings",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Strings_49/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 8768,
+            "end": 18944
+          }
+        }
+      ]
+    }
+  }
+}

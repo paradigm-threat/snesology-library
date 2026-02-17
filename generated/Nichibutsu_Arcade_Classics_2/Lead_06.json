@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Nichibutsu Arcade Classics 2",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 8352,
+      "brrLength": 4698,
+      "hasLoop": true,
+      "loopStartPcm": 8240,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 6546
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_06/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 8240,
+            "end": 8352
+          }
+        }
+      ]
+    }
+  }
+}

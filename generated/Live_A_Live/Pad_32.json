@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Live A Live",
+    "snes": {
+      "srcn": 32,
+      "character": "melodic",
+      "pcmLength": 4592,
+      "brrLength": 2583,
+      "hasLoop": true,
+      "loopStartPcm": 944,
+      "adsr1": 252,
+      "adsr2": 224,
+      "gain": 160,
+      "pitchRegister": 2404
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_32/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 944,
+            "end": 4592
+          }
+        }
+      ]
+    }
+  }
+}

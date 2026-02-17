@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Brass",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pop 'n' Twinbee",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 10352,
+      "brrLength": 5823,
+      "hasLoop": true,
+      "loopStartPcm": 6096,
+      "adsr1": 222,
+      "adsr2": 226,
+      "gain": 184,
+      "pitchRegister": 3171
+    },
+    "communityName": "brass",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Brass_12/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 6096,
+            "end": 10352
+          }
+        }
+      ]
+    }
+  }
+}

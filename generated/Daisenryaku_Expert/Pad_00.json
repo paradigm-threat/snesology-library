@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Daisenryaku Expert",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 6464,
+      "brrLength": 3636,
+      "hasLoop": true,
+      "loopStartPcm": 3120,
+      "adsr1": 124,
+      "adsr2": 243,
+      "gain": 186,
+      "pitchRegister": 9238
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_00/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3120,
+            "end": 6464
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tubular Bells",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Puyo Puyo 2",
+    "snes": {
+      "srcn": 51,
+      "character": "melodic",
+      "pcmLength": 8672,
+      "brrLength": 4878,
+      "hasLoop": true,
+      "loopStartPcm": 7120
+    },
+    "communityName": "tubular_bells",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Tubular_Bells_51/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 7120,
+            "end": 8672
+          }
+        }
+      ]
+    }
+  }
+}

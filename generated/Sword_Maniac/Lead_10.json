@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sword Maniac",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 4656,
+      "brrLength": 2619,
+      "hasLoop": true,
+      "loopStartPcm": 3056,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 158,
+      "pitchRegister": 1024
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_10/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3056,
+            "end": 4656
+          }
+        }
+      ]
+    }
+  }
+}

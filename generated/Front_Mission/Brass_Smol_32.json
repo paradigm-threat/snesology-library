@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Brass Smol",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Front Mission",
+    "snes": {
+      "srcn": 32,
+      "character": "melodic",
+      "pcmLength": 8640,
+      "brrLength": 4860,
+      "hasLoop": true,
+      "loopStartPcm": 2032,
+      "adsr1": 255,
+      "adsr2": 239,
+      "gain": 160,
+      "pitchRegister": 2896
+    },
+    "communityName": "brass_smol",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Brass_Smol_32/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 2032,
+            "end": 8640
+          }
+        }
+      ]
+    }
+  }
+}

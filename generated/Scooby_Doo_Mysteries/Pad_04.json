@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Scooby Doo Mysteries",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 12272,
+      "brrLength": 6903,
+      "hasLoop": true,
+      "loopStartPcm": 4768,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 255,
+      "pitchRegister": 509
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_04/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 4768,
+            "end": 12272
+          }
+        }
+      ]
+    }
+  }
+}

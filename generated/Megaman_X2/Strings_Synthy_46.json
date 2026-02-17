@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Strings Synthy",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Megaman X2",
+    "snes": {
+      "srcn": 46,
+      "character": "melodic",
+      "pcmLength": 7408,
+      "brrLength": 4167,
+      "hasLoop": true,
+      "loopStartPcm": 304,
+      "adsr1": 0,
+      "adsr2": 231,
+      "gain": 158,
+      "pitchRegister": 4240
+    },
+    "communityName": "strings_synthy",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Strings_Synthy_46/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 304,
+            "end": 7408
+          }
+        }
+      ]
+    }
+  }
+}

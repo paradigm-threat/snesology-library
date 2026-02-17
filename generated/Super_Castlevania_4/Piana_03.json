@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Piana",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Castlevania 4",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 11184,
+      "brrLength": 6291,
+      "hasLoop": true,
+      "loopStartPcm": 11008,
+      "adsr1": 0,
+      "adsr2": 2,
+      "gain": 207,
+      "pitchRegister": 360
+    },
+    "communityName": "piana",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Piana_03/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 11008,
+            "end": 11184
+          }
+        }
+      ]
+    }
+  }
+}

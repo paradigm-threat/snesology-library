@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Guitar Powerchord",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Race Drivin'",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 5536,
+      "brrLength": 3114,
+      "hasLoop": true,
+      "loopStartPcm": 2752,
+      "adsr1": 0,
+      "adsr2": 245,
+      "gain": 191,
+      "pitchRegister": 1933
+    },
+    "communityName": "guitar_POWERCHORD",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Guitar_Powerchord_09/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 2752,
+            "end": 5536
+          }
+        }
+      ]
+    }
+  }
+}

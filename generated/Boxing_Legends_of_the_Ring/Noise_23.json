@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Boxing Legends of the Ring",
+    "snes": {
+      "srcn": 23,
+      "character": "noise",
+      "pcmLength": 4752,
+      "brrLength": 2673,
+      "hasLoop": true,
+      "loopStartPcm": 3456,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 150,
+      "pitchRegister": 13817
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Noise_23/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3456,
+            "end": 4752
+          }
+        }
+      ]
+    }
+  }
+}

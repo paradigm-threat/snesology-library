@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Cymroll",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Megaman X2",
+    "snes": {
+      "srcn": 33,
+      "character": "noise",
+      "pcmLength": 4576,
+      "brrLength": 2574,
+      "hasLoop": true,
+      "loopStartPcm": 2096,
+      "adsr1": 0,
+      "adsr2": 241,
+      "gain": 158,
+      "pitchRegister": 6912
+    },
+    "communityName": "perc_cymroll",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Perc_Cymroll_33/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 2096,
+            "end": 4576
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kishin Douji Zenki 2",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 7632,
+      "brrLength": 4293,
+      "hasLoop": true,
+      "loopStartPcm": 7584
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_11/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 7584,
+            "end": 7632
+          }
+        }
+      ]
+    }
+  }
+}

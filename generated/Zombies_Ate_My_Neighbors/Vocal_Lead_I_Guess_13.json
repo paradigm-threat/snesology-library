@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Vocal Lead I Guess",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zombies Ate My Neighbors",
+    "snes": {
+      "srcn": 13,
+      "character": "tone",
+      "pcmLength": 848,
+      "brrLength": 477,
+      "hasLoop": true,
+      "loopStartPcm": 32
+    },
+    "communityName": "vocal_lead_i_guess",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Vocal_Lead_I_Guess_13/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 32,
+            "end": 848
+          }
+        }
+      ]
+    }
+  }
+}

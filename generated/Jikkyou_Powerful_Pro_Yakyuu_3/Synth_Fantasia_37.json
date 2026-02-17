@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth Fantasia",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jikkyou Powerful Pro Yakyuu 3",
+    "snes": {
+      "srcn": 37,
+      "character": "tone",
+      "pcmLength": 3696,
+      "brrLength": 2079,
+      "hasLoop": true,
+      "loopStartPcm": 1600,
+      "adsr1": 143,
+      "adsr2": 242,
+      "gain": 0,
+      "pitchRegister": 2700
+    },
+    "communityName": "synth_fantasia",
+    "matchConfidence": 0.9
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Synth_Fantasia_37/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 1600,
+            "end": 3696
+          }
+        }
+      ]
+    }
+  }
+}

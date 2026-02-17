@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tiny Toon Adventures: Buster Bus",
+    "snes": {
+      "srcn": 20,
+      "character": "tone",
+      "pcmLength": 3760,
+      "brrLength": 2115,
+      "hasLoop": true,
+      "loopStartPcm": 3648,
+      "adsr1": 143,
+      "adsr2": 211,
+      "gain": 184,
+      "pitchRegister": 2474
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Tone_20/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3648,
+            "end": 3760
+          }
+        }
+      ]
+    }
+  }
+}

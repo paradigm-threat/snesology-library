@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Light Fantasy",
+    "snes": {
+      "srcn": 19,
+      "character": "melodic",
+      "pcmLength": 6192,
+      "brrLength": 3483,
+      "hasLoop": true,
+      "loopStartPcm": 1360,
+      "adsr1": 132,
+      "adsr2": 234,
+      "gain": 184,
+      "pitchRegister": 843
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_19/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 1360,
+            "end": 6192
+          }
+        }
+      ]
+    }
+  }
+}

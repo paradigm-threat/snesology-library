@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Tsume Shougi 1000",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 11824,
+      "brrLength": 6651,
+      "hasLoop": true,
+      "loopStartPcm": 8080
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_04/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 8080,
+            "end": 11824
+          }
+        }
+      ]
+    }
+  }
+}

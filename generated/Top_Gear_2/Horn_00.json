@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Horn",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Top Gear 2",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 6624,
+      "brrLength": 3726,
+      "hasLoop": true,
+      "loopStartPcm": 6016,
+      "adsr1": 175,
+      "adsr2": 130,
+      "gain": 127,
+      "pitchRegister": 1170
+    },
+    "communityName": "horn",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Horn_00/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 6016,
+            "end": 6624
+          }
+        }
+      ]
+    }
+  }
+}

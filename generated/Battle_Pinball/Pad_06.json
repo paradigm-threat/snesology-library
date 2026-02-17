@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battle Pinball",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 7984,
+      "brrLength": 4491,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 239,
+      "adsr2": 128,
+      "gain": 186,
+      "pitchRegister": 1586
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_06/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 0,
+            "end": 7984
+          }
+        }
+      ]
+    }
+  }
+}

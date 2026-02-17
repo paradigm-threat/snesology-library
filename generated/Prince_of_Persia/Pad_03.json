@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Prince of Persia",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 6368,
+      "brrLength": 3582,
+      "hasLoop": true,
+      "loopStartPcm": 1184,
+      "adsr1": 255,
+      "adsr2": 196,
+      "gain": 0,
+      "pitchRegister": 4596
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_03/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 1184,
+            "end": 6368
+          }
+        }
+      ]
+    }
+  }
+}

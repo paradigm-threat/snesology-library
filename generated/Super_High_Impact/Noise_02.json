@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super High Impact",
+    "snes": {
+      "srcn": 2,
+      "character": "noise",
+      "pcmLength": 4112,
+      "brrLength": 2313,
+      "hasLoop": true,
+      "loopStartPcm": 240,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 127,
+      "pitchRegister": 937
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Noise_02/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 240,
+            "end": 4112
+          }
+        }
+      ]
+    }
+  }
+}

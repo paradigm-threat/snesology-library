@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Bowling",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 5120,
+      "brrLength": 2880,
+      "hasLoop": true,
+      "loopStartPcm": 5056,
+      "adsr1": 223,
+      "adsr2": 113,
+      "gain": 0,
+      "pitchRegister": 431
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_09/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 5056,
+            "end": 5120
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Eien no Filena",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 8272,
+      "brrLength": 4653,
+      "hasLoop": true,
+      "loopStartPcm": 7968,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 121,
+      "pitchRegister": 4122
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_11/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 7968,
+            "end": 8272
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tiny Toon Adventures: Wacky Spor",
+    "snes": {
+      "srcn": 46,
+      "character": "melodic",
+      "pcmLength": 8208,
+      "brrLength": 4617,
+      "hasLoop": true,
+      "loopStartPcm": 7632,
+      "adsr1": 143,
+      "adsr2": 209,
+      "gain": 183,
+      "pitchRegister": 3219
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_46/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 7632,
+            "end": 8208
+          }
+        }
+      ]
+    }
+  }
+}

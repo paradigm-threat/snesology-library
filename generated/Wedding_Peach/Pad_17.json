@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wedding Peach",
+    "snes": {
+      "srcn": 17,
+      "character": "melodic",
+      "pcmLength": 13536,
+      "brrLength": 7614,
+      "hasLoop": true,
+      "loopStartPcm": 9104,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 3659
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_17/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 9104,
+            "end": 13536
+          }
+        }
+      ]
+    }
+  }
+}

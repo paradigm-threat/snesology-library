@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Sax",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Daze Before Christmas",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 4912,
+      "brrLength": 2763,
+      "hasLoop": true,
+      "loopStartPcm": 3696,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 3214
+    },
+    "communityName": "sax",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Sax_07/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3696,
+            "end": 4912
+          }
+        }
+      ]
+    }
+  }
+}

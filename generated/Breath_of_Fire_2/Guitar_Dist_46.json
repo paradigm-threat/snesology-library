@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Guitar Dist",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Breath of Fire 2",
+    "snes": {
+      "srcn": 46,
+      "character": "melodic",
+      "pcmLength": 10416,
+      "brrLength": 5859,
+      "hasLoop": true,
+      "loopStartPcm": 1712,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 186,
+      "pitchRegister": 3712
+    },
+    "communityName": "guitar_dist",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Guitar_Dist_46/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 1712,
+            "end": 10416
+          }
+        }
+      ]
+    }
+  }
+}

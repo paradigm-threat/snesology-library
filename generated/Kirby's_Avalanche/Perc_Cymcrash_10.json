@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Cymcrash",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kirby's Avalanche",
+    "snes": {
+      "srcn": 10,
+      "character": "noise",
+      "pcmLength": 4256,
+      "brrLength": 2394,
+      "hasLoop": true,
+      "loopStartPcm": 2512,
+      "adsr1": 223,
+      "adsr2": 239,
+      "gain": 239,
+      "pitchRegister": 3072
+    },
+    "communityName": "perc_cymcrash",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Perc_Cymcrash_10/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 2512,
+            "end": 4256
+          }
+        }
+      ]
+    }
+  }
+}

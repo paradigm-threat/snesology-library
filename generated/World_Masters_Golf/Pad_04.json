@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "World Masters Golf",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 8256,
+      "brrLength": 4644,
+      "hasLoop": true,
+      "loopStartPcm": 2304,
+      "adsr1": 142,
+      "adsr2": 205,
+      "gain": 0,
+      "pitchRegister": 1367
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_04/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 2304,
+            "end": 8256
+          }
+        }
+      ]
+    }
+  }
+}

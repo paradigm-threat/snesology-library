@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pachinko Maruhi Hisshouhou",
+    "snes": {
+      "srcn": 14,
+      "character": "melodic",
+      "pcmLength": 12272,
+      "brrLength": 6903,
+      "hasLoop": true,
+      "loopStartPcm": 12112,
+      "adsr1": 15,
+      "adsr2": 243,
+      "gain": 0,
+      "pitchRegister": 3200
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_14/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 12112,
+            "end": 12272
+          }
+        }
+      ]
+    }
+  }
+}

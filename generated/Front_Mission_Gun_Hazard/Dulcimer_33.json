@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Dulcimer",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Front Mission: Gun Hazard",
+    "snes": {
+      "srcn": 33,
+      "character": "melodic",
+      "pcmLength": 8272,
+      "brrLength": 4653,
+      "hasLoop": true,
+      "loopStartPcm": 8192,
+      "adsr1": 255,
+      "adsr2": 239,
+      "gain": 160,
+      "pitchRegister": 4505
+    },
+    "communityName": "dulcimer",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Dulcimer_33/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 8192,
+            "end": 8272
+          }
+        }
+      ]
+    }
+  }
+}

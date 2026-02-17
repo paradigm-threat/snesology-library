@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Cowbell",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mortal Kombat 2",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 2624,
+      "brrLength": 1476,
+      "hasLoop": true,
+      "loopStartPcm": 2304,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 151,
+      "pitchRegister": 1777
+    },
+    "communityName": "perc_cowbell",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Perc_Cowbell_01/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 2304,
+            "end": 2624
+          }
+        }
+      ]
+    }
+  }
+}

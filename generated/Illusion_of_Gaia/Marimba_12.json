@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Marimba",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Illusion of Gaia",
+    "snes": {
+      "srcn": 12,
+      "character": "tone",
+      "pcmLength": 464,
+      "brrLength": 261,
+      "hasLoop": true,
+      "loopStartPcm": 432,
+      "adsr1": 255,
+      "adsr2": 142,
+      "gain": 184,
+      "pitchRegister": 2615
+    },
+    "communityName": "marimba",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Marimba_12/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 432,
+            "end": 464
+          }
+        }
+      ]
+    }
+  }
+}

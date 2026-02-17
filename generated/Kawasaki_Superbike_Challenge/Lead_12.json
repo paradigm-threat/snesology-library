@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kawasaki Superbike Challenge",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 8144,
+      "brrLength": 4581,
+      "hasLoop": true,
+      "loopStartPcm": 8144,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 1625
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_12/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 8144,
+            "end": 8144
+          }
+        }
+      ]
+    }
+  }
+}

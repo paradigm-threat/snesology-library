@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Rumble",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wonder Project J",
+    "snes": {
+      "srcn": 27,
+      "character": "tone",
+      "pcmLength": 3152,
+      "brrLength": 1773,
+      "hasLoop": true,
+      "loopStartPcm": 160
+    },
+    "communityName": "sfx_rumble",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "SFX_Rumble_27/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 160,
+            "end": 3152
+          }
+        }
+      ]
+    }
+  }
+}

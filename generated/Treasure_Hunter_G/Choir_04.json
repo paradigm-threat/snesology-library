@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Choir",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Treasure Hunter G",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 10352,
+      "brrLength": 5823,
+      "hasLoop": true,
+      "loopStartPcm": 496,
+      "adsr1": 218,
+      "adsr2": 101,
+      "gain": 191,
+      "pitchRegister": 837
+    },
+    "communityName": "choir",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Choir_04/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 496,
+            "end": 10352
+          }
+        }
+      ]
+    }
+  }
+}

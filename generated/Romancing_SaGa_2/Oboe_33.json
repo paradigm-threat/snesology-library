@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Oboe",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Romancing SaGa 2",
+    "snes": {
+      "srcn": 33,
+      "character": "melodic",
+      "pcmLength": 7904,
+      "brrLength": 4446,
+      "hasLoop": true,
+      "loopStartPcm": 7840,
+      "adsr1": 253,
+      "adsr2": 224,
+      "gain": 160,
+      "pitchRegister": 3457
+    },
+    "communityName": "oboe",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Oboe_33/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 7840,
+            "end": 7904
+          }
+        }
+      ]
+    }
+  }
+}

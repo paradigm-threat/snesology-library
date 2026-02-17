@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synthlead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "International Superstar Soccer",
+    "snes": {
+      "srcn": 33,
+      "character": "noise",
+      "pcmLength": 7072,
+      "brrLength": 3978,
+      "hasLoop": true,
+      "loopStartPcm": 1840,
+      "adsr1": 175,
+      "adsr2": 131,
+      "gain": 0,
+      "pitchRegister": 1202
+    },
+    "communityName": "synthlead",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Synthlead_33/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 1840,
+            "end": 7072
+          }
+        }
+      ]
+    }
+  }
+}

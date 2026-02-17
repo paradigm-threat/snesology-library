@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Bass Slap",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Romancing SaGa",
+    "snes": {
+      "srcn": 33,
+      "character": "melodic",
+      "pcmLength": 5968,
+      "brrLength": 3357,
+      "hasLoop": true,
+      "loopStartPcm": 5392,
+      "adsr1": 255,
+      "adsr2": 239,
+      "gain": 160,
+      "pitchRegister": 4080
+    },
+    "communityName": "bass_slap",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Bass_Slap_33/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 5392,
+            "end": 5968
+          }
+        }
+      ]
+    }
+  }
+}

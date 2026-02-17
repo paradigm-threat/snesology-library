@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Crowd Angry",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earthbound",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 23248,
+      "brrLength": 13077,
+      "hasLoop": true,
+      "loopStartPcm": 5232,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1533
+    },
+    "communityName": "sfx_crowd_angry",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "SFX_Crowd_Angry_03/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 5232,
+            "end": 23248
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Piana MID",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Breath of Fire 2",
+    "snes": {
+      "srcn": 46,
+      "character": "melodic",
+      "pcmLength": 6592,
+      "brrLength": 3708,
+      "hasLoop": true,
+      "loopStartPcm": 6480,
+      "adsr1": 255,
+      "adsr2": 238,
+      "gain": 180,
+      "pitchRegister": 2816
+    },
+    "communityName": "piana_mid",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Piana_MID_46/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 6480,
+            "end": 6592
+          }
+        }
+      ]
+    }
+  }
+}

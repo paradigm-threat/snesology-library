@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Skipp and Friends",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 7952,
+      "brrLength": 4473,
+      "hasLoop": true,
+      "loopStartPcm": 3712,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 156,
+      "pitchRegister": 2117
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_06/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3712,
+            "end": 7952
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Brass",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kirby Super Star",
+    "snes": {
+      "srcn": 0,
+      "character": "tone",
+      "pcmLength": 1712,
+      "brrLength": 963,
+      "hasLoop": true,
+      "loopStartPcm": 1648,
+      "adsr1": 134,
+      "adsr2": 235,
+      "gain": 184,
+      "pitchRegister": 8531
+    },
+    "communityName": "brass",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Brass_00/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 1648,
+            "end": 1712
+          }
+        }
+      ]
+    }
+  }
+}

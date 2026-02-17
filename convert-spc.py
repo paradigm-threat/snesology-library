@@ -6,20 +6,14 @@ Reads RSN archives (RAR of SPC files) from a source directory,
 extracts unique BRR samples, decodes them to WAV/MP3, and generates
 songwalker-compatible preset.json files.
 
-Output structure (per-instrument presets):
+Output structure (flat presets + archive):
     generated/
         Game_Name/
             index.json          # game-level index listing all instruments
-            Strings_00/
-                preset.json     # single-zone, rootNote=60, keyRange 0-127
-                sample.mp3
-            Trumpet_01/
-                preset.json
-                sample.mp3
-            Drum_Kit/
-                preset.json     # multi-zone, oneShot=true, C2-up mapping
-                sample_000.mp3
-                ...
+            samples.zip         # all sample WAVs in one archive
+            Strings_00.json     # single-zone, rootNote=60, keyRange 0-127
+            Trumpet_01.json
+            Drum_Kit.json       # multi-zone, oneShot=true, C2-up mapping
 
 Usage:
     python3 convert-spc.py <rsn_dir> <output_dir> [--limit N] [--dry-run]
@@ -38,6 +32,7 @@ import subprocess
 import sys
 import tempfile
 import wave
+import zipfile
 from pathlib import Path
 
 
@@ -441,21 +436,22 @@ def build_preset(game_title, samples, output_dir, song_list, name_mapping=None):
 
     instruments = []  # list of {name, dir_name, preset_path} for game index
 
+    # Open ZIP archive for all samples in this game
+    zip_path = game_dir / "samples.zip"
+    zip_file = zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_STORED)
+
     # ── Build one preset per melodic instrument ──
     for sample in melodic_samples:
         instrument_name = _get_instrument_name(
             sample, game_dirname, name_mapping
         )
-        inst_dirname = f"{sanitize_dirname(instrument_name)}_{sample['srcn']:02d}"
-        inst_dir = game_dir / inst_dirname
-        inst_dir.mkdir(parents=True, exist_ok=True)
+        inst_basename = f"{sanitize_dirname(instrument_name)}_{sample['srcn']:02d}"
 
-        # Write sample audio
-        audio_url, codec = _write_sample_audio(sample['pcm'], inst_dir, "sample")
-
-        # Compute file hash
-        with open(inst_dir / audio_url, 'rb') as f:
-            file_hash = hashlib.sha256(f.read()).hexdigest()
+        # Write sample audio to ZIP archive
+        entry_path = f"{inst_basename}/sample.wav"
+        _, codec, file_hash = _write_sample_to_zip(
+            sample['pcm'], zip_file, entry_path
+        )
 
         # Build single-zone preset
         zone = {
@@ -463,8 +459,9 @@ def build_preset(game_title, samples, output_dir, song_list, name_mapping=None):
             "pitch": {"rootNote": 60, "fineTuneCents": 0},
             "sampleRate": SNES_SAMPLE_RATE,
             "audio": {
-                "type": "external",
-                "url": audio_url,
+                "type": "archive",
+                "archive": "samples.zip",
+                "entry": entry_path,
                 "codec": codec,
                 "sha256": file_hash,
             },
@@ -498,23 +495,20 @@ def build_preset(game_title, samples, output_dir, song_list, name_mapping=None):
             },
         }
 
-        preset_path = inst_dir / "preset.json"
+        preset_path = game_dir / f"{inst_basename}.json"
         with open(preset_path, 'w') as f:
             json.dump(preset, f, indent=2)
 
         instruments.append({
             "type": "preset",
             "name": instrument_name,
-            "path": f"{inst_dirname}/preset.json",
+            "path": f"{inst_basename}.json",
             "category": "sampler",
             "tags": _sample_tags(sample),
         })
 
     # ── Build drum kit ──
     if percussion_samples:
-        drum_dir = game_dir / "Drum_Kit"
-        drum_dir.mkdir(parents=True, exist_ok=True)
-
         drum_zones = []
         DRUM_BASE_NOTE = 36  # C2
 
@@ -523,19 +517,19 @@ def build_preset(game_title, samples, output_dir, song_list, name_mapping=None):
             if midi_note > 127:
                 break
 
-            audio_url, codec = _write_sample_audio(
-                sample['pcm'], drum_dir, f"sample_{idx:03d}"
+            entry_path = f"Drum_Kit/sample_{idx:03d}.wav"
+            _, codec, file_hash = _write_sample_to_zip(
+                sample['pcm'], zip_file, entry_path
             )
-            with open(drum_dir / audio_url, 'rb') as f:
-                file_hash = hashlib.sha256(f.read()).hexdigest()
 
             zone = {
                 "keyRange": {"low": midi_note, "high": midi_note},
                 "pitch": {"rootNote": midi_note, "fineTuneCents": 0},
                 "sampleRate": SNES_SAMPLE_RATE,
                 "audio": {
-                    "type": "external",
-                    "url": audio_url,
+                    "type": "archive",
+                    "archive": "samples.zip",
+                    "entry": entry_path,
                     "codec": codec,
                     "sha256": file_hash,
                 },
@@ -561,16 +555,19 @@ def build_preset(game_title, samples, output_dir, song_list, name_mapping=None):
             },
         }
 
-        with open(drum_dir / "preset.json", 'w') as f:
+        with open(game_dir / "Drum_Kit.json", 'w') as f:
             json.dump(drum_preset, f, indent=2)
 
         instruments.append({
             "type": "preset",
             "name": "Drum Kit",
-            "path": "Drum_Kit/preset.json",
+            "path": "Drum_Kit.json",
             "category": "sampler",
             "tags": ["snes", "drums", "percussion"],
         })
+
+    # Close the ZIP archive
+    zip_file.close()
 
     # ── Build game-level index ──
     game_index = {
@@ -615,8 +612,23 @@ def _get_instrument_name(sample, game_dirname, name_mapping):
         return "Sample"
 
 
+def _write_sample_to_zip(pcm, zip_file, entry_path, sample_rate=SNES_SAMPLE_RATE):
+    """Write PCM as WAV into a ZipFile. Returns (entry_path, codec, sha256)."""
+    import io
+    buf = io.BytesIO()
+    with wave.open(buf, 'wb') as wf:
+        wf.setnchannels(1)
+        wf.setsampwidth(2)
+        wf.setframerate(sample_rate)
+        wf.writeframes(struct.pack(f'<{len(pcm)}h', *pcm))
+    wav_bytes = buf.getvalue()
+    file_hash = hashlib.sha256(wav_bytes).hexdigest()
+    zip_file.writestr(entry_path, wav_bytes)
+    return entry_path, "wav", file_hash
+
+
 def _write_sample_audio(pcm, output_dir, name_base):
-    """Write PCM to WAV then convert to MP3. Returns (filename, codec)."""
+    """Legacy: Write PCM to WAV then convert to MP3. Returns (filename, codec)."""
     wav_path = output_dir / f"{name_base}.wav"
     mp3_path = output_dir / f"{name_base}.mp3"
 

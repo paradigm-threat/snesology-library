@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Koushien 3",
+    "snes": {
+      "srcn": 4,
+      "character": "noise",
+      "pcmLength": 8160,
+      "brrLength": 4590,
+      "hasLoop": true,
+      "loopStartPcm": 5424
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Noise_04/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 5424,
+            "end": 8160
+          }
+        }
+      ]
+    }
+  }
+}

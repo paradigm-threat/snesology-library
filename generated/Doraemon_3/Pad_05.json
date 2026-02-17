@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Doraemon 3",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 11920,
+      "brrLength": 6705,
+      "hasLoop": true,
+      "loopStartPcm": 256,
+      "adsr1": 156,
+      "adsr2": 164,
+      "gain": 180,
+      "pitchRegister": 8625
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_05/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 256,
+            "end": 11920
+          }
+        }
+      ]
+    }
+  }
+}

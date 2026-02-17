@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Metal Max Returns",
+    "snes": {
+      "srcn": 24,
+      "character": "melodic",
+      "pcmLength": 5760,
+      "brrLength": 3240,
+      "hasLoop": true,
+      "loopStartPcm": 4016,
+      "adsr1": 159,
+      "adsr2": 244,
+      "gain": 184,
+      "pitchRegister": 6420
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_24/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 4016,
+            "end": 5760
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Organ Church Oct",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Breath of Fire 2",
+    "snes": {
+      "srcn": 43,
+      "character": "melodic",
+      "pcmLength": 4832,
+      "brrLength": 2718,
+      "hasLoop": true,
+      "loopStartPcm": 4544,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 182,
+      "pitchRegister": 4064
+    },
+    "communityName": "organ_church_oct",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Organ_Church_Oct_43/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 4544,
+            "end": 4832
+          }
+        }
+      ]
+    }
+  }
+}

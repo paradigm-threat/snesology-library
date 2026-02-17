@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shin Shougi Club",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 17040,
+      "brrLength": 9585,
+      "hasLoop": true,
+      "loopStartPcm": 16384,
+      "adsr1": 255,
+      "adsr2": 236,
+      "gain": 184,
+      "pitchRegister": 5484
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_01/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 16384,
+            "end": 17040
+          }
+        }
+      ]
+    }
+  }
+}

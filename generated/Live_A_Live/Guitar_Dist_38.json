@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Guitar Dist",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Live A Live",
+    "snes": {
+      "srcn": 38,
+      "character": "melodic",
+      "pcmLength": 8304,
+      "brrLength": 4671,
+      "hasLoop": true,
+      "loopStartPcm": 2384,
+      "adsr1": 207,
+      "adsr2": 192,
+      "gain": 160,
+      "pitchRegister": 2022
+    },
+    "communityName": "guitar_dist",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Guitar_Dist_38/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 2384,
+            "end": 8304
+          }
+        }
+      ]
+    }
+  }
+}

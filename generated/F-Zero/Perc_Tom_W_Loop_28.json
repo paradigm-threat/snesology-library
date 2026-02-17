@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Tom W Loop",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "F-Zero",
+    "snes": {
+      "srcn": 28,
+      "character": "tone",
+      "pcmLength": 992,
+      "brrLength": 558,
+      "hasLoop": true,
+      "loopStartPcm": 736,
+      "adsr1": 255,
+      "adsr2": 248,
+      "gain": 184,
+      "pitchRegister": 4800
+    },
+    "communityName": "perc_tom_w_loop",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Perc_Tom_W_Loop_28/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 736,
+            "end": 992
+          }
+        }
+      ]
+    }
+  }
+}

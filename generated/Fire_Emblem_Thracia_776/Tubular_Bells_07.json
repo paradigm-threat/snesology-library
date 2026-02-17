@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tubular Bells",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fire Emblem Thracia 776",
+    "snes": {
+      "srcn": 7,
+      "character": "tone",
+      "pcmLength": 3840,
+      "brrLength": 2160,
+      "hasLoop": true,
+      "loopStartPcm": 2480,
+      "adsr1": 159,
+      "adsr2": 15,
+      "gain": 136,
+      "pitchRegister": 3612
+    },
+    "communityName": "tubular_bells",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Tubular_Bells_07/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 2480,
+            "end": 3840
+          }
+        }
+      ]
+    }
+  }
+}

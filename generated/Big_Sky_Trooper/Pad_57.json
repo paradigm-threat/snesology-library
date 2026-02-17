@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Big Sky Trooper",
+    "snes": {
+      "srcn": 57,
+      "character": "melodic",
+      "pcmLength": 8496,
+      "brrLength": 4779,
+      "hasLoop": true,
+      "loopStartPcm": 2208,
+      "adsr1": 244,
+      "adsr2": 224,
+      "gain": 159,
+      "pitchRegister": 3160
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_57/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 2208,
+            "end": 8496
+          }
+        }
+      ]
+    }
+  }
+}

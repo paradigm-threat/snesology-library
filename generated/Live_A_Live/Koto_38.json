@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Koto",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Live A Live",
+    "snes": {
+      "srcn": 38,
+      "character": "melodic",
+      "pcmLength": 5792,
+      "brrLength": 3258,
+      "hasLoop": true,
+      "loopStartPcm": 5504,
+      "adsr1": 255,
+      "adsr2": 246,
+      "gain": 160,
+      "pitchRegister": 3544
+    },
+    "communityName": "koto",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Koto_38/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 5504,
+            "end": 5792
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Thoroughbred Breeder 3",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 6864,
+      "brrLength": 3861,
+      "hasLoop": true,
+      "loopStartPcm": 3488,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 6011
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_12/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3488,
+            "end": 6864
+          }
+        }
+      ]
+    }
+  }
+}

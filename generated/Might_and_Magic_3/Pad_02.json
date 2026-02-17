@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Might and Magic 3",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 17344,
+      "brrLength": 9756,
+      "hasLoop": true,
+      "loopStartPcm": 6832,
+      "adsr1": 252,
+      "adsr2": 224,
+      "gain": 159,
+      "pitchRegister": 2803
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_02/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 6832,
+            "end": 17344
+          }
+        }
+      ]
+    }
+  }
+}

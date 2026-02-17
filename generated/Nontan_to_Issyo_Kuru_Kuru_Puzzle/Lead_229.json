@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Nontan to Issyo Kuru Kuru Puzzle",
+    "snes": {
+      "srcn": 229,
+      "character": "melodic",
+      "pcmLength": 4352,
+      "brrLength": 2448,
+      "hasLoop": true,
+      "loopStartPcm": 5008,
+      "adsr1": 104,
+      "adsr2": 10,
+      "gain": 217,
+      "pitchRegister": 15279
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_229/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 5008,
+            "end": 4352
+          }
+        }
+      ]
+    }
+  }
+}

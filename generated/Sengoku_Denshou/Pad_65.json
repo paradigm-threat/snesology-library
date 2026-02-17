@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sengoku Denshou",
+    "snes": {
+      "srcn": 65,
+      "character": "melodic",
+      "pcmLength": 4800,
+      "brrLength": 2700,
+      "hasLoop": true,
+      "loopStartPcm": 2080,
+      "adsr1": 255,
+      "adsr2": 107,
+      "gain": 184,
+      "pitchRegister": 5062
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_65/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 2080,
+            "end": 4800
+          }
+        }
+      ]
+    }
+  }
+}

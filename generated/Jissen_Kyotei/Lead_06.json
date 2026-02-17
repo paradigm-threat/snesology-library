@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jissen Kyotei",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 13088,
+      "brrLength": 7362,
+      "hasLoop": true,
+      "loopStartPcm": 12288,
+      "adsr1": 143,
+      "adsr2": 230,
+      "gain": 127,
+      "pitchRegister": 3238
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_06/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 12288,
+            "end": 13088
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Timpani2",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Actraiser 2",
+    "snes": {
+      "srcn": 15,
+      "character": "melodic",
+      "pcmLength": 4048,
+      "brrLength": 2277,
+      "hasLoop": true,
+      "loopStartPcm": 3552,
+      "adsr1": 143,
+      "adsr2": 243,
+      "gain": 184,
+      "pitchRegister": 2527
+    },
+    "communityName": "timpani2",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Timpani2_15/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3552,
+            "end": 4048
+          }
+        }
+      ]
+    }
+  }
+}

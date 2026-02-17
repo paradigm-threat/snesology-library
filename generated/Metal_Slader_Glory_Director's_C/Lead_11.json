@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Metal Slader Glory: Director's C",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 7776,
+      "brrLength": 4374,
+      "hasLoop": true,
+      "loopStartPcm": 6768,
+      "adsr1": 255,
+      "adsr2": 234,
+      "gain": 234,
+      "pitchRegister": 1141
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_11/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 6768,
+            "end": 7776
+          }
+        }
+      ]
+    }
+  }
+}

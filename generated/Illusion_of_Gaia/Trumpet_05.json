@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Trumpet",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Illusion of Gaia",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 3424,
+      "brrLength": 1926,
+      "hasLoop": true,
+      "loopStartPcm": 3360,
+      "adsr1": 255,
+      "adsr2": 168,
+      "gain": 184,
+      "pitchRegister": 3157
+    },
+    "communityName": "trumpet",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Trumpet_05/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 3360,
+            "end": 3424
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Oozumou Netsusen Daiichiba",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 6816,
+      "brrLength": 3834,
+      "hasLoop": true,
+      "loopStartPcm": 5824,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2657
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Lead_02/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 5824,
+            "end": 6816
+          }
+        }
+      ]
+    }
+  }
+}

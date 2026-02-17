@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Rex Ronan",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 2176,
+      "brrLength": 1224,
+      "hasLoop": true,
+      "loopStartPcm": 1360,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 124,
+      "pitchRegister": 2048
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Tone_01/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 1360,
+            "end": 2176
+          }
+        }
+      ]
+    }
+  }
+}

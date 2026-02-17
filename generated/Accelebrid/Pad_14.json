@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Accelebrid",
+    "snes": {
+      "srcn": 14,
+      "character": "melodic",
+      "pcmLength": 6976,
+      "brrLength": 3924,
+      "hasLoop": true,
+      "loopStartPcm": 4192,
+      "adsr1": 143,
+      "adsr2": 231,
+      "gain": 186,
+      "pitchRegister": 1631
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "archive",
+            "archive": "samples.zip",
+            "entry": "Pad_14/sample.mp3",
+            "codec": "mp3"
+          },
+          "loop": {
+            "start": 4192,
+            "end": 6976
+          }
+        }
+      ]
+    }
+  }
+}
