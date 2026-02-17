@@ -1,37 +1,29 @@
 #!/usr/bin/env python3
 """
-generate-index.py — Generate index.json for SNES sample library.
+generate-index.py — Generate hierarchical index.json for SNES sample library.
 
-Scans the generated/ directory for per-game index.json files and creates
-a root index that lists all games.
+Creates:
+  - generated/index.json   — lists all auto-ripped games
+  - samplemance.rs/index.json — lists all community-sourced sample folders
+  - index.json (root)      — two sub-index entries pointing to the above
 
 Usage:
     python3 generate-index.py [library_dir]
 """
 
 import json
-import os
 import sys
 from pathlib import Path
 
 
-def generate_index(library_dir):
-    """Scan library_dir/generated/ for per-game index.json files and generate root index.json."""
-    library_dir = Path(library_dir)
-    generated_dir = library_dir / 'generated'
+def scan_generated(generated_dir: Path) -> list[dict]:
+    """Scan generated/ for per-game index.json files and return entries."""
     games = []
 
-    if not generated_dir.is_dir():
-        print(f"Error: {generated_dir} not found")
-        sys.exit(1)
-
     for entry in sorted(generated_dir.iterdir()):
-        if not entry.is_dir():
-            continue
-        if entry.name.startswith('.'):
+        if not entry.is_dir() or entry.name.startswith('.'):
             continue
 
-        # New format: game has its own index.json with instrument entries
         game_index_path = entry / 'index.json'
         if game_index_path.exists():
             with open(game_index_path) as f:
@@ -41,11 +33,9 @@ def generate_index(library_dir):
             entries = game_index.get('entries', [])
             metadata = game_index.get('metadata', {})
 
-            # Count instrument types
             instrument_count = len(entries)
             has_drum_kit = any(e.get('name') == 'Drum Kit' for e in entries)
 
-            # Collect tags from all instruments
             all_tags = set()
             for inst in entries:
                 all_tags.update(inst.get('tags', []))
@@ -53,51 +43,119 @@ def generate_index(library_dir):
             games.append({
                 'type': 'index',
                 'name': name,
-                'path': f'generated/{entry.name}/index.json',
+                'path': f'{entry.name}/index.json',
                 'instrumentCount': instrument_count,
                 'hasDrumKit': has_drum_kit,
                 'tags': sorted(all_tags),
                 'songs': metadata.get('songs', []),
             })
+
+    return games
+
+
+def scan_samplemance(samplemance_dir: Path) -> list[dict]:
+    """Scan samplemance.rs/ for community sample folders and return entries."""
+    games = []
+
+    for entry in sorted(samplemance_dir.iterdir()):
+        if not entry.is_dir() or entry.name.startswith('.'):
             continue
 
-        # Legacy format: single preset.json per game
-        preset_path = entry / 'preset.json'
-        if preset_path.exists():
-            with open(preset_path) as f:
-                preset = json.load(f)
+        # Count WAV files
+        wav_files = list(entry.glob('*.wav'))
+        if not wav_files:
+            continue
 
-            name = preset.get('name', entry.name)
-            tags = preset.get('tags', [])
-            node = preset.get('node', preset.get('graph', {}))
-            config = node.get('config', {}) if isinstance(node, dict) else {}
-            zones = config.get('zones', [])
+        name = entry.name.replace('_', ' ')
+        games.append({
+            'type': 'folder',
+            'name': name,
+            'path': entry.name,
+            'sampleCount': len(wav_files),
+        })
 
-            games.append({
-                'type': 'preset',
-                'name': name,
-                'path': f'generated/{entry.name}/preset.json',
-                'category': preset.get('category', 'sampler'),
-                'tags': tags,
-                'zoneCount': len(zones),
-            })
+    return games
 
+
+def write_index(path: Path, name: str, description: str, entries: list[dict]):
+    """Write a songwalker-index JSON file."""
     index = {
         'format': 'songwalker-index',
         'version': 1,
-        'name': 'SNES Sample Library',
-        'description': 'Instrument samples extracted from Super Nintendo game soundtracks',
-        'entries': games,
+        'name': name,
+        'description': description,
+        'entries': entries,
     }
-
-    index_path = library_dir / 'index.json'
-    with open(index_path, 'w') as f:
+    with open(path, 'w') as f:
         json.dump(index, f, indent=2)
+    print(f"  {path}: {len(entries)} entries")
 
-    new_format = sum(1 for g in games if g['type'] == 'index')
-    legacy = sum(1 for g in games if g['type'] == 'preset')
-    print(f"Generated {index_path}: {len(games)} games ({new_format} per-instrument, {legacy} legacy)")
-    return len(games)
+
+def generate_index(library_dir):
+    """Generate hierarchical index files for the SNES sample library."""
+    library_dir = Path(library_dir)
+    generated_dir = library_dir / 'generated'
+    samplemance_dir = library_dir / 'samplemance.rs'
+
+    # ── generated/ sub-index ──────────────────────────────
+    if generated_dir.is_dir():
+        generated_entries = scan_generated(generated_dir)
+        write_index(
+            generated_dir / 'index.json',
+            'Auto-Ripped',
+            'Instrument samples auto-extracted from SNES game ROMs',
+            generated_entries,
+        )
+    else:
+        generated_entries = []
+        print(f"Warning: {generated_dir} not found, skipping")
+
+    # ── samplemance.rs/ sub-index ─────────────────────────
+    if samplemance_dir.is_dir():
+        samplemance_entries = scan_samplemance(samplemance_dir)
+        write_index(
+            samplemance_dir / 'index.json',
+            'Community (samplemance.rs)',
+            'Community-sourced SNES samples from samplemance.rs',
+            samplemance_entries,
+        )
+    else:
+        samplemance_entries = []
+        print(f"Warning: {samplemance_dir} not found, skipping")
+
+    # ── Root index ────────────────────────────────────────
+    root_entries = []
+    if generated_entries:
+        total_instruments = sum(e.get('instrumentCount', 0) for e in generated_entries)
+        root_entries.append({
+            'type': 'index',
+            'name': 'Auto-Ripped',
+            'path': 'generated/index.json',
+            'description': 'Instrument samples auto-extracted from SNES game ROMs',
+            'presetCount': total_instruments,
+        })
+    if samplemance_entries:
+        total_samples = sum(e.get('sampleCount', 0) for e in samplemance_entries)
+        root_entries.append({
+            'type': 'index',
+            'name': 'Community (samplemance.rs)',
+            'path': 'samplemance.rs/index.json',
+            'description': 'Community-sourced SNES samples from samplemance.rs',
+            'presetCount': total_samples,
+        })
+
+    write_index(
+        library_dir / 'index.json',
+        'SNES Sample Library',
+        'Instrument samples extracted from Super Nintendo game soundtracks',
+        root_entries,
+    )
+
+    print(f"\nRoot: {len(root_entries)} libraries")
+    if generated_entries:
+        print(f"  Auto-Ripped: {len(generated_entries)} games")
+    if samplemance_entries:
+        print(f"  Community: {len(samplemance_entries)} games")
 
 
 if __name__ == '__main__':
