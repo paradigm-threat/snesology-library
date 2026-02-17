@@ -1,0 +1,47 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Rap Jam",
+    "snes": {
+      "srcn": 143,
+      "character": "noise",
+      "pcmLength": 4176,
+      "brrLength": 2349,
+      "hasLoop": true
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f88873d3bf33b87ce5c0e20d5f87b17c724d74f553edebc49e6d77db36af7f61"
+          }
+        }
+      ]
+    }
+  }
+}

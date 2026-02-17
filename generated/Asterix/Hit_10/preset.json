@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Asterix",
+    "snes": {
+      "srcn": 10,
+      "character": "one-shot",
+      "pcmLength": 5632,
+      "brrLength": 3168,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "359da30a7d074c84e592f17e2286a0f04b88d90ecfa39ad6239cd44bf5fc66ab"
+          }
+        }
+      ]
+    }
+  }
+}

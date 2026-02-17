@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Zugan",
+    "snes": {
+      "srcn": 235,
+      "character": "one-shot",
+      "pcmLength": 2800,
+      "brrLength": 1575,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "33aee92653d657be4cee133e014bb32eb2aa89a7a713e581e985b161b66e841c"
+          }
+        }
+      ]
+    }
+  }
+}

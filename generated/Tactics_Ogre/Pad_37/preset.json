@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tactics Ogre",
+    "snes": {
+      "srcn": 37,
+      "character": "melodic",
+      "pcmLength": 5360,
+      "brrLength": 3015,
+      "hasLoop": true,
+      "loopStartPcm": 240,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 830
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3f810592de5810f47b233e26ee00d2420709c00c05280d93e226f7f0cb18ec52"
+          },
+          "loop": {
+            "start": 240,
+            "end": 5360
+          }
+        }
+      ]
+    }
+  }
+}

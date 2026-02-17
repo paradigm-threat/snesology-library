@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Soldiers of Fortune",
+    "snes": {
+      "srcn": 82,
+      "character": "noise",
+      "pcmLength": 4304,
+      "brrLength": 2421,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 537
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "59a68f2a108861c49b37267ac57635a18a7fc4bab9771cbeccefe720a32bd1da"
+          }
+        }
+      ]
+    }
+  }
+}

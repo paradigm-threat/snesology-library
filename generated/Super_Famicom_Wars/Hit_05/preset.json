@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Famicom Wars",
+    "snes": {
+      "srcn": 5,
+      "character": "one-shot",
+      "pcmLength": 4096,
+      "brrLength": 2304,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3be230cf955550ac25335821842a3321a29be89dd0ee14880b469a603fd9e714"
+          }
+        }
+      ]
+    }
+  }
+}

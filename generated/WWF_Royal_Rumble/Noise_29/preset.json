@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "WWF Royal Rumble",
+    "snes": {
+      "srcn": 29,
+      "character": "noise",
+      "pcmLength": 4352,
+      "brrLength": 2448,
+      "hasLoop": true,
+      "loopStartPcm": 4624
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "01e16bfbe1009342cd2262f686ddd6701f1e722212ec3921f2bb232d85cd1117"
+          },
+          "loop": {
+            "start": 4624,
+            "end": 4352
+          }
+        }
+      ]
+    }
+  }
+}

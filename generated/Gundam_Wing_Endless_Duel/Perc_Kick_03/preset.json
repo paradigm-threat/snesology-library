@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Kick",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gundam Wing: Endless Duel",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 1952,
+      "brrLength": 1098,
+      "hasLoop": true,
+      "loopStartPcm": 1440,
+      "adsr1": 255,
+      "adsr2": 244,
+      "gain": 184,
+      "pitchRegister": 2261
+    },
+    "communityName": "perc_kick",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "663f2573cfa18a6fe2a58cb1bb0eda5d2f03d36e993291f02d8eb3a937541c8b"
+          },
+          "loop": {
+            "start": 1440,
+            "end": 1952
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Keiba Eight Special 2",
+    "snes": {
+      "srcn": 66,
+      "character": "tone",
+      "pcmLength": 800,
+      "brrLength": 450,
+      "hasLoop": true,
+      "loopStartPcm": 17776
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "958d699be99d98f669f2d705284b5e4c943b879aa7e31077e3f64a1678a5479a"
+          },
+          "loop": {
+            "start": 17776,
+            "end": 800
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Star Trek Deep Space Nine: The C",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 256,
+      "brrLength": 144,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 175,
+      "adsr2": 149,
+      "gain": 127,
+      "pitchRegister": 1824
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "75f39fcf756f8f6c7a93a144f4f55a937e5d19e9d0365a10927e6a880da3d1a7"
+          },
+          "loop": {
+            "start": 0,
+            "end": 256
+          }
+        }
+      ]
+    }
+  }
+}

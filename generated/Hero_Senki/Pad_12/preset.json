@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hero Senki",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 7904,
+      "brrLength": 4446,
+      "hasLoop": true,
+      "loopStartPcm": 4496
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "598c490e7fbfe4a8331e3a4321942546379df700b9687828fb62bbfed65d6305"
+          },
+          "loop": {
+            "start": 4496,
+            "end": 7904
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Castlevania 4",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 928,
+      "brrLength": 522,
+      "hasLoop": true,
+      "loopStartPcm": 880,
+      "adsr1": 148,
+      "adsr2": 238,
+      "gain": 0,
+      "pitchRegister": 672
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "385b88409e16511e5e8df0f624eddbfb915647952df8d33dad1483e3ba97c8cd"
+          },
+          "loop": {
+            "start": 880,
+            "end": 928
+          }
+        }
+      ]
+    }
+  }
+}

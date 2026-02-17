@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zenkoku Koukou Soccer Senshuken",
+    "snes": {
+      "srcn": 9,
+      "character": "noise",
+      "pcmLength": 4288,
+      "brrLength": 2412,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2073
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "df6cbf18eff3a9aa54e1e4a7e13f787745a6eb9b0793cd7865109d5416d80d2b"
+          }
+        }
+      ]
+    }
+  }
+}

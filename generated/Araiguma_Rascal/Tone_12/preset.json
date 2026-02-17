@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Araiguma Rascal",
+    "snes": {
+      "srcn": 12,
+      "character": "tone",
+      "pcmLength": 1008,
+      "brrLength": 567,
+      "hasLoop": true,
+      "loopStartPcm": 368
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "51e472fced6d55a92a4d836fdd60deaef1c5b9a9d2b5e0d2ab4726cc5c41fc11"
+          },
+          "loop": {
+            "start": 368,
+            "end": 1008
+          }
+        }
+      ]
+    }
+  }
+}

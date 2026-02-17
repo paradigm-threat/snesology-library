@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dun Quest",
+    "snes": {
+      "srcn": 48,
+      "character": "noise",
+      "pcmLength": 3984,
+      "brrLength": 2241,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "43b433a300b34675d707efcf8cde57fc33a97497a5ba981fc9908d6b97316c7e"
+          }
+        }
+      ]
+    }
+  }
+}

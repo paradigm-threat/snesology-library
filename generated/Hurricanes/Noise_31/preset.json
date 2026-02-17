@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hurricanes",
+    "snes": {
+      "srcn": 31,
+      "character": "noise",
+      "pcmLength": 2512,
+      "brrLength": 1413,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c035cbfa9c62086aaba2be16f6070394d16627030f637b8f7c7cc682175e9dbf"
+          }
+        }
+      ]
+    }
+  }
+}

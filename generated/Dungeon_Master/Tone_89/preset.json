@@ -1,0 +1,48 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dungeon Master",
+    "snes": {
+      "srcn": 89,
+      "character": "tone",
+      "pcmLength": 1088,
+      "brrLength": 612,
+      "hasLoop": true
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1ca70a175d87b89271ff3e95b144dfd74dae5e7e97aa297825476fd7c5f3271f"
+          }
+        }
+      ]
+    }
+  }
+}

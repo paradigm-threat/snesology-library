@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kishin Douji Zenki 3",
+    "snes": {
+      "srcn": 26,
+      "character": "melodic",
+      "pcmLength": 6656,
+      "brrLength": 3744,
+      "hasLoop": true,
+      "loopStartPcm": 2752,
+      "adsr1": 255,
+      "adsr2": 208,
+      "gain": 159,
+      "pitchRegister": 6331
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cea63fa15e44eb67d644b1c55777b849a0e645879a6b8a0acb95693bd41ce94b"
+          },
+          "loop": {
+            "start": 2752,
+            "end": 6656
+          }
+        }
+      ]
+    }
+  }
+}

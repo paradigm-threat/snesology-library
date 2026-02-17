@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earthworm Jim 2",
+    "snes": {
+      "srcn": 7,
+      "character": "tone",
+      "pcmLength": 1136,
+      "brrLength": 639,
+      "hasLoop": true,
+      "loopStartPcm": 1088,
+      "adsr1": 223,
+      "adsr2": 0,
+      "gain": 159,
+      "pitchRegister": 1830
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6a4912fb66fbd111ac4ba4cba47c8c13602574254ce07cd25d7f2b3b753cc597"
+          },
+          "loop": {
+            "start": 1088,
+            "end": 1136
+          }
+        }
+      ]
+    }
+  }
+}

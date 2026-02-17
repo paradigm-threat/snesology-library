@@ -1,0 +1,47 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sangokushi 4",
+    "snes": {
+      "srcn": 240,
+      "character": "noise",
+      "pcmLength": 4864,
+      "brrLength": 2736,
+      "hasLoop": true
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e9e2d8a4a0b2c4d3f7151d6b43d21171a9586c8d040f86f31cf835ab14fbcef6"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cliffhanger",
+    "snes": {
+      "srcn": 28,
+      "character": "one-shot",
+      "pcmLength": 6736,
+      "brrLength": 3789,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 124,
+      "pitchRegister": 1406
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "883e28e52cedf0aaae41023ee3c8ff8f52e76c84f6a5c4f64af97bba655ff3ae"
+          }
+        }
+      ]
+    }
+  }
+}

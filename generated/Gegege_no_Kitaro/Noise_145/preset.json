@@ -1,0 +1,47 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gegege no Kitaro",
+    "snes": {
+      "srcn": 145,
+      "character": "noise",
+      "pcmLength": 6880,
+      "brrLength": 3870,
+      "hasLoop": true
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9d65b612447f4407fd96f5f91d2124d33da68329ec774fc954b111614296f685"
+          }
+        }
+      ]
+    }
+  }
+}

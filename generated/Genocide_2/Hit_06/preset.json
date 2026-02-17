@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Genocide 2",
+    "snes": {
+      "srcn": 6,
+      "character": "one-shot",
+      "pcmLength": 4176,
+      "brrLength": 2349,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 48,
+      "pitchRegister": 2168
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1df38b16f4de82792e50112daf3efde5bb6f6f7e129449e6b9ab4a89e7c3ba0e"
+          }
+        }
+      ]
+    }
+  }
+}

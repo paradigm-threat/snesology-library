@@ -1,0 +1,47 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Final Fantasy 6",
+    "snes": {
+      "srcn": 176,
+      "character": "melodic",
+      "pcmLength": 8704,
+      "brrLength": 4896,
+      "hasLoop": true
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fdb96062f13f1dce0ebfd69bd83d81aac16ea9530ef60e0341bb413804d0ccb9"
+          }
+        }
+      ]
+    }
+  }
+}

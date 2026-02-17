@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Champions World Class Soccer",
+    "snes": {
+      "srcn": 1,
+      "character": "one-shot",
+      "pcmLength": 2080,
+      "brrLength": 1170,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 959
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "983ed049a6486117e3c1eac4a9d3ee687acbe1510413445670cd080bc715e160"
+          }
+        }
+      ]
+    }
+  }
+}

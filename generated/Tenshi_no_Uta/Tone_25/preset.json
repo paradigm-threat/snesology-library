@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tenshi no Uta",
+    "snes": {
+      "srcn": 25,
+      "character": "tone",
+      "pcmLength": 2160,
+      "brrLength": 1215,
+      "hasLoop": true,
+      "loopStartPcm": 2032,
+      "adsr1": 191,
+      "adsr2": 205,
+      "gain": 184,
+      "pitchRegister": 715
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7dd426d9bf14e8c896d7159199b73e6fe99f00c02553f90fe739f28eb9efbbbb"
+          },
+          "loop": {
+            "start": 2032,
+            "end": 2160
+          }
+        }
+      ]
+    }
+  }
+}

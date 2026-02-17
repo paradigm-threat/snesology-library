@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Solid Runner",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 12736,
+      "brrLength": 7164,
+      "hasLoop": true,
+      "loopStartPcm": 2176,
+      "adsr1": 239,
+      "adsr2": 194,
+      "gain": 191,
+      "pitchRegister": 2273
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "49d92ce9a44db944d2b16d43762f95579721cba66ffbd777af52014f150f1353"
+          },
+          "loop": {
+            "start": 2176,
+            "end": 12736
+          }
+        }
+      ]
+    }
+  }
+}

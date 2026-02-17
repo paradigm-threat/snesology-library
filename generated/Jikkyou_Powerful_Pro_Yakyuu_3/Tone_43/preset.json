@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jikkyou Powerful Pro Yakyuu 3",
+    "snes": {
+      "srcn": 43,
+      "character": "tone",
+      "pcmLength": 1664,
+      "brrLength": 936,
+      "hasLoop": true,
+      "loopStartPcm": 2272
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c7cb504aa9269e842043a4a10f3713853fab86e0957d2208d00cc43dc02fdffa"
+          },
+          "loop": {
+            "start": 2272,
+            "end": 1664
+          }
+        }
+      ]
+    }
+  }
+}

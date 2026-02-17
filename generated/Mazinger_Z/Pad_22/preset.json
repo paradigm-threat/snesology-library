@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mazinger Z",
+    "snes": {
+      "srcn": 22,
+      "character": "melodic",
+      "pcmLength": 11632,
+      "brrLength": 6543,
+      "hasLoop": true,
+      "loopStartPcm": 2016,
+      "adsr1": 237,
+      "adsr2": 231,
+      "gain": 0,
+      "pitchRegister": 966
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3ba0ae7ca111b64d94be1c7b61e5e34b76a36fb95e9b61da1819559c8283e9a6"
+          },
+          "loop": {
+            "start": 2016,
+            "end": 11632
+          }
+        }
+      ]
+    }
+  }
+}

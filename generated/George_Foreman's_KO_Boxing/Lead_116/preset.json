@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "George Foreman's KO Boxing",
+    "snes": {
+      "srcn": 116,
+      "character": "melodic",
+      "pcmLength": 6688,
+      "brrLength": 3762,
+      "hasLoop": true,
+      "loopStartPcm": 87680
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "940b4a4bb4c21b7d3d3c4b8259dd82e9af5f5c4b38faa60b590b3b259385c0c4"
+          },
+          "loop": {
+            "start": 87680,
+            "end": 6688
+          }
+        }
+      ]
+    }
+  }
+}

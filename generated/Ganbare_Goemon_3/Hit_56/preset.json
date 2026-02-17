@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ganbare Goemon 3",
+    "snes": {
+      "srcn": 56,
+      "character": "one-shot",
+      "pcmLength": 1248,
+      "brrLength": 702,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 183,
+      "pitchRegister": 928
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b21afe3841082aa55da0e90c4a448697fa8ab4e65038c54dca15a138d18a24ed"
+          }
+        }
+      ]
+    }
+  }
+}

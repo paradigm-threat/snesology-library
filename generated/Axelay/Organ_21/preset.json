@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Organ",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Axelay",
+    "snes": {
+      "srcn": 21,
+      "character": "tone",
+      "pcmLength": 2176,
+      "brrLength": 1224,
+      "hasLoop": true,
+      "loopStartPcm": 64,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 317
+    },
+    "communityName": "organ",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ddaf27a01eb2b529d3ce42dee74f4a236675ddb0e7bb8b025578238ecf0168bd"
+          },
+          "loop": {
+            "start": 64,
+            "end": 2176
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Asterix & Obelix",
+    "snes": {
+      "srcn": 21,
+      "character": "tone",
+      "pcmLength": 2832,
+      "brrLength": 1593,
+      "hasLoop": true,
+      "loopStartPcm": 10000
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6426c95f599546bd17a524aef1b8444b6bd4b46c14b28a76f0da714b55f4bda5"
+          },
+          "loop": {
+            "start": 10000,
+            "end": 2832
+          }
+        }
+      ]
+    }
+  }
+}

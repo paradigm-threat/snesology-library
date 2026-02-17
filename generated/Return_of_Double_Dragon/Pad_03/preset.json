@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Return of Double Dragon",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 12208,
+      "brrLength": 6867,
+      "hasLoop": true,
+      "loopStartPcm": 1056,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1918
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1b8b74a35bcd8a7bbcf627c7afa65563ef08321ddc32d31346d0b51bf5f307ea"
+          },
+          "loop": {
+            "start": 1056,
+            "end": 12208
+          }
+        }
+      ]
+    }
+  }
+}

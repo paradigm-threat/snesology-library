@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super E.D.F. (American)",
+    "snes": {
+      "srcn": 25,
+      "character": "noise",
+      "pcmLength": 10016,
+      "brrLength": 5634,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2048
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f18e45728a0446d4fb86b494e1feb2a800e07f70e6f5d4058987bc2dbbb8842b"
+          }
+        }
+      ]
+    }
+  }
+}

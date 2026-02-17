@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ball Bullet Gun",
+    "snes": {
+      "srcn": 22,
+      "character": "tone",
+      "pcmLength": 720,
+      "brrLength": 405,
+      "hasLoop": true,
+      "loopStartPcm": 640,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 715
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "619ab9f103acdfd9be5f42421d2ffde5d7fbe5f24d3db01de4021f0400028a1d"
+          },
+          "loop": {
+            "start": 640,
+            "end": 720
+          }
+        }
+      ]
+    }
+  }
+}

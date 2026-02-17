@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sugoi Hebereke",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 160,
+      "brrLength": 90,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e2c6b8cc87e830571d6e62c5c7970c18de45b25b1dab53631982b30ed094f54f"
+          },
+          "loop": {
+            "start": 16,
+            "end": 160
+          }
+        }
+      ]
+    }
+  }
+}

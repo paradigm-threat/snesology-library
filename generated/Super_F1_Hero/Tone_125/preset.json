@@ -1,0 +1,48 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super F1 Hero",
+    "snes": {
+      "srcn": 125,
+      "character": "tone",
+      "pcmLength": 3136,
+      "brrLength": 1764,
+      "hasLoop": true
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3b76fca4f4937e8ae7e34306d7a88972d97a9486178509c9fc8c58f84c899b3f"
+          }
+        }
+      ]
+    }
+  }
+}

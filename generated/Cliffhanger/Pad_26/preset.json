@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cliffhanger",
+    "snes": {
+      "srcn": 26,
+      "character": "melodic",
+      "pcmLength": 8304,
+      "brrLength": 4671,
+      "hasLoop": true,
+      "loopStartPcm": 3856,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 112,
+      "pitchRegister": 2435
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a9e336279e76954931203e69d756396f207c65b8f9af90993707fa1123d35e19"
+          },
+          "loop": {
+            "start": 3856,
+            "end": 8304
+          }
+        }
+      ]
+    }
+  }
+}

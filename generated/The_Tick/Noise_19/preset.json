@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Tick",
+    "snes": {
+      "srcn": 19,
+      "character": "noise",
+      "pcmLength": 9040,
+      "brrLength": 5085,
+      "hasLoop": true,
+      "loopStartPcm": 128
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4d48ad915e228dddd01741c8bc0326c95a7ce2445789049c3c6d3a56282fd501"
+          },
+          "loop": {
+            "start": 128,
+            "end": 9040
+          }
+        }
+      ]
+    }
+  }
+}

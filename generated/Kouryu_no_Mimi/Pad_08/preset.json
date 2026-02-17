@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kouryu no Mimi",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 5264,
+      "brrLength": 2961,
+      "hasLoop": true,
+      "loopStartPcm": 2240,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 127,
+      "pitchRegister": 4770
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6bf274da58ccf3a03966b82a51d738e66fa739a6b9c8cc718a3d360ce0d3f5a6"
+          },
+          "loop": {
+            "start": 2240,
+            "end": 5264
+          }
+        }
+      ]
+    }
+  }
+}

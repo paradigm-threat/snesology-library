@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "King of the Monsters 2",
+    "snes": {
+      "srcn": 130,
+      "character": "noise",
+      "pcmLength": 2880,
+      "brrLength": 1620,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f0e919e9e3defe6a9a1f24c7c1f9f7697bfaeb0eed58d667f9050ce61ddedcc2"
+          }
+        }
+      ]
+    }
+  }
+}

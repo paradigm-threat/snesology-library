@@ -1,0 +1,48 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Exhaust Heat",
+    "snes": {
+      "srcn": 102,
+      "character": "tone",
+      "pcmLength": 1472,
+      "brrLength": 828,
+      "hasLoop": true
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "28fd929236f6685574c9c407ebe5fb8913ac5a8acf5576d2a3e84cad68dd8df0"
+          }
+        }
+      ]
+    }
+  }
+}

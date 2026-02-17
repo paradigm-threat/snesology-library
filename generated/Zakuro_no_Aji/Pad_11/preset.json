@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zakuro no Aji",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 21280,
+      "brrLength": 11970,
+      "hasLoop": true,
+      "loopStartPcm": 17488
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e41b56bb36c343b61eaf58f2502ce64561ca975bce2465897dc44768c592bc72"
+          },
+          "loop": {
+            "start": 17488,
+            "end": 21280
+          }
+        }
+      ]
+    }
+  }
+}

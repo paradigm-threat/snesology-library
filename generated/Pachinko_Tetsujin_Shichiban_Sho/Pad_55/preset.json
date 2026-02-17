@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pachinko Tetsujin: Shichiban Sho",
+    "snes": {
+      "srcn": 55,
+      "character": "melodic",
+      "pcmLength": 7584,
+      "brrLength": 4266,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6b7cfe83cb6d8f02f80f6cb55b128f32003b9e387f18d261931c90e8b1b051c0"
+          },
+          "loop": {
+            "start": 16,
+            "end": 7584
+          }
+        }
+      ]
+    }
+  }
+}

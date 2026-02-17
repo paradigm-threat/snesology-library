@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sengoku Denshou",
+    "snes": {
+      "srcn": 65,
+      "character": "melodic",
+      "pcmLength": 4336,
+      "brrLength": 2439,
+      "hasLoop": true,
+      "loopStartPcm": 3728,
+      "adsr1": 255,
+      "adsr2": 234,
+      "gain": 184,
+      "pitchRegister": 2240
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ceb07c00f0bc967bd0f8fc0f337cd7ea893a3533c27172bc0e8e47f7aeae5bd8"
+          },
+          "loop": {
+            "start": 3728,
+            "end": 4336
+          }
+        }
+      ]
+    }
+  }
+}

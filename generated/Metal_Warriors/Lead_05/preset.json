@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Metal Warriors",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 5824,
+      "brrLength": 3276,
+      "hasLoop": true,
+      "loopStartPcm": 5280,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 4238
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "382fafcebbdb28e8695d94673c90858373f3e9cb08f16c1dd5f13fa8479877d8"
+          },
+          "loop": {
+            "start": 5280,
+            "end": 5824
+          }
+        }
+      ]
+    }
+  }
+}

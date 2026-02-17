@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jetsons: Invasion of the Planet",
+    "snes": {
+      "srcn": 14,
+      "character": "tone",
+      "pcmLength": 1776,
+      "brrLength": 999,
+      "hasLoop": true,
+      "loopStartPcm": 1728,
+      "adsr1": 255,
+      "adsr2": 235,
+      "gain": 184,
+      "pitchRegister": 1982
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f5a421d715ca55627dbfb7f3dc30b2e17e355d9cd30764ee03f668ef7531a22c"
+          },
+          "loop": {
+            "start": 1728,
+            "end": 1776
+          }
+        }
+      ]
+    }
+  }
+}

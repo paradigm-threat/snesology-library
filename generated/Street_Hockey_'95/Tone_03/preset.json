@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Street Hockey '95",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 1616,
+      "brrLength": 909,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9410a247fe2c0f2312d0c9bba85628a9f43554d8c1a05b2670f5513b8cfbbbc3"
+          },
+          "loop": {
+            "start": 0,
+            "end": 1616
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Madou Monogatari",
+    "snes": {
+      "srcn": 50,
+      "character": "melodic",
+      "pcmLength": 19856,
+      "brrLength": 11169,
+      "hasLoop": true,
+      "loopStartPcm": 7232,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 224,
+      "pitchRegister": 912
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d22b03fb4b82a7e665a80bcdb97f65d3a7304152187f4a1e9c33ca0773695547"
+          },
+          "loop": {
+            "start": 7232,
+            "end": 19856
+          }
+        }
+      ]
+    }
+  }
+}

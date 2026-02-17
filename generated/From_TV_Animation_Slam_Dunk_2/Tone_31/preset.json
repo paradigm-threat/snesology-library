@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "From TV Animation Slam Dunk 2",
+    "snes": {
+      "srcn": 31,
+      "character": "tone",
+      "pcmLength": 224,
+      "brrLength": 126,
+      "hasLoop": true,
+      "loopStartPcm": 176,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1800
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "20614a119b6ab35485011e8ef64aa2425edc110e03e8bafbf77d74a321d91d22"
+          },
+          "loop": {
+            "start": 176,
+            "end": 224
+          }
+        }
+      ]
+    }
+  }
+}

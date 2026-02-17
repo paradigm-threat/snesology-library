@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Eurit",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 8256,
+      "brrLength": 4644,
+      "hasLoop": true,
+      "loopStartPcm": 4128,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 96,
+      "pitchRegister": 427
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bb7facc31399d9f7e9162fca366f0598165ce48fc26b965158724cee4de3a4bb"
+          },
+          "loop": {
+            "start": 4128,
+            "end": 8256
+          }
+        }
+      ]
+    }
+  }
+}

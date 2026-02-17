@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Morph",
+    "snes": {
+      "srcn": 1,
+      "character": "noise",
+      "pcmLength": 8416,
+      "brrLength": 4734,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 251,
+      "gain": 0,
+      "pitchRegister": 1071
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3f01fbe9918cb01ffd1df5de58fa69156f6d254058585498b2464388a2f8d78a"
+          }
+        }
+      ]
+    }
+  }
+}

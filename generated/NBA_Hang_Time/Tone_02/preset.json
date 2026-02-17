@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "NBA Hang Time",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 1968,
+      "brrLength": 1107,
+      "hasLoop": true,
+      "loopStartPcm": 1792,
+      "adsr1": 0,
+      "adsr2": 64,
+      "gain": 159,
+      "pitchRegister": 512
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "76750e93b1edfa1c8ce3060bfb566f739bc063703f9e2bb68f3ae5c01e33ffbe"
+          },
+          "loop": {
+            "start": 1792,
+            "end": 1968
+          }
+        }
+      ]
+    }
+  }
+}

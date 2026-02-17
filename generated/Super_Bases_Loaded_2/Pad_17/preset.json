@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Bases Loaded 2",
+    "snes": {
+      "srcn": 17,
+      "character": "melodic",
+      "pcmLength": 5840,
+      "brrLength": 3285,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 946
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6ab8bbbe6d03570e9a8357eea01fe0ac685cde556b42152c3a13ee7bd393e661"
+          },
+          "loop": {
+            "start": 48,
+            "end": 5840
+          }
+        }
+      ]
+    }
+  }
+}

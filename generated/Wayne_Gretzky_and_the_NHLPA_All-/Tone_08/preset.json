@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wayne Gretzky and the NHLPA All-",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 512,
+      "brrLength": 288,
+      "hasLoop": true,
+      "loopStartPcm": 464,
+      "adsr1": 0,
+      "adsr2": 228,
+      "gain": 159,
+      "pitchRegister": 2023
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d17de71a734ed0b6debde18509f25795e9087c32ba1a69618b7f36f9ba00916c"
+          },
+          "loop": {
+            "start": 464,
+            "end": 512
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Volleyball Twin",
+    "snes": {
+      "srcn": 23,
+      "character": "melodic",
+      "pcmLength": 8480,
+      "brrLength": 4770,
+      "hasLoop": true,
+      "loopStartPcm": 32,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1207
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "81b5336c57bf018ad1524eb89230b5791d866296855e3d2c25d03a3bfb5eb4ef"
+          },
+          "loop": {
+            "start": 32,
+            "end": 8480
+          }
+        }
+      ]
+    }
+  }
+}

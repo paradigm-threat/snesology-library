@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Honkakuha Igo: Gosei",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 4336,
+      "brrLength": 2439,
+      "hasLoop": true,
+      "loopStartPcm": 3616,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 0,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "57d18db1afc6a965485b98d16f544d409593afd670e60f07f963ca9ac0dc0de4"
+          },
+          "loop": {
+            "start": 3616,
+            "end": 4336
+          }
+        }
+      ]
+    }
+  }
+}

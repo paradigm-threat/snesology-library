@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "GT Racing",
+    "snes": {
+      "srcn": 15,
+      "character": "tone",
+      "pcmLength": 560,
+      "brrLength": 315,
+      "hasLoop": true,
+      "loopStartPcm": 528,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 538
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "41b1d210fe9b6d1b5b735cadb555059dd60badc0d29c9ca2213fe85e8d92ef2b"
+          },
+          "loop": {
+            "start": 528,
+            "end": 560
+          }
+        }
+      ]
+    }
+  }
+}

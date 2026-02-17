@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Otogirisou",
+    "snes": {
+      "srcn": 2,
+      "character": "one-shot",
+      "pcmLength": 1792,
+      "brrLength": 1008,
+      "hasLoop": false,
+      "adsr1": 251,
+      "adsr2": 192,
+      "gain": 184,
+      "pitchRegister": 407
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6603220e6824e5f9a996c7e94e63c4d87f85275d8e6a5e592222d0e758169481"
+          }
+        }
+      ]
+    }
+  }
+}

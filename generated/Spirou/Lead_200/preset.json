@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spirou",
+    "snes": {
+      "srcn": 200,
+      "character": "melodic",
+      "pcmLength": 6384,
+      "brrLength": 3591,
+      "hasLoop": true,
+      "loopStartPcm": 24960
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b198aa9658f889c01b0f55e8f483150f09e73c9e41a5d2eade01702b9108ba00"
+          },
+          "loop": {
+            "start": 24960,
+            "end": 6384
+          }
+        }
+      ]
+    }
+  }
+}

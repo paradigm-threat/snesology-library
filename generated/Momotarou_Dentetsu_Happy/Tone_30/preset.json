@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Momotarou Dentetsu Happy",
+    "snes": {
+      "srcn": 30,
+      "character": "tone",
+      "pcmLength": 2000,
+      "brrLength": 1125,
+      "hasLoop": true,
+      "loopStartPcm": 1136,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 0,
+      "pitchRegister": 8231
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "86f9f9b3a40d01ca26e92fbc24d1fe4c3a818fdad5335bf6c685709b17221330"
+          },
+          "loop": {
+            "start": 1136,
+            "end": 2000
+          }
+        }
+      ]
+    }
+  }
+}

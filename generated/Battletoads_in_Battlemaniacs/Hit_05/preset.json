@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battletoads in Battlemaniacs",
+    "snes": {
+      "srcn": 5,
+      "character": "one-shot",
+      "pcmLength": 6016,
+      "brrLength": 3384,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 247,
+      "gain": 127,
+      "pitchRegister": 2694
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "51294521279eddcc2efa83fea370d99fe3da6f105644ed7e9a3eca53f5fd680e"
+          }
+        }
+      ]
+    }
+  }
+}

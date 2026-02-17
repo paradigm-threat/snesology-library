@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Soccer Kid",
+    "snes": {
+      "srcn": 12,
+      "character": "noise",
+      "pcmLength": 1136,
+      "brrLength": 639,
+      "hasLoop": false,
+      "adsr1": 223,
+      "adsr2": 8,
+      "gain": 0,
+      "pitchRegister": 3000
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6b3aa5c1e61c426e4b2a155554d6ad32052d16572617d4d0a7858e374b3a3c2c"
+          }
+        }
+      ]
+    }
+  }
+}

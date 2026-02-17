@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tactics Ogre",
+    "snes": {
+      "srcn": 83,
+      "character": "melodic",
+      "pcmLength": 5488,
+      "brrLength": 3087,
+      "hasLoop": true,
+      "loopStartPcm": 43232
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6b9efde562271ba83833d548b7416a0bdbc03602e8169cd749eefcada4d1fb61"
+          },
+          "loop": {
+            "start": 43232,
+            "end": 5488
+          }
+        }
+      ]
+    }
+  }
+}

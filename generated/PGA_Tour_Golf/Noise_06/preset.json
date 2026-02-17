@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "PGA Tour Golf",
+    "snes": {
+      "srcn": 6,
+      "character": "noise",
+      "pcmLength": 1760,
+      "brrLength": 990,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 848
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a03da416f32fcf6bc4386463a1d6ace90db8142fddd97bd8516b3dccf2b0ab99"
+          }
+        }
+      ]
+    }
+  }
+}

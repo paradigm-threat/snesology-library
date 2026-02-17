@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Virtual Bart",
+    "snes": {
+      "srcn": 116,
+      "character": "tone",
+      "pcmLength": 384,
+      "brrLength": 216,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "dd745d9bc6da3c25cd5b540909a368d27e61d034bbf2508fc31caaa99ab7f525"
+          },
+          "loop": {
+            "start": 0,
+            "end": 384
+          }
+        }
+      ]
+    }
+  }
+}

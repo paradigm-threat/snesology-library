@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Onizuka Katsuya Super Virtual Bo",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 9120,
+      "brrLength": 5130,
+      "hasLoop": true,
+      "loopStartPcm": 2320,
+      "adsr1": 255,
+      "adsr2": 236,
+      "gain": 184,
+      "pitchRegister": 1404
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9a587be2b1c7fcae2d0a2c4bf9b6327489b57f3aa3a8673a1e71988e625c7afe"
+          },
+          "loop": {
+            "start": 2320,
+            "end": 9120
+          }
+        }
+      ]
+    }
+  }
+}

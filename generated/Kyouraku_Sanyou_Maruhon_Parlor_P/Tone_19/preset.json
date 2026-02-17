@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kyouraku Sanyou Maruhon Parlor P",
+    "snes": {
+      "srcn": 19,
+      "character": "tone",
+      "pcmLength": 544,
+      "brrLength": 306,
+      "hasLoop": true,
+      "loopStartPcm": 960
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b9bc099f1628c5b433ecfa5d72b666c29ff745805d65f6a2e0a7d39a84fefe9b"
+          },
+          "loop": {
+            "start": 960,
+            "end": 544
+          }
+        }
+      ]
+    }
+  }
+}

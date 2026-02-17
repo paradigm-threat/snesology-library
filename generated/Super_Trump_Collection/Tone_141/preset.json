@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Trump Collection",
+    "snes": {
+      "srcn": 141,
+      "character": "tone",
+      "pcmLength": 320,
+      "brrLength": 180,
+      "hasLoop": true,
+      "loopStartPcm": 12032
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5f4e8b71838c3809cc7ba731b2f4fe2d211fc70422f861ab8cfb022c8be47d13"
+          },
+          "loop": {
+            "start": 12032,
+            "end": 320
+          }
+        }
+      ]
+    }
+  }
+}

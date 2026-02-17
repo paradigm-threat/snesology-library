@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "New Yatterman",
+    "snes": {
+      "srcn": 26,
+      "character": "tone",
+      "pcmLength": 1552,
+      "brrLength": 873,
+      "hasLoop": true,
+      "loopStartPcm": 5440
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "57f9e41f2a841ae45ce00dd3fc0f827196da9ee21098f6972cd8d26b3a213211"
+          },
+          "loop": {
+            "start": 5440,
+            "end": 1552
+          }
+        }
+      ]
+    }
+  }
+}

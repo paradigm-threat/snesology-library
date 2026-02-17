@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Bass Slap",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jikkyou Powerful Pro Yakyuu 3",
+    "snes": {
+      "srcn": 48,
+      "character": "tone",
+      "pcmLength": 2592,
+      "brrLength": 1458,
+      "hasLoop": true,
+      "loopStartPcm": 1776,
+      "adsr1": 143,
+      "adsr2": 234,
+      "gain": 0,
+      "pitchRegister": 677
+    },
+    "communityName": "bass_slap",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9373de808c7fb2a444a75529a182656b6a1f638f28d742080532cc332731c7a8"
+          },
+          "loop": {
+            "start": 1776,
+            "end": 2592
+          }
+        }
+      ]
+    }
+  }
+}

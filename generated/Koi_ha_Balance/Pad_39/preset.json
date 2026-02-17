@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Koi ha Balance",
+    "snes": {
+      "srcn": 39,
+      "character": "melodic",
+      "pcmLength": 11552,
+      "brrLength": 6498,
+      "hasLoop": true,
+      "loopStartPcm": 5520,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 160,
+      "pitchRegister": 1625
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "59dcb624f20b46b0be662938f8c81d0508a43d29ef6257fc0b1106a5b59cddaf"
+          },
+          "loop": {
+            "start": 5520,
+            "end": 11552
+          }
+        }
+      ]
+    }
+  }
+}

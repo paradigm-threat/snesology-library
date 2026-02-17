@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Barkley: Shut Up and Jam!",
+    "snes": {
+      "srcn": 55,
+      "character": "one-shot",
+      "pcmLength": 3008,
+      "brrLength": 1692,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 127,
+      "pitchRegister": 1119
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ed02d6f6579a94c152cd8922a1253c737cbb9628506d04e98a8e3f3cbb322278"
+          }
+        }
+      ]
+    }
+  }
+}

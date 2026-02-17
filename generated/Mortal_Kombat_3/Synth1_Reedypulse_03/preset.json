@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth1 Reedypulse",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mortal Kombat 3",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 1040,
+      "brrLength": 585,
+      "hasLoop": true,
+      "loopStartPcm": 896,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 223,
+      "pitchRegister": 3821
+    },
+    "communityName": "synth1_reedypulse",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "210daeccf5f02fa3f9e39fbca32114ae970b3d7de8342dc12db2033bc866ba4c"
+          },
+          "loop": {
+            "start": 896,
+            "end": 1040
+          }
+        }
+      ]
+    }
+  }
+}

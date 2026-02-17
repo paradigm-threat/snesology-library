@@ -1,0 +1,48 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Punch2",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shaq Fu",
+    "snes": {
+      "srcn": 60,
+      "character": "noise",
+      "pcmLength": 1280,
+      "brrLength": 720,
+      "hasLoop": false
+    },
+    "communityName": "sfx_punch2",
+    "matchConfidence": 0.9
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "40abe48976c7e5989eaa3fa9c7e36e19dfa366af559ec2236a6c4e59f942ceba"
+          }
+        }
+      ]
+    }
+  }
+}

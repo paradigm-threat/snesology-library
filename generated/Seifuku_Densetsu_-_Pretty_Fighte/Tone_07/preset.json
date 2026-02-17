@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Seifuku Densetsu - Pretty Fighte",
+    "snes": {
+      "srcn": 7,
+      "character": "tone",
+      "pcmLength": 2576,
+      "brrLength": 1449,
+      "hasLoop": true,
+      "loopStartPcm": 2304
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ce4ac0f250d1fa82ffc262533faa8e24239f01eaabcec2d0875027f0843922de"
+          },
+          "loop": {
+            "start": 2304,
+            "end": 2576
+          }
+        }
+      ]
+    }
+  }
+}

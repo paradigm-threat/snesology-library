@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mario & Wario",
+    "snes": {
+      "srcn": 14,
+      "character": "one-shot",
+      "pcmLength": 3600,
+      "brrLength": 2025,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 224,
+      "pitchRegister": 4870
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "156376a9ab1bcb150f22655b895aa55e2401823587b2bf2211fffd7b12669d3b"
+          }
+        }
+      ]
+    }
+  }
+}

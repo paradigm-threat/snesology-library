@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gionbana",
+    "snes": {
+      "srcn": 19,
+      "character": "tone",
+      "pcmLength": 1616,
+      "brrLength": 909,
+      "hasLoop": true,
+      "loopStartPcm": 1600
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "84b3ede2c4357a7612436904510ef4196cf173cb95d2240c51f0a9c80fd762c8"
+          },
+          "loop": {
+            "start": 1600,
+            "end": 1616
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pachinko Tetsujin: Shichiban Sho",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 2592,
+      "brrLength": 1458,
+      "hasLoop": true,
+      "loopStartPcm": 2304
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "67f56c5eb0b6b8ee177f55ae7a4bbc20b82d8854e3ae65cf6bebbbfb7bd1bc4f"
+          },
+          "loop": {
+            "start": 2304,
+            "end": 2592
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Oda Nobunaga - Haou no Gundan",
+    "snes": {
+      "srcn": 7,
+      "character": "noise",
+      "pcmLength": 880,
+      "brrLength": 495,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7b5c930a455fa7723c4d050b69307c470b4dc5fffe86fdd0aa9f3eca45bf97da"
+          }
+        }
+      ]
+    }
+  }
+}

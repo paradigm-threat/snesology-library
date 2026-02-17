@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "S.O.S.",
+    "snes": {
+      "srcn": 0,
+      "character": "tone",
+      "pcmLength": 3168,
+      "brrLength": 1782,
+      "hasLoop": true,
+      "loopStartPcm": 3056
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "06fb8e8b547d88836826c855d2a89b17fee01fea1ad61c42b7ae59d2abd6302c"
+          },
+          "loop": {
+            "start": 3056,
+            "end": 3168
+          }
+        }
+      ]
+    }
+  }
+}

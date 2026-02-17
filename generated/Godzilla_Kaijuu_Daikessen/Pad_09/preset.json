@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Godzilla: Kaijuu Daikessen",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 6048,
+      "brrLength": 3402,
+      "hasLoop": true,
+      "loopStartPcm": 1488
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b3544746a2e1d95a323c3c5fdd9c42845a8cb347ae229aecc59767e349a64ad8"
+          },
+          "loop": {
+            "start": 1488,
+            "end": 6048
+          }
+        }
+      ]
+    }
+  }
+}

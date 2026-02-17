@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Wew",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "E.V.O.: Search for Eden",
+    "snes": {
+      "srcn": 8,
+      "character": "one-shot",
+      "pcmLength": 4416,
+      "brrLength": 2484,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 242,
+      "gain": 184,
+      "pitchRegister": 4505
+    },
+    "communityName": "sfx_wew",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f102ab9e41de48a1724736a8223ba874eb49dcb30acc9f9104f7d8e1c4e2d7cf"
+          }
+        }
+      ]
+    }
+  }
+}

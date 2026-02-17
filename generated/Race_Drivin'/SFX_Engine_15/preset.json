@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Engine",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Race Drivin'",
+    "snes": {
+      "srcn": 15,
+      "character": "tone",
+      "pcmLength": 3872,
+      "brrLength": 2178,
+      "hasLoop": true,
+      "loopStartPcm": 112
+    },
+    "communityName": "sfx_engine",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ed680f6b3655c98e4cda9245d33b53f23d6968dd7f221d8fe4ed8bd62c4209e5"
+          },
+          "loop": {
+            "start": 112,
+            "end": 3872
+          }
+        }
+      ]
+    }
+  }
+}

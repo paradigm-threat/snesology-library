@@ -1,0 +1,48 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Clunk",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Equinox",
+    "snes": {
+      "srcn": 120,
+      "character": "one-shot",
+      "pcmLength": 2080,
+      "brrLength": 1170,
+      "hasLoop": false
+    },
+    "communityName": "sfx_clunk",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "60baf175cfda81a97bbd121a8a32ff667130fc34d56724a4d31bc1c4cfd5117d"
+          }
+        }
+      ]
+    }
+  }
+}

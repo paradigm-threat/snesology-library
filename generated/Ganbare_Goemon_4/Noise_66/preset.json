@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ganbare Goemon 4",
+    "snes": {
+      "srcn": 66,
+      "character": "noise",
+      "pcmLength": 6832,
+      "brrLength": 3843,
+      "hasLoop": true,
+      "loopStartPcm": 1664
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2717192b4384e8b12298e1f55b94af36cded91b84cb5178c6b9b7768dd93e887"
+          },
+          "loop": {
+            "start": 1664,
+            "end": 6832
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Godzilla: Kaijuu Daikessen",
+    "snes": {
+      "srcn": 9,
+      "character": "one-shot",
+      "pcmLength": 2208,
+      "brrLength": 1242,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 96,
+      "gain": 182,
+      "pitchRegister": 2860
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ebed1d94e5c040aabb27d5142ef90dd550163917aeee185dcbc19ae71385ec23"
+          }
+        }
+      ]
+    }
+  }
+}

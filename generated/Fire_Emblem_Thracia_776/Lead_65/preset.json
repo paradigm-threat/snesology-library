@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fire Emblem Thracia 776",
+    "snes": {
+      "srcn": 65,
+      "character": "melodic",
+      "pcmLength": 10336,
+      "brrLength": 5814,
+      "hasLoop": true,
+      "loopStartPcm": 57328
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "82d8f5a9af15c65f141410d99a5fadf479d870d76b42d20cf1623baff0e21222"
+          },
+          "loop": {
+            "start": 57328,
+            "end": 10336
+          }
+        }
+      ]
+    }
+  }
+}

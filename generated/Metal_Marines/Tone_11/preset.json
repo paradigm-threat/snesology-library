@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Metal Marines",
+    "snes": {
+      "srcn": 11,
+      "character": "tone",
+      "pcmLength": 1536,
+      "brrLength": 864,
+      "hasLoop": true,
+      "loopStartPcm": 1376,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 262
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8ba3efeb241e720776d0e2e3e72feeeb61c513ca248237940bf7997367d79ada"
+          },
+          "loop": {
+            "start": 1376,
+            "end": 1536
+          }
+        }
+      ]
+    }
+  }
+}

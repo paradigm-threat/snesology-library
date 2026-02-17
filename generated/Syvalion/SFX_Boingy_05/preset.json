@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Boingy",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Syvalion",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 2720,
+      "brrLength": 1530,
+      "hasLoop": true,
+      "loopStartPcm": 80
+    },
+    "communityName": "sfx_boingy",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "648b457c01636633a065c079a97dabf0b806438782830ef21e69d3aa9620e29e"
+          },
+          "loop": {
+            "start": 80,
+            "end": 2720
+          }
+        }
+      ]
+    }
+  }
+}

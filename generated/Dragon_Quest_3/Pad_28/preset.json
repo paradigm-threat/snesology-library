@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Quest 3",
+    "snes": {
+      "srcn": 28,
+      "character": "melodic",
+      "pcmLength": 8688,
+      "brrLength": 4887,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "dc52611cb7e663ab9a5a7842314c22e8cb5fea82e2913337049ded8500aa0aba"
+          },
+          "loop": {
+            "start": 16,
+            "end": 8688
+          }
+        }
+      ]
+    }
+  }
+}

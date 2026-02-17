@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gokujyo Parodius",
+    "snes": {
+      "srcn": 26,
+      "character": "tone",
+      "pcmLength": 2736,
+      "brrLength": 1539,
+      "hasLoop": true,
+      "loopStartPcm": 1744,
+      "adsr1": 0,
+      "adsr2": 207,
+      "gain": 184,
+      "pitchRegister": 1839
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ee4b06c48405db4cf31fd345a3f96d9606230aa35e2885a737bdead0f4280d1c"
+          },
+          "loop": {
+            "start": 1744,
+            "end": 2736
+          }
+        }
+      ]
+    }
+  }
+}

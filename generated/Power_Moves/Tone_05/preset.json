@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Power Moves",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 2560,
+      "brrLength": 1440,
+      "hasLoop": true,
+      "loopStartPcm": 2032,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1828
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "61c0c2fbc91cf44d275b03c8ffa905681b48bf43735aafb1e5c0df1f37796dea"
+          },
+          "loop": {
+            "start": 2032,
+            "end": 2560
+          }
+        }
+      ]
+    }
+  }
+}

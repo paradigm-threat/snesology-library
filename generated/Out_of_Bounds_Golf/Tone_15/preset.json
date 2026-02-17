@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Out of Bounds Golf",
+    "snes": {
+      "srcn": 15,
+      "character": "tone",
+      "pcmLength": 1776,
+      "brrLength": 999,
+      "hasLoop": true,
+      "loopStartPcm": 1600
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9146a612a202228c2ad764760f03b4a4458b59f69b1d506f2f5d5546f0cb4ed0"
+          },
+          "loop": {
+            "start": 1600,
+            "end": 1776
+          }
+        }
+      ]
+    }
+  }
+}

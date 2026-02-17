@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Arkanoid: Doh it Again",
+    "snes": {
+      "srcn": 196,
+      "character": "tone",
+      "pcmLength": 2960,
+      "brrLength": 1665,
+      "hasLoop": true,
+      "loopStartPcm": 11424
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bfde5d8007c945f47621f210356411185fad47863e1e07c13892c4461149e684"
+          },
+          "loop": {
+            "start": 11424,
+            "end": 2960
+          }
+        }
+      ]
+    }
+  }
+}

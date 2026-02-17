@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cosmo Gang: The Video",
+    "snes": {
+      "srcn": 0,
+      "character": "one-shot",
+      "pcmLength": 1088,
+      "brrLength": 612,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 255,
+      "gain": 159,
+      "pitchRegister": 3412
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8cd01721c13f46b3b9fbe285f2cf466207a1122652f0a39741a6a43224e3a48d"
+          }
+        }
+      ]
+    }
+  }
+}

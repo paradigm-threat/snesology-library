@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Ninja Kun",
+    "snes": {
+      "srcn": 31,
+      "character": "melodic",
+      "pcmLength": 4512,
+      "brrLength": 2538,
+      "hasLoop": true,
+      "loopStartPcm": 672,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2876
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9c420e4700def45513bb9f6f14c84d335500e1c5f71376309ef72e603ab7f377"
+          },
+          "loop": {
+            "start": 672,
+            "end": 4512
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Star Trek: Starfleet Academy",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 1344,
+      "brrLength": 756,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 120,
+      "adsr2": 0,
+      "gain": 251,
+      "pitchRegister": 1780
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4aadb49e2611cee0150e42f00e31669685e0e694a3b2833b6d985b4f0c762d42"
+          },
+          "loop": {
+            "start": 16,
+            "end": 1344
+          }
+        }
+      ]
+    }
+  }
+}

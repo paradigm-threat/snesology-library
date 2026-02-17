@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Front Mission",
+    "snes": {
+      "srcn": 84,
+      "character": "tone",
+      "pcmLength": 224,
+      "brrLength": 126,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3f025a08e105de953f327f1a2cf263cb15e65fded176f79ae2e50fdae724fd4e"
+          },
+          "loop": {
+            "start": 0,
+            "end": 224
+          }
+        }
+      ]
+    }
+  }
+}

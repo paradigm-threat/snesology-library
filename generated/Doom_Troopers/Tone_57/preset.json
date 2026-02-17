@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Doom Troopers",
+    "snes": {
+      "srcn": 57,
+      "character": "tone",
+      "pcmLength": 432,
+      "brrLength": 243,
+      "hasLoop": true,
+      "loopStartPcm": 288,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 127,
+      "pitchRegister": 2696
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1ce0a2f2ed5d44b279b31090bc7846653c8d2cf95f2631c33de4fd54fd3f6ea2"
+          },
+          "loop": {
+            "start": 288,
+            "end": 432
+          }
+        }
+      ]
+    }
+  }
+}

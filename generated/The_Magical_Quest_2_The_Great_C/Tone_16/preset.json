@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Magical Quest 2: The Great C",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 240,
+      "brrLength": 135,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "42d37602d120c9818a49a597d16bf2c6ee44568e2c4d0d6f041a5638c72bb87a"
+          },
+          "loop": {
+            "start": 48,
+            "end": 240
+          }
+        }
+      ]
+    }
+  }
+}

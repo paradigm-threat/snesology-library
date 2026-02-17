@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Christmas Demo",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 16768,
+      "brrLength": 9432,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2975
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "709024f1a84f11e7a162e1b8e48a564f8db3b8bb3ba7cb91db89bc281554394c"
+          },
+          "loop": {
+            "start": 16,
+            "end": 16768
+          }
+        }
+      ]
+    }
+  }
+}

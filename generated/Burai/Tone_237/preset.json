@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Burai",
+    "snes": {
+      "srcn": 237,
+      "character": "tone",
+      "pcmLength": 432,
+      "brrLength": 243,
+      "hasLoop": true,
+      "loopStartPcm": 14480
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2033b63f4b2a58d757adfd733535012053fba9ab58a7b0eba1596c4c8d1b8999"
+          },
+          "loop": {
+            "start": 14480,
+            "end": 432
+          }
+        }
+      ]
+    }
+  }
+}

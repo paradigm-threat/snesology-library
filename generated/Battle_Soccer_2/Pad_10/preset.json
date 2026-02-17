@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battle Soccer 2",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 7904,
+      "brrLength": 4446,
+      "hasLoop": true,
+      "loopStartPcm": 3568
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "640ee588feb2604e6897968a251b767b462aeee9521ac256931abf0ecef5a72c"
+          },
+          "loop": {
+            "start": 3568,
+            "end": 7904
+          }
+        }
+      ]
+    }
+  }
+}

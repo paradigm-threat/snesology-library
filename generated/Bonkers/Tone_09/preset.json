@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bonkers",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 3008,
+      "brrLength": 1692,
+      "hasLoop": true,
+      "loopStartPcm": 2928,
+      "adsr1": 250,
+      "adsr2": 242,
+      "gain": 0,
+      "pitchRegister": 1701
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "71385ec087f4662be2f4a0ce96432718a0fb2623910349f23d38ed1512ad8105"
+          },
+          "loop": {
+            "start": 2928,
+            "end": 3008
+          }
+        }
+      ]
+    }
+  }
+}

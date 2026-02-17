@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Koushien 3",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 3184,
+      "brrLength": 1791,
+      "hasLoop": true,
+      "loopStartPcm": 2688
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "efe405bc166e8a56063c44a904c31c4bd4e69b180b9e097aa18e6eed988f06f1"
+          },
+          "loop": {
+            "start": 2688,
+            "end": 3184
+          }
+        }
+      ]
+    }
+  }
+}

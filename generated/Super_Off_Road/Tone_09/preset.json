@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Off Road",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 1520,
+      "brrLength": 855,
+      "hasLoop": true,
+      "loopStartPcm": 544
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "48d1011166475f531e5a4ac417634f2543e9932b3e14aeed7e090117eff0eb20"
+          },
+          "loop": {
+            "start": 544,
+            "end": 1520
+          }
+        }
+      ]
+    }
+  }
+}

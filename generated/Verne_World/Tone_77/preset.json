@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Verne World",
+    "snes": {
+      "srcn": 77,
+      "character": "tone",
+      "pcmLength": 3712,
+      "brrLength": 2088,
+      "hasLoop": true,
+      "loopStartPcm": 73216
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ff963361f9abc852765e0f0eb80536b4d74427e3b338cf0a095303b1dc6c2de4"
+          },
+          "loop": {
+            "start": 73216,
+            "end": 3712
+          }
+        }
+      ]
+    }
+  }
+}

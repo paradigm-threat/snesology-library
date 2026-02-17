@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Speed Racer",
+    "snes": {
+      "srcn": 42,
+      "character": "melodic",
+      "pcmLength": 8368,
+      "brrLength": 4707,
+      "hasLoop": true,
+      "loopStartPcm": 2768,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 127,
+      "pitchRegister": 1456
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8cac30e5b220a964a2f6f12c65025478d074c0d84e073ee27649d0e476bdac71"
+          },
+          "loop": {
+            "start": 2768,
+            "end": 8368
+          }
+        }
+      ]
+    }
+  }
+}

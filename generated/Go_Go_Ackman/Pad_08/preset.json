@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Go Go Ackman",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 5584,
+      "brrLength": 3141,
+      "hasLoop": true,
+      "loopStartPcm": 3056,
+      "adsr1": 255,
+      "adsr2": 164,
+      "gain": 185,
+      "pitchRegister": 4748
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "da583095b296207ff043496a3cfbda2ed01f244bde2d480cf19c1d204f0bffb0"
+          },
+          "loop": {
+            "start": 3056,
+            "end": 5584
+          }
+        }
+      ]
+    }
+  }
+}

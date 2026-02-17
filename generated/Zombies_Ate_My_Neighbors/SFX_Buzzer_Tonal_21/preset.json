@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Buzzer Tonal",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zombies Ate My Neighbors",
+    "snes": {
+      "srcn": 21,
+      "character": "noise",
+      "pcmLength": 7104,
+      "brrLength": 3996,
+      "hasLoop": true,
+      "loopStartPcm": 144
+    },
+    "communityName": "sfx_buzzer_tonal",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a197bfc04cb26c078e3d5bc4897e953aa4e63a8cece004455272ad00d5ea161e"
+          },
+          "loop": {
+            "start": 144,
+            "end": 7104
+          }
+        }
+      ]
+    }
+  }
+}

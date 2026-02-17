@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Explode",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "E.V.O.: Search for Eden",
+    "snes": {
+      "srcn": 21,
+      "character": "one-shot",
+      "pcmLength": 10208,
+      "brrLength": 5742,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2703
+    },
+    "communityName": "sfx_explode",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9b0496c5236c65fcca1b58f3c990e22161d032c1a128e8783e8ef5c2df2b800b"
+          }
+        }
+      ]
+    }
+  }
+}

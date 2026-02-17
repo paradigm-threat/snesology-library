@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Final Stretch",
+    "snes": {
+      "srcn": 151,
+      "character": "tone",
+      "pcmLength": 208,
+      "brrLength": 117,
+      "hasLoop": true,
+      "loopStartPcm": 30240
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "41d7f75fa3ba6a91189d2deb10da5ed64a8859f84bd33ac79c37c821e066a06e"
+          },
+          "loop": {
+            "start": 30240,
+            "end": 208
+          }
+        }
+      ]
+    }
+  }
+}

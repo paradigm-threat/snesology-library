@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Thomas the Tank Engine & Friends",
+    "snes": {
+      "srcn": 22,
+      "character": "tone",
+      "pcmLength": 2656,
+      "brrLength": 1494,
+      "hasLoop": true,
+      "loopStartPcm": 1408,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 59,
+      "pitchRegister": 2473
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "475b18753c912eaba0e8313a043d47ed73ed823f621d0c12ef6d2f4e503d325b"
+          },
+          "loop": {
+            "start": 1408,
+            "end": 2656
+          }
+        }
+      ]
+    }
+  }
+}

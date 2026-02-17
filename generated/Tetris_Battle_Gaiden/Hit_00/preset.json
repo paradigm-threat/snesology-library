@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tetris Battle Gaiden",
+    "snes": {
+      "srcn": 0,
+      "character": "one-shot",
+      "pcmLength": 5472,
+      "brrLength": 3078,
+      "hasLoop": false,
+      "adsr1": 141,
+      "adsr2": 0,
+      "gain": 158,
+      "pitchRegister": 6000
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ffce377784b508e8cf93000e4d7d6033ea3136fdd6ca7963bb6246eee8faa162"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Kick",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Space Invaders",
+    "snes": {
+      "srcn": 16,
+      "character": "noise",
+      "pcmLength": 1696,
+      "brrLength": 954,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 1515
+    },
+    "communityName": "perc_kick",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fbddf2da0afa2fca66fec8b288f757ae9ca093cec8edc9a35a16a8b61f169b53"
+          }
+        }
+      ]
+    }
+  }
+}

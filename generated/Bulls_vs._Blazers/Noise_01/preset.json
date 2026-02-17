@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bulls vs. Blazers",
+    "snes": {
+      "srcn": 1,
+      "character": "noise",
+      "pcmLength": 2608,
+      "brrLength": 1467,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 864
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cb114bc5af253c3bdb1d7eacc1c24a787b81f9182724cec2603bc8210a202c8a"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tenbu Spirits",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 2064,
+      "brrLength": 1161,
+      "hasLoop": true,
+      "loopStartPcm": 2096
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "05348e4940b51a47050e74f85e58b7a1a5a5a15a6b4a8f84904e8f2f5a8d04f8"
+          },
+          "loop": {
+            "start": 2096,
+            "end": 2064
+          }
+        }
+      ]
+    }
+  }
+}

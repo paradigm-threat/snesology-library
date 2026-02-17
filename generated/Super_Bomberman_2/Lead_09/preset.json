@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Bomberman 2",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 4400,
+      "brrLength": 2475,
+      "hasLoop": true,
+      "loopStartPcm": 4208,
+      "adsr1": 0,
+      "adsr2": 234,
+      "gain": 159,
+      "pitchRegister": 799
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "71d22848fc541b373fbec88e126933a56d0ae6be2ba534a8b46958b4a66b7884"
+          },
+          "loop": {
+            "start": 4208,
+            "end": 4400
+          }
+        }
+      ]
+    }
+  }
+}

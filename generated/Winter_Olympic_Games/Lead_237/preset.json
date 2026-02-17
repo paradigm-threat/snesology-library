@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Winter Olympic Games",
+    "snes": {
+      "srcn": 237,
+      "character": "melodic",
+      "pcmLength": 12016,
+      "brrLength": 6759,
+      "hasLoop": true,
+      "loopStartPcm": 79008
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3577f9ea12b779d8e3cdb74890a73608d8f9720739b31315cc695692aaac3e97"
+          },
+          "loop": {
+            "start": 79008,
+            "end": 12016
+          }
+        }
+      ]
+    }
+  }
+}

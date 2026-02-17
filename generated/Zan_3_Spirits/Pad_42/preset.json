@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zan 3 Spirits",
+    "snes": {
+      "srcn": 42,
+      "character": "melodic",
+      "pcmLength": 8272,
+      "brrLength": 4653,
+      "hasLoop": true,
+      "loopStartPcm": 4224
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b92a8fa3ff54d2a8eaff1f79151aed6deb21ce5865a08b40a7059aaab41aa173"
+          },
+          "loop": {
+            "start": 4224,
+            "end": 8272
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Yamato Takeru",
+    "snes": {
+      "srcn": 14,
+      "character": "melodic",
+      "pcmLength": 12032,
+      "brrLength": 6768,
+      "hasLoop": true,
+      "loopStartPcm": 7168
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "84478078957c09670a6a208d43471424207cebc682b1911474aedfbdd8f345aa"
+          },
+          "loop": {
+            "start": 7168,
+            "end": 12032
+          }
+        }
+      ]
+    }
+  }
+}

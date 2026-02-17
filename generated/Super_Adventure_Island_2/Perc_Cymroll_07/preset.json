@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Cymroll",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Adventure Island 2",
+    "snes": {
+      "srcn": 7,
+      "character": "noise",
+      "pcmLength": 4512,
+      "brrLength": 2538,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 255,
+      "adsr2": 239,
+      "gain": 0,
+      "pitchRegister": 0
+    },
+    "communityName": "perc_cymroll",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5f12a1382295bf6e52310e3866cb134b091a7228f8a7fed06cd47d6358c097d9"
+          },
+          "loop": {
+            "start": 16,
+            "end": 4512
+          }
+        }
+      ]
+    }
+  }
+}

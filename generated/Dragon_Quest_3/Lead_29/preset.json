@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Quest 3",
+    "snes": {
+      "srcn": 29,
+      "character": "melodic",
+      "pcmLength": 7600,
+      "brrLength": 4275,
+      "hasLoop": true,
+      "loopStartPcm": 12000
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "221a87bdd0ca064b9543c5212f6552abdce2cda7db30e2c7c692c1cde68eca42"
+          },
+          "loop": {
+            "start": 12000,
+            "end": 7600
+          }
+        }
+      ]
+    }
+  }
+}

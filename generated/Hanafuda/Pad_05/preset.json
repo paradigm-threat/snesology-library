@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hanafuda",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 4688,
+      "brrLength": 2637,
+      "hasLoop": true,
+      "loopStartPcm": 32
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8a8929b9954ce4f28bc620f596311346121f9522b371ac0859a5ca7c1e733470"
+          },
+          "loop": {
+            "start": 32,
+            "end": 4688
+          }
+        }
+      ]
+    }
+  }
+}

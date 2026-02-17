@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Genjin 2",
+    "snes": {
+      "srcn": 30,
+      "character": "tone",
+      "pcmLength": 1664,
+      "brrLength": 936,
+      "hasLoop": true,
+      "loopStartPcm": 1408,
+      "adsr1": 0,
+      "adsr2": 170,
+      "gain": 159,
+      "pitchRegister": 267
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "dcc49d90db5508ba505f8b1094513900774ce951b26c86f9863184b4b2edf5c7"
+          },
+          "loop": {
+            "start": 1408,
+            "end": 1664
+          }
+        }
+      ]
+    }
+  }
+}

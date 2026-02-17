@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kyouraku Sanyou Toyomaru Okumura",
+    "snes": {
+      "srcn": 27,
+      "character": "melodic",
+      "pcmLength": 4224,
+      "brrLength": 2376,
+      "hasLoop": true,
+      "loopStartPcm": 4512,
+      "adsr1": 255,
+      "adsr2": 236,
+      "gain": 184,
+      "pitchRegister": 2548
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3a627e64deeb56a406cdf5466c6db8b91933f3930e08aa06d5b276c7ab98f08f"
+          },
+          "loop": {
+            "start": 4512,
+            "end": 4224
+          }
+        }
+      ]
+    }
+  }
+}

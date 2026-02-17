@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Waterworld",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 5072,
+      "brrLength": 2853,
+      "hasLoop": true,
+      "loopStartPcm": 3264,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 223,
+      "pitchRegister": 2102
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "05b76701e1de1d1a718d19e785fa89b118529ebdc8b4e6c2b2bac29491a745b2"
+          },
+          "loop": {
+            "start": 3264,
+            "end": 5072
+          }
+        }
+      ]
+    }
+  }
+}

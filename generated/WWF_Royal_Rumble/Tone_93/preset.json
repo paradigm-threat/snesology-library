@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "WWF Royal Rumble",
+    "snes": {
+      "srcn": 93,
+      "character": "tone",
+      "pcmLength": 1200,
+      "brrLength": 675,
+      "hasLoop": true,
+      "loopStartPcm": 1472
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1ff4ee7f092b92d01cac8f7b11f8eb2d8c6e6a4771cb0d8c7aeb82e190c9ad2a"
+          },
+          "loop": {
+            "start": 1472,
+            "end": 1200
+          }
+        }
+      ]
+    }
+  }
+}

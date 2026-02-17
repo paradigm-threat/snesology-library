@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dolucky's A-League Soccer",
+    "snes": {
+      "srcn": 32,
+      "character": "tone",
+      "pcmLength": 1504,
+      "brrLength": 846,
+      "hasLoop": true,
+      "loopStartPcm": 1264,
+      "adsr1": 255,
+      "adsr2": 240,
+      "gain": 184,
+      "pitchRegister": 1689
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9a5efa133a97421828a54733696319595d0224d548ccdcd6cddff08ba8382831"
+          },
+          "loop": {
+            "start": 1264,
+            "end": 1504
+          }
+        }
+      ]
+    }
+  }
+}

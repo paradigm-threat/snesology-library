@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ginga Sengoku Gunyuuden Rai",
+    "snes": {
+      "srcn": 12,
+      "character": "noise",
+      "pcmLength": 8000,
+      "brrLength": 4500,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5293fa3b0d5f750039a5d70a72c4e55d8a493bb633348679fc04d294bc73e7fc"
+          }
+        }
+      ]
+    }
+  }
+}

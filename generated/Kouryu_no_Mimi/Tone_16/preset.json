@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kouryu no Mimi",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 2128,
+      "brrLength": 1197,
+      "hasLoop": true,
+      "loopStartPcm": 976,
+      "adsr1": 0,
+      "adsr2": 148,
+      "gain": 88,
+      "pitchRegister": 1280
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "30850aaefdba3e878a5e4870b8b79999a9d6aa05010d88177cac06888646fd2c"
+          },
+          "loop": {
+            "start": 976,
+            "end": 2128
+          }
+        }
+      ]
+    }
+  }
+}

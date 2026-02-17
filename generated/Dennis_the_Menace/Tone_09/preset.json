@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dennis the Menace",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 1328,
+      "brrLength": 747,
+      "hasLoop": true,
+      "loopStartPcm": 1248
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b8c9b25e20c5cce1f748b6668dfde1abc4dce2a62a49fe667fbaf6b464f227ab"
+          },
+          "loop": {
+            "start": 1248,
+            "end": 1328
+          }
+        }
+      ]
+    }
+  }
+}

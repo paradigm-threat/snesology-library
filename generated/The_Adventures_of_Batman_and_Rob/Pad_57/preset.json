@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Adventures of Batman and Rob",
+    "snes": {
+      "srcn": 57,
+      "character": "melodic",
+      "pcmLength": 8208,
+      "brrLength": 4617,
+      "hasLoop": true,
+      "loopStartPcm": 3504
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5385e4a72b4387731f2fe011e3c9872d18468e0bc6b9de2c93d9890b3ef6bce3"
+          },
+          "loop": {
+            "start": 3504,
+            "end": 8208
+          }
+        }
+      ]
+    }
+  }
+}

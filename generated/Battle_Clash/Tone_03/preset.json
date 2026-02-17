@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battle Clash",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 1616,
+      "brrLength": 909,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 156,
+      "pitchRegister": 7582
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "635f1c1079450a2aed0151ae762ca5aad8f5ef0df1e96dc98cdb84c679dc08c3"
+          },
+          "loop": {
+            "start": 16,
+            "end": 1616
+          }
+        }
+      ]
+    }
+  }
+}

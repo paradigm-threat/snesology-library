@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hokuto no Ken 5",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 11248,
+      "brrLength": 6327,
+      "hasLoop": true,
+      "loopStartPcm": 6368,
+      "adsr1": 255,
+      "adsr2": 236,
+      "gain": 184,
+      "pitchRegister": 6371
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ab8dab7e9720e7f9aa6bc4c1165fc88dd532bcfab4b386df67cee18fa51b12d4"
+          },
+          "loop": {
+            "start": 6368,
+            "end": 11248
+          }
+        }
+      ]
+    }
+  }
+}

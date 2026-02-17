@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Masoukishin",
+    "snes": {
+      "srcn": 4,
+      "character": "tone",
+      "pcmLength": 1664,
+      "brrLength": 936,
+      "hasLoop": true,
+      "loopStartPcm": 352,
+      "adsr1": 255,
+      "adsr2": 242,
+      "gain": 0,
+      "pitchRegister": 2304
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "dd9e9e636c977e3488fd89ff3017318e2c6a8ce5f7d294a61029cd3fc6e4d21f"
+          },
+          "loop": {
+            "start": 352,
+            "end": 1664
+          }
+        }
+      ]
+    }
+  }
+}

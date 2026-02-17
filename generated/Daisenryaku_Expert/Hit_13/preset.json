@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Daisenryaku Expert",
+    "snes": {
+      "srcn": 13,
+      "character": "one-shot",
+      "pcmLength": 2992,
+      "brrLength": 1683,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 244,
+      "gain": 186,
+      "pitchRegister": 3455
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "639a8b9f7cf7eada0861d0fb2f56f598f9f840ed8f3ae4434ed0312fb1b43feb"
+          }
+        }
+      ]
+    }
+  }
+}

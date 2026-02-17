@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Captain Novolin",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 4192,
+      "brrLength": 2358,
+      "hasLoop": true,
+      "loopStartPcm": 4096
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a84ce7084f9a412cd8266a705bd1990bb58de99adc2c34eba301fbf13779a623"
+          },
+          "loop": {
+            "start": 4096,
+            "end": 4192
+          }
+        }
+      ]
+    }
+  }
+}

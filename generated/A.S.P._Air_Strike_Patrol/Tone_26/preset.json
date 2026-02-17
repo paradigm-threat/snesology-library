@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "A.S.P. Air Strike Patrol",
+    "snes": {
+      "srcn": 26,
+      "character": "tone",
+      "pcmLength": 544,
+      "brrLength": 306,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "49c9d726ef19d50ff0f066e86ca2ba277dd55d752748b5ab0c8ee66cde1e525c"
+          },
+          "loop": {
+            "start": 0,
+            "end": 544
+          }
+        }
+      ]
+    }
+  }
+}

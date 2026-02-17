@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wondrous Magic",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 3520,
+      "brrLength": 1980,
+      "hasLoop": true,
+      "loopStartPcm": 3440,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 5475
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d0659c6bc040fc69d17ed38de43fd4c320cc3ca489aad6824bd65f6240cbe98a"
+          },
+          "loop": {
+            "start": 3440,
+            "end": 3520
+          }
+        }
+      ]
+    }
+  }
+}

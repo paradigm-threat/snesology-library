@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Deae Tonosama Appare Ichiban",
+    "snes": {
+      "srcn": 2,
+      "character": "one-shot",
+      "pcmLength": 4608,
+      "brrLength": 2592,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 158,
+      "pitchRegister": 2446
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d0185e0e5e4d923c3b096415461d38e7214d0260b9bcd0dcbec174af4a172a57"
+          }
+        }
+      ]
+    }
+  }
+}

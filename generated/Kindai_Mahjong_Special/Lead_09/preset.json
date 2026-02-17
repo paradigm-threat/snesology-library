@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kindai Mahjong Special",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 4384,
+      "brrLength": 2466,
+      "hasLoop": true,
+      "loopStartPcm": 3696
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "59fb708d85034ab112168669dfc017704032268c834256128b353bead0b13eab"
+          },
+          "loop": {
+            "start": 3696,
+            "end": 4384
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Great Battle Gaiden 2",
+    "snes": {
+      "srcn": 8,
+      "character": "one-shot",
+      "pcmLength": 16080,
+      "brrLength": 9045,
+      "hasLoop": false,
+      "adsr1": 151,
+      "adsr2": 224,
+      "gain": 178,
+      "pitchRegister": 3557
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "504a35f5fff70fe7cbf7dd29e93b5c61982de0baefab8d1d3d91b7a3912e2cb8"
+          }
+        }
+      ]
+    }
+  }
+}

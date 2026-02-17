@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Stomp",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jikkyou Powerful Pro Yakyuu 3",
+    "snes": {
+      "srcn": 23,
+      "character": "melodic",
+      "pcmLength": 5632,
+      "brrLength": 3168,
+      "hasLoop": true,
+      "loopStartPcm": 3840,
+      "adsr1": 143,
+      "adsr2": 241,
+      "gain": 0,
+      "pitchRegister": 2143
+    },
+    "communityName": "sfx_stomp",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ee7ff47bae18830d45cb1c6d5ae4612b565525d73f3ff353da5d24bd4b612aba"
+          },
+          "loop": {
+            "start": 3840,
+            "end": 5632
+          }
+        }
+      ]
+    }
+  }
+}

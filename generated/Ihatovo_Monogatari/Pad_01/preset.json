@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ihatovo Monogatari",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 13328,
+      "brrLength": 7497,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "aab1d348689fd19bc874dcd9d2560d0bef8734629fe05a4492c91c9a4f8499fc"
+          },
+          "loop": {
+            "start": 16,
+            "end": 13328
+          }
+        }
+      ]
+    }
+  }
+}

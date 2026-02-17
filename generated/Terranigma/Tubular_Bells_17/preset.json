@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tubular Bells",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Terranigma",
+    "snes": {
+      "srcn": 17,
+      "character": "melodic",
+      "pcmLength": 6016,
+      "brrLength": 3384,
+      "hasLoop": true,
+      "loopStartPcm": 3024,
+      "adsr1": 143,
+      "adsr2": 43,
+      "gain": 184,
+      "pitchRegister": 3485
+    },
+    "communityName": "tubular_bells",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0d3206fecd291ac6df9cf749af3da14008fb57e69efe8644394e7a150783cf76"
+          },
+          "loop": {
+            "start": 3024,
+            "end": 6016
+          }
+        }
+      ]
+    }
+  }
+}

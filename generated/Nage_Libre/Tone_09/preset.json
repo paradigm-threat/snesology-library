@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Nage Libre",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 672,
+      "brrLength": 378,
+      "hasLoop": true,
+      "loopStartPcm": 336,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 84,
+      "pitchRegister": 9452
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a48ede063863d878bc29c4d5668aa75bf36e46b1421a1c2c63e438d2e88f8330"
+          },
+          "loop": {
+            "start": 336,
+            "end": 672
+          }
+        }
+      ]
+    }
+  }
+}

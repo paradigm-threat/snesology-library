@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tales of Phantasia",
+    "snes": {
+      "srcn": 54,
+      "character": "tone",
+      "pcmLength": 1136,
+      "brrLength": 639,
+      "hasLoop": true,
+      "loopStartPcm": 4432
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7aa2cadb877e8c62f3043bebb462ed385211350ae26da743663bed5d772df323"
+          },
+          "loop": {
+            "start": 4432,
+            "end": 1136
+          }
+        }
+      ]
+    }
+  }
+}

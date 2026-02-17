@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fighter's History",
+    "snes": {
+      "srcn": 25,
+      "character": "tone",
+      "pcmLength": 144,
+      "brrLength": 81,
+      "hasLoop": true,
+      "loopStartPcm": 32,
+      "adsr1": 143,
+      "adsr2": 175,
+      "gain": 184,
+      "pitchRegister": 2404
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3fc1e6094f275f7d8f028870984b76aff637f1807568497ae85f868591ce4c5d"
+          },
+          "loop": {
+            "start": 32,
+            "end": 144
+          }
+        }
+      ]
+    }
+  }
+}

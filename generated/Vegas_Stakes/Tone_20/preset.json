@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Vegas Stakes",
+    "snes": {
+      "srcn": 20,
+      "character": "tone",
+      "pcmLength": 176,
+      "brrLength": 99,
+      "hasLoop": true,
+      "loopStartPcm": 112
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d654aed8339c76f3a1d29ef40c968db79f3a73d5ba303e63d3aeb4a37f38958b"
+          },
+          "loop": {
+            "start": 112,
+            "end": 176
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Saturday Night Slam Masters",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 5152,
+      "brrLength": 2898,
+      "hasLoop": true,
+      "loopStartPcm": 4912,
+      "adsr1": 0,
+      "adsr2": 242,
+      "gain": 158,
+      "pitchRegister": 1680
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "851dabb02c27e31b137bf886b0fb1645ccadcad00047b0b9142a680d883560bd"
+          },
+          "loop": {
+            "start": 4912,
+            "end": 5152
+          }
+        }
+      ]
+    }
+  }
+}

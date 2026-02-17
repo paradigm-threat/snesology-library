@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Casper (American)",
+    "snes": {
+      "srcn": 133,
+      "character": "tone",
+      "pcmLength": 208,
+      "brrLength": 117,
+      "hasLoop": true,
+      "loopStartPcm": 87136
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "91a0c539e59bd5804adc18b77f9c84d7f4fd5bc3724e65fd0e72f5fe32e743ed"
+          },
+          "loop": {
+            "start": 87136,
+            "end": 208
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Haisei Mahjong Ryouga",
+    "snes": {
+      "srcn": 11,
+      "character": "tone",
+      "pcmLength": 2688,
+      "brrLength": 1512,
+      "hasLoop": true,
+      "loopStartPcm": 1408,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 16,
+      "pitchRegister": 3300
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2a41ff7aeff5814ca2db377ba52752bac24f7e7dbc605014bc1b23e46e943bee"
+          },
+          "loop": {
+            "start": 1408,
+            "end": 2688
+          }
+        }
+      ]
+    }
+  }
+}

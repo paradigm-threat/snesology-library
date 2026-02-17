@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Alfred Chicken",
+    "snes": {
+      "srcn": 20,
+      "character": "tone",
+      "pcmLength": 976,
+      "brrLength": 549,
+      "hasLoop": true,
+      "loopStartPcm": 944,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 208,
+      "pitchRegister": 2163
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d9134a15a48e269e1c926a1819a6329fa048a23b4f47decb768e5ffe563a0ede"
+          },
+          "loop": {
+            "start": 944,
+            "end": 976
+          }
+        }
+      ]
+    }
+  }
+}

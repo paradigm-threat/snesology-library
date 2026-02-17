@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Final Fantasy 4",
+    "snes": {
+      "srcn": 64,
+      "character": "tone",
+      "pcmLength": 768,
+      "brrLength": 432,
+      "hasLoop": true,
+      "loopStartPcm": 704,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 179,
+      "pitchRegister": 578
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b057c6c7ca69aa2485437b8e3402167c596b3f9efceda5ccce486d535c71c3cd"
+          },
+          "loop": {
+            "start": 704,
+            "end": 768
+          }
+        }
+      ]
+    }
+  }
+}

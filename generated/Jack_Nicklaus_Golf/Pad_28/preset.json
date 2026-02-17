@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jack Nicklaus Golf",
+    "snes": {
+      "srcn": 28,
+      "character": "melodic",
+      "pcmLength": 8272,
+      "brrLength": 4653,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3c27911d1f090eac1b8caf026dc449ab5238a1d86c5dad93eb0086e8ded70728"
+          },
+          "loop": {
+            "start": 0,
+            "end": 8272
+          }
+        }
+      ]
+    }
+  }
+}

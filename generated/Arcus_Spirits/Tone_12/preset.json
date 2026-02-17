@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Arcus Spirits",
+    "snes": {
+      "srcn": 12,
+      "character": "tone",
+      "pcmLength": 1392,
+      "brrLength": 783,
+      "hasLoop": true,
+      "loopStartPcm": 1328
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "eb422de39759f34aca8e2ac38121f246d6a6e1d98aff065009fce20f32e415fc"
+          },
+          "loop": {
+            "start": 1328,
+            "end": 1392
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mini Yonku Shining Scorpion",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 1088,
+      "brrLength": 612,
+      "hasLoop": true,
+      "loopStartPcm": 720,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 25,
+      "pitchRegister": 847
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ad16f4312d9ad61668e3657226ef884e57e256dbecd292d1d16fc5878bcba323"
+          },
+          "loop": {
+            "start": 720,
+            "end": 1088
+          }
+        }
+      ]
+    }
+  }
+}

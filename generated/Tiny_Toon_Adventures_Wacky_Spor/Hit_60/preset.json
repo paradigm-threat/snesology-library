@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tiny Toon Adventures: Wacky Spor",
+    "snes": {
+      "srcn": 60,
+      "character": "one-shot",
+      "pcmLength": 1280,
+      "brrLength": 720,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 226,
+      "gain": 177,
+      "pitchRegister": 3818
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c1c87045f2a2e87d146dc4d67d4c82d0f5dd2f92246121f6feb9f2ec54e44b63"
+          }
+        }
+      ]
+    }
+  }
+}

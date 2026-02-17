@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Double Dragon",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 4480,
+      "brrLength": 2520,
+      "hasLoop": true,
+      "loopStartPcm": 4208,
+      "adsr1": 255,
+      "adsr2": 235,
+      "gain": 184,
+      "pitchRegister": 1422
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3154e8d9108531fcd628db1ac844ce8ef80855c8856734134fe52c9baec7289a"
+          },
+          "loop": {
+            "start": 4208,
+            "end": 4480
+          }
+        }
+      ]
+    }
+  }
+}

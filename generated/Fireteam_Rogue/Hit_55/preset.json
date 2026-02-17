@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fireteam Rogue",
+    "snes": {
+      "srcn": 55,
+      "character": "one-shot",
+      "pcmLength": 4320,
+      "brrLength": 2430,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 127,
+      "pitchRegister": 1883
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a29e3d74e38d2e4f44ac395e2345491c110347b3ec4ba47bcbfe87cf464d909a"
+          }
+        }
+      ]
+    }
+  }
+}

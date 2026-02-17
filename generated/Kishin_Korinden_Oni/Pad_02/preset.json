@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kishin Korinden Oni",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 4976,
+      "brrLength": 2799,
+      "hasLoop": true,
+      "loopStartPcm": 1040,
+      "adsr1": 242,
+      "adsr2": 226,
+      "gain": 0,
+      "pitchRegister": 2732
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e673fb8c34cfdb0b0d1277d03dc039c292dc8709dc74e5d8314a3e79135b5012"
+          },
+          "loop": {
+            "start": 1040,
+            "end": 4976
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Yakouchuu",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 6944,
+      "brrLength": 3906,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "beb736e14c4a256765b61bee51cf7f86765f262613b91dabc6419970b56466db"
+          },
+          "loop": {
+            "start": 48,
+            "end": 6944
+          }
+        }
+      ]
+    }
+  }
+}

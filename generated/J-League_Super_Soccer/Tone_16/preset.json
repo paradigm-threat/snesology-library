@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "J-League Super Soccer",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 496,
+      "brrLength": 279,
+      "hasLoop": true,
+      "loopStartPcm": 1648,
+      "adsr1": 136,
+      "adsr2": 44,
+      "gain": 0,
+      "pitchRegister": 2435
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "94ca108221aa6964a52a2dafb7dd2794d12a1faaf71f1c84980245c3c740cfe6"
+          },
+          "loop": {
+            "start": 1648,
+            "end": 496
+          }
+        }
+      ]
+    }
+  }
+}

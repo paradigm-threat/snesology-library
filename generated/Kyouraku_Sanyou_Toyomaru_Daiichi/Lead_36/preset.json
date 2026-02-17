@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kyouraku Sanyou Toyomaru Daiichi",
+    "snes": {
+      "srcn": 36,
+      "character": "melodic",
+      "pcmLength": 5904,
+      "brrLength": 3321,
+      "hasLoop": true,
+      "loopStartPcm": 5840,
+      "adsr1": 255,
+      "adsr2": 236,
+      "gain": 184,
+      "pitchRegister": 2688
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4a7701f2d6fed6714a8d3788b90950e4fd6d25cc7f6020a4cd547af54b66595c"
+          },
+          "loop": {
+            "start": 5840,
+            "end": 5904
+          }
+        }
+      ]
+    }
+  }
+}

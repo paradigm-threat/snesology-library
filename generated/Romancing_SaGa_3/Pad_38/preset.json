@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Romancing SaGa 3",
+    "snes": {
+      "srcn": 38,
+      "character": "melodic",
+      "pcmLength": 9536,
+      "brrLength": 5364,
+      "hasLoop": true,
+      "loopStartPcm": 6400
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "493d8fdeae9c1f184e9e118a5aae165528843ceaf71675c5db614f858457da41"
+          },
+          "loop": {
+            "start": 6400,
+            "end": 9536
+          }
+        }
+      ]
+    }
+  }
+}

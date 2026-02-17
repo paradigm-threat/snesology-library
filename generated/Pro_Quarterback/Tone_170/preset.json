@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pro Quarterback",
+    "snes": {
+      "srcn": 170,
+      "character": "tone",
+      "pcmLength": 880,
+      "brrLength": 495,
+      "hasLoop": true,
+      "loopStartPcm": 37728
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ac283d0b9f818a8506976db1c79948f96294d13f62a498427b7e726fe744a51f"
+          },
+          "loop": {
+            "start": 37728,
+            "end": 880
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Makeruna Makendo",
+    "snes": {
+      "srcn": 10,
+      "character": "one-shot",
+      "pcmLength": 4656,
+      "brrLength": 2619,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 234,
+      "gain": 158,
+      "pitchRegister": 3569
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "892485ba3f7d195ce4ac753f0341be80731810861605e7f9a28d9d0efeb43c5f"
+          }
+        }
+      ]
+    }
+  }
+}

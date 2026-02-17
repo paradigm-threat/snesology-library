@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Caravan Shooting Collection",
+    "snes": {
+      "srcn": 30,
+      "character": "one-shot",
+      "pcmLength": 2496,
+      "brrLength": 1404,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 159,
+      "pitchRegister": 4091
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "55dc3f73f010fe8db155ecf42b9528f4e2091e569d169631c03199ca3c37d69b"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Paladin's Quest",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 1104,
+      "brrLength": 621,
+      "hasLoop": true,
+      "loopStartPcm": 976,
+      "adsr1": 255,
+      "adsr2": 244,
+      "gain": 184,
+      "pitchRegister": 3120
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a1f3d87ed51f08ee647fdfec19204bf78301d6b0b7bcce709c0e8e3b6271a692"
+          },
+          "loop": {
+            "start": 976,
+            "end": 1104
+          }
+        }
+      ]
+    }
+  }
+}

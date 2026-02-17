@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Star Trek: The Next Generation",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 4400,
+      "brrLength": 2475,
+      "hasLoop": true,
+      "loopStartPcm": 4368
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1d0b6ce33c8b00be4c429ecfe5b851d9b86c069789f183deefc5c2c3eeba9ec7"
+          },
+          "loop": {
+            "start": 4368,
+            "end": 4400
+          }
+        }
+      ]
+    }
+  }
+}

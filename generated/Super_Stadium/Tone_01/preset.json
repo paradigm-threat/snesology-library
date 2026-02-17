@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Stadium",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 2240,
+      "brrLength": 1260,
+      "hasLoop": true,
+      "loopStartPcm": 2096,
+      "adsr1": 255,
+      "adsr2": 235,
+      "gain": 184,
+      "pitchRegister": 4545
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "704a9cb0ad899cf587662b9bbb86f0b2434e5ce554ab6a0dc4fd9e9921386497"
+          },
+          "loop": {
+            "start": 2096,
+            "end": 2240
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth1 Saw",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cybernator",
+    "snes": {
+      "srcn": 11,
+      "character": "tone",
+      "pcmLength": 224,
+      "brrLength": 126,
+      "hasLoop": true,
+      "loopStartPcm": 160
+    },
+    "communityName": "synth1_saw",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "61f3baf6aef76fc259d3a31c62c1059e627ca7a84374facdfffae55118f4b5c1"
+          },
+          "loop": {
+            "start": 160,
+            "end": 224
+          }
+        }
+      ]
+    }
+  }
+}

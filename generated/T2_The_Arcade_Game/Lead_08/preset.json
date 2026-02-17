@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "T2: The Arcade Game",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 6880,
+      "brrLength": 3870,
+      "hasLoop": true,
+      "loopStartPcm": 6592,
+      "adsr1": 142,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 1824
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "342485f182c0b1c40da7e71f43f9cd3530a9453b0cbbd2b6c63639b5943535a4"
+          },
+          "loop": {
+            "start": 6592,
+            "end": 6880
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Strike Gunner",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 4032,
+      "brrLength": 2268,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 153,
+      "adsr2": 96,
+      "gain": 0,
+      "pitchRegister": 3296
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4573df723ca2971b54d84233859f634a5e8025266b873518646b03d50236ebe9"
+          },
+          "loop": {
+            "start": 0,
+            "end": 4032
+          }
+        }
+      ]
+    }
+  }
+}

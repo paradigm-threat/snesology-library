@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "SD Gundam Power Formation Puzzle",
+    "snes": {
+      "srcn": 249,
+      "character": "one-shot",
+      "pcmLength": 4608,
+      "brrLength": 2592,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "91fec0603f5185cd14e7ca9da49bba90a27e20ed30a9f0df62e5277a45ee633a"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Elite Soccer",
+    "snes": {
+      "srcn": 2,
+      "character": "noise",
+      "pcmLength": 1664,
+      "brrLength": 936,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "eeafa872cf90a4789c4cc96cb2e77b2e7c3c7d9e7512bb2c748d2a67ea1ef070"
+          }
+        }
+      ]
+    }
+  }
+}

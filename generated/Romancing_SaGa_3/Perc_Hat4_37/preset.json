@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Hat4",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Romancing SaGa 3",
+    "snes": {
+      "srcn": 37,
+      "character": "tone",
+      "pcmLength": 2960,
+      "brrLength": 1665,
+      "hasLoop": true,
+      "loopStartPcm": 6400,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 160,
+      "pitchRegister": 1102
+    },
+    "communityName": "perc_hat4",
+    "matchConfidence": 0.9
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3232e18e75f7756df8df06f184d819c7c159c395bfb97c0d17ab227b6395dc69"
+          },
+          "loop": {
+            "start": 6400,
+            "end": 2960
+          }
+        }
+      ]
+    }
+  }
+}

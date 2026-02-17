@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Stargate",
+    "snes": {
+      "srcn": 19,
+      "character": "melodic",
+      "pcmLength": 5024,
+      "brrLength": 2826,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "afd5de50e78e88699ca194256e6441cad589c56861d5b1b225f0a4617f13333f"
+          },
+          "loop": {
+            "start": 0,
+            "end": 5024
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tecmo Super NBA Basketball",
+    "snes": {
+      "srcn": 24,
+      "character": "tone",
+      "pcmLength": 2400,
+      "brrLength": 1350,
+      "hasLoop": true,
+      "loopStartPcm": 2000
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bca0d4c26ee4477dcd5916ba89284b9d5bee4c0a789fe2fa62747eb3b614806c"
+          },
+          "loop": {
+            "start": 2000,
+            "end": 2400
+          }
+        }
+      ]
+    }
+  }
+}

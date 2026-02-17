@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battle Submarine",
+    "snes": {
+      "srcn": 26,
+      "character": "noise",
+      "pcmLength": 20224,
+      "brrLength": 11376,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 241,
+      "gain": 184,
+      "pitchRegister": 3520
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9f51e50177b2697eeec0c3221fac1b9078babaea9fd64dd5337f58a2a6bef7bf"
+          }
+        }
+      ]
+    }
+  }
+}

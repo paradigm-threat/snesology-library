@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shounin yo, Taishi o Idake!!",
+    "snes": {
+      "srcn": 151,
+      "character": "noise",
+      "pcmLength": 5200,
+      "brrLength": 2925,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9516a3d2132107851d5c6f99cddd18da82aace0c6d5aa6db1a2ee26232c87b1c"
+          }
+        }
+      ]
+    }
+  }
+}

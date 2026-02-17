@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "J-League Soccer Prime Goal 2",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 12816,
+      "brrLength": 7209,
+      "hasLoop": true,
+      "loopStartPcm": 8784,
+      "adsr1": 127,
+      "adsr2": 233,
+      "gain": 127,
+      "pitchRegister": 4916
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3814e217b394572a1a049dd20de1aa96da8babdc022cf126310a6844c62ebeac"
+          },
+          "loop": {
+            "start": 8784,
+            "end": 12816
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Taiko",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Donkey Kong Country 2",
+    "snes": {
+      "srcn": 26,
+      "character": "melodic",
+      "pcmLength": 6944,
+      "brrLength": 3906,
+      "hasLoop": true,
+      "loopStartPcm": 5680,
+      "adsr1": 159,
+      "adsr2": 171,
+      "gain": 127,
+      "pitchRegister": 1626
+    },
+    "communityName": "perc_taiko",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f839d4a8159eeb958e6fe9fdcf6639d646d48acc18c5267bf5789940ce4e1923"
+          },
+          "loop": {
+            "start": 5680,
+            "end": 6944
+          }
+        }
+      ]
+    }
+  }
+}

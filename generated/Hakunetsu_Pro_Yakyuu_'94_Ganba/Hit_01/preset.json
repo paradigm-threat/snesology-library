@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hakunetsu Pro Yakyuu '94: Ganba",
+    "snes": {
+      "srcn": 1,
+      "character": "one-shot",
+      "pcmLength": 896,
+      "brrLength": 504,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 175,
+      "pitchRegister": 1187
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c8bd514220316799ad50f8ad55abb513bedcf58b44cfbbe950a52da5530c7368"
+          }
+        }
+      ]
+    }
+  }
+}

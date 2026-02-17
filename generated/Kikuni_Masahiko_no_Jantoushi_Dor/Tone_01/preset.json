@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kikuni Masahiko no Jantoushi Dor",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 736,
+      "brrLength": 414,
+      "hasLoop": true,
+      "loopStartPcm": 3536
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4481ac6bf23f033d86783183dd185f6ec198aa32934c7040058414dc8e60195b"
+          },
+          "loop": {
+            "start": 3536,
+            "end": 736
+          }
+        }
+      ]
+    }
+  }
+}

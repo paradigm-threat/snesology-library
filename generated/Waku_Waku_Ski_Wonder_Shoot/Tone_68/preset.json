@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Waku Waku Ski Wonder Shoot",
+    "snes": {
+      "srcn": 68,
+      "character": "tone",
+      "pcmLength": 3776,
+      "brrLength": 2124,
+      "hasLoop": true,
+      "loopStartPcm": 1920
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c93d53fd84db082fd29fb156641e3b056e0d1b857d57ef7fa72efae283911b16"
+          },
+          "loop": {
+            "start": 1920,
+            "end": 3776
+          }
+        }
+      ]
+    }
+  }
+}

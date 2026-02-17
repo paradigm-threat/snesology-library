@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Death and Return of Superman",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 2160,
+      "brrLength": 1215,
+      "hasLoop": true,
+      "loopStartPcm": 1824,
+      "adsr1": 255,
+      "adsr2": 234,
+      "gain": 184,
+      "pitchRegister": 1857
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b4950bf0e2232244370b50724fb458e83e3ce54432d5036c5f5f478a3dfe9c43"
+          },
+          "loop": {
+            "start": 1824,
+            "end": 2160
+          }
+        }
+      ]
+    }
+  }
+}

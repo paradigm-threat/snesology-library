@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Beauty and the Beast",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 4400,
+      "brrLength": 2475,
+      "hasLoop": true,
+      "loopStartPcm": 4000,
+      "adsr1": 158,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 2169
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "acd69610b2cb9a533cbeba69e3597fe31cdb656cee6346a77dc14f521757bf7b"
+          },
+          "loop": {
+            "start": 4000,
+            "end": 4400
+          }
+        }
+      ]
+    }
+  }
+}

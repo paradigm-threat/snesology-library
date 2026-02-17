@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bishoujo Janshi Suuchiipai",
+    "snes": {
+      "srcn": 19,
+      "character": "tone",
+      "pcmLength": 3616,
+      "brrLength": 2034,
+      "hasLoop": true,
+      "loopStartPcm": 960,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2192
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ea948b29acf7e9423efd3f780133e24174cf2e80821654a7e06878c3788c42d1"
+          },
+          "loop": {
+            "start": 960,
+            "end": 3616
+          }
+        }
+      ]
+    }
+  }
+}

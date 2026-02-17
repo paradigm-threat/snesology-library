@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ginga Eiyuu Densetsu",
+    "snes": {
+      "srcn": 15,
+      "character": "melodic",
+      "pcmLength": 8448,
+      "brrLength": 4752,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 425
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a95167847d360b2162b2b35d71e3424d4c5c115972d9bc3036e2eb21c19f0fdb"
+          },
+          "loop": {
+            "start": 48,
+            "end": 8448
+          }
+        }
+      ]
+    }
+  }
+}

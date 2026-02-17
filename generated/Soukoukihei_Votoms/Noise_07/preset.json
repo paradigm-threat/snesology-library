@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Soukoukihei Votoms",
+    "snes": {
+      "srcn": 7,
+      "character": "noise",
+      "pcmLength": 3600,
+      "brrLength": 2025,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 178,
+      "gain": 178,
+      "pitchRegister": 1290
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bb23618b90ab45921fdd080066012c9160fc99cf6524289435560af079cb5b2a"
+          }
+        }
+      ]
+    }
+  }
+}

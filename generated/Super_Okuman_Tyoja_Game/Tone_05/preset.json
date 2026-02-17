@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Okuman Tyoja Game",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 384,
+      "brrLength": 216,
+      "hasLoop": true,
+      "loopStartPcm": 256
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9022c497bda06bad06dd76e9f73ca573fa4bf687eba348aea6afe51bb5d0e056"
+          },
+          "loop": {
+            "start": 256,
+            "end": 384
+          }
+        }
+      ]
+    }
+  }
+}

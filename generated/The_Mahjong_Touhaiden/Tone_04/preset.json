@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Mahjong Touhaiden",
+    "snes": {
+      "srcn": 4,
+      "character": "tone",
+      "pcmLength": 928,
+      "brrLength": 522,
+      "hasLoop": true,
+      "loopStartPcm": 896,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1070
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c70a1e35818c078e1282ef59cedeb5a2959e9c7f92346fc078cd03a2c7d389c3"
+          },
+          "loop": {
+            "start": 896,
+            "end": 928
+          }
+        }
+      ]
+    }
+  }
+}

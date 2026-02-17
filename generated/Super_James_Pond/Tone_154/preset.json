@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super James Pond",
+    "snes": {
+      "srcn": 154,
+      "character": "tone",
+      "pcmLength": 192,
+      "brrLength": 108,
+      "hasLoop": true,
+      "loopStartPcm": 63344
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "23690e833f49a5545c5a38c02237de7e7099f8c9c5b1708842a2ef511ccebadc"
+          },
+          "loop": {
+            "start": 63344,
+            "end": 192
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Action Pachio",
+    "snes": {
+      "srcn": 21,
+      "character": "tone",
+      "pcmLength": 1008,
+      "brrLength": 567,
+      "hasLoop": true,
+      "loopStartPcm": 896,
+      "adsr1": 255,
+      "adsr2": 237,
+      "gain": 184,
+      "pitchRegister": 4298
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5fe781133ba2acc91596a5816cd3385477f3c4b75c179b9ff050f133b5fc8d4c"
+          },
+          "loop": {
+            "start": 896,
+            "end": 1008
+          }
+        }
+      ]
+    }
+  }
+}

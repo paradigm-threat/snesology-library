@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Tekkyu Fight!",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 3664,
+      "brrLength": 2061,
+      "hasLoop": true,
+      "loopStartPcm": 1760,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 3990
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6177afbdb2dac9d3431277b53ff2436b82c7dbcf1d2c0530be473c5496b6a071"
+          },
+          "loop": {
+            "start": 1760,
+            "end": 3664
+          }
+        }
+      ]
+    }
+  }
+}

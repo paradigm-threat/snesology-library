@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Oekaki Logic",
+    "snes": {
+      "srcn": 15,
+      "character": "tone",
+      "pcmLength": 1424,
+      "brrLength": 801,
+      "hasLoop": true,
+      "loopStartPcm": 944,
+      "adsr1": 191,
+      "adsr2": 199,
+      "gain": 184,
+      "pitchRegister": 2119
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c9da9e3a77a9aa658e039b8c3a2def1f53fa251a1b7e336a49c9b8e6e67708a6"
+          },
+          "loop": {
+            "start": 944,
+            "end": 1424
+          }
+        }
+      ]
+    }
+  }
+}

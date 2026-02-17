@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Pop",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Bomberman",
+    "snes": {
+      "srcn": 11,
+      "character": "noise",
+      "pcmLength": 1376,
+      "brrLength": 774,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 148,
+      "gain": 158,
+      "pitchRegister": 1200
+    },
+    "communityName": "sfx_pop",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "67f8f476ade7712f6c693806dc87fae4512b46be21dcda14aedee72e7ea33043"
+          }
+        }
+      ]
+    }
+  }
+}

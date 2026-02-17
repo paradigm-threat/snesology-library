@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Monstania",
+    "snes": {
+      "srcn": 28,
+      "character": "tone",
+      "pcmLength": 2704,
+      "brrLength": 1521,
+      "hasLoop": true,
+      "loopStartPcm": 1968,
+      "adsr1": 173,
+      "adsr2": 205,
+      "gain": 0,
+      "pitchRegister": 1816
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fc2c736cec45b58302dfe4a07350d582b5ebf32bb65087ab8ca3cc14fad5ca06"
+          },
+          "loop": {
+            "start": 1968,
+            "end": 2704
+          }
+        }
+      ]
+    }
+  }
+}

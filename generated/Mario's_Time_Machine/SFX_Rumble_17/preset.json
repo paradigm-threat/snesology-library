@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Rumble",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mario's Time Machine",
+    "snes": {
+      "srcn": 17,
+      "character": "tone",
+      "pcmLength": 3232,
+      "brrLength": 1818,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    },
+    "communityName": "sfx_rumble",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d73bb049d8ddb3c2a8c4e52fea24c8e95d8ebbfe055a2ccb0cd16e107aa5030b"
+          },
+          "loop": {
+            "start": 0,
+            "end": 3232
+          }
+        }
+      ]
+    }
+  }
+}

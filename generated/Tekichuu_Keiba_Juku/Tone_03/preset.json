@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tekichuu Keiba Juku",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 368,
+      "brrLength": 207,
+      "hasLoop": true,
+      "loopStartPcm": 128,
+      "adsr1": 239,
+      "adsr2": 80,
+      "gain": 184,
+      "pitchRegister": 1536
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3fd624f542d0f57a2bc4de7764fc5f8869c8f4ede3bd19ac9fbafeebd57001f2"
+          },
+          "loop": {
+            "start": 128,
+            "end": 368
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pro Mahjong Kiwame 3",
+    "snes": {
+      "srcn": 27,
+      "character": "melodic",
+      "pcmLength": 4496,
+      "brrLength": 2529,
+      "hasLoop": true,
+      "loopStartPcm": 1376,
+      "adsr1": 168,
+      "adsr2": 102,
+      "gain": 0,
+      "pitchRegister": 2046
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "97d54a0814cc7fc710ccd2d51b6a9860b6936175443d38b42e05e229d8d261db"
+          },
+          "loop": {
+            "start": 1376,
+            "end": 4496
+          }
+        }
+      ]
+    }
+  }
+}

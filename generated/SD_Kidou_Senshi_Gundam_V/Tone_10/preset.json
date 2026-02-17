@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "SD Kidou Senshi Gundam V",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 1360,
+      "brrLength": 765,
+      "hasLoop": true,
+      "loopStartPcm": 1264,
+      "adsr1": 255,
+      "adsr2": 243,
+      "gain": 184,
+      "pitchRegister": 9600
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "97495eb11d8e8d37b051030ca52db2ff620861cfc508fc9f6da13b9082f0645c"
+          },
+          "loop": {
+            "start": 1264,
+            "end": 1360
+          }
+        }
+      ]
+    }
+  }
+}

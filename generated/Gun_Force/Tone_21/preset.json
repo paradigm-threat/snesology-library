@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gun Force",
+    "snes": {
+      "srcn": 21,
+      "character": "tone",
+      "pcmLength": 2752,
+      "brrLength": 1548,
+      "hasLoop": true,
+      "loopStartPcm": 1792,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "28f391786b407ee635c18168b35f9ee2b1f11beb63d492dbd994bc67a9bc0b80"
+          },
+          "loop": {
+            "start": 1792,
+            "end": 2752
+          }
+        }
+      ]
+    }
+  }
+}

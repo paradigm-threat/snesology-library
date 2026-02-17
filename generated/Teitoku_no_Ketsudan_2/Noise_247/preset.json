@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Teitoku no Ketsudan 2",
+    "snes": {
+      "srcn": 247,
+      "character": "noise",
+      "pcmLength": 9024,
+      "brrLength": 5076,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "842ff4176dfd9ae79cd1b08d34bf2f397eaaaa4fc2fcd5a36146a8e866008d58"
+          }
+        }
+      ]
+    }
+  }
+}

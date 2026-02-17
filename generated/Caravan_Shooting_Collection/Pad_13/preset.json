@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Caravan Shooting Collection",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 15184,
+      "brrLength": 8541,
+      "hasLoop": true,
+      "loopStartPcm": 5744
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7388fc9587746ef26603d9595f7f6318aa036654802adda61db5dac58a86b09d"
+          },
+          "loop": {
+            "start": 5744,
+            "end": 15184
+          }
+        }
+      ]
+    }
+  }
+}

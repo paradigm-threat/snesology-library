@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Uniracers",
+    "snes": {
+      "srcn": 13,
+      "character": "tone",
+      "pcmLength": 816,
+      "brrLength": 459,
+      "hasLoop": true,
+      "loopStartPcm": 288
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bb76b7a84ac405860fc2d01c87356f95e5338bcf0bd0968cf0ac61d1a0816625"
+          },
+          "loop": {
+            "start": 288,
+            "end": 816
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kyouraku Sanyou Toyomaru Daiichi",
+    "snes": {
+      "srcn": 35,
+      "character": "melodic",
+      "pcmLength": 5984,
+      "brrLength": 3366,
+      "hasLoop": true,
+      "loopStartPcm": 1904
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "76695787fd534a8965ca3a6c73e3b21eb9bafe20f0bd155aeb1ba50a51a424c1"
+          },
+          "loop": {
+            "start": 1904,
+            "end": 5984
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Rocko's Modern Life",
+    "snes": {
+      "srcn": 35,
+      "character": "tone",
+      "pcmLength": 2016,
+      "brrLength": 1134,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "95833c22ea2a6b6c9cdc7353a0916eb5d7cd17cc3f0dc32d841ed6f9cf21d9a7"
+          },
+          "loop": {
+            "start": 0,
+            "end": 2016
+          }
+        }
+      ]
+    }
+  }
+}

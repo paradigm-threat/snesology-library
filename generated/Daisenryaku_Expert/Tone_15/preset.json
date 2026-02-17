@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Daisenryaku Expert",
+    "snes": {
+      "srcn": 15,
+      "character": "tone",
+      "pcmLength": 3488,
+      "brrLength": 1962,
+      "hasLoop": true,
+      "loopStartPcm": 3088,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 16364
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3843e31ca0d9c578a43c639095158562aecceff4707517b60fb74f647bdaa6fe"
+          },
+          "loop": {
+            "start": 3088,
+            "end": 3488
+          }
+        }
+      ]
+    }
+  }
+}

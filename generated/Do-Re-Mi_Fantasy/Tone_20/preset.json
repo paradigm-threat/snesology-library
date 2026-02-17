@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Do-Re-Mi Fantasy",
+    "snes": {
+      "srcn": 20,
+      "character": "tone",
+      "pcmLength": 3360,
+      "brrLength": 1890,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8db5f6253af6f5784b663241099361de36d876618ff8245379265d11be1cf62e"
+          },
+          "loop": {
+            "start": 0,
+            "end": 3360
+          }
+        }
+      ]
+    }
+  }
+}

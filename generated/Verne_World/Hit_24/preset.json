@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Verne World",
+    "snes": {
+      "srcn": 24,
+      "character": "one-shot",
+      "pcmLength": 1232,
+      "brrLength": 693,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 10,
+      "gain": 158,
+      "pitchRegister": 4368
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "af8fc9ea7b28e9ea6f3eb2c080bcb131f847f6ad5c53df9b2f3988dafebeb106"
+          }
+        }
+      ]
+    }
+  }
+}

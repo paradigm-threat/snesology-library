@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hebereke no Oishii Puzzle wa Iri",
+    "snes": {
+      "srcn": 7,
+      "character": "tone",
+      "pcmLength": 592,
+      "brrLength": 333,
+      "hasLoop": true,
+      "loopStartPcm": 480,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 191,
+      "pitchRegister": 3538
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fd8ff9f099ed587512c59b1981ff482b456e47a409bae4656f77b5634c3392f6"
+          },
+          "loop": {
+            "start": 480,
+            "end": 592
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Animaniacs",
+    "snes": {
+      "srcn": 31,
+      "character": "noise",
+      "pcmLength": 4208,
+      "brrLength": 2367,
+      "hasLoop": true,
+      "loopStartPcm": 4336
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4194984667d5df4322c15cfbdd743ce3a610d9daab1871de1cac64f95e99f60a"
+          },
+          "loop": {
+            "start": 4336,
+            "end": 4208
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spider-Man & Venom: Separation A",
+    "snes": {
+      "srcn": 15,
+      "character": "melodic",
+      "pcmLength": 10544,
+      "brrLength": 5931,
+      "hasLoop": true,
+      "loopStartPcm": 10352,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 126,
+      "pitchRegister": 332
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "451c749c13daf8747e3e3c177ebf00559038b78af56eb7e92d4294e0e22d1d3f"
+          },
+          "loop": {
+            "start": 10352,
+            "end": 10544
+          }
+        }
+      ]
+    }
+  }
+}

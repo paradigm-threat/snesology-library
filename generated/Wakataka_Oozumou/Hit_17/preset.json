@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wakataka Oozumou",
+    "snes": {
+      "srcn": 17,
+      "character": "one-shot",
+      "pcmLength": 8000,
+      "brrLength": 4500,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 178,
+      "gain": 178,
+      "pitchRegister": 2733
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "06e6a30f5af669e85c36e2005e98f539a4e9aafc979cb4d4a1d3e2928a2c8d61"
+          }
+        }
+      ]
+    }
+  }
+}

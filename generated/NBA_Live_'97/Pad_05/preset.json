@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "NBA Live '97",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 21488,
+      "brrLength": 12087,
+      "hasLoop": true,
+      "loopStartPcm": 5808,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 127,
+      "pitchRegister": 1188
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0252d204c6ca5bc36d49e45836eab44227fc028630db57de64bd53117310df86"
+          },
+          "loop": {
+            "start": 5808,
+            "end": 21488
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Power Slide FX",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 13008,
+      "brrLength": 7317,
+      "hasLoop": true,
+      "loopStartPcm": 8832
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "33ba90b0118b9f7a44f2023ddc195b195a692456844d2f7b355e9e1f7e5fdeb9"
+          },
+          "loop": {
+            "start": 8832,
+            "end": 13008
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mohawk and Headphone Jack",
+    "snes": {
+      "srcn": 50,
+      "character": "tone",
+      "pcmLength": 272,
+      "brrLength": 153,
+      "hasLoop": true,
+      "loopStartPcm": 2016
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8a3915451fc340a9a56f14e6b8ddbe18f93ddaa88166ee69358d4801b76890f9"
+          },
+          "loop": {
+            "start": 2016,
+            "end": 272
+          }
+        }
+      ]
+    }
+  }
+}

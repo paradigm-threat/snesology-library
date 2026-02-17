@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Robotrek",
+    "snes": {
+      "srcn": 196,
+      "character": "tone",
+      "pcmLength": 2704,
+      "brrLength": 1521,
+      "hasLoop": true,
+      "loopStartPcm": 11424
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "be2650ad71e196e2b021f65e2b282ba6e695b335342b09a1e7ccc9c01b310b25"
+          },
+          "loop": {
+            "start": 11424,
+            "end": 2704
+          }
+        }
+      ]
+    }
+  }
+}

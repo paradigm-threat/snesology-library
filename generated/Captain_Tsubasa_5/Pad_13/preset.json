@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Captain Tsubasa 5",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 5712,
+      "brrLength": 3213,
+      "hasLoop": true,
+      "loopStartPcm": 1984,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1371
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "69f2c40022043ca56204bcbbbb7bfb5fc8c065f1cd7dc41fac0d17882825f4bf"
+          },
+          "loop": {
+            "start": 1984,
+            "end": 5712
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Lupin the 3rd",
+    "snes": {
+      "srcn": 33,
+      "character": "tone",
+      "pcmLength": 2320,
+      "brrLength": 1305,
+      "hasLoop": true,
+      "loopStartPcm": 6992
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "29561e68c3acc6d68193e327f289033cd553abb401c6712bd27ecf5985075a15"
+          },
+          "loop": {
+            "start": 6992,
+            "end": 2320
+          }
+        }
+      ]
+    }
+  }
+}

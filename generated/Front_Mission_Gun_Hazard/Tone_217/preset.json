@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Front Mission: Gun Hazard",
+    "snes": {
+      "srcn": 217,
+      "character": "tone",
+      "pcmLength": 2288,
+      "brrLength": 1287,
+      "hasLoop": true,
+      "loopStartPcm": 6240
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cd82945a734539291cffa82e8a15fd7f192e4c370dcb38bf64b1b3da7dd64b32"
+          },
+          "loop": {
+            "start": 6240,
+            "end": 2288
+          }
+        }
+      ]
+    }
+  }
+}

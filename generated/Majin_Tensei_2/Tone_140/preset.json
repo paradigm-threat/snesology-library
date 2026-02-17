@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Majin Tensei 2",
+    "snes": {
+      "srcn": 140,
+      "character": "tone",
+      "pcmLength": 3888,
+      "brrLength": 2187,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c313e8fa79f786991c75efc37791e9b98c98e4f08904c6b980f65c571b7ab453"
+          },
+          "loop": {
+            "start": 0,
+            "end": 3888
+          }
+        }
+      ]
+    }
+  }
+}

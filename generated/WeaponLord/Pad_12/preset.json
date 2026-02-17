@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "WeaponLord",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 14880,
+      "brrLength": 8370,
+      "hasLoop": true,
+      "loopStartPcm": 3152
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "47faed98216e8a18dda7e45994de1bd2900936ca5172b75017d95930c22ebeb0"
+          },
+          "loop": {
+            "start": 3152,
+            "end": 14880
+          }
+        }
+      ]
+    }
+  }
+}

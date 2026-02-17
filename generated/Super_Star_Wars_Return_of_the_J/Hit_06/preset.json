@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Star Wars: Return of the J",
+    "snes": {
+      "srcn": 6,
+      "character": "one-shot",
+      "pcmLength": 1808,
+      "brrLength": 1017,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 130,
+      "pitchRegister": 2733
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1621e909b8f63a039d89716b7d870fd06bd6ebf057ab744a48acf3bb8d2d3fe0"
+          }
+        }
+      ]
+    }
+  }
+}

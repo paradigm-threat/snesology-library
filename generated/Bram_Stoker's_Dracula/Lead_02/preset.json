@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bram Stoker's Dracula",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 18000,
+      "brrLength": 10125,
+      "hasLoop": true,
+      "loopStartPcm": 17312,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 2576
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ee352424de8b4a62602a18a324eb2115111384d0a9e64902fc563db337d54cae"
+          },
+          "loop": {
+            "start": 17312,
+            "end": 18000
+          }
+        }
+      ]
+    }
+  }
+}

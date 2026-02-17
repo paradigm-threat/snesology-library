@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Organ Church LO",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Demon's Crest",
+    "snes": {
+      "srcn": 28,
+      "character": "melodic",
+      "pcmLength": 8448,
+      "brrLength": 4752,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 158,
+      "pitchRegister": 2688
+    },
+    "communityName": "organ_church_lo",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5e9e9caace48c994172bb9dd80a3da842137bf025d1e5fbe31a4e24cc18c851f"
+          },
+          "loop": {
+            "start": 48,
+            "end": 8448
+          }
+        }
+      ]
+    }
+  }
+}

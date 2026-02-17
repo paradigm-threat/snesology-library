@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "CB Chara Wars",
+    "snes": {
+      "srcn": 33,
+      "character": "melodic",
+      "pcmLength": 8144,
+      "brrLength": 4581,
+      "hasLoop": true,
+      "loopStartPcm": 8096
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7d429cf49dcc08d2f0f788f715ab22f44312d59ac7d66d5fa1df4eb78882fd1e"
+          },
+          "loop": {
+            "start": 8096,
+            "end": 8144
+          }
+        }
+      ]
+    }
+  }
+}

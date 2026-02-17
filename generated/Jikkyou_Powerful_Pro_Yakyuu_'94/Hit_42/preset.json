@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jikkyou Powerful Pro Yakyuu '94",
+    "snes": {
+      "srcn": 42,
+      "character": "one-shot",
+      "pcmLength": 6592,
+      "brrLength": 3708,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 181,
+      "pitchRegister": 1071
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5a0c04cebfa331f3f248948dbb7e201b642042062ea1200c99b9b97b8e2820d9"
+          }
+        }
+      ]
+    }
+  }
+}

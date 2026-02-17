@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pachinko Maruhi Hisshouhou",
+    "snes": {
+      "srcn": 16,
+      "character": "melodic",
+      "pcmLength": 12112,
+      "brrLength": 6813,
+      "hasLoop": true,
+      "loopStartPcm": 2000
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f4acc0e5758b49e020793646daece5fb2573f2e256fa5520df827ada2776b588"
+          },
+          "loop": {
+            "start": 2000,
+            "end": 12112
+          }
+        }
+      ]
+    }
+  }
+}

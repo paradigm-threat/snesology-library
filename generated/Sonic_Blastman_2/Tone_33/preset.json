@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sonic Blastman 2",
+    "snes": {
+      "srcn": 33,
+      "character": "tone",
+      "pcmLength": 1392,
+      "brrLength": 783,
+      "hasLoop": true,
+      "loopStartPcm": 1424
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3df7935b61d0ffe2acc9119f08117a94b8bdbfc27dff44975feef3cbe70051d6"
+          },
+          "loop": {
+            "start": 1424,
+            "end": 1392
+          }
+        }
+      ]
+    }
+  }
+}

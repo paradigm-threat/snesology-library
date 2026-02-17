@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Sitar",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Bomberman 3",
+    "snes": {
+      "srcn": 22,
+      "character": "melodic",
+      "pcmLength": 4736,
+      "brrLength": 2664,
+      "hasLoop": true,
+      "loopStartPcm": 4224,
+      "adsr1": 255,
+      "adsr2": 174,
+      "gain": 159,
+      "pitchRegister": 959
+    },
+    "communityName": "sitar",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b01a9cefeb084c74c8f7f3b1b507caea4838517018a9799b5e61005571eaf3ff"
+          },
+          "loop": {
+            "start": 4224,
+            "end": 4736
+          }
+        }
+      ]
+    }
+  }
+}

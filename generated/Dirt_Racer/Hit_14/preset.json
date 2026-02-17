@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dirt Racer",
+    "snes": {
+      "srcn": 14,
+      "character": "one-shot",
+      "pcmLength": 8944,
+      "brrLength": 5031,
+      "hasLoop": false,
+      "adsr1": 190,
+      "adsr2": 124,
+      "gain": 0,
+      "pitchRegister": 3066
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8ba224ff35e6f8f0426225b93af0e496664716170968208ae36b368061f50fcb"
+          }
+        }
+      ]
+    }
+  }
+}

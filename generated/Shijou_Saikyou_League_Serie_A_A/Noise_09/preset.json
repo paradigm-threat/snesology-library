@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shijou Saikyou League Serie A: A",
+    "snes": {
+      "srcn": 9,
+      "character": "noise",
+      "pcmLength": 5008,
+      "brrLength": 2817,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 82,
+      "gain": 159,
+      "pitchRegister": 2051
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8749e24af313c9b1a736871977e54e39b17d1ac3fde54c5a18f6c4e90700203c"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "J-League Soccer Prime Goal 3",
+    "snes": {
+      "srcn": 36,
+      "character": "noise",
+      "pcmLength": 2720,
+      "brrLength": 1530,
+      "hasLoop": false,
+      "adsr1": 127,
+      "adsr2": 224,
+      "gain": 127,
+      "pitchRegister": 1683
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8c76e7cfa4d6c724edaad611dadb366cb9d63a6281575723aea51f462e93744c"
+          }
+        }
+      ]
+    }
+  }
+}

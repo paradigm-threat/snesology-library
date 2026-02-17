@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Battletank (American)",
+    "snes": {
+      "srcn": 15,
+      "character": "one-shot",
+      "pcmLength": 7392,
+      "brrLength": 4158,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 239,
+      "gain": 127,
+      "pitchRegister": 500
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6d0dc6a3f2eafda8ab8330c32e9f51454608097264917876b8fc6ade2923dad0"
+          }
+        }
+      ]
+    }
+  }
+}

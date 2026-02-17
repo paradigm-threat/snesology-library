@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "NBA Give 'n Go",
+    "snes": {
+      "srcn": 21,
+      "character": "tone",
+      "pcmLength": 3248,
+      "brrLength": 1827,
+      "hasLoop": true,
+      "loopStartPcm": 688,
+      "adsr1": 0,
+      "adsr2": 241,
+      "gain": 179,
+      "pitchRegister": 3030
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6734427b6eb088668994724b262d4a977ca6da0424aa7fea8723f7e25f769ea6"
+          },
+          "loop": {
+            "start": 688,
+            "end": 3248
+          }
+        }
+      ]
+    }
+  }
+}

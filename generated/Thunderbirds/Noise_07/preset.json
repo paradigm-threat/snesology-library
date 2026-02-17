@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Thunderbirds",
+    "snes": {
+      "srcn": 7,
+      "character": "noise",
+      "pcmLength": 5200,
+      "brrLength": 2925,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 243,
+      "gain": 184,
+      "pitchRegister": 1979
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "62dd0be92322a546066e3406ba3638c9904da7fd3e50094f969fc96d06514077"
+          }
+        }
+      ]
+    }
+  }
+}

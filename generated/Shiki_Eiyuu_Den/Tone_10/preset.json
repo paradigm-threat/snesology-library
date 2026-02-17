@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shiki Eiyuu Den",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 2320,
+      "brrLength": 1305,
+      "hasLoop": true,
+      "loopStartPcm": 2288,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2404
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "53a5f9b7549f362a6f726f58414e3eba0c4f845513775decc397e5fd2bac2ea2"
+          },
+          "loop": {
+            "start": 2288,
+            "end": 2320
+          }
+        }
+      ]
+    }
+  }
+}

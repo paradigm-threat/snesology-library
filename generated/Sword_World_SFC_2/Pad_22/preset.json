@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sword World SFC 2",
+    "snes": {
+      "srcn": 22,
+      "character": "melodic",
+      "pcmLength": 16912,
+      "brrLength": 9513,
+      "hasLoop": true,
+      "loopStartPcm": 4800
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b24308fda3776b58c5ce44cd54ffb807ef3f1a413d91299c1d9d76f242c859c6"
+          },
+          "loop": {
+            "start": 4800,
+            "end": 16912
+          }
+        }
+      ]
+    }
+  }
+}

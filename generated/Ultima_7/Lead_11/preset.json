@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ultima 7",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 5312,
+      "brrLength": 2988,
+      "hasLoop": true,
+      "loopStartPcm": 5088,
+      "adsr1": 237,
+      "adsr2": 235,
+      "gain": 0,
+      "pitchRegister": 1859
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "aebecf0be101e4b678a9f182617bed16c1f2715d4f2fa15b2a3fc49ef84b8b49"
+          },
+          "loop": {
+            "start": 5088,
+            "end": 5312
+          }
+        }
+      ]
+    }
+  }
+}

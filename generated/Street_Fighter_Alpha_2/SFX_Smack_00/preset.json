@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Smack",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Street Fighter Alpha 2",
+    "snes": {
+      "srcn": 0,
+      "character": "noise",
+      "pcmLength": 3520,
+      "brrLength": 1980,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1036
+    },
+    "communityName": "sfx_smack",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f0c013c8204bc7c9b909ad3b6c3fc33d30ffc7f492d9604ca7bb4ff623e7dbf1"
+          }
+        }
+      ]
+    }
+  }
+}

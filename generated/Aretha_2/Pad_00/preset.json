@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Aretha 2",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 6864,
+      "brrLength": 3861,
+      "hasLoop": true,
+      "loopStartPcm": 2480,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 0,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "048144af857012cb9d552428ddbd71a4a2ae155ae68ddf3ad00a66141128aa75"
+          },
+          "loop": {
+            "start": 2480,
+            "end": 6864
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gamera: Gyaosu Gekimetsu Sakusen",
+    "snes": {
+      "srcn": 17,
+      "character": "tone",
+      "pcmLength": 2704,
+      "brrLength": 1521,
+      "hasLoop": true,
+      "loopStartPcm": 880
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "867cc1f8fa495832ae12fda52306ccbea1df560527de9958e709ca1e298cbd4c"
+          },
+          "loop": {
+            "start": 880,
+            "end": 2704
+          }
+        }
+      ]
+    }
+  }
+}

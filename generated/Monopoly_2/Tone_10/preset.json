@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Monopoly 2",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 1728,
+      "brrLength": 972,
+      "hasLoop": true,
+      "loopStartPcm": 7008
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5b5f8fa9da1d4c31d0d9bdc855f5fbff2d432fff2c4df857664078c48143b9ca"
+          },
+          "loop": {
+            "start": 7008,
+            "end": 1728
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sailor Moon Super S: Fuwa Fuwa P",
+    "snes": {
+      "srcn": 4,
+      "character": "noise",
+      "pcmLength": 5008,
+      "brrLength": 2817,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 238,
+      "gain": 0,
+      "pitchRegister": 2298
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b983a3c8a1d0501f33d03b9fa32126d3ce1bb368631aa969b1337d98d119d0ff"
+          }
+        }
+      ]
+    }
+  }
+}

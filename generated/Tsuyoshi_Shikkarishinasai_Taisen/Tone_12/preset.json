@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tsuyoshi Shikkarishinasai Taisen",
+    "snes": {
+      "srcn": 12,
+      "character": "tone",
+      "pcmLength": 384,
+      "brrLength": 216,
+      "hasLoop": true,
+      "loopStartPcm": 320
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "dea9d84f9172ab32f0c60bb867a55c632621cd5053e01b315119f386553e4d32"
+          },
+          "loop": {
+            "start": 320,
+            "end": 384
+          }
+        }
+      ]
+    }
+  }
+}

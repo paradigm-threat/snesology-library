@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Kalimba",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Romancing SaGa 3",
+    "snes": {
+      "srcn": 40,
+      "character": "melodic",
+      "pcmLength": 5984,
+      "brrLength": 3366,
+      "hasLoop": true,
+      "loopStartPcm": 5824,
+      "adsr1": 255,
+      "adsr2": 239,
+      "gain": 160,
+      "pitchRegister": 1833
+    },
+    "communityName": "kalimba",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7a82f001c34bb1b3b1b7c2fa322e99801c0f1860f3c2e18ad46e652c44e83e3d"
+          },
+          "loop": {
+            "start": 5824,
+            "end": 5984
+          }
+        }
+      ]
+    }
+  }
+}

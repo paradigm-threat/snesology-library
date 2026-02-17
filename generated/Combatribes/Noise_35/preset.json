@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Combatribes",
+    "snes": {
+      "srcn": 35,
+      "character": "noise",
+      "pcmLength": 4624,
+      "brrLength": 2601,
+      "hasLoop": true,
+      "loopStartPcm": 3664
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d9bd0855f3d930abdabc07b03b4ecb0b6c09edba4f53aed4bc555ca513e50b81"
+          },
+          "loop": {
+            "start": 3664,
+            "end": 4624
+          }
+        }
+      ]
+    }
+  }
+}

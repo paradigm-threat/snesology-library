@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super International Cricket",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 6000,
+      "brrLength": 3375,
+      "hasLoop": true,
+      "loopStartPcm": 3248
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "32a9982624a05ee07a2dfb39e4a836e32025239523dc7613ee828a7299c19694"
+          },
+          "loop": {
+            "start": 3248,
+            "end": 6000
+          }
+        }
+      ]
+    }
+  }
+}

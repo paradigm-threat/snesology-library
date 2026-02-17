@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Bombliss",
+    "snes": {
+      "srcn": 6,
+      "character": "tone",
+      "pcmLength": 1008,
+      "brrLength": 567,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 5987
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2c201de597e6cfe95fb7b58873d9c91cc2364889854481bb664e123e53c00b89"
+          },
+          "loop": {
+            "start": 48,
+            "end": 1008
+          }
+        }
+      ]
+    }
+  }
+}

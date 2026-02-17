@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Porky Pig's Haunted Holiday (Sun",
+    "snes": {
+      "srcn": 7,
+      "character": "tone",
+      "pcmLength": 1696,
+      "brrLength": 954,
+      "hasLoop": true,
+      "loopStartPcm": 576,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "838854858bc126b1b959a153ad5e088dc94536a691ba871a98b28d19d1ef3140"
+          },
+          "loop": {
+            "start": 576,
+            "end": 1696
+          }
+        }
+      ]
+    }
+  }
+}

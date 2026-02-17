@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sailor Moon S: Kurukkurin",
+    "snes": {
+      "srcn": 4,
+      "character": "tone",
+      "pcmLength": 2128,
+      "brrLength": 1197,
+      "hasLoop": true,
+      "loopStartPcm": 1152
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c04ab3b22697f2812851892846364f0b4703292515306889af17ee4571cdc559"
+          },
+          "loop": {
+            "start": 1152,
+            "end": 2128
+          }
+        }
+      ]
+    }
+  }
+}

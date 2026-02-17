@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ganbare Goemon 2",
+    "snes": {
+      "srcn": 22,
+      "character": "melodic",
+      "pcmLength": 10128,
+      "brrLength": 5697,
+      "hasLoop": true,
+      "loopStartPcm": 4048,
+      "adsr1": 0,
+      "adsr2": 203,
+      "gain": 191,
+      "pitchRegister": 919
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "db067429679054292190b1bb76b6a61efc9717dbd2b40e3ff701aa7f4bb756a6"
+          },
+          "loop": {
+            "start": 4048,
+            "end": 10128
+          }
+        }
+      ]
+    }
+  }
+}

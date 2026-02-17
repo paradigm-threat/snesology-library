@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spider-Man and Venom: Maximum Ca",
+    "snes": {
+      "srcn": 12,
+      "character": "noise",
+      "pcmLength": 13680,
+      "brrLength": 7695,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 0,
+      "pitchRegister": 241
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "14c1f44a78df61f4c46a28539351c3f2a127b0bbd78ba6148916175385ab4ea2"
+          }
+        }
+      ]
+    }
+  }
+}

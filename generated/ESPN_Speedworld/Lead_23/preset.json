@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "ESPN Speedworld",
+    "snes": {
+      "srcn": 23,
+      "character": "melodic",
+      "pcmLength": 5296,
+      "brrLength": 2979,
+      "hasLoop": true,
+      "loopStartPcm": 3600,
+      "adsr1": 0,
+      "adsr2": 192,
+      "gain": 159,
+      "pitchRegister": 609
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9f615e5932ac4eabe0b19737a26ad2391349e884e29a43fcd8bb406336f14d1a"
+          },
+          "loop": {
+            "start": 3600,
+            "end": 5296
+          }
+        }
+      ]
+    }
+  }
+}

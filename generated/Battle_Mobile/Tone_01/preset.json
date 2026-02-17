@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battle Mobile",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 2880,
+      "brrLength": 1620,
+      "hasLoop": true,
+      "loopStartPcm": 2704,
+      "adsr1": 255,
+      "adsr2": 235,
+      "gain": 184,
+      "pitchRegister": 5089
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a4be93f49695ec21923460c6fc396e4e4f2406cd7edb5ba5feb16a8f344675b4"
+          },
+          "loop": {
+            "start": 2704,
+            "end": 2880
+          }
+        }
+      ]
+    }
+  }
+}

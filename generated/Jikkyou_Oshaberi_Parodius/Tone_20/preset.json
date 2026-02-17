@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jikkyou Oshaberi Parodius",
+    "snes": {
+      "srcn": 20,
+      "character": "tone",
+      "pcmLength": 3408,
+      "brrLength": 1917,
+      "hasLoop": true,
+      "loopStartPcm": 960,
+      "adsr1": 129,
+      "adsr2": 232,
+      "gain": 0,
+      "pitchRegister": 145
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7e7d043915c5280a1e12a1ccff5290a3ccfc00b6b71d46d593e315b124acbb03"
+          },
+          "loop": {
+            "start": 960,
+            "end": 3408
+          }
+        }
+      ]
+    }
+  }
+}

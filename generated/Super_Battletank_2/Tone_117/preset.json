@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Battletank 2",
+    "snes": {
+      "srcn": 117,
+      "character": "tone",
+      "pcmLength": 240,
+      "brrLength": 135,
+      "hasLoop": true,
+      "loopStartPcm": 432
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8ba34ee038bd105c35e49a3ba55c2c9fac78afdada5a17e3d59d39aff2ae825f"
+          },
+          "loop": {
+            "start": 432,
+            "end": 240
+          }
+        }
+      ]
+    }
+  }
+}

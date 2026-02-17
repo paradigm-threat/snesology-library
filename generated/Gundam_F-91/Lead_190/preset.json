@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gundam F-91",
+    "snes": {
+      "srcn": 190,
+      "character": "melodic",
+      "pcmLength": 4656,
+      "brrLength": 2619,
+      "hasLoop": true,
+      "loopStartPcm": 53520
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1ed0342678375c552a61a5265e5b3e3a78d9f46c5e097dc70f7c274b85ee3dc8"
+          },
+          "loop": {
+            "start": 53520,
+            "end": 4656
+          }
+        }
+      ]
+    }
+  }
+}

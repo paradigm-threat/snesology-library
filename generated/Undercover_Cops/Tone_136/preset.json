@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Undercover Cops",
+    "snes": {
+      "srcn": 136,
+      "character": "tone",
+      "pcmLength": 1760,
+      "brrLength": 990,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "55714c73aaf66eaebd1df19aacc76039495e4addf553967a071ca02353bca418"
+          },
+          "loop": {
+            "start": 0,
+            "end": 1760
+          }
+        }
+      ]
+    }
+  }
+}

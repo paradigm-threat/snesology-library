@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Ninja Warriors",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 3184,
+      "brrLength": 1791,
+      "hasLoop": true,
+      "loopStartPcm": 2048,
+      "adsr1": 255,
+      "adsr2": 244,
+      "gain": 184,
+      "pitchRegister": 2278
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d269772e9862a238cd5105be009a369f619de56e1d288f4652a3878fc00db504"
+          },
+          "loop": {
+            "start": 2048,
+            "end": 3184
+          }
+        }
+      ]
+    }
+  }
+}

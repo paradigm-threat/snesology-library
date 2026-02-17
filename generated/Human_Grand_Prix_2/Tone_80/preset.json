@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Human Grand Prix 2",
+    "snes": {
+      "srcn": 80,
+      "character": "tone",
+      "pcmLength": 1872,
+      "brrLength": 1053,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c3f9dbd5a53514dd48d1ad80f6b6e63f6136cedc945b28eafa8221735ff6e2eb"
+          },
+          "loop": {
+            "start": 0,
+            "end": 1872
+          }
+        }
+      ]
+    }
+  }
+}

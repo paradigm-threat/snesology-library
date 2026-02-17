@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Street Racer",
+    "snes": {
+      "srcn": 106,
+      "character": "melodic",
+      "pcmLength": 4624,
+      "brrLength": 2601,
+      "hasLoop": true,
+      "loopStartPcm": 64
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ef2baa686a04f314b140776e22291b903dfca4702f303660e2e4b3416c218fb6"
+          },
+          "loop": {
+            "start": 64,
+            "end": 4624
+          }
+        }
+      ]
+    }
+  }
+}

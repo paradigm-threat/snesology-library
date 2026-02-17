@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tsuppari Oozumo Rissin Shusse He",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 1936,
+      "brrLength": 1089,
+      "hasLoop": true,
+      "loopStartPcm": 1616
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "baed0d33496f0fdbe7dfc1df674322d9b7ee5a529ec23b001975a9298a648eec"
+          },
+          "loop": {
+            "start": 1616,
+            "end": 1936
+          }
+        }
+      ]
+    }
+  }
+}

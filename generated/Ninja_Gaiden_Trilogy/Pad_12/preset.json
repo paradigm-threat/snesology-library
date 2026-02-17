@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ninja Gaiden Trilogy",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 13792,
+      "brrLength": 7758,
+      "hasLoop": true,
+      "loopStartPcm": 9584,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 7695
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1b54c3e197bc50cccc42093368ba079436cdc908a6cd5632e4830481592fefc6"
+          },
+          "loop": {
+            "start": 9584,
+            "end": 13792
+          }
+        }
+      ]
+    }
+  }
+}

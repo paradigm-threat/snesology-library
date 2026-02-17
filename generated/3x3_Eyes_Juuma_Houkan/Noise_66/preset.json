@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "3x3 Eyes: Juuma Houkan",
+    "snes": {
+      "srcn": 66,
+      "character": "noise",
+      "pcmLength": 4560,
+      "brrLength": 2565,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9aa2d147a1b1887871e6a868056eceb12d94a67c7d915f0d8cd4428b2fb17ce7"
+          }
+        }
+      ]
+    }
+  }
+}

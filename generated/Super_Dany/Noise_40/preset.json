@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Dany",
+    "snes": {
+      "srcn": 40,
+      "character": "noise",
+      "pcmLength": 2848,
+      "brrLength": 1602,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 112,
+      "gain": 255,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9187a60044a6ce0208585a6b45d9d33b47b5b43a9f61d8f4a5dbaddcc01bf4e3"
+          }
+        }
+      ]
+    }
+  }
+}

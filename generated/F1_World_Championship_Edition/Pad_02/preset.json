@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "F1 World Championship Edition",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 12528,
+      "brrLength": 7047,
+      "hasLoop": true,
+      "loopStartPcm": 5920,
+      "adsr1": 143,
+      "adsr2": 192,
+      "gain": 0,
+      "pitchRegister": 3444
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "525c5f395d1a14f3b5cd3948c9255394d5a096cd45bec1f5da6ae9de4001e927"
+          },
+          "loop": {
+            "start": 5920,
+            "end": 12528
+          }
+        }
+      ]
+    }
+  }
+}

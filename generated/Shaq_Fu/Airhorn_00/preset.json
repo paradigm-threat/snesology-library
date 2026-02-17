@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Airhorn",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shaq Fu",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 6448,
+      "brrLength": 3627,
+      "hasLoop": true,
+      "loopStartPcm": 6368,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 0,
+      "pitchRegister": 0
+    },
+    "communityName": "airhorn",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ce31e4a36e0960b5e5921da670f569a55efb3892eb3baccaf557c7646b389399"
+          },
+          "loop": {
+            "start": 6368,
+            "end": 6448
+          }
+        }
+      ]
+    }
+  }
+}

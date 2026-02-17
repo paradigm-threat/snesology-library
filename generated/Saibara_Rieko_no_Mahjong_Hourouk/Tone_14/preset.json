@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Saibara Rieko no Mahjong Hourouk",
+    "snes": {
+      "srcn": 14,
+      "character": "tone",
+      "pcmLength": 672,
+      "brrLength": 378,
+      "hasLoop": true,
+      "loopStartPcm": 608,
+      "adsr1": 255,
+      "adsr2": 235,
+      "gain": 184,
+      "pitchRegister": 2404
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7215203a37be3259ab5b631061abbe52f2731ab60009c134e81ccd878862a971"
+          },
+          "loop": {
+            "start": 608,
+            "end": 672
+          }
+        }
+      ]
+    }
+  }
+}

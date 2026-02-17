@@ -1,0 +1,51 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Makeruna Makendo",
+    "snes": {
+      "srcn": 18,
+      "character": "melodic",
+      "pcmLength": 6928,
+      "brrLength": 3897,
+      "hasLoop": true,
+      "adsr1": 0,
+      "adsr2": 225,
+      "gain": 158,
+      "pitchRegister": 1950
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3fe0c65e36714e8e28d365b802a762341fe8e9f8a315bcbf96997eab9a407cd4"
+          }
+        }
+      ]
+    }
+  }
+}

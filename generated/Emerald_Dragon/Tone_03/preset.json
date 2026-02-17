@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Emerald Dragon",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 160,
+      "brrLength": 90,
+      "hasLoop": true,
+      "loopStartPcm": 32,
+      "adsr1": 0,
+      "adsr2": 43,
+      "gain": 159,
+      "pitchRegister": 1605
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e2d9c5f5ad45a3a7ef566ec8c230f10aacb01d3712e7e91ba5e46b03fdad9663"
+          },
+          "loop": {
+            "start": 32,
+            "end": 160
+          }
+        }
+      ]
+    }
+  }
+}

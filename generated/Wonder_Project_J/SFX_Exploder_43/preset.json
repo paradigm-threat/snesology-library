@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Exploder",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wonder Project J",
+    "snes": {
+      "srcn": 43,
+      "character": "melodic",
+      "pcmLength": 9712,
+      "brrLength": 5463,
+      "hasLoop": true,
+      "loopStartPcm": 5104
+    },
+    "communityName": "sfx_exploder",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9d92053c6961df4dc25c323e47647e18f02cf8b7dd15d184ca459debbf3bf320"
+          },
+          "loop": {
+            "start": 5104,
+            "end": 9712
+          }
+        }
+      ]
+    }
+  }
+}

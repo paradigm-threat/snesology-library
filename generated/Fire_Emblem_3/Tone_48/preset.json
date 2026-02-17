@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fire Emblem 3",
+    "snes": {
+      "srcn": 48,
+      "character": "tone",
+      "pcmLength": 272,
+      "brrLength": 153,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 234,
+      "adsr2": 192,
+      "gain": 184,
+      "pitchRegister": 5112
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "854928c9bb9a115d8b7c423057d3000165d059504760bac225338c561ee3be62"
+          },
+          "loop": {
+            "start": 16,
+            "end": 272
+          }
+        }
+      ]
+    }
+  }
+}

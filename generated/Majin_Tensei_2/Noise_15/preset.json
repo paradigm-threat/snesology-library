@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Majin Tensei 2",
+    "snes": {
+      "srcn": 15,
+      "character": "noise",
+      "pcmLength": 11248,
+      "brrLength": 6327,
+      "hasLoop": false,
+      "adsr1": 127,
+      "adsr2": 247,
+      "gain": 159,
+      "pitchRegister": 2896
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "de3addba4dcc394d4804e0d44999f1392ed0729814e3002e8d6fcfa9e4a19e68"
+          }
+        }
+      ]
+    }
+  }
+}

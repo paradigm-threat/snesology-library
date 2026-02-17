@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shin Megami Tensei: If...",
+    "snes": {
+      "srcn": 25,
+      "character": "one-shot",
+      "pcmLength": 3200,
+      "brrLength": 1800,
+      "hasLoop": false,
+      "adsr1": 127,
+      "adsr2": 242,
+      "gain": 159,
+      "pitchRegister": 4096
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9d41502355453556da669d053235a3e76f566a4b00051ff53745d31a00b705a0"
+          }
+        }
+      ]
+    }
+  }
+}

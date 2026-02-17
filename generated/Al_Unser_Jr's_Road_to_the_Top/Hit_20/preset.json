@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Al Unser Jr's Road to the Top",
+    "snes": {
+      "srcn": 20,
+      "character": "one-shot",
+      "pcmLength": 4000,
+      "brrLength": 2250,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 128,
+      "pitchRegister": 2223
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d3bf2cc007cf12438e23da7cd0ebe88f6c47dda3dd64d46d184d8d59d785ed97"
+          }
+        }
+      ]
+    }
+  }
+}

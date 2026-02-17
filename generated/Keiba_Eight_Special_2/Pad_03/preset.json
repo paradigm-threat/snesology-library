@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Keiba Eight Special 2",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 12288,
+      "brrLength": 6912,
+      "hasLoop": true,
+      "loopStartPcm": 7600
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "17dd0ee82ae229ebeb8d433e7f5d5940d59dd39af7cef4c1cb2e52e77bd02741"
+          },
+          "loop": {
+            "start": 7600,
+            "end": 12288
+          }
+        }
+      ]
+    }
+  }
+}

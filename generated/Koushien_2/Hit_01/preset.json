@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Koushien 2",
+    "snes": {
+      "srcn": 1,
+      "character": "one-shot",
+      "pcmLength": 13520,
+      "brrLength": 7605,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 231,
+      "gain": 181,
+      "pitchRegister": 2176
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "63c8378a052eb8a0f04c668ab137fbca20181c9ebb9e609eb2fdddf766a14aa4"
+          }
+        }
+      ]
+    }
+  }
+}

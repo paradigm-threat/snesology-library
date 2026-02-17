@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spider-Man & Venom: Separation A",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 5008,
+      "brrLength": 2817,
+      "hasLoop": true,
+      "loopStartPcm": 2704
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "de44f8afd624d8f30030233af58df646d7588e9909e479d9792c904ab5f959f3"
+          },
+          "loop": {
+            "start": 2704,
+            "end": 5008
+          }
+        }
+      ]
+    }
+  }
+}

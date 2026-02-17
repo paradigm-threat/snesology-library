@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tadaima Yusya Bosyutyu Okawari",
+    "snes": {
+      "srcn": 66,
+      "character": "tone",
+      "pcmLength": 3792,
+      "brrLength": 2133,
+      "hasLoop": true,
+      "loopStartPcm": 1200,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 840
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "459cc93236c6b68e85ff349df9f7e493b41119bf0a65ac38fee6c8c5ae172fc3"
+          },
+          "loop": {
+            "start": 1200,
+            "end": 3792
+          }
+        }
+      ]
+    }
+  }
+}

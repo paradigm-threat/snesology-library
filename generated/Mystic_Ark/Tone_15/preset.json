@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mystic Ark",
+    "snes": {
+      "srcn": 15,
+      "character": "tone",
+      "pcmLength": 2336,
+      "brrLength": 1314,
+      "hasLoop": true,
+      "loopStartPcm": 240
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "aa74dc5d4efc52b6ae61966d05716dbbae03e2421cf70f75c0eb8cb8ef470f20"
+          },
+          "loop": {
+            "start": 240,
+            "end": 2336
+          }
+        }
+      ]
+    }
+  }
+}

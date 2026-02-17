@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pachinko Renchan Tengoku: Super",
+    "snes": {
+      "srcn": 20,
+      "character": "melodic",
+      "pcmLength": 15488,
+      "brrLength": 8712,
+      "hasLoop": true,
+      "loopStartPcm": 15472
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "428ea9d7c9ef00c3090920c3f70b1cb1b97245ad59d41905aeb636ba0cecf29c"
+          },
+          "loop": {
+            "start": 15472,
+            "end": 15488
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dokapon 321",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 2048,
+      "brrLength": 1152,
+      "hasLoop": true,
+      "loopStartPcm": 1552
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e3366837a1f11fcf6389a0673df0070b159a0bf3d27563b7aac18b1d3f8956f3"
+          },
+          "loop": {
+            "start": 1552,
+            "end": 2048
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mighty Max",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 4560,
+      "brrLength": 2565,
+      "hasLoop": true,
+      "loopStartPcm": 2528,
+      "adsr1": 143,
+      "adsr2": 64,
+      "gain": 0,
+      "pitchRegister": 1593
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8684c69405b43d88751c3da5bbfcdcf6a7de3e527f9148a49e3e74e02cf2f635"
+          },
+          "loop": {
+            "start": 2528,
+            "end": 4560
+          }
+        }
+      ]
+    }
+  }
+}

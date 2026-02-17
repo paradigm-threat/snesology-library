@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shodankurai Nintei Shodan Pro Ma",
+    "snes": {
+      "srcn": 160,
+      "character": "noise",
+      "pcmLength": 3104,
+      "brrLength": 1746,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a0dc9a9b33087e76b8a80de4f9a47a838262407cbc3b7d420d086b8a7ad0326a"
+          }
+        }
+      ]
+    }
+  }
+}

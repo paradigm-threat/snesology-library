@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Z-Gundam: Away to the Newtype",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 4144,
+      "brrLength": 2331,
+      "hasLoop": true,
+      "loopStartPcm": 3856
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9702f47735c85a5640331b1e1687fd9755aa8f3f8a9bcce0d70d5d7b9b4c38db"
+          },
+          "loop": {
+            "start": 3856,
+            "end": 4144
+          }
+        }
+      ]
+    }
+  }
+}

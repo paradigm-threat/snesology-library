@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Riddick Bowe Boxing",
+    "snes": {
+      "srcn": 4,
+      "character": "one-shot",
+      "pcmLength": 5072,
+      "brrLength": 2853,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 232,
+      "gain": 0,
+      "pitchRegister": 1280
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2c2fefb3583049104800a09e9f781b3e3bb47f294724e58b9f526ea645d6815f"
+          }
+        }
+      ]
+    }
+  }
+}

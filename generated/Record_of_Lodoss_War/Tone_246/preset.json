@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Record of Lodoss War",
+    "snes": {
+      "srcn": 246,
+      "character": "tone",
+      "pcmLength": 512,
+      "brrLength": 288,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b6c742c22873451cf0b1a84e13b2cfeb4b6c2d32bd22b4a0cb0ef7752725f6b4"
+          },
+          "loop": {
+            "start": 0,
+            "end": 512
+          }
+        }
+      ]
+    }
+  }
+}

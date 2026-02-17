@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ys V",
+    "snes": {
+      "srcn": 16,
+      "character": "melodic",
+      "pcmLength": 4720,
+      "brrLength": 2655,
+      "hasLoop": true,
+      "loopStartPcm": 3808,
+      "adsr1": 255,
+      "adsr2": 241,
+      "gain": 0,
+      "pitchRegister": 6765
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6181b4ddcb4b9d100149e7efcec5cfabe83d98d243fb87c56259550eabe4816b"
+          },
+          "loop": {
+            "start": 3808,
+            "end": 4720
+          }
+        }
+      ]
+    }
+  }
+}

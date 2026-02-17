@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cosmo Gang: The Video",
+    "snes": {
+      "srcn": 48,
+      "character": "tone",
+      "pcmLength": 3168,
+      "brrLength": 1782,
+      "hasLoop": true,
+      "loopStartPcm": 1488
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6d315bd8b98a6fd11dd6968162712d452665cf7ecf202c5c6e473009709184af"
+          },
+          "loop": {
+            "start": 1488,
+            "end": 3168
+          }
+        }
+      ]
+    }
+  }
+}

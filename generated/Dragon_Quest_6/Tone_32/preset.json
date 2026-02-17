@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Quest 6",
+    "snes": {
+      "srcn": 32,
+      "character": "tone",
+      "pcmLength": 3344,
+      "brrLength": 1881,
+      "hasLoop": true,
+      "loopStartPcm": 5552
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "946a26070f8505ec9a3f3e725eed0bebe6c6e4a5e8b18c422d2ca46b084c57f6"
+          },
+          "loop": {
+            "start": 5552,
+            "end": 3344
+          }
+        }
+      ]
+    }
+  }
+}

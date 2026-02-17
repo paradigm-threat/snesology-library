@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Art of Fighting",
+    "snes": {
+      "srcn": 1,
+      "character": "noise",
+      "pcmLength": 10560,
+      "brrLength": 5940,
+      "hasLoop": true,
+      "loopStartPcm": 2512,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1538
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "271bc694efea25e60fb921ec70df64c0f4a2a522ad223a6d254456d11a34c882"
+          },
+          "loop": {
+            "start": 2512,
+            "end": 10560
+          }
+        }
+      ]
+    }
+  }
+}

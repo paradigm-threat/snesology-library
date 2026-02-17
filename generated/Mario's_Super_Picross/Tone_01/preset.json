@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mario's Super Picross",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 1296,
+      "brrLength": 729,
+      "hasLoop": true,
+      "loopStartPcm": 272
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "326e49e8babad9c4f7a8c81026f77433f7906fc9a315d0378357f0b3560df4a6"
+          },
+          "loop": {
+            "start": 272,
+            "end": 1296
+          }
+        }
+      ]
+    }
+  }
+}

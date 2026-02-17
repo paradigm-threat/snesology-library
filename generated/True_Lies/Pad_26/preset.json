@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "True Lies",
+    "snes": {
+      "srcn": 26,
+      "character": "melodic",
+      "pcmLength": 5504,
+      "brrLength": 3096,
+      "hasLoop": true,
+      "loopStartPcm": 3056
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d258854b8f32abe86fde3a9d4d3b479002165e1472f43316820a8e167e48ecee"
+          },
+          "loop": {
+            "start": 3056,
+            "end": 5504
+          }
+        }
+      ]
+    }
+  }
+}

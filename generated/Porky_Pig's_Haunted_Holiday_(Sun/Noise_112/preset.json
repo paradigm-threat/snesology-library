@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Porky Pig's Haunted Holiday (Sun",
+    "snes": {
+      "srcn": 112,
+      "character": "noise",
+      "pcmLength": 880,
+      "brrLength": 495,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "99ea396a2fde4e573a1bc29aaade2b6040bc0e76109cc5620677729e388b2d8a"
+          }
+        }
+      ]
+    }
+  }
+}

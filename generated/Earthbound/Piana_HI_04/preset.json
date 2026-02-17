@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Piana HI",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earthbound",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 11440,
+      "brrLength": 6435,
+      "hasLoop": true,
+      "loopStartPcm": 10192,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1920
+    },
+    "communityName": "piana_hi",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8724c2b32f01d8c226ab2866c2c4071bfe8d28033ebb125c4e625ea20de7ac77"
+          },
+          "loop": {
+            "start": 10192,
+            "end": 11440
+          }
+        }
+      ]
+    }
+  }
+}

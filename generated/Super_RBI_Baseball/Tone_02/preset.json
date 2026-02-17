@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super RBI Baseball",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 416,
+      "brrLength": 234,
+      "hasLoop": true,
+      "adsr1": 0,
+      "adsr2": 236,
+      "gain": 176,
+      "pitchRegister": 2733
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b7db7b6d5367c4390d7226b0dbcd9564d99241aa0f1e40db5a872d29c289e14f"
+          }
+        }
+      ]
+    }
+  }
+}

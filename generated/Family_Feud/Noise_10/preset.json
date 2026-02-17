@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Family Feud",
+    "snes": {
+      "srcn": 10,
+      "character": "noise",
+      "pcmLength": 8272,
+      "brrLength": 4653,
+      "hasLoop": false,
+      "adsr1": 171,
+      "adsr2": 171,
+      "gain": 159,
+      "pitchRegister": 1605
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4dcac20af40b15e81090fdf3301e01221f90927aff2fa6b81b99c66977c83084"
+          }
+        }
+      ]
+    }
+  }
+}

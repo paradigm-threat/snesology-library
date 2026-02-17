@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Barbie Super Model",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 3456,
+      "brrLength": 1944,
+      "hasLoop": true,
+      "loopStartPcm": 3392,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 146,
+      "pitchRegister": 1525
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "909f533980b14b3a52a5584aff43a530c6b8048bef4053bcc9ad8ec8297980b0"
+          },
+          "loop": {
+            "start": 3392,
+            "end": 3456
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Same Game Mario",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 18912,
+      "brrLength": 10638,
+      "hasLoop": true,
+      "loopStartPcm": 15424,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 159,
+      "pitchRegister": 275
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a32de35c7f50f925595e3c4184f3eb8f1419048f0d8b1b61b13456ad2a3e003e"
+          },
+          "loop": {
+            "start": 15424,
+            "end": 18912
+          }
+        }
+      ]
+    }
+  }
+}

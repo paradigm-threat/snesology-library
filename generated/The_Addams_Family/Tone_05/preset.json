@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Addams Family",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 2144,
+      "brrLength": 1206,
+      "hasLoop": true,
+      "loopStartPcm": 32,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 805
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "71f75938fdc7d46e9fdf9d479c3a6d28a59a6344b4dc50c98df54c1c528bb8a1"
+          },
+          "loop": {
+            "start": 32,
+            "end": 2144
+          }
+        }
+      ]
+    }
+  }
+}

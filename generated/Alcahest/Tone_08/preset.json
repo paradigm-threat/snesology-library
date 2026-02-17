@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Alcahest",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 1632,
+      "brrLength": 918,
+      "hasLoop": true,
+      "loopStartPcm": 1520,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2226
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bea3f4a21a2bdf8f1495ffe470dad597cadedb917dfcc8928d3e8b04e420b81d"
+          },
+          "loop": {
+            "start": 1520,
+            "end": 1632
+          }
+        }
+      ]
+    }
+  }
+}

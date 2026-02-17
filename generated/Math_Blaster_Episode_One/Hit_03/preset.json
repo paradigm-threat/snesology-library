@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Math Blaster: Episode One",
+    "snes": {
+      "srcn": 3,
+      "character": "one-shot",
+      "pcmLength": 2880,
+      "brrLength": 1620,
+      "hasLoop": false,
+      "adsr1": 190,
+      "adsr2": 247,
+      "gain": 0,
+      "pitchRegister": 2896
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "15d5d940b85758b90f23e21017cd420221fe401a923faa10c514fd4635d03673"
+          }
+        }
+      ]
+    }
+  }
+}

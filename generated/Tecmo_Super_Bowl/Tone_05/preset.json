@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tecmo Super Bowl",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 768,
+      "brrLength": 432,
+      "hasLoop": true,
+      "loopStartPcm": 688
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "97afc1d196317f96a8055567af164b3d4314b6c8230b773e089039f8e66c8792"
+          },
+          "loop": {
+            "start": 688,
+            "end": 768
+          }
+        }
+      ]
+    }
+  }
+}

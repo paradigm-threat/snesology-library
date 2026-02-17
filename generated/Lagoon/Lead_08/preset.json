@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Lagoon",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 6224,
+      "brrLength": 3501,
+      "hasLoop": true,
+      "loopStartPcm": 5984,
+      "adsr1": 255,
+      "adsr2": 168,
+      "gain": 184,
+      "pitchRegister": 3780
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b817c787262dc40bfba8f69ee38dba7005cd4e46a86a5acdb92c4e2de0bd7486"
+          },
+          "loop": {
+            "start": 5984,
+            "end": 6224
+          }
+        }
+      ]
+    }
+  }
+}

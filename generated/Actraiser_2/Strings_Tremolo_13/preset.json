@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Strings Tremolo",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Actraiser 2",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 4576,
+      "brrLength": 2574,
+      "hasLoop": true,
+      "loopStartPcm": 2352,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1075
+    },
+    "communityName": "strings_tremolo",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9c83c8d8b675d130610be087297a3aea29edccde2d43cad2219299944c195955"
+          },
+          "loop": {
+            "start": 2352,
+            "end": 4576
+          }
+        }
+      ]
+    }
+  }
+}

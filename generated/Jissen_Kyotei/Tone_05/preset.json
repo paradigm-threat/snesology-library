@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jissen Kyotei",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 816,
+      "brrLength": 459,
+      "hasLoop": true,
+      "loopStartPcm": 720,
+      "adsr1": 157,
+      "adsr2": 230,
+      "gain": 127,
+      "pitchRegister": 1011
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b075a96049f2775bd73cc9fe7e623a48e1ccb1a6e1deb7c5668c763b7ac46549"
+          },
+          "loop": {
+            "start": 720,
+            "end": 816
+          }
+        }
+      ]
+    }
+  }
+}

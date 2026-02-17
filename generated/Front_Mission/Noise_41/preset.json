@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Front Mission",
+    "snes": {
+      "srcn": 41,
+      "character": "noise",
+      "pcmLength": 4224,
+      "brrLength": 2376,
+      "hasLoop": true,
+      "loopStartPcm": 1808
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "74f701cc836b657fdae00ab65d7cc28f3d2786bbcdd4cefe5538163a1a52b4fd"
+          },
+          "loop": {
+            "start": 1808,
+            "end": 4224
+          }
+        }
+      ]
+    }
+  }
+}

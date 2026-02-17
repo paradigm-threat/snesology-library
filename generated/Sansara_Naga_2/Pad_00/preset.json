@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sansara Naga 2",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 16192,
+      "brrLength": 9108,
+      "hasLoop": true,
+      "loopStartPcm": 8704,
+      "adsr1": 255,
+      "adsr2": 242,
+      "gain": 184,
+      "pitchRegister": 5055
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4076ef1ae8f2b46f15b34b76f1a87249b040d65998c27e2b412a5143bd5a60be"
+          },
+          "loop": {
+            "start": 8704,
+            "end": 16192
+          }
+        }
+      ]
+    }
+  }
+}

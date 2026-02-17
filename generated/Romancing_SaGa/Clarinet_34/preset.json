@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Clarinet",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Romancing SaGa",
+    "snes": {
+      "srcn": 34,
+      "character": "tone",
+      "pcmLength": 2304,
+      "brrLength": 1296,
+      "hasLoop": true,
+      "loopStartPcm": 2240,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 160,
+      "pitchRegister": 4574
+    },
+    "communityName": "clarinet",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fe9af849c2e0d3cc7505eb97d7ecea5b1ae0b0465e60e8b7d8ea369ef22fd83c"
+          },
+          "loop": {
+            "start": 2240,
+            "end": 2304
+          }
+        }
+      ]
+    }
+  }
+}

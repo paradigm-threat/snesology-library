@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jack Nicklaus Golf",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 1408,
+      "brrLength": 792,
+      "hasLoop": true,
+      "loopStartPcm": 1392
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "86f41c82d5da570fa8265934b246ae180d30476ef77e94f05b3a7b43028bf14f"
+          },
+          "loop": {
+            "start": 1392,
+            "end": 1408
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Esparks: Ijikuu kara no Raihoush",
+    "snes": {
+      "srcn": 20,
+      "character": "melodic",
+      "pcmLength": 12224,
+      "brrLength": 6876,
+      "hasLoop": true,
+      "loopStartPcm": 736
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e91418091a060c9f03acbfee6d83a8df2ebd917d2a24272314dae9e178c09699"
+          },
+          "loop": {
+            "start": 736,
+            "end": 12224
+          }
+        }
+      ]
+    }
+  }
+}

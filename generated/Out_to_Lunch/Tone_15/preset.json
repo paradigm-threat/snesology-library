@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Out to Lunch",
+    "snes": {
+      "srcn": 15,
+      "character": "tone",
+      "pcmLength": 3248,
+      "brrLength": 1827,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "eaf3bb35017a70d560525aafaaca3801ea4ca1b2df7d775bb266ba21103d19e4"
+          },
+          "loop": {
+            "start": 0,
+            "end": 3248
+          }
+        }
+      ]
+    }
+  }
+}

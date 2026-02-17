@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Astral Bout 2",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 8768,
+      "brrLength": 4932,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f766f1f12d8a973b74cae4a3044e3d55dafaf49da97a00cf5168ff5d1177f8d0"
+          },
+          "loop": {
+            "start": 0,
+            "end": 8768
+          }
+        }
+      ]
+    }
+  }
+}

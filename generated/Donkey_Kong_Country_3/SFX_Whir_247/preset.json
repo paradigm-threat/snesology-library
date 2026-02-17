@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Whir",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Donkey Kong Country 3",
+    "snes": {
+      "srcn": 247,
+      "character": "tone",
+      "pcmLength": 3328,
+      "brrLength": 1872,
+      "hasLoop": true
+    },
+    "communityName": "sfx_whir",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "18db162c835f02431cd3782b35cab034063049dfdea6d55555ca474e652fe739"
+          }
+        }
+      ]
+    }
+  }
+}

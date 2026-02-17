@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Strings Violins",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Actraiser 2",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 17136,
+      "brrLength": 9639,
+      "hasLoop": true,
+      "loopStartPcm": 6320,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 3652
+    },
+    "communityName": "strings_violins",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e86e0199ca09842ab6460e639edc1657174426a373be7095c58104f808c90072"
+          },
+          "loop": {
+            "start": 6320,
+            "end": 17136
+          }
+        }
+      ]
+    }
+  }
+}

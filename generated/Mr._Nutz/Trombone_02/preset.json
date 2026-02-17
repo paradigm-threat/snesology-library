@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Trombone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mr. Nutz",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 592,
+      "brrLength": 333,
+      "hasLoop": true,
+      "loopStartPcm": 528,
+      "adsr1": 235,
+      "adsr2": 128,
+      "gain": 0,
+      "pitchRegister": 1011
+    },
+    "communityName": "trombone",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3331e90e6c883ab07f7553116d25ffad278d02bfd5ad1bb0d4050af0cfb412a2"
+          },
+          "loop": {
+            "start": 528,
+            "end": 592
+          }
+        }
+      ]
+    }
+  }
+}

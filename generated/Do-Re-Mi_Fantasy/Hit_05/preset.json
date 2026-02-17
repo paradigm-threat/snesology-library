@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Do-Re-Mi Fantasy",
+    "snes": {
+      "srcn": 5,
+      "character": "one-shot",
+      "pcmLength": 1296,
+      "brrLength": 729,
+      "hasLoop": false,
+      "adsr1": 239,
+      "adsr2": 133,
+      "gain": 159,
+      "pitchRegister": 2578
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "838ce20e26d3695a8c9e3eac539e10d75370515357045f16c8fd9653d92c8812"
+          }
+        }
+      ]
+    }
+  }
+}

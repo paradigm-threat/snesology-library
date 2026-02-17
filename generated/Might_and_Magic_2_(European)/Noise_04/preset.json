@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Might and Magic 2 (European)",
+    "snes": {
+      "srcn": 4,
+      "character": "noise",
+      "pcmLength": 2400,
+      "brrLength": 1350,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 50,
+      "gain": 127,
+      "pitchRegister": 2756
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "259cae4a9bc7445926fb60653c308cbb96186a53d33a82875adf3aaf23e3a7b7"
+          }
+        }
+      ]
+    }
+  }
+}

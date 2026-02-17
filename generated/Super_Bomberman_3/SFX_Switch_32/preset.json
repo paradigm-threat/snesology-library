@@ -1,0 +1,48 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Switch",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Bomberman 3",
+    "snes": {
+      "srcn": 32,
+      "character": "noise",
+      "pcmLength": 1552,
+      "brrLength": 873,
+      "hasLoop": false
+    },
+    "communityName": "sfX_switch",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c3b58be49054c5c09bb0c5ce054d7d29721ef394abea38a53c30d9c216785621"
+          }
+        }
+      ]
+    }
+  }
+}

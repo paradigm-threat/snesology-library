@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Lawnmower Man",
+    "snes": {
+      "srcn": 19,
+      "character": "tone",
+      "pcmLength": 2016,
+      "brrLength": 1134,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5d127e0502c926b2d1bf000f5bbcf24a8a65c452b7105f879334db44acbe6b0d"
+          },
+          "loop": {
+            "start": 16,
+            "end": 2016
+          }
+        }
+      ]
+    }
+  }
+}

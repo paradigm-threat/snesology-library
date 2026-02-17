@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Igo Club",
+    "snes": {
+      "srcn": 99,
+      "character": "tone",
+      "pcmLength": 416,
+      "brrLength": 234,
+      "hasLoop": true,
+      "loopStartPcm": 24064
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "033b75647cc8fdec59b1f277e32ad8452d79c54b89709140e0dc49b0c241b471"
+          },
+          "loop": {
+            "start": 24064,
+            "end": 416
+          }
+        }
+      ]
+    }
+  }
+}

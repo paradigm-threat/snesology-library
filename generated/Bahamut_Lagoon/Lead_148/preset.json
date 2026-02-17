@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bahamut Lagoon",
+    "snes": {
+      "srcn": 148,
+      "character": "melodic",
+      "pcmLength": 4160,
+      "brrLength": 2340,
+      "hasLoop": true,
+      "loopStartPcm": 44992
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7ca7224cd84e2bad06bcb44b12080649058c893981ed48cdf5f9414a7a8cfc0a"
+          },
+          "loop": {
+            "start": 44992,
+            "end": 4160
+          }
+        }
+      ]
+    }
+  }
+}

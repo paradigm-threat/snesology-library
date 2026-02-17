@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tokimeki Memorial",
+    "snes": {
+      "srcn": 50,
+      "character": "tone",
+      "pcmLength": 2256,
+      "brrLength": 1269,
+      "hasLoop": true,
+      "loopStartPcm": 1472,
+      "adsr1": 137,
+      "adsr2": 206,
+      "gain": 0,
+      "pitchRegister": 477
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8a78a136b56f02d37b876e0a40293e02cdbafcf09b4c8aac039451c7f2e7c895"
+          },
+          "loop": {
+            "start": 1472,
+            "end": 2256
+          }
+        }
+      ]
+    }
+  }
+}

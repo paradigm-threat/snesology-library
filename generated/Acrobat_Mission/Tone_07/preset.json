@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Acrobat Mission",
+    "snes": {
+      "srcn": 7,
+      "character": "tone",
+      "pcmLength": 1072,
+      "brrLength": 603,
+      "hasLoop": true,
+      "loopStartPcm": 592,
+      "adsr1": 239,
+      "adsr2": 204,
+      "gain": 184,
+      "pitchRegister": 1635
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "52c14f29e3fe611f88da130827539d87bd88c3197687d6d40f21dac9c6d425a8"
+          },
+          "loop": {
+            "start": 592,
+            "end": 1072
+          }
+        }
+      ]
+    }
+  }
+}

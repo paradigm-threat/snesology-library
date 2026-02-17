@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Trombone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Actraiser 2",
+    "snes": {
+      "srcn": 15,
+      "character": "melodic",
+      "pcmLength": 7728,
+      "brrLength": 4347,
+      "hasLoop": true,
+      "loopStartPcm": 5136,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1462
+    },
+    "communityName": "trombone",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "dca8458f7f74cc071f65d2eaa43907c5b1696c1eaa9393dea38d33388bb2748a"
+          },
+          "loop": {
+            "start": 5136,
+            "end": 7728
+          }
+        }
+      ]
+    }
+  }
+}

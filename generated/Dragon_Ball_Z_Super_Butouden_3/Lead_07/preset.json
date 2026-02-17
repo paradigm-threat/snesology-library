@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Ball Z: Super Butouden 3",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 4320,
+      "brrLength": 2430,
+      "hasLoop": true,
+      "loopStartPcm": 2512
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b30a6cdd0118dd4fe38960e74e674232cc48c5ff76acb44a3e2aaa4b5108c990"
+          },
+          "loop": {
+            "start": 2512,
+            "end": 4320
+          }
+        }
+      ]
+    }
+  }
+}

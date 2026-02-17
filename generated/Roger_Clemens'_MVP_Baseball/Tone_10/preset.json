@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Roger Clemens' MVP Baseball",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 1760,
+      "brrLength": 990,
+      "hasLoop": true,
+      "loopStartPcm": 1712
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e5c5157008c9c7bd66f47d447fba6cb6ca19b0d32f0823a9aa828f831ff36adb"
+          },
+          "loop": {
+            "start": 1712,
+            "end": 1760
+          }
+        }
+      ]
+    }
+  }
+}

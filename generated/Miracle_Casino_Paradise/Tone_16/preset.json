@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Miracle Casino Paradise",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 2576,
+      "brrLength": 1449,
+      "hasLoop": true,
+      "loopStartPcm": 576,
+      "adsr1": 143,
+      "adsr2": 241,
+      "gain": 184,
+      "pitchRegister": 1705
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "11d5938b1a484d9dd5adb2b8a8f73019bce41edb93c509b1b8c6389a232bc6d7"
+          },
+          "loop": {
+            "start": 576,
+            "end": 2576
+          }
+        }
+      ]
+    }
+  }
+}

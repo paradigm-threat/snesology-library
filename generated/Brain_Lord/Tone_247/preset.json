@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Brain Lord",
+    "snes": {
+      "srcn": 247,
+      "character": "tone",
+      "pcmLength": 400,
+      "brrLength": 225,
+      "hasLoop": true,
+      "loopStartPcm": 7280
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4222b63ab583f1a7dcb8feae3ab013afcc7e914e156b4505733d264fd49f2ef7"
+          },
+          "loop": {
+            "start": 7280,
+            "end": 400
+          }
+        }
+      ]
+    }
+  }
+}

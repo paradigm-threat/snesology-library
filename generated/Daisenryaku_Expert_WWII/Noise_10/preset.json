@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Daisenryaku Expert WWII",
+    "snes": {
+      "srcn": 10,
+      "character": "noise",
+      "pcmLength": 7168,
+      "brrLength": 4032,
+      "hasLoop": true,
+      "loopStartPcm": 4528,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 186,
+      "pitchRegister": 2057
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a72dc38126971b26048c58baa5f604759159de0753fb3a69e019e47f8b71e749"
+          },
+          "loop": {
+            "start": 4528,
+            "end": 7168
+          }
+        }
+      ]
+    }
+  }
+}

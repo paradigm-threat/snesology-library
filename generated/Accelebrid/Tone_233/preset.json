@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Accelebrid",
+    "snes": {
+      "srcn": 233,
+      "character": "tone",
+      "pcmLength": 1600,
+      "brrLength": 900,
+      "hasLoop": true,
+      "loopStartPcm": 2512
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "38ca6712fcd25de63f355060e84461b262781d09ec41b608199ae58dcd73c429"
+          },
+          "loop": {
+            "start": 2512,
+            "end": 1600
+          }
+        }
+      ]
+    }
+  }
+}

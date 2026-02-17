@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Chrono Trigger",
+    "snes": {
+      "srcn": 41,
+      "character": "melodic",
+      "pcmLength": 6448,
+      "brrLength": 3627,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a45dd1e68366f70a51589607e454474b4536f035125d4d240695b464694428ed"
+          },
+          "loop": {
+            "start": 0,
+            "end": 6448
+          }
+        }
+      ]
+    }
+  }
+}

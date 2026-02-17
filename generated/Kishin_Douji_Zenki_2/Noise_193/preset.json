@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kishin Douji Zenki 2",
+    "snes": {
+      "srcn": 193,
+      "character": "noise",
+      "pcmLength": 4032,
+      "brrLength": 2268,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c06cea9d6fb306176ac33c8c8d58feb3b1ac45010257ed56bc9a0ca7bc8b7bb0"
+          }
+        }
+      ]
+    }
+  }
+}

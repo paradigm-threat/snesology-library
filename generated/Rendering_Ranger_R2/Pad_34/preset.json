@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Rendering Ranger R2",
+    "snes": {
+      "srcn": 34,
+      "character": "melodic",
+      "pcmLength": 12832,
+      "brrLength": 7218,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2a3da5a63807f4df0119461543c1fdfb62c471590578ab95d6894e57d98d0209"
+          },
+          "loop": {
+            "start": 0,
+            "end": 12832
+          }
+        }
+      ]
+    }
+  }
+}

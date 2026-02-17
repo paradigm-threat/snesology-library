@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Okamoto Ayako to Match Play Golf",
+    "snes": {
+      "srcn": 15,
+      "character": "tone",
+      "pcmLength": 320,
+      "brrLength": 180,
+      "hasLoop": true,
+      "loopStartPcm": 176
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3b68c37c2686780114cef72c926743b085a60c4c40fc80ea7e40b5d59a73f8b1"
+          },
+          "loop": {
+            "start": 176,
+            "end": 320
+          }
+        }
+      ]
+    }
+  }
+}

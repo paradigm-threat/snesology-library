@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Strings",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Operation Logic Bomb",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 8640,
+      "brrLength": 4860,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2616
+    },
+    "communityName": "strings.brr",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bc88241fd26eb76572c9215a1d7e48b3298c742e1ec7df61965657bf21bda349"
+          },
+          "loop": {
+            "start": 16,
+            "end": 8640
+          }
+        }
+      ]
+    }
+  }
+}

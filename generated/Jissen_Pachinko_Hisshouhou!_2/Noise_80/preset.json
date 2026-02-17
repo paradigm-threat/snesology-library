@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jissen Pachinko Hisshouhou! 2",
+    "snes": {
+      "srcn": 80,
+      "character": "noise",
+      "pcmLength": 2320,
+      "brrLength": 1305,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c8ebcf4711de57604701af90debf921551ba3e25f1f8b6d7ec2b2bfd3764c884"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Chrono Trigger Pre-Release",
+    "snes": {
+      "srcn": 225,
+      "character": "melodic",
+      "pcmLength": 12240,
+      "brrLength": 6885,
+      "hasLoop": true,
+      "loopStartPcm": 46976
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8d7c176278a34c5c2293c55d5437da98c3671238360f6104c60a558705b836f2"
+          },
+          "loop": {
+            "start": 46976,
+            "end": 12240
+          }
+        }
+      ]
+    }
+  }
+}

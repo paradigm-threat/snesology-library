@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gods",
+    "snes": {
+      "srcn": 12,
+      "character": "tone",
+      "pcmLength": 2928,
+      "brrLength": 1647,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 140,
+      "adsr2": 243,
+      "gain": 34,
+      "pitchRegister": 3431
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ec7f4c37d5b46b41f0a50c77a54391a2748a3875005f65b572e4290247ef56c6"
+          },
+          "loop": {
+            "start": 48,
+            "end": 2928
+          }
+        }
+      ]
+    }
+  }
+}

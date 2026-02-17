@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Momotarou Dentetsu Happy",
+    "snes": {
+      "srcn": 16,
+      "character": "noise",
+      "pcmLength": 4080,
+      "brrLength": 2295,
+      "hasLoop": true,
+      "loopStartPcm": 432,
+      "adsr1": 191,
+      "adsr2": 83,
+      "gain": 0,
+      "pitchRegister": 2374
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3ec961c8c6df4fa247c3e4b3097472b942a4e1e384e3cbf93a133c6180959350"
+          },
+          "loop": {
+            "start": 432,
+            "end": 4080
+          }
+        }
+      ]
+    }
+  }
+}

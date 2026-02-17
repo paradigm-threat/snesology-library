@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Masoukishin",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 5136,
+      "brrLength": 2889,
+      "hasLoop": true,
+      "loopStartPcm": 1504,
+      "adsr1": 255,
+      "adsr2": 228,
+      "gain": 0,
+      "pitchRegister": 1053
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0f096eb7d93a0f3f071ad03f84a66b14ed1f371c81cadab4c3d4b066dc70cc31"
+          },
+          "loop": {
+            "start": 1504,
+            "end": 5136
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wordtris",
+    "snes": {
+      "srcn": 14,
+      "character": "tone",
+      "pcmLength": 3680,
+      "brrLength": 2070,
+      "hasLoop": true,
+      "loopStartPcm": 5200
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3a7e19c538c57e78af992d1e73b42f423645cb46bf4c4daf04c4db7687808fac"
+          },
+          "loop": {
+            "start": 5200,
+            "end": 3680
+          }
+        }
+      ]
+    }
+  }
+}

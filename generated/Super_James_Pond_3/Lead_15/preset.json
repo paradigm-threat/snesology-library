@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super James Pond 3",
+    "snes": {
+      "srcn": 15,
+      "character": "melodic",
+      "pcmLength": 7024,
+      "brrLength": 3951,
+      "hasLoop": true,
+      "loopStartPcm": 5696,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 3211
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5bfb2bc447bb7936d6d55b6fef942428ad3be58b20a05d35bbee4fdb4c4295e3"
+          },
+          "loop": {
+            "start": 5696,
+            "end": 7024
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kidou Keisatsu Patlabor",
+    "snes": {
+      "srcn": 5,
+      "character": "one-shot",
+      "pcmLength": 8640,
+      "brrLength": 4860,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 240,
+      "gain": 0,
+      "pitchRegister": 1367
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1931b6e7ad239a8ffeaced98fa80cb1fb949d7d9ab88b205cc6355613b6938e5"
+          }
+        }
+      ]
+    }
+  }
+}

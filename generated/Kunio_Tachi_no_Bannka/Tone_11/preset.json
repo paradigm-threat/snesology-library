@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kunio Tachi no Bannka",
+    "snes": {
+      "srcn": 11,
+      "character": "tone",
+      "pcmLength": 816,
+      "brrLength": 459,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c4b36fa39f3742eb4c24e1b9e8827ffa3e76165832f5a07b6071346e778c79ff"
+          },
+          "loop": {
+            "start": 48,
+            "end": 816
+          }
+        }
+      ]
+    }
+  }
+}

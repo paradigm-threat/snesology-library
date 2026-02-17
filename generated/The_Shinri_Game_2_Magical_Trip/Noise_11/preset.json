@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Shinri Game 2: Magical Trip",
+    "snes": {
+      "srcn": 11,
+      "character": "noise",
+      "pcmLength": 1616,
+      "brrLength": 909,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "44af2fb3b08c55c5c8d37ae68b4d118f591d3a551a92a783016b71bfec3ac7a2"
+          }
+        }
+      ]
+    }
+  }
+}

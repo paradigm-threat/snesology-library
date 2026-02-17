@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Numbers Paradise",
+    "snes": {
+      "srcn": 137,
+      "character": "tone",
+      "pcmLength": 1344,
+      "brrLength": 756,
+      "hasLoop": true,
+      "loopStartPcm": 18784
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ea77017b62c1714e00a83c70b8e22e6ed1f9f7d36b870c12f320dde7b42d8a9a"
+          },
+          "loop": {
+            "start": 18784,
+            "end": 1344
+          }
+        }
+      ]
+    }
+  }
+}

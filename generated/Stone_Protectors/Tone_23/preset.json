@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Stone Protectors",
+    "snes": {
+      "srcn": 23,
+      "character": "tone",
+      "pcmLength": 1040,
+      "brrLength": 585,
+      "hasLoop": true,
+      "loopStartPcm": 976,
+      "adsr1": 158,
+      "adsr2": 128,
+      "gain": 0,
+      "pitchRegister": 1609
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3193ae921bf751aadfd44f8f285ed8ef062ed2ed969f64847039c4201bc08c5b"
+          },
+          "loop": {
+            "start": 976,
+            "end": 1040
+          }
+        }
+      ]
+    }
+  }
+}

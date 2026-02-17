@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Bass Synth",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "International Superstar Soccer",
+    "snes": {
+      "srcn": 31,
+      "character": "tone",
+      "pcmLength": 3536,
+      "brrLength": 1989,
+      "hasLoop": true,
+      "loopStartPcm": 1888,
+      "adsr1": 143,
+      "adsr2": 96,
+      "gain": 0,
+      "pitchRegister": 1701
+    },
+    "communityName": "bass_synth",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8351a67a4445548c904cd3b6769dc4f2f7b956a8a7c05258fe1cd37229ac5cfa"
+          },
+          "loop": {
+            "start": 1888,
+            "end": 3536
+          }
+        }
+      ]
+    }
+  }
+}

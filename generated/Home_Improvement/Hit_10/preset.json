@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Home Improvement",
+    "snes": {
+      "srcn": 10,
+      "character": "one-shot",
+      "pcmLength": 2448,
+      "brrLength": 1377,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 226,
+      "gain": 176,
+      "pitchRegister": 1071
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5bd8562b77848367031a868090a5e72ceb92bc1ea9e5a2a43f010676faebdcda"
+          }
+        }
+      ]
+    }
+  }
+}

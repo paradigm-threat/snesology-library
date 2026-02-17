@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Dany",
+    "snes": {
+      "srcn": 21,
+      "character": "tone",
+      "pcmLength": 2480,
+      "brrLength": 1395,
+      "hasLoop": true,
+      "loopStartPcm": 784
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a2cd3bb36e36e439557214f0abad548ceeae16f22255ca14a749d561cfcdd10e"
+          },
+          "loop": {
+            "start": 784,
+            "end": 2480
+          }
+        }
+      ]
+    }
+  }
+}

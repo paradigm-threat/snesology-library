@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kidou Butoden G-Gundam",
+    "snes": {
+      "srcn": 75,
+      "character": "one-shot",
+      "pcmLength": 6912,
+      "brrLength": 3888,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "22edab8a30f691e6fd324467298c89bea7a8f86c2fbc8378c59a3caf3f10f14b"
+          }
+        }
+      ]
+    }
+  }
+}

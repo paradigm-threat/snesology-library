@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Clave",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Adventure Island 2",
+    "snes": {
+      "srcn": 7,
+      "character": "one-shot",
+      "pcmLength": 880,
+      "brrLength": 495,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 239,
+      "gain": 0,
+      "pitchRegister": 1024
+    },
+    "communityName": "perc_clave",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a0291a5de1c69e4a56deaa609a0f4bc1dbaf369f1c0022f8885a4edc5d847c0f"
+          }
+        }
+      ]
+    }
+  }
+}

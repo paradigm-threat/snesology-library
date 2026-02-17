@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Mask",
+    "snes": {
+      "srcn": 4,
+      "character": "noise",
+      "pcmLength": 1072,
+      "brrLength": 603,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 173,
+      "gain": 127,
+      "pitchRegister": 9753
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ddd76ae6877baa7c73080a42d8beb94f376ce427d94bb9ce1d264220dcaa61a0"
+          }
+        }
+      ]
+    }
+  }
+}

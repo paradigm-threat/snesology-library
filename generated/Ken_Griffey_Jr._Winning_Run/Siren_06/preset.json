@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Siren",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ken Griffey Jr. Winning Run",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 8480,
+      "brrLength": 4770,
+      "hasLoop": true,
+      "loopStartPcm": 8064,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 255,
+      "pitchRegister": 4032
+    },
+    "communityName": "siren",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "953cf3f5e54b8681635ab1f01163d6b54bc9420b3b3ff03a6b8ed98bbdcc917a"
+          },
+          "loop": {
+            "start": 8064,
+            "end": 8480
+          }
+        }
+      ]
+    }
+  }
+}

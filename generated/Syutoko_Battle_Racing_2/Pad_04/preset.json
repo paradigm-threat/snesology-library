@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Syutoko Battle Racing 2",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 10576,
+      "brrLength": 5949,
+      "hasLoop": true,
+      "loopStartPcm": 1200,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 158,
+      "pitchRegister": 4096
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f0f1dd89b4598bbeb696fe19a83dc31ee1545efd6f29837bf66e7935fda4bd39"
+          },
+          "loop": {
+            "start": 1200,
+            "end": 10576
+          }
+        }
+      ]
+    }
+  }
+}

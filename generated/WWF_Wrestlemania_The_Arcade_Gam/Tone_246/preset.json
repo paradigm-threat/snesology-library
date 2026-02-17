@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "WWF Wrestlemania: The Arcade Gam",
+    "snes": {
+      "srcn": 246,
+      "character": "tone",
+      "pcmLength": 2048,
+      "brrLength": 1152,
+      "hasLoop": true,
+      "loopStartPcm": 912
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "396c3627d8936d27e463dd23eeb3cecee714def5be749f9a8f39a35276bad8b2"
+          },
+          "loop": {
+            "start": 912,
+            "end": 2048
+          }
+        }
+      ]
+    }
+  }
+}

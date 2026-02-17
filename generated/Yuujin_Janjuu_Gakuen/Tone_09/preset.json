@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Yuujin Janjuu Gakuen",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 864,
+      "brrLength": 486,
+      "hasLoop": true,
+      "loopStartPcm": 560,
+      "adsr1": 159,
+      "adsr2": 240,
+      "gain": 184,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b401d4c36a551fd439dac2dd197eb47921c3b98ee9a658e3cf6d766fea445f20"
+          },
+          "loop": {
+            "start": 560,
+            "end": 864
+          }
+        }
+      ]
+    }
+  }
+}

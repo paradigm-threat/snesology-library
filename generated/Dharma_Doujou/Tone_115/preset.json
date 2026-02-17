@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dharma Doujou",
+    "snes": {
+      "srcn": 115,
+      "character": "tone",
+      "pcmLength": 192,
+      "brrLength": 108,
+      "hasLoop": true,
+      "loopStartPcm": 72752
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a1fca9a9d61241d5561b493aaa7a38736fda30173468844d1b644974d7cd1acc"
+          },
+          "loop": {
+            "start": 72752,
+            "end": 192
+          }
+        }
+      ]
+    }
+  }
+}

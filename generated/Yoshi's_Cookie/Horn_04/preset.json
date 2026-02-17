@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Horn",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Yoshi's Cookie",
+    "snes": {
+      "srcn": 4,
+      "character": "tone",
+      "pcmLength": 1920,
+      "brrLength": 1080,
+      "hasLoop": true,
+      "loopStartPcm": 1872
+    },
+    "communityName": "horn",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4cea5df0966382dcb07007faf8a8d4f756f5752f7e523a63fb8dcee4b849a780"
+          },
+          "loop": {
+            "start": 1872,
+            "end": 1920
+          }
+        }
+      ]
+    }
+  }
+}

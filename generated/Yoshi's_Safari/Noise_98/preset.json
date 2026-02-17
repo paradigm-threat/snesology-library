@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Yoshi's Safari",
+    "snes": {
+      "srcn": 98,
+      "character": "noise",
+      "pcmLength": 5648,
+      "brrLength": 3177,
+      "hasLoop": true,
+      "loopStartPcm": 6864
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f8d3e7807107afdadab3ea32a43c053288a1241f6c9e737b2c5a1c7b558f433f"
+          },
+          "loop": {
+            "start": 6864,
+            "end": 5648
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Seiken Densetsu 3",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 22448,
+      "brrLength": 12627,
+      "hasLoop": true,
+      "loopStartPcm": 6000
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9a3d20b3cea7c8f897b612aeca8091cd9cd9837f7710ac5bd58c678b6804dc4a"
+          },
+          "loop": {
+            "start": 6000,
+            "end": 22448
+          }
+        }
+      ]
+    }
+  }
+}

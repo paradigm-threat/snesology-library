@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shiki Eiyuu Den",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 7472,
+      "brrLength": 4203,
+      "hasLoop": true,
+      "loopStartPcm": 3152
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a7b8d632faaef556fbfe275092d7aa3b5c1487850d3f1987056d5421ebf52d84"
+          },
+          "loop": {
+            "start": 3152,
+            "end": 7472
+          }
+        }
+      ]
+    }
+  }
+}

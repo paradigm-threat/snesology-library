@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Street Racer",
+    "snes": {
+      "srcn": 0,
+      "character": "tone",
+      "pcmLength": 992,
+      "brrLength": 558,
+      "hasLoop": true,
+      "loopStartPcm": 864,
+      "adsr1": 255,
+      "adsr2": 231,
+      "gain": 185,
+      "pitchRegister": 4298
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6b2b09a8c91b97dccee71378775b3161a5c389e050a050461d2c389adaf356ae"
+          },
+          "loop": {
+            "start": 864,
+            "end": 992
+          }
+        }
+      ]
+    }
+  }
+}

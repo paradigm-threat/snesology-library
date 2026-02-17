@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Darius Force",
+    "snes": {
+      "srcn": 13,
+      "character": "tone",
+      "pcmLength": 1504,
+      "brrLength": 846,
+      "hasLoop": true,
+      "loopStartPcm": 752
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2db0232abe4d10a0ef0cc70a8ee9209ff4266340b2351706cf949cdc35aad0ca"
+          },
+          "loop": {
+            "start": 752,
+            "end": 1504
+          }
+        }
+      ]
+    }
+  }
+}

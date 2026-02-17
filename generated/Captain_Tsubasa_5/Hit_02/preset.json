@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Captain Tsubasa 5",
+    "snes": {
+      "srcn": 2,
+      "character": "one-shot",
+      "pcmLength": 3584,
+      "brrLength": 2016,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 248,
+      "gain": 184,
+      "pitchRegister": 2994
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6d48159c666113647cf7e72974f8efad176139c0959163f82c7683e089a16d91"
+          }
+        }
+      ]
+    }
+  }
+}

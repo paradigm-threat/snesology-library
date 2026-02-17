@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fun 'N Games",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 6528,
+      "brrLength": 3672,
+      "hasLoop": true,
+      "loopStartPcm": 6272,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 3831
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "72338d6f901a8e7637c5a37ee222896c1d3722f5fd9cac2586866a258f8b2176"
+          },
+          "loop": {
+            "start": 6272,
+            "end": 6528
+          }
+        }
+      ]
+    }
+  }
+}

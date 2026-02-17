@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dai Koukai Jidai 2",
+    "snes": {
+      "srcn": 237,
+      "character": "tone",
+      "pcmLength": 512,
+      "brrLength": 288,
+      "hasLoop": true,
+      "loopStartPcm": 62912
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e82e8eb52895f3696616d0a7dec379fdd6070d7b290f6f6957b034122897ba48"
+          },
+          "loop": {
+            "start": 62912,
+            "end": 512
+          }
+        }
+      ]
+    }
+  }
+}

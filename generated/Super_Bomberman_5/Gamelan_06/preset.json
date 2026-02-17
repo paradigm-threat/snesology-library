@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Gamelan",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Bomberman 5",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 4288,
+      "brrLength": 2412,
+      "hasLoop": true,
+      "loopStartPcm": 1488,
+      "adsr1": 223,
+      "adsr2": 239,
+      "gain": 159,
+      "pitchRegister": 1647
+    },
+    "communityName": "gamelan",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0c739f0fa56db28b36b3d3b8487133706e32c4d8cf6199f1d7928ed1819623b7"
+          },
+          "loop": {
+            "start": 1488,
+            "end": 4288
+          }
+        }
+      ]
+    }
+  }
+}

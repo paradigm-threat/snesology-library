@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Aladdin",
+    "snes": {
+      "srcn": 36,
+      "character": "tone",
+      "pcmLength": 2320,
+      "brrLength": 1305,
+      "hasLoop": true,
+      "loopStartPcm": 2288
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4793c984f7c661e57e2407ec2eaee5946a5b3227458796b02f05c1b7ae7a586e"
+          },
+          "loop": {
+            "start": 2288,
+            "end": 2320
+          }
+        }
+      ]
+    }
+  }
+}

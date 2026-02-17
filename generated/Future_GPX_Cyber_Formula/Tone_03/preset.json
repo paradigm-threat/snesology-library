@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Future GPX: Cyber Formula",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 2864,
+      "brrLength": 1611,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "68c23f5eaae3c8adf286460b68ac1f3c1d43739f293b5f93657a4bd047068236"
+          },
+          "loop": {
+            "start": 48,
+            "end": 2864
+          }
+        }
+      ]
+    }
+  }
+}

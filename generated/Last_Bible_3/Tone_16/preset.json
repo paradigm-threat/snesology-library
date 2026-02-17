@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Last Bible 3",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 1360,
+      "brrLength": 765,
+      "hasLoop": true,
+      "loopStartPcm": 1152,
+      "adsr1": 255,
+      "adsr2": 184,
+      "gain": 159,
+      "pitchRegister": 9742
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "016191f42750f21c36b48907409a47f12bbe95b48e661cd2649fb9d0457a52eb"
+          },
+          "loop": {
+            "start": 1152,
+            "end": 1360
+          }
+        }
+      ]
+    }
+  }
+}

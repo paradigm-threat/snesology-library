@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Bass Slap",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Megaman X2",
+    "snes": {
+      "srcn": 42,
+      "character": "tone",
+      "pcmLength": 3792,
+      "brrLength": 2133,
+      "hasLoop": true,
+      "loopStartPcm": 3216,
+      "adsr1": 255,
+      "adsr2": 239,
+      "gain": 179,
+      "pitchRegister": 5392
+    },
+    "communityName": "bass_slap",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ca066f9e14a0f720ac6ebc97752056ce2f9b1f7239ab9e95ba49c5aa433c6d3f"
+          },
+          "loop": {
+            "start": 3216,
+            "end": 3792
+          }
+        }
+      ]
+    }
+  }
+}

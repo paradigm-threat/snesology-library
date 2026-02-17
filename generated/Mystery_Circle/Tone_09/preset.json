@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mystery Circle",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 560,
+      "brrLength": 315,
+      "hasLoop": true,
+      "loopStartPcm": 528,
+      "adsr1": 255,
+      "adsr2": 243,
+      "gain": 184,
+      "pitchRegister": 566
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c97c981a5520a9e6fd310a82b412d2012957e70f4d9eefa04c885ffe02f83557"
+          },
+          "loop": {
+            "start": 528,
+            "end": 560
+          }
+        }
+      ]
+    }
+  }
+}

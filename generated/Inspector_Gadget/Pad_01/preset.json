@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Inspector Gadget",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 9024,
+      "brrLength": 5076,
+      "hasLoop": true,
+      "loopStartPcm": 6576,
+      "adsr1": 255,
+      "adsr2": 231,
+      "gain": 184,
+      "pitchRegister": 3435
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f49ddf6b482bd803eebcf407cc0b2660c9bb25f6db2d58a51f18a76365dcd574"
+          },
+          "loop": {
+            "start": 6576,
+            "end": 9024
+          }
+        }
+      ]
+    }
+  }
+}

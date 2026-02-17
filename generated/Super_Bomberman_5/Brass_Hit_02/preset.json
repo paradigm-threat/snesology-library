@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Brass Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Bomberman 5",
+    "snes": {
+      "srcn": 2,
+      "character": "one-shot",
+      "pcmLength": 1552,
+      "brrLength": 873,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 159,
+      "pitchRegister": 2105
+    },
+    "communityName": "brass_hit",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d8024dd968261095b0b6a8525d8b029782f0939b3fdcb5407594595acb7079dc"
+          }
+        }
+      ]
+    }
+  }
+}

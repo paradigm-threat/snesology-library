@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Bass Elec2",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sunset Riders",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 1632,
+      "brrLength": 918,
+      "hasLoop": true,
+      "loopStartPcm": 1392,
+      "adsr1": 255,
+      "adsr2": 243,
+      "gain": 184,
+      "pitchRegister": 1485
+    },
+    "communityName": "bass_elec2",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8f1c6c23690410da7c3f72ebfa987d1421bcf0ba58f323d2f2a1f8f2e3be320e"
+          },
+          "loop": {
+            "start": 1392,
+            "end": 1632
+          }
+        }
+      ]
+    }
+  }
+}

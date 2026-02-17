@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jaleco Rally Big Run: The Suprem",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 720,
+      "brrLength": 405,
+      "hasLoop": true,
+      "loopStartPcm": 576,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 4286
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "37d074e58f597d1ea1793a6c33f77f433c4b98590916956d22a6b2693986e4e2"
+          },
+          "loop": {
+            "start": 576,
+            "end": 720
+          }
+        }
+      ]
+    }
+  }
+}

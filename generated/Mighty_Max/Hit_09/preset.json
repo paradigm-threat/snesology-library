@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mighty Max",
+    "snes": {
+      "srcn": 9,
+      "character": "one-shot",
+      "pcmLength": 4288,
+      "brrLength": 2412,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 0,
+      "gain": 0,
+      "pitchRegister": 1416
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d194f13019638f690c05f8b96fa12068d8769320fbd3dcae56bf06bbf30e24f5"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Brass Synth",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Donkey Kong Country 2",
+    "snes": {
+      "srcn": 30,
+      "character": "melodic",
+      "pcmLength": 4400,
+      "brrLength": 2475,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 255,
+      "pitchRegister": 0
+    },
+    "communityName": "brass_synth",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "03dbfaab7789b5054ac83347d4ecbc817311542189ce46e8ca6a623dd3a9b22c"
+          },
+          "loop": {
+            "start": 0,
+            "end": 4400
+          }
+        }
+      ]
+    }
+  }
+}

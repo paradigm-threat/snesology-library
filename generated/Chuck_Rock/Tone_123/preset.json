@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Chuck Rock",
+    "snes": {
+      "srcn": 123,
+      "character": "tone",
+      "pcmLength": 432,
+      "brrLength": 243,
+      "hasLoop": true,
+      "loopStartPcm": 90544
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c06344d99a51ac2dee6c3e2836a8a33e36b6c182ef5e3572ebe51bd6434fd00d"
+          },
+          "loop": {
+            "start": 90544,
+            "end": 432
+          }
+        }
+      ]
+    }
+  }
+}

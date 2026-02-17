@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Special Tee Shot",
+    "snes": {
+      "srcn": 50,
+      "character": "tone",
+      "pcmLength": 448,
+      "brrLength": 252,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0f6da6a23c7d0555b77c872f7ddf1e814a47311d67c6b73b85aebaabd9cd0bb2"
+          },
+          "loop": {
+            "start": 0,
+            "end": 448
+          }
+        }
+      ]
+    }
+  }
+}

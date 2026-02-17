@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Organ Fifths",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earthworm Jim",
+    "snes": {
+      "srcn": 22,
+      "character": "tone",
+      "pcmLength": 400,
+      "brrLength": 225,
+      "hasLoop": true,
+      "loopStartPcm": 224,
+      "adsr1": 247,
+      "adsr2": 235,
+      "gain": 159,
+      "pitchRegister": 413
+    },
+    "communityName": "organ_fifths",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "01f305630b6f37a1438e072a3f87d870c3dc64c7a5c4616797972ba94062c9aa"
+          },
+          "loop": {
+            "start": 224,
+            "end": 400
+          }
+        }
+      ]
+    }
+  }
+}

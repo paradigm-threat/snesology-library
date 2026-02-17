@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Piccolo",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mr. Nutz",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 448,
+      "brrLength": 252,
+      "hasLoop": true,
+      "loopStartPcm": 416,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 1071
+    },
+    "communityName": "piccolo",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "28e4f5610bfdd813019afacf10f072eca31d4db8c58015b58ac0fdbc08260740"
+          },
+          "loop": {
+            "start": 416,
+            "end": 448
+          }
+        }
+      ]
+    }
+  }
+}

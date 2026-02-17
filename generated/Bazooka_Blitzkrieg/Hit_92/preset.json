@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bazooka Blitzkrieg",
+    "snes": {
+      "srcn": 92,
+      "character": "one-shot",
+      "pcmLength": 880,
+      "brrLength": 495,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f2fa3cb45a47c05293d1c78b8d5ece5ffc2a84a2bc7b7a62882c932286ea1c03"
+          }
+        }
+      ]
+    }
+  }
+}

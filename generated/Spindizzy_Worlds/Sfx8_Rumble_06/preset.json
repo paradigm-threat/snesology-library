@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Sfx8 Rumble",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spindizzy Worlds",
+    "snes": {
+      "srcn": 6,
+      "character": "tone",
+      "pcmLength": 2208,
+      "brrLength": 1242,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    },
+    "communityName": "sfx8_rumble",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c18445b560b1ddab9e9438ed226256b2320b622de0ed3c6d1226ef1b1695ad5b"
+          },
+          "loop": {
+            "start": 48,
+            "end": 2208
+          }
+        }
+      ]
+    }
+  }
+}

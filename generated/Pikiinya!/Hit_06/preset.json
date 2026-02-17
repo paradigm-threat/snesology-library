@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pikiinya!",
+    "snes": {
+      "srcn": 6,
+      "character": "one-shot",
+      "pcmLength": 8848,
+      "brrLength": 4977,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 96,
+      "gain": 127,
+      "pitchRegister": 3276
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cabc0e7412833ecda3dc8b98a0fe3c59e15894ae768d4604932f16d478a5d1e5"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Knight 4",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 7024,
+      "brrLength": 3951,
+      "hasLoop": true,
+      "loopStartPcm": 6960,
+      "adsr1": 255,
+      "adsr2": 237,
+      "gain": 184,
+      "pitchRegister": 8584
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d9481d31d5146e8329323fce7689b9c995d15cd055a76b6db647c2c40c2c39a4"
+          },
+          "loop": {
+            "start": 6960,
+            "end": 7024
+          }
+        }
+      ]
+    }
+  }
+}

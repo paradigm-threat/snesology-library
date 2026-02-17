@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tinhead",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 8992,
+      "brrLength": 5058,
+      "hasLoop": true,
+      "loopStartPcm": 3056,
+      "adsr1": 191,
+      "adsr2": 143,
+      "gain": 182,
+      "pitchRegister": 2134
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "648d6b41da52523fd254107bf619d99c62bc700b9fbd8f3459e79998f84dd9c3"
+          },
+          "loop": {
+            "start": 3056,
+            "end": 8992
+          }
+        }
+      ]
+    }
+  }
+}

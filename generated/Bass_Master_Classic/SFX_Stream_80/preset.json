@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Stream",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bass Master Classic",
+    "snes": {
+      "srcn": 80,
+      "character": "noise",
+      "pcmLength": 9152,
+      "brrLength": 5148,
+      "hasLoop": true,
+      "loopStartPcm": 320,
+      "adsr1": 0,
+      "adsr2": 202,
+      "gain": 127,
+      "pitchRegister": 322
+    },
+    "communityName": "sfx_stream",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a44e2a22742703497a62c7b5deeef5215630836b89e9491b4a55cc619f5f8b4a"
+          },
+          "loop": {
+            "start": 320,
+            "end": 9152
+          }
+        }
+      ]
+    }
+  }
+}

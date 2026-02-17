@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "NBA Give 'n Go",
+    "snes": {
+      "srcn": 57,
+      "character": "melodic",
+      "pcmLength": 4544,
+      "brrLength": 2556,
+      "hasLoop": true,
+      "loopStartPcm": 1584
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7cb30d4ba1b33713150baffa9bedf2e9286a07b8d5016e3ad708fa13c1a22772"
+          },
+          "loop": {
+            "start": 1584,
+            "end": 4544
+          }
+        }
+      ]
+    }
+  }
+}

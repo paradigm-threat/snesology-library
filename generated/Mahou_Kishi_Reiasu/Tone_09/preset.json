@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mahou Kishi Reiasu",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 1024,
+      "brrLength": 576,
+      "hasLoop": true,
+      "loopStartPcm": 912,
+      "adsr1": 236,
+      "adsr2": 74,
+      "gain": 0,
+      "pitchRegister": 4578
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d10159cfafcc01ac06c62e6d85d62f5fdff992ed2b961c808fbc0b6149eaa97e"
+          },
+          "loop": {
+            "start": 912,
+            "end": 1024
+          }
+        }
+      ]
+    }
+  }
+}

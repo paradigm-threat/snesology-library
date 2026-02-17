@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Star Ocean",
+    "snes": {
+      "srcn": 26,
+      "character": "melodic",
+      "pcmLength": 7280,
+      "brrLength": 4095,
+      "hasLoop": true,
+      "loopStartPcm": 4752
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4e481321b1dc8077362e09d5bb9e9bb691ba6959f2e2ff2dd0a4e00a1e4f802d"
+          },
+          "loop": {
+            "start": 4752,
+            "end": 7280
+          }
+        }
+      ]
+    }
+  }
+}

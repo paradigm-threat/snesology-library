@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zenkoku Juudan Ultra Shinri Game",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 7024,
+      "brrLength": 3951,
+      "hasLoop": true,
+      "loopStartPcm": 5776,
+      "adsr1": 255,
+      "adsr2": 240,
+      "gain": 185,
+      "pitchRegister": 9499
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "86d7695afe3027881c4fba4cbd5b68e902625c22f1c11c640bbaae8c18629038"
+          },
+          "loop": {
+            "start": 5776,
+            "end": 7024
+          }
+        }
+      ]
+    }
+  }
+}

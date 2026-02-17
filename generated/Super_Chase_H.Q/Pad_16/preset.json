@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Chase H.Q.",
+    "snes": {
+      "srcn": 16,
+      "character": "melodic",
+      "pcmLength": 4864,
+      "brrLength": 2736,
+      "hasLoop": true,
+      "loopStartPcm": 32,
+      "adsr1": 255,
+      "adsr2": 238,
+      "gain": 184,
+      "pitchRegister": 4293
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a0a0ccd510ba314ce9059fb32868792fa3c1c7c3d0235d05f53f8585b675f523"
+          },
+          "loop": {
+            "start": 32,
+            "end": 4864
+          }
+        }
+      ]
+    }
+  }
+}

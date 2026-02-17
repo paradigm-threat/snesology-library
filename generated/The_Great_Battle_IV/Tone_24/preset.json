@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Great Battle IV",
+    "snes": {
+      "srcn": 24,
+      "character": "tone",
+      "pcmLength": 1648,
+      "brrLength": 927,
+      "hasLoop": true,
+      "loopStartPcm": 1568,
+      "adsr1": 255,
+      "adsr2": 244,
+      "gain": 184,
+      "pitchRegister": 1502
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3d2b1ef2c91f3996effde0dde4d4b61968b893ff7bd35295f552ecef78eff859"
+          },
+          "loop": {
+            "start": 1568,
+            "end": 1648
+          }
+        }
+      ]
+    }
+  }
+}

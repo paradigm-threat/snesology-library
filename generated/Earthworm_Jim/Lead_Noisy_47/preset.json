@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead Noisy",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earthworm Jim",
+    "snes": {
+      "srcn": 47,
+      "character": "tone",
+      "pcmLength": 1152,
+      "brrLength": 648,
+      "hasLoop": true,
+      "loopStartPcm": 96
+    },
+    "communityName": "lead_noisy",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ca39982b8553cc709c5dbdd59211e7827b58aa572a181d4d399b3537899eab61"
+          },
+          "loop": {
+            "start": 96,
+            "end": 1152
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Marimba",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Animaniacs",
+    "snes": {
+      "srcn": 13,
+      "character": "tone",
+      "pcmLength": 2528,
+      "brrLength": 1422,
+      "hasLoop": true,
+      "loopStartPcm": 2416,
+      "adsr1": 255,
+      "adsr2": 213,
+      "gain": 0,
+      "pitchRegister": 5005
+    },
+    "communityName": "marimba",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "db32269cd491fdfbf4f9e73d325ac6a8871068ccaa694a03b33cf46ccbe2dfe5"
+          },
+          "loop": {
+            "start": 2416,
+            "end": 2528
+          }
+        }
+      ]
+    }
+  }
+}

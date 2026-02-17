@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Space Ace",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 22928,
+      "brrLength": 12897,
+      "hasLoop": true,
+      "loopStartPcm": 4624,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 180,
+      "pitchRegister": 5161
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1640a1ad79dc5e81abd73e897eb061667afff0bb8a7e809170ccc9cb85d9b7e7"
+          },
+          "loop": {
+            "start": 4624,
+            "end": 22928
+          }
+        }
+      ]
+    }
+  }
+}

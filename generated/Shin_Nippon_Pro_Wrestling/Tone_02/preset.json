@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shin Nippon Pro Wrestling",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 1600,
+      "brrLength": 900,
+      "hasLoop": true,
+      "loopStartPcm": 960,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 127,
+      "pitchRegister": 1001
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a1174e48e44ebb0e99073e84dbc51e92267cbae03748014f2a741e417a063e39"
+          },
+          "loop": {
+            "start": 960,
+            "end": 1600
+          }
+        }
+      ]
+    }
+  }
+}

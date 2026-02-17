@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Teenage Mutant Ninja Turtles: To",
+    "snes": {
+      "srcn": 44,
+      "character": "one-shot",
+      "pcmLength": 2896,
+      "brrLength": 1629,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 132,
+      "gain": 0,
+      "pitchRegister": 1631
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d33b0df86fc64f7bdb65984b7b475dcff1fec494f2b328f68f971f59b5d34d88"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Copa",
+    "snes": {
+      "srcn": 5,
+      "character": "noise",
+      "pcmLength": 21856,
+      "brrLength": 12294,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 0,
+      "pitchRegister": 966
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5fc7874e685c9fc96ad7cf3fd1f83059578ba0694c97a9192b8819a15571c14b"
+          },
+          "loop": {
+            "start": 0,
+            "end": 21856
+          }
+        }
+      ]
+    }
+  }
+}

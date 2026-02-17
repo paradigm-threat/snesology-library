@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Block Kuzushi",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 21824,
+      "brrLength": 12276,
+      "hasLoop": true,
+      "loopStartPcm": 12160,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2435
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bc0b72ca921bca89b0ee421c9aaa0fe36f19fd9585ad126efd2bb369e698f74e"
+          },
+          "loop": {
+            "start": 12160,
+            "end": 21824
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Melfand Stories",
+    "snes": {
+      "srcn": 24,
+      "character": "tone",
+      "pcmLength": 2512,
+      "brrLength": 1413,
+      "hasLoop": true,
+      "loopStartPcm": 1696
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7cbc8f237a5606e06f7903f1e1a68484eeb48a03d457e6f0958e4dd46ac4721c"
+          },
+          "loop": {
+            "start": 1696,
+            "end": 2512
+          }
+        }
+      ]
+    }
+  }
+}

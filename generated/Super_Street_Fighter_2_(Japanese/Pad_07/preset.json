@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Street Fighter 2 (Japanese",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 9968,
+      "brrLength": 5607,
+      "hasLoop": true,
+      "loopStartPcm": 4480
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "005db58a8a20b16e279e7647dcbd0f72b1c62c5e69dd4644a29d689d168d739a"
+          },
+          "loop": {
+            "start": 4480,
+            "end": 9968
+          }
+        }
+      ]
+    }
+  }
+}

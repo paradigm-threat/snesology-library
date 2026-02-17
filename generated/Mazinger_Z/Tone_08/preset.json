@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mazinger Z",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 3248,
+      "brrLength": 1827,
+      "hasLoop": true,
+      "loopStartPcm": 816,
+      "adsr1": 143,
+      "adsr2": 240,
+      "gain": 0,
+      "pitchRegister": 2048
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "20f72c1fa79d43e81a61d54a36c705c16b55f64d326919899eedd1ece6246d8e"
+          },
+          "loop": {
+            "start": 816,
+            "end": 3248
+          }
+        }
+      ]
+    }
+  }
+}

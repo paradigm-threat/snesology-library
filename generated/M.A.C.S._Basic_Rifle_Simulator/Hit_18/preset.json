@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "M.A.C.S. Basic Rifle Simulator",
+    "snes": {
+      "srcn": 18,
+      "character": "one-shot",
+      "pcmLength": 896,
+      "brrLength": 504,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f57f278bb7ad50851ce9e76a2ce4d4241fbb964af15b300fb60a4ff3790b5041"
+          }
+        }
+      ]
+    }
+  }
+}

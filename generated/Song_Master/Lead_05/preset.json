@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Song Master",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 4464,
+      "brrLength": 2511,
+      "hasLoop": true,
+      "loopStartPcm": 3840,
+      "adsr1": 255,
+      "adsr2": 230,
+      "gain": 184,
+      "pitchRegister": 3745
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "88b600746d03e8de542d9e63c766dceeed79d2cadf7ea23f9d08f64ef1982760"
+          },
+          "loop": {
+            "start": 3840,
+            "end": 4464
+          }
+        }
+      ]
+    }
+  }
+}

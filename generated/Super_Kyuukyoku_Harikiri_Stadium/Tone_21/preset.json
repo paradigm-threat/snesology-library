@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Kyuukyoku Harikiri Stadium",
+    "snes": {
+      "srcn": 21,
+      "character": "tone",
+      "pcmLength": 1488,
+      "brrLength": 837,
+      "hasLoop": true,
+      "loopStartPcm": 1440
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b63dafdce35f6fe9431a5262c10517ec1ff2ef8551b9130f1798dc7d82dd5fb3"
+          },
+          "loop": {
+            "start": 1440,
+            "end": 1488
+          }
+        }
+      ]
+    }
+  }
+}

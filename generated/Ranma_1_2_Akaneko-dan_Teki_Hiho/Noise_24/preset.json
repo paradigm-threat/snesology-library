@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ranma 1/2: Akaneko-dan Teki Hiho",
+    "snes": {
+      "srcn": 24,
+      "character": "noise",
+      "pcmLength": 6704,
+      "brrLength": 3771,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e87f3306aa3e72383c5c2589d4a5fb8c6c7e223445689611bd77c623854ec8a1"
+          }
+        }
+      ]
+    }
+  }
+}

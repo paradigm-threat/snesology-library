@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Packy and Marlon",
+    "snes": {
+      "srcn": 34,
+      "character": "tone",
+      "pcmLength": 2416,
+      "brrLength": 1359,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 124,
+      "pitchRegister": 2813
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "094ff9368c8bc3dfdb59777c8c2a5771eea8f8639da3f51496904db991087a82"
+          },
+          "loop": {
+            "start": 0,
+            "end": 2416
+          }
+        }
+      ]
+    }
+  }
+}

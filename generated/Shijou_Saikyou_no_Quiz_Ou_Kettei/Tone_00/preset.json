@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shijou Saikyou no Quiz Ou Kettei",
+    "snes": {
+      "srcn": 0,
+      "character": "tone",
+      "pcmLength": 288,
+      "brrLength": 162,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 255,
+      "adsr2": 240,
+      "gain": 184,
+      "pitchRegister": 1986
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "24faeddc9e72c38fa40b5ea5088da6138a0c7dc55fe02d6eb4cf3609a1b58576"
+          },
+          "loop": {
+            "start": 48,
+            "end": 288
+          }
+        }
+      ]
+    }
+  }
+}

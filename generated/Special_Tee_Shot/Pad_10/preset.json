@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Special Tee Shot",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 13104,
+      "brrLength": 7371,
+      "hasLoop": true,
+      "loopStartPcm": 9872,
+      "adsr1": 253,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 141
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f8d24fc407ac40412dcb15646a1a4a7e4bd973f93e5b47f8a4b2cc84de6f8811"
+          },
+          "loop": {
+            "start": 9872,
+            "end": 13104
+          }
+        }
+      ]
+    }
+  }
+}

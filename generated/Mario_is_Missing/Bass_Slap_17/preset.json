@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Bass Slap",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mario is Missing",
+    "snes": {
+      "srcn": 17,
+      "character": "tone",
+      "pcmLength": 1296,
+      "brrLength": 729,
+      "hasLoop": true,
+      "loopStartPcm": 1168,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 124,
+      "pitchRegister": 1423
+    },
+    "communityName": "bass_slap",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c72f0be719155f23f0109bb70ad77ff2c0c0e97e049e708a1fcfe9d6366c6ec4"
+          },
+          "loop": {
+            "start": 1168,
+            "end": 1296
+          }
+        }
+      ]
+    }
+  }
+}

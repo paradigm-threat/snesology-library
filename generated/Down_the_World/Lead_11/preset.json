@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Down the World",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 4144,
+      "brrLength": 2331,
+      "hasLoop": true,
+      "loopStartPcm": 2144,
+      "adsr1": 127,
+      "adsr2": 224,
+      "gain": 159,
+      "pitchRegister": 1627
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "051e0adcf090977758df56e529b160a3f2ebdf6a61a787bc965b608eda4eabbb"
+          },
+          "loop": {
+            "start": 2144,
+            "end": 4144
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Morph",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 1024,
+      "brrLength": 576,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a60f97a7b645e353ead78e0e8fc9101d82b9f55fb81bd65763c5b02b98d03220"
+          },
+          "loop": {
+            "start": 0,
+            "end": 1024
+          }
+        }
+      ]
+    }
+  }
+}

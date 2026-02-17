@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Road Riot 4WD",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 6512,
+      "brrLength": 3663,
+      "hasLoop": true,
+      "loopStartPcm": 5920,
+      "adsr1": 255,
+      "adsr2": 238,
+      "gain": 184,
+      "pitchRegister": 1554
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6e3c812d700a9fdba85f68b565ec45450e8643b4b4f41ced1d46e7f1765f3517"
+          },
+          "loop": {
+            "start": 5920,
+            "end": 6512
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Pagemaster",
+    "snes": {
+      "srcn": 202,
+      "character": "melodic",
+      "pcmLength": 4000,
+      "brrLength": 2250,
+      "hasLoop": true,
+      "loopStartPcm": 61616
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "22d6b896610b0772e16b13fc9c753ff7598bb4728d58eea2e29df174421c2989"
+          },
+          "loop": {
+            "start": 61616,
+            "end": 4000
+          }
+        }
+      ]
+    }
+  }
+}

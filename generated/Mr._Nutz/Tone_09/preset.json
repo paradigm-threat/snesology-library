@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mr. Nutz",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 2816,
+      "brrLength": 1584,
+      "hasLoop": true,
+      "loopStartPcm": 4272
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "83fb4e87288d44bab47058c750da0d2fad9150b251da218495bc7918ef007327"
+          },
+          "loop": {
+            "start": 4272,
+            "end": 2816
+          }
+        }
+      ]
+    }
+  }
+}

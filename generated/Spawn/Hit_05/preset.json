@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spawn",
+    "snes": {
+      "srcn": 5,
+      "character": "one-shot",
+      "pcmLength": 17184,
+      "brrLength": 9666,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 232,
+      "gain": 158,
+      "pitchRegister": 2287
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ee77749b220f8158e3ddb523149288ebe14717b30b28717512af69d9ae4dad61"
+          }
+        }
+      ]
+    }
+  }
+}

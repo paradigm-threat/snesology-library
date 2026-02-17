@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kaite Tukutte Asoberu Dezaemon",
+    "snes": {
+      "srcn": 11,
+      "character": "tone",
+      "pcmLength": 1600,
+      "brrLength": 900,
+      "hasLoop": true,
+      "loopStartPcm": 448
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7b6b41f158e35caaa56bb00ad53991cd4ea2e3ab537a806e009489fea0bd532f"
+          },
+          "loop": {
+            "start": 448,
+            "end": 1600
+          }
+        }
+      ]
+    }
+  }
+}

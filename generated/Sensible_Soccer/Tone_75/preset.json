@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sensible Soccer",
+    "snes": {
+      "srcn": 75,
+      "character": "tone",
+      "pcmLength": 1280,
+      "brrLength": 720,
+      "hasLoop": true,
+      "loopStartPcm": 1248
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a0f39e232215092173b77eae5ac563eb0820bd1c910f9300e0149331540fb159"
+          },
+          "loop": {
+            "start": 1248,
+            "end": 1280
+          }
+        }
+      ]
+    }
+  }
+}

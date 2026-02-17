@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Metal Slader Glory: Director's C",
+    "snes": {
+      "srcn": 28,
+      "character": "noise",
+      "pcmLength": 6400,
+      "brrLength": 3600,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 224,
+      "pitchRegister": 215
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cdb2d8c4e4db3809171bb53fb6c3577e8ce61e30196eca389dfe096a44bdb58c"
+          }
+        }
+      ]
+    }
+  }
+}

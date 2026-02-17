@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Great Battle Gaiden 2",
+    "snes": {
+      "srcn": 57,
+      "character": "melodic",
+      "pcmLength": 15408,
+      "brrLength": 8667,
+      "hasLoop": true,
+      "loopStartPcm": 10992
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "de0669f370441fa00b25032cf5efccb6256a04968a4d4261f1c37bc623a972ca"
+          },
+          "loop": {
+            "start": 10992,
+            "end": 15408
+          }
+        }
+      ]
+    }
+  }
+}

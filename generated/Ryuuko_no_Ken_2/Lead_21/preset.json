@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ryuuko no Ken 2",
+    "snes": {
+      "srcn": 21,
+      "character": "melodic",
+      "pcmLength": 5456,
+      "brrLength": 3069,
+      "hasLoop": true,
+      "loopStartPcm": 4288,
+      "adsr1": 255,
+      "adsr2": 235,
+      "gain": 184,
+      "pitchRegister": 4334
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "802416fd821edd53c80288d28d24b103ded646ba06e0133171981e4b73ffa2e1"
+          },
+          "loop": {
+            "start": 4288,
+            "end": 5456
+          }
+        }
+      ]
+    }
+  }
+}

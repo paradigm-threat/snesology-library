@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Edo no Kiba",
+    "snes": {
+      "srcn": 39,
+      "character": "tone",
+      "pcmLength": 368,
+      "brrLength": 207,
+      "hasLoop": true,
+      "loopStartPcm": 96
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c4e27d28bcccc15994e7624b105d437ed3eddb41c90a6d46aca8cdef7f449a51"
+          },
+          "loop": {
+            "start": 96,
+            "end": 368
+          }
+        }
+      ]
+    }
+  }
+}

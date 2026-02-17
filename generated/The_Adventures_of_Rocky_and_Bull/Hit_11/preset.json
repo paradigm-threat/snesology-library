@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Adventures of Rocky and Bull",
+    "snes": {
+      "srcn": 11,
+      "character": "one-shot",
+      "pcmLength": 4208,
+      "brrLength": 2367,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 239,
+      "gain": 176,
+      "pitchRegister": 1071
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "aca7017523052d37cb223e53d9464ab709d6e8485ae6bf32fa4c9e7d83f04997"
+          }
+        }
+      ]
+    }
+  }
+}

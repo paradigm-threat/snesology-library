@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Black Bass 2",
+    "snes": {
+      "srcn": 43,
+      "character": "tone",
+      "pcmLength": 3456,
+      "brrLength": 1944,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "889c30cd9dc2ab2aaec7c01e8a5fb655f16f30a9ac395c12dbcb962330c8bed8"
+          },
+          "loop": {
+            "start": 16,
+            "end": 3456
+          }
+        }
+      ]
+    }
+  }
+}

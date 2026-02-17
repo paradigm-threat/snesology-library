@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wing Commander: Secret Missions",
+    "snes": {
+      "srcn": 2,
+      "character": "noise",
+      "pcmLength": 2384,
+      "brrLength": 1341,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 115,
+      "gain": 127,
+      "pitchRegister": 1673
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1a57bed8ea40d2dd89c059a1f33dd3d49d641c106343acced0aa92f59f4dbe2f"
+          }
+        }
+      ]
+    }
+  }
+}

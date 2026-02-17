@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Astral Bout 3",
+    "snes": {
+      "srcn": 23,
+      "character": "melodic",
+      "pcmLength": 4320,
+      "brrLength": 2430,
+      "hasLoop": true,
+      "loopStartPcm": 4080
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "29e362a7c497089798a602ac51be1bba3e250f0fcda76ec6ed5e83e1d5c4b270"
+          },
+          "loop": {
+            "start": 4080,
+            "end": 4320
+          }
+        }
+      ]
+    }
+  }
+}

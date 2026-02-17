@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tadaima Yusya Bosyutyu Okawari",
+    "snes": {
+      "srcn": 86,
+      "character": "noise",
+      "pcmLength": 2800,
+      "brrLength": 1575,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "41e50f246d137d7e02ad6e5587a90be02e321d65e375c6bf8a840354b392d4f1"
+          }
+        }
+      ]
+    }
+  }
+}

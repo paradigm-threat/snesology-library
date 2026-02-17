@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tokimeki Memorial",
+    "snes": {
+      "srcn": 35,
+      "character": "noise",
+      "pcmLength": 6560,
+      "brrLength": 3690,
+      "hasLoop": true,
+      "loopStartPcm": 4032,
+      "adsr1": 143,
+      "adsr2": 242,
+      "gain": 0,
+      "pitchRegister": 2036
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ea7cc9ff7cfd2d1bb849a27139e1984386b35ba40794a33c18951043974dd7da"
+          },
+          "loop": {
+            "start": 4032,
+            "end": 6560
+          }
+        }
+      ]
+    }
+  }
+}

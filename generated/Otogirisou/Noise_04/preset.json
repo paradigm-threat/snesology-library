@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Otogirisou",
+    "snes": {
+      "srcn": 4,
+      "character": "noise",
+      "pcmLength": 20000,
+      "brrLength": 11250,
+      "hasLoop": false,
+      "adsr1": 249,
+      "adsr2": 221,
+      "gain": 184,
+      "pitchRegister": 5612
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2f90c3d232c0dcdd01e3301e0081dea30da927caa50835c7451ad007f396bc68"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shiroi Ring he: Twinkle Little S",
+    "snes": {
+      "srcn": 22,
+      "character": "tone",
+      "pcmLength": 1200,
+      "brrLength": 675,
+      "hasLoop": true,
+      "loopStartPcm": 1104
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8814092342c4b7ed19b9ab30456129c96480051e9c8d8075e3597dcd50b4d8f5"
+          },
+          "loop": {
+            "start": 1104,
+            "end": 1200
+          }
+        }
+      ]
+    }
+  }
+}

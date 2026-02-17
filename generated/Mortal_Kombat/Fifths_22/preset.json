@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Fifths",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mortal Kombat",
+    "snes": {
+      "srcn": 22,
+      "character": "noise",
+      "pcmLength": 4464,
+      "brrLength": 2511,
+      "hasLoop": true,
+      "loopStartPcm": 304
+    },
+    "communityName": "fifths",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9ed051c97df347ebae5000a025c42f7cc04e6bbf233e5c41a1f0482f1ea05aaf"
+          },
+          "loop": {
+            "start": 304,
+            "end": 4464
+          }
+        }
+      ]
+    }
+  }
+}

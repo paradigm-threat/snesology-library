@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "True Lies",
+    "snes": {
+      "srcn": 25,
+      "character": "tone",
+      "pcmLength": 3760,
+      "brrLength": 2115,
+      "hasLoop": true,
+      "loopStartPcm": 2016
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "98c7dbedf4e020c4937a765c6559627443f5dbdd6f70046367067cb55824f526"
+          },
+          "loop": {
+            "start": 2016,
+            "end": 3760
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Matsumura Kunihiro Den",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 12816,
+      "brrLength": 7209,
+      "hasLoop": true,
+      "loopStartPcm": 7824,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 4201
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c4e7f155e59a71ffdb081685dda401c55b1234e875fea1c41382515b7caa322c"
+          },
+          "loop": {
+            "start": 7824,
+            "end": 12816
+          }
+        }
+      ]
+    }
+  }
+}

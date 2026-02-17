@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ashita no Joe",
+    "snes": {
+      "srcn": 4,
+      "character": "tone",
+      "pcmLength": 1248,
+      "brrLength": 702,
+      "hasLoop": true,
+      "loopStartPcm": 656,
+      "adsr1": 255,
+      "adsr2": 240,
+      "gain": 184,
+      "pitchRegister": 4730
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c74b298b645b8940253a6a45c2c69c22d0ff67f45489727b5a41ace6fedcab3c"
+          },
+          "loop": {
+            "start": 656,
+            "end": 1248
+          }
+        }
+      ]
+    }
+  }
+}

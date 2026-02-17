@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Ball Z: Super Butouden 3",
+    "snes": {
+      "srcn": 26,
+      "character": "melodic",
+      "pcmLength": 13184,
+      "brrLength": 7416,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "786209277cc06dde3b6a3a92f5f9e1552909db2144e6b4daf9647abd075b1bf2"
+          },
+          "loop": {
+            "start": 16,
+            "end": 13184
+          }
+        }
+      ]
+    }
+  }
+}

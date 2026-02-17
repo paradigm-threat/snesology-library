@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shooting Macross",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 4880,
+      "brrLength": 2745,
+      "hasLoop": true,
+      "loopStartPcm": 3440,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 3008
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "42ddd2245a9aaa0af90c7f1e1ea538dc0b1cf4e00946c40b087b5cb5fffc26ea"
+          },
+          "loop": {
+            "start": 3440,
+            "end": 4880
+          }
+        }
+      ]
+    }
+  }
+}

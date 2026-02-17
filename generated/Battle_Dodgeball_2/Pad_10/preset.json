@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battle Dodgeball 2",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 13568,
+      "brrLength": 7632,
+      "hasLoop": true,
+      "loopStartPcm": 6240,
+      "adsr1": 255,
+      "adsr2": 236,
+      "gain": 184,
+      "pitchRegister": 4358
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "45c79c80b26bfd05af568545a6f46bb674b4adbf3fb6e4b883e7a1a134446e73"
+          },
+          "loop": {
+            "start": 6240,
+            "end": 13568
+          }
+        }
+      ]
+    }
+  }
+}

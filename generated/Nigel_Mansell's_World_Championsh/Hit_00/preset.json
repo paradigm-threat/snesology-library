@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Nigel Mansell's World Championsh",
+    "snes": {
+      "srcn": 0,
+      "character": "one-shot",
+      "pcmLength": 6784,
+      "brrLength": 3816,
+      "hasLoop": false,
+      "adsr1": 207,
+      "adsr2": 34,
+      "gain": 184,
+      "pitchRegister": 2975
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "246044dad1e2af8a61c16f4c89c9f90e42405b86e8368bb1a12679e59ddf9917"
+          }
+        }
+      ]
+    }
+  }
+}

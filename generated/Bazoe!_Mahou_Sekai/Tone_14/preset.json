@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bazoe! Mahou Sekai",
+    "snes": {
+      "srcn": 14,
+      "character": "tone",
+      "pcmLength": 2192,
+      "brrLength": 1233,
+      "hasLoop": true,
+      "loopStartPcm": 2000,
+      "adsr1": 143,
+      "adsr2": 236,
+      "gain": 184,
+      "pitchRegister": 169
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "83927342adda96b0e9ec4b65637b8b1f421b021234af3a1053404515ed2985dc"
+          },
+          "loop": {
+            "start": 2000,
+            "end": 2192
+          }
+        }
+      ]
+    }
+  }
+}

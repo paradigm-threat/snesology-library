@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Momotarou Dentetsu DX",
+    "snes": {
+      "srcn": 45,
+      "character": "tone",
+      "pcmLength": 656,
+      "brrLength": 369,
+      "hasLoop": true,
+      "loopStartPcm": 560,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 789
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "553ff43c0dfb0ec5873f7e145eb2917ddeecb851896174b8204370da4ef8870d"
+          },
+          "loop": {
+            "start": 560,
+            "end": 656
+          }
+        }
+      ]
+    }
+  }
+}

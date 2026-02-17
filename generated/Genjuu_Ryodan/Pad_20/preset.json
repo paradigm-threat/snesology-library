@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Genjuu Ryodan",
+    "snes": {
+      "srcn": 20,
+      "character": "melodic",
+      "pcmLength": 8848,
+      "brrLength": 4977,
+      "hasLoop": true,
+      "loopStartPcm": 640
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "70e1b3dd5f1724086a539906852683a01e7d01001070f979e4272dd88405a69b"
+          },
+          "loop": {
+            "start": 640,
+            "end": 8848
+          }
+        }
+      ]
+    }
+  }
+}

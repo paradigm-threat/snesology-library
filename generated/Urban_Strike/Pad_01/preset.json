@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Urban Strike",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 8656,
+      "brrLength": 4869,
+      "hasLoop": true,
+      "loopStartPcm": 2768,
+      "adsr1": 255,
+      "adsr2": 244,
+      "gain": 184,
+      "pitchRegister": 2994
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8d22d00b7bb20aeaf334d1839d67f8c5db5993d513bc86e443deb92e4573a2de"
+          },
+          "loop": {
+            "start": 2768,
+            "end": 8656
+          }
+        }
+      ]
+    }
+  }
+}

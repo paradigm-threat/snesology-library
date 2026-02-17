@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Shougi 3",
+    "snes": {
+      "srcn": 12,
+      "character": "noise",
+      "pcmLength": 4368,
+      "brrLength": 2457,
+      "hasLoop": true,
+      "loopStartPcm": 1488
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "aaa633741a59c4f3d4e06cd247498209d4cd7b1045486231c3e7de46e4e14a39"
+          },
+          "loop": {
+            "start": 1488,
+            "end": 4368
+          }
+        }
+      ]
+    }
+  }
+}

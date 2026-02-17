@@ -1,0 +1,48 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Watersplash",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Star Fox",
+    "snes": {
+      "srcn": 44,
+      "character": "noise",
+      "pcmLength": 7776,
+      "brrLength": 4374,
+      "hasLoop": false
+    },
+    "communityName": "sfx_watersplash",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d9d99b286966a29c28baf2397aeab1cd654e3e2aa8f6a2357df3a973d38b2794"
+          }
+        }
+      ]
+    }
+  }
+}

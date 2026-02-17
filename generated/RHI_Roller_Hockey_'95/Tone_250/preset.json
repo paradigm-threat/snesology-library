@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "RHI Roller Hockey '95",
+    "snes": {
+      "srcn": 250,
+      "character": "tone",
+      "pcmLength": 320,
+      "brrLength": 180,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 144,
+      "pitchRegister": 7349
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0687ea17d21638939639718bd6228d9cb0cae17b13f72c5756fd5b53ba61320d"
+          },
+          "loop": {
+            "start": 0,
+            "end": 320
+          }
+        }
+      ]
+    }
+  }
+}

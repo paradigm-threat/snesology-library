@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Prince of Persia",
+    "snes": {
+      "srcn": 67,
+      "character": "tone",
+      "pcmLength": 1920,
+      "brrLength": 1080,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8875716e6ace357033c95b7656f43b601fd8a4727009da3b961fca967a1a08a7"
+          },
+          "loop": {
+            "start": 48,
+            "end": 1920
+          }
+        }
+      ]
+    }
+  }
+}

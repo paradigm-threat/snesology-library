@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dear Boys",
+    "snes": {
+      "srcn": 22,
+      "character": "tone",
+      "pcmLength": 2080,
+      "brrLength": 1170,
+      "hasLoop": true,
+      "loopStartPcm": 496,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 987
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d6a3b2d679e6fe12301c8f4ac52505e3d94afe166ab38f9026ca2dff36ed3733"
+          },
+          "loop": {
+            "start": 496,
+            "end": 2080
+          }
+        }
+      ]
+    }
+  }
+}

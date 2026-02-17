@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "M\ufffdrchen Adventure Cotton 100%",
+    "snes": {
+      "srcn": 13,
+      "character": "one-shot",
+      "pcmLength": 3344,
+      "brrLength": 1881,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 158,
+      "pitchRegister": 2620
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fe61d83e961219f17b000c8daf55bfc85cf2d6ee13bc67ce9b4b366d3085008b"
+          }
+        }
+      ]
+    }
+  }
+}

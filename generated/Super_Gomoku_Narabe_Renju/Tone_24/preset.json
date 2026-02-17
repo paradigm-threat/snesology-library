@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Gomoku Narabe Renju",
+    "snes": {
+      "srcn": 24,
+      "character": "tone",
+      "pcmLength": 1232,
+      "brrLength": 693,
+      "hasLoop": true,
+      "loopStartPcm": 1216,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 0,
+      "pitchRegister": 2856
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f1ac752c232e8ae18c33a7da01952837c4a493b5d09a00dc5b483053bb7bbb31"
+          },
+          "loop": {
+            "start": 1216,
+            "end": 1232
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kidou Keisatsu Patlabor",
+    "snes": {
+      "srcn": 6,
+      "character": "noise",
+      "pcmLength": 8496,
+      "brrLength": 4779,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "87f879a13d0be0d5a0e3fa0d9ba8a1a2cac3ea840e4ebcd29474ba74247406a5"
+          }
+        }
+      ]
+    }
+  }
+}

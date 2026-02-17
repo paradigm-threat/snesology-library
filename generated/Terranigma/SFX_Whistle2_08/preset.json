@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Whistle2",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Terranigma",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 1968,
+      "brrLength": 1107,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    },
+    "communityName": "sfx_whistle2",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "633d78441e5eedde06ce1f3d07529edaf0ef20b0036babef3603f708820ea03c"
+          },
+          "loop": {
+            "start": 48,
+            "end": 1968
+          }
+        }
+      ]
+    }
+  }
+}

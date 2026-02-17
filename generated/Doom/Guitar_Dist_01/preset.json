@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Guitar Dist",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Doom",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 5776,
+      "brrLength": 3249,
+      "hasLoop": true,
+      "loopStartPcm": 2848,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 70,
+      "pitchRegister": 444
+    },
+    "communityName": "guitar_dist",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0cb0495df3125940f089d6e24ff9cac3e14e546e555c12b24443877c2c40bac5"
+          },
+          "loop": {
+            "start": 2848,
+            "end": 5776
+          }
+        }
+      ]
+    }
+  }
+}

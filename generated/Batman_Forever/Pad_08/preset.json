@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Batman Forever",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 6864,
+      "brrLength": 3861,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 190,
+      "adsr2": 107,
+      "gain": 0,
+      "pitchRegister": 9195
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6de4440a47a648ffe22486fa844c960008be7395104a24b110c02e439805cde0"
+          },
+          "loop": {
+            "start": 0,
+            "end": 6864
+          }
+        }
+      ]
+    }
+  }
+}

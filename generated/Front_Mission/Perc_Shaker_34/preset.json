@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Shaker",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Front Mission",
+    "snes": {
+      "srcn": 34,
+      "character": "noise",
+      "pcmLength": 2496,
+      "brrLength": 1404,
+      "hasLoop": false,
+      "adsr1": 247,
+      "adsr2": 224,
+      "gain": 160,
+      "pitchRegister": 2048
+    },
+    "communityName": "perc_shaker",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6bbe46e11bb5a8025f3e2f4e8988159c83b7cdb1321b2dc027af4d884d99b2b8"
+          }
+        }
+      ]
+    }
+  }
+}

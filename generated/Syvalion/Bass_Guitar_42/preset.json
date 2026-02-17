@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Bass Guitar",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Syvalion",
+    "snes": {
+      "srcn": 42,
+      "character": "tone",
+      "pcmLength": 1104,
+      "brrLength": 621,
+      "hasLoop": true,
+      "loopStartPcm": 1056
+    },
+    "communityName": "bass_guitar",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8c816beaa87abaf1a48ec4ebabc0aa7c78488e289d5aa7d4897dffc376cc9926"
+          },
+          "loop": {
+            "start": 1056,
+            "end": 1104
+          }
+        }
+      ]
+    }
+  }
+}

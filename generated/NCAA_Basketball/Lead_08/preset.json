@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "NCAA Basketball",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 4896,
+      "brrLength": 2754,
+      "hasLoop": true,
+      "loopStartPcm": 4864,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 24,
+      "pitchRegister": 589
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d35d832c8394c73f1b5771fef8312e369b1893f8c2df68377f473aad8e6f41b2"
+          },
+          "loop": {
+            "start": 4864,
+            "end": 4896
+          }
+        }
+      ]
+    }
+  }
+}

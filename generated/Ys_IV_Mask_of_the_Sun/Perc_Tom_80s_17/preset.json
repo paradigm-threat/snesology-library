@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Tom 80s",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ys IV: Mask of the Sun",
+    "snes": {
+      "srcn": 17,
+      "character": "tone",
+      "pcmLength": 3360,
+      "brrLength": 1890,
+      "hasLoop": true,
+      "loopStartPcm": 3152,
+      "adsr1": 255,
+      "adsr2": 246,
+      "gain": 184,
+      "pitchRegister": 2308
+    },
+    "communityName": "perc_tom_80s",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a3bf3eb44cd7a4fdef5540bf98242646487ca141b02984e2a326ee3b47ad0bd1"
+          },
+          "loop": {
+            "start": 3152,
+            "end": 3360
+          }
+        }
+      ]
+    }
+  }
+}

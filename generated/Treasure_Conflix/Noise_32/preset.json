@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Treasure Conflix",
+    "snes": {
+      "srcn": 32,
+      "character": "noise",
+      "pcmLength": 7040,
+      "brrLength": 3960,
+      "hasLoop": true,
+      "loopStartPcm": 2592
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "32cef91ed631b31282bdfb818b1a4ef45da988b3b8c4e0b3754c9f8b065ee9fc"
+          },
+          "loop": {
+            "start": 2592,
+            "end": 7040
+          }
+        }
+      ]
+    }
+  }
+}

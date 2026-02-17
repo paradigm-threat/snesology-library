@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cool World",
+    "snes": {
+      "srcn": 42,
+      "character": "melodic",
+      "pcmLength": 4352,
+      "brrLength": 2448,
+      "hasLoop": true,
+      "loopStartPcm": 2832,
+      "adsr1": 143,
+      "adsr2": 238,
+      "gain": 0,
+      "pitchRegister": 4040
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7de91d71216a4bbfc5928cd2e9debe71950fb3633cf10a69482ff027d4fcb97d"
+          },
+          "loop": {
+            "start": 2832,
+            "end": 4352
+          }
+        }
+      ]
+    }
+  }
+}

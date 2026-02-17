@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Crystal Beans",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 18608,
+      "brrLength": 10467,
+      "hasLoop": true,
+      "loopStartPcm": 9120,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1270
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "20487434203242dff904a957462a9065442160ea5dc19cc57c741e2247a27c9c"
+          },
+          "loop": {
+            "start": 9120,
+            "end": 18608
+          }
+        }
+      ]
+    }
+  }
+}

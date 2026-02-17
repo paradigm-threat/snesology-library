@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "World Heroes 2",
+    "snes": {
+      "srcn": 33,
+      "character": "noise",
+      "pcmLength": 5280,
+      "brrLength": 2970,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "898b521a0a953a0226d143e095e84b8944ec25212bf48347040bd6a5874165b6"
+          },
+          "loop": {
+            "start": 16,
+            "end": 5280
+          }
+        }
+      ]
+    }
+  }
+}

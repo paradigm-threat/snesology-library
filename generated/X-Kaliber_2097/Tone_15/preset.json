@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "X-Kaliber 2097",
+    "snes": {
+      "srcn": 15,
+      "character": "tone",
+      "pcmLength": 2656,
+      "brrLength": 1494,
+      "hasLoop": true,
+      "loopStartPcm": 2496
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d8ea4ccd11184f3d45328344156ba6d975b47085b0973230e311e8e2c4ca32b2"
+          },
+          "loop": {
+            "start": 2496,
+            "end": 2656
+          }
+        }
+      ]
+    }
+  }
+}

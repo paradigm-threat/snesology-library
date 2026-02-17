@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Flute Pan",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Illusion of Gaia",
+    "snes": {
+      "srcn": 14,
+      "character": "melodic",
+      "pcmLength": 5104,
+      "brrLength": 2871,
+      "hasLoop": true,
+      "loopStartPcm": 4960,
+      "adsr1": 248,
+      "adsr2": 138,
+      "gain": 184,
+      "pitchRegister": 10814
+    },
+    "communityName": "flute_pan",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c6d4f09d8939f03339257776a9ac9bdf8266be2613a5f9d0326dd0b44c524c04"
+          },
+          "loop": {
+            "start": 4960,
+            "end": 5104
+          }
+        }
+      ]
+    }
+  }
+}

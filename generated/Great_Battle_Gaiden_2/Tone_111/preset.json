@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Great Battle Gaiden 2",
+    "snes": {
+      "srcn": 111,
+      "character": "tone",
+      "pcmLength": 576,
+      "brrLength": 324,
+      "hasLoop": true,
+      "loopStartPcm": 24640
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "59b3516a53730a2bf64c0261048ec54482f2201fc96ddb27d86409ff8fba78c6"
+          },
+          "loop": {
+            "start": 24640,
+            "end": 576
+          }
+        }
+      ]
+    }
+  }
+}

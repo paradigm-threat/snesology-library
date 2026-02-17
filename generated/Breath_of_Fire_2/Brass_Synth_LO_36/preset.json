@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Brass Synth LO",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Breath of Fire 2",
+    "snes": {
+      "srcn": 36,
+      "character": "melodic",
+      "pcmLength": 4496,
+      "brrLength": 2529,
+      "hasLoop": true,
+      "loopStartPcm": 4400,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 3600
+    },
+    "communityName": "brass_synth_lo",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "912fdce99bc712c408446979f84e068af215987758ccb398068e5542e5d541dc"
+          },
+          "loop": {
+            "start": 4400,
+            "end": 4496
+          }
+        }
+      ]
+    }
+  }
+}

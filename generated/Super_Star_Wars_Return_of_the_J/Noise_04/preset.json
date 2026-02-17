@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Star Wars: Return of the J",
+    "snes": {
+      "srcn": 4,
+      "character": "noise",
+      "pcmLength": 5952,
+      "brrLength": 3348,
+      "hasLoop": true,
+      "loopStartPcm": 2176,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 137,
+      "pitchRegister": 4060
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "84109a3042ea1e335f370a0a02860d1fd085ef3e2295687b2940f162eb3594a8"
+          },
+          "loop": {
+            "start": 2176,
+            "end": 5952
+          }
+        }
+      ]
+    }
+  }
+}

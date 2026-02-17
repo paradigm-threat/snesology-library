@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jelly Boy 2",
+    "snes": {
+      "srcn": 21,
+      "character": "tone",
+      "pcmLength": 1488,
+      "brrLength": 837,
+      "hasLoop": true,
+      "loopStartPcm": 288
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6e70389f18b9f25b0ffe8a1443ec9dea392f37c8c3c1f9616a4a2bb4e63fc94a"
+          },
+          "loop": {
+            "start": 288,
+            "end": 1488
+          }
+        }
+      ]
+    }
+  }
+}

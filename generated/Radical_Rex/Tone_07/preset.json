@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Radical Rex",
+    "snes": {
+      "srcn": 7,
+      "character": "tone",
+      "pcmLength": 2800,
+      "brrLength": 1575,
+      "hasLoop": true,
+      "loopStartPcm": 2048
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1b158ea750dd9d06531f36b91d264983cfa5ff50a56a76131d2ae1da962b8e62"
+          },
+          "loop": {
+            "start": 2048,
+            "end": 2800
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dual Orb 2",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 7424,
+      "brrLength": 4176,
+      "hasLoop": true,
+      "loopStartPcm": 1728
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0059a124c5860be986ce9941387160032863f1ab0e5f78cba077b4c0f5e726c7"
+          },
+          "loop": {
+            "start": 1728,
+            "end": 7424
+          }
+        }
+      ]
+    }
+  }
+}

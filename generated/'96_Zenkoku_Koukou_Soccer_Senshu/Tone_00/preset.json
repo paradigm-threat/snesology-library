@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "'96 Zenkoku Koukou Soccer Senshu",
+    "snes": {
+      "srcn": 0,
+      "character": "tone",
+      "pcmLength": 2688,
+      "brrLength": 1512,
+      "hasLoop": true,
+      "loopStartPcm": 2112,
+      "adsr1": 143,
+      "adsr2": 235,
+      "gain": 184,
+      "pitchRegister": 13079
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d017722376d65b5e9729b10d60609aa63ffb465edf418edbe76d0927dceee8e6"
+          },
+          "loop": {
+            "start": 2112,
+            "end": 2688
+          }
+        }
+      ]
+    }
+  }
+}

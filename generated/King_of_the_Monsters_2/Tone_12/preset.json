@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "King of the Monsters 2",
+    "snes": {
+      "srcn": 12,
+      "character": "tone",
+      "pcmLength": 1184,
+      "brrLength": 666,
+      "hasLoop": true,
+      "loopStartPcm": 448
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5faf24c420e9969deda60b47097cb9a4eab646e890f47521468e410d15399a82"
+          },
+          "loop": {
+            "start": 448,
+            "end": 1184
+          }
+        }
+      ]
+    }
+  }
+}

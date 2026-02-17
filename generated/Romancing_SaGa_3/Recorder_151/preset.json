@@ -1,0 +1,49 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Recorder",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Romancing SaGa 3",
+    "snes": {
+      "srcn": 151,
+      "character": "noise",
+      "pcmLength": 6464,
+      "brrLength": 3636,
+      "hasLoop": true
+    },
+    "communityName": "recorder",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f88707313cba96f4781ec814118da2a1c6d2a45b65461be43c116a44e1c31a5c"
+          }
+        }
+      ]
+    }
+  }
+}

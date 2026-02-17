@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Xak",
+    "snes": {
+      "srcn": 11,
+      "character": "noise",
+      "pcmLength": 3200,
+      "brrLength": 1800,
+      "hasLoop": false,
+      "adsr1": 204,
+      "adsr2": 209,
+      "gain": 184,
+      "pitchRegister": 2675
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9d9df78569f0de81482e6c787b6740a467f2779c24a066152b270ad4a33b57bf"
+          }
+        }
+      ]
+    }
+  }
+}

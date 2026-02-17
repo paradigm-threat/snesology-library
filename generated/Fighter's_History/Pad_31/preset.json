@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fighter's History",
+    "snes": {
+      "srcn": 31,
+      "character": "melodic",
+      "pcmLength": 5840,
+      "brrLength": 3285,
+      "hasLoop": true,
+      "loopStartPcm": 3792
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3c6ac120af2e4837f7aa68a656b3d5c5e9763830bb8252479a9c3fbcdabacd50"
+          },
+          "loop": {
+            "start": 3792,
+            "end": 5840
+          }
+        }
+      ]
+    }
+  }
+}

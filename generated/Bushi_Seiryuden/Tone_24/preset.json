@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bushi Seiryuden",
+    "snes": {
+      "srcn": 24,
+      "character": "tone",
+      "pcmLength": 1760,
+      "brrLength": 990,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 207,
+      "adsr2": 214,
+      "gain": 0,
+      "pitchRegister": 644
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6248b012bf4d039ee6a41b4475f0dc6aa5be7beb1d5d7c60b772ba086e6a796e"
+          },
+          "loop": {
+            "start": 16,
+            "end": 1760
+          }
+        }
+      ]
+    }
+  }
+}

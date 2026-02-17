@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Quest 6",
+    "snes": {
+      "srcn": 17,
+      "character": "melodic",
+      "pcmLength": 6080,
+      "brrLength": 3420,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "534c7d2f4d3b1e5b725e6110af2b0423ed5101546f375ce9d7ef2b6487b9cd7e"
+          },
+          "loop": {
+            "start": 16,
+            "end": 6080
+          }
+        }
+      ]
+    }
+  }
+}

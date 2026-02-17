@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Madden '97",
+    "snes": {
+      "srcn": 35,
+      "character": "tone",
+      "pcmLength": 992,
+      "brrLength": 558,
+      "hasLoop": true,
+      "loopStartPcm": 832
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "aedbd603877517129adc03a195981322edc4d99ff216403f1eb8cff2e4acfde1"
+          },
+          "loop": {
+            "start": 832,
+            "end": 992
+          }
+        }
+      ]
+    }
+  }
+}

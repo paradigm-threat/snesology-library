@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "J-League Excite Stage '95",
+    "snes": {
+      "srcn": 30,
+      "character": "melodic",
+      "pcmLength": 6832,
+      "brrLength": 3843,
+      "hasLoop": true,
+      "loopStartPcm": 3616,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a4aa18cd7e0ec84ed886aab6f167126bd4aa436aefb2d355f55df7e73a894805"
+          },
+          "loop": {
+            "start": 3616,
+            "end": 6832
+          }
+        }
+      ]
+    }
+  }
+}

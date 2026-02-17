@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Metal Combat",
+    "snes": {
+      "srcn": 38,
+      "character": "tone",
+      "pcmLength": 304,
+      "brrLength": 171,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6e06fd26d2db3265f61878341ee421ea5b3ebf6ecf06c45d88477b954b62495e"
+          },
+          "loop": {
+            "start": 16,
+            "end": 304
+          }
+        }
+      ]
+    }
+  }
+}

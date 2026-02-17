@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ren & Stimpy Show: Fire Dogs",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 11888,
+      "brrLength": 6687,
+      "hasLoop": true,
+      "loopStartPcm": 5648,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 255,
+      "pitchRegister": 11074
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c54612e18b45249cb526fbf756a02b93bf524dac53d30c08546901ad0c12d7bd"
+          },
+          "loop": {
+            "start": 5648,
+            "end": 11888
+          }
+        }
+      ]
+    }
+  }
+}

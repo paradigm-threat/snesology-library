@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Chaos Seed",
+    "snes": {
+      "srcn": 20,
+      "character": "tone",
+      "pcmLength": 960,
+      "brrLength": 540,
+      "hasLoop": true,
+      "loopStartPcm": 880
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0769be9a357afce211e2eaabe24026fe6771696096106d198bae9349ef9dd6b2"
+          },
+          "loop": {
+            "start": 880,
+            "end": 960
+          }
+        }
+      ]
+    }
+  }
+}

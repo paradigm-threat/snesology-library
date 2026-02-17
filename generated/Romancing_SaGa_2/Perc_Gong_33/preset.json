@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Gong",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Romancing SaGa 2",
+    "snes": {
+      "srcn": 33,
+      "character": "melodic",
+      "pcmLength": 16240,
+      "brrLength": 9135,
+      "hasLoop": true,
+      "loopStartPcm": 10544,
+      "adsr1": 255,
+      "adsr2": 234,
+      "gain": 160,
+      "pitchRegister": 2298
+    },
+    "communityName": "perc_gong",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f4ced520109839e6134c3d6c90fce898b543909155a6ed2ec07b39c90cb48454"
+          },
+          "loop": {
+            "start": 10544,
+            "end": 16240
+          }
+        }
+      ]
+    }
+  }
+}

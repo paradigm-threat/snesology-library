@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Piana Electricgrand",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Donkey Kong Country 2",
+    "snes": {
+      "srcn": 23,
+      "character": "melodic",
+      "pcmLength": 10048,
+      "brrLength": 5652,
+      "hasLoop": true,
+      "loopStartPcm": 9056,
+      "adsr1": 129,
+      "adsr2": 196,
+      "gain": 127,
+      "pitchRegister": 6647
+    },
+    "communityName": "piana_electricgrand",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b3faa2824197900df594c00fe93c6eb07dd76add0831ef8b6d7596e373f4706c"
+          },
+          "loop": {
+            "start": 9056,
+            "end": 10048
+          }
+        }
+      ]
+    }
+  }
+}

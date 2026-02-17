@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Slayers",
+    "snes": {
+      "srcn": 34,
+      "character": "tone",
+      "pcmLength": 560,
+      "brrLength": 315,
+      "hasLoop": true,
+      "loopStartPcm": 3824,
+      "adsr1": 255,
+      "adsr2": 234,
+      "gain": 0,
+      "pitchRegister": 4340
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "34079ef9f1294c157e2a2b0927388ad86e8c5b2eac0751707dacb11c2b589d30"
+          },
+          "loop": {
+            "start": 3824,
+            "end": 560
+          }
+        }
+      ]
+    }
+  }
+}

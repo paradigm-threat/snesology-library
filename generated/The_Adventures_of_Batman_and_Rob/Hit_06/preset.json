@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Adventures of Batman and Rob",
+    "snes": {
+      "srcn": 6,
+      "character": "one-shot",
+      "pcmLength": 3648,
+      "brrLength": 2052,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 244,
+      "gain": 188,
+      "pitchRegister": 3030
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6221705751451451d50c64c5b9687faf9f49930ce5e14b330c0b16fa266c45df"
+          }
+        }
+      ]
+    }
+  }
+}

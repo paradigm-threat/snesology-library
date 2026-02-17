@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pinocchio",
+    "snes": {
+      "srcn": 117,
+      "character": "melodic",
+      "pcmLength": 7664,
+      "brrLength": 4311,
+      "hasLoop": true,
+      "loopStartPcm": 7232
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "76903217fa442d3afd49b1efdf3d68ad49532f79dc1da9f4824af52bb955e319"
+          },
+          "loop": {
+            "start": 7232,
+            "end": 7664
+          }
+        }
+      ]
+    }
+  }
+}

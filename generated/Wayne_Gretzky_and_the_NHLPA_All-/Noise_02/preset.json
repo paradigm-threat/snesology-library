@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wayne Gretzky and the NHLPA All-",
+    "snes": {
+      "srcn": 2,
+      "character": "noise",
+      "pcmLength": 4992,
+      "brrLength": 2808,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 228,
+      "gain": 159,
+      "pitchRegister": 1534
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "84ef1649f60ada7dbb8f40979905b19fc40897965a8281af70aaf19eb0417aae"
+          }
+        }
+      ]
+    }
+  }
+}

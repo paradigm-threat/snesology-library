@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon: The Bruce Lee Story",
+    "snes": {
+      "srcn": 2,
+      "character": "noise",
+      "pcmLength": 3008,
+      "brrLength": 1692,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 172,
+      "pitchRegister": 3590
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fe04b8ab7f33237ddb2cf0b5312f68637653b2ac43d118dd4a0b6a4b6354d420"
+          }
+        }
+      ]
+    }
+  }
+}

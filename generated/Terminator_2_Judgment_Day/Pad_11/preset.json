@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Terminator 2: Judgment Day",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 9664,
+      "brrLength": 5436,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 12,
+      "pitchRegister": 1024
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1addf49dc7eda1ae4126b98f6750044c912fc7a5fc898d517f92a37c26c0ecd8"
+          },
+          "loop": {
+            "start": 0,
+            "end": 9664
+          }
+        }
+      ]
+    }
+  }
+}

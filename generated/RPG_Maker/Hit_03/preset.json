@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "RPG Maker",
+    "snes": {
+      "srcn": 3,
+      "character": "one-shot",
+      "pcmLength": 2272,
+      "brrLength": 1278,
+      "hasLoop": false,
+      "adsr1": 142,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 2048
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d92ae1c8c47034919594b96907a5704ccbfaa0b1d341d3e0457b98fbebfd7afc"
+          }
+        }
+      ]
+    }
+  }
+}

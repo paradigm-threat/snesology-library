@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Traverse: Starlight and Prairie",
+    "snes": {
+      "srcn": 16,
+      "character": "one-shot",
+      "pcmLength": 2000,
+      "brrLength": 1125,
+      "hasLoop": false,
+      "adsr1": 195,
+      "adsr2": 36,
+      "gain": 187,
+      "pitchRegister": 5894
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fa393f37e18491897261e898a340edb618b8d8c5e8eed16ba585758edac94740"
+          }
+        }
+      ]
+    }
+  }
+}

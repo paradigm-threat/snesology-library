@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Magical Taruruto Kun",
+    "snes": {
+      "srcn": 6,
+      "character": "noise",
+      "pcmLength": 1504,
+      "brrLength": 846,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 252,
+      "gain": 184,
+      "pitchRegister": 4601
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ddf03abec8844c931756d95d30ac92f6d3878d78b8a1c2ffa0e1b4128f0f3429"
+          }
+        }
+      ]
+    }
+  }
+}

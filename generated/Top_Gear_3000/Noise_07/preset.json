@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Top Gear 3000",
+    "snes": {
+      "srcn": 7,
+      "character": "noise",
+      "pcmLength": 7312,
+      "brrLength": 4113,
+      "hasLoop": true,
+      "loopStartPcm": 5248
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8d196ea55422575724ff3d0df9ebab019e33e1768552b5bec1d6cdc18029ced4"
+          },
+          "loop": {
+            "start": 5248,
+            "end": 7312
+          }
+        }
+      ]
+    }
+  }
+}

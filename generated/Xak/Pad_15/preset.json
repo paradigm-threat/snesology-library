@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Xak",
+    "snes": {
+      "srcn": 15,
+      "character": "melodic",
+      "pcmLength": 6128,
+      "brrLength": 3447,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 203,
+      "adsr2": 160,
+      "gain": 184,
+      "pitchRegister": 501
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c56e915fd70beb13a708c0673cb6a7fd8cbdaadec262b73b49d4123d281fff11"
+          },
+          "loop": {
+            "start": 16,
+            "end": 6128
+          }
+        }
+      ]
+    }
+  }
+}

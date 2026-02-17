@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Troddlers",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 2320,
+      "brrLength": 1305,
+      "hasLoop": true,
+      "loopStartPcm": 2128
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "314a7a7c613b346b5fa6ada5726e4148b5efe285662a9007c5abcc00c9236d5a"
+          },
+          "loop": {
+            "start": 2128,
+            "end": 2320
+          }
+        }
+      ]
+    }
+  }
+}

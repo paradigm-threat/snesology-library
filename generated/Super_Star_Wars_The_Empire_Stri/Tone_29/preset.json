@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Star Wars: The Empire Stri",
+    "snes": {
+      "srcn": 29,
+      "character": "tone",
+      "pcmLength": 2864,
+      "brrLength": 1611,
+      "hasLoop": true,
+      "loopStartPcm": 1840
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c8c6f0c8069632c24eb3531b22df31e1a9b01afbf22ecb1feceea94d8aef3899"
+          },
+          "loop": {
+            "start": 1840,
+            "end": 2864
+          }
+        }
+      ]
+    }
+  }
+}

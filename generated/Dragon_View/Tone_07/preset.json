@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon View",
+    "snes": {
+      "srcn": 7,
+      "character": "tone",
+      "pcmLength": 480,
+      "brrLength": 270,
+      "hasLoop": true,
+      "loopStartPcm": 432,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 4050
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3e07525e7e564a4d041b9e53b563fe15da6fe647110df686d79c00fe2b32587d"
+          },
+          "loop": {
+            "start": 432,
+            "end": 480
+          }
+        }
+      ]
+    }
+  }
+}

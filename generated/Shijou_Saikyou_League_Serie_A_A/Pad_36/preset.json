@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shijou Saikyou League Serie A: A",
+    "snes": {
+      "srcn": 36,
+      "character": "melodic",
+      "pcmLength": 9584,
+      "brrLength": 5391,
+      "hasLoop": true,
+      "loopStartPcm": 7312,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 148,
+      "pitchRegister": 1652
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7347578975fdce45e78df8d7dafcb14b82b5e467090d9e4bff5ba932c979bbaf"
+          },
+          "loop": {
+            "start": 7312,
+            "end": 9584
+          }
+        }
+      ]
+    }
+  }
+}

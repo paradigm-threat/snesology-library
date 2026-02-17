@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Gunfire2",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gundam Wing: Endless Duel",
+    "snes": {
+      "srcn": 40,
+      "character": "melodic",
+      "pcmLength": 5328,
+      "brrLength": 2997,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    },
+    "communityName": "sfx_gunfire2",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3102535f267b99472339793cdf2d7cc09f98f6d86db164a8387fe68267c61564"
+          },
+          "loop": {
+            "start": 48,
+            "end": 5328
+          }
+        }
+      ]
+    }
+  }
+}

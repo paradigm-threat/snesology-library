@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dino Dini's Soccer",
+    "snes": {
+      "srcn": 40,
+      "character": "tone",
+      "pcmLength": 784,
+      "brrLength": 441,
+      "hasLoop": true,
+      "loopStartPcm": 720
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "295212fa971b1bd8da72efb4c22d17e39794c0849ddced114caf18f99f564086"
+          },
+          "loop": {
+            "start": 720,
+            "end": 784
+          }
+        }
+      ]
+    }
+  }
+}

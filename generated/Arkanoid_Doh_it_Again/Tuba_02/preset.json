@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tuba",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Arkanoid: Doh it Again",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 5408,
+      "brrLength": 3042,
+      "hasLoop": true,
+      "loopStartPcm": 2480,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 0
+    },
+    "communityName": "tuba",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "df286417007906dfe7f07153c2d3d8567f5241ef802bc8242761ed6af0f126e1"
+          },
+          "loop": {
+            "start": 2480,
+            "end": 5408
+          }
+        }
+      ]
+    }
+  }
+}

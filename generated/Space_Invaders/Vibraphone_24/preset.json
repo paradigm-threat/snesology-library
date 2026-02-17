@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Vibraphone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Space Invaders",
+    "snes": {
+      "srcn": 24,
+      "character": "tone",
+      "pcmLength": 960,
+      "brrLength": 540,
+      "hasLoop": true,
+      "loopStartPcm": 944,
+      "adsr1": 255,
+      "adsr2": 243,
+      "gain": 0,
+      "pitchRegister": 12844
+    },
+    "communityName": "vibraphone",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "40d0e19b59f1f0060e303c6f723d8fdf69eb8a5493d62116e62bb48af6ddad8f"
+          },
+          "loop": {
+            "start": 944,
+            "end": 960
+          }
+        }
+      ]
+    }
+  }
+}

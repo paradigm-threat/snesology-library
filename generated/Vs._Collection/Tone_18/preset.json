@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Vs. Collection",
+    "snes": {
+      "srcn": 18,
+      "character": "tone",
+      "pcmLength": 576,
+      "brrLength": 324,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f973e38ff0b60fcd5d00178742f2d0b3b7825f19a5f34a78314e1ac07d2fe8af"
+          },
+          "loop": {
+            "start": 16,
+            "end": 576
+          }
+        }
+      ]
+    }
+  }
+}

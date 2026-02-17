@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cardmaster",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 784,
+      "brrLength": 441,
+      "hasLoop": true,
+      "loopStartPcm": 720,
+      "adsr1": 143,
+      "adsr2": 209,
+      "gain": 184,
+      "pitchRegister": 8100
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "48ce5e9aa11b3219e6fd2a057d19a09e0790d0b7f8374e31f19b5519feb726ed"
+          },
+          "loop": {
+            "start": 720,
+            "end": 784
+          }
+        }
+      ]
+    }
+  }
+}

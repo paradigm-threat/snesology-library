@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Koushien 2",
+    "snes": {
+      "srcn": 96,
+      "character": "tone",
+      "pcmLength": 416,
+      "brrLength": 234,
+      "hasLoop": true,
+      "loopStartPcm": 100576
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6d6472f9ee7bc44ac7994e3cd358a0e9518ce717ee7eb46c8c8e0641c3b2d3ce"
+          },
+          "loop": {
+            "start": 100576,
+            "end": 416
+          }
+        }
+      ]
+    }
+  }
+}

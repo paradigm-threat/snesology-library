@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Windy",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Bomberman 3",
+    "snes": {
+      "srcn": 26,
+      "character": "melodic",
+      "pcmLength": 5648,
+      "brrLength": 3177,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    },
+    "communityName": "sfx_windy",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d38d1f87cc664119120a75caca2985c0e3281f052fc28f5a65aab1a1b5eaf300"
+          },
+          "loop": {
+            "start": 0,
+            "end": 5648
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Rudra no Hihou",
+    "snes": {
+      "srcn": 36,
+      "character": "melodic",
+      "pcmLength": 6176,
+      "brrLength": 3474,
+      "hasLoop": true,
+      "loopStartPcm": 3728,
+      "adsr1": 255,
+      "adsr2": 240,
+      "gain": 0,
+      "pitchRegister": 6394
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "897ab7d7cb53775a490f8c66bb25c9305294f54d337d33168b40571b2c358c5c"
+          },
+          "loop": {
+            "start": 3728,
+            "end": 6176
+          }
+        }
+      ]
+    }
+  }
+}

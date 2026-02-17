@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wizardry VI",
+    "snes": {
+      "srcn": 25,
+      "character": "tone",
+      "pcmLength": 1232,
+      "brrLength": 693,
+      "hasLoop": true,
+      "loopStartPcm": 4000
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1a4e927785c4783d61ac4c49b4d1964c3918b66507e806032f09a193051b55c8"
+          },
+          "loop": {
+            "start": 4000,
+            "end": 1232
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Choir",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wonder Project J",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 12560,
+      "brrLength": 7065,
+      "hasLoop": true,
+      "loopStartPcm": 7152,
+      "adsr1": 252,
+      "adsr2": 229,
+      "gain": 184,
+      "pitchRegister": 2597
+    },
+    "communityName": "choir",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0afe2ad7cdf59de5f77af28412d9f43d629a263dea954128e8342c3ad028eabc"
+          },
+          "loop": {
+            "start": 7152,
+            "end": 12560
+          }
+        }
+      ]
+    }
+  }
+}

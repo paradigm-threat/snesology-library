@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shodai Nekketsu Kouha Kunio-Kun",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 704,
+      "brrLength": 396,
+      "hasLoop": true,
+      "loopStartPcm": 640
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c8a2959f149aa348369be152cd31737af7e3362e06e6c9b4c3c5b9005feaed04"
+          },
+          "loop": {
+            "start": 640,
+            "end": 704
+          }
+        }
+      ]
+    }
+  }
+}

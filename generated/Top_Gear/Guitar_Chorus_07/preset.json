@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Guitar Chorus",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Top Gear",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 5712,
+      "brrLength": 3213,
+      "hasLoop": true,
+      "loopStartPcm": 5600,
+      "adsr1": 255,
+      "adsr2": 236,
+      "gain": 184,
+      "pitchRegister": 5005
+    },
+    "communityName": "guitar_chorus",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "74267b927b63cbdacae7b251c5d8b993dd86a1299208d113dfef7feff7e0fb4d"
+          },
+          "loop": {
+            "start": 5600,
+            "end": 5712
+          }
+        }
+      ]
+    }
+  }
+}

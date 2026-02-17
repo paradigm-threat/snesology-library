@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jungle Wars 2",
+    "snes": {
+      "srcn": 27,
+      "character": "tone",
+      "pcmLength": 672,
+      "brrLength": 378,
+      "hasLoop": true,
+      "loopStartPcm": 624,
+      "adsr1": 223,
+      "adsr2": 111,
+      "gain": 184,
+      "pitchRegister": 3986
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cf8534682e34a46a87fcae5e4ba90ffb5e0d2780c11024a3294636d01e66d837"
+          },
+          "loop": {
+            "start": 624,
+            "end": 672
+          }
+        }
+      ]
+    }
+  }
+}

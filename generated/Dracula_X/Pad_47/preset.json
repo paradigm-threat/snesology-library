@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dracula X",
+    "snes": {
+      "srcn": 47,
+      "character": "melodic",
+      "pcmLength": 4896,
+      "brrLength": 2754,
+      "hasLoop": true,
+      "loopStartPcm": 1104
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d4074c44a3cd6cce06d1d3cf00cc1e7d3ac6a74cddf56870c1732d2f08620539"
+          },
+          "loop": {
+            "start": 1104,
+            "end": 4896
+          }
+        }
+      ]
+    }
+  }
+}

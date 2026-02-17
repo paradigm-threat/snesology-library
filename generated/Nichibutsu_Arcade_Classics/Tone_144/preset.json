@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Nichibutsu Arcade Classics",
+    "snes": {
+      "srcn": 144,
+      "character": "tone",
+      "pcmLength": 432,
+      "brrLength": 243,
+      "hasLoop": true,
+      "loopStartPcm": 116064
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1f13dc60e4fb0a9e98ecae2721794ba00b3f77c18de69c751a2ba9fa2e1e973f"
+          },
+          "loop": {
+            "start": 116064,
+            "end": 432
+          }
+        }
+      ]
+    }
+  }
+}

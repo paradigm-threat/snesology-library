@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shadow of the Beast",
+    "snes": {
+      "srcn": 2,
+      "character": "one-shot",
+      "pcmLength": 3936,
+      "brrLength": 2214,
+      "hasLoop": false,
+      "adsr1": 207,
+      "adsr2": 164,
+      "gain": 0,
+      "pitchRegister": 1136
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f6356b8bacde0d04a07d348a8b5da4d4b963d40f3367054f84ae93c9c9fa5a26"
+          }
+        }
+      ]
+    }
+  }
+}

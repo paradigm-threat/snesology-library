@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Seashore",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Quest 5",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 8896,
+      "brrLength": 5004,
+      "hasLoop": true,
+      "loopStartPcm": 6384,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 3580
+    },
+    "communityName": "sfx_seashore",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4b88ee42d848a1a20eb38814da4be8f1e740470d388581f2bb420a9eeaf63174"
+          },
+          "loop": {
+            "start": 6384,
+            "end": 8896
+          }
+        }
+      ]
+    }
+  }
+}

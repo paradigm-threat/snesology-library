@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ruin Arm",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 208,
+      "brrLength": 117,
+      "hasLoop": true,
+      "loopStartPcm": 14032
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e0a8d6f181eb0b772c0a13590f43fb6e46b5f5abd18f8675d3557cccca13c288"
+          },
+          "loop": {
+            "start": 14032,
+            "end": 208
+          }
+        }
+      ]
+    }
+  }
+}

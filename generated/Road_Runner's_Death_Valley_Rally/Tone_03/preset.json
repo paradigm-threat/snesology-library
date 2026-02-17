@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Road Runner's Death Valley Rally",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 2112,
+      "brrLength": 1188,
+      "hasLoop": true,
+      "loopStartPcm": 2048,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 137,
+      "pitchRegister": 512
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1dfd2f34b28449871cc3d34b7bbb51013545fcd3cd0d9580f9075fa9c7001d78"
+          },
+          "loop": {
+            "start": 2048,
+            "end": 2112
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Family Tennis",
+    "snes": {
+      "srcn": 6,
+      "character": "tone",
+      "pcmLength": 2816,
+      "brrLength": 1584,
+      "hasLoop": true,
+      "loopStartPcm": 2752,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 7216
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e2bad703c98dc1fa7975de329981d793c042debbd1c4951b26f180f7c89fad7a"
+          },
+          "loop": {
+            "start": 2752,
+            "end": 2816
+          }
+        }
+      ]
+    }
+  }
+}

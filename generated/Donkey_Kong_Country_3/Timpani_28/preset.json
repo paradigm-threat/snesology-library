@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Timpani",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Donkey Kong Country 3",
+    "snes": {
+      "srcn": 28,
+      "character": "melodic",
+      "pcmLength": 4976,
+      "brrLength": 2799,
+      "hasLoop": true,
+      "loopStartPcm": 4784,
+      "adsr1": 142,
+      "adsr2": 224,
+      "gain": 127,
+      "pitchRegister": 282
+    },
+    "communityName": "timpani",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bb24218ed6180d6165aaefb8ce7e04d1ab5e3becf41c64b500c0cbcf38f259dc"
+          },
+          "loop": {
+            "start": 4784,
+            "end": 4976
+          }
+        }
+      ]
+    }
+  }
+}

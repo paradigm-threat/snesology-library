@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Street Hockey '95",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 10736,
+      "brrLength": 6039,
+      "hasLoop": true,
+      "loopStartPcm": 5104
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ff4833de9f357a7be7f11e30cbeb8edeb8e7c53c8c5951db39cff09416de9605"
+          },
+          "loop": {
+            "start": 5104,
+            "end": 10736
+          }
+        }
+      ]
+    }
+  }
+}

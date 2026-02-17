@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jikkyou Oshaberi Parodius",
+    "snes": {
+      "srcn": 31,
+      "character": "melodic",
+      "pcmLength": 7072,
+      "brrLength": 3978,
+      "hasLoop": true,
+      "loopStartPcm": 3616,
+      "adsr1": 0,
+      "adsr2": 212,
+      "gain": 177,
+      "pitchRegister": 4419
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "65028bcca6330a7289f73b5a7c31bfdfac116dee17b4100892eb10f13c037c78"
+          },
+          "loop": {
+            "start": 3616,
+            "end": 7072
+          }
+        }
+      ]
+    }
+  }
+}

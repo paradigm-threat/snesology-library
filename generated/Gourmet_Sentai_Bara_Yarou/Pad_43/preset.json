@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gourmet Sentai Bara Yarou",
+    "snes": {
+      "srcn": 43,
+      "character": "melodic",
+      "pcmLength": 6256,
+      "brrLength": 3519,
+      "hasLoop": true,
+      "loopStartPcm": 4064
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "11ca1f6ae2bb3bd6c6785d70937a1573e539dab12a557a140ec191342d72df9f"
+          },
+          "loop": {
+            "start": 4064,
+            "end": 6256
+          }
+        }
+      ]
+    }
+  }
+}

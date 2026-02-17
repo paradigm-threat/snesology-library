@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Bass Ac",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Operation Logic Bomb",
+    "snes": {
+      "srcn": 7,
+      "character": "one-shot",
+      "pcmLength": 4208,
+      "brrLength": 2367,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 4096
+    },
+    "communityName": "bass_ac.brr",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "79955bd7f26e1f3d7e7fdc635c5e7f79c7f0760f47ad325bc27918fa21d68c15"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jungle Strike",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 4528,
+      "brrLength": 2547,
+      "hasLoop": true,
+      "loopStartPcm": 6800
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2bc8dbb281cbc40a38c588e5bb899a1289cbc80245a3a6083a85bbb468221762"
+          },
+          "loop": {
+            "start": 6800,
+            "end": 4528
+          }
+        }
+      ]
+    }
+  }
+}

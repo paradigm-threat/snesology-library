@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Top Management 2",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 14928,
+      "brrLength": 8397,
+      "hasLoop": true,
+      "loopStartPcm": 11488,
+      "adsr1": 191,
+      "adsr2": 239,
+      "gain": 180,
+      "pitchRegister": 1563
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "dd75e06bcbdaaa84134e61d1dc24d25497d8dc5bb02c1a9bbe7ab746643a4e87"
+          },
+          "loop": {
+            "start": 11488,
+            "end": 14928
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Teenage Mutant Ninja Turtles: To",
+    "snes": {
+      "srcn": 40,
+      "character": "melodic",
+      "pcmLength": 5264,
+      "brrLength": 2961,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "548ad78ac202691a405c2de7156ab4f5c2f697549d5858c4463ff94d6f3d7842"
+          },
+          "loop": {
+            "start": 16,
+            "end": 5264
+          }
+        }
+      ]
+    }
+  }
+}

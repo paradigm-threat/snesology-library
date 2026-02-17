@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "U.N. Squadron",
+    "snes": {
+      "srcn": 14,
+      "character": "melodic",
+      "pcmLength": 4368,
+      "brrLength": 2457,
+      "hasLoop": true,
+      "loopStartPcm": 4112,
+      "adsr1": 255,
+      "adsr2": 238,
+      "gain": 184,
+      "pitchRegister": 2528
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c8fd6dfc0afe920537923fd9be2063e992d151508dfdcd58cbff76980acd554d"
+          },
+          "loop": {
+            "start": 4112,
+            "end": 4368
+          }
+        }
+      ]
+    }
+  }
+}

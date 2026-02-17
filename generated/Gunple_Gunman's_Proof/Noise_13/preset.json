@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gunple: Gunman's Proof",
+    "snes": {
+      "srcn": 13,
+      "character": "noise",
+      "pcmLength": 4400,
+      "brrLength": 2475,
+      "hasLoop": true,
+      "loopStartPcm": 2272
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "143e04238a9a2f5f3a318df3a24b17963d40ffc3c4359f375db0517b83735a48"
+          },
+          "loop": {
+            "start": 2272,
+            "end": 4400
+          }
+        }
+      ]
+    }
+  }
+}

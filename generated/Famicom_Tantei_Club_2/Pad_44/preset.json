@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Famicom Tantei Club 2",
+    "snes": {
+      "srcn": 44,
+      "character": "melodic",
+      "pcmLength": 17104,
+      "brrLength": 9621,
+      "hasLoop": true,
+      "loopStartPcm": 8768,
+      "adsr1": 255,
+      "adsr2": 230,
+      "gain": 191,
+      "pitchRegister": 764
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7b8a61b4283fe8941dac7e82add981a5e84db6a497e523e1be4c61d1263f26d6"
+          },
+          "loop": {
+            "start": 8768,
+            "end": 17104
+          }
+        }
+      ]
+    }
+  }
+}

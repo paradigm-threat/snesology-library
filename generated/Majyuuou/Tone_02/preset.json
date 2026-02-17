@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Majyuuou",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 3568,
+      "brrLength": 2007,
+      "hasLoop": true,
+      "loopStartPcm": 3328,
+      "adsr1": 143,
+      "adsr2": 109,
+      "gain": 127,
+      "pitchRegister": 3360
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c4d8dabc612182016d9c581fbc4bf8c19ba097711afe80ef5d94c36c4e327eb1"
+          },
+          "loop": {
+            "start": 3328,
+            "end": 3568
+          }
+        }
+      ]
+    }
+  }
+}

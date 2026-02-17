@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spawn",
+    "snes": {
+      "srcn": 179,
+      "character": "melodic",
+      "pcmLength": 4288,
+      "brrLength": 2412,
+      "hasLoop": true,
+      "loopStartPcm": 29392
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "46e7e4818475820bdd702d7551a55e28810c5ebce84f169a262be2d6df4b95f8"
+          },
+          "loop": {
+            "start": 29392,
+            "end": 4288
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Rendering Ranger R2",
+    "snes": {
+      "srcn": 2,
+      "character": "noise",
+      "pcmLength": 6976,
+      "brrLength": 3924,
+      "hasLoop": true,
+      "loopStartPcm": 3824,
+      "adsr1": 0,
+      "adsr2": 209,
+      "gain": 0,
+      "pitchRegister": 3245
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ac3ed6c2e88cb4d72e9f0740d18230a6b7f30440d27632af6a1583d0a6395f35"
+          },
+          "loop": {
+            "start": 3824,
+            "end": 6976
+          }
+        }
+      ]
+    }
+  }
+}

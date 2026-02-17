@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ardy Lightfoot",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 8736,
+      "brrLength": 4914,
+      "hasLoop": true,
+      "loopStartPcm": 1872,
+      "adsr1": 154,
+      "adsr2": 128,
+      "gain": 191,
+      "pitchRegister": 1825
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7b500b7dbc35d2f83253970ced84bdb3cc538a9f17fa5d013333ad0241372ff6"
+          },
+          "loop": {
+            "start": 1872,
+            "end": 8736
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "World Cup USA '94",
+    "snes": {
+      "srcn": 236,
+      "character": "tone",
+      "pcmLength": 3952,
+      "brrLength": 2223,
+      "hasLoop": true,
+      "loopStartPcm": 7504
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c620996662f6c107d210150f8ba2b997ae347c10d23804efcadac0b785387c05"
+          },
+          "loop": {
+            "start": 7504,
+            "end": 3952
+          }
+        }
+      ]
+    }
+  }
+}

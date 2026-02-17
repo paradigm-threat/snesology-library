@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Helicopter",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earthbound",
+    "snes": {
+      "srcn": 33,
+      "character": "tone",
+      "pcmLength": 3520,
+      "brrLength": 1980,
+      "hasLoop": true,
+      "loopStartPcm": 96
+    },
+    "communityName": "sfx_helicopter",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d3dedfd8978c58d90802e1f321fe2f3a0e09be9bada5365e00f7aa4a571e1d1c"
+          },
+          "loop": {
+            "start": 96,
+            "end": 3520
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tengai Makyo Zero",
+    "snes": {
+      "srcn": 39,
+      "character": "melodic",
+      "pcmLength": 7264,
+      "brrLength": 4086,
+      "hasLoop": true,
+      "loopStartPcm": 3520
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "19412b3e30c9bb82817de872730f563335d213ba01559ff3a2686462fe02e1c6"
+          },
+          "loop": {
+            "start": 3520,
+            "end": 7264
+          }
+        }
+      ]
+    }
+  }
+}

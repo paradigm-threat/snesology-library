@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Boom3",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Bomberman 5",
+    "snes": {
+      "srcn": 50,
+      "character": "melodic",
+      "pcmLength": 9728,
+      "brrLength": 5472,
+      "hasLoop": true,
+      "loopStartPcm": 2256
+    },
+    "communityName": "sfx_boom3",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cdb3fb50a8471fe0b9daba48a28fdd88b1c088be7c2eafe3fff9028fbcd3b96f"
+          },
+          "loop": {
+            "start": 2256,
+            "end": 9728
+          }
+        }
+      ]
+    }
+  }
+}

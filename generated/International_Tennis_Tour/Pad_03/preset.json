@@ -1,0 +1,51 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "International Tennis Tour",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 9056,
+      "brrLength": 5094,
+      "hasLoop": true,
+      "adsr1": 141,
+      "adsr2": 112,
+      "gain": 127,
+      "pitchRegister": 966
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5082d97708da07bdeccaebbdf34ec2528b21135f1fafaf33e7a3445cfd7afc8d"
+          }
+        }
+      ]
+    }
+  }
+}

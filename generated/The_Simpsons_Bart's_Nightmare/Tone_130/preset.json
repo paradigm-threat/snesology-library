@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Simpsons: Bart's Nightmare",
+    "snes": {
+      "srcn": 130,
+      "character": "tone",
+      "pcmLength": 2672,
+      "brrLength": 1503,
+      "hasLoop": true,
+      "loopStartPcm": 71088
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1c6b3db97a88524694fda3b2ee8b891afd45663ab42ff84de4a1e41add48505b"
+          },
+          "loop": {
+            "start": 71088,
+            "end": 2672
+          }
+        }
+      ]
+    }
+  }
+}

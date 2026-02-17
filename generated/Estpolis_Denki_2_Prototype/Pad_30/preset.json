@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Estpolis Denki 2 Prototype",
+    "snes": {
+      "srcn": 30,
+      "character": "melodic",
+      "pcmLength": 17776,
+      "brrLength": 9999,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 5680
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0edf613c20c0c8a6e75d8db0973c454e113ba052419044cdd10e8f2f271aecdd"
+          },
+          "loop": {
+            "start": 16,
+            "end": 17776
+          }
+        }
+      ]
+    }
+  }
+}

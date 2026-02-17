@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Q*bert 3",
+    "snes": {
+      "srcn": 74,
+      "character": "tone",
+      "pcmLength": 768,
+      "brrLength": 432,
+      "hasLoop": true,
+      "loopStartPcm": 61072
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9637b8ac5382e8f01cbe2796a53eab834d0f8ca654d12202f93a63c12169a90a"
+          },
+          "loop": {
+            "start": 61072,
+            "end": 768
+          }
+        }
+      ]
+    }
+  }
+}

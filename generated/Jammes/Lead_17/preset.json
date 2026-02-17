@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jammes",
+    "snes": {
+      "srcn": 17,
+      "character": "melodic",
+      "pcmLength": 4960,
+      "brrLength": 2790,
+      "hasLoop": true,
+      "loopStartPcm": 3616,
+      "adsr1": 127,
+      "adsr2": 224,
+      "gain": 159,
+      "pitchRegister": 3649
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8fc40cf65037039cd7896a046c6741355032fc9662e91bcf0c4c7d8ce352f432"
+          },
+          "loop": {
+            "start": 3616,
+            "end": 4960
+          }
+        }
+      ]
+    }
+  }
+}

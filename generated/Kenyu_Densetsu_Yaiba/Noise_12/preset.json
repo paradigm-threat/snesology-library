@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kenyu Densetsu Yaiba",
+    "snes": {
+      "srcn": 12,
+      "character": "noise",
+      "pcmLength": 4192,
+      "brrLength": 2358,
+      "hasLoop": true,
+      "loopStartPcm": 2096,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 2143
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c81afbfa921796b79f3e919db6579b41396307e57da9040d7d28bb14b74d4616"
+          },
+          "loop": {
+            "start": 2096,
+            "end": 4192
+          }
+        }
+      ]
+    }
+  }
+}

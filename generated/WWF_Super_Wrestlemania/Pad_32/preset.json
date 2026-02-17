@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "WWF Super Wrestlemania",
+    "snes": {
+      "srcn": 32,
+      "character": "melodic",
+      "pcmLength": 8992,
+      "brrLength": 5058,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c9922e8d4c7ea0792a32442f0c7ce8d6d75ef39cc13d9e199b17526cb486ad7b"
+          },
+          "loop": {
+            "start": 0,
+            "end": 8992
+          }
+        }
+      ]
+    }
+  }
+}

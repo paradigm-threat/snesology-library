@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Villgust",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 528,
+      "brrLength": 297,
+      "hasLoop": true,
+      "loopStartPcm": 480,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 4050
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8255d645976e55fd003da6d51ea3a4c85b033bc57a95cca2597f042268ef440e"
+          },
+          "loop": {
+            "start": 480,
+            "end": 528
+          }
+        }
+      ]
+    }
+  }
+}

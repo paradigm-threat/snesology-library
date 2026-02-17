@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Front Mission: Gun Hazard",
+    "snes": {
+      "srcn": 229,
+      "character": "melodic",
+      "pcmLength": 4672,
+      "brrLength": 2628,
+      "hasLoop": true,
+      "loopStartPcm": 624
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d99906261a41b59fd2a7bae7b4a27600c93ee3fcdf19eeacf2513a30dc777215"
+          },
+          "loop": {
+            "start": 624,
+            "end": 4672
+          }
+        }
+      ]
+    }
+  }
+}

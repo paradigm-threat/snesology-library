@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wing Commander: Secret Missions",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 2160,
+      "brrLength": 1215,
+      "hasLoop": true,
+      "loopStartPcm": 2064,
+      "adsr1": 0,
+      "adsr2": 36,
+      "gain": 0,
+      "pitchRegister": 5693
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3bdcf5924de5cae237f019f92af84f88850bdb86f301693f7dc046eaf02745f1"
+          },
+          "loop": {
+            "start": 2064,
+            "end": 2160
+          }
+        }
+      ]
+    }
+  }
+}

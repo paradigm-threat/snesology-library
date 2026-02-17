@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hisshou 777 Fighter",
+    "snes": {
+      "srcn": 30,
+      "character": "melodic",
+      "pcmLength": 4176,
+      "brrLength": 2349,
+      "hasLoop": true,
+      "loopStartPcm": 3936,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 5048
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "588de450ee602ed2671d7d4499a8d800fc680ef5c588f4a42110a79e4245abe0"
+          },
+          "loop": {
+            "start": 3936,
+            "end": 4176
+          }
+        }
+      ]
+    }
+  }
+}

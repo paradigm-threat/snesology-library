@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "3x3 Eyes: Juuma Houkan",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 1344,
+      "brrLength": 756,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9f7659c2564e3bfdc7b2ff95bd728b05f49a25b1ebff113d614789414f516412"
+          },
+          "loop": {
+            "start": 16,
+            "end": 1344
+          }
+        }
+      ]
+    }
+  }
+}

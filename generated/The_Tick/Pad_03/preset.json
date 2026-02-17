@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Tick",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 8544,
+      "brrLength": 4806,
+      "hasLoop": true,
+      "loopStartPcm": 4704
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "059884a45c66f6614979ab1ea42e7e604cba7e28c36465211fefe880050b0bcd"
+          },
+          "loop": {
+            "start": 4704,
+            "end": 8544
+          }
+        }
+      ]
+    }
+  }
+}

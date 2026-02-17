@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Ninja Warriors",
+    "snes": {
+      "srcn": 17,
+      "character": "noise",
+      "pcmLength": 7264,
+      "brrLength": 4086,
+      "hasLoop": true,
+      "loopStartPcm": 4928
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b8e97bb6678d9ab7ddceade273fd10eecd2ea2de702b543935ae1f7344d93792"
+          },
+          "loop": {
+            "start": 4928,
+            "end": 7264
+          }
+        }
+      ]
+    }
+  }
+}

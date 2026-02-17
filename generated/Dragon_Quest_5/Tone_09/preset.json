@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Quest 5",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 3920,
+      "brrLength": 2205,
+      "hasLoop": true,
+      "loopStartPcm": 3520,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2008
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3878b8ffdb15fe7a5f8ed6ede46c4f75403c49c0fc371bc6a7c199086c249201"
+          },
+          "loop": {
+            "start": 3520,
+            "end": 3920
+          }
+        }
+      ]
+    }
+  }
+}

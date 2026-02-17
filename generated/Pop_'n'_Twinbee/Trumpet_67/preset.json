@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Trumpet",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pop 'n' Twinbee",
+    "snes": {
+      "srcn": 67,
+      "character": "melodic",
+      "pcmLength": 9168,
+      "brrLength": 5157,
+      "hasLoop": true,
+      "loopStartPcm": 9120,
+      "adsr1": 143,
+      "adsr2": 211,
+      "gain": 184,
+      "pitchRegister": 3967
+    },
+    "communityName": "trumpet",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "74f1891b66a4887ab1c14aedccb9ae6cc7cc58b4939932575cec7a8aee3e76f2"
+          },
+          "loop": {
+            "start": 9120,
+            "end": 9168
+          }
+        }
+      ]
+    }
+  }
+}

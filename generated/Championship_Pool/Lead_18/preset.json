@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Championship Pool",
+    "snes": {
+      "srcn": 18,
+      "character": "melodic",
+      "pcmLength": 6384,
+      "brrLength": 3591,
+      "hasLoop": true,
+      "loopStartPcm": 6256,
+      "adsr1": 0,
+      "adsr2": 235,
+      "gain": 159,
+      "pitchRegister": 1430
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f178925031695c157b45875340ab5a8d21a445c0853d057d7afe9b9a7cd37ac6"
+          },
+          "loop": {
+            "start": 6256,
+            "end": 6384
+          }
+        }
+      ]
+    }
+  }
+}

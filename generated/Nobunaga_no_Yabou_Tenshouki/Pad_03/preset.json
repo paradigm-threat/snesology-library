@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Nobunaga no Yabou Tenshouki",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 5376,
+      "brrLength": 3024,
+      "hasLoop": true,
+      "loopStartPcm": 1792
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0ad9aed3b6d49a44ac6d8f1625ba330a0a5d784139da4e9a7d85e0e8e1822776"
+          },
+          "loop": {
+            "start": 1792,
+            "end": 5376
+          }
+        }
+      ]
+    }
+  }
+}

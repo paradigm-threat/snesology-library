@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ranma 1/2 - Chonai Gekitou Hen",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 7536,
+      "brrLength": 4239,
+      "hasLoop": true,
+      "loopStartPcm": 7168,
+      "adsr1": 175,
+      "adsr2": 193,
+      "gain": 183,
+      "pitchRegister": 7672
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d7b3285dd20fbb77bde814c991b79ff6c9a4d57ed70f01f8bd71b5522529df29"
+          },
+          "loop": {
+            "start": 7168,
+            "end": 7536
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hagane",
+    "snes": {
+      "srcn": 14,
+      "character": "noise",
+      "pcmLength": 4528,
+      "brrLength": 2547,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e1f6c1ca92d4a0853c928472d92068a2856eda298d10269df74b225ab04e3680"
+          },
+          "loop": {
+            "start": 0,
+            "end": 4528
+          }
+        }
+      ]
+    }
+  }
+}

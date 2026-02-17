@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Habu Meijin no Omoshiro Shougi",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 12944,
+      "brrLength": 7281,
+      "hasLoop": true,
+      "loopStartPcm": 1264,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 123
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1340d69f85a1008201c1b0fba6a4950ae1878e61db6f1f6081d58894400c260c"
+          },
+          "loop": {
+            "start": 1264,
+            "end": 12944
+          }
+        }
+      ]
+    }
+  }
+}

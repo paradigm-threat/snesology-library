@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hat Trick Hero 2",
+    "snes": {
+      "srcn": 39,
+      "character": "tone",
+      "pcmLength": 2064,
+      "brrLength": 1161,
+      "hasLoop": true,
+      "loopStartPcm": 2000,
+      "adsr1": 255,
+      "adsr2": 242,
+      "gain": 0,
+      "pitchRegister": 2240
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7840dfa9a70444e9be039f21d22ee83a0b7b07a2d16576c1ae2a751db1dcecbf"
+          },
+          "loop": {
+            "start": 2000,
+            "end": 2064
+          }
+        }
+      ]
+    }
+  }
+}

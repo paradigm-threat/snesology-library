@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Phantom 2040",
+    "snes": {
+      "srcn": 7,
+      "character": "one-shot",
+      "pcmLength": 1024,
+      "brrLength": 576,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 240,
+      "gain": 80,
+      "pitchRegister": 1258
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5e64c47f1d03a8c4e831446c0c9c0e65ac140e0223ee508f54758ca598d21991"
+          }
+        }
+      ]
+    }
+  }
+}

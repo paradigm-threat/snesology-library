@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Derby Jockey",
+    "snes": {
+      "srcn": 18,
+      "character": "tone",
+      "pcmLength": 272,
+      "brrLength": 153,
+      "hasLoop": true,
+      "loopStartPcm": 240,
+      "adsr1": 191,
+      "adsr2": 85,
+      "gain": 0,
+      "pitchRegister": 2437
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "196b857aea874b415fe4a0b61e6c95d3d71e23732d75abf142b941cc6869f96a"
+          },
+          "loop": {
+            "start": 240,
+            "end": 272
+          }
+        }
+      ]
+    }
+  }
+}

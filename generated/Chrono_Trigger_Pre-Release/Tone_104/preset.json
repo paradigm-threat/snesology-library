@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Chrono Trigger Pre-Release",
+    "snes": {
+      "srcn": 104,
+      "character": "tone",
+      "pcmLength": 2000,
+      "brrLength": 1125,
+      "hasLoop": true,
+      "loopStartPcm": 528
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1484361729d79c9a3e43ee2bdf0594b16d0596c3ad41a4192e37b701a6ff3063"
+          },
+          "loop": {
+            "start": 528,
+            "end": 2000
+          }
+        }
+      ]
+    }
+  }
+}

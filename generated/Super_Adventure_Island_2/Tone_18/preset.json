@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Adventure Island 2",
+    "snes": {
+      "srcn": 18,
+      "character": "tone",
+      "pcmLength": 2256,
+      "brrLength": 1269,
+      "hasLoop": true,
+      "loopStartPcm": 4672
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e0c3ee6c845fcdac2987a3f0866262f780ff8e0c14fe8cf6d51d341ae1cb9898"
+          },
+          "loop": {
+            "start": 4672,
+            "end": 2256
+          }
+        }
+      ]
+    }
+  }
+}

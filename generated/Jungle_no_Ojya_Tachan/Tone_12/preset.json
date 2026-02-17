@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jungle no Ojya Tachan",
+    "snes": {
+      "srcn": 12,
+      "character": "tone",
+      "pcmLength": 1200,
+      "brrLength": 675,
+      "hasLoop": true,
+      "loopStartPcm": 1120,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 0,
+      "pitchRegister": 2240
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "dbfddc27bc07279dc4f0e032eb36d85fd4932c30bcf18dbffb72432bee6deadd"
+          },
+          "loop": {
+            "start": 1120,
+            "end": 1200
+          }
+        }
+      ]
+    }
+  }
+}

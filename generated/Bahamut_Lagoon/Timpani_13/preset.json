@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Timpani",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bahamut Lagoon",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 8480,
+      "brrLength": 4770,
+      "hasLoop": true,
+      "loopStartPcm": 6560,
+      "adsr1": 255,
+      "adsr2": 236,
+      "gain": 0,
+      "pitchRegister": 905
+    },
+    "communityName": "timpani",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d4524933183b68a8c4bf8676e17a8a8ced356eea6e6e460e1fac2c3c44983155"
+          },
+          "loop": {
+            "start": 6560,
+            "end": 8480
+          }
+        }
+      ]
+    }
+  }
+}

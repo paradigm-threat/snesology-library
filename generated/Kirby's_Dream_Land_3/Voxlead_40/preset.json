@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Voxlead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kirby's Dream Land 3",
+    "snes": {
+      "srcn": 40,
+      "character": "melodic",
+      "pcmLength": 6848,
+      "brrLength": 3852,
+      "hasLoop": true,
+      "loopStartPcm": 4048
+    },
+    "communityName": "voxlead",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "be679a695a347a62722206fbf7704d5226b9d92d55d51a73af384ce9b470fbbb"
+          },
+          "loop": {
+            "start": 4048,
+            "end": 6848
+          }
+        }
+      ]
+    }
+  }
+}

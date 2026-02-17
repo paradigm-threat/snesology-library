@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Liberty or Death",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 4640,
+      "brrLength": 2610,
+      "hasLoop": true,
+      "loopStartPcm": 1072
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8aaa1430391757112014e8ed6b9528d0e7ad4f928c175d18d9fb0b7eb7c46adb"
+          },
+          "loop": {
+            "start": 1072,
+            "end": 4640
+          }
+        }
+      ]
+    }
+  }
+}

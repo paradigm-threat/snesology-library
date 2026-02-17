@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Final Fantasy 5",
+    "snes": {
+      "srcn": 36,
+      "character": "melodic",
+      "pcmLength": 4432,
+      "brrLength": 2493,
+      "hasLoop": true,
+      "loopStartPcm": 5392
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "96376ad2cc0ee1597d0c2a54c6262fec5e4e5e5c551d912c5248045ce5c95160"
+          },
+          "loop": {
+            "start": 5392,
+            "end": 4432
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "An American Tail: Fievel Goes We",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 448,
+      "brrLength": 252,
+      "hasLoop": true,
+      "loopStartPcm": 336,
+      "adsr1": 0,
+      "adsr2": 101,
+      "gain": 159,
+      "pitchRegister": 464
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f9013647516e4a747917c4154227c8e33818dbdb2186f9e4e32fe6dedde7fff1"
+          },
+          "loop": {
+            "start": 336,
+            "end": 448
+          }
+        }
+      ]
+    }
+  }
+}

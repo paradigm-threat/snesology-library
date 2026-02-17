@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gokujyo Parodius",
+    "snes": {
+      "srcn": 23,
+      "character": "melodic",
+      "pcmLength": 5840,
+      "brrLength": 3285,
+      "hasLoop": true,
+      "loopStartPcm": 1264,
+      "adsr1": 140,
+      "adsr2": 203,
+      "gain": 178,
+      "pitchRegister": 3448
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "133a5670eacc22970d78aa48f0683ebab1335da24c188dc06546a628f4801298"
+          },
+          "loop": {
+            "start": 1264,
+            "end": 5840
+          }
+        }
+      ]
+    }
+  }
+}

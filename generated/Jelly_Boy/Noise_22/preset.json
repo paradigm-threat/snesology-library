@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jelly Boy",
+    "snes": {
+      "srcn": 22,
+      "character": "noise",
+      "pcmLength": 4576,
+      "brrLength": 2574,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 167,
+      "adsr2": 32,
+      "gain": 0,
+      "pitchRegister": 1149
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8c88e7a29ebfdc2443c4700007c39a1447ebb2c6c4c415f4850f7abc9d9c679c"
+          },
+          "loop": {
+            "start": 0,
+            "end": 4576
+          }
+        }
+      ]
+    }
+  }
+}

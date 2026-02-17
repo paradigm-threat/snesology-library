@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "J League Excite Stage '94",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 10672,
+      "brrLength": 6003,
+      "hasLoop": true,
+      "loopStartPcm": 10656,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f181e010ab8ccaf4d4f2ef34ce10357229b0cd78fe22e43961c520f8449d33bb"
+          },
+          "loop": {
+            "start": 10656,
+            "end": 10672
+          }
+        }
+      ]
+    }
+  }
+}

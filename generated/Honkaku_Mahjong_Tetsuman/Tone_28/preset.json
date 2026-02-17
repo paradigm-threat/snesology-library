@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Honkaku Mahjong Tetsuman",
+    "snes": {
+      "srcn": 28,
+      "character": "tone",
+      "pcmLength": 1968,
+      "brrLength": 1107,
+      "hasLoop": true,
+      "loopStartPcm": 1376,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 191,
+      "pitchRegister": 1193
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fc501aaaa2670a175d876c71747509a632c15562f2e82278f6339c1a31165897"
+          },
+          "loop": {
+            "start": 1376,
+            "end": 1968
+          }
+        }
+      ]
+    }
+  }
+}

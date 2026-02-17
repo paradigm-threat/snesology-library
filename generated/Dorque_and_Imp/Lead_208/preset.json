@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dorque and Imp",
+    "snes": {
+      "srcn": 208,
+      "character": "melodic",
+      "pcmLength": 17584,
+      "brrLength": 9891,
+      "hasLoop": true,
+      "loopStartPcm": 60880
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "816e7db2eeaf6719c81435400bf52f0cb5a12d9f9a9251502456f99337270f72"
+          },
+          "loop": {
+            "start": 60880,
+            "end": 17584
+          }
+        }
+      ]
+    }
+  }
+}

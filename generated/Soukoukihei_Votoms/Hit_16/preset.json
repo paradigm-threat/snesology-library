@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Soukoukihei Votoms",
+    "snes": {
+      "srcn": 16,
+      "character": "one-shot",
+      "pcmLength": 16000,
+      "brrLength": 9000,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 160,
+      "gain": 160,
+      "pitchRegister": 2048
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bcf532fe7d97058c0fe0161d9faf1c1b28d13a33602594e02f263db639906c21"
+          }
+        }
+      ]
+    }
+  }
+}

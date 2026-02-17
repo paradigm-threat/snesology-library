@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "NBA Jam",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 9296,
+      "brrLength": 5229,
+      "hasLoop": true,
+      "loopStartPcm": 2336,
+      "adsr1": 0,
+      "adsr2": 239,
+      "gain": 159,
+      "pitchRegister": 2298
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "722165ac35714b37d2f9793202c2bcdfddf530c9fc025eb72dfbd5b67a593602"
+          },
+          "loop": {
+            "start": 2336,
+            "end": 9296
+          }
+        }
+      ]
+    }
+  }
+}

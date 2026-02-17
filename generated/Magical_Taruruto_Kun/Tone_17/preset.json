@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Magical Taruruto Kun",
+    "snes": {
+      "srcn": 17,
+      "character": "tone",
+      "pcmLength": 1536,
+      "brrLength": 864,
+      "hasLoop": true,
+      "loopStartPcm": 1488,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 4290
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1a48e6be32b61985de3da1ebb43e75400c9aa159ea40c57869492e833e65cc23"
+          },
+          "loop": {
+            "start": 1488,
+            "end": 1536
+          }
+        }
+      ]
+    }
+  }
+}

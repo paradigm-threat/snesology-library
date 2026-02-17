@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pushover",
+    "snes": {
+      "srcn": 34,
+      "character": "melodic",
+      "pcmLength": 12944,
+      "brrLength": 7281,
+      "hasLoop": true,
+      "loopStartPcm": 512,
+      "adsr1": 136,
+      "adsr2": 225,
+      "gain": 0,
+      "pitchRegister": 3583
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "686deec11e42dcafd4ccf5e48ccf62caf88b9da409cf807c31f4b082525e6cad"
+          },
+          "loop": {
+            "start": 512,
+            "end": 12944
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Soldiers of Fortune",
+    "snes": {
+      "srcn": 79,
+      "character": "tone",
+      "pcmLength": 2496,
+      "brrLength": 1404,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 477
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "414edee78141fb0d711b2c084221299188a6605c7ffb25067666b948e97e1b76"
+          },
+          "loop": {
+            "start": 0,
+            "end": 2496
+          }
+        }
+      ]
+    }
+  }
+}

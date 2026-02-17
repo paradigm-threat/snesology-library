@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Burai",
+    "snes": {
+      "srcn": 67,
+      "character": "melodic",
+      "pcmLength": 9728,
+      "brrLength": 5472,
+      "hasLoop": true,
+      "loopStartPcm": 4496,
+      "adsr1": 251,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2456
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8107a3f2c4f0b8b3ea00e1d463a988b2a322e5272bb13e613395b0e7f59d7011"
+          },
+          "loop": {
+            "start": 4496,
+            "end": 9728
+          }
+        }
+      ]
+    }
+  }
+}

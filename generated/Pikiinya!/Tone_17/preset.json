@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pikiinya!",
+    "snes": {
+      "srcn": 17,
+      "character": "tone",
+      "pcmLength": 2480,
+      "brrLength": 1395,
+      "hasLoop": true,
+      "loopStartPcm": 2368,
+      "adsr1": 255,
+      "adsr2": 96,
+      "gain": 127,
+      "pitchRegister": 1984
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f34a7d38e3a29a4a5adad40176a2c8939121ffb800ae5a140e3aed77a82de6b3"
+          },
+          "loop": {
+            "start": 2368,
+            "end": 2480
+          }
+        }
+      ]
+    }
+  }
+}

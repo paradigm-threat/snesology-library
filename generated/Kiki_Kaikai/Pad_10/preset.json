@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kiki Kaikai",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 7264,
+      "brrLength": 4086,
+      "hasLoop": true,
+      "loopStartPcm": 4032,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1515
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f8e92ad929f14d0bbfb84c6d58bbf21b4473a644c4384e9ce604c391e6f40599"
+          },
+          "loop": {
+            "start": 4032,
+            "end": 7264
+          }
+        }
+      ]
+    }
+  }
+}

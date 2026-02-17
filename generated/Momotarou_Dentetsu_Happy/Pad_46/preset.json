@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Momotarou Dentetsu Happy",
+    "snes": {
+      "srcn": 46,
+      "character": "melodic",
+      "pcmLength": 5888,
+      "brrLength": 3312,
+      "hasLoop": true,
+      "loopStartPcm": 1200
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f816f3f5b5bbc47f7616601917aac3dfbd6b553f3bf4215417870fe48c413b2f"
+          },
+          "loop": {
+            "start": 1200,
+            "end": 5888
+          }
+        }
+      ]
+    }
+  }
+}

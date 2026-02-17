@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Skyblazer",
+    "snes": {
+      "srcn": 114,
+      "character": "tone",
+      "pcmLength": 1920,
+      "brrLength": 1080,
+      "hasLoop": true,
+      "loopStartPcm": 28784
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f4f0fcc9136c87409cc1ce76f4651af4729f1d9680bbd151b2792b079815740f"
+          },
+          "loop": {
+            "start": 28784,
+            "end": 1920
+          }
+        }
+      ]
+    }
+  }
+}

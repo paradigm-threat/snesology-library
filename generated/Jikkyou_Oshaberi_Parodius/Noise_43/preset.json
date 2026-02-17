@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jikkyou Oshaberi Parodius",
+    "snes": {
+      "srcn": 43,
+      "character": "noise",
+      "pcmLength": 12912,
+      "brrLength": 7263,
+      "hasLoop": true,
+      "loopStartPcm": 960
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fe367cc71000939fe9ba6a367afe5ee4c82e745cab11c5b6b910417970108ee8"
+          },
+          "loop": {
+            "start": 960,
+            "end": 12912
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Scream",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Clock Tower",
+    "snes": {
+      "srcn": 71,
+      "character": "melodic",
+      "pcmLength": 4672,
+      "brrLength": 2628,
+      "hasLoop": true,
+      "loopStartPcm": 2336,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1338
+    },
+    "communityName": "sfx_scream",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f59ddaa3eb4f697c1d2c6e2a9aa4c399c52db72d6832623b35e2da503eb77be8"
+          },
+          "loop": {
+            "start": 2336,
+            "end": 4672
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Vibraphone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Brain Lord",
+    "snes": {
+      "srcn": 6,
+      "character": "tone",
+      "pcmLength": 848,
+      "brrLength": 477,
+      "hasLoop": true,
+      "loopStartPcm": 816
+    },
+    "communityName": "vibraphone",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8a33fb144901ccbec3f17f8b2a0e5cabd05bd31100ebf4c50631a403981b0a54"
+          },
+          "loop": {
+            "start": 816,
+            "end": 848
+          }
+        }
+      ]
+    }
+  }
+}

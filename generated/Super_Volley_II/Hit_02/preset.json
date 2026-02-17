@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Volley II",
+    "snes": {
+      "srcn": 2,
+      "character": "one-shot",
+      "pcmLength": 1856,
+      "brrLength": 1044,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 238,
+      "gain": 184,
+      "pitchRegister": 7506
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7449873897dfc26393c9b73beae5a33a4533ad779fe9b05cb4d240b57e357837"
+          }
+        }
+      ]
+    }
+  }
+}

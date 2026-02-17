@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Judge Dredd",
+    "snes": {
+      "srcn": 30,
+      "character": "tone",
+      "pcmLength": 2736,
+      "brrLength": 1539,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f5129589eb6b8edff6e20999539a327789239b8daaa8fd307da4533e623cc124"
+          },
+          "loop": {
+            "start": 0,
+            "end": 2736
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Robot Taisen 3",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 1200,
+      "brrLength": 675,
+      "hasLoop": true,
+      "loopStartPcm": 1152,
+      "adsr1": 253,
+      "adsr2": 100,
+      "gain": 0,
+      "pitchRegister": 2534
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bf4488fe27471c942ece388225eef1c7b93520d348891744d685d9fe3039652e"
+          },
+          "loop": {
+            "start": 1152,
+            "end": 1200
+          }
+        }
+      ]
+    }
+  }
+}

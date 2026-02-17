@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Football Fury",
+    "snes": {
+      "srcn": 18,
+      "character": "tone",
+      "pcmLength": 3760,
+      "brrLength": 2115,
+      "hasLoop": true,
+      "loopStartPcm": 3648,
+      "adsr1": 255,
+      "adsr2": 228,
+      "gain": 184,
+      "pitchRegister": 11277
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9bfe6f5cb4d981428c3bbec85af48f57d50cb2c3759553f690dd41b48c7a1016"
+          },
+          "loop": {
+            "start": 3648,
+            "end": 3760
+          }
+        }
+      ]
+    }
+  }
+}

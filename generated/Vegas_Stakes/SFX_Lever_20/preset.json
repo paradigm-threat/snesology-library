@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Lever",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Vegas Stakes",
+    "snes": {
+      "srcn": 20,
+      "character": "one-shot",
+      "pcmLength": 12352,
+      "brrLength": 6948,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 247,
+      "gain": 184,
+      "pitchRegister": 1577
+    },
+    "communityName": "sfx_lever",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b06d8c87a59a644f5767ef5b5b05261f59012326cf3379ac53829796145b587a"
+          }
+        }
+      ]
+    }
+  }
+}

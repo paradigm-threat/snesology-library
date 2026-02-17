@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Esparks: Ijikuu kara no Raihoush",
+    "snes": {
+      "srcn": 21,
+      "character": "one-shot",
+      "pcmLength": 7504,
+      "brrLength": 4221,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 174,
+      "gain": 184,
+      "pitchRegister": 1122
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b8e0a1985aeb248c27912a5ceb3c590019fdf36644c61a16d4a1d30d21cbc125"
+          }
+        }
+      ]
+    }
+  }
+}

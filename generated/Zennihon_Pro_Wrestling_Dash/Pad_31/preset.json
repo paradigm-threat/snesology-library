@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zennihon Pro Wrestling Dash",
+    "snes": {
+      "srcn": 31,
+      "character": "melodic",
+      "pcmLength": 5376,
+      "brrLength": 3024,
+      "hasLoop": true,
+      "loopStartPcm": 2752,
+      "adsr1": 255,
+      "adsr2": 232,
+      "gain": 184,
+      "pitchRegister": 2854
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7a3c4a4456117ea5e72fe353d0c188ef2f900dc4e75b82b109e7765fc5daaeb2"
+          },
+          "loop": {
+            "start": 2752,
+            "end": 5376
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Forest",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "E.V.O.: Search for Eden",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 38192,
+      "brrLength": 21483,
+      "hasLoop": true,
+      "loopStartPcm": 64,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 746
+    },
+    "communityName": "sfx_forest",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1f2cfb53d4ffd8f3d0023c7e85824e228403695db7c185f27dabe9541a24a57c"
+          },
+          "loop": {
+            "start": 64,
+            "end": 38192
+          }
+        }
+      ]
+    }
+  }
+}

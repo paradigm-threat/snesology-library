@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Metal Marines",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 5776,
+      "brrLength": 3249,
+      "hasLoop": true,
+      "loopStartPcm": 1040
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "712c0e966e3de79cf2fa3f5dad68d2145bc94e1ec15a0b804aa3c1c1b6a769ca"
+          },
+          "loop": {
+            "start": 1040,
+            "end": 5776
+          }
+        }
+      ]
+    }
+  }
+}

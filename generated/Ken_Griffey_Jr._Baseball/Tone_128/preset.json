@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ken Griffey Jr. Baseball",
+    "snes": {
+      "srcn": 128,
+      "character": "tone",
+      "pcmLength": 1232,
+      "brrLength": 693,
+      "hasLoop": true,
+      "loopStartPcm": 37648
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9fdf4c321a16c2bcfee4616e9cf49e8f3e2214f11dadcbeb4899a72c8ce5d305"
+          },
+          "loop": {
+            "start": 37648,
+            "end": 1232
+          }
+        }
+      ]
+    }
+  }
+}

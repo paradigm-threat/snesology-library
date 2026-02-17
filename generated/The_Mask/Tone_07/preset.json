@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Mask",
+    "snes": {
+      "srcn": 7,
+      "character": "tone",
+      "pcmLength": 640,
+      "brrLength": 360,
+      "hasLoop": true,
+      "loopStartPcm": 544,
+      "adsr1": 0,
+      "adsr2": 232,
+      "gain": 159,
+      "pitchRegister": 2136
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b9e2bf0e9db404f96db9f68f08d274912ba8b32b6a858b296bcaab715dbd409f"
+          },
+          "loop": {
+            "start": 544,
+            "end": 640
+          }
+        }
+      ]
+    }
+  }
+}

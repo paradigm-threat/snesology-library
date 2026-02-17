@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jelly Boy 2",
+    "snes": {
+      "srcn": 9,
+      "character": "one-shot",
+      "pcmLength": 1136,
+      "brrLength": 639,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 234,
+      "gain": 158,
+      "pitchRegister": 2400
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5a36f34b26d2bd41564022f889aebcd4a4ea00f529651262a71720c9c215934c"
+          }
+        }
+      ]
+    }
+  }
+}

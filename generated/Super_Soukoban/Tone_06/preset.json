@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Soukoban",
+    "snes": {
+      "srcn": 6,
+      "character": "tone",
+      "pcmLength": 1088,
+      "brrLength": 612,
+      "hasLoop": true,
+      "loopStartPcm": 976,
+      "adsr1": 255,
+      "adsr2": 236,
+      "gain": 184,
+      "pitchRegister": 616
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9cf392627e8a4577479c0160e6a7070378fc5c71ab9c2de708615e5631af4a62"
+          },
+          "loop": {
+            "start": 976,
+            "end": 1088
+          }
+        }
+      ]
+    }
+  }
+}

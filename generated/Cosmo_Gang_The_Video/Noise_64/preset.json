@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cosmo Gang: The Video",
+    "snes": {
+      "srcn": 64,
+      "character": "noise",
+      "pcmLength": 2672,
+      "brrLength": 1503,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 239,
+      "gain": 156,
+      "pitchRegister": 4038
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b90f6bca80d569f200f7b5b18aee8adecdabe41d0cff181ff7c0dfeb3d72471c"
+          }
+        }
+      ]
+    }
+  }
+}

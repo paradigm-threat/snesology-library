@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Family Gerende",
+    "snes": {
+      "srcn": 34,
+      "character": "tone",
+      "pcmLength": 3744,
+      "brrLength": 2106,
+      "hasLoop": true,
+      "loopStartPcm": 3616
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "93f734e900cdcebc53187d8de5722ed3c100c3069868836e5c5bc165e5595a75"
+          },
+          "loop": {
+            "start": 3616,
+            "end": 3744
+          }
+        }
+      ]
+    }
+  }
+}

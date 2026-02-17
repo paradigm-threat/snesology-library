@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Putty",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 3232,
+      "brrLength": 1818,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2be329da4d62668c442e84d913d6d37b108302c2cb6b7f3fb5044b5c2045007b"
+          },
+          "loop": {
+            "start": 0,
+            "end": 3232
+          }
+        }
+      ]
+    }
+  }
+}

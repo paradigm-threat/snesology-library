@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "SD Gundam Power Formation Puzzle",
+    "snes": {
+      "srcn": 107,
+      "character": "melodic",
+      "pcmLength": 9280,
+      "brrLength": 5220,
+      "hasLoop": true,
+      "loopStartPcm": 45088
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "84329f4cf392a1ff9ac96ff57cddd788524d6d5f9694c877deb87b9d9bde255f"
+          },
+          "loop": {
+            "start": 45088,
+            "end": 9280
+          }
+        }
+      ]
+    }
+  }
+}

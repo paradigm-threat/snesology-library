@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Adventures of Batman and Rob",
+    "snes": {
+      "srcn": 62,
+      "character": "tone",
+      "pcmLength": 2752,
+      "brrLength": 1548,
+      "hasLoop": true,
+      "loopStartPcm": 1456
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "87b8a02ce437e20b59fd76ef219790aa69a03206fbc1e7c6c22d4f0aa0980a82"
+          },
+          "loop": {
+            "start": 1456,
+            "end": 2752
+          }
+        }
+      ]
+    }
+  }
+}

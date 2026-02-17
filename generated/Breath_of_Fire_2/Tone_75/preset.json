@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Breath of Fire 2",
+    "snes": {
+      "srcn": 75,
+      "character": "tone",
+      "pcmLength": 304,
+      "brrLength": 171,
+      "hasLoop": true,
+      "loopStartPcm": 116080
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fd15e1ac0e62ac760abda00ead54cb6ea8ea3cba5027e57e97ebffbd9d32dff3"
+          },
+          "loop": {
+            "start": 116080,
+            "end": 304
+          }
+        }
+      ]
+    }
+  }
+}

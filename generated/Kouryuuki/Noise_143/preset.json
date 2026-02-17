@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kouryuuki",
+    "snes": {
+      "srcn": 143,
+      "character": "noise",
+      "pcmLength": 6960,
+      "brrLength": 3915,
+      "hasLoop": true,
+      "loopStartPcm": 11376
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "553d92c7955417852292d38e41639c5d14a10cf8cdfc293a0840cfb91f0bc8ad"
+          },
+          "loop": {
+            "start": 11376,
+            "end": 6960
+          }
+        }
+      ]
+    }
+  }
+}

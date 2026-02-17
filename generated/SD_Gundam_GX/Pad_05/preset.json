@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "SD Gundam GX",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 5792,
+      "brrLength": 3258,
+      "hasLoop": true,
+      "loopStartPcm": 512
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3c791852afa761f430a1d027321b04c86baf24dc106c1ec586d870a57e88ec90"
+          },
+          "loop": {
+            "start": 512,
+            "end": 5792
+          }
+        }
+      ]
+    }
+  }
+}

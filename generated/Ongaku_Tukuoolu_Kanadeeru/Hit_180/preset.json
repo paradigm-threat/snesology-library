@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ongaku Tukuoolu Kanadeeru",
+    "snes": {
+      "srcn": 180,
+      "character": "one-shot",
+      "pcmLength": 3840,
+      "brrLength": 2160,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "50aa84a5aafafef66b3b3f4cc60791f746e7ffcb918bb88942bbc7609a79b8c9"
+          }
+        }
+      ]
+    }
+  }
+}

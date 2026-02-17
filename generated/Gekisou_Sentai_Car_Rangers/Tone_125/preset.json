@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gekisou Sentai Car Rangers",
+    "snes": {
+      "srcn": 125,
+      "character": "tone",
+      "pcmLength": 1584,
+      "brrLength": 891,
+      "hasLoop": true,
+      "loopStartPcm": 62560
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0e3ed5decfdeda8ccab8bfb41720ab92a295d2a5e23339cbe8f38c5e554b7ebf"
+          },
+          "loop": {
+            "start": 62560,
+            "end": 1584
+          }
+        }
+      ]
+    }
+  }
+}

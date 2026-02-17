@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Adventures of Dr. Franken",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 2544,
+      "brrLength": 1431,
+      "hasLoop": true,
+      "loopStartPcm": 1904
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f9befbe808aca3cb8c624ea9240272e78b8c9750edd542e13c74a596994b25f5"
+          },
+          "loop": {
+            "start": 1904,
+            "end": 2544
+          }
+        }
+      ]
+    }
+  }
+}

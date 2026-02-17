@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ultima 6",
+    "snes": {
+      "srcn": 14,
+      "character": "tone",
+      "pcmLength": 1536,
+      "brrLength": 864,
+      "hasLoop": true,
+      "loopStartPcm": 1424,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2821
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3d3b6d7ab3816a7ca520cf4fc766db7aa7e142e34d3bcf5135f32ece1aaa2895"
+          },
+          "loop": {
+            "start": 1424,
+            "end": 1536
+          }
+        }
+      ]
+    }
+  }
+}

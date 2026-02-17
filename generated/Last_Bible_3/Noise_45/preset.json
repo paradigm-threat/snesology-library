@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Last Bible 3",
+    "snes": {
+      "srcn": 45,
+      "character": "noise",
+      "pcmLength": 6848,
+      "brrLength": 3852,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 123,
+      "adsr2": 166,
+      "gain": 159,
+      "pitchRegister": 4619
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d4cf5b5189b909742ec9ab9411e54625d6f989eb34701019213c4a337e567091"
+          },
+          "loop": {
+            "start": 16,
+            "end": 6848
+          }
+        }
+      ]
+    }
+  }
+}

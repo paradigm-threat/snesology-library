@@ -1,0 +1,48 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Punchnoise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Street Fighter Alpha 2",
+    "snes": {
+      "srcn": 20,
+      "character": "one-shot",
+      "pcmLength": 2832,
+      "brrLength": 1593,
+      "hasLoop": false
+    },
+    "communityName": "sfx_punchnoise",
+    "matchConfidence": 0.9
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7849e8872936691040b8a8d2ec54759521114e7f423ceec48de2a02aea16c503"
+          }
+        }
+      ]
+    }
+  }
+}

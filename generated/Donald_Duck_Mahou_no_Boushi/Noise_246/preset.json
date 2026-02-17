@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Donald Duck: Mahou no Boushi",
+    "snes": {
+      "srcn": 246,
+      "character": "noise",
+      "pcmLength": 8416,
+      "brrLength": 4734,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c0b1c5c54610a985195b52528e71d1d7ac1b0f871a2c891a7cd65bc883ca34a6"
+          }
+        }
+      ]
+    }
+  }
+}

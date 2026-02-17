@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zenkoku Juudan Ultra Shinri Game",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 12704,
+      "brrLength": 7146,
+      "hasLoop": true,
+      "loopStartPcm": 7824,
+      "adsr1": 255,
+      "adsr2": 193,
+      "gain": 180,
+      "pitchRegister": 3363
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "87ae68c5cd21b56e476f4e59950e671e4e0f29ad0a7737d5a64711a11c2619b4"
+          },
+          "loop": {
+            "start": 7824,
+            "end": 12704
+          }
+        }
+      ]
+    }
+  }
+}

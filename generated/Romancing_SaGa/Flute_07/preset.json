@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Flute",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Romancing SaGa",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 4144,
+      "brrLength": 2331,
+      "hasLoop": true,
+      "loopStartPcm": 4080,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 160,
+      "pitchRegister": 5134
+    },
+    "communityName": "flute",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3131845b61207fe5292d7b75c2344b48a8f7e3f11f000e8f7e18e3cc7d76bcf9"
+          },
+          "loop": {
+            "start": 4080,
+            "end": 4144
+          }
+        }
+      ]
+    }
+  }
+}

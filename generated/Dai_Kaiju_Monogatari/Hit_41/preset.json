@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dai Kaiju Monogatari",
+    "snes": {
+      "srcn": 41,
+      "character": "one-shot",
+      "pcmLength": 6768,
+      "brrLength": 3807,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 137,
+      "gain": 158,
+      "pitchRegister": 2733
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b95c5c7d5737b06cdedc11bc9406c631c167c2cea45dbaae825637333e5f33eb"
+          }
+        }
+      ]
+    }
+  }
+}

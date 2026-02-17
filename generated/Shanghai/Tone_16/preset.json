@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shanghai",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 3232,
+      "brrLength": 1818,
+      "hasLoop": true,
+      "loopStartPcm": 2192
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1ae729c1268e664cb9f628f4c48751a0ad195056f7563561b6bd02ff3cf6d0d0"
+          },
+          "loop": {
+            "start": 2192,
+            "end": 3232
+          }
+        }
+      ]
+    }
+  }
+}

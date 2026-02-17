@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pikiinya!",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 19728,
+      "brrLength": 11097,
+      "hasLoop": true,
+      "loopStartPcm": 13360
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cc67927bbec46b1908e5004b456b2f89962db6b280c4cad59867db424e77035c"
+          },
+          "loop": {
+            "start": 13360,
+            "end": 19728
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Brutal: Paws of Fury",
+    "snes": {
+      "srcn": 14,
+      "character": "melodic",
+      "pcmLength": 6160,
+      "brrLength": 3465,
+      "hasLoop": true,
+      "loopStartPcm": 5072,
+      "adsr1": 191,
+      "adsr2": 200,
+      "gain": 0,
+      "pitchRegister": 537
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "535322c2719b1ab6b3f7ea26687142d764819eb6ced5441dab00882a67c72268"
+          },
+          "loop": {
+            "start": 5072,
+            "end": 6160
+          }
+        }
+      ]
+    }
+  }
+}

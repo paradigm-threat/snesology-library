@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Rushing Beat Syura",
+    "snes": {
+      "srcn": 32,
+      "character": "melodic",
+      "pcmLength": 4448,
+      "brrLength": 2502,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "623674488ade3f2e5415c7f5307d9be27c46b6df15efe44ff59a825597b2d8ea"
+          },
+          "loop": {
+            "start": 0,
+            "end": 4448
+          }
+        }
+      ]
+    }
+  }
+}

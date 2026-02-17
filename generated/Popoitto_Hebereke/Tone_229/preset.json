@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Popoitto Hebereke",
+    "snes": {
+      "srcn": 229,
+      "character": "tone",
+      "pcmLength": 1136,
+      "brrLength": 639,
+      "hasLoop": true,
+      "loopStartPcm": 31264
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "74fc373fd8a1054627be1bca6ecfe8a98a516fa9723535d3f9f893accba30fb3"
+          },
+          "loop": {
+            "start": 31264,
+            "end": 1136
+          }
+        }
+      ]
+    }
+  }
+}

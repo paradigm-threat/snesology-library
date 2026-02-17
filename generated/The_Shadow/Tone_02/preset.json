@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Shadow",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 2992,
+      "brrLength": 1683,
+      "hasLoop": true,
+      "loopStartPcm": 2736,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 177,
+      "pitchRegister": 273
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "59c4ea575edd03bbb88a06d5fdf1faf164f9fc02a8abb3c5569eb2a088e9805c"
+          },
+          "loop": {
+            "start": 2736,
+            "end": 2992
+          }
+        }
+      ]
+    }
+  }
+}

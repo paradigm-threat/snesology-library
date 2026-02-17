@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Fute Trill",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Bomberman 4",
+    "snes": {
+      "srcn": 35,
+      "character": "melodic",
+      "pcmLength": 8496,
+      "brrLength": 4779,
+      "hasLoop": true,
+      "loopStartPcm": 3632,
+      "adsr1": 255,
+      "adsr2": 193,
+      "gain": 159,
+      "pitchRegister": 882
+    },
+    "communityName": "fute_trill",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "08335bba1a0dcc74e980e577a7033fc1cc1b36cbd614acfcfa203817f9840c10"
+          },
+          "loop": {
+            "start": 3632,
+            "end": 8496
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mario & Wario",
+    "snes": {
+      "srcn": 18,
+      "character": "melodic",
+      "pcmLength": 6128,
+      "brrLength": 3447,
+      "hasLoop": true,
+      "loopStartPcm": 3504
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2f68ad2762d982bd55e18e48e6fd60f7dfed208ac938aa5ab940725ad2a144fc"
+          },
+          "loop": {
+            "start": 3504,
+            "end": 6128
+          }
+        }
+      ]
+    }
+  }
+}

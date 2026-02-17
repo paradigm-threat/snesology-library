@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zan 3 Spirits",
+    "snes": {
+      "srcn": 46,
+      "character": "tone",
+      "pcmLength": 1040,
+      "brrLength": 585,
+      "hasLoop": true,
+      "loopStartPcm": 3152,
+      "adsr1": 255,
+      "adsr2": 206,
+      "gain": 184,
+      "pitchRegister": 2203
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "31c0b4e7e861f26c4235e5d45e739f626978a3d9d106672ee191f108abfc4b8b"
+          },
+          "loop": {
+            "start": 3152,
+            "end": 1040
+          }
+        }
+      ]
+    }
+  }
+}

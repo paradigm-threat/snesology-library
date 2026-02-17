@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Guitar Dist",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Back to the Future 2",
+    "snes": {
+      "srcn": 26,
+      "character": "melodic",
+      "pcmLength": 5696,
+      "brrLength": 3204,
+      "hasLoop": true,
+      "loopStartPcm": 4704,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 180,
+      "pitchRegister": 1468
+    },
+    "communityName": "guitar_dist",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "85ed22adf9b177a7b699747eb65f5676173a7a38d8176a920df19d24301ea2bf"
+          },
+          "loop": {
+            "start": 4704,
+            "end": 5696
+          }
+        }
+      ]
+    }
+  }
+}

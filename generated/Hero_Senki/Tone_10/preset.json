@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hero Senki",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 1264,
+      "brrLength": 711,
+      "hasLoop": true,
+      "loopStartPcm": 32
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8a02e8d12955cad6f4767c3fc885c79c5819026a412b8f250126e854952fe2dc"
+          },
+          "loop": {
+            "start": 32,
+            "end": 1264
+          }
+        }
+      ]
+    }
+  }
+}

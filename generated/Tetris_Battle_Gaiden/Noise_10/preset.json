@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tetris Battle Gaiden",
+    "snes": {
+      "srcn": 10,
+      "character": "noise",
+      "pcmLength": 10832,
+      "brrLength": 6093,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 15,
+      "gain": 158,
+      "pitchRegister": 4315
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "aad1c59695cdfdf2f6963ab1591d703737a07095e1797d2849e18c479f4c9a92"
+          }
+        }
+      ]
+    }
+  }
+}

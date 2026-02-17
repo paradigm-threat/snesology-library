@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Top Gear 2",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 6688,
+      "brrLength": 3762,
+      "hasLoop": true,
+      "loopStartPcm": 6352,
+      "adsr1": 159,
+      "adsr2": 242,
+      "gain": 127,
+      "pitchRegister": 4801
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bf3f0974997c86a206b06e63026998b2c4b2e6ff4c5b8e3d356735e9430fb9e6"
+          },
+          "loop": {
+            "start": 6352,
+            "end": 6688
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Watersplash",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Donkey Kong Country 2",
+    "snes": {
+      "srcn": 46,
+      "character": "melodic",
+      "pcmLength": 7072,
+      "brrLength": 3978,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 255,
+      "pitchRegister": 0
+    },
+    "communityName": "sfx_watersplash",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0494477ab83ed884f8cab4a006fbe65bfac2063db83f5836820187c628f1742d"
+          },
+          "loop": {
+            "start": 0,
+            "end": 7072
+          }
+        }
+      ]
+    }
+  }
+}

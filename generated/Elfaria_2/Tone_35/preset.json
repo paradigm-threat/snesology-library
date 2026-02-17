@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Elfaria 2",
+    "snes": {
+      "srcn": 35,
+      "character": "tone",
+      "pcmLength": 1264,
+      "brrLength": 711,
+      "hasLoop": true,
+      "loopStartPcm": 1200,
+      "adsr1": 0,
+      "adsr2": 170,
+      "gain": 159,
+      "pitchRegister": 263
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d7c6348642adf51e15d51817103bb568852c0b2d75c8939092811f7ca7d31e44"
+          },
+          "loop": {
+            "start": 1200,
+            "end": 1264
+          }
+        }
+      ]
+    }
+  }
+}

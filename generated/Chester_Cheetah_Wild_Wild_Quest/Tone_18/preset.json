@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Chester Cheetah Wild Wild Quest",
+    "snes": {
+      "srcn": 18,
+      "character": "tone",
+      "pcmLength": 912,
+      "brrLength": 513,
+      "hasLoop": true,
+      "loopStartPcm": 848,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 110,
+      "pitchRegister": 1348
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c7523a7bb859c8064e5ac5c3b06828e75f7ec43d0b9c8816991ffc8c3fe14c44"
+          },
+          "loop": {
+            "start": 848,
+            "end": 912
+          }
+        }
+      ]
+    }
+  }
+}

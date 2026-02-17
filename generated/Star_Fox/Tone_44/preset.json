@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Star Fox",
+    "snes": {
+      "srcn": 44,
+      "character": "tone",
+      "pcmLength": 3920,
+      "brrLength": 2205,
+      "hasLoop": true,
+      "loopStartPcm": 2000
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8edbaf3d12ac1737398908fe3168537f4094f4f8afe8c669f1d80f0e0f6bced4"
+          },
+          "loop": {
+            "start": 2000,
+            "end": 3920
+          }
+        }
+      ]
+    }
+  }
+}

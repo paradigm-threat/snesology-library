@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Der Langrisser",
+    "snes": {
+      "srcn": 75,
+      "character": "melodic",
+      "pcmLength": 5808,
+      "brrLength": 3267,
+      "hasLoop": true,
+      "loopStartPcm": 3888
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "05e737a5160ecfdc1c3e7c770c31b3e77020e19a842391138211231e60c7b085"
+          },
+          "loop": {
+            "start": 3888,
+            "end": 5808
+          }
+        }
+      ]
+    }
+  }
+}

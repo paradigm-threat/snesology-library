@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jim Lee's Wild C.A.T.S.",
+    "snes": {
+      "srcn": 30,
+      "character": "noise",
+      "pcmLength": 1696,
+      "brrLength": 954,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "815e6a7a42e53893f798cb12b7d93407c7cc23522dd273ed05a630e815e4ea2f"
+          }
+        }
+      ]
+    }
+  }
+}

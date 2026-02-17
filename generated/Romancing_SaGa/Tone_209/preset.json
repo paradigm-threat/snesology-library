@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Romancing SaGa",
+    "snes": {
+      "srcn": 209,
+      "character": "tone",
+      "pcmLength": 1520,
+      "brrLength": 855,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "15b05a6ce67bd3f94fb0d3eb965f5babc7f5504061f8dcc03d61eeb1ed71766c"
+          },
+          "loop": {
+            "start": 0,
+            "end": 1520
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Panflute",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kirby's Dream Land 3",
+    "snes": {
+      "srcn": 27,
+      "character": "tone",
+      "pcmLength": 2128,
+      "brrLength": 1197,
+      "hasLoop": true,
+      "loopStartPcm": 2080,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 4818
+    },
+    "communityName": "panflute",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c145998bd42b949aa3b12490407fa7900e438cd80f57e059347d58f580231660"
+          },
+          "loop": {
+            "start": 2080,
+            "end": 2128
+          }
+        }
+      ]
+    }
+  }
+}

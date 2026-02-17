@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Hat",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jeopardy!",
+    "snes": {
+      "srcn": 8,
+      "character": "noise",
+      "pcmLength": 1824,
+      "brrLength": 1026,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 239,
+      "gain": 191,
+      "pitchRegister": 2048
+    },
+    "communityName": "perc_hat",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "81f172f06b10a4d1e2a225eb05d984492117978c74df42d2e352e8db27f6f4b1"
+          }
+        }
+      ]
+    }
+  }
+}

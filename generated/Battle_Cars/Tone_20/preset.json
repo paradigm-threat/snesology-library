@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battle Cars",
+    "snes": {
+      "srcn": 20,
+      "character": "tone",
+      "pcmLength": 2928,
+      "brrLength": 1647,
+      "hasLoop": true,
+      "loopStartPcm": 1648,
+      "adsr1": 160,
+      "adsr2": 172,
+      "gain": 197,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c9dc8fefd7bf9a2cc2b7558b40583cf110e152cb150486c7a6a5233e147a94a2"
+          },
+          "loop": {
+            "start": 1648,
+            "end": 2928
+          }
+        }
+      ]
+    }
+  }
+}

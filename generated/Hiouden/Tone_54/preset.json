@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hiouden",
+    "snes": {
+      "srcn": 54,
+      "character": "tone",
+      "pcmLength": 3520,
+      "brrLength": 1980,
+      "hasLoop": true,
+      "loopStartPcm": 3504,
+      "adsr1": 223,
+      "adsr2": 241,
+      "gain": 184,
+      "pitchRegister": 802
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "88e7ae6e5cd58343bacc8a59321d4f5f93fa74592a8c60e3f55c50ffac504193"
+          },
+          "loop": {
+            "start": 3504,
+            "end": 3520
+          }
+        }
+      ]
+    }
+  }
+}

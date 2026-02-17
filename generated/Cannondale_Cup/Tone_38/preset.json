@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cannondale Cup",
+    "snes": {
+      "srcn": 38,
+      "character": "tone",
+      "pcmLength": 2400,
+      "brrLength": 1350,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0f63a9f5ea77e59898b0bbdd52af251714a1befd4ede442d3842a242a0a6bfb5"
+          },
+          "loop": {
+            "start": 0,
+            "end": 2400
+          }
+        }
+      ]
+    }
+  }
+}

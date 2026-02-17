@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gunple: Gunman's Proof",
+    "snes": {
+      "srcn": 29,
+      "character": "tone",
+      "pcmLength": 3968,
+      "brrLength": 2232,
+      "hasLoop": true,
+      "loopStartPcm": 1904,
+      "adsr1": 127,
+      "adsr2": 241,
+      "gain": 186,
+      "pitchRegister": 1149
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "31f11a4d82446e131f7cca08b57d98b4129da8b21286bcfd2335b26c8e8384ef"
+          },
+          "loop": {
+            "start": 1904,
+            "end": 3968
+          }
+        }
+      ]
+    }
+  }
+}

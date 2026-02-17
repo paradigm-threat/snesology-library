@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Albert Odyssey",
+    "snes": {
+      "srcn": 13,
+      "character": "tone",
+      "pcmLength": 1472,
+      "brrLength": 828,
+      "hasLoop": true,
+      "loopStartPcm": 1984
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1a6fe3dfb5cccd97793791ee5026679403f2f573b9c83b5135db175e64d7a612"
+          },
+          "loop": {
+            "start": 1984,
+            "end": 1472
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Simpsons: Bart's Nightmare",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 9024,
+      "brrLength": 5076,
+      "hasLoop": true,
+      "loopStartPcm": 672,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 130,
+      "pitchRegister": 512
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "406bdafd372e8621e73bd548d8f6d9422db94de6c6781c5df65289c5a14a4612"
+          },
+          "loop": {
+            "start": 672,
+            "end": 9024
+          }
+        }
+      ]
+    }
+  }
+}

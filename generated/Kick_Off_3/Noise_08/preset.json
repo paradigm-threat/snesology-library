@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kick Off 3",
+    "snes": {
+      "srcn": 8,
+      "character": "noise",
+      "pcmLength": 4512,
+      "brrLength": 2538,
+      "hasLoop": true,
+      "loopStartPcm": 2352,
+      "adsr1": 255,
+      "adsr2": 192,
+      "gain": 192,
+      "pitchRegister": 608
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0649b3dded5294a608f8e6b96e9462d7425497045a9640ff6530320d6672453d"
+          },
+          "loop": {
+            "start": 2352,
+            "end": 4512
+          }
+        }
+      ]
+    }
+  }
+}

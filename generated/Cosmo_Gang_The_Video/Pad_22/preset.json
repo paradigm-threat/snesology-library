@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cosmo Gang: The Video",
+    "snes": {
+      "srcn": 22,
+      "character": "melodic",
+      "pcmLength": 4208,
+      "brrLength": 2367,
+      "hasLoop": true,
+      "loopStartPcm": 1568,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 156,
+      "pitchRegister": 1685
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2ada07941ede0044af3b7463393608db00c64d2cc3cc7ce52927af8f43bfe13d"
+          },
+          "loop": {
+            "start": 1568,
+            "end": 4208
+          }
+        }
+      ]
+    }
+  }
+}

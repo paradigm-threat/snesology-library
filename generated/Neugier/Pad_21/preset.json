@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Neugier",
+    "snes": {
+      "srcn": 21,
+      "character": "melodic",
+      "pcmLength": 10256,
+      "brrLength": 5769,
+      "hasLoop": true,
+      "loopStartPcm": 3696
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "70e215ccb19d1de46aa3d46a04b48832747c31b2dad60a207242a48f4ffee7c1"
+          },
+          "loop": {
+            "start": 3696,
+            "end": 10256
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Illvanian no Shiro",
+    "snes": {
+      "srcn": 19,
+      "character": "tone",
+      "pcmLength": 352,
+      "brrLength": 198,
+      "hasLoop": true,
+      "loopStartPcm": 336,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 901
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c0996938c9e8469c465863c5873f15162b77232417b386b9805a601dcec744fb"
+          },
+          "loop": {
+            "start": 336,
+            "end": 352
+          }
+        }
+      ]
+    }
+  }
+}

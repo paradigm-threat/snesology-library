@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Power League",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 1648,
+      "brrLength": 927,
+      "hasLoop": true,
+      "loopStartPcm": 1344,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 64
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c855f053346911ed25840850c878fec4bf164f82ce68e901e6da86f161d3f0c8"
+          },
+          "loop": {
+            "start": 1344,
+            "end": 1648
+          }
+        }
+      ]
+    }
+  }
+}

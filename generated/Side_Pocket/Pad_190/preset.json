@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Side Pocket",
+    "snes": {
+      "srcn": 190,
+      "character": "melodic",
+      "pcmLength": 4032,
+      "brrLength": 2268,
+      "hasLoop": true,
+      "loopStartPcm": 944
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1b7ec91e0dcbf063a7245c8e746e6a1782183475c8eb74fca69594e2bed09aa3"
+          },
+          "loop": {
+            "start": 944,
+            "end": 4032
+          }
+        }
+      ]
+    }
+  }
+}

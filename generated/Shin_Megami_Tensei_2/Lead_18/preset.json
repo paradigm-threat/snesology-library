@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shin Megami Tensei 2",
+    "snes": {
+      "srcn": 18,
+      "character": "melodic",
+      "pcmLength": 12400,
+      "brrLength": 6975,
+      "hasLoop": true,
+      "loopStartPcm": 12240,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 159,
+      "pitchRegister": 4157
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b5cb2ffdac0b4e07e13f05f3b7ae5baf64a19817035433aa885cc97703e365a3"
+          },
+          "loop": {
+            "start": 12240,
+            "end": 12400
+          }
+        }
+      ]
+    }
+  }
+}

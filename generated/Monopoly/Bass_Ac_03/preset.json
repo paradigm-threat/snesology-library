@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Bass Ac",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Monopoly",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 1344,
+      "brrLength": 756,
+      "hasLoop": true,
+      "loopStartPcm": 1216,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 124,
+      "pitchRegister": 2259
+    },
+    "communityName": "bass_ac",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "62fe1e6ea904ffd2c1a4753ab585c4a8cfc838fa4b4523204486cfe9a746c89a"
+          },
+          "loop": {
+            "start": 1216,
+            "end": 1344
+          }
+        }
+      ]
+    }
+  }
+}

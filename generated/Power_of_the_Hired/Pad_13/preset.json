@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Power of the Hired",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 14096,
+      "brrLength": 7929,
+      "hasLoop": true,
+      "loopStartPcm": 3872
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2f7bacde66c6ae1b0febd4b911bbe4e7d63a5d93f6294ef2130df5be42619705"
+          },
+          "loop": {
+            "start": 3872,
+            "end": 14096
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Best of the Best: Championship K",
+    "snes": {
+      "srcn": 180,
+      "character": "noise",
+      "pcmLength": 5056,
+      "brrLength": 2844,
+      "hasLoop": true,
+      "loopStartPcm": 48272
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8c38e78bfdb1ba1d8d1e430fafb227eceab970619f7ef4ee410bd66a791d89f7"
+          },
+          "loop": {
+            "start": 48272,
+            "end": 5056
+          }
+        }
+      ]
+    }
+  }
+}

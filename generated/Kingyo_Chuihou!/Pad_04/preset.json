@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kingyo Chuihou!",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 6976,
+      "brrLength": 3924,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 248,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2128
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4232645a8ed5095302be2388052f46960a60bd77aec0ee75c66c802941e83552"
+          },
+          "loop": {
+            "start": 16,
+            "end": 6976
+          }
+        }
+      ]
+    }
+  }
+}

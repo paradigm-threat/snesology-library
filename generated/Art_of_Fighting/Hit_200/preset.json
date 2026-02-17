@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Art of Fighting",
+    "snes": {
+      "srcn": 200,
+      "character": "one-shot",
+      "pcmLength": 1904,
+      "brrLength": 1071,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7a10e10cd5ed3e3ea2e0bd7ef1b02f8899b08fe6d23ed4aa5f12db2b37cc59cf"
+          }
+        }
+      ]
+    }
+  }
+}

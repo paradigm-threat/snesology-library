@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dark Law - Meaning of Death",
+    "snes": {
+      "srcn": 20,
+      "character": "tone",
+      "pcmLength": 2080,
+      "brrLength": 1170,
+      "hasLoop": true,
+      "loopStartPcm": 1744,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 77,
+      "pitchRegister": 542
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d9577e08f23d2680774a92a40f4f0e9f975c6709e60122b2f03e146f431a7b45"
+          },
+          "loop": {
+            "start": 1744,
+            "end": 2080
+          }
+        }
+      ]
+    }
+  }
+}

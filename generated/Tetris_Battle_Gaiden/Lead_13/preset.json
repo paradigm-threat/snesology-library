@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tetris Battle Gaiden",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 14080,
+      "brrLength": 7920,
+      "hasLoop": true,
+      "loopStartPcm": 13984,
+      "adsr1": 0,
+      "adsr2": 172,
+      "gain": 158,
+      "pitchRegister": 1426
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ff57d7fb81dc240ee261b713e883426294f5f61d3265cd367eb325f61b4305d7"
+          },
+          "loop": {
+            "start": 13984,
+            "end": 14080
+          }
+        }
+      ]
+    }
+  }
+}

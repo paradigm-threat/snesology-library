@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Izzy's Quest for the Olympic Rin",
+    "snes": {
+      "srcn": 25,
+      "character": "tone",
+      "pcmLength": 576,
+      "brrLength": 324,
+      "hasLoop": true,
+      "loopStartPcm": 560
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2ab66dfb88a9f000b95cf8b731b5bbf02e0d3f74857ae6bd1dcc710f1f8ac072"
+          },
+          "loop": {
+            "start": 560,
+            "end": 576
+          }
+        }
+      ]
+    }
+  }
+}

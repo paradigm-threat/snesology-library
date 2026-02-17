@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Maka Maka",
+    "snes": {
+      "srcn": 0,
+      "character": "tone",
+      "pcmLength": 1648,
+      "brrLength": 927,
+      "hasLoop": true,
+      "loopStartPcm": 1584,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 909
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4e54f6c35fa51a63d3a1d4473aef3df76406095dc41f4106d88ed48f0fae4143"
+          },
+          "loop": {
+            "start": 1584,
+            "end": 1648
+          }
+        }
+      ]
+    }
+  }
+}

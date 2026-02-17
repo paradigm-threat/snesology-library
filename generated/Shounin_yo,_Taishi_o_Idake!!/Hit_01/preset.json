@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shounin yo, Taishi o Idake!!",
+    "snes": {
+      "srcn": 1,
+      "character": "one-shot",
+      "pcmLength": 1312,
+      "brrLength": 738,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 239,
+      "gain": 0,
+      "pitchRegister": 1812
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "96ff6c4f31e54b172956c6a7051a9a4fb6d0fb5317f5963690ba9138bf6506e8"
+          }
+        }
+      ]
+    }
+  }
+}

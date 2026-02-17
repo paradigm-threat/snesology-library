@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mazinger Z",
+    "snes": {
+      "srcn": 8,
+      "character": "noise",
+      "pcmLength": 7616,
+      "brrLength": 4284,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 240,
+      "gain": 0,
+      "pitchRegister": 2048
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e38019a2d59d73eb5aa556eed2764a4b168a6bcfa613164c6c01c9556980160d"
+          }
+        }
+      ]
+    }
+  }
+}

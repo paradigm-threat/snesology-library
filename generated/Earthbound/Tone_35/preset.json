@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earthbound",
+    "snes": {
+      "srcn": 35,
+      "character": "tone",
+      "pcmLength": 1408,
+      "brrLength": 792,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7069dda6d9aedac77d4e4b8825ad0e6bdf3ad519b22b1d7ea322159314bfce52"
+          },
+          "loop": {
+            "start": 48,
+            "end": 1408
+          }
+        }
+      ]
+    }
+  }
+}

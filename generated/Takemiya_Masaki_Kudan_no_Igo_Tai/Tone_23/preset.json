@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Takemiya Masaki Kudan no Igo Tai",
+    "snes": {
+      "srcn": 23,
+      "character": "tone",
+      "pcmLength": 1632,
+      "brrLength": 918,
+      "hasLoop": true,
+      "loopStartPcm": 1584,
+      "adsr1": 255,
+      "adsr2": 244,
+      "gain": 184,
+      "pitchRegister": 2151
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "aff4f21c4f42cfd94fd58ef92a780b0c9c9cd89812209c8d5abc29cf794eb4ca"
+          },
+          "loop": {
+            "start": 1584,
+            "end": 1632
+          }
+        }
+      ]
+    }
+  }
+}

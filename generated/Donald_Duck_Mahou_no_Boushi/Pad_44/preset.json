@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Donald Duck: Mahou no Boushi",
+    "snes": {
+      "srcn": 44,
+      "character": "melodic",
+      "pcmLength": 4944,
+      "brrLength": 2781,
+      "hasLoop": true,
+      "loopStartPcm": 64
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fc5f22654d0491aa6ab10c8476c58c17749c0f7cd7eb590b2ad86a2a4c5be0bc"
+          },
+          "loop": {
+            "start": 64,
+            "end": 4944
+          }
+        }
+      ]
+    }
+  }
+}

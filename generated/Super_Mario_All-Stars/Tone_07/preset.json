@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Mario All-Stars",
+    "snes": {
+      "srcn": 7,
+      "character": "tone",
+      "pcmLength": 992,
+      "brrLength": 558,
+      "hasLoop": true,
+      "loopStartPcm": 512,
+      "adsr1": 174,
+      "adsr2": 38,
+      "gain": 184,
+      "pitchRegister": 6735
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2a9e2af8d613a582ed48deb96a572a2d334779520d00b710ceb3e23b4579ed0e"
+          },
+          "loop": {
+            "start": 512,
+            "end": 992
+          }
+        }
+      ]
+    }
+  }
+}

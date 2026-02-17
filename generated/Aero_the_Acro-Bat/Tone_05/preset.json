@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Aero the Acro-Bat",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 3024,
+      "brrLength": 1701,
+      "hasLoop": true,
+      "loopStartPcm": 944,
+      "adsr1": 255,
+      "adsr2": 239,
+      "gain": 159,
+      "pitchRegister": 979
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9c924db6829441325c9ea812cf782de24987e69680e6f8da9734d08db1abec20"
+          },
+          "loop": {
+            "start": 944,
+            "end": 3024
+          }
+        }
+      ]
+    }
+  }
+}

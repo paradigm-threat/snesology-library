@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Brass Synth",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cool Spot",
+    "snes": {
+      "srcn": 22,
+      "character": "melodic",
+      "pcmLength": 7856,
+      "brrLength": 4419,
+      "hasLoop": true,
+      "loopStartPcm": 5728,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2587
+    },
+    "communityName": "brass_synth",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c3283803054e49a726f8a20f98d56deb205c5e061d416e55796f8bf94f54f558"
+          },
+          "loop": {
+            "start": 5728,
+            "end": 7856
+          }
+        }
+      ]
+    }
+  }
+}

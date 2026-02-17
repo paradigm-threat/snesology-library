@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Crystal Beans",
+    "snes": {
+      "srcn": 68,
+      "character": "tone",
+      "pcmLength": 2448,
+      "brrLength": 1377,
+      "hasLoop": true,
+      "loopStartPcm": 88752
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1f4b58fa6a3916911606939551eaf73c441b4d30c1abcb49c0ef62aa28ee6a21"
+          },
+          "loop": {
+            "start": 88752,
+            "end": 2448
+          }
+        }
+      ]
+    }
+  }
+}

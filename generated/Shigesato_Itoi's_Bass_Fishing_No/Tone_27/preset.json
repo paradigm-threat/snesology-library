@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shigesato Itoi's Bass Fishing No",
+    "snes": {
+      "srcn": 27,
+      "character": "tone",
+      "pcmLength": 2064,
+      "brrLength": 1161,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0d2e632d9150a7446c6eef6198057cbf06709ee693fc57b2befc9b88316ac983"
+          },
+          "loop": {
+            "start": 48,
+            "end": 2064
+          }
+        }
+      ]
+    }
+  }
+}

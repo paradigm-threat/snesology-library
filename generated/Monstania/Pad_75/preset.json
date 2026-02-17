@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Monstania",
+    "snes": {
+      "srcn": 75,
+      "character": "melodic",
+      "pcmLength": 4016,
+      "brrLength": 2259,
+      "hasLoop": true,
+      "loopStartPcm": 352,
+      "adsr1": 158,
+      "adsr2": 238,
+      "gain": 0,
+      "pitchRegister": 1024
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d498f420951fa24c3c4eda845f41cea4e4f2e0ffa6e8bc521fb53127e8ce4b35"
+          },
+          "loop": {
+            "start": 352,
+            "end": 4016
+          }
+        }
+      ]
+    }
+  }
+}

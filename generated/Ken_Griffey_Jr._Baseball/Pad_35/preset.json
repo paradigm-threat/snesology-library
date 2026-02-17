@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ken Griffey Jr. Baseball",
+    "snes": {
+      "srcn": 35,
+      "character": "melodic",
+      "pcmLength": 11936,
+      "brrLength": 6714,
+      "hasLoop": true,
+      "loopStartPcm": 2336,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 100,
+      "pitchRegister": 683
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "72bc47fb1d0eb4e12720ad662b6eeebfd6bab1c34fcfaa95cfe6889a5a4786ec"
+          },
+          "loop": {
+            "start": 2336,
+            "end": 11936
+          }
+        }
+      ]
+    }
+  }
+}

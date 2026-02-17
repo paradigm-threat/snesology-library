@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "N-Warp Daisakusen",
+    "snes": {
+      "srcn": 6,
+      "character": "tone",
+      "pcmLength": 448,
+      "brrLength": 252,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 254,
+      "pitchRegister": 1909
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "268a079df4e4e3000545fedf5428d736c55182d004d15eb297b8741e1a0adff8"
+          },
+          "loop": {
+            "start": 0,
+            "end": 448
+          }
+        }
+      ]
+    }
+  }
+}

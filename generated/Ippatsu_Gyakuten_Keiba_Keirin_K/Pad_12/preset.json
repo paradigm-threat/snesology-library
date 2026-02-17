@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ippatsu Gyakuten: Keiba Keirin K",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 10288,
+      "brrLength": 5787,
+      "hasLoop": true,
+      "loopStartPcm": 336
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a30d3f1570bc3c7ad37c0e740306abbc215d55ff6a85e5ead5cf4ec6952b2534"
+          },
+          "loop": {
+            "start": 336,
+            "end": 10288
+          }
+        }
+      ]
+    }
+  }
+}

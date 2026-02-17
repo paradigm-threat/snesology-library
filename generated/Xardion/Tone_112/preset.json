@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Xardion",
+    "snes": {
+      "srcn": 112,
+      "character": "tone",
+      "pcmLength": 704,
+      "brrLength": 396,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9592c90ab5a3836c8acc1708e0febd40aafdc7d6aa8e6e52e1e6a4be3c0670fe"
+          },
+          "loop": {
+            "start": 0,
+            "end": 704
+          }
+        }
+      ]
+    }
+  }
+}

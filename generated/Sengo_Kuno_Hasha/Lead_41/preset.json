@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sengo Kuno Hasha",
+    "snes": {
+      "srcn": 41,
+      "character": "melodic",
+      "pcmLength": 13760,
+      "brrLength": 7740,
+      "hasLoop": true,
+      "loopStartPcm": 12896,
+      "adsr1": 175,
+      "adsr2": 110,
+      "gain": 0,
+      "pitchRegister": 5467
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "36ea8a6c9c2cebe514329982c3c93ca3897b2b6b9717f94008f74974421fb3d9"
+          },
+          "loop": {
+            "start": 12896,
+            "end": 13760
+          }
+        }
+      ]
+    }
+  }
+}

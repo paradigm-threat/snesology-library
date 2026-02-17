@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Clapping",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Vegas Stakes",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 7248,
+      "brrLength": 4077,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    },
+    "communityName": "sfx_clapping",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "77c7c5b6c8f2776af866e7fa832d9d2c8d715f081df18860bf660d7b47a0d2e0"
+          },
+          "loop": {
+            "start": 16,
+            "end": 7248
+          }
+        }
+      ]
+    }
+  }
+}

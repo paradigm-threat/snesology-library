@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Nobunaga no Yabou Haouden",
+    "snes": {
+      "srcn": 32,
+      "character": "melodic",
+      "pcmLength": 9184,
+      "brrLength": 5166,
+      "hasLoop": true,
+      "loopStartPcm": 58208
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "94191b205b2fb1c2b7a1cfaafa7f2e73c0cf5c6f19e039ec19c9fd6f1d02110e"
+          },
+          "loop": {
+            "start": 58208,
+            "end": 9184
+          }
+        }
+      ]
+    }
+  }
+}

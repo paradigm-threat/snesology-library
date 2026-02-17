@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kishin Douji Zenki",
+    "snes": {
+      "srcn": 15,
+      "character": "tone",
+      "pcmLength": 592,
+      "brrLength": 333,
+      "hasLoop": true,
+      "loopStartPcm": 688
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2622e72c9e674b7855164ff636f679e0791231eaaa92e28bcd7f2c229ce82d90"
+          },
+          "loop": {
+            "start": 688,
+            "end": 592
+          }
+        }
+      ]
+    }
+  }
+}

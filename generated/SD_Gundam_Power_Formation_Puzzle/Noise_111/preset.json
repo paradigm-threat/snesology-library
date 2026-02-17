@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "SD Gundam Power Formation Puzzle",
+    "snes": {
+      "srcn": 111,
+      "character": "noise",
+      "pcmLength": 4096,
+      "brrLength": 2304,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "082d4409def62b752f065fa2d5109b2d8bcc5bbb14308dde17dffead4a35be7c"
+          }
+        }
+      ]
+    }
+  }
+}

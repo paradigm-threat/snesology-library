@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ippatsu Gyakuten: Keiba Keirin K",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 240,
+      "brrLength": 135,
+      "hasLoop": true,
+      "loopStartPcm": 128,
+      "adsr1": 244,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1090
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c13fe5180e9353f7245c69f2470bf87d17c2988dacbd32b98b0086aff9ddc09b"
+          },
+          "loop": {
+            "start": 128,
+            "end": 240
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Toy Story",
+    "snes": {
+      "srcn": 4,
+      "character": "tone",
+      "pcmLength": 2192,
+      "brrLength": 1233,
+      "hasLoop": true,
+      "loopStartPcm": 1936,
+      "adsr1": 255,
+      "adsr2": 241,
+      "gain": 160,
+      "pitchRegister": 1599
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4c19ad541c4834ab5e1187bf73a26fdccaaf8ed1b5e8f2d20544d2838f24996e"
+          },
+          "loop": {
+            "start": 1936,
+            "end": 2192
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zero 4 Champ RR",
+    "snes": {
+      "srcn": 131,
+      "character": "melodic",
+      "pcmLength": 14352,
+      "brrLength": 8073,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "03a3e66cc11103eaacf7dbc31eb81fd0222a41ca07388386271380d03de21497"
+          },
+          "loop": {
+            "start": 16,
+            "end": 14352
+          }
+        }
+      ]
+    }
+  }
+}

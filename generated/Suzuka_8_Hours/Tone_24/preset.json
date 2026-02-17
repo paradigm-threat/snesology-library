@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Suzuka 8 Hours",
+    "snes": {
+      "srcn": 24,
+      "character": "tone",
+      "pcmLength": 1824,
+      "brrLength": 1026,
+      "hasLoop": true,
+      "loopStartPcm": 1536,
+      "adsr1": 255,
+      "adsr2": 228,
+      "gain": 0,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "86f76785020116134668cea26b0c7c926a65d393da1e746e37cea539cab3b3e8"
+          },
+          "loop": {
+            "start": 1536,
+            "end": 1824
+          }
+        }
+      ]
+    }
+  }
+}

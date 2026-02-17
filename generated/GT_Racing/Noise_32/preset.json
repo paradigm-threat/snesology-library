@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "GT Racing",
+    "snes": {
+      "srcn": 32,
+      "character": "noise",
+      "pcmLength": 10496,
+      "brrLength": 5904,
+      "hasLoop": true,
+      "loopStartPcm": 3216,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 673
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7cf6f1e12f337b4e8fd4b97c17135bbbd8b3069a2851de9ee9ac28b2f87df273"
+          },
+          "loop": {
+            "start": 3216,
+            "end": 10496
+          }
+        }
+      ]
+    }
+  }
+}

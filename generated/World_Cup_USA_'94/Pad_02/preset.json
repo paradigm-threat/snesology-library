@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "World Cup USA '94",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 11936,
+      "brrLength": 6714,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 2,
+      "pitchRegister": 2388
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9bf4fac36fe707b8f86b659b16372eae3d6f82f24101b494aec328ac72902c7e"
+          },
+          "loop": {
+            "start": 0,
+            "end": 11936
+          }
+        }
+      ]
+    }
+  }
+}

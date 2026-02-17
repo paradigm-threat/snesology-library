@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fight da Pon!",
+    "snes": {
+      "srcn": 2,
+      "character": "noise",
+      "pcmLength": 1120,
+      "brrLength": 630,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 238,
+      "gain": 184,
+      "pitchRegister": 3600
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "362c79bbc63b8f62aeef23233a52b39bbd7af15244d92a02d2ef649478e4f26a"
+          }
+        }
+      ]
+    }
+  }
+}

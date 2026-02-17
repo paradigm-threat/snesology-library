@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Godzilla",
+    "snes": {
+      "srcn": 11,
+      "character": "tone",
+      "pcmLength": 1248,
+      "brrLength": 702,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "86fe456860dc53c4a79d429be714e28761503e2fb09a38f0675cde05acb1c60b"
+          },
+          "loop": {
+            "start": 0,
+            "end": 1248
+          }
+        }
+      ]
+    }
+  }
+}

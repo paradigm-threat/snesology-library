@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Liberty or Death",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 3600,
+      "brrLength": 2025,
+      "hasLoop": true,
+      "loopStartPcm": 3552,
+      "adsr1": 0,
+      "adsr2": 176,
+      "gain": 158,
+      "pitchRegister": 2298
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a781bf2d4015491c395d190f728ca5fa672287f1a33bc9a0a0660fa58c4534e2"
+          },
+          "loop": {
+            "start": 3552,
+            "end": 3600
+          }
+        }
+      ]
+    }
+  }
+}

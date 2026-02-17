@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tsuyoshi Shikkarishinasai Taisen",
+    "snes": {
+      "srcn": 47,
+      "character": "melodic",
+      "pcmLength": 4480,
+      "brrLength": 2520,
+      "hasLoop": true,
+      "loopStartPcm": 2448,
+      "adsr1": 140,
+      "adsr2": 214,
+      "gain": 0,
+      "pitchRegister": 1274
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3f1c26ada7ffabab37eb5a2e1724ff8eb4e46ffd857b0d06ec7a9463224b5f8d"
+          },
+          "loop": {
+            "start": 2448,
+            "end": 4480
+          }
+        }
+      ]
+    }
+  }
+}

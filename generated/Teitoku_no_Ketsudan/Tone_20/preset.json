@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Teitoku no Ketsudan",
+    "snes": {
+      "srcn": 20,
+      "character": "tone",
+      "pcmLength": 1680,
+      "brrLength": 945,
+      "hasLoop": true,
+      "loopStartPcm": 1584
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d4a044c8840129ed0d9dc3ab63f1bd6bb9e79539a70c486623bcd7d86ba884f6"
+          },
+          "loop": {
+            "start": 1584,
+            "end": 1680
+          }
+        }
+      ]
+    }
+  }
+}

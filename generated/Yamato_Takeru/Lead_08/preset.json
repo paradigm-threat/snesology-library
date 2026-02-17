@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Yamato Takeru",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 4752,
+      "brrLength": 2673,
+      "hasLoop": true,
+      "loopStartPcm": 3696
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "77339bd26a54f8a87a847943d3572d41685b1cc05a820483a2832bc26b39cd48"
+          },
+          "loop": {
+            "start": 3696,
+            "end": 4752
+          }
+        }
+      ]
+    }
+  }
+}

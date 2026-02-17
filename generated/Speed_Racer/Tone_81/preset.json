@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Speed Racer",
+    "snes": {
+      "srcn": 81,
+      "character": "tone",
+      "pcmLength": 3616,
+      "brrLength": 2034,
+      "hasLoop": true,
+      "loopStartPcm": 2016
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ae2189eff08551902da0c95d584affa4c8fb17305c4d2768c64fd1e1b3ec9b3c"
+          },
+          "loop": {
+            "start": 2016,
+            "end": 3616
+          }
+        }
+      ]
+    }
+  }
+}

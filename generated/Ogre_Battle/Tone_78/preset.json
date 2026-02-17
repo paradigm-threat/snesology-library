@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ogre Battle",
+    "snes": {
+      "srcn": 78,
+      "character": "tone",
+      "pcmLength": 864,
+      "brrLength": 486,
+      "hasLoop": true,
+      "loopStartPcm": 32
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fa295c7cbc3b22b93462294ce0009278b678f8cb94d434c34f5d17f61ac4e0d1"
+          },
+          "loop": {
+            "start": 32,
+            "end": 864
+          }
+        }
+      ]
+    }
+  }
+}

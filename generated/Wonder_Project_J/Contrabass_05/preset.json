@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Contrabass",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wonder Project J",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 9104,
+      "brrLength": 5121,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 253,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1070
+    },
+    "communityName": "contrabass",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5fd1c7997c161ec07a811ae561262c1d1159fcd3b9a859e3316b8c049ee8640f"
+          },
+          "loop": {
+            "start": 16,
+            "end": 9104
+          }
+        }
+      ]
+    }
+  }
+}

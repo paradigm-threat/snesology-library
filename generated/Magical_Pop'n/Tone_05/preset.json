@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Magical Pop'n",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 496,
+      "brrLength": 279,
+      "hasLoop": true,
+      "loopStartPcm": 432,
+      "adsr1": 204,
+      "adsr2": 160,
+      "gain": 0,
+      "pitchRegister": 3649
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3169e6f8413fa63055db6419d30fc59347158fd71ce1d7a08aa4d8ab4d670ddb"
+          },
+          "loop": {
+            "start": 432,
+            "end": 496
+          }
+        }
+      ]
+    }
+  }
+}

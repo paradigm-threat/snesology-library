@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tiny Toon Adventures: Buster Bus",
+    "snes": {
+      "srcn": 18,
+      "character": "one-shot",
+      "pcmLength": 11584,
+      "brrLength": 6516,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 208,
+      "gain": 184,
+      "pitchRegister": 3857
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a5c9a8893773a3ecb16a08f8690e3fe3b7197aa78e78478a8a7ee9084cd015c4"
+          }
+        }
+      ]
+    }
+  }
+}

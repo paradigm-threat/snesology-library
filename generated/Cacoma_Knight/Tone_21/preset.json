@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cacoma Knight",
+    "snes": {
+      "srcn": 21,
+      "character": "tone",
+      "pcmLength": 1536,
+      "brrLength": 864,
+      "hasLoop": true,
+      "loopStartPcm": 1488,
+      "adsr1": 175,
+      "adsr2": 97,
+      "gain": 186,
+      "pitchRegister": 6808
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f74fcd22ddcb5e0b5bef5c6a55fd8146f91ab4eba7fe016b752dbbcc48c3f9d8"
+          },
+          "loop": {
+            "start": 1488,
+            "end": 1536
+          }
+        }
+      ]
+    }
+  }
+}

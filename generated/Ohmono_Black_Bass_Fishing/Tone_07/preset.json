@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ohmono Black Bass Fishing",
+    "snes": {
+      "srcn": 7,
+      "character": "tone",
+      "pcmLength": 1808,
+      "brrLength": 1017,
+      "hasLoop": true,
+      "loopStartPcm": 1696,
+      "adsr1": 255,
+      "adsr2": 232,
+      "gain": 184,
+      "pitchRegister": 3538
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f87ecd3f56ba198f772fee732a373e16f1d1733ebc217fce62d257afa1a2e4ba"
+          },
+          "loop": {
+            "start": 1696,
+            "end": 1808
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Heracles no Eikou IV",
+    "snes": {
+      "srcn": 7,
+      "character": "tone",
+      "pcmLength": 2144,
+      "brrLength": 1206,
+      "hasLoop": true,
+      "loopStartPcm": 2096
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "76bbc1f38b584feb75edb68c57f2814132f2accecba0f322cc363a1dd27a27fc"
+          },
+          "loop": {
+            "start": 2096,
+            "end": 2144
+          }
+        }
+      ]
+    }
+  }
+}

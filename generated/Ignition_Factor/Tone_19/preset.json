@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ignition Factor",
+    "snes": {
+      "srcn": 19,
+      "character": "tone",
+      "pcmLength": 2368,
+      "brrLength": 1332,
+      "hasLoop": true,
+      "loopStartPcm": 1440
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c1468e0b8e414932bfab7627ce4f4d1d9dea5fbcc55b4b2496365b4ddef6aa21"
+          },
+          "loop": {
+            "start": 1440,
+            "end": 2368
+          }
+        }
+      ]
+    }
+  }
+}

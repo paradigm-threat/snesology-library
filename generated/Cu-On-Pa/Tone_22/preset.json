@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cu-On-Pa",
+    "snes": {
+      "srcn": 22,
+      "character": "tone",
+      "pcmLength": 3168,
+      "brrLength": 1782,
+      "hasLoop": true,
+      "loopStartPcm": 4800
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e3b55db687260466e5a53da72c44c54adb8a3009e69527f7df74418cd39d7919"
+          },
+          "loop": {
+            "start": 4800,
+            "end": 3168
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gambler Jiko Chuushinha 2: Dorap",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 1408,
+      "brrLength": 792,
+      "hasLoop": true,
+      "loopStartPcm": 1376
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "617f0c4da70eaa9c5bad0d2ed3b66d2b30f39c7cddba25dcca739a0db214c211"
+          },
+          "loop": {
+            "start": 1376,
+            "end": 1408
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Timon and Pumbaa's Jungle Games",
+    "snes": {
+      "srcn": 43,
+      "character": "noise",
+      "pcmLength": 2848,
+      "brrLength": 1602,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c30aefbaf5279f877a18801e24b69d685d6ac6bda0a215d7ed0ffba1497186cc"
+          }
+        }
+      ]
+    }
+  }
+}

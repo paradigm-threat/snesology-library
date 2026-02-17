@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Aoki Densetsu Shoot!",
+    "snes": {
+      "srcn": 25,
+      "character": "noise",
+      "pcmLength": 17600,
+      "brrLength": 9900,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c2094fa4a5a107ef520a9eeb4adf8b8c71d03f64f7d20bf0c12701d526df5cec"
+          }
+        }
+      ]
+    }
+  }
+}

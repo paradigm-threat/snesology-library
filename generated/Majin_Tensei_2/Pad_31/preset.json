@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Majin Tensei 2",
+    "snes": {
+      "srcn": 31,
+      "character": "melodic",
+      "pcmLength": 6624,
+      "brrLength": 3726,
+      "hasLoop": true,
+      "loopStartPcm": 3936
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8562f733c06933c0b0050b92554e5462b7e6eddaa665785633a5173c70c81b69"
+          },
+          "loop": {
+            "start": 3936,
+            "end": 6624
+          }
+        }
+      ]
+    }
+  }
+}

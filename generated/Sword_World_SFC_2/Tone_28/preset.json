@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sword World SFC 2",
+    "snes": {
+      "srcn": 28,
+      "character": "tone",
+      "pcmLength": 1264,
+      "brrLength": 711,
+      "hasLoop": true,
+      "loopStartPcm": 1280
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "55315d7e67a0f0a436af41169d31731d0075491b1485130423abf59691fc7f96"
+          },
+          "loop": {
+            "start": 1280,
+            "end": 1264
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ardy Lightfoot",
+    "snes": {
+      "srcn": 20,
+      "character": "one-shot",
+      "pcmLength": 1472,
+      "brrLength": 828,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 172,
+      "gain": 159,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fe3cdf71ace485588452d8e3784dfc90fdef3030fad36805da92d442e8c047a4"
+          }
+        }
+      ]
+    }
+  }
+}

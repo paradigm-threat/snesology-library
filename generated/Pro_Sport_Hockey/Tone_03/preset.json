@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pro Sport Hockey",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 3216,
+      "brrLength": 1809,
+      "hasLoop": true,
+      "loopStartPcm": 3072,
+      "adsr1": 143,
+      "adsr2": 238,
+      "gain": 184,
+      "pitchRegister": 1197
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "db1563093b9734fdd469c6cbb78a9a0fc39e9d5821d83bf8e9eb471d20fa6568"
+          },
+          "loop": {
+            "start": 3072,
+            "end": 3216
+          }
+        }
+      ]
+    }
+  }
+}

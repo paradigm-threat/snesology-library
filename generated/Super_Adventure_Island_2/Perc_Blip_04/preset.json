@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Blip",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Adventure Island 2",
+    "snes": {
+      "srcn": 4,
+      "character": "one-shot",
+      "pcmLength": 2400,
+      "brrLength": 1350,
+      "hasLoop": false,
+      "adsr1": 254,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 3850
+    },
+    "communityName": "perc_blip",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a3951cd14f25d3aa4e610ce873777b4dfef607f41b251119d2b4b876e8864225"
+          }
+        }
+      ]
+    }
+  }
+}

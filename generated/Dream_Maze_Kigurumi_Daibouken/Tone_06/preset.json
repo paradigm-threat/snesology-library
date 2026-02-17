@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dream Maze: Kigurumi Daibouken",
+    "snes": {
+      "srcn": 6,
+      "character": "tone",
+      "pcmLength": 128,
+      "brrLength": 72,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 143,
+      "adsr2": 238,
+      "gain": 184,
+      "pitchRegister": 1869
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "641e6c6c97d43a30ac9b89995a393cde8371c593a729b1f046c45c852dc37576"
+          },
+          "loop": {
+            "start": 16,
+            "end": 128
+          }
+        }
+      ]
+    }
+  }
+}

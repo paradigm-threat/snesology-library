@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Ep2",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Contra III: The Alien Wars",
+    "snes": {
+      "srcn": 22,
+      "character": "melodic",
+      "pcmLength": 4016,
+      "brrLength": 2259,
+      "hasLoop": true,
+      "loopStartPcm": 3984,
+      "adsr1": 142,
+      "adsr2": 204,
+      "gain": 184,
+      "pitchRegister": 285
+    },
+    "communityName": "EP2",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e1330d303d47f834f593939c0e80b467e7e77f148dc3d0d6a5c2ba07d475910a"
+          },
+          "loop": {
+            "start": 3984,
+            "end": 4016
+          }
+        }
+      ]
+    }
+  }
+}

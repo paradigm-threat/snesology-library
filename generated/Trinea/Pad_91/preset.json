@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Trinea",
+    "snes": {
+      "srcn": 91,
+      "character": "melodic",
+      "pcmLength": 10208,
+      "brrLength": 5742,
+      "hasLoop": true,
+      "loopStartPcm": 7184
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c7c4e620bd72f88679cc7fb8363647c7c172fbf25ad176c50f350423de309f3c"
+          },
+          "loop": {
+            "start": 7184,
+            "end": 10208
+          }
+        }
+      ]
+    }
+  }
+}

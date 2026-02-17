@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sansara Naga 2",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 8800,
+      "brrLength": 4950,
+      "hasLoop": true,
+      "loopStartPcm": 8768,
+      "adsr1": 255,
+      "adsr2": 239,
+      "gain": 184,
+      "pitchRegister": 450
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e7b9458b19347a807f1d708183616e6d293a48ec553a3dea08fd0a3dc30f4440"
+          },
+          "loop": {
+            "start": 8768,
+            "end": 8800
+          }
+        }
+      ]
+    }
+  }
+}

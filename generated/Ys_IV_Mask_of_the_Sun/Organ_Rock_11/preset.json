@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Organ Rock",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ys IV: Mask of the Sun",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 7264,
+      "brrLength": 4086,
+      "hasLoop": true,
+      "loopStartPcm": 1104,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 4788
+    },
+    "communityName": "organ_rock",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c2e22daf96e65349327470d17ee79aa2eb80a0e6fedc6affe9dc5a7a63dfe67e"
+          },
+          "loop": {
+            "start": 1104,
+            "end": 7264
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Electric",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earthbound",
+    "snes": {
+      "srcn": 26,
+      "character": "noise",
+      "pcmLength": 17824,
+      "brrLength": 10026,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    },
+    "communityName": "sfx_electric",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6c828ab07e000fb61d173425b603e7dd63050fd5202b9dae96be554dd5d97916"
+          },
+          "loop": {
+            "start": 48,
+            "end": 17824
+          }
+        }
+      ]
+    }
+  }
+}

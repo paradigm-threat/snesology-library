@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Valis IV",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 4416,
+      "brrLength": 2484,
+      "hasLoop": true,
+      "loopStartPcm": 4272,
+      "adsr1": 255,
+      "adsr2": 243,
+      "gain": 184,
+      "pitchRegister": 3190
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "24824e6fabc96a9b2338f0f50b6e35033a657665e9cda0a6c098563065e9498d"
+          },
+          "loop": {
+            "start": 4272,
+            "end": 4416
+          }
+        }
+      ]
+    }
+  }
+}

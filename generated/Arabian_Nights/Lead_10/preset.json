@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Arabian Nights",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 10096,
+      "brrLength": 5679,
+      "hasLoop": true,
+      "loopStartPcm": 8608,
+      "adsr1": 159,
+      "adsr2": 210,
+      "gain": 34,
+      "pitchRegister": 12887
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d678d3ce27500e769bb28122c2183bfcd2d2e83aa4ab53c53264625e31df4028"
+          },
+          "loop": {
+            "start": 8608,
+            "end": 10096
+          }
+        }
+      ]
+    }
+  }
+}

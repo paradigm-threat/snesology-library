@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synthdetuned",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spindizzy Worlds",
+    "snes": {
+      "srcn": 4,
+      "character": "tone",
+      "pcmLength": 3744,
+      "brrLength": 2106,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    },
+    "communityName": "synthdetuned",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b1f4fcfa6265cf2a53ad59a0117fee937de6e43627b4fa2dbf2b1b16c3f161e8"
+          },
+          "loop": {
+            "start": 48,
+            "end": 3744
+          }
+        }
+      ]
+    }
+  }
+}

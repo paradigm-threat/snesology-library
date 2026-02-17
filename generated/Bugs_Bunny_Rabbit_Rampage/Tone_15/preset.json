@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bugs Bunny: Rabbit Rampage",
+    "snes": {
+      "srcn": 15,
+      "character": "tone",
+      "pcmLength": 3392,
+      "brrLength": 1908,
+      "hasLoop": true,
+      "loopStartPcm": 1184
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ae38fe6f0fc05dd4fa7e05d64304376ead65c8e0fa44b094468d7e7c2108c035"
+          },
+          "loop": {
+            "start": 1184,
+            "end": 3392
+          }
+        }
+      ]
+    }
+  }
+}

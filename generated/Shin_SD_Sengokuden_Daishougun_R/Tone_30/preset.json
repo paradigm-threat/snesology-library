@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shin SD Sengokuden: Daishougun R",
+    "snes": {
+      "srcn": 30,
+      "character": "tone",
+      "pcmLength": 2624,
+      "brrLength": 1476,
+      "hasLoop": true,
+      "loopStartPcm": 2480,
+      "adsr1": 239,
+      "adsr2": 226,
+      "gain": 184,
+      "pitchRegister": 3030
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1e19dcd278c495c5baf0e8b1fba63a4def7a4c2acdaa987e51455fddbf1ff419"
+          },
+          "loop": {
+            "start": 2480,
+            "end": 2624
+          }
+        }
+      ]
+    }
+  }
+}

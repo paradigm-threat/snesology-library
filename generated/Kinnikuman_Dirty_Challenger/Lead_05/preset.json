@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kinnikuman: Dirty Challenger",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 4544,
+      "brrLength": 2556,
+      "hasLoop": true,
+      "loopStartPcm": 4320
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4850a069d16c14018517c0bd889d084be6a8f2cba3a445ea762dfe67727902dc"
+          },
+          "loop": {
+            "start": 4320,
+            "end": 4544
+          }
+        }
+      ]
+    }
+  }
+}

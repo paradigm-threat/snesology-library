@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Power of the Hired",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 1568,
+      "brrLength": 882,
+      "hasLoop": true,
+      "loopStartPcm": 1328,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1190
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "65fce6887c5352a7e52e6ea729f39edac19f057aef178cb450a9a5c91810896f"
+          },
+          "loop": {
+            "start": 1328,
+            "end": 1568
+          }
+        }
+      ]
+    }
+  }
+}

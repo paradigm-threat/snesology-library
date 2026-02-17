@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bastard!!",
+    "snes": {
+      "srcn": 0,
+      "character": "tone",
+      "pcmLength": 3584,
+      "brrLength": 2016,
+      "hasLoop": true,
+      "loopStartPcm": 976,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 158,
+      "pitchRegister": 1280
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bf5302c4ab28e1f10828a696f86a59a8651ed6d1bdfd490c42cb894b4f6a38bb"
+          },
+          "loop": {
+            "start": 976,
+            "end": 3584
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Flintstones",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 6128,
+      "brrLength": 3447,
+      "hasLoop": true,
+      "loopStartPcm": 16704
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "65dc33d8fd211197e77a2af5c6611e028ff5f8f7f4d8edb37a267e8cd36ddf69"
+          },
+          "loop": {
+            "start": 16704,
+            "end": 6128
+          }
+        }
+      ]
+    }
+  }
+}

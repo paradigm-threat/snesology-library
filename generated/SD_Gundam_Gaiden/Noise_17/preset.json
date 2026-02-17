@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "SD Gundam Gaiden",
+    "snes": {
+      "srcn": 17,
+      "character": "noise",
+      "pcmLength": 6272,
+      "brrLength": 3528,
+      "hasLoop": true,
+      "loopStartPcm": 5072,
+      "adsr1": 255,
+      "adsr2": 243,
+      "gain": 184,
+      "pitchRegister": 3157
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ab468095a39cab1e996a45f453a025423036421f291b4edb56891119d35adcf6"
+          },
+          "loop": {
+            "start": 5072,
+            "end": 6272
+          }
+        }
+      ]
+    }
+  }
+}

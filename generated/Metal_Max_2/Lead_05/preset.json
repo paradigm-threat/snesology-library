@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Metal Max 2",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 5168,
+      "brrLength": 2907,
+      "hasLoop": true,
+      "loopStartPcm": 4848
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "18e54af45ec89d5f19a59ce2dd04e1c4947461d440642376b32087e4a4f0d449"
+          },
+          "loop": {
+            "start": 4848,
+            "end": 5168
+          }
+        }
+      ]
+    }
+  }
+}

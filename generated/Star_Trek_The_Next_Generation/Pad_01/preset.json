@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Star Trek: The Next Generation",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 13392,
+      "brrLength": 7533,
+      "hasLoop": true,
+      "loopStartPcm": 9744
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "26e7051416364db73c932fcf70b928f7762ab380af4cb545dc86cd286cc1747f"
+          },
+          "loop": {
+            "start": 9744,
+            "end": 13392
+          }
+        }
+      ]
+    }
+  }
+}

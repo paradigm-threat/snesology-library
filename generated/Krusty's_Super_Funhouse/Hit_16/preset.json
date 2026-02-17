@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Krusty's Super Funhouse",
+    "snes": {
+      "srcn": 16,
+      "character": "one-shot",
+      "pcmLength": 9552,
+      "brrLength": 5373,
+      "hasLoop": false,
+      "adsr1": 135,
+      "adsr2": 247,
+      "gain": 0,
+      "pitchRegister": 11200
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ce2e48a6133aa4d25f369926d826427aab2d969565fdc8378f06887a24887d57"
+          }
+        }
+      ]
+    }
+  }
+}

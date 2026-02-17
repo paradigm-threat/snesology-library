@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cutthroat Island",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 4288,
+      "brrLength": 2412,
+      "hasLoop": true,
+      "loopStartPcm": 704,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 50,
+      "pitchRegister": 2680
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cf3f5cc70149bccbacdf26ae0e79efb18e8af8ecd694e3eb02f61bebbac51540"
+          },
+          "loop": {
+            "start": 704,
+            "end": 4288
+          }
+        }
+      ]
+    }
+  }
+}

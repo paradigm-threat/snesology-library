@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dossun! Ganseki Battle",
+    "snes": {
+      "srcn": 6,
+      "character": "tone",
+      "pcmLength": 1632,
+      "brrLength": 918,
+      "hasLoop": true,
+      "loopStartPcm": 1440,
+      "adsr1": 255,
+      "adsr2": 236,
+      "gain": 184,
+      "pitchRegister": 6028
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ee71dfb08eab1108da6cf8e48fd116e173e542e24e0992aa416c0f09f3f6f787"
+          },
+          "loop": {
+            "start": 1440,
+            "end": 1632
+          }
+        }
+      ]
+    }
+  }
+}

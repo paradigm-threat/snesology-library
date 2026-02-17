@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Lamborghini American Challenge",
+    "snes": {
+      "srcn": 199,
+      "character": "tone",
+      "pcmLength": 368,
+      "brrLength": 207,
+      "hasLoop": true,
+      "loopStartPcm": 3392
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "54e3712e478179720714615eb284bf699cd2e9bb8fe7c7223e3048547359b66e"
+          },
+          "loop": {
+            "start": 3392,
+            "end": 368
+          }
+        }
+      ]
+    }
+  }
+}

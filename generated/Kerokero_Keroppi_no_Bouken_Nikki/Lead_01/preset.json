@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kerokero Keroppi no Bouken Nikki",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 4464,
+      "brrLength": 2511,
+      "hasLoop": true,
+      "loopStartPcm": 4224,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 5989
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bf569ab1a0ce3ceaed147d4f0bee7f995e2859850cf17de2221597dd3665d644"
+          },
+          "loop": {
+            "start": 4224,
+            "end": 4464
+          }
+        }
+      ]
+    }
+  }
+}

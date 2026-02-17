@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Vortex",
+    "snes": {
+      "srcn": 20,
+      "character": "noise",
+      "pcmLength": 4576,
+      "brrLength": 2574,
+      "hasLoop": true,
+      "loopStartPcm": 3280,
+      "adsr1": 160,
+      "adsr2": 172,
+      "gain": 197,
+      "pitchRegister": 14909
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cda2b47763e98e032ab0a87221d3f94f0505d0ef8da295d1228e609e497c3c9c"
+          },
+          "loop": {
+            "start": 3280,
+            "end": 4576
+          }
+        }
+      ]
+    }
+  }
+}

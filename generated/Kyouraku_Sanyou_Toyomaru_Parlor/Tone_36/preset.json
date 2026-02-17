@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kyouraku Sanyou Toyomaru Parlor",
+    "snes": {
+      "srcn": 36,
+      "character": "tone",
+      "pcmLength": 2272,
+      "brrLength": 1278,
+      "hasLoop": true,
+      "loopStartPcm": 5840,
+      "adsr1": 255,
+      "adsr2": 236,
+      "gain": 184,
+      "pitchRegister": 2134
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fe28b4f88503d23eda3cd2d775158bbfdfa630c927bbd518e3bf27db7378db5f"
+          },
+          "loop": {
+            "start": 5840,
+            "end": 2272
+          }
+        }
+      ]
+    }
+  }
+}

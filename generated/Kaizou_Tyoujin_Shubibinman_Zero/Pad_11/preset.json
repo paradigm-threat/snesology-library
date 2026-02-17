@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kaizou Tyoujin Shubibinman Zero",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 4288,
+      "brrLength": 2412,
+      "hasLoop": true,
+      "loopStartPcm": 2208
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "dacb8f23b99a377ef91e8296894e6dc1292449b693e91522aeaaf24f46fb12ce"
+          },
+          "loop": {
+            "start": 2208,
+            "end": 4288
+          }
+        }
+      ]
+    }
+  }
+}

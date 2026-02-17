@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Aoki Densetsu Shoot!",
+    "snes": {
+      "srcn": 31,
+      "character": "melodic",
+      "pcmLength": 5728,
+      "brrLength": 3222,
+      "hasLoop": true,
+      "loopStartPcm": 1248,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 3753
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "59058516b3bb482bc55f94557cd1d847dd724bbaaf8f5e8b0bc716a22cfebcb7"
+          },
+          "loop": {
+            "start": 1248,
+            "end": 5728
+          }
+        }
+      ]
+    }
+  }
+}

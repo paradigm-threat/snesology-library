@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Eurit",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 3344,
+      "brrLength": 1881,
+      "hasLoop": true,
+      "loopStartPcm": 2080,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 128,
+      "pitchRegister": 2062
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7e8e2a565636e830f3027cbc008399d741274d70e4aa944dd638e6331cd9bd9d"
+          },
+          "loop": {
+            "start": 2080,
+            "end": 3344
+          }
+        }
+      ]
+    }
+  }
+}

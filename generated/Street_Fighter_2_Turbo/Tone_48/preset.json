@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Street Fighter 2 Turbo",
+    "snes": {
+      "srcn": 48,
+      "character": "tone",
+      "pcmLength": 3616,
+      "brrLength": 2034,
+      "hasLoop": true,
+      "loopStartPcm": 2560,
+      "adsr1": 0,
+      "adsr2": 251,
+      "gain": 158,
+      "pitchRegister": 3712
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1a8037999cca5dbbb8dd63e792e83961e3e477fec22c9601720f1dc4f4698ddd"
+          },
+          "loop": {
+            "start": 2560,
+            "end": 3616
+          }
+        }
+      ]
+    }
+  }
+}

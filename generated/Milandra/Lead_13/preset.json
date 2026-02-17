@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Milandra",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 4112,
+      "brrLength": 2313,
+      "hasLoop": true,
+      "loopStartPcm": 3872,
+      "adsr1": 250,
+      "adsr2": 204,
+      "gain": 204,
+      "pitchRegister": 6390
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1593d90d281029ee2da99d762d69e694ad81625795c51f6267858b9df21fe650"
+          },
+          "loop": {
+            "start": 3872,
+            "end": 4112
+          }
+        }
+      ]
+    }
+  }
+}

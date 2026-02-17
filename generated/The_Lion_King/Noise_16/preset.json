@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Lion King",
+    "snes": {
+      "srcn": 16,
+      "character": "noise",
+      "pcmLength": 2784,
+      "brrLength": 1566,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 232,
+      "gain": 127,
+      "pitchRegister": 2822
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "36e85f11916c17c46ccdb8f4c86926b6197e48a0497c9d238e82b86fa3aca735"
+          }
+        }
+      ]
+    }
+  }
+}

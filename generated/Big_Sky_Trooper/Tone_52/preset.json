@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Big Sky Trooper",
+    "snes": {
+      "srcn": 52,
+      "character": "tone",
+      "pcmLength": 1120,
+      "brrLength": 630,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4800ed036f86127a4a8f66de137e71cc5a8468d6457c18b60296a7017dd1dcf7"
+          },
+          "loop": {
+            "start": 48,
+            "end": 1120
+          }
+        }
+      ]
+    }
+  }
+}

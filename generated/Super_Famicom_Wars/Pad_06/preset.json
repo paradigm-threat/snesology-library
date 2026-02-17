@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Famicom Wars",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 4704,
+      "brrLength": 2646,
+      "hasLoop": true,
+      "loopStartPcm": 1104,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 185,
+      "pitchRegister": 3116
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c2fe4d39c4e404e998648b4478480cf28af35e48463ca9eb2993f44fb81e69ba"
+          },
+          "loop": {
+            "start": 1104,
+            "end": 4704
+          }
+        }
+      ]
+    }
+  }
+}

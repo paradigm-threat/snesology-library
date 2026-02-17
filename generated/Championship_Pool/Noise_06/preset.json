@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Championship Pool",
+    "snes": {
+      "srcn": 6,
+      "character": "noise",
+      "pcmLength": 5392,
+      "brrLength": 3033,
+      "hasLoop": true,
+      "loopStartPcm": 4400,
+      "adsr1": 0,
+      "adsr2": 242,
+      "gain": 159,
+      "pitchRegister": 2822
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4fa0a23f5da0ae3a7c305732ca53e2f16ad365f658a84a5aa6a095d3c99da0de"
+          },
+          "loop": {
+            "start": 4400,
+            "end": 5392
+          }
+        }
+      ]
+    }
+  }
+}

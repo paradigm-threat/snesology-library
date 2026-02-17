@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Runningwater",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Treasure Hunter G",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 4304,
+      "brrLength": 2421,
+      "hasLoop": true,
+      "loopStartPcm": 32,
+      "adsr1": 245,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 568
+    },
+    "communityName": "sfx_runningwater",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "719493e66c6bf6dff2c45b047524a7214f7188cf66d82103925b907025efba23"
+          },
+          "loop": {
+            "start": 32,
+            "end": 4304
+          }
+        }
+      ]
+    }
+  }
+}

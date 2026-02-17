@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mario's Time Machine",
+    "snes": {
+      "srcn": 11,
+      "character": "tone",
+      "pcmLength": 992,
+      "brrLength": 558,
+      "hasLoop": true,
+      "loopStartPcm": 960
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "10c94d5e358660334fa257c82879f4d3d7174015a5f93df0e7862abe3adf233d"
+          },
+          "loop": {
+            "start": 960,
+            "end": 992
+          }
+        }
+      ]
+    }
+  }
+}

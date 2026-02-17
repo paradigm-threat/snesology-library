@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Putty Squad",
+    "snes": {
+      "srcn": 69,
+      "character": "tone",
+      "pcmLength": 3680,
+      "brrLength": 2070,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "925202585ae0d22b5cf64e4ee37056bf70ffc0e37ffd688e4f52f36a11051a11"
+          },
+          "loop": {
+            "start": 0,
+            "end": 3680
+          }
+        }
+      ]
+    }
+  }
+}

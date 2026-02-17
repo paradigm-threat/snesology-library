@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spider-Man: Lethal Foes",
+    "snes": {
+      "srcn": 46,
+      "character": "tone",
+      "pcmLength": 1136,
+      "brrLength": 639,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4b59569dba3cd0531fc9f4fc75cbc1c9469dda752ae8803a756c68a9b63e32bf"
+          },
+          "loop": {
+            "start": 16,
+            "end": 1136
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Formation Soccer '94",
+    "snes": {
+      "srcn": 14,
+      "character": "melodic",
+      "pcmLength": 6464,
+      "brrLength": 3636,
+      "hasLoop": true,
+      "loopStartPcm": 2096
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "62ea57cf5a471dbd5770a3768ebfb65a00851af444729456295122e6c5eb0009"
+          },
+          "loop": {
+            "start": 2096,
+            "end": 6464
+          }
+        }
+      ]
+    }
+  }
+}

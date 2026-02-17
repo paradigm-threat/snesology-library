@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cal Ripken Jr. Baseball",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 352,
+      "brrLength": 198,
+      "hasLoop": true,
+      "loopStartPcm": 128,
+      "adsr1": 158,
+      "adsr2": 46,
+      "gain": 184,
+      "pitchRegister": 1047
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f887c9cc9aac86c8a5403c2d66d6582d6a4766e34417ada50a8829de05a2d4c5"
+          },
+          "loop": {
+            "start": 128,
+            "end": 352
+          }
+        }
+      ]
+    }
+  }
+}

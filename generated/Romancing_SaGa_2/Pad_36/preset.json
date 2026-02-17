@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Romancing SaGa 2",
+    "snes": {
+      "srcn": 36,
+      "character": "melodic",
+      "pcmLength": 18224,
+      "brrLength": 10251,
+      "hasLoop": true,
+      "loopStartPcm": 4720
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6a9051f1f134c82b50f27ca6b5d8f92a259c4c0c2e0c013ed02dc3745c979f73"
+          },
+          "loop": {
+            "start": 4720,
+            "end": 18224
+          }
+        }
+      ]
+    }
+  }
+}

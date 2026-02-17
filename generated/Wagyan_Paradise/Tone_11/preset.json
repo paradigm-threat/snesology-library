@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wagyan Paradise",
+    "snes": {
+      "srcn": 11,
+      "character": "tone",
+      "pcmLength": 176,
+      "brrLength": 99,
+      "hasLoop": true,
+      "loopStartPcm": 112,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 127,
+      "pitchRegister": 6400
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6184cd5869356d46acea95793d2688b49adc5e6241fea001c865925b410615f5"
+          },
+          "loop": {
+            "start": 112,
+            "end": 176
+          }
+        }
+      ]
+    }
+  }
+}

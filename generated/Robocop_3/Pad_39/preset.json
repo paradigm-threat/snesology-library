@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Robocop 3",
+    "snes": {
+      "srcn": 39,
+      "character": "melodic",
+      "pcmLength": 7216,
+      "brrLength": 4059,
+      "hasLoop": true,
+      "loopStartPcm": 5184,
+      "adsr1": 207,
+      "adsr2": 192,
+      "gain": 0,
+      "pitchRegister": 1418
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "52a64d53c1fd00118a1b4c203942250c1e5f0bce9a0fdee27b70faac79caf924"
+          },
+          "loop": {
+            "start": 5184,
+            "end": 7216
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hanafuda",
+    "snes": {
+      "srcn": 21,
+      "character": "one-shot",
+      "pcmLength": 12288,
+      "brrLength": 6912,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 247,
+      "gain": 127,
+      "pitchRegister": 378
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9a5ff9f68d7a2c1dfd62df7f866f92dd13f9dc51cb9c01c2d6ee66832a5316c4"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "EEK! The Cat",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 7248,
+      "brrLength": 4077,
+      "hasLoop": true,
+      "loopStartPcm": 1760
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5f51ddbb272f8721538097e2f2d2c53ad42bded05a089a5f75f4e8d7b87de23d"
+          },
+          "loop": {
+            "start": 1760,
+            "end": 7248
+          }
+        }
+      ]
+    }
+  }
+}

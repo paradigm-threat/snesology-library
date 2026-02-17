@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Matsumura Kunihiro Den",
+    "snes": {
+      "srcn": 14,
+      "character": "melodic",
+      "pcmLength": 4224,
+      "brrLength": 2376,
+      "hasLoop": true,
+      "loopStartPcm": 2720
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f75ad2eb6ac127c26d99e2d17ffa5c9fb7c1e901c3a24da4474b66f7a3549209"
+          },
+          "loop": {
+            "start": 2720,
+            "end": 4224
+          }
+        }
+      ]
+    }
+  }
+}

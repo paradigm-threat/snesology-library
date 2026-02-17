@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Back to the Future 2",
+    "snes": {
+      "srcn": 24,
+      "character": "melodic",
+      "pcmLength": 5840,
+      "brrLength": 3285,
+      "hasLoop": true,
+      "loopStartPcm": 5632
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e5b038b467548083b0a414ff76cdb35bb6c50938cc8407f507cbcf545e02b24c"
+          },
+          "loop": {
+            "start": 5632,
+            "end": 5840
+          }
+        }
+      ]
+    }
+  }
+}

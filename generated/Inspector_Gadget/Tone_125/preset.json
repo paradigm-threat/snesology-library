@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Inspector Gadget",
+    "snes": {
+      "srcn": 125,
+      "character": "tone",
+      "pcmLength": 496,
+      "brrLength": 279,
+      "hasLoop": true,
+      "loopStartPcm": 21264
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d15e961b49c3fbccb5b313107b95be52b4eb226c0355e72e9a7064887cbc51da"
+          },
+          "loop": {
+            "start": 21264,
+            "end": 496
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fight da Pon!",
+    "snes": {
+      "srcn": 42,
+      "character": "tone",
+      "pcmLength": 768,
+      "brrLength": 432,
+      "hasLoop": true,
+      "loopStartPcm": 704,
+      "adsr1": 143,
+      "adsr2": 238,
+      "gain": 184,
+      "pitchRegister": 4060
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6f7a971f85b37a9a5f0d22c975fdf21d63b06d894d6de77f2b5e906553d68559"
+          },
+          "loop": {
+            "start": 704,
+            "end": 768
+          }
+        }
+      ]
+    }
+  }
+}

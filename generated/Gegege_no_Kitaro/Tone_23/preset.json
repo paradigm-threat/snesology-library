@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gegege no Kitaro",
+    "snes": {
+      "srcn": 23,
+      "character": "tone",
+      "pcmLength": 3552,
+      "brrLength": 1998,
+      "hasLoop": true,
+      "loopStartPcm": 1264,
+      "adsr1": 255,
+      "adsr2": 242,
+      "gain": 184,
+      "pitchRegister": 1788
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ee7e1863f9e5e73ad6a51296bf7aeaadb5231e52dbe4430522229cb0061c4300"
+          },
+          "loop": {
+            "start": 1264,
+            "end": 3552
+          }
+        }
+      ]
+    }
+  }
+}

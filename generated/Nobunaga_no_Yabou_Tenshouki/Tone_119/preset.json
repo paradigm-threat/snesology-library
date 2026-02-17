@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Nobunaga no Yabou Tenshouki",
+    "snes": {
+      "srcn": 119,
+      "character": "tone",
+      "pcmLength": 992,
+      "brrLength": 558,
+      "hasLoop": true,
+      "loopStartPcm": 29632
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a1cb155719926dec3a95dea6fac359eddc093a8c07ad733bee29fa29b96e23a7"
+          },
+          "loop": {
+            "start": 29632,
+            "end": 992
+          }
+        }
+      ]
+    }
+  }
+}

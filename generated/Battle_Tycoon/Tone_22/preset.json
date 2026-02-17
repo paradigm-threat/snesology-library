@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battle Tycoon",
+    "snes": {
+      "srcn": 22,
+      "character": "tone",
+      "pcmLength": 592,
+      "brrLength": 333,
+      "hasLoop": true,
+      "loopStartPcm": 2000
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3eb3d204140c9a718305b405411d1fef177f111fc39e1975a9105825cc8b92ac"
+          },
+          "loop": {
+            "start": 2000,
+            "end": 592
+          }
+        }
+      ]
+    }
+  }
+}

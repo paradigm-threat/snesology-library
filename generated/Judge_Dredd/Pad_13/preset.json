@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Judge Dredd",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 5920,
+      "brrLength": 3330,
+      "hasLoop": true,
+      "loopStartPcm": 32,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 279
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6a93a4dd029d2e615da2c7534964de249abc9ee59203d379face8f6ca10c81d7"
+          },
+          "loop": {
+            "start": 32,
+            "end": 5920
+          }
+        }
+      ]
+    }
+  }
+}

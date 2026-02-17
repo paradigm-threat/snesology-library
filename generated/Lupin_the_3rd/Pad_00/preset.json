@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Lupin the 3rd",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 5888,
+      "brrLength": 3312,
+      "hasLoop": true,
+      "loopStartPcm": 2032,
+      "adsr1": 255,
+      "adsr2": 239,
+      "gain": 184,
+      "pitchRegister": 4079
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f7d16311ffca38b4596db7092beb5dd4ea6c01ee158f8a1fe4f8cda750a689e5"
+          },
+          "loop": {
+            "start": 2032,
+            "end": 5888
+          }
+        }
+      ]
+    }
+  }
+}

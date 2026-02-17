@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battle Cross",
+    "snes": {
+      "srcn": 19,
+      "character": "tone",
+      "pcmLength": 2432,
+      "brrLength": 1368,
+      "hasLoop": true,
+      "loopStartPcm": 1920
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "daedfdcb70a7d00720e79282156251c3da1c1aecad219e752f090d3eebadb532"
+          },
+          "loop": {
+            "start": 1920,
+            "end": 2432
+          }
+        }
+      ]
+    }
+  }
+}

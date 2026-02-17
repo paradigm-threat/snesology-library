@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Captain Tsubasa 4",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 448,
+      "brrLength": 252,
+      "hasLoop": true,
+      "loopStartPcm": 384,
+      "adsr1": 255,
+      "adsr2": 233,
+      "gain": 184,
+      "pitchRegister": 2264
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bbd71c59b5a585302ba7291063b63cb423e74f8130ff3502c352dec98f2ba1b3"
+          },
+          "loop": {
+            "start": 384,
+            "end": 448
+          }
+        }
+      ]
+    }
+  }
+}

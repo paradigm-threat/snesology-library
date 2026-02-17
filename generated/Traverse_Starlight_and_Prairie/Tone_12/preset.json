@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Traverse: Starlight and Prairie",
+    "snes": {
+      "srcn": 12,
+      "character": "tone",
+      "pcmLength": 3568,
+      "brrLength": 2007,
+      "hasLoop": true,
+      "loopStartPcm": 2288,
+      "adsr1": 143,
+      "adsr2": 249,
+      "gain": 120,
+      "pitchRegister": 698
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9e5d6714e474fa7c1755df137ea7f5e0a99f9ee0d60b2eae72dc32e617803cde"
+          },
+          "loop": {
+            "start": 2288,
+            "end": 3568
+          }
+        }
+      ]
+    }
+  }
+}

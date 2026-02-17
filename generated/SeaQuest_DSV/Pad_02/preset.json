@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "SeaQuest DSV",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 6416,
+      "brrLength": 3609,
+      "hasLoop": true,
+      "loopStartPcm": 3264,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 80,
+      "pitchRegister": 856
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2dbe83ee8a413ffd4c5d5ce376187d48aba774322ed97457dd2113a87ca6922a"
+          },
+          "loop": {
+            "start": 3264,
+            "end": 6416
+          }
+        }
+      ]
+    }
+  }
+}

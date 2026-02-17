@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Shaker",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Bomberman 3",
+    "snes": {
+      "srcn": 22,
+      "character": "noise",
+      "pcmLength": 3808,
+      "brrLength": 2142,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 247,
+      "gain": 159,
+      "pitchRegister": 5635
+    },
+    "communityName": "perc_shaker",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f832a5884bc70a14ac8ece21877e558ddca4d39fae993f0bfc74dabe8098fa1c"
+          }
+        }
+      ]
+    }
+  }
+}

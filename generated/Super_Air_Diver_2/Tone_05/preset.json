@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Air Diver 2",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 192,
+      "brrLength": 108,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 189,
+      "adsr2": 134,
+      "gain": 184,
+      "pitchRegister": 1350
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "80c9d0af6538c0a9b8a83ac45d7b05c58d61afade7aa6bd944531123213d6559"
+          },
+          "loop": {
+            "start": 0,
+            "end": 192
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Deae Tonosama Appare Ichiban",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 14672,
+      "brrLength": 8253,
+      "hasLoop": true,
+      "loopStartPcm": 3792
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9030bf837c32328125cea8e4d29219c91658ba13068a13e5296d2bfc404ecbed"
+          },
+          "loop": {
+            "start": 3792,
+            "end": 14672
+          }
+        }
+      ]
+    }
+  }
+}

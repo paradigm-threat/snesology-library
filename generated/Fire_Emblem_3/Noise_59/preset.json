@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fire Emblem 3",
+    "snes": {
+      "srcn": 59,
+      "character": "noise",
+      "pcmLength": 3072,
+      "brrLength": 1728,
+      "hasLoop": false,
+      "adsr1": 253,
+      "adsr2": 224,
+      "gain": 148,
+      "pitchRegister": 16312
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "50048522bb971c700bf567959e509cd9d6f8d67996427194cdf97bbc49d9e02c"
+          }
+        }
+      ]
+    }
+  }
+}

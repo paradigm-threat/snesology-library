@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ranma 1/2: Bakuretsu Rantouhen",
+    "snes": {
+      "srcn": 22,
+      "character": "tone",
+      "pcmLength": 720,
+      "brrLength": 405,
+      "hasLoop": true,
+      "loopStartPcm": 688,
+      "adsr1": 223,
+      "adsr2": 176,
+      "gain": 184,
+      "pitchRegister": 652
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4d99d8a2295b566368a1b6168652f002e814891574e6901f3f6d93e257c01a05"
+          },
+          "loop": {
+            "start": 688,
+            "end": 720
+          }
+        }
+      ]
+    }
+  }
+}

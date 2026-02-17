@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Parlor! Mini",
+    "snes": {
+      "srcn": 28,
+      "character": "melodic",
+      "pcmLength": 5392,
+      "brrLength": 3033,
+      "hasLoop": true,
+      "loopStartPcm": 1600
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "19c07249372188b1b97ce74116c271e9d9c88ca8cc0e68872b927e88e2c716a7"
+          },
+          "loop": {
+            "start": 1600,
+            "end": 5392
+          }
+        }
+      ]
+    }
+  }
+}

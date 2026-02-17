@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Adventure Island",
+    "snes": {
+      "srcn": 7,
+      "character": "tone",
+      "pcmLength": 2384,
+      "brrLength": 1341,
+      "hasLoop": true,
+      "loopStartPcm": 2272,
+      "adsr1": 255,
+      "adsr2": 231,
+      "gain": 184,
+      "pitchRegister": 1500
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "17e3ac3fde916c3fe45a07f60f3c8028c9bacb28bee87836ae5b7bd9be7f166a"
+          },
+          "loop": {
+            "start": 2272,
+            "end": 2384
+          }
+        }
+      ]
+    }
+  }
+}

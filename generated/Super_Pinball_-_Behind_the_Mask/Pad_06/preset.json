@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Pinball - Behind the Mask",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 6352,
+      "brrLength": 3573,
+      "hasLoop": true,
+      "loopStartPcm": 1136
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "45d739a5a36274821e4056caaf2ebccc779a2b315636475ad245a44fee40bb7a"
+          },
+          "loop": {
+            "start": 1136,
+            "end": 6352
+          }
+        }
+      ]
+    }
+  }
+}

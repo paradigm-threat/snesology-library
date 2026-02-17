@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "FIFA 97: Gold Edition",
+    "snes": {
+      "srcn": 68,
+      "character": "melodic",
+      "pcmLength": 9744,
+      "brrLength": 5481,
+      "hasLoop": true,
+      "loopStartPcm": 7584,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "420ca66fe5de2ce7f9b077a4f21b8efb9686884a257f37d7f3bb9e1105e58323"
+          },
+          "loop": {
+            "start": 7584,
+            "end": 9744
+          }
+        }
+      ]
+    }
+  }
+}

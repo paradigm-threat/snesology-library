@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Brass",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Animaniacs",
+    "snes": {
+      "srcn": 27,
+      "character": "melodic",
+      "pcmLength": 9584,
+      "brrLength": 5391,
+      "hasLoop": true,
+      "loopStartPcm": 6544,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 1822
+    },
+    "communityName": "brass",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0f5edbbac53b12244e485eb577f5ce4662db8bc1145c848d20cb0cd12ca45906"
+          },
+          "loop": {
+            "start": 6544,
+            "end": 9584
+          }
+        }
+      ]
+    }
+  }
+}

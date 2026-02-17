@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "M\ufffdrchen Adventure Cotton 100%",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 5312,
+      "brrLength": 2988,
+      "hasLoop": true,
+      "loopStartPcm": 5072
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "17c0f5e783fa1758a8870c49946431617dd6df74e994687f641f60fcbc4eba2d"
+          },
+          "loop": {
+            "start": 5072,
+            "end": 5312
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sougou Kakutougi Astral Bout",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 8112,
+      "brrLength": 4563,
+      "hasLoop": true,
+      "loopStartPcm": 3824,
+      "adsr1": 255,
+      "adsr2": 238,
+      "gain": 184,
+      "pitchRegister": 3140
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ab519d32c120c59f3198197fa2012eb847c63ed12de548cd3eae14a12bd15c95"
+          },
+          "loop": {
+            "start": 3824,
+            "end": 8112
+          }
+        }
+      ]
+    }
+  }
+}

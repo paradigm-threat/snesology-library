@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Eye of the Beholder",
+    "snes": {
+      "srcn": 246,
+      "character": "melodic",
+      "pcmLength": 7888,
+      "brrLength": 4437,
+      "hasLoop": true,
+      "loopStartPcm": 10288
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "93dd4dc7204c789005a238dfb697fb3cb1c85601f0dd81aec56c29d0b4b0bddb"
+          },
+          "loop": {
+            "start": 10288,
+            "end": 7888
+          }
+        }
+      ]
+    }
+  }
+}

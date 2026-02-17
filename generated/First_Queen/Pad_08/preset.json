@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "First Queen",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 15936,
+      "brrLength": 8964,
+      "hasLoop": true,
+      "loopStartPcm": 12576,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 180,
+      "pitchRegister": 2051
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8423ff281433209dcf15c007dc2936e18d9817cb0ebc8edea09ff88ba8a415f7"
+          },
+          "loop": {
+            "start": 12576,
+            "end": 15936
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Final Fantasy 5",
+    "snes": {
+      "srcn": 35,
+      "character": "one-shot",
+      "pcmLength": 6592,
+      "brrLength": 3708,
+      "hasLoop": false,
+      "adsr1": 247,
+      "adsr2": 228,
+      "gain": 160,
+      "pitchRegister": 6117
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "05034eb98bfb9618acf2abb6e3e5c9138962375bb9b2af95fe1fc713fd07ba1b"
+          }
+        }
+      ]
+    }
+  }
+}

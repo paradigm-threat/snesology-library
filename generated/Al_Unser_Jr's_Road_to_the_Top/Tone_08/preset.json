@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Al Unser Jr's Road to the Top",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 640,
+      "brrLength": 360,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6ba4a07df6ab7103e2838a4b13ef801f44449b31432c5e84f242b31fb059d59b"
+          },
+          "loop": {
+            "start": 0,
+            "end": 640
+          }
+        }
+      ]
+    }
+  }
+}

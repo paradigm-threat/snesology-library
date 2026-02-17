@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Heisei Gunjin Shougi",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 2336,
+      "brrLength": 1314,
+      "hasLoop": true,
+      "loopStartPcm": 1056,
+      "adsr1": 159,
+      "adsr2": 178,
+      "gain": 184,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f8cf54ca90e352622876f802da06e5e837dfba137e6871305860d1d440c77a03"
+          },
+          "loop": {
+            "start": 1056,
+            "end": 2336
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tenshi no Uta",
+    "snes": {
+      "srcn": 21,
+      "character": "melodic",
+      "pcmLength": 9488,
+      "brrLength": 5337,
+      "hasLoop": true,
+      "loopStartPcm": 4512
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "52851ea6fc06ce31583c8ee8f7a49fc50a4e79f69aab2e7dc6cc734196313399"
+          },
+          "loop": {
+            "start": 4512,
+            "end": 9488
+          }
+        }
+      ]
+    }
+  }
+}

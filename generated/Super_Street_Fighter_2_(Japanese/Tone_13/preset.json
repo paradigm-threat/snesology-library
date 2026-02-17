@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Street Fighter 2 (Japanese",
+    "snes": {
+      "srcn": 13,
+      "character": "tone",
+      "pcmLength": 3456,
+      "brrLength": 1944,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "195b7c86e5ca0a9f4f50b4a0f57392106be27617a9b94b9ac86582d3f76ea557"
+          },
+          "loop": {
+            "start": 0,
+            "end": 3456
+          }
+        }
+      ]
+    }
+  }
+}

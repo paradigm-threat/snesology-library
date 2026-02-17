@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragonball Z RPG",
+    "snes": {
+      "srcn": 4,
+      "character": "tone",
+      "pcmLength": 3968,
+      "brrLength": 2232,
+      "hasLoop": true,
+      "loopStartPcm": 3856,
+      "adsr1": 255,
+      "adsr2": 243,
+      "gain": 184,
+      "pitchRegister": 2860
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f445d6e362fe9ae1171b3239e2345691a74a9e510afd90be85d4debd05662b42"
+          },
+          "loop": {
+            "start": 3856,
+            "end": 3968
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Momotarou Dentetsu DX",
+    "snes": {
+      "srcn": 6,
+      "character": "noise",
+      "pcmLength": 4560,
+      "brrLength": 2565,
+      "hasLoop": true,
+      "loopStartPcm": 1280,
+      "adsr1": 255,
+      "adsr2": 244,
+      "gain": 0,
+      "pitchRegister": 5182
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c37087bb80878d47c0d755de6b4e4d8c735ebbfd1423ffc65552e64cf1b2937f"
+          },
+          "loop": {
+            "start": 1280,
+            "end": 4560
+          }
+        }
+      ]
+    }
+  }
+}

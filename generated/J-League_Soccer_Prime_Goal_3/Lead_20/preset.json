@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "J-League Soccer Prime Goal 3",
+    "snes": {
+      "srcn": 20,
+      "character": "melodic",
+      "pcmLength": 4256,
+      "brrLength": 2394,
+      "hasLoop": true,
+      "loopStartPcm": 4192,
+      "adsr1": 251,
+      "adsr2": 234,
+      "gain": 190,
+      "pitchRegister": 2400
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "db92b121b318575ebf47f91421681870cbf460cdccac322eb9b9944371ec8ba0"
+          },
+          "loop": {
+            "start": 4192,
+            "end": 4256
+          }
+        }
+      ]
+    }
+  }
+}

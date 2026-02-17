@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Youkai Buster",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 1872,
+      "brrLength": 1053,
+      "hasLoop": true,
+      "loopStartPcm": 1792,
+      "adsr1": 255,
+      "adsr2": 235,
+      "gain": 184,
+      "pitchRegister": 2355
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a8f36959472c037c5c4809e07c0ac93f5fc2e431a368ac6751e0f6c4d5f0f375"
+          },
+          "loop": {
+            "start": 1792,
+            "end": 1872
+          }
+        }
+      ]
+    }
+  }
+}

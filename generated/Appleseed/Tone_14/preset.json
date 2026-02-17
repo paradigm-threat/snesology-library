@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Appleseed",
+    "snes": {
+      "srcn": 14,
+      "character": "tone",
+      "pcmLength": 464,
+      "brrLength": 261,
+      "hasLoop": true,
+      "loopStartPcm": 448,
+      "adsr1": 252,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 607
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "da2b9b2a40bc1d6e34850d1deb99de369b22b00eba1b8bad3a8a9f66c6304338"
+          },
+          "loop": {
+            "start": 448,
+            "end": 464
+          }
+        }
+      ]
+    }
+  }
+}

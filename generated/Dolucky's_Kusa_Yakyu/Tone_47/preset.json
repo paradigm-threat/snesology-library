@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dolucky's Kusa Yakyu",
+    "snes": {
+      "srcn": 47,
+      "character": "tone",
+      "pcmLength": 1696,
+      "brrLength": 954,
+      "hasLoop": true,
+      "loopStartPcm": 1648,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 5095
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "50da556520eb4f4ffa7032285a1910e875425bca7e8a856d0b6afa01d65061a3"
+          },
+          "loop": {
+            "start": 1648,
+            "end": 1696
+          }
+        }
+      ]
+    }
+  }
+}

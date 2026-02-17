@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "NHL Stanley Cup",
+    "snes": {
+      "srcn": 29,
+      "character": "melodic",
+      "pcmLength": 5808,
+      "brrLength": 3267,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "473d590feab46b377fbad40ff2fe9a2ea2031f6dc3124f9e1935e3d27a10fc8e"
+          },
+          "loop": {
+            "start": 0,
+            "end": 5808
+          }
+        }
+      ]
+    }
+  }
+}

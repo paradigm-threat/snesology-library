@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synthlead Buzzy",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Breath of Fire 2",
+    "snes": {
+      "srcn": 45,
+      "character": "tone",
+      "pcmLength": 2000,
+      "brrLength": 1125,
+      "hasLoop": true,
+      "loopStartPcm": 1616
+    },
+    "communityName": "synthlead_buzzy",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "74c1e5ee95e2d2e6246491fea9bf6582ab068d6cdf959c28a7c91eadfedd34b1"
+          },
+          "loop": {
+            "start": 1616,
+            "end": 2000
+          }
+        }
+      ]
+    }
+  }
+}

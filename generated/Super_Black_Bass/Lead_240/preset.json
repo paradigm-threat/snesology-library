@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Black Bass",
+    "snes": {
+      "srcn": 240,
+      "character": "melodic",
+      "pcmLength": 9728,
+      "brrLength": 5472,
+      "hasLoop": true,
+      "loopStartPcm": 93264
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ecfaeb9503a82a7a3c6a00195a222c125bb1b4aca50ba9a4fc58cfbb57e675b0"
+          },
+          "loop": {
+            "start": 93264,
+            "end": 9728
+          }
+        }
+      ]
+    }
+  }
+}

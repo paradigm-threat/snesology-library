@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wizardry Gaiden IV",
+    "snes": {
+      "srcn": 17,
+      "character": "melodic",
+      "pcmLength": 11984,
+      "brrLength": 6741,
+      "hasLoop": true,
+      "loopStartPcm": 3856,
+      "adsr1": 15,
+      "adsr2": 136,
+      "gain": 159,
+      "pitchRegister": 2435
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d93368d4fb80ccea7b730c32b05804249f5e28ab6ac10b849cb12f45d1f59d7e"
+          },
+          "loop": {
+            "start": 3856,
+            "end": 11984
+          }
+        }
+      ]
+    }
+  }
+}

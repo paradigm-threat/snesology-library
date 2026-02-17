@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Daisenryaku Expert WWII",
+    "snes": {
+      "srcn": 12,
+      "character": "tone",
+      "pcmLength": 2432,
+      "brrLength": 1368,
+      "hasLoop": true,
+      "loopStartPcm": 2064,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 186,
+      "pitchRegister": 4061
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5a8a43a559bb76a34267560effcd91285eb4e8799f117537db5a87c18967fbe2"
+          },
+          "loop": {
+            "start": 2064,
+            "end": 2432
+          }
+        }
+      ]
+    }
+  }
+}

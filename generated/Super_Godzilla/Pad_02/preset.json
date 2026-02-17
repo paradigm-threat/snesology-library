@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Godzilla",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 15616,
+      "brrLength": 8784,
+      "hasLoop": true,
+      "loopStartPcm": 8016
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2d0ff44b97c12cadf88e7dea0809665aeee506da86f1d1340a035d1b8e7d402e"
+          },
+          "loop": {
+            "start": 8016,
+            "end": 15616
+          }
+        }
+      ]
+    }
+  }
+}

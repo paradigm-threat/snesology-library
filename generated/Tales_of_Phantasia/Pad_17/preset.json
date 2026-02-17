@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tales of Phantasia",
+    "snes": {
+      "srcn": 17,
+      "character": "melodic",
+      "pcmLength": 4960,
+      "brrLength": 2790,
+      "hasLoop": true,
+      "loopStartPcm": 2576
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c78d49318ee2298b13f68926d27dce7d05773eccf9ee51e8b32f1f6021b9c7cd"
+          },
+          "loop": {
+            "start": 2576,
+            "end": 4960
+          }
+        }
+      ]
+    }
+  }
+}

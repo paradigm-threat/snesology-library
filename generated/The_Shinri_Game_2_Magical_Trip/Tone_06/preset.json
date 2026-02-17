@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Shinri Game 2: Magical Trip",
+    "snes": {
+      "srcn": 6,
+      "character": "tone",
+      "pcmLength": 2304,
+      "brrLength": 1296,
+      "hasLoop": true,
+      "loopStartPcm": 960,
+      "adsr1": 255,
+      "adsr2": 247,
+      "gain": 184,
+      "pitchRegister": 4819
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "53ee9de46e550fc1c6c82dbf7479dc9efad1b837ce70c2bb4391a140883f7a53"
+          },
+          "loop": {
+            "start": 960,
+            "end": 2304
+          }
+        }
+      ]
+    }
+  }
+}

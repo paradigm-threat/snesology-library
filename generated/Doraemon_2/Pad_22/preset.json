@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Doraemon 2",
+    "snes": {
+      "srcn": 22,
+      "character": "melodic",
+      "pcmLength": 11760,
+      "brrLength": 6615,
+      "hasLoop": true,
+      "loopStartPcm": 5520,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2893
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e30e3e4b4e0091b14f26d00214f85337820a1e96d53b45455448a6a34b0d6e7f"
+          },
+          "loop": {
+            "start": 5520,
+            "end": 11760
+          }
+        }
+      ]
+    }
+  }
+}

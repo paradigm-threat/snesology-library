@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Elite Soccer",
+    "snes": {
+      "srcn": 10,
+      "character": "one-shot",
+      "pcmLength": 1600,
+      "brrLength": 900,
+      "hasLoop": false,
+      "adsr1": 175,
+      "adsr2": 32,
+      "gain": 0,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8ca068c3c1e39c006640e1cc308476dc33af56574f5850d214576827234416b6"
+          }
+        }
+      ]
+    }
+  }
+}

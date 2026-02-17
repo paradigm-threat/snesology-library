@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Little Master",
+    "snes": {
+      "srcn": 40,
+      "character": "tone",
+      "pcmLength": 912,
+      "brrLength": 513,
+      "hasLoop": true,
+      "loopStartPcm": 784
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2184b558bd7d7b8364545222ee01c40cf2e524814ed55d76d6c590a44f1cbd20"
+          },
+          "loop": {
+            "start": 784,
+            "end": 912
+          }
+        }
+      ]
+    }
+  }
+}

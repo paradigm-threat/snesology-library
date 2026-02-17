@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Cymride",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Star Ocean",
+    "snes": {
+      "srcn": 33,
+      "character": "noise",
+      "pcmLength": 10832,
+      "brrLength": 6093,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 236,
+      "gain": 184,
+      "pitchRegister": 8090
+    },
+    "communityName": "perc_cymride",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "668e196db8c834a026c0ffada2a6dbae759ec41b6fbfbd0383003eb4ae29ec44"
+          }
+        }
+      ]
+    }
+  }
+}

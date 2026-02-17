@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Snoopy Concert",
+    "snes": {
+      "srcn": 26,
+      "character": "melodic",
+      "pcmLength": 8512,
+      "brrLength": 4788,
+      "hasLoop": true,
+      "loopStartPcm": 5360
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f2f6c3380f948cf386daf7648ea81f8f1fab81c23434c0eee0677e212d9b4c25"
+          },
+          "loop": {
+            "start": 5360,
+            "end": 8512
+          }
+        }
+      ]
+    }
+  }
+}

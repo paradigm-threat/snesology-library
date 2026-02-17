@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jaki Crush",
+    "snes": {
+      "srcn": 24,
+      "character": "melodic",
+      "pcmLength": 10240,
+      "brrLength": 5760,
+      "hasLoop": true,
+      "loopStartPcm": 3312,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 224,
+      "pitchRegister": 864
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "985f3c2440801b46213b7d724172d0560c168437dc396b794bbe542ed1a7b699"
+          },
+          "loop": {
+            "start": 3312,
+            "end": 10240
+          }
+        }
+      ]
+    }
+  }
+}

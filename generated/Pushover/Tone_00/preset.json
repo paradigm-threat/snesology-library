@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pushover",
+    "snes": {
+      "srcn": 0,
+      "character": "tone",
+      "pcmLength": 2400,
+      "brrLength": 1350,
+      "hasLoop": true,
+      "loopStartPcm": 2240
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f2990664ea04c196f7e569d0dcc9d8a0bfe4052403f68b1e499345b59353f94e"
+          },
+          "loop": {
+            "start": 2240,
+            "end": 2400
+          }
+        }
+      ]
+    }
+  }
+}

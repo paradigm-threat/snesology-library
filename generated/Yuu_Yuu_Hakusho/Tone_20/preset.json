@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Yuu Yuu Hakusho",
+    "snes": {
+      "srcn": 20,
+      "character": "tone",
+      "pcmLength": 2192,
+      "brrLength": 1233,
+      "hasLoop": true,
+      "loopStartPcm": 176,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 598
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "191bd9fd442fe3ad99de4da2bfcf655aeab4bf62c663199767ea72ac7e3c540a"
+          },
+          "loop": {
+            "start": 176,
+            "end": 2192
+          }
+        }
+      ]
+    }
+  }
+}

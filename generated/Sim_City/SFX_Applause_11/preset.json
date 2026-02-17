@@ -1,0 +1,48 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Applause",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sim City",
+    "snes": {
+      "srcn": 11,
+      "character": "one-shot",
+      "pcmLength": 15392,
+      "brrLength": 8658,
+      "hasLoop": false
+    },
+    "communityName": "sfx_applause",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bf722ffb72bea13a161fdea5778bbf794e0ae59f52b64d34d09fee6c2cb91929"
+          }
+        }
+      ]
+    }
+  }
+}

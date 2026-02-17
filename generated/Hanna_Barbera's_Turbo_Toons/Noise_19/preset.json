@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hanna Barbera's Turbo Toons",
+    "snes": {
+      "srcn": 19,
+      "character": "noise",
+      "pcmLength": 4880,
+      "brrLength": 2745,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8b013478f61d3d9e845bce88b9a60a51ff1bbbcd9d9e02b8f4138146e89d94e5"
+          }
+        }
+      ]
+    }
+  }
+}

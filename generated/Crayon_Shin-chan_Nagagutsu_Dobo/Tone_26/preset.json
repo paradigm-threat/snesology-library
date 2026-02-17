@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Crayon Shin-chan: Nagagutsu Dobo",
+    "snes": {
+      "srcn": 26,
+      "character": "tone",
+      "pcmLength": 3792,
+      "brrLength": 2133,
+      "hasLoop": true,
+      "loopStartPcm": 656
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c3ceca09d5896f861445ae4a9debd36b3faa1f72bd8759d5befc5a0675f47d5b"
+          },
+          "loop": {
+            "start": 656,
+            "end": 3792
+          }
+        }
+      ]
+    }
+  }
+}

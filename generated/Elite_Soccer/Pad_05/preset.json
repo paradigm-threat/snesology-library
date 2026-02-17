@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Elite Soccer",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 17488,
+      "brrLength": 9837,
+      "hasLoop": true,
+      "loopStartPcm": 11808
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1c5a84dc49743c042e8a1114d31d9fa369219478068afb57460573f6a5f0c911"
+          },
+          "loop": {
+            "start": 11808,
+            "end": 17488
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bishoujo Senshi Sailormoon",
+    "snes": {
+      "srcn": 82,
+      "character": "noise",
+      "pcmLength": 2416,
+      "brrLength": 1359,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "309d458c54a0bcbca5c1a967f1fcb5776bfc9e19fe6c39027822d68348bd6b3c"
+          }
+        }
+      ]
+    }
+  }
+}

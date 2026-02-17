@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "World Heroes 2",
+    "snes": {
+      "srcn": 192,
+      "character": "tone",
+      "pcmLength": 3888,
+      "brrLength": 2187,
+      "hasLoop": true,
+      "loopStartPcm": 77232
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3e6a02bc71658b0841e170c8e21cac2db4407f52c3a1884d23a7478929775775"
+          },
+          "loop": {
+            "start": 77232,
+            "end": 3888
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "AAAHH!!! Real Monsters",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 576,
+      "brrLength": 324,
+      "hasLoop": true,
+      "loopStartPcm": 464,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 191,
+      "pitchRegister": 2806
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0b5556365b8c1f76f8aee1d2958b3b47fd9ccf264721b6e1800e849e72c691c8"
+          },
+          "loop": {
+            "start": 464,
+            "end": 576
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Time Slip",
+    "snes": {
+      "srcn": 7,
+      "character": "one-shot",
+      "pcmLength": 1056,
+      "brrLength": 594,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 252,
+      "gain": 0,
+      "pitchRegister": 1515
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5b5083819d93ed3044528857a220ad44a992de42a85dd82d5e085a9a2f7b6a64"
+          }
+        }
+      ]
+    }
+  }
+}

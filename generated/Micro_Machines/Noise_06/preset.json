@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Micro Machines",
+    "snes": {
+      "srcn": 6,
+      "character": "noise",
+      "pcmLength": 6912,
+      "brrLength": 3888,
+      "hasLoop": false,
+      "adsr1": 159,
+      "adsr2": 63,
+      "gain": 0,
+      "pitchRegister": 256
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "66635f655a3d6eed54d4fcd370e99f5b38558b90651cd85b2b161eb85e15ab55"
+          }
+        }
+      ]
+    }
+  }
+}

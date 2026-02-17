@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Lion King",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 6576,
+      "brrLength": 3699,
+      "hasLoop": true,
+      "loopStartPcm": 832
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "34c4b08ddc285147598ee649c38fe1bb4d03a24bce60bce25bfde4ff2d204161"
+          },
+          "loop": {
+            "start": 832,
+            "end": 6576
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Madou Monogatari",
+    "snes": {
+      "srcn": 48,
+      "character": "tone",
+      "pcmLength": 3056,
+      "brrLength": 1719,
+      "hasLoop": true,
+      "loopStartPcm": 2816,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 224,
+      "pitchRegister": 1193
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c28df3a63a00abce345d2943179a2dc39c26eea2693655be1401219e48937c0b"
+          },
+          "loop": {
+            "start": 2816,
+            "end": 3056
+          }
+        }
+      ]
+    }
+  }
+}

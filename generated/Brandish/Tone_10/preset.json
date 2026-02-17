@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Brandish",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 3984,
+      "brrLength": 2241,
+      "hasLoop": true,
+      "loopStartPcm": 1536,
+      "adsr1": 175,
+      "adsr2": 128,
+      "gain": 184,
+      "pitchRegister": 5166
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3f7aca3d65a1b0ae32ead6352a50fd422683bc368176edf2677f548c5e58c915"
+          },
+          "loop": {
+            "start": 1536,
+            "end": 3984
+          }
+        }
+      ]
+    }
+  }
+}

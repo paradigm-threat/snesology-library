@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Slayers",
+    "snes": {
+      "srcn": 35,
+      "character": "melodic",
+      "pcmLength": 7056,
+      "brrLength": 3969,
+      "hasLoop": true,
+      "loopStartPcm": 4608,
+      "adsr1": 255,
+      "adsr2": 234,
+      "gain": 0,
+      "pitchRegister": 8192
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "abb1f2092e574db25118e29c7a45c8fd86ca6cea85b0ea0b594ffdbeacafc8ef"
+          },
+          "loop": {
+            "start": 4608,
+            "end": 7056
+          }
+        }
+      ]
+    }
+  }
+}

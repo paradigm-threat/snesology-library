@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Human Grand Prix",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 7024,
+      "brrLength": 3951,
+      "hasLoop": true,
+      "loopStartPcm": 304,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 3815
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7d7cba0136100cdeed1f9cf5db38ccf28416253a6143ddabf6c00c679d5ed200"
+          },
+          "loop": {
+            "start": 304,
+            "end": 7024
+          }
+        }
+      ]
+    }
+  }
+}

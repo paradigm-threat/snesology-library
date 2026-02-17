@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jammit",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 4784,
+      "brrLength": 2691,
+      "hasLoop": true,
+      "loopStartPcm": 3968
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b2b9298690f0f7e4a7ff56509e79cd036a38d688b6de1c0b6be9c2b0008f6214"
+          },
+          "loop": {
+            "start": 3968,
+            "end": 4784
+          }
+        }
+      ]
+    }
+  }
+}

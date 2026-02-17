@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Yuu Yuu Hakusho: Tokubetsu Hen",
+    "snes": {
+      "srcn": 27,
+      "character": "one-shot",
+      "pcmLength": 3344,
+      "brrLength": 1881,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 236,
+      "gain": 191,
+      "pitchRegister": 596
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5799d36dabe36fc42707efda05e7e4fd0acc55ed08a094f248fdabed3023bf89"
+          }
+        }
+      ]
+    }
+  }
+}

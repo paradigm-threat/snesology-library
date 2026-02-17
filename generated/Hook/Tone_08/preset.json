@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hook",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 3376,
+      "brrLength": 1899,
+      "hasLoop": true,
+      "loopStartPcm": 1136,
+      "adsr1": 143,
+      "adsr2": 241,
+      "gain": 184,
+      "pitchRegister": 2651
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1da8b7557a896fffe76d1bac86ec95e72332549bb21379f79d1a1a5d5e586706"
+          },
+          "loop": {
+            "start": 1136,
+            "end": 3376
+          }
+        }
+      ]
+    }
+  }
+}

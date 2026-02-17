@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Choir Min",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bebe's Kids",
+    "snes": {
+      "srcn": 21,
+      "character": "melodic",
+      "pcmLength": 10256,
+      "brrLength": 5769,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 3960
+    },
+    "communityName": "choir_min",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9070e67f713ea509d626a51973a226e370127948a169d6e00e3e429c84025654"
+          },
+          "loop": {
+            "start": 0,
+            "end": 10256
+          }
+        }
+      ]
+    }
+  }
+}

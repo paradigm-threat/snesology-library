@@ -1,0 +1,51 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Itchy and Scratchy Game",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 5056,
+      "brrLength": 2844,
+      "hasLoop": true,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 50,
+      "pitchRegister": 2732
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "aaf97930615a8d27327ced3bd806abc989e51512494bee245f52cd100087bffc"
+          }
+        }
+      ]
+    }
+  }
+}

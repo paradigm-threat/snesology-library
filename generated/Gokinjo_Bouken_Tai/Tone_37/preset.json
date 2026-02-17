@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gokinjo Bouken Tai",
+    "snes": {
+      "srcn": 37,
+      "character": "tone",
+      "pcmLength": 2368,
+      "brrLength": 1332,
+      "hasLoop": true,
+      "loopStartPcm": 880
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2e308e07053895581add384fc691307f0bb288cf6423fdcc8c847cd2ae4ef472"
+          },
+          "loop": {
+            "start": 880,
+            "end": 2368
+          }
+        }
+      ]
+    }
+  }
+}

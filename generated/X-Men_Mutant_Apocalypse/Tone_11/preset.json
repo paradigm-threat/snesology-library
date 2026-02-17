@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "X-Men: Mutant Apocalypse",
+    "snes": {
+      "srcn": 11,
+      "character": "tone",
+      "pcmLength": 3360,
+      "brrLength": 1890,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 254,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 8160
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6b0eb8ea14193114e3c282fda41d6eb22aaf3a73589cb773b97d2a49f7675267"
+          },
+          "loop": {
+            "start": 48,
+            "end": 3360
+          }
+        }
+      ]
+    }
+  }
+}

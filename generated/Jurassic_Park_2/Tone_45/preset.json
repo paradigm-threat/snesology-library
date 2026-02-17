@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jurassic Park 2",
+    "snes": {
+      "srcn": 45,
+      "character": "tone",
+      "pcmLength": 1696,
+      "brrLength": 954,
+      "hasLoop": true,
+      "loopStartPcm": 1808
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7335990a532bb57b7f8fa053132adb9bddc6cc2ac08f3e2bf6bfa309e37bd805"
+          },
+          "loop": {
+            "start": 1808,
+            "end": 1696
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sports Illustrated Championship",
+    "snes": {
+      "srcn": 14,
+      "character": "melodic",
+      "pcmLength": 6176,
+      "brrLength": 3474,
+      "hasLoop": true,
+      "loopStartPcm": 3776
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "087dc2d6bce4b7c4fa3611f872187e099d5417754a7e74cd887757b060833336"
+          },
+          "loop": {
+            "start": 3776,
+            "end": 6176
+          }
+        }
+      ]
+    }
+  }
+}

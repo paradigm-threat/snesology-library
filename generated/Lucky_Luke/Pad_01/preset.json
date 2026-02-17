@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Lucky Luke",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 17536,
+      "brrLength": 9864,
+      "hasLoop": true,
+      "loopStartPcm": 4064,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 8632
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b4f65be8211c10e3872b4560c5f342815b10f175bc5175deedb3e6353cb47cbd"
+          },
+          "loop": {
+            "start": 4064,
+            "end": 17536
+          }
+        }
+      ]
+    }
+  }
+}

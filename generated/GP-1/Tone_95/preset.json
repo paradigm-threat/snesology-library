@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "GP-1",
+    "snes": {
+      "srcn": 95,
+      "character": "tone",
+      "pcmLength": 1008,
+      "brrLength": 567,
+      "hasLoop": true,
+      "loopStartPcm": 62272
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "056b40ef2f4b5f50d1d08efde7dffefc4348671650473f2c9c0a1edf9ec49d2a"
+          },
+          "loop": {
+            "start": 62272,
+            "end": 1008
+          }
+        }
+      ]
+    }
+  }
+}

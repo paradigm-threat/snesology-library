@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Justice League Task Force",
+    "snes": {
+      "srcn": 11,
+      "character": "tone",
+      "pcmLength": 1056,
+      "brrLength": 594,
+      "hasLoop": true,
+      "loopStartPcm": 1024
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d3cd39a96329741d65ef0f1589eb2919ca9cdccb8c2b51baf8178841ce5b205c"
+          },
+          "loop": {
+            "start": 1024,
+            "end": 1056
+          }
+        }
+      ]
+    }
+  }
+}

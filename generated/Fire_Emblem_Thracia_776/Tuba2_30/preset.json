@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tuba2",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fire Emblem Thracia 776",
+    "snes": {
+      "srcn": 30,
+      "character": "tone",
+      "pcmLength": 1184,
+      "brrLength": 666,
+      "hasLoop": true,
+      "loopStartPcm": 1104,
+      "adsr1": 205,
+      "adsr2": 140,
+      "gain": 189,
+      "pitchRegister": 6010
+    },
+    "communityName": "tuba2",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5229754d63ed5aca1a927b3dee27a2c5ad9b896c0315498f7eb41036ee5c29a3"
+          },
+          "loop": {
+            "start": 1104,
+            "end": 1184
+          }
+        }
+      ]
+    }
+  }
+}

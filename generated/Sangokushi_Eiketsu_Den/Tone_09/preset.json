@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sangokushi Eiketsu Den",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 2944,
+      "brrLength": 1656,
+      "hasLoop": true,
+      "loopStartPcm": 2816,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 158,
+      "pitchRegister": 8192
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "003e52f1c391000cec690d37588991aa64d39e1e011618511b149a28fb95d28c"
+          },
+          "loop": {
+            "start": 2816,
+            "end": 2944
+          }
+        }
+      ]
+    }
+  }
+}

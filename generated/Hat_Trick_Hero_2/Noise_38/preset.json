@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hat Trick Hero 2",
+    "snes": {
+      "srcn": 38,
+      "character": "noise",
+      "pcmLength": 5264,
+      "brrLength": 2961,
+      "hasLoop": true,
+      "loopStartPcm": 2384
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "749d8008389316a38a9a36530d5a69fd14156a2835ba2dc0eb2a54284f306b48"
+          },
+          "loop": {
+            "start": 2384,
+            "end": 5264
+          }
+        }
+      ]
+    }
+  }
+}

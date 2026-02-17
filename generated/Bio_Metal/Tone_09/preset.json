@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bio Metal",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 1088,
+      "brrLength": 612,
+      "hasLoop": true,
+      "loopStartPcm": 1024,
+      "adsr1": 143,
+      "adsr2": 107,
+      "gain": 0,
+      "pitchRegister": 1
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cb7819cd2ba58a84ae4ad684530b55aa5a60b6314b482db645f48f8fdadcb4ec"
+          },
+          "loop": {
+            "start": 1024,
+            "end": 1088
+          }
+        }
+      ]
+    }
+  }
+}

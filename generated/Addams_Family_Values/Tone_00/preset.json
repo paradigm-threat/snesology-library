@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Addams Family Values",
+    "snes": {
+      "srcn": 0,
+      "character": "tone",
+      "pcmLength": 2416,
+      "brrLength": 1359,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 201,
+      "pitchRegister": 1105
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9904f79057a890712efdb78598b930d980c75a153b041cb1b9b85df79b510fe8"
+          },
+          "loop": {
+            "start": 0,
+            "end": 2416
+          }
+        }
+      ]
+    }
+  }
+}

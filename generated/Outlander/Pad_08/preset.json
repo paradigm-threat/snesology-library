@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Outlander",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 5216,
+      "brrLength": 2934,
+      "hasLoop": true,
+      "loopStartPcm": 2272,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 130,
+      "pitchRegister": 2169
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f76ce2d782a43795b56e7b3898c72984ffb2751bdaac8280dc1daa7b18f58f5e"
+          },
+          "loop": {
+            "start": 2272,
+            "end": 5216
+          }
+        }
+      ]
+    }
+  }
+}

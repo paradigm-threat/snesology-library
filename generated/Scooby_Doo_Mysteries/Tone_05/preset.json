@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Scooby Doo Mysteries",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 3328,
+      "brrLength": 1872,
+      "hasLoop": true,
+      "loopStartPcm": 4768
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "21cf67e30b46f19c5404837b827687257623af9917cc65cfd8e91a220cbd7240"
+          },
+          "loop": {
+            "start": 4768,
+            "end": 3328
+          }
+        }
+      ]
+    }
+  }
+}

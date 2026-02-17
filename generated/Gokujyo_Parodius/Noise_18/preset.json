@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gokujyo Parodius",
+    "snes": {
+      "srcn": 18,
+      "character": "noise",
+      "pcmLength": 880,
+      "brrLength": 495,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 160,
+      "gain": 176,
+      "pitchRegister": 4305
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "eb461e056e9928041f98aa7eea22d1a1fbbb4491b0cc7c4b2b9a555cb86793c4"
+          }
+        }
+      ]
+    }
+  }
+}

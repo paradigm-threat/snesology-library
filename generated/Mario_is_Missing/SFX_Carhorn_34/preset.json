@@ -1,0 +1,48 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Carhorn",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mario is Missing",
+    "snes": {
+      "srcn": 34,
+      "character": "noise",
+      "pcmLength": 2496,
+      "brrLength": 1404,
+      "hasLoop": false
+    },
+    "communityName": "sfx_carhorn",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "705c02b6e498f6a8aa062e3c55a1e25c3a4ca86bd4082d8486eb93477c174982"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Valis IV",
+    "snes": {
+      "srcn": 15,
+      "character": "melodic",
+      "pcmLength": 7872,
+      "brrLength": 4428,
+      "hasLoop": true,
+      "loopStartPcm": 1680
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b216ce45f5919723f32d97a7c4ca3a1bf81ce28e9ccf10c9c428ab97915423f8"
+          },
+          "loop": {
+            "start": 1680,
+            "end": 7872
+          }
+        }
+      ]
+    }
+  }
+}

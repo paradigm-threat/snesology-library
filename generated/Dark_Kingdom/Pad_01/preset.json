@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dark Kingdom",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 10656,
+      "brrLength": 5994,
+      "hasLoop": true,
+      "loopStartPcm": 1920
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0059c3b5bacde70fc9d870e0c046ba1ad19ed94bd2c5f7298dba4dd5518981a0"
+          },
+          "loop": {
+            "start": 1920,
+            "end": 10656
+          }
+        }
+      ]
+    }
+  }
+}

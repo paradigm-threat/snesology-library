@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tuba",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mario is Missing",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 336,
+      "brrLength": 189,
+      "hasLoop": true,
+      "loopStartPcm": 208,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 100,
+      "pitchRegister": 564
+    },
+    "communityName": "tuba",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ea2537a94ee0636489dc60238002e71fa75894c3d16ee659f2d9a4a6e41ca09a"
+          },
+          "loop": {
+            "start": 208,
+            "end": 336
+          }
+        }
+      ]
+    }
+  }
+}

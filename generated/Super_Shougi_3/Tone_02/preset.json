@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Shougi 3",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 2848,
+      "brrLength": 1602,
+      "hasLoop": true,
+      "loopStartPcm": 2752,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1483
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f83891f3e138fe2dc4048d4f7a99f104957a03dc3449930ae0c1dd1b1efa26f2"
+          },
+          "loop": {
+            "start": 2752,
+            "end": 2848
+          }
+        }
+      ]
+    }
+  }
+}

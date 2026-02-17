@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Onita Atsushi FMW",
+    "snes": {
+      "srcn": 110,
+      "character": "tone",
+      "pcmLength": 1488,
+      "brrLength": 837,
+      "hasLoop": true,
+      "loopStartPcm": 1296,
+      "adsr1": 255,
+      "adsr2": 243,
+      "gain": 184,
+      "pitchRegister": 2036
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e808459058d0bc8a2879b632bc0ed39a5c03733e721e9e74199bb0fbf0867d4e"
+          },
+          "loop": {
+            "start": 1296,
+            "end": 1488
+          }
+        }
+      ]
+    }
+  }
+}

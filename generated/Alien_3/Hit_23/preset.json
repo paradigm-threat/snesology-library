@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Alien 3",
+    "snes": {
+      "srcn": 23,
+      "character": "one-shot",
+      "pcmLength": 2544,
+      "brrLength": 1431,
+      "hasLoop": false,
+      "adsr1": 142,
+      "adsr2": 229,
+      "gain": 0,
+      "pitchRegister": 480
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f033894353a192869433a80fc4cbc408ec4a342c43ef65a384a844113f2e08f4"
+          }
+        }
+      ]
+    }
+  }
+}

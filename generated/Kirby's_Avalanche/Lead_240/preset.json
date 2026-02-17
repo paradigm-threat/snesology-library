@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kirby's Avalanche",
+    "snes": {
+      "srcn": 240,
+      "character": "melodic",
+      "pcmLength": 4624,
+      "brrLength": 2601,
+      "hasLoop": true,
+      "loopStartPcm": 6944
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d331d890d8b325bdc475e56983510a7c7218942d0e1315f5c3495009ddb30f7c"
+          },
+          "loop": {
+            "start": 6944,
+            "end": 4624
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Nekketsu Tairiku Burning Heroes",
+    "snes": {
+      "srcn": 106,
+      "character": "tone",
+      "pcmLength": 2480,
+      "brrLength": 1395,
+      "hasLoop": true,
+      "loopStartPcm": 46048
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4813a7613688f0c2f5c38d5910ad8782e50fc22d01f2eb6003bcb2aa9b9a4b2d"
+          },
+          "loop": {
+            "start": 46048,
+            "end": 2480
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fighter's History 2",
+    "snes": {
+      "srcn": 16,
+      "character": "melodic",
+      "pcmLength": 5008,
+      "brrLength": 2817,
+      "hasLoop": true,
+      "loopStartPcm": 4176,
+      "adsr1": 135,
+      "adsr2": 230,
+      "gain": 184,
+      "pitchRegister": 626
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7a6ee73cfbeb1658ea836d8e6b2500408188456ab332f341fe3371b1721b6d73"
+          },
+          "loop": {
+            "start": 4176,
+            "end": 5008
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bubsy in Claws Encounters of the",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 5664,
+      "brrLength": 3186,
+      "hasLoop": true,
+      "loopStartPcm": 3104
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5bac0075e03fd315a6561d36947a2ed1067a6a29932d9a69e43f1437a48c7682"
+          },
+          "loop": {
+            "start": 3104,
+            "end": 5664
+          }
+        }
+      ]
+    }
+  }
+}

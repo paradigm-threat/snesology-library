@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Romancing SaGa 3",
+    "snes": {
+      "srcn": 34,
+      "character": "one-shot",
+      "pcmLength": 6992,
+      "brrLength": 3933,
+      "hasLoop": false,
+      "adsr1": 252,
+      "adsr2": 224,
+      "gain": 160,
+      "pitchRegister": 3991
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5acfbbe6dc90c80913f8690463cd07fe55fecb1ed04bf637b506e8b2097f1231"
+          }
+        }
+      ]
+    }
+  }
+}

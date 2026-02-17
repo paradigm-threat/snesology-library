@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Yadamon Wonderland Dreams",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 3680,
+      "brrLength": 2070,
+      "hasLoop": true,
+      "loopStartPcm": 3568,
+      "adsr1": 255,
+      "adsr2": 237,
+      "gain": 184,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1bd44373938773e8d37ed6c82fe276fb48add76cf0d4d3a8bc3f8dc08130174d"
+          },
+          "loop": {
+            "start": 3568,
+            "end": 3680
+          }
+        }
+      ]
+    }
+  }
+}

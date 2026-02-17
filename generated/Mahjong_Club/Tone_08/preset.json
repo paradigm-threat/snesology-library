@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mahjong Club",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 3472,
+      "brrLength": 1953,
+      "hasLoop": true,
+      "loopStartPcm": 3184,
+      "adsr1": 255,
+      "adsr2": 232,
+      "gain": 184,
+      "pitchRegister": 4823
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cd82ec26afd36fc8c2e0ec06c12f3e968796b04019cbd8f65eceb59d6b8c9970"
+          },
+          "loop": {
+            "start": 3184,
+            "end": 3472
+          }
+        }
+      ]
+    }
+  }
+}

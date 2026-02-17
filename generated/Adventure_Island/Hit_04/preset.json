@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Adventure Island",
+    "snes": {
+      "srcn": 4,
+      "character": "one-shot",
+      "pcmLength": 3008,
+      "brrLength": 1692,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 247,
+      "gain": 184,
+      "pitchRegister": 3628
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5a1f516e04c3f4fc5b826d2ee2bcd7c819279f0398198e5d9bb3fef8e4b006cf"
+          }
+        }
+      ]
+    }
+  }
+}

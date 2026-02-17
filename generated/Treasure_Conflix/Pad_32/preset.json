@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Treasure Conflix",
+    "snes": {
+      "srcn": 32,
+      "character": "melodic",
+      "pcmLength": 12496,
+      "brrLength": 7029,
+      "hasLoop": true,
+      "loopStartPcm": 2288,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 160,
+      "pitchRegister": 3799
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4de0c8fc473fac16d3efcd256467a4b6d33396a773678bff85e5c5935fb64ef1"
+          },
+          "loop": {
+            "start": 2288,
+            "end": 12496
+          }
+        }
+      ]
+    }
+  }
+}

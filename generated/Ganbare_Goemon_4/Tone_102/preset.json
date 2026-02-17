@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ganbare Goemon 4",
+    "snes": {
+      "srcn": 102,
+      "character": "tone",
+      "pcmLength": 3104,
+      "brrLength": 1746,
+      "hasLoop": true,
+      "loopStartPcm": 1264
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e89a117757ec0f24b7ad24b62af7938364287c69d342f4744a95e6d5c6b51ad3"
+          },
+          "loop": {
+            "start": 1264,
+            "end": 3104
+          }
+        }
+      ]
+    }
+  }
+}

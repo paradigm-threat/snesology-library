@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Strings HI",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Terranigma",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 8864,
+      "brrLength": 4986,
+      "hasLoop": true,
+      "loopStartPcm": 128,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 228
+    },
+    "communityName": "strings_hi",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "39c0e73933dcabf2a616f2bbb8f5730ae011b5c60e15b92667fd410a76b4eb2c"
+          },
+          "loop": {
+            "start": 128,
+            "end": 8864
+          }
+        }
+      ]
+    }
+  }
+}

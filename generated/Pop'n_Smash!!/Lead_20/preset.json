@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pop'n Smash!!",
+    "snes": {
+      "srcn": 20,
+      "character": "melodic",
+      "pcmLength": 5568,
+      "brrLength": 3132,
+      "hasLoop": true,
+      "loopStartPcm": 5520,
+      "adsr1": 207,
+      "adsr2": 148,
+      "gain": 0,
+      "pitchRegister": 2405
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "048522f037c9983d455620c27c960e5e1babf72e4cd7fed43c680ef52bc22f6b"
+          },
+          "loop": {
+            "start": 5520,
+            "end": 5568
+          }
+        }
+      ]
+    }
+  }
+}

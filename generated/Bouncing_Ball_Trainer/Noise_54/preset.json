@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bouncing Ball Trainer",
+    "snes": {
+      "srcn": 54,
+      "character": "noise",
+      "pcmLength": 20496,
+      "brrLength": 11529,
+      "hasLoop": true,
+      "loopStartPcm": 7792
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d6794b3900fcad0459b31abdc691c57491cc1a02df5d4de57a52d2d6395ed5b8"
+          },
+          "loop": {
+            "start": 7792,
+            "end": 20496
+          }
+        }
+      ]
+    }
+  }
+}

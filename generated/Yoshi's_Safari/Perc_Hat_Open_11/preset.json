@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Hat Open",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Yoshi's Safari",
+    "snes": {
+      "srcn": 11,
+      "character": "noise",
+      "pcmLength": 6256,
+      "brrLength": 3519,
+      "hasLoop": true,
+      "loopStartPcm": 5056,
+      "adsr1": 143,
+      "adsr2": 243,
+      "gain": 184,
+      "pitchRegister": 4732
+    },
+    "communityName": "perc_hat_open",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "37dfe7d35a2a9fb92ae97891696d44b222bf6baf111585fc17d3babdf71a4a9e"
+          },
+          "loop": {
+            "start": 5056,
+            "end": 6256
+          }
+        }
+      ]
+    }
+  }
+}

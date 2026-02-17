@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tin Star",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 6208,
+      "brrLength": 3492,
+      "hasLoop": true,
+      "loopStartPcm": 2528,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 124,
+      "pitchRegister": 3043
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "054ce091665293b88820ed92963a544f6d411af894c0a9e2cde4a196cbeb5769"
+          },
+          "loop": {
+            "start": 2528,
+            "end": 6208
+          }
+        }
+      ]
+    }
+  }
+}

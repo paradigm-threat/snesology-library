@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Knights of the Round",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 3216,
+      "brrLength": 1809,
+      "hasLoop": true,
+      "loopStartPcm": 2704,
+      "adsr1": 159,
+      "adsr2": 146,
+      "gain": 184,
+      "pitchRegister": 3208
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f79c78ef77ae450ae057512a08f91a9c709f9cd7e03db2395bcb323c64af7ee2"
+          },
+          "loop": {
+            "start": 2704,
+            "end": 3216
+          }
+        }
+      ]
+    }
+  }
+}

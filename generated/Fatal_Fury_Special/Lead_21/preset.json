@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fatal Fury Special",
+    "snes": {
+      "srcn": 21,
+      "character": "melodic",
+      "pcmLength": 5728,
+      "brrLength": 3222,
+      "hasLoop": true,
+      "loopStartPcm": 3856
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "227cf58ef7361605f06cd2f3d663ba91be7da2b7bf0ec6b06892615d7593248a"
+          },
+          "loop": {
+            "start": 3856,
+            "end": 5728
+          }
+        }
+      ]
+    }
+  }
+}

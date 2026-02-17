@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shooting Macross",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 10256,
+      "brrLength": 5769,
+      "hasLoop": true,
+      "loopStartPcm": 3408
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "458df7cbf1c34e3364ef6a8ff8367f002c055a7c4e572f03fec0d415fec9a11c"
+          },
+          "loop": {
+            "start": 3408,
+            "end": 10256
+          }
+        }
+      ]
+    }
+  }
+}

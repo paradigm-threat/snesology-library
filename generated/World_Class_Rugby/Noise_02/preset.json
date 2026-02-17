@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "World Class Rugby",
+    "snes": {
+      "srcn": 2,
+      "character": "noise",
+      "pcmLength": 1952,
+      "brrLength": 1098,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 246,
+      "gain": 0,
+      "pitchRegister": 1203
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f42154711f46f31d97dc6ffbcbafea83bce1aa53c046e3a812c77ff6dd1b1e1d"
+          }
+        }
+      ]
+    }
+  }
+}

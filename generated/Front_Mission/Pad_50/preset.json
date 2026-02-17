@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Front Mission",
+    "snes": {
+      "srcn": 50,
+      "character": "melodic",
+      "pcmLength": 4384,
+      "brrLength": 2466,
+      "hasLoop": true,
+      "loopStartPcm": 2032
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "723601b048208835865c13b3ce0ad739f0ed7eb5938d54439a23e4feddf27260"
+          },
+          "loop": {
+            "start": 2032,
+            "end": 4384
+          }
+        }
+      ]
+    }
+  }
+}

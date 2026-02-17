@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Popeye",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 6352,
+      "brrLength": 3573,
+      "hasLoop": true,
+      "loopStartPcm": 2640,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 159,
+      "pitchRegister": 914
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "60e0a7dd2e88aa881d52eb517c7be5b82aae50a8d5f1a0778cd02650efb35fb3"
+          },
+          "loop": {
+            "start": 2640,
+            "end": 6352
+          }
+        }
+      ]
+    }
+  }
+}

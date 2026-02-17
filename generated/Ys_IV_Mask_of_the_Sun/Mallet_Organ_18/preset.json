@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Mallet Organ",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ys IV: Mask of the Sun",
+    "snes": {
+      "srcn": 18,
+      "character": "tone",
+      "pcmLength": 848,
+      "brrLength": 477,
+      "hasLoop": true,
+      "loopStartPcm": 800
+    },
+    "communityName": "mallet_organ",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "81b0878e957fc5f53db37bf494a9cf9062890d31dc9569902b1abebad9324b1a"
+          },
+          "loop": {
+            "start": 800,
+            "end": 848
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hajimari no Mori",
+    "snes": {
+      "srcn": 92,
+      "character": "noise",
+      "pcmLength": 8576,
+      "brrLength": 4824,
+      "hasLoop": true,
+      "loopStartPcm": 1328
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "df17d382c166efae506dd7ca69692178a88c6178ab83f0de4160a4f276f6e52f"
+          },
+          "loop": {
+            "start": 1328,
+            "end": 8576
+          }
+        }
+      ]
+    }
+  }
+}

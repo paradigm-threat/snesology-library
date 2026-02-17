@@ -1,0 +1,48 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Billiards",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Side Pocket",
+    "snes": {
+      "srcn": 11,
+      "character": "noise",
+      "pcmLength": 5952,
+      "brrLength": 3348,
+      "hasLoop": false
+    },
+    "communityName": "sfx_billiards",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "88901f6744e4e4a00a168f33d39f9f0dfe3af84af54459f051794750d42575f2"
+          }
+        }
+      ]
+    }
+  }
+}

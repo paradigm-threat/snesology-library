@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Choir",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shin Megami Tensei",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 13120,
+      "brrLength": 7380,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 240,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 0
+    },
+    "communityName": "choir",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a5b37c727d6c67a71d9d7c74221869e4d8fb14692b330c6002f67e29cf3b6c31"
+          },
+          "loop": {
+            "start": 48,
+            "end": 13120
+          }
+        }
+      ]
+    }
+  }
+}

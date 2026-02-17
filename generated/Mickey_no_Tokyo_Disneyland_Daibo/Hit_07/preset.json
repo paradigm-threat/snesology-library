@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mickey no Tokyo Disneyland Daibo",
+    "snes": {
+      "srcn": 7,
+      "character": "one-shot",
+      "pcmLength": 1200,
+      "brrLength": 675,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b8d1528b7ce7bbf4478714699d3b5a371b07fb7f5746ed65d22d1d744c26fa03"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gokinjo Bouken Tai",
+    "snes": {
+      "srcn": 51,
+      "character": "noise",
+      "pcmLength": 5360,
+      "brrLength": 3015,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 248,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 901
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "dbccdde514c1bda10da20b359fbcdc46c4dd01f41f8acffd5455d93233c09deb"
+          },
+          "loop": {
+            "start": 16,
+            "end": 5360
+          }
+        }
+      ]
+    }
+  }
+}

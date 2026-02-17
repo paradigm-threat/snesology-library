@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Wagan Land",
+    "snes": {
+      "srcn": 17,
+      "character": "tone",
+      "pcmLength": 1824,
+      "brrLength": 1026,
+      "hasLoop": true,
+      "loopStartPcm": 1584
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "36ddce309bc8aa4248634b6aeaa3cd640cab237756f5c51617e788e476078797"
+          },
+          "loop": {
+            "start": 1584,
+            "end": 1824
+          }
+        }
+      ]
+    }
+  }
+}

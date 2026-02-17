@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Operation Europe: Path to Victor",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 1776,
+      "brrLength": 999,
+      "hasLoop": true,
+      "loopStartPcm": 1200,
+      "adsr1": 143,
+      "adsr2": 12,
+      "gain": 184,
+      "pitchRegister": 5318
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3f89ae44f63073a4805963832016b5f3ad4cf5470db1d2946212042f9acf008a"
+          },
+          "loop": {
+            "start": 1200,
+            "end": 1776
+          }
+        }
+      ]
+    }
+  }
+}

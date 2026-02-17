@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Rushingwater",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bass Master Classic",
+    "snes": {
+      "srcn": 26,
+      "character": "noise",
+      "pcmLength": 5616,
+      "brrLength": 3159,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    },
+    "communityName": "sfx_rushingwater",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "591413a04ccea01b7d476aea81be0d075275cca1d1d2188773ccf893bfbd2701"
+          },
+          "loop": {
+            "start": 16,
+            "end": 5616
+          }
+        }
+      ]
+    }
+  }
+}

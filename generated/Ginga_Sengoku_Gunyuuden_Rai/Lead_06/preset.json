@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ginga Sengoku Gunyuuden Rai",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 11920,
+      "brrLength": 6705,
+      "hasLoop": true,
+      "loopStartPcm": 9936,
+      "adsr1": 255,
+      "adsr2": 233,
+      "gain": 233,
+      "pitchRegister": 683
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e14a70b7ab940e36e54c0692895521cc24e0b766297503e41b7687eb93792729"
+          },
+          "loop": {
+            "start": 9936,
+            "end": 11920
+          }
+        }
+      ]
+    }
+  }
+}

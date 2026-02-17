@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Art of Fighting",
+    "snes": {
+      "srcn": 32,
+      "character": "melodic",
+      "pcmLength": 5136,
+      "brrLength": 2889,
+      "hasLoop": true,
+      "loopStartPcm": 3264,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2006
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c354abc7dcff211ab085ebeb6987102e68bfddf46a16c8709ebcab8b70b479d0"
+          },
+          "loop": {
+            "start": 3264,
+            "end": 5136
+          }
+        }
+      ]
+    }
+  }
+}

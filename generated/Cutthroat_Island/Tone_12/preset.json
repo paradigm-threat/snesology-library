@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cutthroat Island",
+    "snes": {
+      "srcn": 12,
+      "character": "tone",
+      "pcmLength": 3472,
+      "brrLength": 1953,
+      "hasLoop": true,
+      "loopStartPcm": 1808,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 0,
+      "pitchRegister": 10895
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9a50f07472936c0b879f47146164534844a9fc0603270dffe6b828545ebb457c"
+          },
+          "loop": {
+            "start": 1808,
+            "end": 3472
+          }
+        }
+      ]
+    }
+  }
+}

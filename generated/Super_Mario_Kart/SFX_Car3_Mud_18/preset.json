@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Car3 Mud",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Mario Kart",
+    "snes": {
+      "srcn": 18,
+      "character": "tone",
+      "pcmLength": 1776,
+      "brrLength": 999,
+      "hasLoop": true,
+      "loopStartPcm": 64,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 256
+    },
+    "communityName": "sfx_car3_mud",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8f9c5e44a6384484b75cea18a77a17162f55219ddeefd69fbac598b584c25788"
+          },
+          "loop": {
+            "start": 64,
+            "end": 1776
+          }
+        }
+      ]
+    }
+  }
+}

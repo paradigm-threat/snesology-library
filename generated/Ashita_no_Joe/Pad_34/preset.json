@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ashita no Joe",
+    "snes": {
+      "srcn": 34,
+      "character": "melodic",
+      "pcmLength": 14128,
+      "brrLength": 7947,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e9e0190796fed1305b6ae823b6f50d9da0c595a1b1ba392dd4e20430da443629"
+          },
+          "loop": {
+            "start": 48,
+            "end": 14128
+          }
+        }
+      ]
+    }
+  }
+}

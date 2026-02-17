@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Downtown Nekketsu Baseball Monog",
+    "snes": {
+      "srcn": 175,
+      "character": "noise",
+      "pcmLength": 4800,
+      "brrLength": 2700,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f46f8fc315b16d0b99720069cf49c5aaeab8064a1a38be49d1f6a5e10e3abc82"
+          }
+        }
+      ]
+    }
+  }
+}

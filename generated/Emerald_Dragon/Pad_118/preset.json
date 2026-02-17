@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Emerald Dragon",
+    "snes": {
+      "srcn": 118,
+      "character": "melodic",
+      "pcmLength": 13360,
+      "brrLength": 7515,
+      "hasLoop": true,
+      "loopStartPcm": 8976,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 159,
+      "pitchRegister": 1024
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "407909736407d17bbf534bd665e59878147e0bcd3b5bb6c78ef67e5c4e73c017"
+          },
+          "loop": {
+            "start": 8976,
+            "end": 13360
+          }
+        }
+      ]
+    }
+  }
+}

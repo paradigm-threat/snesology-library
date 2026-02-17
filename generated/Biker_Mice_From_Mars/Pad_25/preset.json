@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Biker Mice From Mars",
+    "snes": {
+      "srcn": 25,
+      "character": "melodic",
+      "pcmLength": 4896,
+      "brrLength": 2754,
+      "hasLoop": true,
+      "loopStartPcm": 1760,
+      "adsr1": 142,
+      "adsr2": 205,
+      "gain": 182,
+      "pitchRegister": 1446
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a51d79e923cffb5e873ab940c2645360121ad2188f0907a3df6361a462a9fd12"
+          },
+          "loop": {
+            "start": 1760,
+            "end": 4896
+          }
+        }
+      ]
+    }
+  }
+}

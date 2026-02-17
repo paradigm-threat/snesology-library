@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Crayon Shin-chan: Arashi wo yobu",
+    "snes": {
+      "srcn": 0,
+      "character": "noise",
+      "pcmLength": 17600,
+      "brrLength": 9900,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0642f625f784ee8f563385bec1f67e6d6e98a3aa63c65ba014fbf827193e89ac"
+          }
+        }
+      ]
+    }
+  }
+}

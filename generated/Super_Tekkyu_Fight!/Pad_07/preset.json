@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Tekkyu Fight!",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 5120,
+      "brrLength": 2880,
+      "hasLoop": true,
+      "loopStartPcm": 2912,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2664
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f50a038ef76dc6cb0365b945f83c83c4d227fbe407b35b10883305b6875e195f"
+          },
+          "loop": {
+            "start": 2912,
+            "end": 5120
+          }
+        }
+      ]
+    }
+  }
+}

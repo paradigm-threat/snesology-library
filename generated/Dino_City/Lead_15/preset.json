@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dino City",
+    "snes": {
+      "srcn": 15,
+      "character": "melodic",
+      "pcmLength": 4000,
+      "brrLength": 2250,
+      "hasLoop": true,
+      "loopStartPcm": 3088,
+      "adsr1": 255,
+      "adsr2": 251,
+      "gain": 0,
+      "pitchRegister": 256
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "93eba25293434ffb8bf575b2828517610dcb9df3c0d5c02b26cab462fb634aa4"
+          },
+          "loop": {
+            "start": 3088,
+            "end": 4000
+          }
+        }
+      ]
+    }
+  }
+}

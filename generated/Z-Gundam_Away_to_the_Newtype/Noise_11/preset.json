@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Z-Gundam: Away to the Newtype",
+    "snes": {
+      "srcn": 11,
+      "character": "noise",
+      "pcmLength": 1264,
+      "brrLength": 711,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "63cdd8cedb68f8a3c15b789c4867fa2ca6f98b81be70d76dca39592cfed3ed17"
+          }
+        }
+      ]
+    }
+  }
+}

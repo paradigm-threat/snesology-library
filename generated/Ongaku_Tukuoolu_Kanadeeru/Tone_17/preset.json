@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ongaku Tukuoolu Kanadeeru",
+    "snes": {
+      "srcn": 17,
+      "character": "tone",
+      "pcmLength": 2560,
+      "brrLength": 1440,
+      "hasLoop": true,
+      "loopStartPcm": 2320,
+      "adsr1": 190,
+      "adsr2": 175,
+      "gain": 0,
+      "pitchRegister": 1069
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "74bfa7ec7abd1ea45653d1b1138260d120a11b0b7a46b80758a8c71a0fb6d5b6"
+          },
+          "loop": {
+            "start": 2320,
+            "end": 2560
+          }
+        }
+      ]
+    }
+  }
+}

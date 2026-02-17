@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Magical Quest",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 4000,
+      "brrLength": 2250,
+      "hasLoop": true,
+      "loopStartPcm": 3440,
+      "adsr1": 255,
+      "adsr2": 242,
+      "gain": 180,
+      "pitchRegister": 6992
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e6cb50bf67d762091ae30a97fa90739f56b66d31ab2c6e76b5fb24c155098dd0"
+          },
+          "loop": {
+            "start": 3440,
+            "end": 4000
+          }
+        }
+      ]
+    }
+  }
+}

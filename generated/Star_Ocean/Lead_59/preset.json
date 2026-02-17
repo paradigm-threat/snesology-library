@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Star Ocean",
+    "snes": {
+      "srcn": 59,
+      "character": "melodic",
+      "pcmLength": 4880,
+      "brrLength": 2745,
+      "hasLoop": true,
+      "loopStartPcm": 3504
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a9a68461b2fdba5828bed59b52b2c265e2eca8cad3d247df4247787b2bae7bd3"
+          },
+          "loop": {
+            "start": 3504,
+            "end": 4880
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Asterix & Obelix",
+    "snes": {
+      "srcn": 20,
+      "character": "melodic",
+      "pcmLength": 6144,
+      "brrLength": 3456,
+      "hasLoop": true,
+      "loopStartPcm": 2256
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "657309ff576cb4b174bff22213f892e48417993c84f6228e68cd7556892ec4e1"
+          },
+          "loop": {
+            "start": 2256,
+            "end": 6144
+          }
+        }
+      ]
+    }
+  }
+}

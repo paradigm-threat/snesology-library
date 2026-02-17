@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jungle Wars 2",
+    "snes": {
+      "srcn": 17,
+      "character": "one-shot",
+      "pcmLength": 1056,
+      "brrLength": 594,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 169,
+      "gain": 184,
+      "pitchRegister": 1254
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4464ae0f4d764daff58d45dcc16488504298b5bb2c566de59e5f5bc86e7b57f3"
+          }
+        }
+      ]
+    }
+  }
+}

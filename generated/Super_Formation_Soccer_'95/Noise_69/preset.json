@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Formation Soccer '95",
+    "snes": {
+      "srcn": 69,
+      "character": "noise",
+      "pcmLength": 4320,
+      "brrLength": 2430,
+      "hasLoop": true,
+      "loopStartPcm": 2336,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 3100
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5f5a07eda3c68391d42aa0c8bf836896525b5b3925431d32e35956ec1f3143fa"
+          },
+          "loop": {
+            "start": 2336,
+            "end": 4320
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mario Paint",
+    "snes": {
+      "srcn": 15,
+      "character": "noise",
+      "pcmLength": 9536,
+      "brrLength": 5364,
+      "hasLoop": true,
+      "loopStartPcm": 32
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9c8a1c2024f13ff10d718b673efdf9cfd324ef122a9b974978ee43c00830fb39"
+          },
+          "loop": {
+            "start": 32,
+            "end": 9536
+          }
+        }
+      ]
+    }
+  }
+}

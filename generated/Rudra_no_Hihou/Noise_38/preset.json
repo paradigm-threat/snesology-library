@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Rudra no Hihou",
+    "snes": {
+      "srcn": 38,
+      "character": "noise",
+      "pcmLength": 6480,
+      "brrLength": 3645,
+      "hasLoop": true,
+      "loopStartPcm": 3872,
+      "adsr1": 143,
+      "adsr2": 31,
+      "gain": 0,
+      "pitchRegister": 4096
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cfa568326402b10126f72ae671f8f548d0a2b3e6c85342de9b59c5d510fe76ea"
+          },
+          "loop": {
+            "start": 3872,
+            "end": 6480
+          }
+        }
+      ]
+    }
+  }
+}

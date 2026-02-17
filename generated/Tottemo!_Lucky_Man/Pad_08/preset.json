@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tottemo! Lucky Man",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 6928,
+      "brrLength": 3897,
+      "hasLoop": true,
+      "loopStartPcm": 4528,
+      "adsr1": 255,
+      "adsr2": 240,
+      "gain": 176,
+      "pitchRegister": 2051
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "946ec5ae39f7f58fcd2a1facd01da15718a7c4d9cd788a6e0c1611fb7d0b93b1"
+          },
+          "loop": {
+            "start": 4528,
+            "end": 6928
+          }
+        }
+      ]
+    }
+  }
+}

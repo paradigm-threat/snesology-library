@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Panel de Pon",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 8608,
+      "brrLength": 4842,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 244,
+      "adsr2": 224,
+      "gain": 136,
+      "pitchRegister": 2039
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6f80bdd3ef4d9cab48c460856cb2e872df73c4fe05d11ba03bbb011b847f4572"
+          },
+          "loop": {
+            "start": 48,
+            "end": 8608
+          }
+        }
+      ]
+    }
+  }
+}

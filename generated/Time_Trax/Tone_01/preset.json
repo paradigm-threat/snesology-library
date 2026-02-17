@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Time Trax",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 2528,
+      "brrLength": 1422,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b62a69e8e610e2068bd671c6bdd0a04a8c77f56abfdb8b7c52ee4428874cd8a5"
+          },
+          "loop": {
+            "start": 0,
+            "end": 2528
+          }
+        }
+      ]
+    }
+  }
+}

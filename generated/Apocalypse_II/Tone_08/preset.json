@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Apocalypse II",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 1792,
+      "brrLength": 1008,
+      "hasLoop": true,
+      "loopStartPcm": 1664
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "34d56c4078723453745e409a0d39107505d2e8f1e590057573131ba3ffeec074"
+          },
+          "loop": {
+            "start": 1664,
+            "end": 1792
+          }
+        }
+      ]
+    }
+  }
+}

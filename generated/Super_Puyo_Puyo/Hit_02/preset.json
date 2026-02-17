@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Puyo Puyo",
+    "snes": {
+      "srcn": 2,
+      "character": "one-shot",
+      "pcmLength": 5984,
+      "brrLength": 3366,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 244,
+      "gain": 244,
+      "pitchRegister": 4592
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "939975c9faa47041e6d1b8ded78beca2ffe2c012978c7c78bb084ed2dc33b773"
+          }
+        }
+      ]
+    }
+  }
+}

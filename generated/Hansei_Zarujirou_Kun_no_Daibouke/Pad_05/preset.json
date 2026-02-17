@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hansei Zarujirou Kun no Daibouke",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 5232,
+      "brrLength": 2943,
+      "hasLoop": true,
+      "loopStartPcm": 32
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "edc8b769c552d922da99906469384d489a0fb345ed0114c8e3d2b2c0939bab9b"
+          },
+          "loop": {
+            "start": 32,
+            "end": 5232
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Eurit",
+    "snes": {
+      "srcn": 4,
+      "character": "noise",
+      "pcmLength": 9552,
+      "brrLength": 5373,
+      "hasLoop": true,
+      "loopStartPcm": 7104,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 128,
+      "pitchRegister": 1250
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9510eadbaaf2dc79bc09c2eda2bcc94f2a8ec9733a3d94856a65b96354f9e042"
+          },
+          "loop": {
+            "start": 7104,
+            "end": 9552
+          }
+        }
+      ]
+    }
+  }
+}

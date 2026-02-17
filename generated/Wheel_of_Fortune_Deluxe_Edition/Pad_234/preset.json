@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wheel of Fortune: Deluxe Edition",
+    "snes": {
+      "srcn": 234,
+      "character": "melodic",
+      "pcmLength": 15664,
+      "brrLength": 8811,
+      "hasLoop": true,
+      "loopStartPcm": 7280
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e8c37ec15e8fc1893c5162c6ef76054845a10123f0ae67c29e0ccf4d74381a70"
+          },
+          "loop": {
+            "start": 7280,
+            "end": 15664
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Powerdown",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mario's Time Machine",
+    "snes": {
+      "srcn": 29,
+      "character": "tone",
+      "pcmLength": 2192,
+      "brrLength": 1233,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    },
+    "communityName": "sfx_powerdown",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "359f65aa36faba9662197f9c20a450f47a888000949409b7747d86c59f9260b6"
+          },
+          "loop": {
+            "start": 0,
+            "end": 2192
+          }
+        }
+      ]
+    }
+  }
+}

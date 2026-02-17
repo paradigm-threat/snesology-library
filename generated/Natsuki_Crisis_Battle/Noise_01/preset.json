@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Natsuki Crisis Battle",
+    "snes": {
+      "srcn": 1,
+      "character": "noise",
+      "pcmLength": 7488,
+      "brrLength": 4212,
+      "hasLoop": true,
+      "loopStartPcm": 3760
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b50b2baa4b557bee020cde6b0b62cfa4c05db5b8763b48523b82bce2aac2529b"
+          },
+          "loop": {
+            "start": 3760,
+            "end": 7488
+          }
+        }
+      ]
+    }
+  }
+}

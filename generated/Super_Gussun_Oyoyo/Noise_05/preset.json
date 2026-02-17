@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Gussun Oyoyo",
+    "snes": {
+      "srcn": 5,
+      "character": "noise",
+      "pcmLength": 9744,
+      "brrLength": 5481,
+      "hasLoop": true,
+      "loopStartPcm": 5168,
+      "adsr1": 253,
+      "adsr2": 243,
+      "gain": 184,
+      "pitchRegister": 4016
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e6d95bc0c2f2a81626b7381afb6bb39a3e70f78402944185a71e4c52bf43dc30"
+          },
+          "loop": {
+            "start": 5168,
+            "end": 9744
+          }
+        }
+      ]
+    }
+  }
+}

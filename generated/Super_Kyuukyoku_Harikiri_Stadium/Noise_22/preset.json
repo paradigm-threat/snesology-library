@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Kyuukyoku Harikiri Stadium",
+    "snes": {
+      "srcn": 22,
+      "character": "noise",
+      "pcmLength": 7136,
+      "brrLength": 4014,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7b0bd2e70b4d34fdf4fe77b816399397a86a59ef96fe8b2125e82769c3aa56f3"
+          }
+        }
+      ]
+    }
+  }
+}

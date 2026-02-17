@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Makeruna Makendo 2",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 1680,
+      "brrLength": 945,
+      "hasLoop": true,
+      "loopStartPcm": 1056,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 158,
+      "pitchRegister": 1604
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e360265740b7a561cd2aba9ab1f9b405851c708f9c5efd07562a8d2c5f1e2233"
+          },
+          "loop": {
+            "start": 1056,
+            "end": 1680
+          }
+        }
+      ]
+    }
+  }
+}

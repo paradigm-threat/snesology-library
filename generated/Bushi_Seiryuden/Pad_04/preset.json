@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bushi Seiryuden",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 7728,
+      "brrLength": 4347,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 246,
+      "adsr2": 169,
+      "gain": 0,
+      "pitchRegister": 2052
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e9220213d1f90aeb214c1cad6756bf938db71c7513a3a1cec679b9ca70b618c8"
+          },
+          "loop": {
+            "start": 16,
+            "end": 7728
+          }
+        }
+      ]
+    }
+  }
+}

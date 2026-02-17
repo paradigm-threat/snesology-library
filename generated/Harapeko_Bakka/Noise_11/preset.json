@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Harapeko Bakka",
+    "snes": {
+      "srcn": 11,
+      "character": "noise",
+      "pcmLength": 1568,
+      "brrLength": 882,
+      "hasLoop": false,
+      "adsr1": 254,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 3042
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d9524459399eedcb579c6ae0a6ceb9a7322398e8c4256651bc62e6957a3cfb0e"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "NBA All-Star Challenge",
+    "snes": {
+      "srcn": 209,
+      "character": "melodic",
+      "pcmLength": 5856,
+      "brrLength": 3294,
+      "hasLoop": true,
+      "loopStartPcm": 102480
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c571194a70e974958e1ed65903976c0fbc26227f8df355d1730a5c5b1ca93b6c"
+          },
+          "loop": {
+            "start": 102480,
+            "end": 5856
+          }
+        }
+      ]
+    }
+  }
+}

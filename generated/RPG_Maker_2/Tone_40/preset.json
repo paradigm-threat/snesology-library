@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "RPG Maker 2",
+    "snes": {
+      "srcn": 40,
+      "character": "tone",
+      "pcmLength": 1920,
+      "brrLength": 1080,
+      "hasLoop": true,
+      "loopStartPcm": 1888,
+      "adsr1": 222,
+      "adsr2": 50,
+      "gain": 0,
+      "pitchRegister": 4285
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "902363c35ec4bc936d3e2e15d7519b33916c2222e419176751cbc96294a534ca"
+          },
+          "loop": {
+            "start": 1888,
+            "end": 1920
+          }
+        }
+      ]
+    }
+  }
+}

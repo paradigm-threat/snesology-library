@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Gussun Oyoyo 2",
+    "snes": {
+      "srcn": 76,
+      "character": "melodic",
+      "pcmLength": 6368,
+      "brrLength": 3582,
+      "hasLoop": true,
+      "loopStartPcm": 3248
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c65672d29b97c913eb21683a1cde6954ff0839d503863e0df7ec57017bb92840"
+          },
+          "loop": {
+            "start": 3248,
+            "end": 6368
+          }
+        }
+      ]
+    }
+  }
+}

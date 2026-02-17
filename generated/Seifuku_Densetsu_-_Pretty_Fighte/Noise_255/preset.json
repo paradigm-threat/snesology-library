@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Seifuku Densetsu - Pretty Fighte",
+    "snes": {
+      "srcn": 255,
+      "character": "noise",
+      "pcmLength": 2640,
+      "brrLength": 1485,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6635a8dd1ea19a947a8de6a191c5b6d90e1fda5341284da48bd655607d6da461"
+          }
+        }
+      ]
+    }
+  }
+}

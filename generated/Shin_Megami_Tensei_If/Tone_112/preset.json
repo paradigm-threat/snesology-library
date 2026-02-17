@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shin Megami Tensei: If...",
+    "snes": {
+      "srcn": 112,
+      "character": "tone",
+      "pcmLength": 1184,
+      "brrLength": 666,
+      "hasLoop": true,
+      "loopStartPcm": 46000
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4dceffd9ab3edd6cc21c107bbdd7572328a8c97ff2a938acc3e50c88240e7d81"
+          },
+          "loop": {
+            "start": 46000,
+            "end": 1184
+          }
+        }
+      ]
+    }
+  }
+}

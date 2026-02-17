@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Clay Fighter",
+    "snes": {
+      "srcn": 6,
+      "character": "noise",
+      "pcmLength": 7488,
+      "brrLength": 4212,
+      "hasLoop": true,
+      "loopStartPcm": 2720,
+      "adsr1": 191,
+      "adsr2": 80,
+      "gain": 127,
+      "pitchRegister": 2667
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "71e9580c90a53ae1e37538d4a7eabb345f6bbd09981367230b3a035b1148c62d"
+          },
+          "loop": {
+            "start": 2720,
+            "end": 7488
+          }
+        }
+      ]
+    }
+  }
+}

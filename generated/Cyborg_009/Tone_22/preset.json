@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cyborg 009",
+    "snes": {
+      "srcn": 22,
+      "character": "tone",
+      "pcmLength": 1552,
+      "brrLength": 873,
+      "hasLoop": true,
+      "loopStartPcm": 1088,
+      "adsr1": 153,
+      "adsr2": 192,
+      "gain": 184,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "26d8b8a25eee9cc7797122c3af7dfe5ef21a449b2df99fc569304e78b673ffb3"
+          },
+          "loop": {
+            "start": 1088,
+            "end": 1552
+          }
+        }
+      ]
+    }
+  }
+}

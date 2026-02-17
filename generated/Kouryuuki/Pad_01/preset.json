@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kouryuuki",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 7264,
+      "brrLength": 4086,
+      "hasLoop": true,
+      "loopStartPcm": 1392,
+      "adsr1": 143,
+      "adsr2": 239,
+      "gain": 180,
+      "pitchRegister": 1531
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "183146fcb501d1149d5533599684262af1e887ba406a90159e6548fe3752c9fa"
+          },
+          "loop": {
+            "start": 1392,
+            "end": 7264
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Voip",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Back to the Future 2",
+    "snes": {
+      "srcn": 5,
+      "character": "one-shot",
+      "pcmLength": 12688,
+      "brrLength": 7137,
+      "hasLoop": false
+    },
+    "communityName": "sfx_voip",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "557c21f4307fe183bb2a88187e2521a45b332edb84780c9c8a24347cdf7a7f18"
+          }
+        }
+      ]
+    }
+  }
+}

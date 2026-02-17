@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spellcraft",
+    "snes": {
+      "srcn": 19,
+      "character": "noise",
+      "pcmLength": 2048,
+      "brrLength": 1152,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 135,
+      "gain": 130,
+      "pitchRegister": 512
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1caac69e352d76f17de72ecff1d9a7f8505d38bbed1060313ad5c58faf0a41a1"
+          }
+        }
+      ]
+    }
+  }
+}

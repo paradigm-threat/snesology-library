@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shodai Nekketsu Kouha Kunio-Kun",
+    "snes": {
+      "srcn": 204,
+      "character": "noise",
+      "pcmLength": 2976,
+      "brrLength": 1674,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7a63806fbbe65970a1ac883c706fd5a0d3836b850e9fed34b04ee64b927ce0b2"
+          }
+        }
+      ]
+    }
+  }
+}

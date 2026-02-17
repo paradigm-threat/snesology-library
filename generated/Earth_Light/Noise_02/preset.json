@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earth Light",
+    "snes": {
+      "srcn": 2,
+      "character": "noise",
+      "pcmLength": 4096,
+      "brrLength": 2304,
+      "hasLoop": true,
+      "loopStartPcm": 448,
+      "adsr1": 255,
+      "adsr2": 239,
+      "gain": 184,
+      "pitchRegister": 1069
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bc9c524af34c50f2bf455c75cc1c1227617f31f1ecd0355dec08d5c478a599e0"
+          },
+          "loop": {
+            "start": 448,
+            "end": 4096
+          }
+        }
+      ]
+    }
+  }
+}

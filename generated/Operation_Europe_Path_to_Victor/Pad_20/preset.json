@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Operation Europe: Path to Victor",
+    "snes": {
+      "srcn": 20,
+      "character": "melodic",
+      "pcmLength": 8704,
+      "brrLength": 4896,
+      "hasLoop": true,
+      "loopStartPcm": 1344,
+      "adsr1": 138,
+      "adsr2": 192,
+      "gain": 184,
+      "pitchRegister": 7216
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2de7aaee5430e2fbed53f9ddff3b2df74a2ba3de666d402935e7d20b445fb663"
+          },
+          "loop": {
+            "start": 1344,
+            "end": 8704
+          }
+        }
+      ]
+    }
+  }
+}

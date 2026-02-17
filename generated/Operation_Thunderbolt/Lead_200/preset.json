@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Operation Thunderbolt",
+    "snes": {
+      "srcn": 200,
+      "character": "melodic",
+      "pcmLength": 4336,
+      "brrLength": 2439,
+      "hasLoop": true,
+      "loopStartPcm": 3168
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "09efb55c7145be712bba9dc2756c380a5a7e6394a363db8ff33d179e8405a498"
+          },
+          "loop": {
+            "start": 3168,
+            "end": 4336
+          }
+        }
+      ]
+    }
+  }
+}

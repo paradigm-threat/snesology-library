@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Lemmings 2",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 6752,
+      "brrLength": 3798,
+      "hasLoop": true,
+      "loopStartPcm": 6624,
+      "adsr1": 207,
+      "adsr2": 198,
+      "gain": 0,
+      "pitchRegister": 1428
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4c2fd7a19ec0dcbde1d1d423b8226558ec01e336046bdc5b3b51f6dd92aa21fe"
+          },
+          "loop": {
+            "start": 6624,
+            "end": 6752
+          }
+        }
+      ]
+    }
+  }
+}

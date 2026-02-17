@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tsuyoshi Shikkarishinasai Taisen",
+    "snes": {
+      "srcn": 37,
+      "character": "noise",
+      "pcmLength": 4096,
+      "brrLength": 2304,
+      "hasLoop": true,
+      "loopStartPcm": 1536,
+      "adsr1": 143,
+      "adsr2": 199,
+      "gain": 185,
+      "pitchRegister": 894
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a81bc38abd4614f8eb1627f9283687b4dfede1300cc3ab15d699bc61389fedd7"
+          },
+          "loop": {
+            "start": 1536,
+            "end": 4096
+          }
+        }
+      ]
+    }
+  }
+}

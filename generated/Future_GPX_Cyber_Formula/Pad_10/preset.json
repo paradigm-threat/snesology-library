@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Future GPX: Cyber Formula",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 10672,
+      "brrLength": 6003,
+      "hasLoop": true,
+      "loopStartPcm": 5680,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 2022
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0a61eb58b4208b9b89f2c8390c6275392d4b9b43aea8fe82eac5a1a725aabb95"
+          },
+          "loop": {
+            "start": 5680,
+            "end": 10672
+          }
+        }
+      ]
+    }
+  }
+}

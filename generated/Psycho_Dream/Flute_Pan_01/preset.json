@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Flute Pan",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Psycho Dream",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 3632,
+      "brrLength": 2043,
+      "hasLoop": true,
+      "loopStartPcm": 2560,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2143
+    },
+    "communityName": "flute_pan",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5121eb086c4ebe63d2545d9b89ab95fb39c69700309adbcf107af0a3de49f435"
+          },
+          "loop": {
+            "start": 2560,
+            "end": 3632
+          }
+        }
+      ]
+    }
+  }
+}

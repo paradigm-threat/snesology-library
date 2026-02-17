@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Phantom 2040",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 6608,
+      "brrLength": 3717,
+      "hasLoop": true,
+      "loopStartPcm": 4528,
+      "adsr1": 255,
+      "adsr2": 237,
+      "gain": 80,
+      "pitchRegister": 235
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a461b901d9fe3c3fd9b21947231cf86d99b0db7052194b8561c19f2e36292e37"
+          },
+          "loop": {
+            "start": 4528,
+            "end": 6608
+          }
+        }
+      ]
+    }
+  }
+}

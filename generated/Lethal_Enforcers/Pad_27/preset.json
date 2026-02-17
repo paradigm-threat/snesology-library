@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Lethal Enforcers",
+    "snes": {
+      "srcn": 27,
+      "character": "melodic",
+      "pcmLength": 7232,
+      "brrLength": 4068,
+      "hasLoop": true,
+      "loopStartPcm": 1456,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 3259
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d457a65907feb63a8e21fd8cbea6a0ad27c30037bd398b7118380bbb114837f3"
+          },
+          "loop": {
+            "start": 1456,
+            "end": 7232
+          }
+        }
+      ]
+    }
+  }
+}

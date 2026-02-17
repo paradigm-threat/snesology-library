@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bastard!!",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 5552,
+      "brrLength": 3123,
+      "hasLoop": true,
+      "loopStartPcm": 80,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 186,
+      "pitchRegister": 362
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f0ddad965ac04bcb059f49ba09948c1eecec09f2ab0de45b2fb7710f32c734b1"
+          },
+          "loop": {
+            "start": 80,
+            "end": 5552
+          }
+        }
+      ]
+    }
+  }
+}

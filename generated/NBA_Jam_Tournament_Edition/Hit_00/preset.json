@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "NBA Jam Tournament Edition",
+    "snes": {
+      "srcn": 0,
+      "character": "one-shot",
+      "pcmLength": 55600,
+      "brrLength": 31275,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 239,
+      "gain": 176,
+      "pitchRegister": 2435
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "eaafe4ddc8e4b83590f68567225a8d5b9f6484f48184e2c61b1edc8abbc035a0"
+          }
+        }
+      ]
+    }
+  }
+}

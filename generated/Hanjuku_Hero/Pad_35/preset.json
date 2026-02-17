@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hanjuku Hero",
+    "snes": {
+      "srcn": 35,
+      "character": "melodic",
+      "pcmLength": 13344,
+      "brrLength": 7506,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "befe4ff65adda95046ead5aa9de6df7bb4792f02d9558dde81633bcc3b9a4d0d"
+          },
+          "loop": {
+            "start": 48,
+            "end": 13344
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Princess Minerva",
+    "snes": {
+      "srcn": 21,
+      "character": "one-shot",
+      "pcmLength": 1712,
+      "brrLength": 963,
+      "hasLoop": false,
+      "adsr1": 254,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 4025
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f8e4359126767449a9af3831e368724380f4aed40832c1f7d521c90a0bc27275"
+          }
+        }
+      ]
+    }
+  }
+}

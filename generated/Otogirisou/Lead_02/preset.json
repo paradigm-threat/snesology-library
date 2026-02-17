@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Otogirisou",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 4672,
+      "brrLength": 2628,
+      "hasLoop": true,
+      "loopStartPcm": 2928,
+      "adsr1": 254,
+      "adsr2": 241,
+      "gain": 184,
+      "pitchRegister": 2486
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6d4dfcb7bc4beb6287629dbaf375f4c7d648320b46ffe3ea725391d595af3178"
+          },
+          "loop": {
+            "start": 2928,
+            "end": 4672
+          }
+        }
+      ]
+    }
+  }
+}

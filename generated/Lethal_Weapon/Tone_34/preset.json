@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Lethal Weapon",
+    "snes": {
+      "srcn": 34,
+      "character": "tone",
+      "pcmLength": 3616,
+      "brrLength": 2034,
+      "hasLoop": true,
+      "loopStartPcm": 3456,
+      "adsr1": 143,
+      "adsr2": 49,
+      "gain": 0,
+      "pitchRegister": 3600
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "582f3105cc46a814738382dd4bf3e60e74b1a7e5c31203486159695de7e39493"
+          },
+          "loop": {
+            "start": 3456,
+            "end": 3616
+          }
+        }
+      ]
+    }
+  }
+}

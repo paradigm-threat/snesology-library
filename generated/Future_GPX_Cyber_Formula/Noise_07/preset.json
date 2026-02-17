@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Future GPX: Cyber Formula",
+    "snes": {
+      "srcn": 7,
+      "character": "noise",
+      "pcmLength": 4752,
+      "brrLength": 2673,
+      "hasLoop": true,
+      "loopStartPcm": 2864,
+      "adsr1": 255,
+      "adsr2": 253,
+      "gain": 0,
+      "pitchRegister": 252
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "20a5e4192447eac3eff4a1d7a38894b32e5c6e4ca751e33967af9b0f05679756"
+          },
+          "loop": {
+            "start": 2864,
+            "end": 4752
+          }
+        }
+      ]
+    }
+  }
+}

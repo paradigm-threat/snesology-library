@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mega-Lo-Mania",
+    "snes": {
+      "srcn": 14,
+      "character": "melodic",
+      "pcmLength": 4896,
+      "brrLength": 2754,
+      "hasLoop": true,
+      "loopStartPcm": 1232,
+      "adsr1": 255,
+      "adsr2": 231,
+      "gain": 231,
+      "pitchRegister": 1712
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b074eca85b9203c062c6e15328bff5c5707523a7152b05d9f729ede6554a0d85"
+          },
+          "loop": {
+            "start": 1232,
+            "end": 4896
+          }
+        }
+      ]
+    }
+  }
+}

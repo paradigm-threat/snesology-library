@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Taikyoku Igo Idaten",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 1056,
+      "brrLength": 594,
+      "hasLoop": true,
+      "loopStartPcm": 1008
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5466ac9455fc850236a7461db01edbd9e1e6e617831e41f322ad9d0f7f36f237"
+          },
+          "loop": {
+            "start": 1008,
+            "end": 1056
+          }
+        }
+      ]
+    }
+  }
+}

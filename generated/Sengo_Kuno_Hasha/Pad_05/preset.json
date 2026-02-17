@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sengo Kuno Hasha",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 4080,
+      "brrLength": 2295,
+      "hasLoop": true,
+      "loopStartPcm": 1520,
+      "adsr1": 207,
+      "adsr2": 112,
+      "gain": 0,
+      "pitchRegister": 3251
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "84f77332b33d6e2799696be81d90b9db665e381043497aba8076b8505087a2c8"
+          },
+          "loop": {
+            "start": 1520,
+            "end": 4080
+          }
+        }
+      ]
+    }
+  }
+}

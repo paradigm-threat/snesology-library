@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Famicom Tantei Club 2",
+    "snes": {
+      "srcn": 49,
+      "character": "one-shot",
+      "pcmLength": 1200,
+      "brrLength": 675,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 240,
+      "gain": 171,
+      "pitchRegister": 955
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "706aa0ef0caa3d95b07d7907f15f0b2b2c74e98affeb5b9e43036552c93b94ec"
+          }
+        }
+      ]
+    }
+  }
+}

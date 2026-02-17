@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bazoe! Mahou Sekai",
+    "snes": {
+      "srcn": 16,
+      "character": "melodic",
+      "pcmLength": 5408,
+      "brrLength": 3042,
+      "hasLoop": true,
+      "loopStartPcm": 32,
+      "adsr1": 143,
+      "adsr2": 238,
+      "gain": 184,
+      "pitchRegister": 1939
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "433f065d87a37af73cf7a32c7439043f6fd6911bebaed1b382c1e4380b834711"
+          },
+          "loop": {
+            "start": 32,
+            "end": 5408
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Time Cop",
+    "snes": {
+      "srcn": 2,
+      "character": "noise",
+      "pcmLength": 3568,
+      "brrLength": 2007,
+      "hasLoop": false,
+      "adsr1": 112,
+      "adsr2": 224,
+      "gain": 127,
+      "pitchRegister": 1714
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "705d00fc69938ec8315c8cceb5c6d8d15779b15263c46cd3231af61e370833df"
+          }
+        }
+      ]
+    }
+  }
+}

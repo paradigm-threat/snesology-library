@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Aero the Acro-Bat 2",
+    "snes": {
+      "srcn": 8,
+      "character": "noise",
+      "pcmLength": 8832,
+      "brrLength": 4968,
+      "hasLoop": true,
+      "loopStartPcm": 432
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fa3c653c5da42790409bbc5cc89f020a7cba94ab12a2b0993c195c788278ec42"
+          },
+          "loop": {
+            "start": 432,
+            "end": 8832
+          }
+        }
+      ]
+    }
+  }
+}

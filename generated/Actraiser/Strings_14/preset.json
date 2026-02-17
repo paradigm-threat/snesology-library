@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Strings",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Actraiser",
+    "snes": {
+      "srcn": 14,
+      "character": "melodic",
+      "pcmLength": 10048,
+      "brrLength": 5652,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2681
+    },
+    "communityName": "strings",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0e02f952c7d0b29dfe928f9df23362c43f84d20d2e60d0fa47e91b5d0d62cee2"
+          },
+          "loop": {
+            "start": 48,
+            "end": 10048
+          }
+        }
+      ]
+    }
+  }
+}

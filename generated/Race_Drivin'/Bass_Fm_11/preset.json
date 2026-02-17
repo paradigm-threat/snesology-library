@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Bass Fm",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Race Drivin'",
+    "snes": {
+      "srcn": 11,
+      "character": "tone",
+      "pcmLength": 2224,
+      "brrLength": 1251,
+      "hasLoop": true,
+      "loopStartPcm": 1616,
+      "adsr1": 0,
+      "adsr2": 27,
+      "gain": 127,
+      "pitchRegister": 683
+    },
+    "communityName": "bass_fm",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4d76a19fc0aa6527812ba72f720237a006141583866b6ca1d72432c081a1f765"
+          },
+          "loop": {
+            "start": 1616,
+            "end": 2224
+          }
+        }
+      ]
+    }
+  }
+}

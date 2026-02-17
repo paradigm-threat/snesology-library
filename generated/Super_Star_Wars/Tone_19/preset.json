@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Star Wars",
+    "snes": {
+      "srcn": 19,
+      "character": "tone",
+      "pcmLength": 2256,
+      "brrLength": 1269,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 130,
+      "pitchRegister": 719
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5af3f7d613a47c49d7445df1ae7e99e1dace10981fa3f72752945b613b51f5c0"
+          },
+          "loop": {
+            "start": 16,
+            "end": 2256
+          }
+        }
+      ]
+    }
+  }
+}

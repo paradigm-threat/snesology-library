@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "3x3 Eyes: Seima Kourinden",
+    "snes": {
+      "srcn": 17,
+      "character": "one-shot",
+      "pcmLength": 4256,
+      "brrLength": 2394,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 246,
+      "gain": 184,
+      "pitchRegister": 4341
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1e2f51dda26ee0245caa75ec81d7cd76f11a29b66ead949a65682672f80e72ea"
+          }
+        }
+      ]
+    }
+  }
+}

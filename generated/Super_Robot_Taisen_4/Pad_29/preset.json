@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Robot Taisen 4",
+    "snes": {
+      "srcn": 29,
+      "character": "melodic",
+      "pcmLength": 4368,
+      "brrLength": 2457,
+      "hasLoop": true,
+      "loopStartPcm": 560,
+      "adsr1": 143,
+      "adsr2": 0,
+      "gain": 0,
+      "pitchRegister": 8571
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e2217b6af7cc6adfb3c99422296a528263670ecd01ef2c6fd50fd4cc2313b116"
+          },
+          "loop": {
+            "start": 560,
+            "end": 4368
+          }
+        }
+      ]
+    }
+  }
+}

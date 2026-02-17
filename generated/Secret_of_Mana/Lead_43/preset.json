@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Secret of Mana",
+    "snes": {
+      "srcn": 43,
+      "character": "melodic",
+      "pcmLength": 5456,
+      "brrLength": 3069,
+      "hasLoop": true,
+      "loopStartPcm": 4544
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a76cf825c30e7c8b318b4a39182d734a9bb699e7055c9279ad539b09a9f0b45f"
+          },
+          "loop": {
+            "start": 4544,
+            "end": 5456
+          }
+        }
+      ]
+    }
+  }
+}

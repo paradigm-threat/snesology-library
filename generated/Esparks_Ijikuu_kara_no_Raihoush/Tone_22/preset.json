@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Esparks: Ijikuu kara no Raihoush",
+    "snes": {
+      "srcn": 22,
+      "character": "tone",
+      "pcmLength": 1952,
+      "brrLength": 1098,
+      "hasLoop": true,
+      "loopStartPcm": 1856,
+      "adsr1": 255,
+      "adsr2": 142,
+      "gain": 184,
+      "pitchRegister": 3568
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cdf000e23c7b1f7780d2039a8d1b14f2be2821e33573ec8e39eea4c7e170da03"
+          },
+          "loop": {
+            "start": 1856,
+            "end": 1952
+          }
+        }
+      ]
+    }
+  }
+}

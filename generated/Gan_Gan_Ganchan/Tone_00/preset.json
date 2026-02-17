@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gan Gan Ganchan",
+    "snes": {
+      "srcn": 0,
+      "character": "tone",
+      "pcmLength": 1280,
+      "brrLength": 720,
+      "hasLoop": true,
+      "loopStartPcm": 656,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 127,
+      "pitchRegister": 2808
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "25fefc52a7c3225a2ec33437789070bf61d377a9fcdbcfd7c8906514918f7169"
+          },
+          "loop": {
+            "start": 656,
+            "end": 1280
+          }
+        }
+      ]
+    }
+  }
+}

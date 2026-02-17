@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Seiken Densetsu 3",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 2128,
+      "brrLength": 1197,
+      "hasLoop": true,
+      "loopStartPcm": 1984,
+      "adsr1": 251,
+      "adsr2": 240,
+      "gain": 0,
+      "pitchRegister": 10793
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0e20ea36c3a3ee354f24a692a8ef6d4d6304758d6e442c6827f67f0f671ef8c0"
+          },
+          "loop": {
+            "start": 1984,
+            "end": 2128
+          }
+        }
+      ]
+    }
+  }
+}

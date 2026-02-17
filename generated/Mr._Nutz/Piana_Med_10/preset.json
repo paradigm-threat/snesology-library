@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Piana Med",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mr. Nutz",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 3872,
+      "brrLength": 2178,
+      "hasLoop": true,
+      "loopStartPcm": 3792
+    },
+    "communityName": "piana_med",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fd1a1999253d15a8ec95b912fcf88c468473bda6a5aeb6b79536053f23bf51e4"
+          },
+          "loop": {
+            "start": 3792,
+            "end": 3872
+          }
+        }
+      ]
+    }
+  }
+}

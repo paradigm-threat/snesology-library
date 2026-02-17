@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Logos Panic",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 6032,
+      "brrLength": 3393,
+      "hasLoop": true,
+      "loopStartPcm": 5424
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3ff7c04b1de19e5e9056ff30d273098384ab1251f2e27b54c71f3cc6ce30e66d"
+          },
+          "loop": {
+            "start": 5424,
+            "end": 6032
+          }
+        }
+      ]
+    }
+  }
+}

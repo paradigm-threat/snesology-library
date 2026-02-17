@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Tamb",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Operation Logic Bomb",
+    "snes": {
+      "srcn": 11,
+      "character": "noise",
+      "pcmLength": 3008,
+      "brrLength": 1692,
+      "hasLoop": false,
+      "adsr1": 245,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 304
+    },
+    "communityName": "perc_tamb",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6b3d480f06df900edbf26523b857b0b461e277dc8f03377b12e8d8da96337664"
+          }
+        }
+      ]
+    }
+  }
+}

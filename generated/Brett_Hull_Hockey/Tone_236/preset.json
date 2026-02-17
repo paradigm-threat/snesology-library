@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Brett Hull Hockey",
+    "snes": {
+      "srcn": 236,
+      "character": "tone",
+      "pcmLength": 3632,
+      "brrLength": 2043,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9439517feb2451004892db25eb4038b6db4d19455998dc5eef47fb5be322c278"
+          },
+          "loop": {
+            "start": 0,
+            "end": 3632
+          }
+        }
+      ]
+    }
+  }
+}

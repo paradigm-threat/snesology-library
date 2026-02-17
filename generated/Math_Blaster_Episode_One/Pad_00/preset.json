@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Math Blaster: Episode One",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 6240,
+      "brrLength": 3510,
+      "hasLoop": true,
+      "loopStartPcm": 64,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 0,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fd1f9f2b3c1b2601a31c13f444807e01b06947b07accc3b8e9fe4b2a65909448"
+          },
+          "loop": {
+            "start": 64,
+            "end": 6240
+          }
+        }
+      ]
+    }
+  }
+}

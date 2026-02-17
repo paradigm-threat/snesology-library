@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jojo no Kimyou na Bouken",
+    "snes": {
+      "srcn": 44,
+      "character": "tone",
+      "pcmLength": 3552,
+      "brrLength": 1998,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d6bc06415709bff7267aff4b9f9ef58e3da7b76952549368692b9d6540b4204b"
+          },
+          "loop": {
+            "start": 16,
+            "end": 3552
+          }
+        }
+      ]
+    }
+  }
+}

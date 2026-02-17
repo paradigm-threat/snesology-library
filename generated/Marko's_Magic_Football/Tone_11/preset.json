@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Marko's Magic Football",
+    "snes": {
+      "srcn": 11,
+      "character": "tone",
+      "pcmLength": 2624,
+      "brrLength": 1476,
+      "hasLoop": true,
+      "loopStartPcm": 1040,
+      "adsr1": 239,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 2048
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8db18a93ee6d46d4c8967c7049acfee9fdddb200d2b47c55cf2f82d26eed4d7d"
+          },
+          "loop": {
+            "start": 1040,
+            "end": 2624
+          }
+        }
+      ]
+    }
+  }
+}

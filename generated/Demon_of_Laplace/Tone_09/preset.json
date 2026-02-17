@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Demon of Laplace",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 1760,
+      "brrLength": 990,
+      "hasLoop": true,
+      "loopStartPcm": 1520,
+      "adsr1": 235,
+      "adsr2": 96,
+      "gain": 140,
+      "pitchRegister": 2084
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "61ff99a2085643783b1efb6235690933d22c26bba10a08aa3f767bc2b0f8997f"
+          },
+          "loop": {
+            "start": 1520,
+            "end": 1760
+          }
+        }
+      ]
+    }
+  }
+}

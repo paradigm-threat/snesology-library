@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "First Queen",
+    "snes": {
+      "srcn": 8,
+      "character": "noise",
+      "pcmLength": 6672,
+      "brrLength": 3753,
+      "hasLoop": true,
+      "loopStartPcm": 336
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "76500667aa66290794d967fce59b06962183d0ec1f57a4a6682e818597618113"
+          },
+          "loop": {
+            "start": 336,
+            "end": 6672
+          }
+        }
+      ]
+    }
+  }
+}

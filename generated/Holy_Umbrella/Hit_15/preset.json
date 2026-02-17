@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Holy Umbrella",
+    "snes": {
+      "srcn": 15,
+      "character": "one-shot",
+      "pcmLength": 1568,
+      "brrLength": 882,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 252,
+      "gain": 158,
+      "pitchRegister": 1024
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "359a726d88afa5b7b54436cb4f2a141eafd0ae8332bd9c6d89bea85e32c32b5c"
+          }
+        }
+      ]
+    }
+  }
+}

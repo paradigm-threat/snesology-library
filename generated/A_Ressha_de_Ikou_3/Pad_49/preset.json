@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "A Ressha de Ikou 3",
+    "snes": {
+      "srcn": 49,
+      "character": "melodic",
+      "pcmLength": 20112,
+      "brrLength": 11313,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 120,
+      "pitchRegister": 845
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b562cd6297583469ecdfa3704b51ef9d8d98de49d1ad2ab541f6b98902cd7ea6"
+          },
+          "loop": {
+            "start": 16,
+            "end": 20112
+          }
+        }
+      ]
+    }
+  }
+}

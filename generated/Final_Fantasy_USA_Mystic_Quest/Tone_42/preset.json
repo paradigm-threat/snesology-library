@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Final Fantasy USA: Mystic Quest",
+    "snes": {
+      "srcn": 42,
+      "character": "tone",
+      "pcmLength": 1168,
+      "brrLength": 657,
+      "hasLoop": true,
+      "loopStartPcm": 2960,
+      "adsr1": 143,
+      "adsr2": 132,
+      "gain": 160,
+      "pitchRegister": 4376
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fee38dd6d628c8fc09cee4099b85a26f3ff646f684a1dc3ca294b02b505e34db"
+          },
+          "loop": {
+            "start": 2960,
+            "end": 1168
+          }
+        }
+      ]
+    }
+  }
+}

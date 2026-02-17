@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Maui Mallard in Cold Shadow",
+    "snes": {
+      "srcn": 52,
+      "character": "tone",
+      "pcmLength": 2224,
+      "brrLength": 1251,
+      "hasLoop": true,
+      "loopStartPcm": 1344
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "efaf3d6f1de6e6bbb8683c49825de338f20f3fa17093318181b50318c8af79fa"
+          },
+          "loop": {
+            "start": 1344,
+            "end": 2224
+          }
+        }
+      ]
+    }
+  }
+}

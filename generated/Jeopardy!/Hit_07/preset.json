@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jeopardy!",
+    "snes": {
+      "srcn": 7,
+      "character": "one-shot",
+      "pcmLength": 1856,
+      "brrLength": 1044,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 225,
+      "gain": 191,
+      "pitchRegister": 1290
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7d66ba2dd340afeba7468381cc73f2df43c562df497a3963ce104cd018bf2b47"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "World of Manga II",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 7568,
+      "brrLength": 4257,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "05ed75b0a1f4650b19374c758121f957a6dada66f3144d3df14e01d85bb76fd3"
+          },
+          "loop": {
+            "start": 0,
+            "end": 7568
+          }
+        }
+      ]
+    }
+  }
+}

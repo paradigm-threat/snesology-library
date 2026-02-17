@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Final Fight",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 1248,
+      "brrLength": 702,
+      "hasLoop": true,
+      "loopStartPcm": 1088,
+      "adsr1": 255,
+      "adsr2": 232,
+      "gain": 184,
+      "pitchRegister": 2400
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b373c4760f6b68b27dc7afa2a6f72096a37c0becfcb8ba1bd29f90c86fbcd38c"
+          },
+          "loop": {
+            "start": 1088,
+            "end": 1248
+          }
+        }
+      ]
+    }
+  }
+}

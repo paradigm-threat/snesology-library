@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "RHI Roller Hockey '95",
+    "snes": {
+      "srcn": 6,
+      "character": "noise",
+      "pcmLength": 8000,
+      "brrLength": 4500,
+      "hasLoop": true,
+      "loopStartPcm": 4928,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 128,
+      "pitchRegister": 441
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f0c4264529851e1a24c004065fc5d24ad50174996999a8de540278c27e661adc"
+          },
+          "loop": {
+            "start": 4928,
+            "end": 8000
+          }
+        }
+      ]
+    }
+  }
+}

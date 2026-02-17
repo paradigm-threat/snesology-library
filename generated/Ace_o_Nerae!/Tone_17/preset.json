@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ace o Nerae!",
+    "snes": {
+      "srcn": 17,
+      "character": "tone",
+      "pcmLength": 2272,
+      "brrLength": 1278,
+      "hasLoop": true,
+      "loopStartPcm": 2144
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d803e7ec2f614058148d196d6b524ae8f48d3d7ce800ba9f28cc217bdb35ef66"
+          },
+          "loop": {
+            "start": 2144,
+            "end": 2272
+          }
+        }
+      ]
+    }
+  }
+}

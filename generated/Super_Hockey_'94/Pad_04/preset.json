@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Hockey '94",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 9728,
+      "brrLength": 5472,
+      "hasLoop": true,
+      "loopStartPcm": 4016,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 3107
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c1036ba8d6d59571c452dbe356edbd3a2193da69b69a1b4d3aecb260ae891483"
+          },
+          "loop": {
+            "start": 4016,
+            "end": 9728
+          }
+        }
+      ]
+    }
+  }
+}

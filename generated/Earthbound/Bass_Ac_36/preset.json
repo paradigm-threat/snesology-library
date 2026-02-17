@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Bass Ac",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earthbound",
+    "snes": {
+      "srcn": 36,
+      "character": "tone",
+      "pcmLength": 3280,
+      "brrLength": 1845,
+      "hasLoop": true,
+      "loopStartPcm": 3408
+    },
+    "communityName": "bass_ac",
+    "matchConfidence": 0.9
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6af156e7f5167e60af7ceb4e895aa65e379b08a0e9a6a2f39b3cde8d57a88532"
+          },
+          "loop": {
+            "start": 3408,
+            "end": 3280
+          }
+        }
+      ]
+    }
+  }
+}

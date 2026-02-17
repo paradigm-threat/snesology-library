@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "FIFA Soccer '96",
+    "snes": {
+      "srcn": 21,
+      "character": "one-shot",
+      "pcmLength": 15008,
+      "brrLength": 8442,
+      "hasLoop": false,
+      "adsr1": 134,
+      "adsr2": 230,
+      "gain": 0,
+      "pitchRegister": 1933
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d7faa6f529163374a176e0f4815108b44116ea642e97bb5fccc0b74e3628d6cf"
+          }
+        }
+      ]
+    }
+  }
+}

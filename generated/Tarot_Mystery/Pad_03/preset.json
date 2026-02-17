@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tarot Mystery",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 7936,
+      "brrLength": 4464,
+      "hasLoop": true,
+      "loopStartPcm": 5376,
+      "adsr1": 0,
+      "adsr2": 180,
+      "gain": 158,
+      "pitchRegister": 2595
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4178454db51229461ac8bd19f8a3fa50484470a6e0c812b46e2b1b25bb1dfe78"
+          },
+          "loop": {
+            "start": 5376,
+            "end": 7936
+          }
+        }
+      ]
+    }
+  }
+}

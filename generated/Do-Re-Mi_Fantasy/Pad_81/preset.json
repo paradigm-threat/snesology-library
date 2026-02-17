@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Do-Re-Mi Fantasy",
+    "snes": {
+      "srcn": 81,
+      "character": "melodic",
+      "pcmLength": 4352,
+      "brrLength": 2448,
+      "hasLoop": true,
+      "loopStartPcm": 448
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b1095ee5403f5804f680422c059a7bfa765addde9b5d00c000f382cd8b690a75"
+          },
+          "loop": {
+            "start": 448,
+            "end": 4352
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kikuni Masahiko no Jantoushi Dor",
+    "snes": {
+      "srcn": 239,
+      "character": "noise",
+      "pcmLength": 10064,
+      "brrLength": 5661,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "99990fb3c4b0e32f0590b5150e632928f0d8a9742d13f0555e8c24edd7d037b7"
+          }
+        }
+      ]
+    }
+  }
+}

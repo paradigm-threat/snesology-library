@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Guitar Fret Or Something",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Secret of Mana",
+    "snes": {
+      "srcn": 39,
+      "character": "noise",
+      "pcmLength": 7504,
+      "brrLength": 4221,
+      "hasLoop": false,
+      "adsr1": 254,
+      "adsr2": 224,
+      "gain": 160,
+      "pitchRegister": 1808
+    },
+    "communityName": "guitar_fret_or_something",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bbb1cb40c859d6595d317785912d7b1d37cebfd5e597bbd031266728e14d5d8d"
+          }
+        }
+      ]
+    }
+  }
+}

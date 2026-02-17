@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Indiana Jones' Greatest Adventur",
+    "snes": {
+      "srcn": 197,
+      "character": "melodic",
+      "pcmLength": 5744,
+      "brrLength": 3231,
+      "hasLoop": true,
+      "loopStartPcm": 24576
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ec90e5f239dd55cde2046bcfab192542c42a45cb97d73ba2c05fed490e1a9dff"
+          },
+          "loop": {
+            "start": 24576,
+            "end": 5744
+          }
+        }
+      ]
+    }
+  }
+}

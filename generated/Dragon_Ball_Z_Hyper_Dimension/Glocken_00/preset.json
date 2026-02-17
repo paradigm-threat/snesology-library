@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Glocken",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Ball Z: Hyper Dimension",
+    "snes": {
+      "srcn": 0,
+      "character": "noise",
+      "pcmLength": 8064,
+      "brrLength": 4536,
+      "hasLoop": true,
+      "loopStartPcm": 6688,
+      "adsr1": 255,
+      "adsr2": 240,
+      "gain": 184,
+      "pitchRegister": 1232
+    },
+    "communityName": "glocken",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e60e7233d28b6cfcd0d8fd39edac05f5a6748d323c75134030ac8d9999107a1b"
+          },
+          "loop": {
+            "start": 6688,
+            "end": 8064
+          }
+        }
+      ]
+    }
+  }
+}

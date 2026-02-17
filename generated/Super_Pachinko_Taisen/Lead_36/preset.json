@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Pachinko Taisen",
+    "snes": {
+      "srcn": 36,
+      "character": "melodic",
+      "pcmLength": 4240,
+      "brrLength": 2385,
+      "hasLoop": true,
+      "loopStartPcm": 3056
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3c259d275d2c624608638be9f7b4c1bbc1e19bc4f99653e4e81d11b10f778a76"
+          },
+          "loop": {
+            "start": 3056,
+            "end": 4240
+          }
+        }
+      ]
+    }
+  }
+}

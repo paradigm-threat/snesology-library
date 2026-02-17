@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hourai Gakuen no Bouken",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 3696,
+      "brrLength": 2079,
+      "hasLoop": true,
+      "loopStartPcm": 3296
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a7adc82f82648f01a9ea5e7d1012e198a71ef8d0ccacb00b59392e10ad5ec0d9"
+          },
+          "loop": {
+            "start": 3296,
+            "end": 3696
+          }
+        }
+      ]
+    }
+  }
+}

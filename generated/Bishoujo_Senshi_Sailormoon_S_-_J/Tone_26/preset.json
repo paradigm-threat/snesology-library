@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bishoujo Senshi Sailormoon S - J",
+    "snes": {
+      "srcn": 26,
+      "character": "tone",
+      "pcmLength": 2800,
+      "brrLength": 1575,
+      "hasLoop": true,
+      "loopStartPcm": 2752,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 600
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f6b4a2f4657da627e7e1b206ff971c95804f674321d5ef0fa4a1bda402528150"
+          },
+          "loop": {
+            "start": 2752,
+            "end": 2800
+          }
+        }
+      ]
+    }
+  }
+}

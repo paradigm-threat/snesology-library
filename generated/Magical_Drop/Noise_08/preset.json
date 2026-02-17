@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Magical Drop",
+    "snes": {
+      "srcn": 8,
+      "character": "noise",
+      "pcmLength": 4528,
+      "brrLength": 2547,
+      "hasLoop": true,
+      "loopStartPcm": 11392,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 953
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1985127212938f5cbfb789206082beee2cca30d5d2ac8c6735bb8c97a7ea6034"
+          },
+          "loop": {
+            "start": 11392,
+            "end": 4528
+          }
+        }
+      ]
+    }
+  }
+}

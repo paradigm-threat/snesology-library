@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mickey Mania: The Timeless Adven",
+    "snes": {
+      "srcn": 3,
+      "character": "one-shot",
+      "pcmLength": 2144,
+      "brrLength": 1206,
+      "hasLoop": false,
+      "adsr1": 141,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 2384
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b29a44587bdf3562ba77680c1b9f3d81c3ebe40d36132092c0ffc28d9f0e7a92"
+          }
+        }
+      ]
+    }
+  }
+}

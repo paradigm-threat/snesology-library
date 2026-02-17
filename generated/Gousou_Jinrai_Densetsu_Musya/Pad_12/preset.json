@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gousou Jinrai Densetsu Musya",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 4944,
+      "brrLength": 2781,
+      "hasLoop": true,
+      "loopStartPcm": 1456,
+      "adsr1": 255,
+      "adsr2": 227,
+      "gain": 184,
+      "pitchRegister": 5055
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d262ac3321aecfad7f4b5d73e13576ed98b715c93e8ce2409d33439006b3d6d5"
+          },
+          "loop": {
+            "start": 1456,
+            "end": 4944
+          }
+        }
+      ]
+    }
+  }
+}

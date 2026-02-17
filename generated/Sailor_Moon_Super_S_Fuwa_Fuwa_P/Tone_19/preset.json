@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sailor Moon Super S: Fuwa Fuwa P",
+    "snes": {
+      "srcn": 19,
+      "character": "tone",
+      "pcmLength": 1488,
+      "brrLength": 837,
+      "hasLoop": true,
+      "loopStartPcm": 5760
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a289da23debf2ca3a7f3217a435913c7a1a520e0d72b9a7942f029e5d60b054a"
+          },
+          "loop": {
+            "start": 5760,
+            "end": 1488
+          }
+        }
+      ]
+    }
+  }
+}

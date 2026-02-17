@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wizardry I II III",
+    "snes": {
+      "srcn": 82,
+      "character": "tone",
+      "pcmLength": 3136,
+      "brrLength": 1764,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 153,
+      "adsr2": 192,
+      "gain": 191,
+      "pitchRegister": 1791
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "35f1cb2301e6655bf7792f7be2f0516ef4df70faf4aa5cd53033ec8b463f464d"
+          },
+          "loop": {
+            "start": 16,
+            "end": 3136
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Famicom Wars",
+    "snes": {
+      "srcn": 34,
+      "character": "tone",
+      "pcmLength": 384,
+      "brrLength": 216,
+      "hasLoop": true,
+      "loopStartPcm": 320,
+      "adsr1": 254,
+      "adsr2": 160,
+      "gain": 184,
+      "pitchRegister": 3212
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "638902bd3e29ee5c566681842c3018f2a48095feebb4cf08db43759dff071e2d"
+          },
+          "loop": {
+            "start": 320,
+            "end": 384
+          }
+        }
+      ]
+    }
+  }
+}

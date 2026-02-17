@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Otoboke Ninja Colosseum",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 2256,
+      "brrLength": 1269,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 254,
+      "adsr2": 230,
+      "gain": 184,
+      "pitchRegister": 318
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0a614b1b0a0b49ffc67fc97a8a77bc8269c87a2e7cffa05fb88f036ddf468991"
+          },
+          "loop": {
+            "start": 48,
+            "end": 2256
+          }
+        }
+      ]
+    }
+  }
+}

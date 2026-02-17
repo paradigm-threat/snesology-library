@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Last Battle",
+    "snes": {
+      "srcn": 4,
+      "character": "tone",
+      "pcmLength": 1248,
+      "brrLength": 702,
+      "hasLoop": true,
+      "loopStartPcm": 1200
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c2ef4fe3c91d14855bb8b3194bd56e5db6b57a99af2ebc5d84f7d4b7374fb7f6"
+          },
+          "loop": {
+            "start": 1200,
+            "end": 1248
+          }
+        }
+      ]
+    }
+  }
+}

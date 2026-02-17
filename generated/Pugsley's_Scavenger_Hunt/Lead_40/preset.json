@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pugsley's Scavenger Hunt",
+    "snes": {
+      "srcn": 40,
+      "character": "melodic",
+      "pcmLength": 5248,
+      "brrLength": 2952,
+      "hasLoop": true,
+      "loopStartPcm": 4656,
+      "adsr1": 143,
+      "adsr2": 244,
+      "gain": 0,
+      "pitchRegister": 8037
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9ac089e7cd9d4ee7c853be4117c110f5753ae8e6bd8140ee1c74eb8cde71c004"
+          },
+          "loop": {
+            "start": 4656,
+            "end": 5248
+          }
+        }
+      ]
+    }
+  }
+}

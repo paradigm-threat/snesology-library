@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Itadaki Street 2",
+    "snes": {
+      "srcn": 216,
+      "character": "tone",
+      "pcmLength": 3696,
+      "brrLength": 2079,
+      "hasLoop": true,
+      "loopStartPcm": 14112
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bfc25b3eb8a166d70bd5e0a92aecfc179a4297ce70156e28f567b6749eaf657f"
+          },
+          "loop": {
+            "start": 14112,
+            "end": 3696
+          }
+        }
+      ]
+    }
+  }
+}

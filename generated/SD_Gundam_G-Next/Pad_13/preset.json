@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "SD Gundam G-Next",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 6384,
+      "brrLength": 3591,
+      "hasLoop": true,
+      "loopStartPcm": 1488,
+      "adsr1": 255,
+      "adsr2": 243,
+      "gain": 184,
+      "pitchRegister": 2866
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "32ebd874957b2b3851077ea52e59d8961c4bbdd5ae4d5326b5a91c2ef97ce7c2"
+          },
+          "loop": {
+            "start": 1488,
+            "end": 6384
+          }
+        }
+      ]
+    }
+  }
+}

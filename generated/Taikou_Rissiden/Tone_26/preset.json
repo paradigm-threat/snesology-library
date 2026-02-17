@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Taikou Rissiden",
+    "snes": {
+      "srcn": 26,
+      "character": "tone",
+      "pcmLength": 608,
+      "brrLength": 342,
+      "hasLoop": true,
+      "loopStartPcm": 496
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1921c6ce16a01c52f0d060dc3615b0b0a619fc4ba615510f144e4bce91eb80b9"
+          },
+          "loop": {
+            "start": 496,
+            "end": 608
+          }
+        }
+      ]
+    }
+  }
+}

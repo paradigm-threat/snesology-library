@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "FIFA Soccer '96",
+    "snes": {
+      "srcn": 19,
+      "character": "tone",
+      "pcmLength": 3008,
+      "brrLength": 1692,
+      "hasLoop": true,
+      "loopStartPcm": 6128
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "eab9524fa37a9f5bf9fc41cc73543828ae21c13bed4fee41e08b7fd49de1ff92"
+          },
+          "loop": {
+            "start": 6128,
+            "end": 3008
+          }
+        }
+      ]
+    }
+  }
+}

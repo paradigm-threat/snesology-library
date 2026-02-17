@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Cuica",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tales of Phantasia",
+    "snes": {
+      "srcn": 48,
+      "character": "tone",
+      "pcmLength": 2656,
+      "brrLength": 1494,
+      "hasLoop": true,
+      "loopStartPcm": 2144
+    },
+    "communityName": "perc_cuica",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4911d71cc34dc464ef67a180fbff803546a9e702b4bb5d3e4028979d8cfcf9c7"
+          },
+          "loop": {
+            "start": 2144,
+            "end": 2656
+          }
+        }
+      ]
+    }
+  }
+}

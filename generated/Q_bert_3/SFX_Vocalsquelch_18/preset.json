@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Vocalsquelch",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Q*bert 3",
+    "snes": {
+      "srcn": 18,
+      "character": "tone",
+      "pcmLength": 1888,
+      "brrLength": 1062,
+      "hasLoop": true,
+      "loopStartPcm": 1552,
+      "adsr1": 254,
+      "adsr2": 247,
+      "gain": 0,
+      "pitchRegister": 1274
+    },
+    "communityName": "sfX_vocalsquelch",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0e6104dfe1c9f712db2f34750ad159e8f1b486b4d88f09c4edc91ae402f8577e"
+          },
+          "loop": {
+            "start": 1552,
+            "end": 1888
+          }
+        }
+      ]
+    }
+  }
+}

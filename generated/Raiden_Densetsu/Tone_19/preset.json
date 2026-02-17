@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Raiden Densetsu",
+    "snes": {
+      "srcn": 19,
+      "character": "tone",
+      "pcmLength": 3040,
+      "brrLength": 1710,
+      "hasLoop": true,
+      "loopStartPcm": 1552,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 3162
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "806579219b665373f7d0b996af1178bc95a8d0f347f07ba3afb2b57ad6f14e6c"
+          },
+          "loop": {
+            "start": 1552,
+            "end": 3040
+          }
+        }
+      ]
+    }
+  }
+}

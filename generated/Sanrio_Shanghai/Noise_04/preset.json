@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sanrio Shanghai",
+    "snes": {
+      "srcn": 4,
+      "character": "noise",
+      "pcmLength": 4096,
+      "brrLength": 2304,
+      "hasLoop": true,
+      "loopStartPcm": 1840,
+      "adsr1": 47,
+      "adsr2": 240,
+      "gain": 159,
+      "pitchRegister": 2896
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8bb4e1a98c94d35a9eff4d145fbb71723ef8d31ac6b9a2a37ae5a0a230ef16e7"
+          },
+          "loop": {
+            "start": 1840,
+            "end": 4096
+          }
+        }
+      ]
+    }
+  }
+}

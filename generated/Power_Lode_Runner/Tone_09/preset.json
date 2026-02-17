@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Power Lode Runner",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 3296,
+      "brrLength": 1854,
+      "hasLoop": true,
+      "loopStartPcm": 2224
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "94b82a4448a32e7433b1bbc84bd61d8a3c4a0bd00740c0dd2af0427fae8a1b4d"
+          },
+          "loop": {
+            "start": 2224,
+            "end": 3296
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cu-On-Pa",
+    "snes": {
+      "srcn": 24,
+      "character": "melodic",
+      "pcmLength": 9312,
+      "brrLength": 5238,
+      "hasLoop": true,
+      "loopStartPcm": 32
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a6e0e410c80c31dd1a20df4e5364ab26cc0d24eb1546528e7d214ff276880d10"
+          },
+          "loop": {
+            "start": 32,
+            "end": 9312
+          }
+        }
+      ]
+    }
+  }
+}

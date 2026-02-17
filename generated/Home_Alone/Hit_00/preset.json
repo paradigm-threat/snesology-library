@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Home Alone",
+    "snes": {
+      "srcn": 0,
+      "character": "one-shot",
+      "pcmLength": 7648,
+      "brrLength": 4302,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 176,
+      "gain": 127,
+      "pitchRegister": 1515
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3f249a74585c7860f21b8d38cacb5a0e075f2284ff72ed21ab58be431fa3bb0b"
+          }
+        }
+      ]
+    }
+  }
+}

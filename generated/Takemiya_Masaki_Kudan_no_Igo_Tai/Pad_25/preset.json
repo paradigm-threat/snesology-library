@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Takemiya Masaki Kudan no Igo Tai",
+    "snes": {
+      "srcn": 25,
+      "character": "melodic",
+      "pcmLength": 17760,
+      "brrLength": 9990,
+      "hasLoop": true,
+      "loopStartPcm": 6304,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 3198
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0f1dcc4150fffefb5ad995b7b6df525e1d7d18291ef6fc3e8624fab91aa3bfd7"
+          },
+          "loop": {
+            "start": 6304,
+            "end": 17760
+          }
+        }
+      ]
+    }
+  }
+}

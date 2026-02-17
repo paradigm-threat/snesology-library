@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bounty Sword",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 1680,
+      "brrLength": 945,
+      "hasLoop": true,
+      "loopStartPcm": 3856
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cb05d54d495ecff7c874a62e9738bdb06102917052b7230012462b6b6ad5e8d9"
+          },
+          "loop": {
+            "start": 3856,
+            "end": 1680
+          }
+        }
+      ]
+    }
+  }
+}

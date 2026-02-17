@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jumpin' Derby",
+    "snes": {
+      "srcn": 21,
+      "character": "tone",
+      "pcmLength": 1568,
+      "brrLength": 882,
+      "hasLoop": true,
+      "loopStartPcm": 1216,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 84,
+      "pitchRegister": 315
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9a8b4ca0613dd715543c230f0b404934e53b5c1114416c208e8417cd0fd927a9"
+          },
+          "loop": {
+            "start": 1216,
+            "end": 1568
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Voicelead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pilotwings",
+    "snes": {
+      "srcn": 17,
+      "character": "tone",
+      "pcmLength": 3296,
+      "brrLength": 1854,
+      "hasLoop": true,
+      "loopStartPcm": 3248
+    },
+    "communityName": "voicelead",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "54571fdba7dafc11a4199f845b822791e90b1988d10c521fbbaa59ada84792b2"
+          },
+          "loop": {
+            "start": 3248,
+            "end": 3296
+          }
+        }
+      ]
+    }
+  }
+}

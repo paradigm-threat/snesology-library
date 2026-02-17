@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Formation Soccer '95",
+    "snes": {
+      "srcn": 65,
+      "character": "tone",
+      "pcmLength": 3392,
+      "brrLength": 1908,
+      "hasLoop": true,
+      "loopStartPcm": 304,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 5012
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5428b8ba1a2374996e350e019b3b4ddc86e2775d2eba5d1c0aac6f47e7e150c2"
+          },
+          "loop": {
+            "start": 304,
+            "end": 3392
+          }
+        }
+      ]
+    }
+  }
+}

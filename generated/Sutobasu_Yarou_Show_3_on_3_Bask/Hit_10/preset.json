@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sutobasu Yarou Show: 3 on 3 Bask",
+    "snes": {
+      "srcn": 10,
+      "character": "one-shot",
+      "pcmLength": 2864,
+      "brrLength": 1611,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 72,
+      "pitchRegister": 893
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "faa73f8dd2ebe9551a99344c3a4103db7c80cabb64978bf9604fc5a0b68c7759"
+          }
+        }
+      ]
+    }
+  }
+}

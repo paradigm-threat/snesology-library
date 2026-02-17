@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Archer MacLean's Dropzone",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 3280,
+      "brrLength": 1845,
+      "hasLoop": true,
+      "loopStartPcm": 3024
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "da967160dd21a96bbf86176e98751aaf460218361b4b122c972f49995ca5b643"
+          },
+          "loop": {
+            "start": 3024,
+            "end": 3280
+          }
+        }
+      ]
+    }
+  }
+}

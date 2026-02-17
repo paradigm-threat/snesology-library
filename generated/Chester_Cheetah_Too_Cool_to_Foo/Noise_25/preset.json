@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Chester Cheetah: Too Cool to Foo",
+    "snes": {
+      "srcn": 25,
+      "character": "noise",
+      "pcmLength": 5536,
+      "brrLength": 3114,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2685594294dcf6adf3f9c2126f7bf5a5f681e2b0b7d25d52a049f6ade3bd8786"
+          }
+        }
+      ]
+    }
+  }
+}

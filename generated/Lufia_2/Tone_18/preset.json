@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Lufia 2",
+    "snes": {
+      "srcn": 18,
+      "character": "tone",
+      "pcmLength": 736,
+      "brrLength": 414,
+      "hasLoop": true,
+      "loopStartPcm": 496,
+      "adsr1": 255,
+      "adsr2": 235,
+      "gain": 0,
+      "pitchRegister": 1408
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9c447b512b7e2a84c11809fd59a664ea5846bc31f046dd46d38635b68dcf68e1"
+          },
+          "loop": {
+            "start": 496,
+            "end": 736
+          }
+        }
+      ]
+    }
+  }
+}

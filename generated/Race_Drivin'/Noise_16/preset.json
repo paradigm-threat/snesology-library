@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Race Drivin'",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 448,
+      "brrLength": 252,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 254,
+      "adsr2": 224,
+      "gain": 183,
+      "pitchRegister": 2240
+    },
+    "communityName": "noise",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4847b5d2496b01befd201e25b6d7e2e02e39e516cc1ecb1a0e05e565eee3d600"
+          },
+          "loop": {
+            "start": 0,
+            "end": 448
+          }
+        }
+      ]
+    }
+  }
+}

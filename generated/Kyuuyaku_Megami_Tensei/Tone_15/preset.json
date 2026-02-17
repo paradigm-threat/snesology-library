@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kyuuyaku Megami Tensei",
+    "snes": {
+      "srcn": 15,
+      "character": "tone",
+      "pcmLength": 672,
+      "brrLength": 378,
+      "hasLoop": true,
+      "loopStartPcm": 528,
+      "adsr1": 207,
+      "adsr2": 161,
+      "gain": 184,
+      "pitchRegister": 6032
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "30e04e282f4bc3f1c5d4c812c5a22ca648a11763101859c8ef7576ea70b65b7f"
+          },
+          "loop": {
+            "start": 528,
+            "end": 672
+          }
+        }
+      ]
+    }
+  }
+}

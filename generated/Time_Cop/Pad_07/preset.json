@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Time Cop",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 9520,
+      "brrLength": 5355,
+      "hasLoop": true,
+      "loopStartPcm": 6928
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "37e6957757eaf995601d674e22337c9dc89b43f67436821132841c3f8e141931"
+          },
+          "loop": {
+            "start": 6928,
+            "end": 9520
+          }
+        }
+      ]
+    }
+  }
+}

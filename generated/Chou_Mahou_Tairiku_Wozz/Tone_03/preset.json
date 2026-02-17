@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Chou Mahou Tairiku Wozz",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 3648,
+      "brrLength": 2052,
+      "hasLoop": true,
+      "loopStartPcm": 1552
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "da338489ff5f976a591053c51ed9319e9815690eae97c4adf76dccbb734c0485"
+          },
+          "loop": {
+            "start": 1552,
+            "end": 3648
+          }
+        }
+      ]
+    }
+  }
+}

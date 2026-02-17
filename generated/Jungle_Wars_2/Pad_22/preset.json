@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jungle Wars 2",
+    "snes": {
+      "srcn": 22,
+      "character": "melodic",
+      "pcmLength": 5312,
+      "brrLength": 2988,
+      "hasLoop": true,
+      "loopStartPcm": 400
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3a0fd87653474eea32124ad169416bcbe7cd5bb31b4c8e652199eb98cda99ae7"
+          },
+          "loop": {
+            "start": 400,
+            "end": 5312
+          }
+        }
+      ]
+    }
+  }
+}

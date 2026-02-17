@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Last Battle",
+    "snes": {
+      "srcn": 18,
+      "character": "one-shot",
+      "pcmLength": 7008,
+      "brrLength": 3942,
+      "hasLoop": false,
+      "adsr1": 252,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2136
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "01da42fe461f33291ca5e2d4e79399668881d32c04815ea69c96defc9412fee6"
+          }
+        }
+      ]
+    }
+  }
+}

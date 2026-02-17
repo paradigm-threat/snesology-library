@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Tetris 3",
+    "snes": {
+      "srcn": 16,
+      "character": "melodic",
+      "pcmLength": 29328,
+      "brrLength": 16497,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2fa988366995472943d762912cb689792a8353e604efef1280dfe46f75e70802"
+          },
+          "loop": {
+            "start": 48,
+            "end": 29328
+          }
+        }
+      ]
+    }
+  }
+}

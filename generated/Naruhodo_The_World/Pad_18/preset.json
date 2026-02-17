@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Naruhodo The World",
+    "snes": {
+      "srcn": 18,
+      "character": "melodic",
+      "pcmLength": 5952,
+      "brrLength": 3348,
+      "hasLoop": true,
+      "loopStartPcm": 2688
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4094a18d3760f89beec6f0a755403365c175d7a8200bab2b3bddb125c0476e29"
+          },
+          "loop": {
+            "start": 2688,
+            "end": 5952
+          }
+        }
+      ]
+    }
+  }
+}

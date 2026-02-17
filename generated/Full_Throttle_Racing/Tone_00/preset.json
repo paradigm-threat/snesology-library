@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Full Throttle Racing",
+    "snes": {
+      "srcn": 0,
+      "character": "tone",
+      "pcmLength": 2224,
+      "brrLength": 1251,
+      "hasLoop": true,
+      "loopStartPcm": 1488,
+      "adsr1": 175,
+      "adsr2": 96,
+      "gain": 127,
+      "pitchRegister": 2169
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "95860901e95b74915c37d110e42eff1058db41399c0adccec41f376e255845a9"
+          },
+          "loop": {
+            "start": 1488,
+            "end": 2224
+          }
+        }
+      ]
+    }
+  }
+}

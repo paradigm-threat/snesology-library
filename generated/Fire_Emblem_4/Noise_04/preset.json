@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fire Emblem 4",
+    "snes": {
+      "srcn": 4,
+      "character": "noise",
+      "pcmLength": 7616,
+      "brrLength": 4284,
+      "hasLoop": true,
+      "loopStartPcm": 5600,
+      "adsr1": 255,
+      "adsr2": 244,
+      "gain": 172,
+      "pitchRegister": 4150
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d10d63c55f203afb08ed13272198d7cd907426ccce56eb9af669bde6db21c591"
+          },
+          "loop": {
+            "start": 5600,
+            "end": 7616
+          }
+        }
+      ]
+    }
+  }
+}

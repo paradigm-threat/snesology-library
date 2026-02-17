@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon's Earth",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 4528,
+      "brrLength": 2547,
+      "hasLoop": true,
+      "loopStartPcm": 2352
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d6722761bbd5b2eed7a765ba650a904c56d2288c3bdbe964a5dfdda29e97d03b"
+          },
+          "loop": {
+            "start": 2352,
+            "end": 4528
+          }
+        }
+      ]
+    }
+  }
+}

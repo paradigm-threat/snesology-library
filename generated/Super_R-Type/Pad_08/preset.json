@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super R-Type",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 6672,
+      "brrLength": 3753,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 152,
+      "adsr2": 192,
+      "gain": 0,
+      "pitchRegister": 1039
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fd3734c78126ff1e75f7c81240787a1809637095b50d3a5f05bd0b3f945db586"
+          },
+          "loop": {
+            "start": 48,
+            "end": 6672
+          }
+        }
+      ]
+    }
+  }
+}

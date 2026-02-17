@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Ball Z Super Gokuden: Tot",
+    "snes": {
+      "srcn": 20,
+      "character": "melodic",
+      "pcmLength": 5808,
+      "brrLength": 3267,
+      "hasLoop": true,
+      "loopStartPcm": 896
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cafebfc8b235e58dbb7933ad9c2d3d961601f9e7262a4142890f07459f13e2d8"
+          },
+          "loop": {
+            "start": 896,
+            "end": 5808
+          }
+        }
+      ]
+    }
+  }
+}

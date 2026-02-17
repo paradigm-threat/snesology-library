@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Teenage Mutant Ninja Turtles: To",
+    "snes": {
+      "srcn": 7,
+      "character": "noise",
+      "pcmLength": 2240,
+      "brrLength": 1260,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 178,
+      "pitchRegister": 1202
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ac9caf40a6a7f59c275ea84c9a751d0fad2ea2d39d4356c53994f8f198848988"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Vocallead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Street Fighter 2",
+    "snes": {
+      "srcn": 28,
+      "character": "tone",
+      "pcmLength": 2608,
+      "brrLength": 1467,
+      "hasLoop": true,
+      "loopStartPcm": 608
+    },
+    "communityName": "vocallead",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "270af5bb0427a6568cfff5d33311c8c155afc58b1c8d0499428a35fb527cc6a8"
+          },
+          "loop": {
+            "start": 608,
+            "end": 2608
+          }
+        }
+      ]
+    }
+  }
+}

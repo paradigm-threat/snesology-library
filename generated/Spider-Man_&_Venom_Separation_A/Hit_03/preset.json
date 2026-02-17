@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spider-Man & Venom: Separation A",
+    "snes": {
+      "srcn": 3,
+      "character": "one-shot",
+      "pcmLength": 2928,
+      "brrLength": 1647,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 126,
+      "pitchRegister": 1824
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "62823c4fcf878c6fa2e49e748d51c74af69d2aaf4b5faedd0244a4d1f0c52b0c"
+          }
+        }
+      ]
+    }
+  }
+}

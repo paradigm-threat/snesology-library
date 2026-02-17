@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pac-Man 2",
+    "snes": {
+      "srcn": 37,
+      "character": "tone",
+      "pcmLength": 3504,
+      "brrLength": 1971,
+      "hasLoop": true,
+      "loopStartPcm": 1408
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "eba1a65311ccac3c2d13b569c1091aa1cf5269a9dfaeff4df2a2d827dee2605f"
+          },
+          "loop": {
+            "start": 1408,
+            "end": 3504
+          }
+        }
+      ]
+    }
+  }
+}

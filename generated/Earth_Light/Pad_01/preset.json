@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earth Light",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 4608,
+      "brrLength": 2592,
+      "hasLoop": true,
+      "loopStartPcm": 1872,
+      "adsr1": 255,
+      "adsr2": 240,
+      "gain": 184,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8a001c0b5dc62f7a39bd463557c60d3f0564497567cc87d0863fbd2d729c448e"
+          },
+          "loop": {
+            "start": 1872,
+            "end": 4608
+          }
+        }
+      ]
+    }
+  }
+}

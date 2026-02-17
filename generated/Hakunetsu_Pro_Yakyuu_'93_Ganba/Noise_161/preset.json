@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hakunetsu Pro Yakyuu '93: Ganba",
+    "snes": {
+      "srcn": 161,
+      "character": "noise",
+      "pcmLength": 4608,
+      "brrLength": 2592,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6c87a7bb86973e3eb7959f5e1e413c7e64d656a2d9efd1fe7eb0d2ef5acd2b90"
+          }
+        }
+      ]
+    }
+  }
+}

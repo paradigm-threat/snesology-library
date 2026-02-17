@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Timon and Pumbaa's Jungle Games",
+    "snes": {
+      "srcn": 7,
+      "character": "tone",
+      "pcmLength": 1856,
+      "brrLength": 1044,
+      "hasLoop": true,
+      "loopStartPcm": 1600,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 7,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fbfdecf46d4b430bccfcd4f95545843e875252c3d364927688a25d8325f772ed"
+          },
+          "loop": {
+            "start": 1600,
+            "end": 1856
+          }
+        }
+      ]
+    }
+  }
+}

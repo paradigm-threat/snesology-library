@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zool",
+    "snes": {
+      "srcn": 19,
+      "character": "tone",
+      "pcmLength": 2960,
+      "brrLength": 1665,
+      "hasLoop": true,
+      "loopStartPcm": 2736
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "18f6215d77654cad77071d5b7eb6836ef3fd9fa4b72b3e26a964d665ee6ad680"
+          },
+          "loop": {
+            "start": 2736,
+            "end": 2960
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Morph",
+    "snes": {
+      "srcn": 72,
+      "character": "one-shot",
+      "pcmLength": 2576,
+      "brrLength": 1449,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 244,
+      "gain": 0,
+      "pitchRegister": 802
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "68173e24f218a3f783a598c4bfc072035a8b628ab444e8d185f1d7bd9840b1f1"
+          }
+        }
+      ]
+    }
+  }
+}

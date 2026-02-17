@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spider-Man and Venom: Maximum Ca",
+    "snes": {
+      "srcn": 14,
+      "character": "melodic",
+      "pcmLength": 4288,
+      "brrLength": 2412,
+      "hasLoop": true,
+      "loopStartPcm": 1296,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 69,
+      "pitchRegister": 948
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a1f1cc78edefa9c745125bb5dcbfc9938d5561c755f3839227df28f0ec15b4b3"
+          },
+          "loop": {
+            "start": 1296,
+            "end": 4288
+          }
+        }
+      ]
+    }
+  }
+}

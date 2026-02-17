@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Power Piggs of the Dark Age",
+    "snes": {
+      "srcn": 8,
+      "character": "noise",
+      "pcmLength": 8000,
+      "brrLength": 4500,
+      "hasLoop": true,
+      "loopStartPcm": 4928,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 127,
+      "pitchRegister": 833
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9386125c570a6e4eed25ecaba99ac6a2e1a50277ef85efb8761cd25179a39886"
+          },
+          "loop": {
+            "start": 4928,
+            "end": 8000
+          }
+        }
+      ]
+    }
+  }
+}

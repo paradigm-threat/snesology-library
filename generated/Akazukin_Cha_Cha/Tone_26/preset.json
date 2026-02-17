@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Akazukin Cha Cha",
+    "snes": {
+      "srcn": 26,
+      "character": "tone",
+      "pcmLength": 1568,
+      "brrLength": 882,
+      "hasLoop": true,
+      "loopStartPcm": 1456,
+      "adsr1": 255,
+      "adsr2": 228,
+      "gain": 184,
+      "pitchRegister": 3519
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6b0dfe7b88f56ac20ad615f26def7a56109bdadca384104a66ddec6c60bd33cc"
+          },
+          "loop": {
+            "start": 1456,
+            "end": 1568
+          }
+        }
+      ]
+    }
+  }
+}

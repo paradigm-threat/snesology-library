@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Yoshi no Kuruppon",
+    "snes": {
+      "srcn": 22,
+      "character": "tone",
+      "pcmLength": 2528,
+      "brrLength": 1422,
+      "hasLoop": true,
+      "loopStartPcm": 2480,
+      "adsr1": 255,
+      "adsr2": 241,
+      "gain": 184,
+      "pitchRegister": 2271
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cf7a9910f941750881886103ed707882c3ce8d8a668d3f01152fcd56270c6d09"
+          },
+          "loop": {
+            "start": 2480,
+            "end": 2528
+          }
+        }
+      ]
+    }
+  }
+}

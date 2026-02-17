@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Batman Forever",
+    "snes": {
+      "srcn": 49,
+      "character": "tone",
+      "pcmLength": 2912,
+      "brrLength": 1638,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "79af8fc1ef6c2773f293be10c79861b6f785c1f11a502bbd6b688fd31382caa2"
+          },
+          "loop": {
+            "start": 0,
+            "end": 2912
+          }
+        }
+      ]
+    }
+  }
+}

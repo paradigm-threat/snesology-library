@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zenkoku Koukou Soccer Senshuken",
+    "snes": {
+      "srcn": 17,
+      "character": "tone",
+      "pcmLength": 3776,
+      "brrLength": 2124,
+      "hasLoop": true,
+      "loopStartPcm": 3712
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b860b06f15fbb9f01dcd8680c7c69283848ad0588746584928430ca2ba2e1cdb"
+          },
+          "loop": {
+            "start": 3712,
+            "end": 3776
+          }
+        }
+      ]
+    }
+  }
+}

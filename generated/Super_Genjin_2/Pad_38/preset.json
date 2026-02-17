@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Genjin 2",
+    "snes": {
+      "srcn": 38,
+      "character": "melodic",
+      "pcmLength": 5936,
+      "brrLength": 3339,
+      "hasLoop": true,
+      "loopStartPcm": 416
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8002023ebf569d1868aaae9758285adfb49a91ba1809c0717821ceaf4b09b13a"
+          },
+          "loop": {
+            "start": 416,
+            "end": 5936
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cho Aniki",
+    "snes": {
+      "srcn": 124,
+      "character": "melodic",
+      "pcmLength": 4272,
+      "brrLength": 2403,
+      "hasLoop": true,
+      "loopStartPcm": 2224
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "245d4cd6112caaa977f7434e5473830aa7ee1fe47bcb87e1a30384b5c918d7af"
+          },
+          "loop": {
+            "start": 2224,
+            "end": 4272
+          }
+        }
+      ]
+    }
+  }
+}

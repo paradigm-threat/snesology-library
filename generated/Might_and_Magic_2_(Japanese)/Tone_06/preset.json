@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Might and Magic 2 (Japanese)",
+    "snes": {
+      "srcn": 6,
+      "character": "tone",
+      "pcmLength": 3504,
+      "brrLength": 1971,
+      "hasLoop": true,
+      "loopStartPcm": 3472,
+      "adsr1": 207,
+      "adsr2": 173,
+      "gain": 180,
+      "pitchRegister": 541
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "adc0cf54e55fae5ce361f024fa7e95a6c469dff237e2c9468d79947b99d1829c"
+          },
+          "loop": {
+            "start": 3472,
+            "end": 3504
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Simpsons: Bart's Nightmare",
+    "snes": {
+      "srcn": 2,
+      "character": "one-shot",
+      "pcmLength": 15088,
+      "brrLength": 8487,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 115,
+      "gain": 127,
+      "pitchRegister": 1217
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9505b692c4ce0d9d9621f6ebe764d2dd7e33a5d42167726c4c8dbde30ecc49c2"
+          }
+        }
+      ]
+    }
+  }
+}

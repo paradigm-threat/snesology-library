@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cosmo Gang the Puzzle",
+    "snes": {
+      "srcn": 17,
+      "character": "noise",
+      "pcmLength": 4448,
+      "brrLength": 2502,
+      "hasLoop": true,
+      "loopStartPcm": 3184
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1294a393e1e0febbdb8c4590625f2b08b105415ec2208458c70c23682ec9dd46"
+          },
+          "loop": {
+            "start": 3184,
+            "end": 4448
+          }
+        }
+      ]
+    }
+  }
+}

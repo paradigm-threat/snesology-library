@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Duck",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Plok!",
+    "snes": {
+      "srcn": 18,
+      "character": "one-shot",
+      "pcmLength": 1616,
+      "brrLength": 909,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 159,
+      "pitchRegister": 2169
+    },
+    "communityName": "sfx_duck",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7dc958801104e601e50984fbfda238fb7e98457bfb8a88a52a5160a16e47a08c"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Olympic Summer Games",
+    "snes": {
+      "srcn": 33,
+      "character": "noise",
+      "pcmLength": 4144,
+      "brrLength": 2331,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 134,
+      "adsr2": 232,
+      "gain": 33,
+      "pitchRegister": 825
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f1a325b6ebb1b744f05686a645c53a60a78d9ba2f15b10e655e455b12d5838c1"
+          },
+          "loop": {
+            "start": 0,
+            "end": 4144
+          }
+        }
+      ]
+    }
+  }
+}

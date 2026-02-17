@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Operation Thunderbolt",
+    "snes": {
+      "srcn": 194,
+      "character": "melodic",
+      "pcmLength": 12816,
+      "brrLength": 7209,
+      "hasLoop": true,
+      "loopStartPcm": 7072
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fe2cb7e87c4189ac0f77364c479679cf989aa968e27f0e04f3c6d1ab1dc2ecf6"
+          },
+          "loop": {
+            "start": 7072,
+            "end": 12816
+          }
+        }
+      ]
+    }
+  }
+}

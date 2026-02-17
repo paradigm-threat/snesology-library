@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "4-Nin Shougi",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 4688,
+      "brrLength": 2637,
+      "hasLoop": true,
+      "loopStartPcm": 4448
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0cb27eac707cee0fce3aeaf61ccaf5a8cff43ecbed4d2073e60126eec25bd481"
+          },
+          "loop": {
+            "start": 4448,
+            "end": 4688
+          }
+        }
+      ]
+    }
+  }
+}

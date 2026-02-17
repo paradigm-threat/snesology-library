@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spectre",
+    "snes": {
+      "srcn": 21,
+      "character": "tone",
+      "pcmLength": 2720,
+      "brrLength": 1530,
+      "hasLoop": true,
+      "loopStartPcm": 2240,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 124,
+      "pitchRegister": 542
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e13360dd15b855f57cfade4eeedd9ced5da9bebabae8f703865144b261b4fa63"
+          },
+          "loop": {
+            "start": 2240,
+            "end": 2720
+          }
+        }
+      ]
+    }
+  }
+}

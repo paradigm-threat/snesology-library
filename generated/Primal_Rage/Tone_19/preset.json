@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Primal Rage",
+    "snes": {
+      "srcn": 19,
+      "character": "tone",
+      "pcmLength": 1808,
+      "brrLength": 1017,
+      "hasLoop": true,
+      "loopStartPcm": 1040
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9a227b8b4e21089dff0ac963a1ee933ea203fe11c12d4078a86425ab3e8dee48"
+          },
+          "loop": {
+            "start": 1040,
+            "end": 1808
+          }
+        }
+      ]
+    }
+  }
+}

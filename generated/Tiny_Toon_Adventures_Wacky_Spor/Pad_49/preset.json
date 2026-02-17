@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tiny Toon Adventures: Wacky Spor",
+    "snes": {
+      "srcn": 49,
+      "character": "melodic",
+      "pcmLength": 6688,
+      "brrLength": 3762,
+      "hasLoop": true,
+      "loopStartPcm": 1328
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d3b0a4224718bf13b2f4fe1056ec3c60999364a5b582fe17a7a7ce2f7643b15d"
+          },
+          "loop": {
+            "start": 1328,
+            "end": 6688
+          }
+        }
+      ]
+    }
+  }
+}

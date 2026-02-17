@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spider-Man",
+    "snes": {
+      "srcn": 37,
+      "character": "one-shot",
+      "pcmLength": 1376,
+      "brrLength": 774,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 135,
+      "gain": 159,
+      "pitchRegister": 1150
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "934594be30005a3bd62c060a8af0b1c0d5174a11b0987a0bb19f26586cc06fc9"
+          }
+        }
+      ]
+    }
+  }
+}

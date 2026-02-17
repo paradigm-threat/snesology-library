@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hajimari no Mori",
+    "snes": {
+      "srcn": 92,
+      "character": "tone",
+      "pcmLength": 3872,
+      "brrLength": 2178,
+      "hasLoop": true,
+      "loopStartPcm": 1664
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "893a5ce47ea9d77d1effba0ec94e0326b900fa3c662c62f5c06799f739c6c59c"
+          },
+          "loop": {
+            "start": 1664,
+            "end": 3872
+          }
+        }
+      ]
+    }
+  }
+}

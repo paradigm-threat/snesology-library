@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Magic Sword",
+    "snes": {
+      "srcn": 20,
+      "character": "tone",
+      "pcmLength": 1152,
+      "brrLength": 648,
+      "hasLoop": true,
+      "loopStartPcm": 5104
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "117b0d6b228f6f07f5b52fa2193b2ee0cb214a1d05e7922e9a05de8570b66474"
+          },
+          "loop": {
+            "start": 5104,
+            "end": 1152
+          }
+        }
+      ]
+    }
+  }
+}

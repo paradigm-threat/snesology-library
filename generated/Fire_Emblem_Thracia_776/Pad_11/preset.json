@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fire Emblem Thracia 776",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 11440,
+      "brrLength": 6435,
+      "hasLoop": true,
+      "loopStartPcm": 1536
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1d2b72747460ec1af949b1a583b4e3b113424acea8a023f2122688768143d95d"
+          },
+          "loop": {
+            "start": 1536,
+            "end": 11440
+          }
+        }
+      ]
+    }
+  }
+}

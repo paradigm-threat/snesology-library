@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Panel de Pon",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 336,
+      "brrLength": 189,
+      "hasLoop": true,
+      "loopStartPcm": 272,
+      "adsr1": 238,
+      "adsr2": 192,
+      "gain": 184,
+      "pitchRegister": 2860
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "75c7f3512de0c700bd93a6a66f9b34bb77b9abe6c78491fbe3717d2ae256e42f"
+          },
+          "loop": {
+            "start": 272,
+            "end": 336
+          }
+        }
+      ]
+    }
+  }
+}

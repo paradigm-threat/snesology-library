@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Nobunaga no Yabou Busyo Fuunroku",
+    "snes": {
+      "srcn": 16,
+      "character": "melodic",
+      "pcmLength": 4192,
+      "brrLength": 2358,
+      "hasLoop": true,
+      "loopStartPcm": 4048,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 9162
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "dc0b48b9c29969434fae3342be3f5f978199e3ea8f50af62b8129fd84ee929b6"
+          },
+          "loop": {
+            "start": 4048,
+            "end": 4192
+          }
+        }
+      ]
+    }
+  }
+}

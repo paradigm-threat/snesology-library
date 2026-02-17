@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Winter Olympic Games",
+    "snes": {
+      "srcn": 34,
+      "character": "melodic",
+      "pcmLength": 14496,
+      "brrLength": 8154,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "48330a8fbbec3531be8cad3f6af58f3313e90e11f88e78d860b3763549b6bc66"
+          },
+          "loop": {
+            "start": 0,
+            "end": 14496
+          }
+        }
+      ]
+    }
+  }
+}

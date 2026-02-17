@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Neugier",
+    "snes": {
+      "srcn": 17,
+      "character": "noise",
+      "pcmLength": 5024,
+      "brrLength": 2826,
+      "hasLoop": true,
+      "loopStartPcm": 4784
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "198536c6b84ea78103de23ff5074e2db5d8c97d0a7df7cf217b6979aeab0548b"
+          },
+          "loop": {
+            "start": 4784,
+            "end": 5024
+          }
+        }
+      ]
+    }
+  }
+}

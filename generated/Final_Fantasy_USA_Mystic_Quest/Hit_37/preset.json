@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Final Fantasy USA: Mystic Quest",
+    "snes": {
+      "srcn": 37,
+      "character": "one-shot",
+      "pcmLength": 1408,
+      "brrLength": 792,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 240,
+      "gain": 160,
+      "pitchRegister": 2048
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "446eaf4abee9830bc94912ca7befa860a743d653c8989f6849f9d7864a13625a"
+          }
+        }
+      ]
+    }
+  }
+}

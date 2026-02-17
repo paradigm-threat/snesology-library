@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Skyblazer",
+    "snes": {
+      "srcn": 21,
+      "character": "noise",
+      "pcmLength": 4000,
+      "brrLength": 2250,
+      "hasLoop": true,
+      "loopStartPcm": 2256,
+      "adsr1": 255,
+      "adsr2": 210,
+      "gain": 178,
+      "pitchRegister": 3465
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "369f44548d55629b2a109b69cef58ff290c0a20c63e56893df286d28d624ab43"
+          },
+          "loop": {
+            "start": 2256,
+            "end": 4000
+          }
+        }
+      ]
+    }
+  }
+}

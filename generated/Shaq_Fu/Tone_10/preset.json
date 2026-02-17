@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shaq Fu",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 1200,
+      "brrLength": 675,
+      "hasLoop": true,
+      "loopStartPcm": 1136,
+      "adsr1": 206,
+      "adsr2": 42,
+      "gain": 0,
+      "pitchRegister": 1132
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5e14ca6a917f4a750e6f7c09405543598f54eecbb550c77743738b2e574310f8"
+          },
+          "loop": {
+            "start": 1136,
+            "end": 1200
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Flying Hero - Bugyuru no Daibouk",
+    "snes": {
+      "srcn": 66,
+      "character": "melodic",
+      "pcmLength": 6768,
+      "brrLength": 3807,
+      "hasLoop": true,
+      "loopStartPcm": 54640
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "98a566bdfb1052d94cbf754320e5e4a9727715d6d038192e558c13a2217306ac"
+          },
+          "loop": {
+            "start": 54640,
+            "end": 6768
+          }
+        }
+      ]
+    }
+  }
+}

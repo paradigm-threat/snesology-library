@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Guitar Chorused",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shadowrun",
+    "snes": {
+      "srcn": 23,
+      "character": "melodic",
+      "pcmLength": 4144,
+      "brrLength": 2331,
+      "hasLoop": true,
+      "loopStartPcm": 2224,
+      "adsr1": 155,
+      "adsr2": 237,
+      "gain": 127,
+      "pitchRegister": 1426
+    },
+    "communityName": "guitar_chorused",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8c34f39624f6a8478f5534d64cb1cd8bfbe68ace772e6fc887cd2bef00a16a94"
+          },
+          "loop": {
+            "start": 2224,
+            "end": 4144
+          }
+        }
+      ]
+    }
+  }
+}

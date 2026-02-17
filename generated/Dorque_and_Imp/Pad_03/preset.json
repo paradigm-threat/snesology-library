@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dorque and Imp",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 9824,
+      "brrLength": 5526,
+      "hasLoop": true,
+      "loopStartPcm": 752,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 1722
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "56d6b941480c7f9822bc75cb193bd29f73f51506560ff96eb8e87c4cb0eb43c0"
+          },
+          "loop": {
+            "start": 752,
+            "end": 9824
+          }
+        }
+      ]
+    }
+  }
+}

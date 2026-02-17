@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Twinbee: Rainbow Bell Adventure",
+    "snes": {
+      "srcn": 31,
+      "character": "tone",
+      "pcmLength": 3216,
+      "brrLength": 1809,
+      "hasLoop": true,
+      "loopStartPcm": 1744,
+      "adsr1": 143,
+      "adsr2": 213,
+      "gain": 180,
+      "pitchRegister": 3096
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bd64ecb5b1d6dc43088ac5f206ff3726c4b91bb039d79ce3ee0c43409a17271e"
+          },
+          "loop": {
+            "start": 1744,
+            "end": 3216
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sanrio Shanghai",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 3040,
+      "brrLength": 1710,
+      "hasLoop": true,
+      "loopStartPcm": 2944,
+      "adsr1": 47,
+      "adsr2": 230,
+      "gain": 159,
+      "pitchRegister": 1520
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7980d6ae850737858ade35a9be5dd153356de8d6b807767f799a0604baf11dec"
+          },
+          "loop": {
+            "start": 2944,
+            "end": 3040
+          }
+        }
+      ]
+    }
+  }
+}

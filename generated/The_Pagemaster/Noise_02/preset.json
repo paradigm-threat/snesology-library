@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Pagemaster",
+    "snes": {
+      "srcn": 2,
+      "character": "noise",
+      "pcmLength": 8000,
+      "brrLength": 4500,
+      "hasLoop": false,
+      "adsr1": 158,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 5114
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9538966ef9f9bf86645b73cc2ae307676afcac04f251b1e109845138256b5d7f"
+          }
+        }
+      ]
+    }
+  }
+}

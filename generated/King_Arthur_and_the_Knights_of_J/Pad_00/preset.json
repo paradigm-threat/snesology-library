@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "King Arthur and the Knights of J",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 11760,
+      "brrLength": 6615,
+      "hasLoop": true,
+      "loopStartPcm": 2000,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 36,
+      "pitchRegister": 2694
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ff03581c0dba3244820da91baf14539a16fa3d2241ec02a6f67e3a682f19a82b"
+          },
+          "loop": {
+            "start": 2000,
+            "end": 11760
+          }
+        }
+      ]
+    }
+  }
+}

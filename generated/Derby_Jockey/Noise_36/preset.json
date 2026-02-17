@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Derby Jockey",
+    "snes": {
+      "srcn": 36,
+      "character": "noise",
+      "pcmLength": 5248,
+      "brrLength": 2952,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b4cea9f3c1214f9b581525584eb59f6eb5be599fd0783e9ac6a1efbc1b5fe3be"
+          },
+          "loop": {
+            "start": 16,
+            "end": 5248
+          }
+        }
+      ]
+    }
+  }
+}

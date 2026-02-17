@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zennihon Pro Wrestling",
+    "snes": {
+      "srcn": 13,
+      "character": "tone",
+      "pcmLength": 3296,
+      "brrLength": 1854,
+      "hasLoop": true,
+      "loopStartPcm": 1744
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e3fcd00ede4b26cee71e71966f0a7b3ff9f2849820799c6a10368ae0e2da8356"
+          },
+          "loop": {
+            "start": 1744,
+            "end": 3296
+          }
+        }
+      ]
+    }
+  }
+}

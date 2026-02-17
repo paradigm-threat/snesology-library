@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Tick",
+    "snes": {
+      "srcn": 23,
+      "character": "tone",
+      "pcmLength": 3776,
+      "brrLength": 2124,
+      "hasLoop": true,
+      "loopStartPcm": 1664
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "aafb56e8517ad69590a509f4e440daf5cc7754258fca76dcc84d2568a1cb3cd6"
+          },
+          "loop": {
+            "start": 1664,
+            "end": 3776
+          }
+        }
+      ]
+    }
+  }
+}

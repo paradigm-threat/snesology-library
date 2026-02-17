@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Kick",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Bomberman",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 2224,
+      "brrLength": 1251,
+      "hasLoop": true,
+      "loopStartPcm": 2192,
+      "adsr1": 143,
+      "adsr2": 239,
+      "gain": 0,
+      "pitchRegister": 476
+    },
+    "communityName": "perc_kick",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4539d4fc5d4557e7fb719413d1e2bddbf0840bffa547ee4614a3bf7acbfa9f45"
+          },
+          "loop": {
+            "start": 2192,
+            "end": 2224
+          }
+        }
+      ]
+    }
+  }
+}

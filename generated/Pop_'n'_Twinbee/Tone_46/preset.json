@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pop 'n' Twinbee",
+    "snes": {
+      "srcn": 46,
+      "character": "tone",
+      "pcmLength": 800,
+      "brrLength": 450,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 143,
+      "adsr2": 207,
+      "gain": 184,
+      "pitchRegister": 2270
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0bc6f081b31f4b8fd8f9eb43b097f85bfa590bfa13b1bfa4a561a2d5bd4080a9"
+          },
+          "loop": {
+            "start": 48,
+            "end": 800
+          }
+        }
+      ]
+    }
+  }
+}

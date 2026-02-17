@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Magical Pop'n",
+    "snes": {
+      "srcn": 38,
+      "character": "noise",
+      "pcmLength": 7680,
+      "brrLength": 4320,
+      "hasLoop": true,
+      "loopStartPcm": 3840,
+      "adsr1": 255,
+      "adsr2": 87,
+      "gain": 0,
+      "pitchRegister": 4096
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4577fc2e9792572efa23825c93447e93ec677261b4b29e9fd8fcc0aa43357a8c"
+          },
+          "loop": {
+            "start": 3840,
+            "end": 7680
+          }
+        }
+      ]
+    }
+  }
+}

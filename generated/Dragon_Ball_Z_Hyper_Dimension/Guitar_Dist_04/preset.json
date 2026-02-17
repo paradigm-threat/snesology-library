@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Guitar Dist",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Ball Z: Hyper Dimension",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 7488,
+      "brrLength": 4212,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1744
+    },
+    "communityName": "guitar_dist",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "93b15f6de1d0ae2037e75e2e24d06ccc32e459a4eca5a0b22f65240f91f3c29f"
+          },
+          "loop": {
+            "start": 48,
+            "end": 7488
+          }
+        }
+      ]
+    }
+  }
+}

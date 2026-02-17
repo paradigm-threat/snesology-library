@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spellcraft",
+    "snes": {
+      "srcn": 19,
+      "character": "tone",
+      "pcmLength": 2368,
+      "brrLength": 1332,
+      "hasLoop": true,
+      "loopStartPcm": 1616,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 151,
+      "pitchRegister": 512
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b065a0f6d3db80613a0c96f726517010d08c1fe954f71d3114def5e4fe54f5e5"
+          },
+          "loop": {
+            "start": 1616,
+            "end": 2368
+          }
+        }
+      ]
+    }
+  }
+}

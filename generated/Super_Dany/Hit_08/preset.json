@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Dany",
+    "snes": {
+      "srcn": 8,
+      "character": "one-shot",
+      "pcmLength": 1520,
+      "brrLength": 855,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 112,
+      "gain": 255,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "01d570df287b859cedbb62bfca8608fbfdaca6e4d88918f42a0b22df21b4da9c"
+          }
+        }
+      ]
+    }
+  }
+}

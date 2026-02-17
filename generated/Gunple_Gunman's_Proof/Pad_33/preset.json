@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gunple: Gunman's Proof",
+    "snes": {
+      "srcn": 33,
+      "character": "melodic",
+      "pcmLength": 6848,
+      "brrLength": 3852,
+      "hasLoop": true,
+      "loopStartPcm": 752
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "43f00d86d75a8818901af62359ef541077299fcf46c47f7644823e296534d59c"
+          },
+          "loop": {
+            "start": 752,
+            "end": 6848
+          }
+        }
+      ]
+    }
+  }
+}

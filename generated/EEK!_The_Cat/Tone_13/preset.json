@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "EEK! The Cat",
+    "snes": {
+      "srcn": 13,
+      "character": "tone",
+      "pcmLength": 2832,
+      "brrLength": 1593,
+      "hasLoop": true,
+      "loopStartPcm": 2768
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b4af997898205a4cbe3fcf054b911efa465794c110d8876576e37800bb6283ab"
+          },
+          "loop": {
+            "start": 2768,
+            "end": 2832
+          }
+        }
+      ]
+    }
+  }
+}

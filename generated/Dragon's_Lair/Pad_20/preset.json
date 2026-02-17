@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon's Lair",
+    "snes": {
+      "srcn": 20,
+      "character": "melodic",
+      "pcmLength": 5408,
+      "brrLength": 3042,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 156,
+      "adsr2": 233,
+      "gain": 0,
+      "pitchRegister": 1722
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9d83640ede9c50924398794edf5217766fd5b26b27081de474af9331c1bcb368"
+          },
+          "loop": {
+            "start": 0,
+            "end": 5408
+          }
+        }
+      ]
+    }
+  }
+}

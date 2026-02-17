@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Twisted Tales of Spike McFan",
+    "snes": {
+      "srcn": 98,
+      "character": "tone",
+      "pcmLength": 3856,
+      "brrLength": 2169,
+      "hasLoop": true,
+      "loopStartPcm": 7312
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0e5ec40bbc4205c2bc16f3daba73e303ea3bfe23e46afc3a6a4d3d592188daa0"
+          },
+          "loop": {
+            "start": 7312,
+            "end": 3856
+          }
+        }
+      ]
+    }
+  }
+}

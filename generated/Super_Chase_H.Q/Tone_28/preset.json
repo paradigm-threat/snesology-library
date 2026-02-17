@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Chase H.Q.",
+    "snes": {
+      "srcn": 28,
+      "character": "tone",
+      "pcmLength": 3936,
+      "brrLength": 2214,
+      "hasLoop": true,
+      "loopStartPcm": 2784
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6034163fea4ea3c070d97eb6dc62b54bfff05fcb9a416e934d56b78040e3edf9"
+          },
+          "loop": {
+            "start": 2784,
+            "end": 3936
+          }
+        }
+      ]
+    }
+  }
+}

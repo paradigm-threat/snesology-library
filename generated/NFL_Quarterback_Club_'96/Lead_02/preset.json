@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "NFL Quarterback Club '96",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 6272,
+      "brrLength": 3528,
+      "hasLoop": true,
+      "loopStartPcm": 4320,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 159,
+      "pitchRegister": 560
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0a18ec216a3befdf1e8396b8aa2252b2a32e847dea22991717121ea3d4f36a4b"
+          },
+          "loop": {
+            "start": 4320,
+            "end": 6272
+          }
+        }
+      ]
+    }
+  }
+}

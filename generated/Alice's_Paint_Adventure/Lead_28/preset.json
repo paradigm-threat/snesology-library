@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Alice's Paint Adventure",
+    "snes": {
+      "srcn": 28,
+      "character": "melodic",
+      "pcmLength": 7232,
+      "brrLength": 4068,
+      "hasLoop": true,
+      "loopStartPcm": 5376
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1c32093d54baac54e3eab70f70367eb7a1bcff7cb88457f40a34b02f8854368e"
+          },
+          "loop": {
+            "start": 5376,
+            "end": 7232
+          }
+        }
+      ]
+    }
+  }
+}

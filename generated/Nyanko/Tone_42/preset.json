@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Nyanko",
+    "snes": {
+      "srcn": 42,
+      "character": "tone",
+      "pcmLength": 1280,
+      "brrLength": 720,
+      "hasLoop": true,
+      "loopStartPcm": 80816
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "825eef35eb6242a79a7943a4012e33bd800cfaedd2343538b7eadd5db5277446"
+          },
+          "loop": {
+            "start": 80816,
+            "end": 1280
+          }
+        }
+      ]
+    }
+  }
+}

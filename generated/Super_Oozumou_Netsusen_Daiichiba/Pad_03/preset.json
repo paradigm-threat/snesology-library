@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Oozumou Netsusen Daiichiba",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 6816,
+      "brrLength": 3834,
+      "hasLoop": true,
+      "loopStartPcm": 64,
+      "adsr1": 255,
+      "adsr2": 242,
+      "gain": 184,
+      "pitchRegister": 1443
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5bc4bd96aa8829e5ad7730f41a74268699f2c67df10e8414bf961bccc476000d"
+          },
+          "loop": {
+            "start": 64,
+            "end": 6816
+          }
+        }
+      ]
+    }
+  }
+}

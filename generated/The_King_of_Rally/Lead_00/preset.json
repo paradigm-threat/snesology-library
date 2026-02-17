@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The King of Rally",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 5776,
+      "brrLength": 3249,
+      "hasLoop": true,
+      "loopStartPcm": 4032,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 0,
+      "pitchRegister": 16382
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7866796232694bac2befb4458914622ec2080e1d3d9ef46a5bd50d5b0f361943"
+          },
+          "loop": {
+            "start": 4032,
+            "end": 5776
+          }
+        }
+      ]
+    }
+  }
+}

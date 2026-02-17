@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Congo's Caper",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 7824,
+      "brrLength": 4401,
+      "hasLoop": true,
+      "loopStartPcm": 6848,
+      "adsr1": 255,
+      "adsr2": 238,
+      "gain": 184,
+      "pitchRegister": 3209
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0a82feb35356c9197d1783979724b9904a87901321b8cf73dc644e2255b836d4"
+          },
+          "loop": {
+            "start": 6848,
+            "end": 7824
+          }
+        }
+      ]
+    }
+  }
+}

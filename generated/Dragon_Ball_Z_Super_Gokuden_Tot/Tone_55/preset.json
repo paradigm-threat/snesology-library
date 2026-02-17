@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Ball Z Super Gokuden: Tot",
+    "snes": {
+      "srcn": 55,
+      "character": "tone",
+      "pcmLength": 3424,
+      "brrLength": 1926,
+      "hasLoop": true,
+      "loopStartPcm": 2800
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c11d171a7a67729371a53669b503c8ee17718a3eacd94691a132331519fecc52"
+          },
+          "loop": {
+            "start": 2800,
+            "end": 3424
+          }
+        }
+      ]
+    }
+  }
+}

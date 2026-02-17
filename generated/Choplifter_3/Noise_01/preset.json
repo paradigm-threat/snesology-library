@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Choplifter 3",
+    "snes": {
+      "srcn": 1,
+      "character": "noise",
+      "pcmLength": 5264,
+      "brrLength": 2961,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e2442f1e680eb83adab345e176355142bd38132fcd2f76773445ef2b0b1de3c1"
+          },
+          "loop": {
+            "start": 16,
+            "end": 5264
+          }
+        }
+      ]
+    }
+  }
+}

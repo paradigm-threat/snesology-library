@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Holy Umbrella",
+    "snes": {
+      "srcn": 21,
+      "character": "tone",
+      "pcmLength": 2576,
+      "brrLength": 1449,
+      "hasLoop": true,
+      "loopStartPcm": 2512,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 191,
+      "pitchRegister": 3614
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "af0528c82f3f5a7646dc6b3bd6fc5bcebb42ab3fd061d82e55353e0238d899e6"
+          },
+          "loop": {
+            "start": 2512,
+            "end": 2576
+          }
+        }
+      ]
+    }
+  }
+}

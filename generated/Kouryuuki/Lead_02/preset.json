@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kouryuuki",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 8928,
+      "brrLength": 5022,
+      "hasLoop": true,
+      "loopStartPcm": 7216,
+      "adsr1": 0,
+      "adsr2": 229,
+      "gain": 158,
+      "pitchRegister": 1483
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0023f73bb5950140c92c654d6f9391fa1baa49bcdb740e90d74d7d171170f0fb"
+          },
+          "loop": {
+            "start": 7216,
+            "end": 8928
+          }
+        }
+      ]
+    }
+  }
+}

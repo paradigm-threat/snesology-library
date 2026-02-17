@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Parlor! Mini",
+    "snes": {
+      "srcn": 40,
+      "character": "tone",
+      "pcmLength": 3056,
+      "brrLength": 1719,
+      "hasLoop": true,
+      "loopStartPcm": 752
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "446b4a5738e5400e2cf5e9675b72f970bffee804ceee56c95c4cd08f5e3df2c8"
+          },
+          "loop": {
+            "start": 752,
+            "end": 3056
+          }
+        }
+      ]
+    }
+  }
+}

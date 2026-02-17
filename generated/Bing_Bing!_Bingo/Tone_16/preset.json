@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bing Bing! Bingo",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 3328,
+      "brrLength": 1872,
+      "hasLoop": true,
+      "loopStartPcm": 3216,
+      "adsr1": 255,
+      "adsr2": 241,
+      "gain": 184,
+      "pitchRegister": 574
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d204c139d56484674219b5875c9497a260afb6566ed755eba6a4f2f0240cd7a5"
+          },
+          "loop": {
+            "start": 3216,
+            "end": 3328
+          }
+        }
+      ]
+    }
+  }
+}

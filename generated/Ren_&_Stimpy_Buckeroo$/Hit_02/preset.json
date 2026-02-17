@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ren & Stimpy: Buckeroo$",
+    "snes": {
+      "srcn": 2,
+      "character": "one-shot",
+      "pcmLength": 1904,
+      "brrLength": 1071,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 239,
+      "gain": 183,
+      "pitchRegister": 665
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d70cd476853fce04e8d678fa508573bdd95514f7e813668ba6eea748886cbb9e"
+          }
+        }
+      ]
+    }
+  }
+}

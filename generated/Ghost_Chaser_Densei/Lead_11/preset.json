@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ghost Chaser Densei",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 4608,
+      "brrLength": 2592,
+      "hasLoop": true,
+      "loopStartPcm": 4560,
+      "adsr1": 255,
+      "adsr2": 228,
+      "gain": 0,
+      "pitchRegister": 4545
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d8a3be6d12fa8aa9c038708b78fa4e2f6c48f3e1a1b4942c954bf88d4b51c3e8"
+          },
+          "loop": {
+            "start": 4560,
+            "end": 4608
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jikkyou Powerful Pro Yakyuu '94",
+    "snes": {
+      "srcn": 22,
+      "character": "melodic",
+      "pcmLength": 6576,
+      "brrLength": 3699,
+      "hasLoop": true,
+      "loopStartPcm": 2048,
+      "adsr1": 143,
+      "adsr2": 226,
+      "gain": 146,
+      "pitchRegister": 1836
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "63702a9a208dfe735432c19f9f5479aca36bc8f31a3f077c9a6df6ada69a356a"
+          },
+          "loop": {
+            "start": 2048,
+            "end": 6576
+          }
+        }
+      ]
+    }
+  }
+}

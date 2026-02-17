@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Lemmings 2",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 6208,
+      "brrLength": 3492,
+      "hasLoop": true,
+      "loopStartPcm": 3088
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e4ea2934cf2e74b5cecc86b1483c37c1a8285733afaa0a4735e209c21d790ae8"
+          },
+          "loop": {
+            "start": 3088,
+            "end": 6208
+          }
+        }
+      ]
+    }
+  }
+}

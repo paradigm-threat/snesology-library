@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dracula X",
+    "snes": {
+      "srcn": 80,
+      "character": "noise",
+      "pcmLength": 12384,
+      "brrLength": 6966,
+      "hasLoop": true,
+      "loopStartPcm": 9776,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 5662
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2a55ba7fa2799adafd6c784ebed9041c405c48b24ec8a5c28c1bf9d0491ac399"
+          },
+          "loop": {
+            "start": 9776,
+            "end": 12384
+          }
+        }
+      ]
+    }
+  }
+}

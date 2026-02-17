@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spellcraft",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 4656,
+      "brrLength": 2619,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d2d9a4fb73a1c7c2579589e9cb04b3a14e5b0a0fc8fc11867dbe805998809200"
+          },
+          "loop": {
+            "start": 0,
+            "end": 4656
+          }
+        }
+      ]
+    }
+  }
+}

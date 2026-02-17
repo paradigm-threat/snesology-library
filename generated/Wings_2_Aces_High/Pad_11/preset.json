@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wings 2 Aces High",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 5792,
+      "brrLength": 3258,
+      "hasLoop": true,
+      "loopStartPcm": 3216,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 2143
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "02252010126e8987cce6d69e9f91770d6c3d2338cca178ebf3cc8366fbebc84e"
+          },
+          "loop": {
+            "start": 3216,
+            "end": 5792
+          }
+        }
+      ]
+    }
+  }
+}

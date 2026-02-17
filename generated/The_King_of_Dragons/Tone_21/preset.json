@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The King of Dragons",
+    "snes": {
+      "srcn": 21,
+      "character": "tone",
+      "pcmLength": 2944,
+      "brrLength": 1656,
+      "hasLoop": true,
+      "loopStartPcm": 2896,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 156,
+      "pitchRegister": 3597
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f2d70739073c10a616f97bceae0a319a62c0bef256503b60e1ba8902d3168134"
+          },
+          "loop": {
+            "start": 2896,
+            "end": 2944
+          }
+        }
+      ]
+    }
+  }
+}

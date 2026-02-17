@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hiouden",
+    "snes": {
+      "srcn": 40,
+      "character": "melodic",
+      "pcmLength": 10432,
+      "brrLength": 5868,
+      "hasLoop": true,
+      "loopStartPcm": 3584
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a7fb12c6aad338789f78836be70e1f3e45b6ae5e99fa2ca8ca243e3957e0c5f5"
+          },
+          "loop": {
+            "start": 3584,
+            "end": 10432
+          }
+        }
+      ]
+    }
+  }
+}

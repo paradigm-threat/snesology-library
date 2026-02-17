@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Mahjong 2",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 1168,
+      "brrLength": 657,
+      "hasLoop": true,
+      "loopStartPcm": 864,
+      "adsr1": 207,
+      "adsr2": 129,
+      "gain": 0,
+      "pitchRegister": 64
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "05f1a3c94d4215a6c6b2942488f1f13202d586fb59a4f4bd20303af1cdd03745"
+          },
+          "loop": {
+            "start": 864,
+            "end": 1168
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pro Mahjong Kiwame 3",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 3856,
+      "brrLength": 2169,
+      "hasLoop": true,
+      "loopStartPcm": 1072,
+      "adsr1": 200,
+      "adsr2": 102,
+      "gain": 0,
+      "pitchRegister": 1534
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7bef5a99256225a351612f7f33b727f16eb9208ff8265c7d6edb2251ae2dc65b"
+          },
+          "loop": {
+            "start": 1072,
+            "end": 3856
+          }
+        }
+      ]
+    }
+  }
+}

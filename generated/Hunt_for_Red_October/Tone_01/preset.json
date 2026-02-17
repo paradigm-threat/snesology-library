@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hunt for Red October",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 2416,
+      "brrLength": 1359,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 252,
+      "adsr2": 244,
+      "gain": 184,
+      "pitchRegister": 3047
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0b425d80cc6b397c63328558bad18364d852c82acb6ae4f6daa79682622a294c"
+          },
+          "loop": {
+            "start": 48,
+            "end": 2416
+          }
+        }
+      ]
+    }
+  }
+}

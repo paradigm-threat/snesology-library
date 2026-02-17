@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth Highq4",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hyper Zone",
+    "snes": {
+      "srcn": 17,
+      "character": "tone",
+      "pcmLength": 1168,
+      "brrLength": 657,
+      "hasLoop": true,
+      "loopStartPcm": 608,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 4500
+    },
+    "communityName": "synth_highq4",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1982e2b2015e604d21aa1562445d5f03dfd7895af847517bf43a0ca5f3c56ff2"
+          },
+          "loop": {
+            "start": 608,
+            "end": 1168
+          }
+        }
+      ]
+    }
+  }
+}

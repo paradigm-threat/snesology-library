@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Yamato Takeru",
+    "snes": {
+      "srcn": 10,
+      "character": "noise",
+      "pcmLength": 8960,
+      "brrLength": 5040,
+      "hasLoop": true,
+      "loopStartPcm": 7936,
+      "adsr1": 159,
+      "adsr2": 225,
+      "gain": 180,
+      "pitchRegister": 285
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d00add0124075d9ee08f0e3e054ffce3bef43a45331f0df39f5a5215b77ec8ab"
+          },
+          "loop": {
+            "start": 7936,
+            "end": 8960
+          }
+        }
+      ]
+    }
+  }
+}

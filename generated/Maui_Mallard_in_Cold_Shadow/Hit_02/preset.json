@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Maui Mallard in Cold Shadow",
+    "snes": {
+      "srcn": 2,
+      "character": "one-shot",
+      "pcmLength": 1648,
+      "brrLength": 927,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 110,
+      "pitchRegister": 1935
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c8ed8a57bfc88135091a8e2fc8a7fc0d42df4ab95c910858fd7116730f2347f7"
+          }
+        }
+      ]
+    }
+  }
+}

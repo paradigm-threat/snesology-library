@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fire Emblem 4",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 6512,
+      "brrLength": 3663,
+      "hasLoop": true,
+      "loopStartPcm": 12800
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "effa17bea483bb6cfa3f2217b7c1496647fff56dce39f1b7a15176a5a824167d"
+          },
+          "loop": {
+            "start": 12800,
+            "end": 6512
+          }
+        }
+      ]
+    }
+  }
+}

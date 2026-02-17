@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Piana",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Chrono Trigger",
+    "snes": {
+      "srcn": 33,
+      "character": "melodic",
+      "pcmLength": 7280,
+      "brrLength": 4095,
+      "hasLoop": true,
+      "loopStartPcm": 6992,
+      "adsr1": 255,
+      "adsr2": 238,
+      "gain": 160,
+      "pitchRegister": 4549
+    },
+    "communityName": "piana",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5ef02443865121156042fe435fe9b61e305a97dadc6883d01f2bb867735d099c"
+          },
+          "loop": {
+            "start": 6992,
+            "end": 7280
+          }
+        }
+      ]
+    }
+  }
+}

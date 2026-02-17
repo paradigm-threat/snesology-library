@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ushio and Tora",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 9104,
+      "brrLength": 5121,
+      "hasLoop": true,
+      "loopStartPcm": 5392
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b96b0f661f75a4bb8e07889051e914780b195f24b62963add6509aff157a4fd8"
+          },
+          "loop": {
+            "start": 5392,
+            "end": 9104
+          }
+        }
+      ]
+    }
+  }
+}

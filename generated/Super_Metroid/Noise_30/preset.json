@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Metroid",
+    "snes": {
+      "srcn": 30,
+      "character": "noise",
+      "pcmLength": 8864,
+      "brrLength": 4986,
+      "hasLoop": true,
+      "loopStartPcm": 4368,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 238
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8139e740d81eca88631a49603add5183a4ae62f973dc7e939fdd03c0f1d0d6be"
+          },
+          "loop": {
+            "start": 4368,
+            "end": 8864
+          }
+        }
+      ]
+    }
+  }
+}

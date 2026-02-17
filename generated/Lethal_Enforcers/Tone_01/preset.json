@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Lethal Enforcers",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 2608,
+      "brrLength": 1467,
+      "hasLoop": true,
+      "loopStartPcm": 1712,
+      "adsr1": 255,
+      "adsr2": 246,
+      "gain": 0,
+      "pitchRegister": 2143
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "872e39a13838f17da906e42447c318fca34c0a0f250549f4fd8e4e88fe5abf47"
+          },
+          "loop": {
+            "start": 1712,
+            "end": 2608
+          }
+        }
+      ]
+    }
+  }
+}

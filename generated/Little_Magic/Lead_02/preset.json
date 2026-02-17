@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Little Magic",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 4128,
+      "brrLength": 2322,
+      "hasLoop": true,
+      "loopStartPcm": 4080,
+      "adsr1": 255,
+      "adsr2": 242,
+      "gain": 184,
+      "pitchRegister": 1518
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e03121e84aee1af1205bdd9d7a63d316053cfe202f9fb55e34092c22f7e936f9"
+          },
+          "loop": {
+            "start": 4080,
+            "end": 4128
+          }
+        }
+      ]
+    }
+  }
+}

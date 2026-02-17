@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mario & Wario",
+    "snes": {
+      "srcn": 0,
+      "character": "tone",
+      "pcmLength": 1056,
+      "brrLength": 594,
+      "hasLoop": true,
+      "loopStartPcm": 816,
+      "adsr1": 255,
+      "adsr2": 160,
+      "gain": 160,
+      "pitchRegister": 2298
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bee9d0d9bbc366e520c91d7c35d568f30cde7b189ffe1f172dfe3c6de3de8365"
+          },
+          "loop": {
+            "start": 816,
+            "end": 1056
+          }
+        }
+      ]
+    }
+  }
+}

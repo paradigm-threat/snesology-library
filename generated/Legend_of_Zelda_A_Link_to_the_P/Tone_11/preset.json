@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Legend of Zelda: A Link to the P",
+    "snes": {
+      "srcn": 11,
+      "character": "tone",
+      "pcmLength": 1888,
+      "brrLength": 1062,
+      "hasLoop": true,
+      "loopStartPcm": 1792,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 6474
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bbb0527b15b0da6599160f0d88421c86961efced47087445eae62867cc443409"
+          },
+          "loop": {
+            "start": 1792,
+            "end": 1888
+          }
+        }
+      ]
+    }
+  }
+}

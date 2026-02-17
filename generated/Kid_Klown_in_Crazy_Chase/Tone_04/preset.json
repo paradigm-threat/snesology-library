@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kid Klown in Crazy Chase",
+    "snes": {
+      "srcn": 4,
+      "character": "tone",
+      "pcmLength": 976,
+      "brrLength": 549,
+      "hasLoop": true,
+      "loopStartPcm": 848,
+      "adsr1": 143,
+      "adsr2": 240,
+      "gain": 184,
+      "pitchRegister": 1333
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b0e761f15bd297a2f8c32804599c273198721e77a73fb2e63fadf4a111f1dcae"
+          },
+          "loop": {
+            "start": 848,
+            "end": 976
+          }
+        }
+      ]
+    }
+  }
+}

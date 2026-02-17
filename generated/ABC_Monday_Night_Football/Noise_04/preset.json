@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "ABC Monday Night Football",
+    "snes": {
+      "srcn": 4,
+      "character": "noise",
+      "pcmLength": 7008,
+      "brrLength": 3942,
+      "hasLoop": true,
+      "loopStartPcm": 3024
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "740df73ecb524b1ef90ac33745debbcf746da35b33ab34c71b02892ea7f0a48a"
+          },
+          "loop": {
+            "start": 3024,
+            "end": 7008
+          }
+        }
+      ]
+    }
+  }
+}

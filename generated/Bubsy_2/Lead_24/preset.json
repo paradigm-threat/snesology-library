@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bubsy 2",
+    "snes": {
+      "srcn": 24,
+      "character": "melodic",
+      "pcmLength": 4048,
+      "brrLength": 2277,
+      "hasLoop": true,
+      "loopStartPcm": 2880,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 127,
+      "pitchRegister": 1150
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7f11699f72d6c73ad7de1626812cb06bc2ed5a1cee52ff08e536fd8159f08463"
+          },
+          "loop": {
+            "start": 2880,
+            "end": 4048
+          }
+        }
+      ]
+    }
+  }
+}

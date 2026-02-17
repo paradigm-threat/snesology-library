@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Famicom Tantei Club 2",
+    "snes": {
+      "srcn": 43,
+      "character": "melodic",
+      "pcmLength": 10752,
+      "brrLength": 6048,
+      "hasLoop": true,
+      "loopStartPcm": 8752,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 179,
+      "pitchRegister": 1318
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fc1875bf31713f96c1f6a34a4e2079e41f69824accd1076e31f5ae57ab2fd2e9"
+          },
+          "loop": {
+            "start": 8752,
+            "end": 10752
+          }
+        }
+      ]
+    }
+  }
+}

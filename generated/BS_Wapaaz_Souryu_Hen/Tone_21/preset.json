@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "BS Wapaaz Souryu Hen",
+    "snes": {
+      "srcn": 21,
+      "character": "tone",
+      "pcmLength": 704,
+      "brrLength": 396,
+      "hasLoop": true,
+      "loopStartPcm": 640,
+      "adsr1": 159,
+      "adsr2": 45,
+      "gain": 184,
+      "pitchRegister": 533
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6dc2a9900cdb1d65b893dbb4e05f675efcafcbfbd8427aafb23d2e92aa2ea25e"
+          },
+          "loop": {
+            "start": 640,
+            "end": 704
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Strike Eagle",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 14160,
+      "brrLength": 7965,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4ba41c76f0cdb5ae417dce3695adfabe608124b84fd4f667a1c31652af55f4f3"
+          },
+          "loop": {
+            "start": 0,
+            "end": 14160
+          }
+        }
+      ]
+    }
+  }
+}

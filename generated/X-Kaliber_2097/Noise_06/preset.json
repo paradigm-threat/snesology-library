@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "X-Kaliber 2097",
+    "snes": {
+      "srcn": 6,
+      "character": "noise",
+      "pcmLength": 3104,
+      "brrLength": 1746,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 234,
+      "gain": 158,
+      "pitchRegister": 2298
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0b3fba9e5990e1c25495cebe7a62a0043cf619d67a7d0091b1ca574fda1015b5"
+          }
+        }
+      ]
+    }
+  }
+}

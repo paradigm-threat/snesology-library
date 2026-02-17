@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kabuki Rocks",
+    "snes": {
+      "srcn": 18,
+      "character": "melodic",
+      "pcmLength": 9984,
+      "brrLength": 5616,
+      "hasLoop": true,
+      "loopStartPcm": 9504,
+      "adsr1": 255,
+      "adsr2": 240,
+      "gain": 159,
+      "pitchRegister": 4598
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bc9fd8f74d00077ccdd20af2c47e05044b3a0456eabea35c3f265a1ce2b0fca5"
+          },
+          "loop": {
+            "start": 9504,
+            "end": 9984
+          }
+        }
+      ]
+    }
+  }
+}

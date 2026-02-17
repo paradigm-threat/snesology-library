@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Brandish 2",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 9376,
+      "brrLength": 5274,
+      "hasLoop": true,
+      "loopStartPcm": 8512,
+      "adsr1": 143,
+      "adsr2": 238,
+      "gain": 182,
+      "pitchRegister": 5200
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ef4d25f39d699492e293f6f5f3d34a75767881dd651b8eebca6f866f3e6b36d7"
+          },
+          "loop": {
+            "start": 8512,
+            "end": 9376
+          }
+        }
+      ]
+    }
+  }
+}

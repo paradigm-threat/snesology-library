@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Lode Runner Twin",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 6768,
+      "brrLength": 3807,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "42ebaf036ea2e9ff11a0f751bd1aac47b99a7801560c305df3460b7e157933b4"
+          },
+          "loop": {
+            "start": 0,
+            "end": 6768
+          }
+        }
+      ]
+    }
+  }
+}

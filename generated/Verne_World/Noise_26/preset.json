@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Verne World",
+    "snes": {
+      "srcn": 26,
+      "character": "noise",
+      "pcmLength": 1632,
+      "brrLength": 918,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 134,
+      "gain": 158,
+      "pitchRegister": 208
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bc1b2d3cd3c61f1c34098e5d30ea5b2738821d3916b5d97f0726f3984dbfc612"
+          }
+        }
+      ]
+    }
+  }
+}

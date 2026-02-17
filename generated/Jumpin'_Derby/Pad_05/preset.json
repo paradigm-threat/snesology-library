@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jumpin' Derby",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 5312,
+      "brrLength": 2988,
+      "hasLoop": true,
+      "loopStartPcm": 3200,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 61,
+      "pitchRegister": 786
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e936a3b6b2f5ececc2ffe0a6ce8c26491ba5edd91b1b907a2f1a38cb7a42a2cc"
+          },
+          "loop": {
+            "start": 3200,
+            "end": 5312
+          }
+        }
+      ]
+    }
+  }
+}

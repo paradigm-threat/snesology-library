@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Power Rangers Zeo - Battle Racer",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 5456,
+      "brrLength": 3069,
+      "hasLoop": true,
+      "loopStartPcm": 64,
+      "adsr1": 255,
+      "adsr2": 233,
+      "gain": 184,
+      "pitchRegister": 2790
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c95dd3ae68d9ff752a65cf47b73bf380e9dfbe4778f111ce6678257041292272"
+          },
+          "loop": {
+            "start": 64,
+            "end": 5456
+          }
+        }
+      ]
+    }
+  }
+}

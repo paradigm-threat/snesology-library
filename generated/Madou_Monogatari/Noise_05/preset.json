@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Madou Monogatari",
+    "snes": {
+      "srcn": 5,
+      "character": "noise",
+      "pcmLength": 13648,
+      "brrLength": 7677,
+      "hasLoop": true,
+      "loopStartPcm": 10112,
+      "adsr1": 255,
+      "adsr2": 243,
+      "gain": 243,
+      "pitchRegister": 3390
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "03100523f22dee677387c4c04e2eaa9942068771754bea09d71b142cd55cd67f"
+          },
+          "loop": {
+            "start": 10112,
+            "end": 13648
+          }
+        }
+      ]
+    }
+  }
+}

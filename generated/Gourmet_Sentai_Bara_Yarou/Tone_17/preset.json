@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gourmet Sentai Bara Yarou",
+    "snes": {
+      "srcn": 17,
+      "character": "tone",
+      "pcmLength": 1120,
+      "brrLength": 630,
+      "hasLoop": true,
+      "loopStartPcm": 848,
+      "adsr1": 255,
+      "adsr2": 240,
+      "gain": 0,
+      "pitchRegister": 1024
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "195ce64b032392ee1c1f624b75db684661cc95d4c016519e3ed3db6d91523e6a"
+          },
+          "loop": {
+            "start": 848,
+            "end": 1120
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Last Bible 3",
+    "snes": {
+      "srcn": 30,
+      "character": "melodic",
+      "pcmLength": 4560,
+      "brrLength": 2565,
+      "hasLoop": true,
+      "loopStartPcm": 272,
+      "adsr1": 223,
+      "adsr2": 178,
+      "gain": 159,
+      "pitchRegister": 2170
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d7b0be26367a019a25e35c7b9cddbccb96fd824de4aa8c108da131812bfe203f"
+          },
+          "loop": {
+            "start": 272,
+            "end": 4560
+          }
+        }
+      ]
+    }
+  }
+}

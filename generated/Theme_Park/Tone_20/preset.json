@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Theme Park",
+    "snes": {
+      "srcn": 20,
+      "character": "tone",
+      "pcmLength": 1520,
+      "brrLength": 855,
+      "hasLoop": true,
+      "loopStartPcm": 336,
+      "adsr1": 239,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 766
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c478b9a2c86034a68e45eced75caf19313a4b9a3887038d1dbec89fc7c57f6f5"
+          },
+          "loop": {
+            "start": 336,
+            "end": 1520
+          }
+        }
+      ]
+    }
+  }
+}

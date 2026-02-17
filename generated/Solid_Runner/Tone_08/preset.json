@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Solid Runner",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 2512,
+      "brrLength": 1413,
+      "hasLoop": true,
+      "loopStartPcm": 2464
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6a239b959b1101fffb7713165a66e16d9e03d03d2063fe71c476bb0e879a5522"
+          },
+          "loop": {
+            "start": 2464,
+            "end": 2512
+          }
+        }
+      ]
+    }
+  }
+}

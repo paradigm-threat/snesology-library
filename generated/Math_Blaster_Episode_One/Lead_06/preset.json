@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Math Blaster: Episode One",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 9024,
+      "brrLength": 5076,
+      "hasLoop": true,
+      "loopStartPcm": 7648,
+      "adsr1": 141,
+      "adsr2": 167,
+      "gain": 0,
+      "pitchRegister": 4096
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "538d6a1c0220caa17746b6c768b7c6760a3bad06f2a532680c7049666122e4a8"
+          },
+          "loop": {
+            "start": 7648,
+            "end": 9024
+          }
+        }
+      ]
+    }
+  }
+}

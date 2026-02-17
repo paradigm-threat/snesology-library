@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Spaceship",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gundam Wing: Endless Duel",
+    "snes": {
+      "srcn": 40,
+      "character": "melodic",
+      "pcmLength": 7232,
+      "brrLength": 4068,
+      "hasLoop": true,
+      "loopStartPcm": 5856
+    },
+    "communityName": "sfx_spaceship",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "07c7e85e3705afff41761cdbaae146ebd89a12cd897106b5a83864f0bb0e352e"
+          },
+          "loop": {
+            "start": 5856,
+            "end": 7232
+          }
+        }
+      ]
+    }
+  }
+}

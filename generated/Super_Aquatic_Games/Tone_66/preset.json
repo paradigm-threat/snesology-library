@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Aquatic Games",
+    "snes": {
+      "srcn": 66,
+      "character": "tone",
+      "pcmLength": 3296,
+      "brrLength": 1854,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a59ea6cc914b73a215496ca9e18ed186e0a1c7aa9abe6c2ccff11d1dab419296"
+          },
+          "loop": {
+            "start": 0,
+            "end": 3296
+          }
+        }
+      ]
+    }
+  }
+}

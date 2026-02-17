@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jim Power",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 6656,
+      "brrLength": 3744,
+      "hasLoop": true,
+      "loopStartPcm": 5536,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 11,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d34452e15dc8d8637f351c1bedf302891862aca6972c58a172edcabdbe120ae1"
+          },
+          "loop": {
+            "start": 5536,
+            "end": 6656
+          }
+        }
+      ]
+    }
+  }
+}

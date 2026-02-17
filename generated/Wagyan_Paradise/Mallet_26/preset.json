@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Mallet",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wagyan Paradise",
+    "snes": {
+      "srcn": 26,
+      "character": "tone",
+      "pcmLength": 656,
+      "brrLength": 369,
+      "hasLoop": true,
+      "loopStartPcm": 624,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 190,
+      "pitchRegister": 752
+    },
+    "communityName": "mallet",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "20467f552abfbd7cfb30d7dec362760ee081593a6c2c245fe68db5cb871f30a3"
+          },
+          "loop": {
+            "start": 624,
+            "end": 656
+          }
+        }
+      ]
+    }
+  }
+}

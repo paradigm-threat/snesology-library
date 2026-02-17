@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zenkoku Koukou Soccer Senshuken",
+    "snes": {
+      "srcn": 9,
+      "character": "one-shot",
+      "pcmLength": 6272,
+      "brrLength": 3528,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 128,
+      "gain": 158,
+      "pitchRegister": 8382
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3dd6fd9921a32b9704d9a3ae79a6dc127cb413c7fa432e9f6ee883c0d54c1e34"
+          }
+        }
+      ]
+    }
+  }
+}

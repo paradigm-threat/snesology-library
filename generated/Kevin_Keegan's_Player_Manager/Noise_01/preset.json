@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kevin Keegan's Player Manager",
+    "snes": {
+      "srcn": 1,
+      "character": "noise",
+      "pcmLength": 4384,
+      "brrLength": 2466,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 226,
+      "gain": 226,
+      "pitchRegister": 2048
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5a714e2500dae3b5418cdb94531b7c7bdc4c93a3ad32df5986b41f899a3a3a8f"
+          }
+        }
+      ]
+    }
+  }
+}

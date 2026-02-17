@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Twinbee: Rainbow Bell Adventure",
+    "snes": {
+      "srcn": 34,
+      "character": "melodic",
+      "pcmLength": 6176,
+      "brrLength": 3474,
+      "hasLoop": true,
+      "loopStartPcm": 2848,
+      "adsr1": 143,
+      "adsr2": 239,
+      "gain": 0,
+      "pitchRegister": 1459
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a3e859c838993977689ba503e570d15bac34fb5feead4f7a69252c0d98bc64fd"
+          },
+          "loop": {
+            "start": 2848,
+            "end": 6176
+          }
+        }
+      ]
+    }
+  }
+}

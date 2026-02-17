@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Finalset Tennis",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 9424,
+      "brrLength": 5301,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 0,
+      "adsr2": 239,
+      "gain": 0,
+      "pitchRegister": 3865
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6171f86908f7b9f7969920e81a9622bc768ccb512c3acdf4f07647678292d4fe"
+          },
+          "loop": {
+            "start": 0,
+            "end": 9424
+          }
+        }
+      ]
+    }
+  }
+}

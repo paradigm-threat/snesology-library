@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Mario RPG",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 2896,
+      "brrLength": 1629,
+      "hasLoop": true,
+      "loopStartPcm": 9232
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "28cec7a4d741999af7a68d642ca14f99d9e39996f7480bf59186ac4993f9200a"
+          },
+          "loop": {
+            "start": 9232,
+            "end": 2896
+          }
+        }
+      ]
+    }
+  }
+}

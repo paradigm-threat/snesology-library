@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Maka Maka",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 5936,
+      "brrLength": 3339,
+      "hasLoop": true,
+      "loopStartPcm": 2736,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1042
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "25d5055d52a9d92b1e3bfb704f635915a5bd9ef65c8b83fbef1af195ef4b4fc7"
+          },
+          "loop": {
+            "start": 2736,
+            "end": 5936
+          }
+        }
+      ]
+    }
+  }
+}

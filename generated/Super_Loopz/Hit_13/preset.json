@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Loopz",
+    "snes": {
+      "srcn": 13,
+      "character": "one-shot",
+      "pcmLength": 5264,
+      "brrLength": 2961,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 231,
+      "gain": 231,
+      "pitchRegister": 1906
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "feae771e33223887b453c53134470f0579aa7f8206fb398047e590e7051a7379"
+          }
+        }
+      ]
+    }
+  }
+}

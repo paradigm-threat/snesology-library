@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Aoki Ookami to Shiroki Mej",
+    "snes": {
+      "srcn": 40,
+      "character": "tone",
+      "pcmLength": 928,
+      "brrLength": 522,
+      "hasLoop": true,
+      "loopStartPcm": 640,
+      "adsr1": 169,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 5316
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d51eb69c218a6ac133bae392386adb17bd4b61eb576eb50f208426adb232d399"
+          },
+          "loop": {
+            "start": 640,
+            "end": 928
+          }
+        }
+      ]
+    }
+  }
+}

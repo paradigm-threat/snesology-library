@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Koi ha Balance",
+    "snes": {
+      "srcn": 40,
+      "character": "tone",
+      "pcmLength": 2064,
+      "brrLength": 1161,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "28f4c65cdc705627a32e864cda0a2d07ec7bedd1c5eeef6bfe5e280f65af4163"
+          },
+          "loop": {
+            "start": 0,
+            "end": 2064
+          }
+        }
+      ]
+    }
+  }
+}

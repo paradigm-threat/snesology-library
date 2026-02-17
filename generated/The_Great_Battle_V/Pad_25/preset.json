@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Great Battle V",
+    "snes": {
+      "srcn": 25,
+      "character": "melodic",
+      "pcmLength": 5168,
+      "brrLength": 2907,
+      "hasLoop": true,
+      "loopStartPcm": 3072,
+      "adsr1": 255,
+      "adsr2": 239,
+      "gain": 184,
+      "pitchRegister": 3628
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "918e164d364fa99f06794a64c196b5f418ab65576fe2efd497e4e68c8c3bf278"
+          },
+          "loop": {
+            "start": 3072,
+            "end": 5168
+          }
+        }
+      ]
+    }
+  }
+}

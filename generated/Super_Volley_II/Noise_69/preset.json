@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Volley II",
+    "snes": {
+      "srcn": 69,
+      "character": "noise",
+      "pcmLength": 12160,
+      "brrLength": 6840,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c50f115c284c406d3e601446eefee1651202f32b0a19c86d79d4e2b8efd83d81"
+          },
+          "loop": {
+            "start": 48,
+            "end": 12160
+          }
+        }
+      ]
+    }
+  }
+}

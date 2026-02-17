@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Obitus",
+    "snes": {
+      "srcn": 19,
+      "character": "noise",
+      "pcmLength": 2848,
+      "brrLength": 1602,
+      "hasLoop": false,
+      "adsr1": 142,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 645
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a31c28c06c208d2a3b9ae5740d4cc755c6089259245d5f50101c36d7b1b83bf0"
+          }
+        }
+      ]
+    }
+  }
+}

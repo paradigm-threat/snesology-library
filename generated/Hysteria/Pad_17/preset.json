@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hysteria",
+    "snes": {
+      "srcn": 17,
+      "character": "melodic",
+      "pcmLength": 6768,
+      "brrLength": 3807,
+      "hasLoop": true,
+      "loopStartPcm": 1840
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "54b4140f4111a29e561bc3f3d726503bd35262fd2a2221d10d4118d505ed73d3"
+          },
+          "loop": {
+            "start": 1840,
+            "end": 6768
+          }
+        }
+      ]
+    }
+  }
+}

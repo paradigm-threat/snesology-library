@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ultima: Runes of Virtue 2",
+    "snes": {
+      "srcn": 24,
+      "character": "noise",
+      "pcmLength": 4080,
+      "brrLength": 2295,
+      "hasLoop": true,
+      "loopStartPcm": 3936
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "054c319afffe08d21515cd00084a55cb8516c21b539756e909a16d372b202314"
+          },
+          "loop": {
+            "start": 3936,
+            "end": 4080
+          }
+        }
+      ]
+    }
+  }
+}

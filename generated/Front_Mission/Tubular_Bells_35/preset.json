@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tubular Bells",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Front Mission",
+    "snes": {
+      "srcn": 35,
+      "character": "melodic",
+      "pcmLength": 7488,
+      "brrLength": 4212,
+      "hasLoop": true,
+      "loopStartPcm": 6144,
+      "adsr1": 255,
+      "adsr2": 246,
+      "gain": 160,
+      "pitchRegister": 534
+    },
+    "communityName": "tubular_bells",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c3d57585383a0197e70b92c76ea356570bc6b5cc062631e56493b9395ddda96f"
+          },
+          "loop": {
+            "start": 6144,
+            "end": 7488
+          }
+        }
+      ]
+    }
+  }
+}

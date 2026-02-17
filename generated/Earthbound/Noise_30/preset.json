@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earthbound",
+    "snes": {
+      "srcn": 30,
+      "character": "noise",
+      "pcmLength": 6272,
+      "brrLength": 3528,
+      "hasLoop": true,
+      "loopStartPcm": 2736
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "405bf00c0e22ae28c6c651f3dad851ca75e7e34dc8e7ab9da7a3284ceec02309"
+          },
+          "loop": {
+            "start": 2736,
+            "end": 6272
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Total Football",
+    "snes": {
+      "srcn": 15,
+      "character": "noise",
+      "pcmLength": 19408,
+      "brrLength": 10917,
+      "hasLoop": true,
+      "loopStartPcm": 14832,
+      "adsr1": 142,
+      "adsr2": 224,
+      "gain": 120,
+      "pitchRegister": 861
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "45438071a27c3ec7f17b853f0e39400bfa3d65f292cfe96ba61b1b34c968c804"
+          },
+          "loop": {
+            "start": 14832,
+            "end": 19408
+          }
+        }
+      ]
+    }
+  }
+}

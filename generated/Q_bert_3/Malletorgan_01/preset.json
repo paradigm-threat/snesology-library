@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Malletorgan",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Q*bert 3",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 464,
+      "brrLength": 261,
+      "hasLoop": true,
+      "loopStartPcm": 416,
+      "adsr1": 142,
+      "adsr2": 31,
+      "gain": 0,
+      "pitchRegister": 2642
+    },
+    "communityName": "malletorgan",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fc31b0fd9238ff7e6d437af289cb29ec0008deec406d68255b6f7dd387245770"
+          },
+          "loop": {
+            "start": 416,
+            "end": 464
+          }
+        }
+      ]
+    }
+  }
+}

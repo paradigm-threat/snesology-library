@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tengai Makyo Zero",
+    "snes": {
+      "srcn": 33,
+      "character": "noise",
+      "pcmLength": 6208,
+      "brrLength": 3492,
+      "hasLoop": true,
+      "loopStartPcm": 3488
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1c3d238b6fe18d9425f749591eb3d56326cbb36bba821ca3d1fee1ca40bed83c"
+          },
+          "loop": {
+            "start": 3488,
+            "end": 6208
+          }
+        }
+      ]
+    }
+  }
+}

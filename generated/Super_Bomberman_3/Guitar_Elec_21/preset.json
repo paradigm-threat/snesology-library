@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Guitar Elec",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Bomberman 3",
+    "snes": {
+      "srcn": 21,
+      "character": "melodic",
+      "pcmLength": 8384,
+      "brrLength": 4716,
+      "hasLoop": true,
+      "loopStartPcm": 5600,
+      "adsr1": 0,
+      "adsr2": 242,
+      "gain": 159,
+      "pitchRegister": 173
+    },
+    "communityName": "guitar_elec",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3cee1110b22362592efa778f0180498f7029a28e04fdebc739e69eebdbb49afa"
+          },
+          "loop": {
+            "start": 5600,
+            "end": 8384
+          }
+        }
+      ]
+    }
+  }
+}

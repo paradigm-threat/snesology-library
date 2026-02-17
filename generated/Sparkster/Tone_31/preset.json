@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sparkster",
+    "snes": {
+      "srcn": 31,
+      "character": "tone",
+      "pcmLength": 1856,
+      "brrLength": 1044,
+      "hasLoop": true,
+      "loopStartPcm": 224,
+      "adsr1": 137,
+      "adsr2": 210,
+      "gain": 182,
+      "pitchRegister": 2931
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d98ff3e33d98a8b9d4df8f9c5bb022d4ec1be781a205440dc41656668d0fe55a"
+          },
+          "loop": {
+            "start": 224,
+            "end": 1856
+          }
+        }
+      ]
+    }
+  }
+}

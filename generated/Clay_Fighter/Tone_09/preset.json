@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Clay Fighter",
+    "snes": {
+      "srcn": 9,
+      "character": "tone",
+      "pcmLength": 2064,
+      "brrLength": 1161,
+      "hasLoop": true,
+      "loopStartPcm": 2048,
+      "adsr1": 143,
+      "adsr2": 192,
+      "gain": 127,
+      "pitchRegister": 2242
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5f89bbaf7ebc5435b8aa5a89ec3a2add2f09f5c946b9bce899a4ca3aec4f787f"
+          },
+          "loop": {
+            "start": 2048,
+            "end": 2064
+          }
+        }
+      ]
+    }
+  }
+}

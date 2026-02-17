@@ -1,0 +1,48 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Strings Synth",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Doom",
+    "snes": {
+      "srcn": 30,
+      "character": "noise",
+      "pcmLength": 3888,
+      "brrLength": 2187,
+      "hasLoop": false
+    },
+    "communityName": "strings_synth",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cfb2b93a5de18be76be39493ad580bd58b451a07ba53c2a397bf098f144a2d28"
+          }
+        }
+      ]
+    }
+  }
+}

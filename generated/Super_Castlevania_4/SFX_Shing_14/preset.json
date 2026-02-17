@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Shing",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Castlevania 4",
+    "snes": {
+      "srcn": 14,
+      "character": "noise",
+      "pcmLength": 3808,
+      "brrLength": 2142,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 2,
+      "gain": 0,
+      "pitchRegister": 9640
+    },
+    "communityName": "sfx_shing",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2601c5e78f6b18046cef61a931d0453ffca5456cdee0675ad8e25e06cc6b5bff"
+          }
+        }
+      ]
+    }
+  }
+}

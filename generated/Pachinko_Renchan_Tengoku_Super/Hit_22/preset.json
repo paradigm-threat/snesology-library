@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pachinko Renchan Tengoku: Super",
+    "snes": {
+      "srcn": 22,
+      "character": "one-shot",
+      "pcmLength": 10000,
+      "brrLength": 5625,
+      "hasLoop": false,
+      "adsr1": 15,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 8269
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7a886eec859fe39937e5ad8a3303087722e79c39b7713e6d7e181747406ff5f5"
+          }
+        }
+      ]
+    }
+  }
+}

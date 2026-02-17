@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shin Momotarou Densetsu",
+    "snes": {
+      "srcn": 37,
+      "character": "melodic",
+      "pcmLength": 4000,
+      "brrLength": 2250,
+      "hasLoop": true,
+      "loopStartPcm": 1888
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "74ecdc21e7bea14240e6e14db34127fab8c464aec6c34e32e96527fb266e424c"
+          },
+          "loop": {
+            "start": 1888,
+            "end": 4000
+          }
+        }
+      ]
+    }
+  }
+}

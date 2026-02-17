@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Killer Instinct",
+    "snes": {
+      "srcn": 29,
+      "character": "tone",
+      "pcmLength": 1280,
+      "brrLength": 720,
+      "hasLoop": true,
+      "loopStartPcm": 448
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6c56d92ff3c5816e57ea20c8babe1aae68ed9821b793605d874c9d2b6c51a265"
+          },
+          "loop": {
+            "start": 448,
+            "end": 1280
+          }
+        }
+      ]
+    }
+  }
+}

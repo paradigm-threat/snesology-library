@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Final Fantasy 5",
+    "snes": {
+      "srcn": 40,
+      "character": "melodic",
+      "pcmLength": 12624,
+      "brrLength": 7101,
+      "hasLoop": true,
+      "loopStartPcm": 5392
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8d3ddd41f8ebc049a53c6d71e5f80ee86400299af1a6e3e3ff6001f42681d057"
+          },
+          "loop": {
+            "start": 5392,
+            "end": 12624
+          }
+        }
+      ]
+    }
+  }
+}

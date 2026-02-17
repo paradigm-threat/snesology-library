@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Organ Baseball",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ken Griffey Jr. Winning Run",
+    "snes": {
+      "srcn": 0,
+      "character": "tone",
+      "pcmLength": 2128,
+      "brrLength": 1197,
+      "hasLoop": true,
+      "loopStartPcm": 256,
+      "adsr1": 143,
+      "adsr2": 234,
+      "gain": 127,
+      "pitchRegister": 1308
+    },
+    "communityName": "organ_baseball",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4bef2aa9fd1cafa0279d720375efd3daca65089b18fb26e42d4484eb06d6f297"
+          },
+          "loop": {
+            "start": 256,
+            "end": 2128
+          }
+        }
+      ]
+    }
+  }
+}

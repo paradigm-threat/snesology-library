@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gokinjo Bouken Tai",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 6832,
+      "brrLength": 3843,
+      "hasLoop": true,
+      "loopStartPcm": 3952,
+      "adsr1": 255,
+      "adsr2": 225,
+      "gain": 184,
+      "pitchRegister": 1355
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cf069020ef4525e70486fee4bdb95f705f6b652fba308907fe453bfb4c6cd0c3"
+          },
+          "loop": {
+            "start": 3952,
+            "end": 6832
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Synth Brightness",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ys IV: Mask of the Sun",
+    "snes": {
+      "srcn": 18,
+      "character": "melodic",
+      "pcmLength": 6640,
+      "brrLength": 3735,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2085
+    },
+    "communityName": "synth_brightness",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d4f7f4b5f49e449b2925427f0014863a3e02e24b02853a63bb04844e363fd7e2"
+          },
+          "loop": {
+            "start": 48,
+            "end": 6640
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jurassic Park 2",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 9264,
+      "brrLength": 5211,
+      "hasLoop": true,
+      "loopStartPcm": 704,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 223,
+      "pitchRegister": 1521
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "766b8fbacf2d2a6218d1b2a6137439fbac0fcd3cf55ecb5e401b6ef03dc53ad1"
+          },
+          "loop": {
+            "start": 704,
+            "end": 9264
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Natsuki Crisis Battle",
+    "snes": {
+      "srcn": 26,
+      "character": "melodic",
+      "pcmLength": 10000,
+      "brrLength": 5625,
+      "hasLoop": true,
+      "loopStartPcm": 4400
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f46bda500b71bb868115b7e7d8fba4506d20484d717f6ec58e891c78f77375fb"
+          },
+          "loop": {
+            "start": 4400,
+            "end": 10000
+          }
+        }
+      ]
+    }
+  }
+}

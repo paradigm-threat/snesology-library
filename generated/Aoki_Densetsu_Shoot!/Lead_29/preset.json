@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Aoki Densetsu Shoot!",
+    "snes": {
+      "srcn": 29,
+      "character": "melodic",
+      "pcmLength": 4416,
+      "brrLength": 2484,
+      "hasLoop": true,
+      "loopStartPcm": 3008,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1561
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9e1b2d8d1e0db4d7fa48999ac1e4282ddbc6eedac3c269c779ae28ae1abb6da2"
+          },
+          "loop": {
+            "start": 3008,
+            "end": 4416
+          }
+        }
+      ]
+    }
+  }
+}

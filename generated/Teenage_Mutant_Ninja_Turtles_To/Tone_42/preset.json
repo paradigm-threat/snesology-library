@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Teenage Mutant Ninja Turtles: To",
+    "snes": {
+      "srcn": 42,
+      "character": "tone",
+      "pcmLength": 2384,
+      "brrLength": 1341,
+      "hasLoop": true,
+      "loopStartPcm": 2640
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0b0c2b64e83f9bb2f6c8673698c1cffc1817eb725d34f56f6200a2be9e12debf"
+          },
+          "loop": {
+            "start": 2640,
+            "end": 2384
+          }
+        }
+      ]
+    }
+  }
+}

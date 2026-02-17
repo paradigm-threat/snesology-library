@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Choir",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bahamut Lagoon",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 9648,
+      "brrLength": 5427,
+      "hasLoop": true,
+      "loopStartPcm": 2032,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 1020
+    },
+    "communityName": "choir",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "09109144058ef8731dea198e79caa2bcffd6f89508adeba22ad45c5c57a70dfd"
+          },
+          "loop": {
+            "start": 2032,
+            "end": 9648
+          }
+        }
+      ]
+    }
+  }
+}

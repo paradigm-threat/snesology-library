@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cacoma Knight",
+    "snes": {
+      "srcn": 22,
+      "character": "one-shot",
+      "pcmLength": 3600,
+      "brrLength": 2025,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 225,
+      "gain": 158,
+      "pitchRegister": 6717
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c89fb531c9177e8da7c63dab951fba43586568ee3a29ee46aa63424a87a8897d"
+          }
+        }
+      ]
+    }
+  }
+}

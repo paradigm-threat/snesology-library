@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Cymcrash",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Contra III: The Alien Wars",
+    "snes": {
+      "srcn": 17,
+      "character": "noise",
+      "pcmLength": 7040,
+      "brrLength": 3960,
+      "hasLoop": true,
+      "loopStartPcm": 3968,
+      "adsr1": 143,
+      "adsr2": 234,
+      "gain": 184,
+      "pitchRegister": 757
+    },
+    "communityName": "perc_cymcrash",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "dffe686d450661c08663fdd628d76448829ed4ab02a095794e7af7fd99e6f908"
+          },
+          "loop": {
+            "start": 3968,
+            "end": 7040
+          }
+        }
+      ]
+    }
+  }
+}

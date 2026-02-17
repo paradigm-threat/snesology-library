@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battle Zeque Den",
+    "snes": {
+      "srcn": 6,
+      "character": "tone",
+      "pcmLength": 2096,
+      "brrLength": 1179,
+      "hasLoop": true,
+      "loopStartPcm": 2032,
+      "adsr1": 255,
+      "adsr2": 145,
+      "gain": 0,
+      "pitchRegister": 2964
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ce12d483cd8553bddb6372e4b2a12c6e931a39c1f37f27ac243779371be96d1f"
+          },
+          "loop": {
+            "start": 2032,
+            "end": 2096
+          }
+        }
+      ]
+    }
+  }
+}

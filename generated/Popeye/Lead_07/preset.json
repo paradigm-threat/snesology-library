@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Popeye",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 5136,
+      "brrLength": 2889,
+      "hasLoop": true,
+      "loopStartPcm": 4912,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 159,
+      "pitchRegister": 1876
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "abdabeb1c97600019037823efc42e67e46fba9df9d7150e45db73d61d959a65c"
+          },
+          "loop": {
+            "start": 4912,
+            "end": 5136
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Family Feud",
+    "snes": {
+      "srcn": 14,
+      "character": "melodic",
+      "pcmLength": 5760,
+      "brrLength": 3240,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 255,
+      "adsr2": 239,
+      "gain": 159,
+      "pitchRegister": 1411
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d6f6dc949484174a10a86f1c55ef70dc8118bf5556a8fb92b4cf88edad116d81"
+          },
+          "loop": {
+            "start": 16,
+            "end": 5760
+          }
+        }
+      ]
+    }
+  }
+}

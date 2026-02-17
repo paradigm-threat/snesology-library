@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Double Yakuman",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 9792,
+      "brrLength": 5508,
+      "hasLoop": true,
+      "loopStartPcm": 9776,
+      "adsr1": 255,
+      "adsr2": 237,
+      "gain": 184,
+      "pitchRegister": 1350
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "714ea17554fc94228da5f2418d3fc7a73615bf2ba68f389400fa8c142c7f396f"
+          },
+          "loop": {
+            "start": 9776,
+            "end": 9792
+          }
+        }
+      ]
+    }
+  }
+}

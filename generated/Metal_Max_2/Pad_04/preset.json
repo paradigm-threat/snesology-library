@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Metal Max 2",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 8800,
+      "brrLength": 4950,
+      "hasLoop": true,
+      "loopStartPcm": 32
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c3415ca8d51d92ec62dde1ed8eb24f4cf59bdb3803fd8f6f9ea609c0b8960b4a"
+          },
+          "loop": {
+            "start": 32,
+            "end": 8800
+          }
+        }
+      ]
+    }
+  }
+}

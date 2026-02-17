@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sanrio Shanghai",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 7296,
+      "brrLength": 4104,
+      "hasLoop": true,
+      "loopStartPcm": 4832,
+      "adsr1": 175,
+      "adsr2": 240,
+      "gain": 159,
+      "pitchRegister": 7275
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c98b98e53ab5ef1b657264f45006aea6202aaedf81ce30ea57d2a7e7c627e15a"
+          },
+          "loop": {
+            "start": 4832,
+            "end": 7296
+          }
+        }
+      ]
+    }
+  }
+}

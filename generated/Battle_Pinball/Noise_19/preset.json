@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battle Pinball",
+    "snes": {
+      "srcn": 19,
+      "character": "noise",
+      "pcmLength": 4176,
+      "brrLength": 2349,
+      "hasLoop": true,
+      "loopStartPcm": 3088,
+      "adsr1": 255,
+      "adsr2": 238,
+      "gain": 191,
+      "pitchRegister": 2376
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fddba25b184c96ba41e39befe1b160ec4aa5645706942a8fed38922119cb094c"
+          },
+          "loop": {
+            "start": 3088,
+            "end": 4176
+          }
+        }
+      ]
+    }
+  }
+}

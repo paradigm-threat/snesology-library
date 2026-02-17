@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ganso Pachinko Ou",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 7488,
+      "brrLength": 4212,
+      "hasLoop": true,
+      "loopStartPcm": 7360,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "36fd784589b58e4ff5cff6f5f75fbfc11d6047f00490cd0b6e0fbcdee0e100be"
+          },
+          "loop": {
+            "start": 7360,
+            "end": 7488
+          }
+        }
+      ]
+    }
+  }
+}

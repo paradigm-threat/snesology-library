@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Snoopy Concert",
+    "snes": {
+      "srcn": 31,
+      "character": "tone",
+      "pcmLength": 3216,
+      "brrLength": 1809,
+      "hasLoop": true,
+      "loopStartPcm": 2864
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5e879482c2b71b0b5d8dda2412c280ee16ecfda371ade1c31e4c42528a086954"
+          },
+          "loop": {
+            "start": 2864,
+            "end": 3216
+          }
+        }
+      ]
+    }
+  }
+}

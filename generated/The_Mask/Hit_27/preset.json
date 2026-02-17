@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Mask",
+    "snes": {
+      "srcn": 27,
+      "character": "one-shot",
+      "pcmLength": 8880,
+      "brrLength": 4995,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 235,
+      "gain": 127,
+      "pitchRegister": 2152
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3576548d52198158e04e98dd5a2c164d8af3acc5c2d863d60b8169b8c7b55a68"
+          }
+        }
+      ]
+    }
+  }
+}

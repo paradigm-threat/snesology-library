@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Madara 2",
+    "snes": {
+      "srcn": 25,
+      "character": "melodic",
+      "pcmLength": 8416,
+      "brrLength": 4734,
+      "hasLoop": true,
+      "loopStartPcm": 8336,
+      "adsr1": 207,
+      "adsr2": 232,
+      "gain": 184,
+      "pitchRegister": 895
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4d471fed02d670485c881d0c4ab2bedc4cdf50a19425723743d61c07f605d4f1"
+          },
+          "loop": {
+            "start": 8336,
+            "end": 8416
+          }
+        }
+      ]
+    }
+  }
+}

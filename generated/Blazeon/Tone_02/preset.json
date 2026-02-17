@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Blazeon",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 256,
+      "brrLength": 144,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 239,
+      "adsr2": 243,
+      "gain": 0,
+      "pitchRegister": 2170
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b3a6c807c76cb27ff61d4c0cd0979bed119cce93f9583d496d0c35b46f4e164f"
+          },
+          "loop": {
+            "start": 16,
+            "end": 256
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kishin Douji Zenki",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 17168,
+      "brrLength": 9657,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3ee4e7e1e8ffbb2349208c8946ff8f33c52ef50aed1c4a41c5c0d87643324302"
+          },
+          "loop": {
+            "start": 48,
+            "end": 17168
+          }
+        }
+      ]
+    }
+  }
+}

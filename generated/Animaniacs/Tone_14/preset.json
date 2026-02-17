@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Animaniacs",
+    "snes": {
+      "srcn": 14,
+      "character": "tone",
+      "pcmLength": 944,
+      "brrLength": 531,
+      "hasLoop": true,
+      "loopStartPcm": 816,
+      "adsr1": 204,
+      "adsr2": 208,
+      "gain": 0,
+      "pitchRegister": 637
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9fcc2cbf490ee5086d0b34ed3e1377f557246792fd917320dee3c863187098c7"
+          },
+          "loop": {
+            "start": 816,
+            "end": 944
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Nyanko",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 4992,
+      "brrLength": 2808,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0ca88b463c798e74906d0236d2cc5788416a10a77ea0fa336573f5c2b81a4b7c"
+          },
+          "loop": {
+            "start": 0,
+            "end": 4992
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Coron Land",
+    "snes": {
+      "srcn": 2,
+      "character": "noise",
+      "pcmLength": 6160,
+      "brrLength": 3465,
+      "hasLoop": true,
+      "loopStartPcm": 2544,
+      "adsr1": 239,
+      "adsr2": 47,
+      "gain": 178,
+      "pitchRegister": 3559
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "94f054b22307edf4adfcf532a4edb51cf306c218a55343c03fda4261365eb4fa"
+          },
+          "loop": {
+            "start": 2544,
+            "end": 6160
+          }
+        }
+      ]
+    }
+  }
+}

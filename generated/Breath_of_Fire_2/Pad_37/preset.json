@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Breath of Fire 2",
+    "snes": {
+      "srcn": 37,
+      "character": "melodic",
+      "pcmLength": 7376,
+      "brrLength": 4149,
+      "hasLoop": true,
+      "loopStartPcm": 4576
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8c74ffc48e6a3e03afe96f8f9df71ab16c7b752f2039d4688cb7ac2601b8de69"
+          },
+          "loop": {
+            "start": 4576,
+            "end": 7376
+          }
+        }
+      ]
+    }
+  }
+}

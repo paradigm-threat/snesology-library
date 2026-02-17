@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Adventures of Rocky and Bull",
+    "snes": {
+      "srcn": 6,
+      "character": "tone",
+      "pcmLength": 1056,
+      "brrLength": 594,
+      "hasLoop": true,
+      "loopStartPcm": 480,
+      "adsr1": 0,
+      "adsr2": 236,
+      "gain": 183,
+      "pitchRegister": 1625
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8d90c3d88412b8bf468f76584b47e7009b06a317dcf558c7d85767d5a5385f8c"
+          },
+          "loop": {
+            "start": 480,
+            "end": 1056
+          }
+        }
+      ]
+    }
+  }
+}

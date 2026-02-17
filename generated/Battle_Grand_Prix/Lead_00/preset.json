@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battle Grand Prix",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 6480,
+      "brrLength": 3645,
+      "hasLoop": true,
+      "loopStartPcm": 5328,
+      "adsr1": 255,
+      "adsr2": 238,
+      "gain": 184,
+      "pitchRegister": 3780
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9b7077ac895bfe4f06bced3c7ff7679521236ebc6774f5571a53b26814d25651"
+          },
+          "loop": {
+            "start": 5328,
+            "end": 6480
+          }
+        }
+      ]
+    }
+  }
+}

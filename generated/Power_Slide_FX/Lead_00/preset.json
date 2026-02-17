@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Power Slide FX",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 4848,
+      "brrLength": 2727,
+      "hasLoop": true,
+      "loopStartPcm": 4352,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 0,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a833a305ff66f7912966e26e73c20f27b991d9d8c631241bd34182b774789d8f"
+          },
+          "loop": {
+            "start": 4352,
+            "end": 4848
+          }
+        }
+      ]
+    }
+  }
+}

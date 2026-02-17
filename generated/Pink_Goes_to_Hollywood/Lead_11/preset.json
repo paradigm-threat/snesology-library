@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pink Goes to Hollywood",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 4368,
+      "brrLength": 2457,
+      "hasLoop": true,
+      "loopStartPcm": 4256,
+      "adsr1": 0,
+      "adsr2": 172,
+      "gain": 0,
+      "pitchRegister": 512
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b1d49047493ecd818b6e7052ecf28115f70b4c98bb20f911c9749d2949cbff41"
+          },
+          "loop": {
+            "start": 4256,
+            "end": 4368
+          }
+        }
+      ]
+    }
+  }
+}

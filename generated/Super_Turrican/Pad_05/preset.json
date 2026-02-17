@@ -1,0 +1,51 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Turrican",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 6144,
+      "brrLength": 3456,
+      "hasLoop": true,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 14,
+      "pitchRegister": 1932
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f7f39e7495cad8ec772845b67b72164ffd1bff74790f3875c46cd6ce7eeea31e"
+          }
+        }
+      ]
+    }
+  }
+}

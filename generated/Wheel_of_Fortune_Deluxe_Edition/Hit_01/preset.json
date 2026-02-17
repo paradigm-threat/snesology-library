@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wheel of Fortune: Deluxe Edition",
+    "snes": {
+      "srcn": 1,
+      "character": "one-shot",
+      "pcmLength": 20624,
+      "brrLength": 11601,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 238,
+      "gain": 184,
+      "pitchRegister": 3503
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6c86157a8a5bc6e1a31a7855d8c38b1076277cdfaa0b952522534652b7ce8e43"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Prehistorik Man",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 4752,
+      "brrLength": 2673,
+      "hasLoop": true,
+      "loopStartPcm": 4272,
+      "adsr1": 255,
+      "adsr2": 225,
+      "gain": 216,
+      "pitchRegister": 672
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ac990bf8703abf94a05d4dd1d333345a7401455ebfaee2102ea33d276a497e22"
+          },
+          "loop": {
+            "start": 4272,
+            "end": 4752
+          }
+        }
+      ]
+    }
+  }
+}

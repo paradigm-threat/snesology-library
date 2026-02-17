@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Adventures of Dr. Franken",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 5088,
+      "brrLength": 2862,
+      "hasLoop": true,
+      "loopStartPcm": 2816,
+      "adsr1": 255,
+      "adsr2": 236,
+      "gain": 0,
+      "pitchRegister": 256
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a02e9beabba31ac37c4b31585c99d663b5a5b126a1c65a7f81bb97d3e04ecf80"
+          },
+          "loop": {
+            "start": 2816,
+            "end": 5088
+          }
+        }
+      ]
+    }
+  }
+}

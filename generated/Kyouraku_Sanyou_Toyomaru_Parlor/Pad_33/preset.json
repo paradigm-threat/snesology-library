@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kyouraku Sanyou Toyomaru Parlor",
+    "snes": {
+      "srcn": 33,
+      "character": "melodic",
+      "pcmLength": 5440,
+      "brrLength": 3060,
+      "hasLoop": true,
+      "loopStartPcm": 2256
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b05b0e8966e92de3d36e7f255d9ba5bc875713cf56573a736b9c489dbd3c7cc7"
+          },
+          "loop": {
+            "start": 2256,
+            "end": 5440
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Estopolis Denki",
+    "snes": {
+      "srcn": 20,
+      "character": "tone",
+      "pcmLength": 1856,
+      "brrLength": 1044,
+      "hasLoop": true,
+      "loopStartPcm": 1808,
+      "adsr1": 255,
+      "adsr2": 238,
+      "gain": 0,
+      "pitchRegister": 1982
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "383ddc27997f11db9840e62a8fe6f334c3cdeeaf7394d82ab45d0c3ce08767d7"
+          },
+          "loop": {
+            "start": 1808,
+            "end": 1856
+          }
+        }
+      ]
+    }
+  }
+}

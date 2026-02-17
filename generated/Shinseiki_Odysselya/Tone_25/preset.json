@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shinseiki Odysselya",
+    "snes": {
+      "srcn": 25,
+      "character": "tone",
+      "pcmLength": 3104,
+      "brrLength": 1746,
+      "hasLoop": true,
+      "loopStartPcm": 2880
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "23d684ffdb9416645a71e0b2b7394be98e30d5d822a40d2ff8c2aac1f326b85e"
+          },
+          "loop": {
+            "start": 2880,
+            "end": 3104
+          }
+        }
+      ]
+    }
+  }
+}

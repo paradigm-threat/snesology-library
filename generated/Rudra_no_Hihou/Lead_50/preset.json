@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Rudra no Hihou",
+    "snes": {
+      "srcn": 50,
+      "character": "melodic",
+      "pcmLength": 8032,
+      "brrLength": 4518,
+      "hasLoop": true,
+      "loopStartPcm": 13536
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b372d9c7ea3b52b76e72e90082fdf983adf3d88a4cf28b51a579fedb657c0b5a"
+          },
+          "loop": {
+            "start": 13536,
+            "end": 8032
+          }
+        }
+      ]
+    }
+  }
+}

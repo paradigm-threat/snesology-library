@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Corn Buster",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 4064,
+      "brrLength": 2286,
+      "hasLoop": true,
+      "loopStartPcm": 3760,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 253,
+      "pitchRegister": 2857
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ca3433a203c6c88a0f86f65290845690ccfd74dd8906bd428d0600880db58cdb"
+          },
+          "loop": {
+            "start": 3760,
+            "end": 4064
+          }
+        }
+      ]
+    }
+  }
+}

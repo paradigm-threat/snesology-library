@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Marimba",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wagyan Paradise",
+    "snes": {
+      "srcn": 38,
+      "character": "tone",
+      "pcmLength": 1520,
+      "brrLength": 855,
+      "hasLoop": true,
+      "loopStartPcm": 1456,
+      "adsr1": 255,
+      "adsr2": 245,
+      "gain": 190,
+      "pitchRegister": 2688
+    },
+    "communityName": "marimba",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4e1f9510f0581bf063dd7a9eb23ecfac03ef3de82998a902436fd321a4d99a9a"
+          },
+          "loop": {
+            "start": 1456,
+            "end": 1520
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mario Paint",
+    "snes": {
+      "srcn": 24,
+      "character": "tone",
+      "pcmLength": 3264,
+      "brrLength": 1836,
+      "hasLoop": true,
+      "loopStartPcm": 2624
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "930d0b0bea92ad711f56d5304e7f52102085922af4b68eb3e6dbb09fee28bc78"
+          },
+          "loop": {
+            "start": 2624,
+            "end": 3264
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sailor Moon Super S: Zenin Sanka",
+    "snes": {
+      "srcn": 19,
+      "character": "tone",
+      "pcmLength": 1712,
+      "brrLength": 963,
+      "hasLoop": true,
+      "loopStartPcm": 1200,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 6800
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "53b2aeb0b0879cd29641116b910d9213dae5ee07e8e1f483ba4a253c4748ab62"
+          },
+          "loop": {
+            "start": 1200,
+            "end": 1712
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Organ",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mortal Kombat 3",
+    "snes": {
+      "srcn": 0,
+      "character": "tone",
+      "pcmLength": 2592,
+      "brrLength": 1458,
+      "hasLoop": true,
+      "loopStartPcm": 96,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 223,
+      "pitchRegister": 2981
+    },
+    "communityName": "organ",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7511249004436b7ac05f8d2d21063cc68c60cb3d05930defe24bdb9cf01a2953"
+          },
+          "loop": {
+            "start": 96,
+            "end": 2592
+          }
+        }
+      ]
+    }
+  }
+}

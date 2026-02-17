@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Trumpet",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Monopoly",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 3488,
+      "brrLength": 1962,
+      "hasLoop": true,
+      "loopStartPcm": 3408,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 126,
+      "pitchRegister": 2989
+    },
+    "communityName": "trumpet",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d0b95db6f0bcd6b1c0295b102f2d68f0e8b4cee911a5482c1c7e32f6097fe2cc"
+          },
+          "loop": {
+            "start": 3408,
+            "end": 3488
+          }
+        }
+      ]
+    }
+  }
+}

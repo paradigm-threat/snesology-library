@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Rumbling",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Megaman Soccer",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 4448,
+      "brrLength": 2502,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    },
+    "communityName": "sfx_rumbling",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "dced4ee9f7d8b7742910e0c82e815a0e409d31986a086b72d8870bfb766393e2"
+          },
+          "loop": {
+            "start": 16,
+            "end": 4448
+          }
+        }
+      ]
+    }
+  }
+}

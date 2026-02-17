@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Stealth",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 11376,
+      "brrLength": 6399,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 250,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2767
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "42df66ef946d02cb59ce102716c517bd9c4206134ab50f01631e8fd2733724d2"
+          },
+          "loop": {
+            "start": 16,
+            "end": 11376
+          }
+        }
+      ]
+    }
+  }
+}

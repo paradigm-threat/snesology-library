@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Vox2",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Monopoly",
+    "snes": {
+      "srcn": 17,
+      "character": "noise",
+      "pcmLength": 7024,
+      "brrLength": 3951,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 215,
+      "pitchRegister": 1328
+    },
+    "communityName": "sfx_vox2",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "137d7ca18ff775c8ce46106b905a49e1b386dc93a9873b4d3c10544992b02b7a"
+          }
+        }
+      ]
+    }
+  }
+}

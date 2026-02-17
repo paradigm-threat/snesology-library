@@ -1,0 +1,48 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Gunshot",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Megaman and Bass",
+    "snes": {
+      "srcn": 57,
+      "character": "one-shot",
+      "pcmLength": 1600,
+      "brrLength": 900,
+      "hasLoop": false
+    },
+    "communityName": "sfx_gunshot",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "71f40052c7adc27b94ff8bb3cc4180742a7ba79c6162981a1086c995b80cb515"
+          }
+        }
+      ]
+    }
+  }
+}

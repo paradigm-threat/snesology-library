@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Saturday Night Slam Masters",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 6080,
+      "brrLength": 3420,
+      "hasLoop": true,
+      "loopStartPcm": 304,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 158,
+      "pitchRegister": 2256
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ee2900dd2d610828be5555b476bb4ebb91b682097539f6b9e74b6a33cfa066ed"
+          },
+          "loop": {
+            "start": 304,
+            "end": 6080
+          }
+        }
+      ]
+    }
+  }
+}

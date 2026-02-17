@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "TinTin au Tibet",
+    "snes": {
+      "srcn": 222,
+      "character": "melodic",
+      "pcmLength": 7568,
+      "brrLength": 4257,
+      "hasLoop": true,
+      "loopStartPcm": 49392
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5305aa03653e04a77c8c21f694ea93b75151f8cfe108b78402c570bdd16a0f91"
+          },
+          "loop": {
+            "start": 49392,
+            "end": 7568
+          }
+        }
+      ]
+    }
+  }
+}

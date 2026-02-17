@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Motoko-chan no Wonder Kitchen",
+    "snes": {
+      "srcn": 17,
+      "character": "tone",
+      "pcmLength": 3680,
+      "brrLength": 2070,
+      "hasLoop": true,
+      "loopStartPcm": 3648,
+      "adsr1": 143,
+      "adsr2": 244,
+      "gain": 184,
+      "pitchRegister": 1608
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ae99107d40f5cf63d4516048791ac267d7632d6f04ff2e0afd874430a4e647ec"
+          },
+          "loop": {
+            "start": 3648,
+            "end": 3680
+          }
+        }
+      ]
+    }
+  }
+}

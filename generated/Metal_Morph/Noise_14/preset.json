@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Metal Morph",
+    "snes": {
+      "srcn": 14,
+      "character": "noise",
+      "pcmLength": 5968,
+      "brrLength": 3357,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 175,
+      "gain": 0,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fec589d46e2921f460fb3dd319ab28410f1826fb1214d1df1803cc5de6d962de"
+          }
+        }
+      ]
+    }
+  }
+}

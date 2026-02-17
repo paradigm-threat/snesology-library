@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Orch Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earthbound",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 8928,
+      "brrLength": 5022,
+      "hasLoop": true,
+      "loopStartPcm": 8384,
+      "adsr1": 255,
+      "adsr2": 241,
+      "gain": 0,
+      "pitchRegister": 6901
+    },
+    "communityName": "orch_hit",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "72909c4428247fa54eff47e23300f2d2a94155751a573e5bbedd1e12c17d28d3"
+          },
+          "loop": {
+            "start": 8384,
+            "end": 8928
+          }
+        }
+      ]
+    }
+  }
+}

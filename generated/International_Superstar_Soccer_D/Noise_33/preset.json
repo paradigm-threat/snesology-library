@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "International Superstar Soccer D",
+    "snes": {
+      "srcn": 33,
+      "character": "noise",
+      "pcmLength": 8400,
+      "brrLength": 4725,
+      "hasLoop": true,
+      "loopStartPcm": 5008,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 3240
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9196b7ce837acc2773e66faeb1da8b48f631f46623af315f5cdfe5b97bc75628"
+          },
+          "loop": {
+            "start": 5008,
+            "end": 8400
+          }
+        }
+      ]
+    }
+  }
+}

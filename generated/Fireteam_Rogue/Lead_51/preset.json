@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fireteam Rogue",
+    "snes": {
+      "srcn": 51,
+      "character": "melodic",
+      "pcmLength": 5008,
+      "brrLength": 2817,
+      "hasLoop": true,
+      "loopStartPcm": 3200,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 127,
+      "pitchRegister": 2370
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "23b964d192391c7b2299bbc9f331f2fe72d2884bb54d2133fd8078e20bb30541"
+          },
+          "loop": {
+            "start": 3200,
+            "end": 5008
+          }
+        }
+      ]
+    }
+  }
+}

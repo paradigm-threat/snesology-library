@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kaizou Tyoujin Shubibinman Zero",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 1856,
+      "brrLength": 1044,
+      "hasLoop": true,
+      "loopStartPcm": 2112
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f7923479c17dc9e80024a0dbd2d46f74aac7b0619a4bf1a6328801e150c07f9e"
+          },
+          "loop": {
+            "start": 2112,
+            "end": 1856
+          }
+        }
+      ]
+    }
+  }
+}

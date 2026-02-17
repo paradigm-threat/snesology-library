@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gousou Jinrai Densetsu Musya",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 2544,
+      "brrLength": 1431,
+      "hasLoop": true,
+      "loopStartPcm": 2352,
+      "adsr1": 255,
+      "adsr2": 244,
+      "gain": 184,
+      "pitchRegister": 272
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "08fdbc4f8182c6991701b3d2908df45adc61fae0e34885db09af7d51fbfd9a06"
+          },
+          "loop": {
+            "start": 2352,
+            "end": 2544
+          }
+        }
+      ]
+    }
+  }
+}

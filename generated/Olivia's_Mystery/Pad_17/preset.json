@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Olivia's Mystery",
+    "snes": {
+      "srcn": 17,
+      "character": "melodic",
+      "pcmLength": 9360,
+      "brrLength": 5265,
+      "hasLoop": true,
+      "loopStartPcm": 7328
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fce807c14f098983b62e6ba496cad2e4f8e4ce49f974230f08bd42b616a90c34"
+          },
+          "loop": {
+            "start": 7328,
+            "end": 9360
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Tetris 2",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 5488,
+      "brrLength": 3087,
+      "hasLoop": true,
+      "loopStartPcm": 5104,
+      "adsr1": 143,
+      "adsr2": 235,
+      "gain": 184,
+      "pitchRegister": 3183
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "05bc84e99a1dd2c7a2d9e6e9d9eff7e52a08ffadc941c2999d89be53b59feafc"
+          },
+          "loop": {
+            "start": 5104,
+            "end": 5488
+          }
+        }
+      ]
+    }
+  }
+}

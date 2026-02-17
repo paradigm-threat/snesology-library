@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battle Zeque Den",
+    "snes": {
+      "srcn": 8,
+      "character": "one-shot",
+      "pcmLength": 1600,
+      "brrLength": 900,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 248,
+      "gain": 0,
+      "pitchRegister": 685
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6199fc920947b583433e049d1ad8a29d2b3281de937596998a20ab994abcb636"
+          }
+        }
+      ]
+    }
+  }
+}

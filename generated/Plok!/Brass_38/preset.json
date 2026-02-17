@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Brass",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Plok!",
+    "snes": {
+      "srcn": 38,
+      "character": "melodic",
+      "pcmLength": 14080,
+      "brrLength": 7920,
+      "hasLoop": true,
+      "loopStartPcm": 5344,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 119,
+      "pitchRegister": 732
+    },
+    "communityName": "brass",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f3fff3e0cdbc8ccd8e1f6dd77dabd2a0ab29df630ecdb52ddc02395ecd2cbdb6"
+          },
+          "loop": {
+            "start": 5344,
+            "end": 14080
+          }
+        }
+      ]
+    }
+  }
+}

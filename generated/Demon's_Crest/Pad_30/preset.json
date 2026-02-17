@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Demon's Crest",
+    "snes": {
+      "srcn": 30,
+      "character": "melodic",
+      "pcmLength": 10096,
+      "brrLength": 5679,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "334bac36ae7e89ce490c4c528531ff0e066def946e9420957a0a825f941b3650"
+          },
+          "loop": {
+            "start": 48,
+            "end": 10096
+          }
+        }
+      ]
+    }
+  }
+}

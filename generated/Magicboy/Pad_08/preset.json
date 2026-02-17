@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Magicboy",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 18176,
+      "brrLength": 10224,
+      "hasLoop": true,
+      "loopStartPcm": 9264
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c840c5df18fb4d87a5fbe49e17cdec4b0acabf03a1a3b432812d61b4b43a6200"
+          },
+          "loop": {
+            "start": 9264,
+            "end": 18176
+          }
+        }
+      ]
+    }
+  }
+}

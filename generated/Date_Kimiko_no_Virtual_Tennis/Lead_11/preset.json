@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Date Kimiko no Virtual Tennis",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 5280,
+      "brrLength": 2970,
+      "hasLoop": true,
+      "loopStartPcm": 3440,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 158,
+      "pitchRegister": 2435
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8350bcf1d9d7f5812a6e727bd6d2525f62b72e4c4ca53f60fd5036728b360d48"
+          },
+          "loop": {
+            "start": 3440,
+            "end": 5280
+          }
+        }
+      ]
+    }
+  }
+}

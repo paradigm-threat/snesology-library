@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Soccer Kid",
+    "snes": {
+      "srcn": 18,
+      "character": "one-shot",
+      "pcmLength": 3024,
+      "brrLength": 1701,
+      "hasLoop": false,
+      "adsr1": 175,
+      "adsr2": 22,
+      "gain": 0,
+      "pitchRegister": 6336
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "422e75bf7b88ca6a0ba20169797899c63ee8eb0f5ad94e5cb53d3f9c34fc96ce"
+          }
+        }
+      ]
+    }
+  }
+}

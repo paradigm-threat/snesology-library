@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ruin Arm",
+    "snes": {
+      "srcn": 41,
+      "character": "melodic",
+      "pcmLength": 7536,
+      "brrLength": 4239,
+      "hasLoop": true,
+      "loopStartPcm": 4112,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 3052
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6eb294ddad1715aa35d3d478d607ddd97ff9d9a5f267a7ffa3c24ccc0f95a0d9"
+          },
+          "loop": {
+            "start": 4112,
+            "end": 7536
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hit the Ice",
+    "snes": {
+      "srcn": 0,
+      "character": "tone",
+      "pcmLength": 3200,
+      "brrLength": 1800,
+      "hasLoop": true,
+      "loopStartPcm": 832,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 0,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b0bfaa5e3908df3246a746da97ff0d1ef8e71889ef21eb14206dcd7d8e68b639"
+          },
+          "loop": {
+            "start": 832,
+            "end": 3200
+          }
+        }
+      ]
+    }
+  }
+}

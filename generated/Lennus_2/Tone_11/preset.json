@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Lennus 2",
+    "snes": {
+      "srcn": 11,
+      "character": "tone",
+      "pcmLength": 1472,
+      "brrLength": 828,
+      "hasLoop": true,
+      "loopStartPcm": 704,
+      "adsr1": 255,
+      "adsr2": 233,
+      "gain": 184,
+      "pitchRegister": 1430
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2cf09f29b9eb5288a9704f7d3569f2277bbf0b5927c00eecbd421760286c8aa2"
+          },
+          "loop": {
+            "start": 704,
+            "end": 1472
+          }
+        }
+      ]
+    }
+  }
+}

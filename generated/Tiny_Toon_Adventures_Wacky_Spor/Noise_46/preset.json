@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tiny Toon Adventures: Wacky Spor",
+    "snes": {
+      "srcn": 46,
+      "character": "noise",
+      "pcmLength": 5856,
+      "brrLength": 3294,
+      "hasLoop": true,
+      "loopStartPcm": 7632
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "266ab9720b074a2e896e86b199af3a6d9e3abe8aeeaf545e8f505ea13b56f3c5"
+          },
+          "loop": {
+            "start": 7632,
+            "end": 5856
+          }
+        }
+      ]
+    }
+  }
+}

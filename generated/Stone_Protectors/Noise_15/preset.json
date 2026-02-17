@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Stone Protectors",
+    "snes": {
+      "srcn": 15,
+      "character": "noise",
+      "pcmLength": 2976,
+      "brrLength": 1674,
+      "hasLoop": false,
+      "adsr1": 223,
+      "adsr2": 102,
+      "gain": 0,
+      "pitchRegister": 903
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5c742e4d0ca5c70bb4a8f340f76f550923c3d20a3ac6fff9780db823294abb22"
+          }
+        }
+      ]
+    }
+  }
+}

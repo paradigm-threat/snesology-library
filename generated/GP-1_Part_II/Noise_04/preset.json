@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "GP-1 Part II",
+    "snes": {
+      "srcn": 4,
+      "character": "noise",
+      "pcmLength": 8512,
+      "brrLength": 4788,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 210,
+      "gain": 210,
+      "pitchRegister": 1024
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "37a6e980c46d3b7afa7efe99a2454b4ec8633b955f8586845c16ac5fba265e01"
+          }
+        }
+      ]
+    }
+  }
+}

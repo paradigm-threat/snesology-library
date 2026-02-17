@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Nosferatu",
+    "snes": {
+      "srcn": 18,
+      "character": "melodic",
+      "pcmLength": 4304,
+      "brrLength": 2421,
+      "hasLoop": true,
+      "loopStartPcm": 2432
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "84f9a7f19003565b363a252ace7a01d64f5da7fb45b1b60389ef0ef55e44dd90"
+          },
+          "loop": {
+            "start": 2432,
+            "end": 4304
+          }
+        }
+      ]
+    }
+  }
+}

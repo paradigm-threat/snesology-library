@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Panic in Nakayoshi World",
+    "snes": {
+      "srcn": 129,
+      "character": "tone",
+      "pcmLength": 2464,
+      "brrLength": 1386,
+      "hasLoop": true,
+      "loopStartPcm": 79312
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "29cf77711d87e5b1ef7b0ae423b2ada5427a6ac76f82b403c28acb798fb77316"
+          },
+          "loop": {
+            "start": 79312,
+            "end": 2464
+          }
+        }
+      ]
+    }
+  }
+}

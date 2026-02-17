@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tokimeki Memorial",
+    "snes": {
+      "srcn": 42,
+      "character": "melodic",
+      "pcmLength": 5280,
+      "brrLength": 2970,
+      "hasLoop": true,
+      "loopStartPcm": 1504,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 1206
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "60c356e8eacfef2ee81fa8867fcf1562510ff408117220186e84ff489139d4a5"
+          },
+          "loop": {
+            "start": 1504,
+            "end": 5280
+          }
+        }
+      ]
+    }
+  }
+}

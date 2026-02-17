@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Realm",
+    "snes": {
+      "srcn": 11,
+      "character": "tone",
+      "pcmLength": 3392,
+      "brrLength": 1908,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 0,
+      "adsr2": 128,
+      "gain": 216,
+      "pitchRegister": 3266
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "adc6bca9bf8ac5cbb05ff6523dace0ab58527c25df4d4a4237e6f3e1a57eb10a"
+          },
+          "loop": {
+            "start": 0,
+            "end": 3392
+          }
+        }
+      ]
+    }
+  }
+}

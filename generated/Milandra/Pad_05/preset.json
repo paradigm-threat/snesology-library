@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Milandra",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 14128,
+      "brrLength": 7947,
+      "hasLoop": true,
+      "loopStartPcm": 12080,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 224,
+      "pitchRegister": 642
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3a4cb9216575a8afd7b01d691861a77ec75c43773fb61f5acccfdded2e002cf2"
+          },
+          "loop": {
+            "start": 12080,
+            "end": 14128
+          }
+        }
+      ]
+    }
+  }
+}

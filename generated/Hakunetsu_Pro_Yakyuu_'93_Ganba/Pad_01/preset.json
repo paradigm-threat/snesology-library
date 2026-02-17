@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hakunetsu Pro Yakyuu '93: Ganba",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 6944,
+      "brrLength": 3906,
+      "hasLoop": true,
+      "loopStartPcm": 1088,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 499
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "336d3d92b6685e09bebdf0e3b562b97ea17cfab4f704fef343bdc54317a94ea9"
+          },
+          "loop": {
+            "start": 1088,
+            "end": 6944
+          }
+        }
+      ]
+    }
+  }
+}

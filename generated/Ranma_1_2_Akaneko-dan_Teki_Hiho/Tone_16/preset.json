@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ranma 1/2: Akaneko-dan Teki Hiho",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 3968,
+      "brrLength": 2232,
+      "hasLoop": true,
+      "loopStartPcm": 3920,
+      "adsr1": 189,
+      "adsr2": 192,
+      "gain": 184,
+      "pitchRegister": 2106
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "414b13276171b6e2ba4fe1a3708a41649248c1cf397b6bebef968306daa1a69f"
+          },
+          "loop": {
+            "start": 3920,
+            "end": 3968
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Harley's Humongous Adventure",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 16432,
+      "brrLength": 9243,
+      "hasLoop": true,
+      "loopStartPcm": 7984,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2289
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "19ffffbcbe22ceda9a8ed7523c7fd65ea53dae65bcdc8edcdd7b49909f0e9fab"
+          },
+          "loop": {
+            "start": 7984,
+            "end": 16432
+          }
+        }
+      ]
+    }
+  }
+}

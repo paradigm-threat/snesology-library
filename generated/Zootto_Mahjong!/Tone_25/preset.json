@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zootto Mahjong!",
+    "snes": {
+      "srcn": 25,
+      "character": "tone",
+      "pcmLength": 1120,
+      "brrLength": 630,
+      "hasLoop": true,
+      "loopStartPcm": 1056,
+      "adsr1": 223,
+      "adsr2": 160,
+      "gain": 184,
+      "pitchRegister": 2700
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "882b5ca2ef62d6df84fd2099e34327b9a525edd9a2e6dda9da30e70d772829cf"
+          },
+          "loop": {
+            "start": 1056,
+            "end": 1120
+          }
+        }
+      ]
+    }
+  }
+}

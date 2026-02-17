@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battle Blaze",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 1552,
+      "brrLength": 873,
+      "hasLoop": true,
+      "loopStartPcm": 1504
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "45c102122e43d9622b3b63ce441e653dae8ebb660f4925e52c7c4cb3f6682cf3"
+          },
+          "loop": {
+            "start": 1504,
+            "end": 1552
+          }
+        }
+      ]
+    }
+  }
+}

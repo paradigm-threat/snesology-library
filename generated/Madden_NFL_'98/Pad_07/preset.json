@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Madden NFL '98",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 16432,
+      "brrLength": 9243,
+      "hasLoop": true,
+      "loopStartPcm": 12848
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cde64d35cb7711ae7b4ea9326f943cb50ac339f404bc307fe38fb412ce446c37"
+          },
+          "loop": {
+            "start": 12848,
+            "end": 16432
+          }
+        }
+      ]
+    }
+  }
+}

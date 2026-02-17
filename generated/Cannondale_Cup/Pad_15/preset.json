@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cannondale Cup",
+    "snes": {
+      "srcn": 15,
+      "character": "melodic",
+      "pcmLength": 6944,
+      "brrLength": 3906,
+      "hasLoop": true,
+      "loopStartPcm": 3936
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "653d4cb6e388e4e237c64550aae3606748ad74ba5d3b59366b0a429406be65d7"
+          },
+          "loop": {
+            "start": 3936,
+            "end": 6944
+          }
+        }
+      ]
+    }
+  }
+}

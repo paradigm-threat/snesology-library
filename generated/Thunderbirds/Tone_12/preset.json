@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Thunderbirds",
+    "snes": {
+      "srcn": 12,
+      "character": "tone",
+      "pcmLength": 2032,
+      "brrLength": 1143,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "21b35c53e843f82e9502a0ca2135c3ddebd935339d9a242c4643390a41b3b41b"
+          },
+          "loop": {
+            "start": 16,
+            "end": 2032
+          }
+        }
+      ]
+    }
+  }
+}

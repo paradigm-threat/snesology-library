@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "SD Gundam X: Super Gachapon Worl",
+    "snes": {
+      "srcn": 122,
+      "character": "melodic",
+      "pcmLength": 5024,
+      "brrLength": 2826,
+      "hasLoop": true,
+      "loopStartPcm": 23168
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "62640f288acc3def25464c870dedf21e4c1acde37d90583d11b8aeac8d73f8ed"
+          },
+          "loop": {
+            "start": 23168,
+            "end": 5024
+          }
+        }
+      ]
+    }
+  }
+}

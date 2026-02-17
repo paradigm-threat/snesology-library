@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Waratte Iitomo! Tamorinpic",
+    "snes": {
+      "srcn": 0,
+      "character": "one-shot",
+      "pcmLength": 3104,
+      "brrLength": 1746,
+      "hasLoop": false,
+      "adsr1": 239,
+      "adsr2": 165,
+      "gain": 0,
+      "pitchRegister": 4096
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1efa011e6e6fdae0a491904a095932dd85d352a0f6d4f78ca04d39e38a957c37"
+          }
+        }
+      ]
+    }
+  }
+}

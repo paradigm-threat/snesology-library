@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Yoshi's Island",
+    "snes": {
+      "srcn": 19,
+      "character": "melodic",
+      "pcmLength": 11936,
+      "brrLength": 6714,
+      "hasLoop": true,
+      "loopStartPcm": 656
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "710559da18d8b65950383ab5da4563a3e7b7a8f6cba4d8b3064767c741a4a088"
+          },
+          "loop": {
+            "start": 656,
+            "end": 11936
+          }
+        }
+      ]
+    }
+  }
+}

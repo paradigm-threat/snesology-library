@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Neugier",
+    "snes": {
+      "srcn": 234,
+      "character": "melodic",
+      "pcmLength": 8704,
+      "brrLength": 4896,
+      "hasLoop": true,
+      "loopStartPcm": 7296
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d5615fee94d13e3a4fc316f3853f989452c5ed1bdded473d5c8da2fe16616524"
+          },
+          "loop": {
+            "start": 7296,
+            "end": 8704
+          }
+        }
+      ]
+    }
+  }
+}

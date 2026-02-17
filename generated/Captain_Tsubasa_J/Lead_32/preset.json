@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Captain Tsubasa J",
+    "snes": {
+      "srcn": 32,
+      "character": "melodic",
+      "pcmLength": 4336,
+      "brrLength": 2439,
+      "hasLoop": true,
+      "loopStartPcm": 3600,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 160,
+      "pitchRegister": 2047
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e1c53d97565fdb4a31caaed14e0dfa7b06fa4dd616d731fa1b307e3c378953a7"
+          },
+          "loop": {
+            "start": 3600,
+            "end": 4336
+          }
+        }
+      ]
+    }
+  }
+}

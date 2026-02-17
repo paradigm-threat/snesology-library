@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Street Combat",
+    "snes": {
+      "srcn": 23,
+      "character": "one-shot",
+      "pcmLength": 17408,
+      "brrLength": 9792,
+      "hasLoop": false,
+      "adsr1": 207,
+      "adsr2": 208,
+      "gain": 0,
+      "pitchRegister": 2584
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "941c07951ad97f33003c02f873c9dadf6e8ed6487cf3df069c5a8c8781b757e6"
+          }
+        }
+      ]
+    }
+  }
+}

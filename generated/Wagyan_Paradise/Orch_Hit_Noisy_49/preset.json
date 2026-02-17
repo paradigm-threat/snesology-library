@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Orch Hit Noisy",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wagyan Paradise",
+    "snes": {
+      "srcn": 49,
+      "character": "tone",
+      "pcmLength": 2224,
+      "brrLength": 1251,
+      "hasLoop": true,
+      "loopStartPcm": 688,
+      "adsr1": 245,
+      "adsr2": 224,
+      "gain": 190,
+      "pitchRegister": 368
+    },
+    "communityName": "orch_hit_noisy",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8a01b6d5a4ea29460867044530139f0b3e6b114ffc61aec6a3bbb7845ab7197e"
+          },
+          "loop": {
+            "start": 688,
+            "end": 2224
+          }
+        }
+      ]
+    }
+  }
+}

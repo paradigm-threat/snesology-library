@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kishin Douji Zenki 3",
+    "snes": {
+      "srcn": 28,
+      "character": "noise",
+      "pcmLength": 5328,
+      "brrLength": 2997,
+      "hasLoop": true,
+      "loopStartPcm": 3744,
+      "adsr1": 255,
+      "adsr2": 210,
+      "gain": 159,
+      "pitchRegister": 1145
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f6e11c7dd3df717ecee010e4ade99b1755027bc606c2182ecc615602a3f5d519"
+          },
+          "loop": {
+            "start": 3744,
+            "end": 5328
+          }
+        }
+      ]
+    }
+  }
+}

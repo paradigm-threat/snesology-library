@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ultima: Runes of Virtue 2",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 2032,
+      "brrLength": 1143,
+      "hasLoop": true,
+      "loopStartPcm": 1936,
+      "adsr1": 221,
+      "adsr2": 187,
+      "gain": 0,
+      "pitchRegister": 2409
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a6867578cb892604cb2d640b683fa1a64f4274f639654eb59055ab8fdb376db3"
+          },
+          "loop": {
+            "start": 1936,
+            "end": 2032
+          }
+        }
+      ]
+    }
+  }
+}

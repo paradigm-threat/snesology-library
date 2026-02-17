@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Street Fighter Alpha 2",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 256,
+      "brrLength": 144,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 217,
+      "adsr2": 200,
+      "gain": 184,
+      "pitchRegister": 15165
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2e7c4c58608df5964bca955efd2d1216846f730ba157501345f5fb5ce5a6b6ef"
+          },
+          "loop": {
+            "start": 16,
+            "end": 256
+          }
+        }
+      ]
+    }
+  }
+}

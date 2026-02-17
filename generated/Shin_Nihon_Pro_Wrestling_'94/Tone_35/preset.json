@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shin Nihon Pro Wrestling '94",
+    "snes": {
+      "srcn": 35,
+      "character": "tone",
+      "pcmLength": 2960,
+      "brrLength": 1665,
+      "hasLoop": true,
+      "loopStartPcm": 2320
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e8a2786ab62641c33abec1d92747f0c57ecb76201181f3d2892b4b7b5340d0a0"
+          },
+          "loop": {
+            "start": 2320,
+            "end": 2960
+          }
+        }
+      ]
+    }
+  }
+}

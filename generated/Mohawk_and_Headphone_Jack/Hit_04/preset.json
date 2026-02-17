@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mohawk and Headphone Jack",
+    "snes": {
+      "srcn": 4,
+      "character": "one-shot",
+      "pcmLength": 4240,
+      "brrLength": 2385,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 246,
+      "gain": 127,
+      "pitchRegister": 2733
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "67cf4b55c26fc419fbd34f819e60f4eb3f068c39fae2e3d4f60a5b8c5f1259ac"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kidou Senshi Gundam: Cross Dimen",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 4336,
+      "brrLength": 2439,
+      "hasLoop": true,
+      "loopStartPcm": 304,
+      "adsr1": 141,
+      "adsr2": 160,
+      "gain": 184,
+      "pitchRegister": 2700
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ec7a79d4ed7fbfe44bc7a7e44606be14ca52b545218f855d56dd37db962f9b51"
+          },
+          "loop": {
+            "start": 304,
+            "end": 4336
+          }
+        }
+      ]
+    }
+  }
+}

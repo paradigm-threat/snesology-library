@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mohawk and Headphone Jack",
+    "snes": {
+      "srcn": 52,
+      "character": "melodic",
+      "pcmLength": 5216,
+      "brrLength": 2934,
+      "hasLoop": true,
+      "loopStartPcm": 3136
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7770e8876520c52de49a0f6e94e0b76a534cde01314a43e7e41ec62d386be1e6"
+          },
+          "loop": {
+            "start": 3136,
+            "end": 5216
+          }
+        }
+      ]
+    }
+  }
+}

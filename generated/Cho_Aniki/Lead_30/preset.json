@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cho Aniki",
+    "snes": {
+      "srcn": 30,
+      "character": "melodic",
+      "pcmLength": 4080,
+      "brrLength": 2295,
+      "hasLoop": true,
+      "loopStartPcm": 2656
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5f9372eeea910ca7f5f28dc8155b2854fd89b355f0e53f6ad693286d15f054e4"
+          },
+          "loop": {
+            "start": 2656,
+            "end": 4080
+          }
+        }
+      ]
+    }
+  }
+}

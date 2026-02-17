@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bounty Sword",
+    "snes": {
+      "srcn": 8,
+      "character": "one-shot",
+      "pcmLength": 3504,
+      "brrLength": 1971,
+      "hasLoop": false,
+      "adsr1": 239,
+      "adsr2": 240,
+      "gain": 184,
+      "pitchRegister": 2392
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e00adc6da3a121a8a92912f9af5bd7eadfe6a39a4938e4bdd4c6963f2da54c4c"
+          }
+        }
+      ]
+    }
+  }
+}

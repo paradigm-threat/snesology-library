@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Barbie Vacation Adventure",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 15872,
+      "brrLength": 8928,
+      "hasLoop": true,
+      "loopStartPcm": 9184,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 85,
+      "pitchRegister": 3091
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "689b48144b274c4a32856d7a20e45ae0012b3a65c9935840b3b63324aa39ac0d"
+          },
+          "loop": {
+            "start": 9184,
+            "end": 15872
+          }
+        }
+      ]
+    }
+  }
+}

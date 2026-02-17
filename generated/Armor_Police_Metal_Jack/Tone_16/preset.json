@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Armor Police Metal Jack",
+    "snes": {
+      "srcn": 16,
+      "character": "tone",
+      "pcmLength": 1040,
+      "brrLength": 585,
+      "hasLoop": true,
+      "loopStartPcm": 800,
+      "adsr1": 255,
+      "adsr2": 230,
+      "gain": 184,
+      "pitchRegister": 4005
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "61a5d8923baa2e51833747f0ae5dc014a69844e53fac308bfb08b855f7d4c1d1"
+          },
+          "loop": {
+            "start": 800,
+            "end": 1040
+          }
+        }
+      ]
+    }
+  }
+}

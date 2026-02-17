@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Battletank 2",
+    "snes": {
+      "srcn": 5,
+      "character": "one-shot",
+      "pcmLength": 42304,
+      "brrLength": 23796,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 43,
+      "gain": 176,
+      "pitchRegister": 3251
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "464cf7a7694413db2adae5097989ef436a974b4aa6a3334fb659c8481c9b1a00"
+          }
+        }
+      ]
+    }
+  }
+}

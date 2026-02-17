@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Der Langrisser",
+    "snes": {
+      "srcn": 69,
+      "character": "noise",
+      "pcmLength": 7504,
+      "brrLength": 4221,
+      "hasLoop": true,
+      "loopStartPcm": 5056,
+      "adsr1": 142,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 272
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2843727264bb97121a059c402bbffce4bd0f1d3c2b07bde615e038ad49e8f479"
+          },
+          "loop": {
+            "start": 5056,
+            "end": 7504
+          }
+        }
+      ]
+    }
+  }
+}

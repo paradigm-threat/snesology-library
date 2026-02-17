@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bobby's World",
+    "snes": {
+      "srcn": 9,
+      "character": "one-shot",
+      "pcmLength": 8176,
+      "brrLength": 4599,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 230,
+      "gain": 127,
+      "pitchRegister": 3068
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f0be7796a16592ca7f974693520df5df99afc9cc9671807714b4f0638a59701d"
+          }
+        }
+      ]
+    }
+  }
+}

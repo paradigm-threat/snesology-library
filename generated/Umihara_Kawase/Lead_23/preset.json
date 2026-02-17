@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Umihara Kawase",
+    "snes": {
+      "srcn": 23,
+      "character": "melodic",
+      "pcmLength": 4368,
+      "brrLength": 2457,
+      "hasLoop": true,
+      "loopStartPcm": 3136,
+      "adsr1": 143,
+      "adsr2": 240,
+      "gain": 184,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ab79e3d41c21e2bf380a24a1ddf175cf44886de9cc1367b2007f54342e9695c3"
+          },
+          "loop": {
+            "start": 3136,
+            "end": 4368
+          }
+        }
+      ]
+    }
+  }
+}

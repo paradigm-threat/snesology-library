@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Trumpet",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Front Mission",
+    "snes": {
+      "srcn": 35,
+      "character": "tone",
+      "pcmLength": 1840,
+      "brrLength": 1035,
+      "hasLoop": true,
+      "loopStartPcm": 1776
+    },
+    "communityName": "trumpet",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ba69d6ccaf96d4429b2b9857e9fceab85671f0fdfd04d04ec655e7837c8b1749"
+          },
+          "loop": {
+            "start": 1776,
+            "end": 1840
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Bass Synth",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earthworm Jim",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 4096,
+      "brrLength": 2304,
+      "hasLoop": true,
+      "loopStartPcm": 3856,
+      "adsr1": 255,
+      "adsr2": 239,
+      "gain": 159,
+      "pitchRegister": 1722
+    },
+    "communityName": "bass_synth",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "16fc8a07fc879f61077a369e7d740e569cc0ea3ad6525945cd461ecdd36523fb"
+          },
+          "loop": {
+            "start": 3856,
+            "end": 4096
+          }
+        }
+      ]
+    }
+  }
+}

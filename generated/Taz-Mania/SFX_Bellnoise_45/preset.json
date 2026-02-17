@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Bellnoise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Taz-Mania",
+    "snes": {
+      "srcn": 45,
+      "character": "tone",
+      "pcmLength": 3776,
+      "brrLength": 2124,
+      "hasLoop": true,
+      "loopStartPcm": 672
+    },
+    "communityName": "sfx_bellnoise",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8bac227f59e0cf7313b99f29795ac1aa32785486c301e687ab1ec3f838395fc7"
+          },
+          "loop": {
+            "start": 672,
+            "end": 3776
+          }
+        }
+      ]
+    }
+  }
+}

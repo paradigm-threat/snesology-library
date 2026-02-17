@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "J-League Super Soccer",
+    "snes": {
+      "srcn": 149,
+      "character": "melodic",
+      "pcmLength": 30144,
+      "brrLength": 16956,
+      "hasLoop": true,
+      "loopStartPcm": 23424
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "371506591e41fc2aa6fb413e518bd2a07a2396cbf8bfdd9a5aac72a926dc5967"
+          },
+          "loop": {
+            "start": 23424,
+            "end": 30144
+          }
+        }
+      ]
+    }
+  }
+}

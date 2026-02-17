@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spider-Man",
+    "snes": {
+      "srcn": 62,
+      "character": "tone",
+      "pcmLength": 3056,
+      "brrLength": 1719,
+      "hasLoop": true,
+      "loopStartPcm": 736
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8aea255d0432d660f5423a0de8153f2ded6279c0da3a606da33afe0b8afa3785"
+          },
+          "loop": {
+            "start": 736,
+            "end": 3056
+          }
+        }
+      ]
+    }
+  }
+}

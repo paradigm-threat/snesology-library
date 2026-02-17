@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Crowd Or Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ken Griffey Jr. Winning Run",
+    "snes": {
+      "srcn": 19,
+      "character": "melodic",
+      "pcmLength": 11136,
+      "brrLength": 6264,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 131,
+      "adsr2": 228,
+      "gain": 127,
+      "pitchRegister": 683
+    },
+    "communityName": "sfx_crowd_or_noise",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2263c57ea6f6ab7d5149cc0caf765932bf10da2ff68686f5e39d68229d770126"
+          },
+          "loop": {
+            "start": 0,
+            "end": 11136
+          }
+        }
+      ]
+    }
+  }
+}

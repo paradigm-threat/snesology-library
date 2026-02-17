@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Guitar Harmonic",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shaq Fu",
+    "snes": {
+      "srcn": 12,
+      "character": "tone",
+      "pcmLength": 480,
+      "brrLength": 270,
+      "hasLoop": true,
+      "loopStartPcm": 464,
+      "adsr1": 174,
+      "adsr2": 42,
+      "gain": 0,
+      "pitchRegister": 675
+    },
+    "communityName": "guitar_harmonic",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a8ebfaa0d958f8b193b5816470208673db1ba3ae41765ac8a08c7b4e07e4bf87"
+          },
+          "loop": {
+            "start": 464,
+            "end": 480
+          }
+        }
+      ]
+    }
+  }
+}

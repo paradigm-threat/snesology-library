@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Pac6",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ms. Pac-Man",
+    "snes": {
+      "srcn": 9,
+      "character": "one-shot",
+      "pcmLength": 5040,
+      "brrLength": 2835,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 160,
+      "gain": 159,
+      "pitchRegister": 2048
+    },
+    "communityName": "sfx_pac6",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3e9e10d28aaf0d37fcd6c6ee5343651a3115518b7030b32a8e3288d642a1e0a7"
+          }
+        }
+      ]
+    }
+  }
+}

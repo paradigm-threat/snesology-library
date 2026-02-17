@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Baseball 2020",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 3024,
+      "brrLength": 1701,
+      "hasLoop": true,
+      "loopStartPcm": 2896,
+      "adsr1": 255,
+      "adsr2": 249,
+      "gain": 184,
+      "pitchRegister": 4246
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cbfbc0305c2fc2a46bcab26e80d3a500c2eac40f195fcb55b222953db81f18e5"
+          },
+          "loop": {
+            "start": 2896,
+            "end": 3024
+          }
+        }
+      ]
+    }
+  }
+}

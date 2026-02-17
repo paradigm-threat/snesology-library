@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Tactical Soccer",
+    "snes": {
+      "srcn": 4,
+      "character": "tone",
+      "pcmLength": 1456,
+      "brrLength": 819,
+      "hasLoop": true,
+      "loopStartPcm": 1120,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1743
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0ce44062f7a22a77ae1f4c6e23bcf9c18342e521257c35a9c9e9f26aafaac4d9"
+          },
+          "loop": {
+            "start": 1120,
+            "end": 1456
+          }
+        }
+      ]
+    }
+  }
+}

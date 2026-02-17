@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Christmas Craze",
+    "snes": {
+      "srcn": 6,
+      "character": "tone",
+      "pcmLength": 512,
+      "brrLength": 288,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 239,
+      "adsr2": 174,
+      "gain": 0,
+      "pitchRegister": 3604
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "69f0da189ffc95bcc04b5d7e985ac47564f1b2739860da78605241f4faa682cb"
+          },
+          "loop": {
+            "start": 0,
+            "end": 512
+          }
+        }
+      ]
+    }
+  }
+}

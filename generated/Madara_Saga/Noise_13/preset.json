@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Madara Saga",
+    "snes": {
+      "srcn": 13,
+      "character": "noise",
+      "pcmLength": 4080,
+      "brrLength": 2295,
+      "hasLoop": true,
+      "loopStartPcm": 432
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e329a351433c5dccd4925434f3a110af71d351e21f19b8a4ad2936aee4157b46"
+          },
+          "loop": {
+            "start": 432,
+            "end": 4080
+          }
+        }
+      ]
+    }
+  }
+}

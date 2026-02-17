@@ -1,0 +1,48 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Shaker",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Cool Spot",
+    "snes": {
+      "srcn": 3,
+      "character": "noise",
+      "pcmLength": 1488,
+      "brrLength": 837,
+      "hasLoop": false
+    },
+    "communityName": "perc_shaker",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8590d2693c067c683314e00fb2e502507b7458ca23c5fb64c3ec38d37ec42c63"
+          }
+        }
+      ]
+    }
+  }
+}

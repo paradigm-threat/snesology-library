@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Street Fighter 2 Turbo",
+    "snes": {
+      "srcn": 46,
+      "character": "one-shot",
+      "pcmLength": 1008,
+      "brrLength": 567,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 250,
+      "gain": 184,
+      "pitchRegister": 4096
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "95b5c4656773805fd7b962b3b96bb2c6e476cea589c88f7aa49b0b257ec60fe8"
+          }
+        }
+      ]
+    }
+  }
+}

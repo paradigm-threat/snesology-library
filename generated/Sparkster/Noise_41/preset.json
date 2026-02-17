@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sparkster",
+    "snes": {
+      "srcn": 41,
+      "character": "noise",
+      "pcmLength": 4672,
+      "brrLength": 2628,
+      "hasLoop": true,
+      "loopStartPcm": 5920
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "49332fae56edca26d40000032d7cf264381816325dface343a060a076ec9bd92"
+          },
+          "loop": {
+            "start": 5920,
+            "end": 4672
+          }
+        }
+      ]
+    }
+  }
+}

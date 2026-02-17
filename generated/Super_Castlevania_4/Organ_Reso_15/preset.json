@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Organ Reso",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Castlevania 4",
+    "snes": {
+      "srcn": 15,
+      "character": "tone",
+      "pcmLength": 224,
+      "brrLength": 126,
+      "hasLoop": true,
+      "loopStartPcm": 112,
+      "adsr1": 142,
+      "adsr2": 15,
+      "gain": 0,
+      "pitchRegister": 3560
+    },
+    "communityName": "organ_reso",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d8909afbc3f2b2d0cd7c64e8dc674428449f2af86a523e1bd3e1ff1109e44e7d"
+          },
+          "loop": {
+            "start": 112,
+            "end": 224
+          }
+        }
+      ]
+    }
+  }
+}

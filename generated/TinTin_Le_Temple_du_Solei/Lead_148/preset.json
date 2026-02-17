@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "TinTin: Le Temple du Solei",
+    "snes": {
+      "srcn": 148,
+      "character": "melodic",
+      "pcmLength": 6736,
+      "brrLength": 3789,
+      "hasLoop": true,
+      "loopStartPcm": 58880
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d6b3fbe7d6ba7a84baea57d379bcc15b1036512ec5baf8b0daf7b981675ab6bf"
+          },
+          "loop": {
+            "start": 58880,
+            "end": 6736
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Choir LO",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Syvalion",
+    "snes": {
+      "srcn": 34,
+      "character": "melodic",
+      "pcmLength": 5952,
+      "brrLength": 3348,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 223,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 0
+    },
+    "communityName": "choir_lo",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2dd38163bf50b2d57d557b29b9d38eeab47e6113108cb874a2cef9e1c18980f5"
+          },
+          "loop": {
+            "start": 48,
+            "end": 5952
+          }
+        }
+      ]
+    }
+  }
+}

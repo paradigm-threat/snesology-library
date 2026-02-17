@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Primal Rage",
+    "snes": {
+      "srcn": 16,
+      "character": "melodic",
+      "pcmLength": 4496,
+      "brrLength": 2529,
+      "hasLoop": true,
+      "loopStartPcm": 208,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 191,
+      "pitchRegister": 296
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0ab5ad6729d5ef9cefee3e99d6696e5409facd7c0df8e9324205b94a10aa3f24"
+          },
+          "loop": {
+            "start": 208,
+            "end": 4496
+          }
+        }
+      ]
+    }
+  }
+}

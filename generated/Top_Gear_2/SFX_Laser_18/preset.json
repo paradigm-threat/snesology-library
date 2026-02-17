@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Laser",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Top Gear 2",
+    "snes": {
+      "srcn": 18,
+      "character": "melodic",
+      "pcmLength": 5968,
+      "brrLength": 3357,
+      "hasLoop": true,
+      "loopStartPcm": 4928
+    },
+    "communityName": "sfx_laser",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2bd1ec4d89d8fbe7f0485fd9d24eb7a8d857cf2033b4a6e7b9f8cbc01063e3e3"
+          },
+          "loop": {
+            "start": 4928,
+            "end": 5968
+          }
+        }
+      ]
+    }
+  }
+}

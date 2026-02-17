@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Seijuu Maden - Beasts & Blades",
+    "snes": {
+      "srcn": 18,
+      "character": "tone",
+      "pcmLength": 896,
+      "brrLength": 504,
+      "hasLoop": true,
+      "loopStartPcm": 848,
+      "adsr1": 238,
+      "adsr2": 224,
+      "gain": 159,
+      "pitchRegister": 3251
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bab8cfabf667f0d7fd99e2122674932d5f741ffd187bc1840ffeae8685ae4d7d"
+          },
+          "loop": {
+            "start": 848,
+            "end": 896
+          }
+        }
+      ]
+    }
+  }
+}

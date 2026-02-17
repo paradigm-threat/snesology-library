@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dark Kingdom",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 10272,
+      "brrLength": 5778,
+      "hasLoop": true,
+      "loopStartPcm": 10208,
+      "adsr1": 255,
+      "adsr2": 236,
+      "gain": 184,
+      "pitchRegister": 2848
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "28772a4eb622b49fcd76b1a2af7c117a6d4570887919ce0ea2ab43c1c50aa537"
+          },
+          "loop": {
+            "start": 10208,
+            "end": 10272
+          }
+        }
+      ]
+    }
+  }
+}

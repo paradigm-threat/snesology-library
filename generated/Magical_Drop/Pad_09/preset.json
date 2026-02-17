@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Magical Drop",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 9296,
+      "brrLength": 5229,
+      "hasLoop": true,
+      "loopStartPcm": 3584,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1500
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a47c7a8c37753fc49a133ad5471eda4193ed689a396cdbeec804326b330278f0"
+          },
+          "loop": {
+            "start": 3584,
+            "end": 9296
+          }
+        }
+      ]
+    }
+  }
+}

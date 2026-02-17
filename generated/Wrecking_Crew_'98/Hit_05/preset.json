@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wrecking Crew '98",
+    "snes": {
+      "srcn": 5,
+      "character": "one-shot",
+      "pcmLength": 15600,
+      "brrLength": 8775,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 182,
+      "gain": 182,
+      "pitchRegister": 3416
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "576f75bdd50151c2dd7ade0b5e144805891d7df71fb343a053926cc6f675a952"
+          }
+        }
+      ]
+    }
+  }
+}

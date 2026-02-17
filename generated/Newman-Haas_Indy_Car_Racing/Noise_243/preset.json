@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Newman-Haas Indy Car Racing",
+    "snes": {
+      "srcn": 243,
+      "character": "noise",
+      "pcmLength": 3040,
+      "brrLength": 1710,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "01c83973236514b8c702ef33e5d3ac60f7b8d79cc97c10fe1ad5021ecb5f0e50"
+          }
+        }
+      ]
+    }
+  }
+}

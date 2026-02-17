@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jissen Pachinko Hisshouhou! 2",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 2656,
+      "brrLength": 1494,
+      "hasLoop": true,
+      "loopStartPcm": 2352
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "147904d8d9e0cc056fdd8d86f74f17d1c41c83cff09b20a35d222227594a16b2"
+          },
+          "loop": {
+            "start": 2352,
+            "end": 2656
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battle Tycoon",
+    "snes": {
+      "srcn": 14,
+      "character": "melodic",
+      "pcmLength": 11152,
+      "brrLength": 6273,
+      "hasLoop": true,
+      "loopStartPcm": 3008
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "69be3ef917a4729797862a1cd57b99e7d7a56f437d2dadf159a097165989fe10"
+          },
+          "loop": {
+            "start": 3008,
+            "end": 11152
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Rendering Ranger R2",
+    "snes": {
+      "srcn": 4,
+      "character": "melodic",
+      "pcmLength": 7296,
+      "brrLength": 4104,
+      "hasLoop": true,
+      "loopStartPcm": 5776,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 159,
+      "pitchRegister": 3438
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "686f91556852e6debff2fa73a10c9993c47ab194f6683af0333cf05d02db8d61"
+          },
+          "loop": {
+            "start": 5776,
+            "end": 7296
+          }
+        }
+      ]
+    }
+  }
+}

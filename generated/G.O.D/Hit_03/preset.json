@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "G.O.D.",
+    "snes": {
+      "srcn": 3,
+      "character": "one-shot",
+      "pcmLength": 4048,
+      "brrLength": 2277,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 162,
+      "gain": 158,
+      "pitchRegister": 2829
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "760bbffd8d60cf36c9ad35037371a892a6f2f9d83bad9b6ea550243abb07fa1b"
+          }
+        }
+      ]
+    }
+  }
+}

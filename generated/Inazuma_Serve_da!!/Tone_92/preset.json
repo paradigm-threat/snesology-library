@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Inazuma Serve da!!",
+    "snes": {
+      "srcn": 92,
+      "character": "tone",
+      "pcmLength": 688,
+      "brrLength": 387,
+      "hasLoop": true,
+      "loopStartPcm": 110448
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "01f52ef67a2246a1e5f71bd13d2a1cf68a295de31881c62b694cfa203ba75b31"
+          },
+          "loop": {
+            "start": 110448,
+            "end": 688
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "N-Warp Daisakusen",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 39552,
+      "brrLength": 22248,
+      "hasLoop": true,
+      "loopStartPcm": 33328
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8e8f6caf68ce7b21eaf24634d7f18ca6c88d1760c4eebcc771bd2f75773cb0fc"
+          },
+          "loop": {
+            "start": 33328,
+            "end": 39552
+          }
+        }
+      ]
+    }
+  }
+}

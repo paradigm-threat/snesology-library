@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Chrono Trigger Pre-Release",
+    "snes": {
+      "srcn": 35,
+      "character": "noise",
+      "pcmLength": 16448,
+      "brrLength": 9252,
+      "hasLoop": true,
+      "loopStartPcm": 3312
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1d84c87bb2f5960c1b120f410ebe30c5f64a80c1b10d041cc5580c39bde1aea6"
+          },
+          "loop": {
+            "start": 3312,
+            "end": 16448
+          }
+        }
+      ]
+    }
+  }
+}

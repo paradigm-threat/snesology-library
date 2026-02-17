@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hashire Hebereke",
+    "snes": {
+      "srcn": 11,
+      "character": "tone",
+      "pcmLength": 2912,
+      "brrLength": 1638,
+      "hasLoop": true,
+      "loopStartPcm": 2512
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b9c3b56c5c47825c9bc6581fbed997d09af087a21ff1184d70d10c2a9eb6c4a7"
+          },
+          "loop": {
+            "start": 2512,
+            "end": 2912
+          }
+        }
+      ]
+    }
+  }
+}

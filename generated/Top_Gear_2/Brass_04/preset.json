@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Brass",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Top Gear 2",
+    "snes": {
+      "srcn": 4,
+      "character": "tone",
+      "pcmLength": 3328,
+      "brrLength": 1872,
+      "hasLoop": true,
+      "loopStartPcm": 3216,
+      "adsr1": 188,
+      "adsr2": 119,
+      "gain": 127,
+      "pitchRegister": 2349
+    },
+    "communityName": "brass",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9ae1fa49c6fdae886a4f566b007e97ea2377c028597e5a9c59c8f215124b2c20"
+          },
+          "loop": {
+            "start": 3216,
+            "end": 3328
+          }
+        }
+      ]
+    }
+  }
+}

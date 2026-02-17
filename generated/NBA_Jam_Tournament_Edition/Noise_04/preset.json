@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "NBA Jam Tournament Edition",
+    "snes": {
+      "srcn": 4,
+      "character": "noise",
+      "pcmLength": 31024,
+      "brrLength": 17451,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 231,
+      "gain": 159,
+      "pitchRegister": 3725
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "32fc92838cd60b8a7aba903017504d149957848d5ca7be8c1e20d02f1db55cd7"
+          }
+        }
+      ]
+    }
+  }
+}

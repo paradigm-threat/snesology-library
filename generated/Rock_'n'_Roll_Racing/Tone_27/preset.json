@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Rock 'n' Roll Racing",
+    "snes": {
+      "srcn": 27,
+      "character": "tone",
+      "pcmLength": 2816,
+      "brrLength": 1584,
+      "hasLoop": true,
+      "loopStartPcm": 2576,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 119,
+      "pitchRegister": 1435
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "08362d34a22e334d445951fb3c6bc025a14fdfb88ef4686c3d12f91b71dfda5f"
+          },
+          "loop": {
+            "start": 2576,
+            "end": 2816
+          }
+        }
+      ]
+    }
+  }
+}

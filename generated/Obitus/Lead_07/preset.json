@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Obitus",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 13456,
+      "brrLength": 7569,
+      "hasLoop": true,
+      "loopStartPcm": 12768,
+      "adsr1": 157,
+      "adsr2": 131,
+      "gain": 0,
+      "pitchRegister": 1534
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "53c50a96d82b17ab34f57b983192a1560228f2224f324db6f9fd52bf31d6057b"
+          },
+          "loop": {
+            "start": 12768,
+            "end": 13456
+          }
+        }
+      ]
+    }
+  }
+}

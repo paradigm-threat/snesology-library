@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zootto Mahjong!",
+    "snes": {
+      "srcn": 70,
+      "character": "melodic",
+      "pcmLength": 5648,
+      "brrLength": 3177,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 249,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2573
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "77c38d9ca0e6ad5e63d46ed4ed0de146d33f7a6546c740409bf25afb98ec402b"
+          },
+          "loop": {
+            "start": 48,
+            "end": 5648
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Fire Pro Wrestling X",
+    "snes": {
+      "srcn": 80,
+      "character": "melodic",
+      "pcmLength": 9680,
+      "brrLength": 5445,
+      "hasLoop": true,
+      "loopStartPcm": 3392,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1186
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "134283a2a213fa5ba31dd981a1469a4f56199b5dd85bf1dad65b752088c86fa7"
+          },
+          "loop": {
+            "start": 3392,
+            "end": 9680
+          }
+        }
+      ]
+    }
+  }
+}

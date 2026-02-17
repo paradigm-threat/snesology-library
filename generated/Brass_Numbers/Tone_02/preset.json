@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Brass Numbers",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 1584,
+      "brrLength": 891,
+      "hasLoop": true,
+      "loopStartPcm": 1536,
+      "adsr1": 143,
+      "adsr2": 238,
+      "gain": 143,
+      "pitchRegister": 2060
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "754d6e558b96f330667d0752f4ec47cc2ca9dd85422de84a7be11c137654fa74"
+          },
+          "loop": {
+            "start": 1536,
+            "end": 1584
+          }
+        }
+      ]
+    }
+  }
+}

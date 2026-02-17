@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Snare LO",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earthworm Jim",
+    "snes": {
+      "srcn": 8,
+      "character": "noise",
+      "pcmLength": 3456,
+      "brrLength": 1944,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 237,
+      "gain": 110,
+      "pitchRegister": 1331
+    },
+    "communityName": "perc_snare_lo",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "61103526af807997418aafc58be2235ef5ebd82372fd2911bc2f1cf527bc29f7"
+          }
+        }
+      ]
+    }
+  }
+}

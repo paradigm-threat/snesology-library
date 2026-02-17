@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Seijuu Maden - Beasts & Blades",
+    "snes": {
+      "srcn": 67,
+      "character": "one-shot",
+      "pcmLength": 1024,
+      "brrLength": 576,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "16b689cac5853b48db2189be4590f6c0f66ed99d03c3331609d8e80aecab3ec6"
+          }
+        }
+      ]
+    }
+  }
+}

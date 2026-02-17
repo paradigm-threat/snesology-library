@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Riverse Kids",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 208,
+      "brrLength": 117,
+      "hasLoop": true,
+      "loopStartPcm": 32,
+      "adsr1": 252,
+      "adsr2": 242,
+      "gain": 184,
+      "pitchRegister": 981
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4f304c6246a7c351fbd9cde780de0cd5b2ddea0466c11d9a3236db355014d0f0"
+          },
+          "loop": {
+            "start": 32,
+            "end": 208
+          }
+        }
+      ]
+    }
+  }
+}

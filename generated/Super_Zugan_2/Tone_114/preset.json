@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Zugan 2",
+    "snes": {
+      "srcn": 114,
+      "character": "tone",
+      "pcmLength": 1360,
+      "brrLength": 765,
+      "hasLoop": true,
+      "loopStartPcm": 58176
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ee1bd2b13f7b18d1a60a54b3bd23ce8a6e949ac338f79064697b1d60681875f0"
+          },
+          "loop": {
+            "start": 58176,
+            "end": 1360
+          }
+        }
+      ]
+    }
+  }
+}

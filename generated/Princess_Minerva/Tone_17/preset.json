@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Princess Minerva",
+    "snes": {
+      "srcn": 17,
+      "character": "tone",
+      "pcmLength": 1360,
+      "brrLength": 765,
+      "hasLoop": true,
+      "loopStartPcm": 1328,
+      "adsr1": 223,
+      "adsr2": 231,
+      "gain": 184,
+      "pitchRegister": 1862
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "235a82e25848c0818d21268c52871b61a96cb10951a7158beb05110355a6e3bd"
+          },
+          "loop": {
+            "start": 1328,
+            "end": 1360
+          }
+        }
+      ]
+    }
+  }
+}

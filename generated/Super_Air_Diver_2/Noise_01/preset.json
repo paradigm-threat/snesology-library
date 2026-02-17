@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Air Diver 2",
+    "snes": {
+      "srcn": 1,
+      "character": "noise",
+      "pcmLength": 9200,
+      "brrLength": 5175,
+      "hasLoop": true,
+      "loopStartPcm": 2896,
+      "adsr1": 253,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2089
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6037baa7a19293e32024591ca8c708ef8abcc4f2e68893f39ce424ce2f7ed03c"
+          },
+          "loop": {
+            "start": 2896,
+            "end": 9200
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Hat Open",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Lion King",
+    "snes": {
+      "srcn": 44,
+      "character": "noise",
+      "pcmLength": 5504,
+      "brrLength": 3096,
+      "hasLoop": true,
+      "loopStartPcm": 3952
+    },
+    "communityName": "perc_hat_open",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f02b9cec4be32b73c973c2052573eb578d43d0384b2d01ba0a9dbe299d322d16"
+          },
+          "loop": {
+            "start": 3952,
+            "end": 5504
+          }
+        }
+      ]
+    }
+  }
+}

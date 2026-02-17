@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zig Zag Cat",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 9792,
+      "brrLength": 5508,
+      "hasLoop": true,
+      "loopStartPcm": 6496
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4919cb0be69194104c5ef623f1edabfa3714d136fc690a00f36565317254c009"
+          },
+          "loop": {
+            "start": 6496,
+            "end": 9792
+          }
+        }
+      ]
+    }
+  }
+}

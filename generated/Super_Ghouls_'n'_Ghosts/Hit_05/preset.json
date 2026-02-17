@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Ghouls 'n' Ghosts",
+    "snes": {
+      "srcn": 5,
+      "character": "one-shot",
+      "pcmLength": 7008,
+      "brrLength": 3942,
+      "hasLoop": false,
+      "adsr1": 127,
+      "adsr2": 224,
+      "gain": 176,
+      "pitchRegister": 624
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9fdd8f6c67f9421e1f46189d98baeee8e407ab2ed8537258509d225743cbfbae"
+          }
+        }
+      ]
+    }
+  }
+}

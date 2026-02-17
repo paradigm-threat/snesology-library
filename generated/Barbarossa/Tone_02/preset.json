@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Barbarossa",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 2960,
+      "brrLength": 1665,
+      "hasLoop": true,
+      "loopStartPcm": 2848,
+      "adsr1": 143,
+      "adsr2": 225,
+      "gain": 184,
+      "pitchRegister": 922
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8400639fcf2457fd3db6fd281a6592a64b34fda00e3bf4b1b03d2f3299db785a"
+          },
+          "loop": {
+            "start": 2848,
+            "end": 2960
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Bass Slap2",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Back to the Future 2",
+    "snes": {
+      "srcn": 12,
+      "character": "tone",
+      "pcmLength": 2896,
+      "brrLength": 1629,
+      "hasLoop": true,
+      "loopStartPcm": 2080
+    },
+    "communityName": "bass_slap2",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "882b110dd137a74d81a4bfed1d15e2fd30d211ca38b6db4c7f676d09666b0f3b"
+          },
+          "loop": {
+            "start": 2080,
+            "end": 2896
+          }
+        }
+      ]
+    }
+  }
+}

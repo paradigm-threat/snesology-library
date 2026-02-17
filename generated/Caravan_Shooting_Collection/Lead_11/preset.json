@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Caravan Shooting Collection",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 4208,
+      "brrLength": 2367,
+      "hasLoop": true,
+      "loopStartPcm": 2352
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b4004b5068db291defbc83284dc4ef1894a74fa081db9e0b46ab25116f4e966d"
+          },
+          "loop": {
+            "start": 2352,
+            "end": 4208
+          }
+        }
+      ]
+    }
+  }
+}

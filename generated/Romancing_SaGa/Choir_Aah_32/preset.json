@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Choir Aah",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Romancing SaGa",
+    "snes": {
+      "srcn": 32,
+      "character": "melodic",
+      "pcmLength": 29136,
+      "brrLength": 16389,
+      "hasLoop": true,
+      "loopStartPcm": 18752,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 160,
+      "pitchRegister": 0
+    },
+    "communityName": "choir_aah",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "460058bcfc53fa1355bcde973691f450be998818ddf16afbb69d95985b4cdf06"
+          },
+          "loop": {
+            "start": 18752,
+            "end": 29136
+          }
+        }
+      ]
+    }
+  }
+}

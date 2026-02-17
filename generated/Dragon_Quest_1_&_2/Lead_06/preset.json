@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Quest 1 & 2",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 7152,
+      "brrLength": 4023,
+      "hasLoop": true,
+      "loopStartPcm": 6672,
+      "adsr1": 158,
+      "adsr2": 198,
+      "gain": 0,
+      "pitchRegister": 5099
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3c72d20ebc86c1af9795f0db55cbfafc5231cf434e33c1ad18f2830a406c3eaa"
+          },
+          "loop": {
+            "start": 6672,
+            "end": 7152
+          }
+        }
+      ]
+    }
+  }
+}

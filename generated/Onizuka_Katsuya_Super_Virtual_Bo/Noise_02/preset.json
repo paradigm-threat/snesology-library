@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Onizuka Katsuya Super Virtual Bo",
+    "snes": {
+      "srcn": 2,
+      "character": "noise",
+      "pcmLength": 1360,
+      "brrLength": 765,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 184,
+      "pitchRegister": 2541
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1a4bd2260be58dc8e6373e5c8fc2b1a18fd8c3fc7771ae9858656df5c33f9604"
+          }
+        }
+      ]
+    }
+  }
+}

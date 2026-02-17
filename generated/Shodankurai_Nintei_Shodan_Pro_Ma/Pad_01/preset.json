@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shodankurai Nintei Shodan Pro Ma",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 8464,
+      "brrLength": 4761,
+      "hasLoop": true,
+      "loopStartPcm": 2832,
+      "adsr1": 0,
+      "adsr2": 224,
+      "gain": 158,
+      "pitchRegister": 8100
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "610a25d1741e26766ce39c28810e1797a3471852e6587d85fff1f88ed4177f1d"
+          },
+          "loop": {
+            "start": 2832,
+            "end": 8464
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jissen! Mahjong Shinan",
+    "snes": {
+      "srcn": 6,
+      "character": "tone",
+      "pcmLength": 2208,
+      "brrLength": 1242,
+      "hasLoop": true,
+      "loopStartPcm": 2096,
+      "adsr1": 143,
+      "adsr2": 0,
+      "gain": 184,
+      "pitchRegister": 5614
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9aa9fe2ee7ce69a46f282e6b87245f52ae7f3f019a629435a62feb37f5aac805"
+          },
+          "loop": {
+            "start": 2096,
+            "end": 2208
+          }
+        }
+      ]
+    }
+  }
+}

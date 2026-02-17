@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sangokushi 4",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 9600,
+      "brrLength": 5400,
+      "hasLoop": true,
+      "loopStartPcm": 3360
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a777e8dc3bcea18c0c71443a85e5bc19a2e104f6ed502f5259a6e756e5356d9b"
+          },
+          "loop": {
+            "start": 3360,
+            "end": 9600
+          }
+        }
+      ]
+    }
+  }
+}

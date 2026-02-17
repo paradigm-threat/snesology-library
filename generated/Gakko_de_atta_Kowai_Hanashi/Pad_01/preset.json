@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Gakko de atta Kowai Hanashi",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 7744,
+      "brrLength": 4356,
+      "hasLoop": true,
+      "loopStartPcm": 2160,
+      "adsr1": 235,
+      "adsr2": 237,
+      "gain": 0,
+      "pitchRegister": 912
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "10f23c821a5284bf407ebd510dfa71934d8046ffb36b959c2f38a1bcbfe7338b"
+          },
+          "loop": {
+            "start": 2160,
+            "end": 7744
+          }
+        }
+      ]
+    }
+  }
+}

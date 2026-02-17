@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Bass Slap",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Vegas Stakes",
+    "snes": {
+      "srcn": 21,
+      "character": "tone",
+      "pcmLength": 3104,
+      "brrLength": 1746,
+      "hasLoop": true,
+      "loopStartPcm": 2880,
+      "adsr1": 143,
+      "adsr2": 239,
+      "gain": 184,
+      "pitchRegister": 2480
+    },
+    "communityName": "bass_slap",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4fb866e2205b9c8653f08ba3b78d4cd6e1ac475b690cd733559a6dd4ba8a4f9a"
+          },
+          "loop": {
+            "start": 2880,
+            "end": 3104
+          }
+        }
+      ]
+    }
+  }
+}

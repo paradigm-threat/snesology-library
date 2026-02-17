@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Pro Quarterback",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 6912,
+      "brrLength": 3888,
+      "hasLoop": true,
+      "loopStartPcm": 64
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e26f36b37d3f48d3a3169f20e95d0469406b1f6855a715d6c94a401d66e0a036"
+          },
+          "loop": {
+            "start": 64,
+            "end": 6912
+          }
+        }
+      ]
+    }
+  }
+}

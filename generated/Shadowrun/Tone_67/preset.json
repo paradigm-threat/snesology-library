@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shadowrun",
+    "snes": {
+      "srcn": 67,
+      "character": "tone",
+      "pcmLength": 2384,
+      "brrLength": 1341,
+      "hasLoop": true,
+      "loopStartPcm": 10720
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "90def5751263a485e762e6b1a0b006ca12019fa0b10d7500026094be25deea55"
+          },
+          "loop": {
+            "start": 10720,
+            "end": 2384
+          }
+        }
+      ]
+    }
+  }
+}

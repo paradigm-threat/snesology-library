@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kirby Super Star",
+    "snes": {
+      "srcn": 49,
+      "character": "tone",
+      "pcmLength": 3712,
+      "brrLength": 2088,
+      "hasLoop": true,
+      "loopStartPcm": 2736,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 5139
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "da88f494a7bd5892b687c829b83d7c9d325014c5f443374ee8f7860314226800"
+          },
+          "loop": {
+            "start": 2736,
+            "end": 3712
+          }
+        }
+      ]
+    }
+  }
+}

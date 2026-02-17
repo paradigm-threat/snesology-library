@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Untouchables",
+    "snes": {
+      "srcn": 15,
+      "character": "tone",
+      "pcmLength": 2864,
+      "brrLength": 1611,
+      "hasLoop": true,
+      "loopStartPcm": 32
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c65f01702383fa36243ee401c32c5d9f1f8ae0a958087686fafdb355e4995e9d"
+          },
+          "loop": {
+            "start": 32,
+            "end": 2864
+          }
+        }
+      ]
+    }
+  }
+}

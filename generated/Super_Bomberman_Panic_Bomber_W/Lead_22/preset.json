@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Bomberman Panic Bomber W",
+    "snes": {
+      "srcn": 22,
+      "character": "melodic",
+      "pcmLength": 6912,
+      "brrLength": 3888,
+      "hasLoop": true,
+      "loopStartPcm": 4944
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "456229544fdcd2bd03a2f87c55c0eba06e753a75c4d5ac789250adeecbb53360"
+          },
+          "loop": {
+            "start": 4944,
+            "end": 6912
+          }
+        }
+      ]
+    }
+  }
+}

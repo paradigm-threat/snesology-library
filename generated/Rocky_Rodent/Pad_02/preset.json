@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Rocky Rodent",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 36624,
+      "brrLength": 20601,
+      "hasLoop": true,
+      "loopStartPcm": 1600
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b9f50c5ce970d3ae892b3d48ccfde9c7ec66941fc42155944ac2f51e9cbb86a4"
+          },
+          "loop": {
+            "start": 1600,
+            "end": 36624
+          }
+        }
+      ]
+    }
+  }
+}

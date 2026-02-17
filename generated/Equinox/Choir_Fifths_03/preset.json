@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Choir Fifths",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Equinox",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 10192,
+      "brrLength": 5733,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 0,
+      "pitchRegister": 1052
+    },
+    "communityName": "choir_fifths",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "98066935695fd45ce364082f8a46020b0cfb21918764dbb463f4db659ba5fa18"
+          },
+          "loop": {
+            "start": 16,
+            "end": 10192
+          }
+        }
+      ]
+    }
+  }
+}

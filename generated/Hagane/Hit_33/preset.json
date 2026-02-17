@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hagane",
+    "snes": {
+      "srcn": 33,
+      "character": "one-shot",
+      "pcmLength": 13936,
+      "brrLength": 7839,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 192,
+      "gain": 159,
+      "pitchRegister": 301
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9ecd7ed1036fafb324e2180a380a9ccf075160b1f1778b088e79092ba4a3f53b"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "NFL Quarterback Club",
+    "snes": {
+      "srcn": 1,
+      "character": "one-shot",
+      "pcmLength": 5280,
+      "brrLength": 2970,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 232,
+      "gain": 127,
+      "pitchRegister": 2739
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a853c753d9425500cae691d66e7644822455990d44a2b18be60fe10cc1945f65"
+          }
+        }
+      ]
+    }
+  }
+}

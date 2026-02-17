@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Human Grand Prix 4",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 2272,
+      "brrLength": 1278,
+      "hasLoop": true,
+      "loopStartPcm": 1424,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 4965
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "67a3427bc88ad1e5a8a6daa19b2783860cd25cf4cc249d8015706c95556685e5"
+          },
+          "loop": {
+            "start": 1424,
+            "end": 2272
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hebereke no Oishii Puzzle wa Iri",
+    "snes": {
+      "srcn": 13,
+      "character": "noise",
+      "pcmLength": 4160,
+      "brrLength": 2340,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 240,
+      "gain": 186,
+      "pitchRegister": 1217
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "df0a0391ca12ef2dc54ef23b417e4abad7bdc25fc6bf2ff7e1e303705c4c0234"
+          }
+        }
+      ]
+    }
+  }
+}

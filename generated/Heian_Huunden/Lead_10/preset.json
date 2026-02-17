@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Heian Huunden",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 4768,
+      "brrLength": 2682,
+      "hasLoop": true,
+      "loopStartPcm": 4048,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 4112
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3158c1b8cffcf417c9b8d019ab5c923fa11d7f2f466c87a7032900d876212a6e"
+          },
+          "loop": {
+            "start": 4048,
+            "end": 4768
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Skuljagger",
+    "snes": {
+      "srcn": 2,
+      "character": "melodic",
+      "pcmLength": 10048,
+      "brrLength": 5652,
+      "hasLoop": true,
+      "loopStartPcm": 48,
+      "adsr1": 138,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 2700
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0e02f952c7d0b29dfe928f9df23362c43f84d20d2e60d0fa47e91b5d0d62cee2"
+          },
+          "loop": {
+            "start": 48,
+            "end": 10048
+          }
+        }
+      ]
+    }
+  }
+}

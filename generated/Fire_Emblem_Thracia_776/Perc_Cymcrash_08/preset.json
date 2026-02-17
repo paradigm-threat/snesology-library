@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Cymcrash",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Fire Emblem Thracia 776",
+    "snes": {
+      "srcn": 8,
+      "character": "noise",
+      "pcmLength": 14592,
+      "brrLength": 8208,
+      "hasLoop": true,
+      "loopStartPcm": 6016
+    },
+    "communityName": "perc_cymcrash",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "00ada74fe955542585330191aa5e532c375bc8aeb1b52106d5900dd5009e1eb4"
+          },
+          "loop": {
+            "start": 6016,
+            "end": 14592
+          }
+        }
+      ]
+    }
+  }
+}

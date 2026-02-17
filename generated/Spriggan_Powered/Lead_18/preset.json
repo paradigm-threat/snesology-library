@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Spriggan Powered",
+    "snes": {
+      "srcn": 18,
+      "character": "melodic",
+      "pcmLength": 9008,
+      "brrLength": 5067,
+      "hasLoop": true,
+      "loopStartPcm": 8912,
+      "adsr1": 0,
+      "adsr2": 240,
+      "gain": 158,
+      "pitchRegister": 4527
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c88ec2742a50ce339a06ed51489fc9139cc1d93b82a5b04b484e8a26bab3bcae"
+          },
+          "loop": {
+            "start": 8912,
+            "end": 9008
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Cymbal Crash",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Donald Duck: Mahou no Boushi",
+    "snes": {
+      "srcn": 26,
+      "character": "noise",
+      "pcmLength": 7632,
+      "brrLength": 4293,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2385
+    },
+    "communityName": "perc_cymbal_crash",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "349d2a2faefd0eadf4e6f2aab408257b467f5b4bd8697c993d66910308ebc622"
+          }
+        }
+      ]
+    }
+  }
+}

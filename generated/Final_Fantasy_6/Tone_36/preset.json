@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Final Fantasy 6",
+    "snes": {
+      "srcn": 36,
+      "character": "tone",
+      "pcmLength": 2288,
+      "brrLength": 1287,
+      "hasLoop": true,
+      "loopStartPcm": 2240
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1e0e04fcbc36eada41984134d3e316e8c26e381409edf924f7d464a1ae5043d3"
+          },
+          "loop": {
+            "start": 2240,
+            "end": 2288
+          }
+        }
+      ]
+    }
+  }
+}

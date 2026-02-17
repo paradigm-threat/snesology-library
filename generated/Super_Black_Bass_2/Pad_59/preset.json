@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Black Bass 2",
+    "snes": {
+      "srcn": 59,
+      "character": "melodic",
+      "pcmLength": 4864,
+      "brrLength": 2736,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ecea81d59820c1783cce37b0a7da810551fa13b2c7b040546adf422c0d9b8559"
+          },
+          "loop": {
+            "start": 16,
+            "end": 4864
+          }
+        }
+      ]
+    }
+  }
+}

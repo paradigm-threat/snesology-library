@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Wayne Gretzky and the NHLPA All-",
+    "snes": {
+      "srcn": 7,
+      "character": "melodic",
+      "pcmLength": 21488,
+      "brrLength": 12087,
+      "hasLoop": true,
+      "loopStartPcm": 10192
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "cffdc2dd4ca55818a3efb5007a0b37a8fc8365d3aa844c00859e492d6eb0f1c3"
+          },
+          "loop": {
+            "start": 10192,
+            "end": 21488
+          }
+        }
+      ]
+    }
+  }
+}

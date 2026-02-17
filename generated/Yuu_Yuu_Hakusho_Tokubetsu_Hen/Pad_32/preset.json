@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Yuu Yuu Hakusho: Tokubetsu Hen",
+    "snes": {
+      "srcn": 32,
+      "character": "melodic",
+      "pcmLength": 5824,
+      "brrLength": 3276,
+      "hasLoop": true,
+      "loopStartPcm": 1728,
+      "adsr1": 127,
+      "adsr2": 224,
+      "gain": 127,
+      "pitchRegister": 3592
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4d31733061da1d852184142b8b28f03beaab1e73ec04c724d0587dac8a91cdb7"
+          },
+          "loop": {
+            "start": 1728,
+            "end": 5824
+          }
+        }
+      ]
+    }
+  }
+}

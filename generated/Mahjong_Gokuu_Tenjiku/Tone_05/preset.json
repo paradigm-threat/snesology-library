@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Mahjong Gokuu Tenjiku",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 832,
+      "brrLength": 468,
+      "hasLoop": true,
+      "loopStartPcm": 672,
+      "adsr1": 254,
+      "adsr2": 241,
+      "gain": 180,
+      "pitchRegister": 2020
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "602880efaaa05d1279d292ea77e9762d3c9190b26aa1db658466412cb8390dc9"
+          },
+          "loop": {
+            "start": 672,
+            "end": 832
+          }
+        }
+      ]
+    }
+  }
+}

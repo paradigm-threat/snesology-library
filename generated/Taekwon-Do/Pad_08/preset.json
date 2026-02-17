@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Taekwon-Do",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 5424,
+      "brrLength": 3051,
+      "hasLoop": true,
+      "loopStartPcm": 1584,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 682
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "89b04d777a8e05e7a3719bfb5b67341664619bbe497f9bcad0708df809511131"
+          },
+          "loop": {
+            "start": 1584,
+            "end": 5424
+          }
+        }
+      ]
+    }
+  }
+}

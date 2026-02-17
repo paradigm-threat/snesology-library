@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zakuro no Aji",
+    "snes": {
+      "srcn": 16,
+      "character": "melodic",
+      "pcmLength": 8192,
+      "brrLength": 4608,
+      "hasLoop": true,
+      "loopStartPcm": 7376,
+      "adsr1": 143,
+      "adsr2": 239,
+      "gain": 127,
+      "pitchRegister": 3042
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "eddc680ecaa4226385c879c0ebe1fd55a707c5559a56608f4ecca6dfd71dcaee"
+          },
+          "loop": {
+            "start": 7376,
+            "end": 8192
+          }
+        }
+      ]
+    }
+  }
+}

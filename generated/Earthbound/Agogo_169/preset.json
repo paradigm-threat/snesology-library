@@ -1,0 +1,49 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Agogo",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earthbound",
+    "snes": {
+      "srcn": 169,
+      "character": "noise",
+      "pcmLength": 7200,
+      "brrLength": 4050,
+      "hasLoop": true
+    },
+    "communityName": "agogo",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2bc5651da280a782046b94743a9dbd69ab7aafa5d70c2e744b26a447dadef912"
+          }
+        }
+      ]
+    }
+  }
+}

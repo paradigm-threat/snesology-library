@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jungle Strike",
+    "snes": {
+      "srcn": 16,
+      "character": "one-shot",
+      "pcmLength": 3904,
+      "brrLength": 2196,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 255,
+      "gain": 127,
+      "pitchRegister": 1308
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a9e82e6904453ad51729fdc1c05bf0aae2dc29d03a0ea381c672d5c93dfb00fa"
+          }
+        }
+      ]
+    }
+  }
+}

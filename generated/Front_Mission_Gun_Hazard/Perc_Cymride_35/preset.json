@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Cymride",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Front Mission: Gun Hazard",
+    "snes": {
+      "srcn": 35,
+      "character": "melodic",
+      "pcmLength": 8400,
+      "brrLength": 4725,
+      "hasLoop": true,
+      "loopStartPcm": 3040,
+      "adsr1": 255,
+      "adsr2": 242,
+      "gain": 160,
+      "pitchRegister": 3649
+    },
+    "communityName": "perc_cymride",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3f7ad290df078b34e3b17fbee95564617924afa4edf2158b607e4aa344c33271"
+          },
+          "loop": {
+            "start": 3040,
+            "end": 8400
+          }
+        }
+      ]
+    }
+  }
+}

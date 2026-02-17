@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Eien no Filena",
+    "snes": {
+      "srcn": 48,
+      "character": "melodic",
+      "pcmLength": 15744,
+      "brrLength": 8856,
+      "hasLoop": true,
+      "loopStartPcm": 0,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 30,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "059b97b70ba1a194c32dbed8c0c4d72e23724c6eb18c6f07f6d4fdfc9ef5ee63"
+          },
+          "loop": {
+            "start": 0,
+            "end": 15744
+          }
+        }
+      ]
+    }
+  }
+}

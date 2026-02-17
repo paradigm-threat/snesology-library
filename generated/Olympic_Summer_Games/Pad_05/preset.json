@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Olympic Summer Games",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 6224,
+      "brrLength": 3501,
+      "hasLoop": true,
+      "loopStartPcm": 1200,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 5,
+      "pitchRegister": 1555
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fb7274fe9ab921466ef8bcf00c2d1778c3a4df014d3cb288d7e619153c63c4c4"
+          },
+          "loop": {
+            "start": 1200,
+            "end": 6224
+          }
+        }
+      ]
+    }
+  }
+}

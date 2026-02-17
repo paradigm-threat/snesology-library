@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Saibara Rieko no Mahjong Hourouk",
+    "snes": {
+      "srcn": 32,
+      "character": "one-shot",
+      "pcmLength": 5120,
+      "brrLength": 2880,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "a88dc4663139a9a1f7769337b3c19e78d32e8f9ed96a709b6a9a5b16d0bd6a52"
+          }
+        }
+      ]
+    }
+  }
+}

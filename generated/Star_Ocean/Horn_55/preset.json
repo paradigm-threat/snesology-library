@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Horn",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Star Ocean",
+    "snes": {
+      "srcn": 55,
+      "character": "melodic",
+      "pcmLength": 7232,
+      "brrLength": 4068,
+      "hasLoop": true,
+      "loopStartPcm": 7104
+    },
+    "communityName": "horn",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5c8de7da856f8c9db44e833811b3d7270da173f0b6a55511167b08784621df95"
+          },
+          "loop": {
+            "start": 7104,
+            "end": 7232
+          }
+        }
+      ]
+    }
+  }
+}

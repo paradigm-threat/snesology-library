@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Estpolis Denki 2 Prototype",
+    "snes": {
+      "srcn": 0,
+      "character": "one-shot",
+      "pcmLength": 2912,
+      "brrLength": 1638,
+      "hasLoop": false,
+      "adsr1": 255,
+      "adsr2": 252,
+      "gain": 0,
+      "pitchRegister": 5680
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0f1557f6b11080b4808b7f58163361e3395383146b02c720eade786f9d1acc4a"
+          }
+        }
+      ]
+    }
+  }
+}

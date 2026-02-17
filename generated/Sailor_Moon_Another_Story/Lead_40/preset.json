@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sailor Moon: Another Story",
+    "snes": {
+      "srcn": 40,
+      "character": "melodic",
+      "pcmLength": 4064,
+      "brrLength": 2286,
+      "hasLoop": true,
+      "loopStartPcm": 4144
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3c7ed278b6212b55beb0f080a68728498deb3828c96f226e79559769198453c3"
+          },
+          "loop": {
+            "start": 4144,
+            "end": 4064
+          }
+        }
+      ]
+    }
+  }
+}

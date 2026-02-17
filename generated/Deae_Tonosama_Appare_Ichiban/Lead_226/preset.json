@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Deae Tonosama Appare Ichiban",
+    "snes": {
+      "srcn": 226,
+      "character": "melodic",
+      "pcmLength": 16544,
+      "brrLength": 9306,
+      "hasLoop": true,
+      "loopStartPcm": 28400
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4d22b9c60de740060ceb57d5f49327acbda8beeac115859d873f68d4671bfc12"
+          },
+          "loop": {
+            "start": 28400,
+            "end": 16544
+          }
+        }
+      ]
+    }
+  }
+}

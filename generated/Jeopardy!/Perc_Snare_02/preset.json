@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Snare",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jeopardy!",
+    "snes": {
+      "srcn": 2,
+      "character": "one-shot",
+      "pcmLength": 3264,
+      "brrLength": 1836,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 225,
+      "gain": 127,
+      "pitchRegister": 1084
+    },
+    "communityName": "perc_snare",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8d7c05fb803668206c75fbba95d3d58fa683a0f7c026a504c808870dafc28b75"
+          }
+        }
+      ]
+    }
+  }
+}

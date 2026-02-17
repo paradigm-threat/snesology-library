@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "First Queen",
+    "snes": {
+      "srcn": 173,
+      "character": "melodic",
+      "pcmLength": 9744,
+      "brrLength": 5481,
+      "hasLoop": true,
+      "loopStartPcm": 33936
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ae7765b180adc3b6a41179c3a55bbc76d86977c5ca62f0509fce580722b1ba14"
+          },
+          "loop": {
+            "start": 33936,
+            "end": 9744
+          }
+        }
+      ]
+    }
+  }
+}

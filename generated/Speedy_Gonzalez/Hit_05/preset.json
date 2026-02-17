@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Speedy Gonzalez",
+    "snes": {
+      "srcn": 5,
+      "character": "one-shot",
+      "pcmLength": 1584,
+      "brrLength": 891,
+      "hasLoop": false,
+      "adsr1": 222,
+      "adsr2": 250,
+      "gain": 0,
+      "pitchRegister": 4096
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c4239f801e17c528da038de4eb49e690405cde0f215da1a11bc5481bec8011f6"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Spookywhir",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Quest 5",
+    "snes": {
+      "srcn": 193,
+      "character": "tone",
+      "pcmLength": 1456,
+      "brrLength": 819,
+      "hasLoop": true,
+      "loopStartPcm": 0
+    },
+    "communityName": "sfx_spookywhir",
+    "matchConfidence": 0.9
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8f6fe4014fb39fde03b7347f5a76064562ccb277ae4636bbf9cf8a0c274b3e5d"
+          },
+          "loop": {
+            "start": 0,
+            "end": 1456
+          }
+        }
+      ]
+    }
+  }
+}

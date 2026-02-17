@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bomberman B-Daman",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 4896,
+      "brrLength": 2754,
+      "hasLoop": true,
+      "loopStartPcm": 3136,
+      "adsr1": 0,
+      "adsr2": 246,
+      "gain": 159,
+      "pitchRegister": 10607
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3e31efde1b1cb4fe182d8f7a633e04a2e6e242121058aaa9fe44cd0b746f26fb"
+          },
+          "loop": {
+            "start": 3136,
+            "end": 4896
+          }
+        }
+      ]
+    }
+  }
+}

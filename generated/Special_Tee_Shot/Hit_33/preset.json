@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Special Tee Shot",
+    "snes": {
+      "srcn": 33,
+      "character": "one-shot",
+      "pcmLength": 1280,
+      "brrLength": 720,
+      "hasLoop": false,
+      "adsr1": 138,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 2868
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "fd2576cb7dc3e03e04bcf70b68aa553dd31d252f5b02dabbe0dc3040ed5dda80"
+          }
+        }
+      ]
+    }
+  }
+}

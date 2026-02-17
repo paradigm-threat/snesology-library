@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Taikyoku Igo Idaten",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 6640,
+      "brrLength": 3735,
+      "hasLoop": true,
+      "loopStartPcm": 736,
+      "adsr1": 253,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 6894
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "80f311fcd13ac5e0175efbec3549be2537002ea50a773858a9c7d470af491b09"
+          },
+          "loop": {
+            "start": 736,
+            "end": 6640
+          }
+        }
+      ]
+    }
+  }
+}

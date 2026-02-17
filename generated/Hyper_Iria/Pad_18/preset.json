@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hyper Iria",
+    "snes": {
+      "srcn": 18,
+      "character": "melodic",
+      "pcmLength": 4016,
+      "brrLength": 2259,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 158,
+      "adsr2": 105,
+      "gain": 184,
+      "pitchRegister": 1940
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "24e1b5d4b5325c008f13cda419dbb9a8e36250e1dad14276433e18055fdd5af0"
+          },
+          "loop": {
+            "start": 16,
+            "end": 4016
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Trombone Section",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Treasure Hunter G",
+    "snes": {
+      "srcn": 32,
+      "character": "tone",
+      "pcmLength": 2640,
+      "brrLength": 1485,
+      "hasLoop": true,
+      "loopStartPcm": 2592,
+      "adsr1": 221,
+      "adsr2": 162,
+      "gain": 191,
+      "pitchRegister": 3812
+    },
+    "communityName": "trombone_section",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "916ab3a879cec0b78cd2b4581c55bde70d0127967030f5ff4fb8a654e843b2e8"
+          },
+          "loop": {
+            "start": 2592,
+            "end": 2640
+          }
+        }
+      ]
+    }
+  }
+}

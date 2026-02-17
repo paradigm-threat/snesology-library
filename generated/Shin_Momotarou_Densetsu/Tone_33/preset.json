@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shin Momotarou Densetsu",
+    "snes": {
+      "srcn": 33,
+      "character": "tone",
+      "pcmLength": 2672,
+      "brrLength": 1503,
+      "hasLoop": true,
+      "loopStartPcm": 1008,
+      "adsr1": 0,
+      "adsr2": 82,
+      "gain": 159,
+      "pitchRegister": 1966
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b2a4df34fa5128ebe18c0296cf5cc42dce3ac87ab574098b127a44bae75c6267"
+          },
+          "loop": {
+            "start": 1008,
+            "end": 2672
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Phantom 2040",
+    "snes": {
+      "srcn": 4,
+      "character": "noise",
+      "pcmLength": 8832,
+      "brrLength": 4968,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b53495b16bc860ee867f0cd60188f3a8f01b814ef97b55313a8f39d52726f928"
+          },
+          "loop": {
+            "start": 16,
+            "end": 8832
+          }
+        }
+      ]
+    }
+  }
+}

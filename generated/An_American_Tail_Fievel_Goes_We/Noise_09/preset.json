@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "An American Tail: Fievel Goes We",
+    "snes": {
+      "srcn": 9,
+      "character": "noise",
+      "pcmLength": 3136,
+      "brrLength": 1764,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 202,
+      "gain": 159,
+      "pitchRegister": 4042
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9b21ab5a8730ca7b4a7d3eafd597efdf372bf14b8015f24eaec85548fb47da62"
+          }
+        }
+      ]
+    }
+  }
+}

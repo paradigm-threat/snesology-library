@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Torneco no Daibouken",
+    "snes": {
+      "srcn": 4,
+      "character": "tone",
+      "pcmLength": 3568,
+      "brrLength": 2007,
+      "hasLoop": true,
+      "loopStartPcm": 2960
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1b2c7abbce0fdd2b11d3986a56b51bb1356759c634f37a14c241568d210077dc"
+          },
+          "loop": {
+            "start": 2960,
+            "end": 3568
+          }
+        }
+      ]
+    }
+  }
+}

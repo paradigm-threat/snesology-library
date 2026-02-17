@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Dany",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 7088,
+      "brrLength": 3987,
+      "hasLoop": true,
+      "loopStartPcm": 3600
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8370c2cb47b794c2582ab96050f2fcafaa1906c2926087175f7f2a7307a1f37f"
+          },
+          "loop": {
+            "start": 3600,
+            "end": 7088
+          }
+        }
+      ]
+    }
+  }
+}

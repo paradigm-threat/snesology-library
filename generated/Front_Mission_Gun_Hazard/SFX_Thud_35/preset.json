@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "SFX Thud",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Front Mission: Gun Hazard",
+    "snes": {
+      "srcn": 35,
+      "character": "noise",
+      "pcmLength": 5392,
+      "brrLength": 3033,
+      "hasLoop": true,
+      "loopStartPcm": 4720,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 160,
+      "pitchRegister": 3350
+    },
+    "communityName": "sfx_thud",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "bb3e79544f0db161f13fb8d8b6d13008ee1770879582134f6b0866d8b55fc3ed"
+          },
+          "loop": {
+            "start": 4720,
+            "end": 5392
+          }
+        }
+      ]
+    }
+  }
+}

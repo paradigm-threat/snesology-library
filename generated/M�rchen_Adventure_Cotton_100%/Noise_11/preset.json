@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "M\ufffdrchen Adventure Cotton 100%",
+    "snes": {
+      "srcn": 11,
+      "character": "noise",
+      "pcmLength": 4480,
+      "brrLength": 2520,
+      "hasLoop": true,
+      "loopStartPcm": 3856,
+      "adsr1": 223,
+      "adsr2": 175,
+      "gain": 175,
+      "pitchRegister": 963
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c87947e85275546de07c4203e832010ddbb4b5be059908e5376a938d1c465a74"
+          },
+          "loop": {
+            "start": 3856,
+            "end": 4480
+          }
+        }
+      ]
+    }
+  }
+}

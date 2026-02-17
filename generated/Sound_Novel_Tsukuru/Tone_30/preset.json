@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sound Novel Tsukuru",
+    "snes": {
+      "srcn": 30,
+      "character": "tone",
+      "pcmLength": 1424,
+      "brrLength": 801,
+      "hasLoop": true,
+      "loopStartPcm": 1376,
+      "adsr1": 175,
+      "adsr2": 110,
+      "gain": 0,
+      "pitchRegister": 1024
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c008885c03dcdf33723805da0f4160d2f135f3de12bdea8ff647b13b11e061cb"
+          },
+          "loop": {
+            "start": 1376,
+            "end": 1424
+          }
+        }
+      ]
+    }
+  }
+}

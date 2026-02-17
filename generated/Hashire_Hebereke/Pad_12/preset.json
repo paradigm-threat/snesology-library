@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hashire Hebereke",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 9520,
+      "brrLength": 5355,
+      "hasLoop": true,
+      "loopStartPcm": 1328
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f42052892a64da49954da62f8e212e9fabece834c6ce0c400d00f8463cc85b4f"
+          },
+          "loop": {
+            "start": 1328,
+            "end": 9520
+          }
+        }
+      ]
+    }
+  }
+}

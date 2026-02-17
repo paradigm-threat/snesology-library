@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Aero the Acro-Bat 2",
+    "snes": {
+      "srcn": 9,
+      "character": "melodic",
+      "pcmLength": 5040,
+      "brrLength": 2835,
+      "hasLoop": true,
+      "loopStartPcm": 688
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9db4e8515643a77914d2db090bfbd1a5740c62617d0cfc8f641360c0762ce9a1"
+          },
+          "loop": {
+            "start": 688,
+            "end": 5040
+          }
+        }
+      ]
+    }
+  }
+}

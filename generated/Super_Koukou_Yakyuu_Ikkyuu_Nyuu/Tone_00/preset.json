@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Koukou Yakyuu: Ikkyuu Nyuu",
+    "snes": {
+      "srcn": 0,
+      "character": "tone",
+      "pcmLength": 2944,
+      "brrLength": 1656,
+      "hasLoop": true,
+      "loopStartPcm": 2896,
+      "adsr1": 255,
+      "adsr2": 240,
+      "gain": 184,
+      "pitchRegister": 1571
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2793e965780d4c272ec3c443054798b88edbfb068395481a0f6b90b86b39e6ad"
+          },
+          "loop": {
+            "start": 2896,
+            "end": 2944
+          }
+        }
+      ]
+    }
+  }
+}

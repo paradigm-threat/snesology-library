@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Downtown Nekketsu Baseball Monog",
+    "snes": {
+      "srcn": 16,
+      "character": "melodic",
+      "pcmLength": 9344,
+      "brrLength": 5256,
+      "hasLoop": true,
+      "loopStartPcm": 8800
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "dc98d85ca9610feebd15a9804327212c505a87d9cb97eb45830e142c19530bbf"
+          },
+          "loop": {
+            "start": 8800,
+            "end": 9344
+          }
+        }
+      ]
+    }
+  }
+}

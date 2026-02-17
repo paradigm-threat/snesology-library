@@ -1,0 +1,46 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sailor Moon S: Kondowa Puzzle de",
+    "snes": {
+      "srcn": 12,
+      "character": "noise",
+      "pcmLength": 9728,
+      "brrLength": 5472,
+      "hasLoop": false
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5238682875dfe70ac4f8942f46cd4a2db4cd0a679511aa61cbf61bc8fb3b419d"
+          }
+        }
+      ]
+    }
+  }
+}

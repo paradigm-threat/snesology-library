@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bill Laimbeer's Combat Basketbal",
+    "snes": {
+      "srcn": 1,
+      "character": "melodic",
+      "pcmLength": 4800,
+      "brrLength": 2700,
+      "hasLoop": true,
+      "loopStartPcm": 64,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 4103
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b8e2c51c78033d9834e05381c4e3b92c163e37b92d19ea8fe63e094e74ea7527"
+          },
+          "loop": {
+            "start": 64,
+            "end": 4800
+          }
+        }
+      ]
+    }
+  }
+}

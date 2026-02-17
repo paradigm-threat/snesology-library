@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Daisenryaku Expert WWII",
+    "snes": {
+      "srcn": 11,
+      "character": "one-shot",
+      "pcmLength": 4192,
+      "brrLength": 2358,
+      "hasLoop": false,
+      "adsr1": 133,
+      "adsr2": 232,
+      "gain": 186,
+      "pitchRegister": 4545
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "30127a9c399c435f66e8980109098f615f5bd078bd32e719a324d2e78205a048"
+          }
+        }
+      ]
+    }
+  }
+}

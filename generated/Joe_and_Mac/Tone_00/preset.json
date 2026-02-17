@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Joe and Mac",
+    "snes": {
+      "srcn": 0,
+      "character": "tone",
+      "pcmLength": 3504,
+      "brrLength": 1971,
+      "hasLoop": true,
+      "loopStartPcm": 1552,
+      "adsr1": 139,
+      "adsr2": 171,
+      "gain": 184,
+      "pitchRegister": 8152
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "db92be7ed81eedf6e801b78c1d71ddc853df053b3bc73884f6492b280345eea8"
+          },
+          "loop": {
+            "start": 1552,
+            "end": 3504
+          }
+        }
+      ]
+    }
+  }
+}

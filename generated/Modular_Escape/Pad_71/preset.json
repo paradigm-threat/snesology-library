@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Modular Escape",
+    "snes": {
+      "srcn": 71,
+      "character": "melodic",
+      "pcmLength": 15344,
+      "brrLength": 8631,
+      "hasLoop": true,
+      "loopStartPcm": 10656
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "473ed075782e268bd3410d241687aab245517313da24259a96e12055187bf1df"
+          },
+          "loop": {
+            "start": 10656,
+            "end": 15344
+          }
+        }
+      ]
+    }
+  }
+}

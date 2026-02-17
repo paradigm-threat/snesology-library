@@ -1,0 +1,59 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Mallet",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kirby's Dream Land 3",
+    "snes": {
+      "srcn": 7,
+      "character": "tone",
+      "pcmLength": 704,
+      "brrLength": 396,
+      "hasLoop": true,
+      "loopStartPcm": 640,
+      "adsr1": 143,
+      "adsr2": 239,
+      "gain": 184,
+      "pitchRegister": 3604
+    },
+    "communityName": "mallet",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0bb545599afbb3cf6af6fb769cea6c8b906f96887c1f79526d43eac7c34b264f"
+          },
+          "loop": {
+            "start": 640,
+            "end": 704
+          }
+        }
+      ]
+    }
+  }
+}

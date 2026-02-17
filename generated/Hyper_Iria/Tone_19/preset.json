@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hyper Iria",
+    "snes": {
+      "srcn": 19,
+      "character": "tone",
+      "pcmLength": 2976,
+      "brrLength": 1674,
+      "hasLoop": true,
+      "loopStartPcm": 2864,
+      "adsr1": 191,
+      "adsr2": 75,
+      "gain": 184,
+      "pitchRegister": 2104
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3a5a606bc4863ed6e3a36f1c0bceb0c5543d7e93a7d98b2dd33057c61984ef83"
+          },
+          "loop": {
+            "start": 2864,
+            "end": 2976
+          }
+        }
+      ]
+    }
+  }
+}

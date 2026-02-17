@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Libble Rabble",
+    "snes": {
+      "srcn": 14,
+      "character": "tone",
+      "pcmLength": 256,
+      "brrLength": 144,
+      "hasLoop": true,
+      "loopStartPcm": 128,
+      "adsr1": 254,
+      "adsr2": 244,
+      "gain": 184,
+      "pitchRegister": 7151
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "78ffe54eda0f81eff57e2f1649665bda4a22c80da885d67c14c3809a3a12975a"
+          },
+          "loop": {
+            "start": 128,
+            "end": 256
+          }
+        }
+      ]
+    }
+  }
+}

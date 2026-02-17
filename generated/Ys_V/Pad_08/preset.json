@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Ys V",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 6176,
+      "brrLength": 3474,
+      "hasLoop": true,
+      "loopStartPcm": 4160,
+      "adsr1": 143,
+      "adsr2": 143,
+      "gain": 0,
+      "pitchRegister": 3085
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "7e2f9a838d3653b3c42c41fe517b2bfef01f122caa85e19c920646ffa3f307ca"
+          },
+          "loop": {
+            "start": 4160,
+            "end": 6176
+          }
+        }
+      ]
+    }
+  }
+}

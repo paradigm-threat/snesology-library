@@ -1,0 +1,58 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Guitar Overdrive",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Stunt Race FX",
+    "snes": {
+      "srcn": 6,
+      "character": "melodic",
+      "pcmLength": 5536,
+      "brrLength": 3114,
+      "hasLoop": true,
+      "loopStartPcm": 5408,
+      "adsr1": 255,
+      "adsr2": 236,
+      "gain": 184,
+      "pitchRegister": 1199
+    },
+    "communityName": "guitar_overdrive",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d829abab0487abaf1a0808e08da9d7381e135a0ec11a7bcb7cc4888bf79005d1"
+          },
+          "loop": {
+            "start": 5408,
+            "end": 5536
+          }
+        }
+      ]
+    }
+  }
+}

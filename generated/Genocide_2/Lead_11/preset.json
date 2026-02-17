@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Genocide 2",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 6128,
+      "brrLength": 3447,
+      "hasLoop": true,
+      "loopStartPcm": 4624,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 16,
+      "pitchRegister": 1720
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c9b071d2aba5c844875d0aab3b468ca35bfe3da58fb24ae6a0e02ee328f0c2e7"
+          },
+          "loop": {
+            "start": 4624,
+            "end": 6128
+          }
+        }
+      ]
+    }
+  }
+}

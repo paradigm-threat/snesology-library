@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Incredible Hulk",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 2720,
+      "brrLength": 1530,
+      "hasLoop": true,
+      "loopStartPcm": 2032,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 1625
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "de77a3b4d6f7ab77cd5d9a2864589c6e26f1d4e4ee316e7dbfe8f5955674c120"
+          },
+          "loop": {
+            "start": 2032,
+            "end": 2720
+          }
+        }
+      ]
+    }
+  }
+}

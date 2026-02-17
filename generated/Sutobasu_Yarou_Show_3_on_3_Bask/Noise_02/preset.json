@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Noise",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "noise"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sutobasu Yarou Show: 3 on 3 Bask",
+    "snes": {
+      "srcn": 2,
+      "character": "noise",
+      "pcmLength": 944,
+      "brrLength": 531,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 29,
+      "pitchRegister": 2715
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2fa6c84c55e8f71178a09fbaeff5fc32b6f391f5f9a02a1dd8a357ed80b96722"
+          }
+        }
+      ]
+    }
+  }
+}

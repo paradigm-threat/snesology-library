@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Umizuri Meijin",
+    "snes": {
+      "srcn": 39,
+      "character": "tone",
+      "pcmLength": 2752,
+      "brrLength": 1548,
+      "hasLoop": true,
+      "loopStartPcm": 2560,
+      "adsr1": 255,
+      "adsr2": 240,
+      "gain": 184,
+      "pitchRegister": 6418
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "f3cf5c94e21af06322096a4b2898607a2d5b30ec21755ada9eeb87e607348840"
+          },
+          "loop": {
+            "start": 2560,
+            "end": 2752
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "3x3 Eyes: Seima Kourinden",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 4592,
+      "brrLength": 2583,
+      "hasLoop": true,
+      "loopStartPcm": 2096,
+      "adsr1": 229,
+      "adsr2": 230,
+      "gain": 184,
+      "pitchRegister": 359
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "127135317355768781d14fbb5fb53a0d602afe4735cb4aeecd0d16cdde479b34"
+          },
+          "loop": {
+            "start": 2096,
+            "end": 4592
+          }
+        }
+      ]
+    }
+  }
+}

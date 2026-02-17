@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sparkster",
+    "snes": {
+      "srcn": 61,
+      "character": "melodic",
+      "pcmLength": 5728,
+      "brrLength": 3222,
+      "hasLoop": true,
+      "loopStartPcm": 848
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e0fbada46d4d96eed6972446aef048f56ded9ce00642782e95b18296945eca0e"
+          },
+          "loop": {
+            "start": 848,
+            "end": 5728
+          }
+        }
+      ]
+    }
+  }
+}

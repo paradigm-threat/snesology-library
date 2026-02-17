@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Radical Dreamers",
+    "snes": {
+      "srcn": 36,
+      "character": "melodic",
+      "pcmLength": 5168,
+      "brrLength": 2907,
+      "hasLoop": true,
+      "loopStartPcm": 4944
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9e40fa42174fca1c290a85f6f3bcf04eb1a4e72e3abf481247c880ba89858cc3"
+          },
+          "loop": {
+            "start": 4944,
+            "end": 5168
+          }
+        }
+      ]
+    }
+  }
+}

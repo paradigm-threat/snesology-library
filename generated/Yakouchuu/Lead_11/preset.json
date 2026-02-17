@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Yakouchuu",
+    "snes": {
+      "srcn": 11,
+      "character": "melodic",
+      "pcmLength": 6160,
+      "brrLength": 3465,
+      "hasLoop": true,
+      "loopStartPcm": 6016
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3b04741e7692572ccef7aa79ee79464e8714b90cd6a43bf75cffee54d301d1f8"
+          },
+          "loop": {
+            "start": 6016,
+            "end": 6160
+          }
+        }
+      ]
+    }
+  }
+}

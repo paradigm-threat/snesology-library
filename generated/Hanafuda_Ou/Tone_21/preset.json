@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hanafuda Ou",
+    "snes": {
+      "srcn": 21,
+      "character": "tone",
+      "pcmLength": 3024,
+      "brrLength": 1701,
+      "hasLoop": true,
+      "loopStartPcm": 2928,
+      "adsr1": 255,
+      "adsr2": 238,
+      "gain": 184,
+      "pitchRegister": 4041
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "9cd8bf395f419a7fcdd2344568f44f82499c14e96a4daaa4c4cd61444fcd4aaf"
+          },
+          "loop": {
+            "start": 2928,
+            "end": 3024
+          }
+        }
+      ]
+    }
+  }
+}

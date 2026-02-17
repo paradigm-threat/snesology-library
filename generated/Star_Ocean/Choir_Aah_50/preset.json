@@ -1,0 +1,54 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Choir Aah",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Star Ocean",
+    "snes": {
+      "srcn": 50,
+      "character": "melodic",
+      "pcmLength": 6992,
+      "brrLength": 3933,
+      "hasLoop": true,
+      "loopStartPcm": 1104
+    },
+    "communityName": "choir_aah",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "134ba2330626db386c398b0d720f31430cb87c013cc7348a0f38e72f29cf4f81"
+          },
+          "loop": {
+            "start": 1104,
+            "end": 6992
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hardball 3",
+    "snes": {
+      "srcn": 1,
+      "character": "tone",
+      "pcmLength": 2768,
+      "brrLength": 1557,
+      "hasLoop": true,
+      "loopStartPcm": 2400,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 127,
+      "pitchRegister": 1024
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "72ef7c3560fc91dab80c07a3e08f6855a77ca9335546ff02597a5b404146f8de"
+          },
+          "loop": {
+            "start": 2400,
+            "end": 2768
+          }
+        }
+      ]
+    }
+  }
+}

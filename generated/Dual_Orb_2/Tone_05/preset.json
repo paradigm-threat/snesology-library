@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dual Orb 2",
+    "snes": {
+      "srcn": 5,
+      "character": "tone",
+      "pcmLength": 3664,
+      "brrLength": 2061,
+      "hasLoop": true,
+      "loopStartPcm": 6832
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "e91ad37efefc85f5d6057fba2f2f4b20e8a59019bc3be09f429d7f6ff1c367ef"
+          },
+          "loop": {
+            "start": 6832,
+            "end": 3664
+          }
+        }
+      ]
+    }
+  }
+}

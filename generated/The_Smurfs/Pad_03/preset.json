@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "The Smurfs",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 6080,
+      "brrLength": 3420,
+      "hasLoop": true,
+      "loopStartPcm": 2768,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 0
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "29cab4794b62d9d573a35569fd5f1963cac07364fb3d380fb0db46fcb895ef45"
+          },
+          "loop": {
+            "start": 2768,
+            "end": 6080
+          }
+        }
+      ]
+    }
+  }
+}

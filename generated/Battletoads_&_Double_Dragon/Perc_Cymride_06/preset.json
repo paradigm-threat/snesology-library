@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Perc Cymride",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battletoads & Double Dragon",
+    "snes": {
+      "srcn": 6,
+      "character": "one-shot",
+      "pcmLength": 7792,
+      "brrLength": 4383,
+      "hasLoop": false,
+      "adsr1": 143,
+      "adsr2": 245,
+      "gain": 127,
+      "pitchRegister": 5468
+    },
+    "communityName": "perc_cymride",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d77a9fd2bd24554c42d6f5bafc436530039e05b3ef87193d0d52d0f70196d1d0"
+          }
+        }
+      ]
+    }
+  }
+}

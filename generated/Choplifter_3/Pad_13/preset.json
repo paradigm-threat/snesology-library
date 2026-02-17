@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Choplifter 3",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 5984,
+      "brrLength": 3366,
+      "hasLoop": true,
+      "loopStartPcm": 3840,
+      "adsr1": 190,
+      "adsr2": 207,
+      "gain": 127,
+      "pitchRegister": 1082
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ae4fb33398ee6763ff4d09decacd53c22afa5cb621d3e6089158c6f93a5b7542"
+          },
+          "loop": {
+            "start": 3840,
+            "end": 5984
+          }
+        }
+      ]
+    }
+  }
+}

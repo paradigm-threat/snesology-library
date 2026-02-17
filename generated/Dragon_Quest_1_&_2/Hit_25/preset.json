@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Quest 1 & 2",
+    "snes": {
+      "srcn": 25,
+      "character": "one-shot",
+      "pcmLength": 10000,
+      "brrLength": 5625,
+      "hasLoop": false,
+      "adsr1": 190,
+      "adsr2": 35,
+      "gain": 0,
+      "pitchRegister": 2896
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4eec2a48a3d01a6ec4dc64deaa60e516058d3ba8edbf235aa73687da9ba0e35a"
+          }
+        }
+      ]
+    }
+  }
+}

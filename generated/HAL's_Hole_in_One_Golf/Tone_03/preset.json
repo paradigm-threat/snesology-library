@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "HAL's Hole in One Golf",
+    "snes": {
+      "srcn": 3,
+      "character": "tone",
+      "pcmLength": 1376,
+      "brrLength": 774,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "30dcf44c846dae4409bdce25a6d64a7dba7af4da55faf6ddb28ab915e8c92be6"
+          },
+          "loop": {
+            "start": 48,
+            "end": 1376
+          }
+        }
+      ]
+    }
+  }
+}

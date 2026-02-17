@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kiki Kaikai 3",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 2768,
+      "brrLength": 1557,
+      "hasLoop": true,
+      "loopStartPcm": 1424,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 3069
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c34416604f3b92ea94a39b7c24373a46ce7955a2a7e07f99001f30f6692b984b"
+          },
+          "loop": {
+            "start": 1424,
+            "end": 2768
+          }
+        }
+      ]
+    }
+  }
+}

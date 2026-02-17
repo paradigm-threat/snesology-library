@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Quest 1 & 2",
+    "snes": {
+      "srcn": 13,
+      "character": "melodic",
+      "pcmLength": 9536,
+      "brrLength": 5364,
+      "hasLoop": true,
+      "loopStartPcm": 2352,
+      "adsr1": 158,
+      "adsr2": 199,
+      "gain": 0,
+      "pitchRegister": 5402
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4bb31bb886c05d811da893b8b0d2b8e86729d49e064e37c7d5c2c420f267d760"
+          },
+          "loop": {
+            "start": 2352,
+            "end": 9536
+          }
+        }
+      ]
+    }
+  }
+}

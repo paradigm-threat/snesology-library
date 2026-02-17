@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Super Mahjong Taikai",
+    "snes": {
+      "srcn": 14,
+      "character": "tone",
+      "pcmLength": 512,
+      "brrLength": 288,
+      "hasLoop": true,
+      "loopStartPcm": 272,
+      "adsr1": 143,
+      "adsr2": 242,
+      "gain": 184,
+      "pitchRegister": 10082
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0bc7ba5b9fe368e77d461f051e28ef58a23d0db9073a48a061f3103e9b337cb4"
+          },
+          "loop": {
+            "start": 272,
+            "end": 512
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Shinseiki Odysselya 2",
+    "snes": {
+      "srcn": 34,
+      "character": "melodic",
+      "pcmLength": 6224,
+      "brrLength": 3501,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ea66ca9322d63516a48467dd664a7041b79f2f48f56a5333c1f2e5d6a3ab7bf2"
+          },
+          "loop": {
+            "start": 16,
+            "end": 6224
+          }
+        }
+      ]
+    }
+  }
+}

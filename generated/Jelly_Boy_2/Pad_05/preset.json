@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Jelly Boy 2",
+    "snes": {
+      "srcn": 5,
+      "character": "melodic",
+      "pcmLength": 9040,
+      "brrLength": 5085,
+      "hasLoop": true,
+      "loopStartPcm": 5792,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 185,
+      "pitchRegister": 1807
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "b7520331c1f3ab2e3e7023265c4e20ea44669ab54c4b55b1bfe08c30c3750323"
+          },
+          "loop": {
+            "start": 5792,
+            "end": 9040
+          }
+        }
+      ]
+    }
+  }
+}

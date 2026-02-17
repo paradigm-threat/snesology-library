@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Batman Returns",
+    "snes": {
+      "srcn": 24,
+      "character": "tone",
+      "pcmLength": 2464,
+      "brrLength": 1386,
+      "hasLoop": true,
+      "loopStartPcm": 48
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ae969318cc1dccda11eceae683a7a0d4efe64b0979539a01247e96886e0d944f"
+          },
+          "loop": {
+            "start": 48,
+            "end": 2464
+          }
+        }
+      ]
+    }
+  }
+}

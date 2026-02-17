@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battle Racers",
+    "snes": {
+      "srcn": 23,
+      "character": "tone",
+      "pcmLength": 1312,
+      "brrLength": 738,
+      "hasLoop": true,
+      "loopStartPcm": 832,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 998
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d4959aa85f917a7f597468dc2e3a645eadcccd19f330746fb5a0225ba5c8a023"
+          },
+          "loop": {
+            "start": 832,
+            "end": 1312
+          }
+        }
+      ]
+    }
+  }
+}

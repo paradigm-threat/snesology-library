@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Sanrio World Smash Ball",
+    "snes": {
+      "srcn": 8,
+      "character": "tone",
+      "pcmLength": 224,
+      "brrLength": 126,
+      "hasLoop": true,
+      "loopStartPcm": 16,
+      "adsr1": 221,
+      "adsr2": 114,
+      "gain": 114,
+      "pitchRegister": 3484
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "14812e0ef0e9692db005274e04e0a0e699124a536dc38d138a22ebbbf22c405a"
+          },
+          "loop": {
+            "start": 16,
+            "end": 224
+          }
+        }
+      ]
+    }
+  }
+}

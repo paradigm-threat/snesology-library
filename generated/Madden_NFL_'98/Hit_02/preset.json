@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Madden NFL '98",
+    "snes": {
+      "srcn": 2,
+      "character": "one-shot",
+      "pcmLength": 3712,
+      "brrLength": 2088,
+      "hasLoop": false,
+      "adsr1": 0,
+      "adsr2": 27,
+      "gain": 127,
+      "pitchRegister": 2376
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "747656a6f15b97e343e532423f647482ad3ed381c336e08a8dac2e9be7ecddfd"
+          }
+        }
+      ]
+    }
+  }
+}

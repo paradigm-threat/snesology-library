@@ -1,0 +1,55 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Trumpet",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Kirby's Dream Course",
+    "snes": {
+      "srcn": 28,
+      "character": "tone",
+      "pcmLength": 2256,
+      "brrLength": 1269,
+      "hasLoop": true,
+      "loopStartPcm": 2192
+    },
+    "communityName": "trumpet",
+    "matchConfidence": 1.0
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "1df10cea78ba0dbf7cf22afb9f722824c4a1e78270758795662f7cace75e6633"
+          },
+          "loop": {
+            "start": 2192,
+            "end": 2256
+          }
+        }
+      ]
+    }
+  }
+}

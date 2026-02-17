@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Battle Racers",
+    "snes": {
+      "srcn": 64,
+      "character": "melodic",
+      "pcmLength": 6864,
+      "brrLength": 3861,
+      "hasLoop": true,
+      "loopStartPcm": 2896,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 0,
+      "pitchRegister": 1277
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8355e435aad01e0c2bf8a1f393f72224c7d8d07ccfcbd670878f41ec35f2b0a9"
+          },
+          "loop": {
+            "start": 2896,
+            "end": 6864
+          }
+        }
+      ]
+    }
+  }
+}

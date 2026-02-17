@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Brandish 2",
+    "snes": {
+      "srcn": 16,
+      "character": "melodic",
+      "pcmLength": 10608,
+      "brrLength": 5967,
+      "hasLoop": true,
+      "loopStartPcm": 5968,
+      "adsr1": 143,
+      "adsr2": 224,
+      "gain": 182,
+      "pitchRegister": 3451
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "657b33cc31bcb23bd8337dcd9cb770a84c81ab6426d833ee4d7e554c75b31610"
+          },
+          "loop": {
+            "start": 5968,
+            "end": 10608
+          }
+        }
+      ]
+    }
+  }
+}

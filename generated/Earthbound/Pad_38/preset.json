@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Earthbound",
+    "snes": {
+      "srcn": 38,
+      "character": "melodic",
+      "pcmLength": 7408,
+      "brrLength": 4167,
+      "hasLoop": true,
+      "loopStartPcm": 160
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d1688344d1c91d031d59952657f1d92bbcc4c93c79de86bcb3f1e690a16cc437"
+          },
+          "loop": {
+            "start": 160,
+            "end": 7408
+          }
+        }
+      ]
+    }
+  }
+}

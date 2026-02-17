@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Thunderbirds",
+    "snes": {
+      "srcn": 3,
+      "character": "melodic",
+      "pcmLength": 13712,
+      "brrLength": 7713,
+      "hasLoop": true,
+      "loopStartPcm": 4416,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 184,
+      "pitchRegister": 1818
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "352c8623d03e8bc4633ae54b9e9c905c4c34fcf5ec172614111eea5994ae56cb"
+          },
+          "loop": {
+            "start": 4416,
+            "end": 13712
+          }
+        }
+      ]
+    }
+  }
+}

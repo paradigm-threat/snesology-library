@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hagane",
+    "snes": {
+      "srcn": 33,
+      "character": "melodic",
+      "pcmLength": 16368,
+      "brrLength": 9207,
+      "hasLoop": true,
+      "loopStartPcm": 12432
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "58668f6b2e57896d1df61e8daa7baeac6496c1d2018e11ee739386e0dc9c6453"
+          },
+          "loop": {
+            "start": 12432,
+            "end": 16368
+          }
+        }
+      ]
+    }
+  }
+}

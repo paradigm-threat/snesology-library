@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Bishoujo Senshi Sailormoon S - J",
+    "snes": {
+      "srcn": 52,
+      "character": "melodic",
+      "pcmLength": 16752,
+      "brrLength": 9423,
+      "hasLoop": true,
+      "loopStartPcm": 2592
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "d0c593176957c3eb5607ce0fc90f428341c9b6554a8a0b8ba2ec0a77f96a5c5f"
+          },
+          "loop": {
+            "start": 2592,
+            "end": 16752
+          }
+        }
+      ]
+    }
+  }
+}

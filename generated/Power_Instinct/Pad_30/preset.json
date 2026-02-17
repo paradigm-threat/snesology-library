@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Power Instinct",
+    "snes": {
+      "srcn": 30,
+      "character": "melodic",
+      "pcmLength": 5744,
+      "brrLength": 3231,
+      "hasLoop": true,
+      "loopStartPcm": 2048,
+      "adsr1": 92,
+      "adsr2": 234,
+      "gain": 159,
+      "pitchRegister": 1024
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "5400f0ae27af69cd3c51dddf9b364c26cd6776b46d4f9650f5c49c214f9dfe2d"
+          },
+          "loop": {
+            "start": 2048,
+            "end": 5744
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Lead",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "G.O.D.",
+    "snes": {
+      "srcn": 0,
+      "character": "melodic",
+      "pcmLength": 6592,
+      "brrLength": 3708,
+      "hasLoop": true,
+      "loopStartPcm": 4992
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "c9a95c8ce495fb4f97ff3d082ecf343f7a9d39d305ae285d0cfe2eae7eaba337"
+          },
+          "loop": {
+            "start": 4992,
+            "end": 6592
+          }
+        }
+      ]
+    }
+  }
+}

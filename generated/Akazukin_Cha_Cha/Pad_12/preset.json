@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Akazukin Cha Cha",
+    "snes": {
+      "srcn": 12,
+      "character": "melodic",
+      "pcmLength": 6000,
+      "brrLength": 3375,
+      "hasLoop": true,
+      "loopStartPcm": 3952,
+      "adsr1": 255,
+      "adsr2": 242,
+      "gain": 184,
+      "pitchRegister": 3841
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "ceb78d599fc0dfc9aed91a26a38fee6a0a6beb7e883830c62d847912d013d52e"
+          },
+          "loop": {
+            "start": 3952,
+            "end": 6000
+          }
+        }
+      ]
+    }
+  }
+}

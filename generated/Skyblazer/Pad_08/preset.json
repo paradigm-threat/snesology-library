@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Skyblazer",
+    "snes": {
+      "srcn": 8,
+      "character": "melodic",
+      "pcmLength": 8080,
+      "brrLength": 4545,
+      "hasLoop": true,
+      "loopStartPcm": 2528,
+      "adsr1": 255,
+      "adsr2": 225,
+      "gain": 180,
+      "pitchRegister": 2743
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "19f77fe5934a5ae68698109f4aa00d9125c588e909a9ac25424bbc1d6752fd67"
+          },
+          "loop": {
+            "start": 2528,
+            "end": 8080
+          }
+        }
+      ]
+    }
+  }
+}

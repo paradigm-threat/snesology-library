@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Doraemon 4",
+    "snes": {
+      "srcn": 10,
+      "character": "tone",
+      "pcmLength": 2032,
+      "brrLength": 1143,
+      "hasLoop": true,
+      "loopStartPcm": 1520,
+      "adsr1": 142,
+      "adsr2": 105,
+      "gain": 184,
+      "pitchRegister": 3976
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "940e863c818b36e6784801422f7ff9779cf253177b54c02893619a1c96f28363"
+          },
+          "loop": {
+            "start": 1520,
+            "end": 2032
+          }
+        }
+      ]
+    }
+  }
+}

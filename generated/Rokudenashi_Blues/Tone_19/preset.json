@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Rokudenashi Blues",
+    "snes": {
+      "srcn": 19,
+      "character": "tone",
+      "pcmLength": 2544,
+      "brrLength": 1431,
+      "hasLoop": true,
+      "loopStartPcm": 2368,
+      "adsr1": 143,
+      "adsr2": 235,
+      "gain": 184,
+      "pitchRegister": 2964
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "3dd3e2d980b1e4a34d2b9e7d9bae60ea1c1feb2603b939d4a91b803e22c299b4"
+          },
+          "loop": {
+            "start": 2368,
+            "end": 2544
+          }
+        }
+      ]
+    }
+  }
+}

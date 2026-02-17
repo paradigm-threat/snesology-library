@@ -1,0 +1,50 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Hit",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "one-shot"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Dragon Ball Z Super Gokuden: Tot",
+    "snes": {
+      "srcn": 20,
+      "character": "one-shot",
+      "pcmLength": 9536,
+      "brrLength": 5364,
+      "hasLoop": false,
+      "adsr1": 191,
+      "adsr2": 71,
+      "gain": 184,
+      "pitchRegister": 900
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": true,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "0a83736f743f856abf8001fdd87ace5d306344310c2d303c97a2cd5c44964453"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Best of the Best: Championship K",
+    "snes": {
+      "srcn": 22,
+      "character": "tone",
+      "pcmLength": 3696,
+      "brrLength": 2079,
+      "hasLoop": true,
+      "loopStartPcm": 36496
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4324512e508b686a1618d9568a7718761ba885eb261ee3d9d4de7738504ebcda"
+          },
+          "loop": {
+            "start": 36496,
+            "end": 3696
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Hayazashi Nidan - Morita Shogi",
+    "snes": {
+      "srcn": 2,
+      "character": "tone",
+      "pcmLength": 3120,
+      "brrLength": 1755,
+      "hasLoop": true,
+      "loopStartPcm": 3024,
+      "adsr1": 0,
+      "adsr2": 170,
+      "gain": 186,
+      "pitchRegister": 5442
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "6182fdf23cb31dbd2ee18b2dcbd3873020a77cad71a607eca27d6eabf254a779"
+          },
+          "loop": {
+            "start": 3024,
+            "end": 3120
+          }
+        }
+      ]
+    }
+  }
+}

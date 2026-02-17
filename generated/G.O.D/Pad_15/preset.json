@@ -1,0 +1,52 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "G.O.D.",
+    "snes": {
+      "srcn": 15,
+      "character": "melodic",
+      "pcmLength": 8352,
+      "brrLength": 4698,
+      "hasLoop": true,
+      "loopStartPcm": 4256
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "35968ae34daa6bbcf3344bd7f930062ad4749297c16c06182292f1f30ca169d1"
+          },
+          "loop": {
+            "start": 4256,
+            "end": 8352
+          }
+        }
+      ]
+    }
+  }
+}

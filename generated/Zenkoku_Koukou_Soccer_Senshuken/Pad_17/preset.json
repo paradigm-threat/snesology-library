@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Zenkoku Koukou Soccer Senshuken",
+    "snes": {
+      "srcn": 17,
+      "character": "melodic",
+      "pcmLength": 6400,
+      "brrLength": 3600,
+      "hasLoop": true,
+      "loopStartPcm": 3248,
+      "adsr1": 190,
+      "adsr2": 80,
+      "gain": 186,
+      "pitchRegister": 7116
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "8a9adfba13c7d4415498ac2a707ff3edf905c574ebd6cd1d312a49ce2b585c17"
+          },
+          "loop": {
+            "start": 3248,
+            "end": 6400
+          }
+        }
+      ]
+    }
+  }
+}

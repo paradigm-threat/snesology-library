@@ -1,0 +1,57 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Foreman For Real",
+    "snes": {
+      "srcn": 4,
+      "character": "tone",
+      "pcmLength": 880,
+      "brrLength": 495,
+      "hasLoop": true,
+      "loopStartPcm": 160,
+      "adsr1": 0,
+      "adsr2": 0,
+      "gain": 90,
+      "pitchRegister": 2120
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "4885ab7e546447923046c8798ed1d77e88d96fccbed8ae7fa1e92c7f7747d5ca"
+          },
+          "loop": {
+            "start": 160,
+            "end": 880
+          }
+        }
+      ]
+    }
+  }
+}

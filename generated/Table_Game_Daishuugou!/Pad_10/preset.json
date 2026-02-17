@@ -1,0 +1,56 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Pad",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Table Game Daishuugou!",
+    "snes": {
+      "srcn": 10,
+      "character": "melodic",
+      "pcmLength": 9632,
+      "brrLength": 5418,
+      "hasLoop": true,
+      "loopStartPcm": 7472,
+      "adsr1": 255,
+      "adsr2": 224,
+      "gain": 188,
+      "pitchRegister": 943
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "2c686e811fdcb2466cc75d479040506f8824aaa6dd7fdb7c3a64ee9d7f2812be"
+          },
+          "loop": {
+            "start": 7472,
+            "end": 9632
+          }
+        }
+      ]
+    }
+  }
+}

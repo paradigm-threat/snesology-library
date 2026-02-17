@@ -1,0 +1,53 @@
+{
+  "format": "songwalker-preset",
+  "version": 1,
+  "name": "Tone",
+  "category": "sampler",
+  "tags": [
+    "snes",
+    "melodic",
+    "tone",
+    "looped"
+  ],
+  "metadata": {
+    "source": "SNES",
+    "game": "Janyuuki Gokuu Randa",
+    "snes": {
+      "srcn": 20,
+      "character": "tone",
+      "pcmLength": 2624,
+      "brrLength": 1476,
+      "hasLoop": true,
+      "loopStartPcm": 16
+    }
+  },
+  "node": {
+    "type": "sampler",
+    "config": {
+      "oneShot": false,
+      "zones": [
+        {
+          "keyRange": {
+            "low": 0,
+            "high": 127
+          },
+          "pitch": {
+            "rootNote": 60,
+            "fineTuneCents": 0
+          },
+          "sampleRate": 32000,
+          "audio": {
+            "type": "external",
+            "url": "sample.mp3",
+            "codec": "mp3",
+            "sha256": "071d9562c4449e53f599731502dc7b046d98e6164718758227d434a54cfd5d41"
+          },
+          "loop": {
+            "start": 16,
+            "end": 2624
+          }
+        }
+      ]
+    }
+  }
+}
