@@ -4,7 +4,7 @@ A comprehensive library of instrument samples extracted from Super Nintendo (SNE
 
 ## Source
 
-Samples extracted from SPC files (SNES-SPC700 sound format) using BRR (Bit Rate Reduction) decoding. The SPC files are sourced from the [SNESology](https://snesology.net) collection.
+Samples extracted from SPC files (SNES-SPC700 sound format) using BRR (Bit Rate Reduction) decoding. The SPC files are sourced from the [SNESology](https://snesology.org) collection.
 
 ## Structure
 

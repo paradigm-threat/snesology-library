@@ -150,7 +150,7 @@ Generated preset JSONs for all 194 community games from WAV samples in `samples.
 
 ## RSN Source Files
 
-Located at `/home/ari/dev/samples/spcsets/` (~1,500+ `.rsn` archives from [SNESology](https://snesology.net)).
+Located at `/home/ari/dev/samples/spcsets/` (~1,500+ `.rsn` archives from [SNESology](https://snesology.org)).
 
 ## Related Files
 
